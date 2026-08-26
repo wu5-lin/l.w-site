@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI 粒径分析 · Particle Size Analyzer</title>
   <link rel="stylesheet" href="styles.css" />
-  <!-- OpenCV.js (浏览器端 wasm，图像处理在本地完成，图片不上传) -->
-  <script async src="https://docs.opencv.org/4.9.0/opencv.js"
+  <!-- OpenCV.js (本地 vendor 副本，wasm 已内联，无需联网/CDN) -->
+  <script async src="vendor/opencv.js"
           onload="window.__cvLoaded = true"></script>
 </head>
 <body>
@@ -173,7 +173,7 @@
 
   <section id="faq" class="info">
     <h2>常见问题</h2>
-    <details><summary>页面打开后一直显示"加载 OpenCV"？</summary><p>OpenCV.js 约 8MB，首次加载需几秒；若长时间不动，可能是网络无法访问 docs.opencv.org，可刷新或更换网络。</p></details>
+    <details><summary>页面打开后一直显示"加载 OpenCV"？</summary><p>OpenCV.js 约 13MB（wasm 已内联），首次加载需几秒，请耐心等待；若长时间不动，可强制刷新（Ctrl+F5）清除缓存后重试。</p></details>
     <details><summary>结果颗粒数偏多/偏少？</summary><p>调整"最小颗粒面积""最小圆度"，或切换"颗粒亮/暗"；显微镜图像对比度低时可改用"手动阈值"微调。</p></details>
     <details><summary>直径单位怎么选？</summary><p>用"标尺校准"：量出图中已知长度对应的像素数并填入实际长度与单位（nm/µm/mm）。不填则按像素显示。</p></details>
   </section>

@@ -18,7 +18,7 @@ function waitCv(timeout = 35000) {
     const t0 = Date.now();
     (function loop() {
       if (window.cv && typeof window.cv.matFromImageData === "function") return resolve();
-      if (Date.now() - t0 > timeout) return reject(new Error("OpenCV 加载超时，请检查网络后刷新页面"));
+      if (Date.now() - t0 > timeout) return reject(new Error("OpenCV 加载超时，请强制刷新（Ctrl+F5）后重试"));
       setTimeout(loop, 80);
     })();
   });

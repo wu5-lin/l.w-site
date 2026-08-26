@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIDA · 电镜颗粒分析 · LW</title>
+  <meta name="description" content="LIDA 是微信小程序形态的 SEM 颗粒分析工具，基于分水岭分割与云端云函数 analyzeParticle，提供实时粒径反馈。" />
+  <meta name="theme-color" content="#07070a" />
+  <link rel="icon" href="../favicon.svg" />
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600|noto-serif-sc:400,500,600" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .subhero { padding: calc(var(--nav-h) + 64px) 0 40px; }
+    .subhero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+    .subhero-kicker { color: var(--accent); font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 14px; }
+    .subhero h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; font-weight: 600; margin-bottom: 18px; }
+    .subhero-lead { color: var(--text-dim); font-size: 1.05rem; max-width: 52ch; }
+    .subhero-actions { display: flex; gap: 14px; margin-top: 28px; flex-wrap: wrap; }
+    .phone-mock {
+      width: 280px; max-width: 100%; aspect-ratio: 9/19; border-radius: 36px;
+      background: linear-gradient(160deg, #11131a, #0a0b10);
+      border: 1px solid var(--line-strong); padding: 14px; margin: 0 auto;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.5), inset 0 0 0 2px rgba(255,255,255,0.03);
+      position: relative;
+    }
+    .phone-notch { position: absolute; top: 14px; left: 50%; transform: translateX(-50%); width: 90px; height: 18px; background: #05060a; border-radius: 0 0 12px 12px; }
+    .phone-screen { margin-top: 30px; height: calc(100% - 36px); border-radius: 24px; background:
+      radial-gradient(120% 80% at 50% 0%, rgba(34,211,238,0.12), transparent 60%), #070810;
+      border: 1px solid var(--line); overflow: hidden; display: grid; place-items: center; }
+    .phone-screen .scan { width: 78%; aspect-ratio: 1; border-radius: 14px;
+      background:
+        radial-gradient(circle at 30% 35%, rgba(180,210,255,0.9), transparent 14%),
+        radial-gradient(circle at 62% 30%, rgba(160,230,255,0.85), transparent 12%),
+        radial-gradient(circle at 48% 62%, rgba(190,200,255,0.8), transparent 13%),
+        radial-gradient(circle at 72% 68%, rgba(150,220,255,0.8), transparent 11%),
+        #0a0e18;
+      box-shadow: inset 0 0 0 2px rgba(34,211,238,0.4);
+    }
+    .phone-screen .scan::after { content: ""; position: absolute; }
+    .phone-caption { position: absolute; bottom: 18px; left: 0; right: 0; text-align: center; font-size: 0.72rem; color: var(--text-muted); }
+    .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .feature-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 26px; }
+    .feature-card .ic { font-size: 1.5rem; color: var(--accent); margin-bottom: 12px; }
+    .feature-card h3 { font-size: 1.08rem; margin-bottom: 8px; }
+    .feature-card p { color: var(--text-dim); font-size: 0.94rem; }
+    .step-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; counter-reset: step; }
+    .step { background: var(--bg-elevated); border: 1px solid var(--line); border-radius: 14px; padding: 22px; position: relative; }
+    .step::before { counter-increment: step; content: counter(step); position: absolute; top: -14px; left: 22px;
+      width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #050505; font-weight: 600; font-size: 0.9rem; }
+    .step h4 { margin: 10px 0 6px; font-size: 1rem; }
+    .step p { color: var(--text-dim); font-size: 0.88rem; }
+    .arch-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .arch-card { border: 1px dashed var(--line-strong); border-radius: 14px; padding: 22px; text-align: center; }
+    .arch-card .big { font-size: 1.6rem; color: var(--accent); margin-bottom: 8px; }
+    .arch-card h4 { font-size: 1rem; margin-bottom: 6px; }
+    .arch-card p { color: var(--text-dim); font-size: 0.86rem; }
+    .qr-row { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
+    .qr-box { width: 150px; height: 150px; border-radius: 16px; background:
+      repeating-conic-gradient(#0b0d14 0% 25%, #16181f 0% 50%) 50% / 22px 22px;
+      border: 1px solid var(--line-strong); position: relative; flex: none; }
+    .qr-box::after { content: "小程序码"; position: absolute; inset: 0; display: grid; place-items: center;
+      color: var(--text-muted); font-size: 0.8rem; background: rgba(7,7,10,0.6); }
+    .qr-note h3 { font-size: 1.2rem; margin-bottom: 10px; }
+    .qr-note p { color: var(--text-dim); max-width: 46ch; }
+    @media (max-width: 880px) {
+      .subhero-grid { grid-template-columns: 1fr; }
+      .feature-grid, .arch-grid { grid-template-columns: 1fr; }
+      .step-flow { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../" class="logo">
+        <span class="logo-mark">LW</span>
+        <span class="logo-text">智能实验工具</span>
+      </a>
+      <nav class="nav-links">
+        <a href="../#products">产品</a>
+        <a href="../#news">资讯</a>
+        <a href="../#contact" class="nav-cta">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section subhero">
+      <div class="section-inner subhero-grid">
+        <div>
+          <p class="subhero-kicker">LIDA · WeChat Mini Program</p>
+          <h1>电镜颗粒分析，<br />装进口袋里</h1>
+          <p class="subhero-lead">
+            LIDA 把 SEM 颗粒分析做成微信小程序：上传电镜图像，云端云函数
+            <code style="color:var(--accent)">analyzeParticle</code> 基于分水岭分割实时给出粒径分布，
+            适合实验室现场快速测量与协作。
+          </p>
+          <div class="subhero-actions">
+            <a href="#experience" class="btn btn-primary">体验小程序</a>
+            <a href="../ai-particle-size-analyzer/" class="btn btn-ghost">用网页版工具 →</a>
+          </div>
+        </div>
+        <div>
+          <div class="phone-mock">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="scan"></div>
+            </div>
+            <div class="phone-caption">实时粒径反馈 · analyzeParticle</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="section-kicker">Capabilities</p>
+        <h2 class="section-title">核心能力</h2>
+        <p class="section-desc">面向真实电镜图像的轻量分析流水线。</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="ic">▦</div>
+          <h3>分水岭分割</h3>
+          <p>针对粘连颗粒采用分水岭算法分离，比简单阈值更能处理重叠与接触颗粒，提升计数可靠性。</p>
+        </div>
+        <div class="feature-card">
+          <div class="ic">⚡</div>
+          <h3>实时粒径反馈</h3>
+          <p>图像上传后由云端云函数处理，秒级返回等效直径、D10/D50/D90 与分布，边测边看。</p>
+        </div>
+        <div class="feature-card">
+          <div class="ic">📱</div>
+          <h3>微信小程序形态</h3>
+          <p>无需安装桌面软件，手机扫码即用；样品在电镜下即可现场测量，结果随微信会话流转。</p>
+        </div>
+        <div class="feature-card">
+          <div class="ic">☁️</div>
+          <h3>云端 analyzeParticle</h3>
+          <p>计算在微信云开发云函数中完成，前端只负责可视化与交互，便于在小程序内持续迭代算法。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="section-kicker">Workflow</p>
+        <h2 class="section-title">工作流程</h2>
+        <p class="section-desc">从电镜图像到粒径报告，四步完成。</p>
+      </div>
+      <div class="step-flow">
+        <div class="step">
+          <h4>上传图像</h4>
+          <p>在手机端选择或拍摄 SEM / 显微镜粉末照片，自动压缩后上传云函数。</p>
+        </div>
+        <div class="step">
+          <h4>分割预处理</h4>
+          <p>灰度化、阈值分离、形态学去噪，再由分水岭算法切分粘连颗粒。</p>
+        </div>
+        <div class="step">
+          <h4>粒径统计</h4>
+          <p>提取轮廓、按面积 / 圆度 / 边界过滤，计算等效圆直径与 D10/D50/D90。</p>
+        </div>
+        <div class="step">
+          <h4>实时反馈</h4>
+          <p>结果以分布图与明细返回小程序，可一键导出或转发给同事。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="section-kicker">Architecture</p>
+        <h2 class="section-title">技术架构</h2>
+      </div>
+      <div class="arch-grid">
+        <div class="arch-card">
+          <div class="big">🌉</div>
+          <h4>分水岭分割</h4>
+          <p>形态学标记控制的分水岭，解决颗粒粘连导致的重复计数。</p>
+        </div>
+        <div class="arch-card">
+          <div class="big">🔧</div>
+          <h4>微信云开发</h4>
+          <p>云函数 analyzeParticle 承载计算，免运维、按量伸缩。</p>
+        </div>
+        <div class="arch-card">
+          <div class="big">📊</div>
+          <h4>前端可视化</h4>
+          <p>小程序内 Canvas 绘制分布直方图与轮廓叠加，交互调参即时反馈。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-head">
+        <p class="section-kicker">Try it</p>
+        <h2 class="section-title">体验方式</h2>
+      </div>
+      <div class="qr-row">
+        <div class="qr-box" aria-hidden="true"></div>
+        <div class="qr-note">
+          <h3>扫码体验小程序</h3>
+          <p>
+            小程序码占位中。正式发布后，用微信扫一扫即可进入 LIDA，
+            上传一张电镜颗粒图，几秒内看到粒径分布。内部测试阶段也可联系我们获取体验入口。
+          </p>
+          <div class="subhero-actions">
+            <a href="../ai-particle-size-analyzer/" class="btn btn-ghost">先用网页版工具 →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="section-kicker">Related</p>
+        <h2 class="section-title">相关工具</h2>
+      </div>
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-icon" aria-hidden="true">◎</div>
+          <h3 class="product-title">AI 粒径分析（网页版）</h3>
+          <p class="product-desc">浏览器端 OpenCV.js 本地分割，原图不上传，输出 D10/D50/D90 与分布图。</p>
+          <a href="../ai-particle-size-analyzer/" class="product-link">打开工具 →</a>
+        </article>
+        <article class="product-card">
+          <div class="product-icon" aria-hidden="true">▣</div>
+          <h3 class="product-title">科研图表工作流</h3>
+          <p class="product-desc">微波介电陶瓷 P-V-L 化学键参数与介电性能的 SCI 出版级配图。</p>
+          <a href="../research-charts/" class="product-link">查看工作流 →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> LW. 保留所有权利。</p>
+      <p class="footer-domain"><a href="../" style="color:inherit;text-decoration:none">l-w.sryze.cc</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

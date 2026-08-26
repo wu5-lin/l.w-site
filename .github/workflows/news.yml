@@ -21,6 +21,8 @@ jobs:
           python-version: "3.11"
 
       - name: Fetch latest AI news
+        env:
+          XQ_TOKEN: ${{ secrets.XQ_TOKEN }}
         run: python fetch_news.py
 
       - name: Commit & push if changed

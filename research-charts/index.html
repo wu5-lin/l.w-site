@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>科研图表工作流 · LW</title>
+  <meta name="description" content="面向微波介电陶瓷体系（Cr/Ta 共掺杂）的 P-V-L 化学键参数与介电性能 SCI 出版级配图工作流。" />
+  <meta name="theme-color" content="#07070a" />
+  <link rel="icon" href="../favicon.svg" />
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600|noto-serif-sc:400,500,600" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .subhero { padding: calc(var(--nav-h) + 64px) 0 40px; }
+    .subhero-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 48px; align-items: center; }
+    .subhero-kicker { color: var(--accent); font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 14px; }
+    .subhero h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; font-weight: 600; margin-bottom: 18px; }
+    .subhero-lead { color: var(--text-dim); font-size: 1.05rem; max-width: 54ch; }
+    .subhero-actions { display: flex; gap: 14px; margin-top: 28px; flex-wrap: wrap; }
+    .formula { margin-top: 22px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 12px;
+      background: var(--bg-elevated); font-family: "Noto Serif SC", Georgia, serif; color: var(--text); font-size: 0.96rem; }
+    .formula b { color: var(--accent); }
+
+    .scope-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .scope-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 24px; }
+    .scope-card .ic { font-size: 1.4rem; color: var(--accent); margin-bottom: 10px; }
+    .scope-card h3 { font-size: 1.05rem; margin-bottom: 8px; }
+    .scope-card p { color: var(--text-dim); font-size: 0.9rem; }
+
+    .out-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .out-card { background: var(--bg-elevated); border: 1px solid var(--line); border-radius: 16px; padding: 24px;
+      display: flex; flex-direction: column; gap: 12px; }
+    .out-card h3 { font-size: 1.05rem; }
+    .out-card p { color: var(--text-dim); font-size: 0.9rem; }
+    .out-tag { align-self: flex-start; font-size: 0.72rem; color: var(--accent); border: 1px solid var(--line-strong);
+      border-radius: 999px; padding: 3px 10px; }
+
+    .chart-demo { background: #fff; border-radius: 12px; padding: 20px 18px 14px; margin-top: 8px; }
+    .chart-demo svg { width: 100%; height: auto; display: block; }
+
+    .spec-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 28px; max-width: 880px; }
+    .spec-item { display: flex; gap: 12px; align-items: baseline; border-bottom: 1px dashed var(--line); padding-bottom: 10px; }
+    .spec-item .k { color: var(--accent); font-weight: 600; min-width: 120px; }
+    .spec-item .v { color: var(--text-dim); font-size: 0.92rem; }
+
+    .step-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; counter-reset: step; }
+    .step { background: var(--bg-elevated); border: 1px solid var(--line); border-radius: 14px; padding: 22px; position: relative; }
+    .step::before { counter-increment: step; content: counter(step); position: absolute; top: -14px; left: 22px;
+      width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #050505; font-weight: 600; font-size: 0.9rem; }
+    .step h4 { margin: 10px 0 6px; font-size: 1rem; }
+    .step p { color: var(--text-dim); font-size: 0.88rem; }
+
+    @media (max-width: 880px) {
+      .subhero-grid, .scope-grid, .out-grid { grid-template-columns: 1fr; }
+      .spec-list { grid-template-columns: 1fr; }
+      .step-flow { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../" class="logo">
+        <span class="logo-mark">LW</span>
+        <span class="logo-text">智能实验工具</span>
+      </a>
+      <nav class="nav-links">
+        <a href="../#products">产品</a>
+        <a href="../#news">资讯</a>
+        <a href="../#contact" class="nav-cta">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section subhero">
+      <div class="section-inner subhero-grid">
+        <div>
+          <p class="subhero-kicker">Research Chart Workflow</p>
+          <h1>科研图表工作流</h1>
+          <p class="subhero-lead">
+            针对微波介电陶瓷等体系，把 P-V-L 化学键参数与介电性能数据，整理成
+            符合 SCI 期刊规范的出版级配图——字体、刻度、单栏宽度、分辨率全部就位。
+          </p>
+          <div class="formula">
+            体系示例：<b>Sm₂[Zr₁₋ₓ(Cr₀.₅Ta₀.₅)ₓ]₃[MoO₄]₉</b><br />
+            掺杂组分 x = 0.02 / 0.05 / 0.08 / 0.11 · 最佳烧结 800 °C
+          </div>
+          <div class="subhero-actions">
+            <a href="#output" class="btn btn-primary">看输出类型</a>
+            <a href="#spec" class="btn btn-ghost">SCI 规范 →</a>
+          </div>
+        </div>
+        <div>
+          <div class="out-card" style="background:transparent;border:none;padding:0">
+            <div class="chart-demo">
+              <svg viewBox="0 0 320 200" role="img" aria-label="分组柱状图示意">
+                <line x1="40" y1="170" x2="310" y2="170" stroke="#222" stroke-width="1.2"/>
+                <line x1="40" y1="20" x2="40" y2="170" stroke="#222" stroke-width="1.2"/>
+                <g font-family="Arial" font-size="9" fill="#222">
+                  <!-- group Sm-O -->
+                  <rect x="60" y="70" width="22" height="100" fill="#22d3ee"/>
+                  <rect x="86" y="92" width="22" height="78" fill="#818cf8"/>
+                  <!-- group Zr-O -->
+                  <rect x="130" y="58" width="22" height="112" fill="#22d3ee"/>
+                  <rect x="156" y="100" width="22" height="70" fill="#818cf8"/>
+                  <!-- group Mo-O -->
+                  <rect x="200" y="84" width="22" height="86" fill="#22d3ee"/>
+                  <rect x="226" y="110" width="22" height="60" fill="#818cf8"/>
+                  <text x="60" y="186" text-anchor="middle">Sm-O</text>
+                  <text x="130" y="186" text-anchor="middle">Zr-O</text>
+                  <text x="200" y="186" text-anchor="middle">Mo-O</text>
+                  <text x="40" y="100" text-anchor="middle" transform="rotate(-90 40 100)" fill="#444">fᵢ</text>
+                </g>
+              </svg>
+            </div>
+            <p style="color:var(--text-muted);font-size:0.8rem;text-align:center;margin-top:8px">
+              示意图：多化学键 fᵢ 分组柱状图（并列对比）
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="section-kicker">Scope</p>
+        <h2 class="section-title">适用数据</h2>
+        <p class="section-desc">围绕材料微观结构与宏观性能的化学键理论分析。</p>
+      </div>
+      <div class="scope-grid">
+        <div class="scope-card">
+          <div class="ic">🔗</div>
+          <h3>P-V-L 化学键参数</h3>
+          <p>Phillips–Van Vechten–Levine 理论下的键离子性 fᵢ、晶格能 U、键能 E、热膨胀系数 α，多化学键类型并列对比。</p>
+        </div>
+        <div class="scope-card">
+          <div class="ic">📡</div>
+          <h3>介电性能</h3>
+          <p>介电常数 εr、品质因数 Q×f、谐振频率温度系数 τf 随掺杂组分 x 与烧结温度的演变规律。</p>
+        </div>
+        <div class="scope-card">
+          <div class="ic">🧪</div>
+          <h3>实测优先</h3>
+          <p>图稿严格基于实测值与已计算结果，杜绝虚构误差棒与估算点，保证数据真实性。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="output" class="section">
+      <div class="section-head">
+        <p class="section-kicker">Output</p>
+        <h2 class="section-title">输出类型</h2>
+        <p class="section-desc">一套体系，多种出版级图稿。</p>
+      </div>
+      <div class="out-grid">
+        <div class="out-card">
+          <span class="out-tag">分组柱状图</span>
+          <h3>多化学键 fᵢ 对比</h3>
+          <p>Sm-O / Zr-O / Mo-O 等化学键的离子性并列展示，突出掺杂对键性的影响。</p>
+          <div class="chart-demo">
+            <svg viewBox="0 0 240 150" role="img" aria-label="柱状图">
+              <line x1="30" y1="125" x2="230" y2="125" stroke="#222" stroke-width="1"/>
+              <rect x="50" y="55" width="26" height="70" fill="#22d3ee"/>
+              <rect x="100" y="40" width="26" height="85" fill="#818cf8"/>
+              <rect x="150" y="70" width="26" height="55" fill="#22d3ee"/>
+              <rect x="200" y="48" width="26" height="77" fill="#818cf8"/>
+            </svg>
+          </div>
+        </div>
+        <div class="out-card">
+          <span class="out-tag">折线 / 散点</span>
+          <h3>介电性能演变</h3>
+          <p>εr、Q×f、τf 随组分 x 或温度变化的趋势线，标注最佳组分与烧结温度。</p>
+          <div class="chart-demo">
+            <svg viewBox="0 0 240 150" role="img" aria-label="折线图">
+              <line x1="30" y1="125" x2="230" y2="125" stroke="#222" stroke-width="1"/>
+              <line x1="30" y1="15" x2="30" y2="125" stroke="#222" stroke-width="1"/>
+              <polyline points="40,100 90,70 140,55 190,80 220,95" fill="none" stroke="#22d3ee" stroke-width="2"/>
+              <polyline points="40,60 90,50 140,40 190,45 220,58" fill="none" stroke="#818cf8" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+        <div class="out-card">
+          <span class="out-tag">出版级</span>
+          <h3>SCI 规范排版</h3>
+          <p>字体、内向刻度、单栏 86 mm 宽度、≥300 DPI，直接满足多数期刊投稿要求。</p>
+          <div class="chart-demo">
+            <svg viewBox="0 0 240 150" role="img" aria-label="规范刻度示意">
+              <line x1="30" y1="125" x2="230" y2="125" stroke="#222" stroke-width="1"/>
+              <line x1="30" y1="125" x2="30" y2="25" stroke="#222" stroke-width="1"/>
+              <g stroke="#222" stroke-width="1">
+                <line x1="30" y1="100" x2="35" y2="100"/>
+                <line x1="30" y1="70" x2="35" y2="70"/>
+                <line x1="30" y1="40" x2="35" y2="40"/>
+                <line x1="80" y1="125" x2="80" y2="120"/>
+                <line x1="130" y1="125" x2="130" y2="120"/>
+                <line x1="180" y1="125" x2="180" y2="120"/>
+              </g>
+              <text x="15" y="65" font-family="Arial" font-size="9" fill="#444" transform="rotate(-90 15 65)">inward ticks</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="spec" class="section">
+      <div class="section-head">
+        <p class="section-kicker">SCI Spec</p>
+        <h2 class="section-title">期刊格式规范</h2>
+        <p class="section-desc">作图前先对齐参数，避免返工。</p>
+      </div>
+      <div class="spec-list">
+        <div class="spec-item"><span class="k">字体</span><span class="v">Arial / Times New Roman，全图统一</span></div>
+        <div class="spec-item"><span class="k">刻度方向</span><span class="v">内向（inward）刻度，避免超出图框</span></div>
+        <div class="spec-item"><span class="k">单栏宽度</span><span class="v">86 mm（双栏论文单栏标准宽度）</span></div>
+        <div class="spec-item"><span class="k">分辨率</span><span class="v">≥ 300 DPI，导出 PDF / PNG</span></div>
+        <div class="spec-item"><span class="k">多键对比</span><span class="v">分组柱状图（并列），不堆叠</span></div>
+        <div class="spec-item"><span class="k">数据真实</span><span class="v">仅实测/已计算值，不虚构误差棒</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="section-kicker">Pipeline</p>
+        <h2 class="section-title">工作流</h2>
+        <p class="section-desc">从原始数据到投稿图稿的四步。</p>
+      </div>
+      <div class="step-flow">
+        <div class="step">
+          <h4>整理数据</h4>
+          <p>汇总实测介电性能与已算好的 P-V-L 参数，核对单位与组分标签。</p>
+        </div>
+        <div class="step">
+          <h4>参数计算</h4>
+          <p>补全化学键参数（fᵢ、U、E、α），确认多键类型并列口径一致。</p>
+        </div>
+        <div class="step">
+          <h4>绘图</h4>
+          <p>用 matplotlib / pvl-chart 工作流生成图稿，套用 SCI 字体与刻度规范。</p>
+        </div>
+        <div class="step">
+          <h4>出版输出</h4>
+          <p>导出 300 DPI 的 PDF/PNG，按期刊模板微调后可直接投稿。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="section-kicker">Related</p>
+        <h2 class="section-title">相关工具</h2>
+      </div>
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-icon" aria-hidden="true">◎</div>
+          <h3 class="product-title">AI 粒径分析（网页版）</h3>
+          <p class="product-desc">浏览器端 OpenCV.js 本地分割，输出 D10/D50/D90 与分布图。</p>
+          <a href="../ai-particle-size-analyzer/" class="product-link">打开工具 →</a>
+        </article>
+        <article class="product-card">
+          <div class="product-icon" aria-hidden="true">◉</div>
+          <h3 class="product-title">LIDA · 电镜颗粒分析</h3>
+          <p class="product-desc">微信小程序形态的 SEM 实时粒径反馈，适合现场快速测量。</p>
+          <a href="../lida-miniprogram/" class="product-link">了解小程序 →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> LW. 保留所有权利。</p>
+      <p class="footer-domain"><a href="../" style="color:inherit;text-decoration:none">l-w.sryze.cc</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
