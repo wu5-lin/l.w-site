@@ -1,0 +1,7 @@
+# 项目内部数据（记忆/配置）不纳入版本库
+.workbuddy/
+
+# 系统/编辑器文件
+.DS_Store
+Thumbs.db
+*.swp

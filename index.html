@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LW · 智能实验工具</title>
+  <meta name="description" content="LW 聚焦材料研究与实验自动化，提供 AI 粒径分析、电镜图像分割与科研作图工具。" />
+  <meta name="theme-color" content="#07070a" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2307070a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='14' font-family='Georgia,serif' fill='%2322d3ee'%3ELW%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600|noto-serif-sc:400,500,600" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#home">跳到正文</a>
+  <div class="ambient" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">LW</span>
+        <span class="logo-text">智能实验工具</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#products">产品</a>
+        <a href="#about">关于</a>
+        <a href="#news">资讯</a>
+        <a href="#contact" class="nav-cta">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <p class="hero-preamble reveal">l-w.sryze.cc</p>
+      <h1 class="hero-title reveal">
+        把实验里的重复工作<br />
+        <span class="gradient-text">变成可复用的工具</span>
+      </h1>
+      <p class="hero-lead reveal">
+        聚焦材料研究与显微图像分析，用浏览器端 AI 和自动化脚本，让粒径统计、电镜分割、数据作图更快、更稳定、更易协作。
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#products" class="btn btn-primary">浏览产品</a>
+        <a href="#contact" class="btn btn-ghost">联系我们</a>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="section-head reveal">
+        <p class="section-kicker">Products</p>
+        <h2 class="section-title">产品</h2>
+        <p class="section-desc">为实验室和研发团队打造的轻量工具。</p>
+      </div>
+      <div class="products-grid">
+        <article class="product-card reveal">
+          <div class="product-icon" aria-hidden="true">◎</div>
+          <h3 class="product-title">AI 粒径分析</h3>
+          <p class="product-desc">浏览器端直接分析 SEM / 显微镜颗粒图像。OpenCV.js 本地分割，输出等效直径、D10 / D50 / D90 与粒径分布图，原图不上传。</p>
+          <a href="ai-particle-size-analyzer/" class="product-link">打开工具 →</a>
+        </article>
+        <article class="product-card reveal">
+          <div class="product-icon" aria-hidden="true">◉</div>
+          <h3 class="product-title">LIDA · 电镜颗粒分析</h3>
+          <p class="product-desc">微信小程序形态的云函数 analyzeParticle，基于分水岭分割实现 SEM 图像的实时粒径反馈，适合现场快速测量。</p>
+          <a href="#contact" class="product-link">了解更多 →</a>
+        </article>
+        <article class="product-card reveal">
+          <div class="product-icon" aria-hidden="true">▣</div>
+          <h3 class="product-title">科研图表工作流</h3>
+          <p class="product-desc">针对微波介电陶瓷等体系的 P-V-L 化学键参数、介电性能数据，输出符合 SCI 期刊规范的出版级配图。</p>
+          <a href="#contact" class="product-link">相关笔记 →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head reveal">
+        <p class="section-kicker">About</p>
+        <h2 class="section-title">关于 LW</h2>
+      </div>
+      <div class="about-grid">
+        <article class="about-card reveal">
+          <h3 class="about-card-title">材料 + 代码</h3>
+          <p class="about-card-text">从实验设计到数据可视化，把材料科学问题拆解成可自动化的流程，减少重复劳动。</p>
+        </article>
+        <article class="about-card reveal">
+          <h3 class="about-card-title">本地优先</h3>
+          <p class="about-card-text">图像分析优先在浏览器或本地完成，原始数据不离开设备，兼顾效率与隐私。</p>
+        </article>
+        <article class="about-card reveal">
+          <h3 class="about-card-title">持续迭代</h3>
+          <p class="about-card-text">工具从真实实验需求中长出来，根据使用反馈快速调整，避免过度设计。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="news" class="section">
+      <div class="section-head reveal">
+        <p class="section-kicker">Insights</p>
+        <h2 class="section-title">前沿资讯</h2>
+        <p class="section-desc">每日自动整理的高质量科技与财经动态 · <span id="news-updated">加载中…</span></p>
+      </div>
+      <div class="news-list" id="news">
+        <article class="news-item">
+          <div class="news-meta">
+            <time class="news-date">—</time>
+            <span class="tag">前沿</span>
+          </div>
+          <h3 class="news-title">AI 资讯正在加载…</h3>
+          <p class="news-sum">若长时间停留在此，说明 news.json 未能加载。</p>
+        </article>
+      </div>
+      <button class="news-more" id="newsMore" hidden>显示全部</button>
+      <p class="news-foot">来源包括 钛媒体、少数派、极客公园、量子位、爱范儿、IT之家、新智元、虎嗅、MIT、The Verge、Ars Technica、OpenAI、arXiv、Hacker News、雪球（需配置）等，由脚本每日抓取。</p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="section-head reveal">
+        <p class="section-kicker">Contact</p>
+        <h2 class="section-title">联系</h2>
+      </div>
+      <div class="contact-wrap reveal">
+        <p class="contact-lead">有合作、定制需求或问题，欢迎来信。</p>
+        <div class="contact-links">
+          <a href="mailto:hello@l-w.sryze.cc" class="contact-link">hello@l-w.sryze.cc</a>
+          <a href="#" class="contact-link">GitHub</a>
+          <a href="#" class="contact-link">微信</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> LW. 保留所有权利。</p>
+      <p class="footer-domain">l-w.sryze.cc</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
