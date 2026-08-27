@@ -205,22 +205,24 @@ function readParams() {
 /* ---------- 分水岭分离重叠/团聚颗粒 (提升准确度) ----------
  * 用距离变换找种子, 再 watershed 把相互接触的颗粒切开, 返回分离后的二值掩膜。 */
 async function watershedSplit(gray, thresh, src) {
-  // 距离变换: 每个前景像素到最近背景的距离
+  // 距离变换: 每个前景像素到最近背景的距离 (输出 32F)
   const dist = new cv.Mat();
   cv.distanceTransform(thresh, dist, cv.DIST_L2, 3);
   const mm = cv.minMaxLoc(dist);
   const maxD = (mm.maxVal || 1);
   const sureFg = new cv.Mat();
-  cv.threshold(dist, sureFg, maxD * 0.4, 255, cv.THRESH_BINARY); // 种子 = 距离较大的核心
+  cv.threshold(dist, sureFg, maxD * 0.4, 255, cv.THRESH_BINARY); // 仍为 32F
+  const sureFg8 = new cv.Mat();
+  sureFg.convertTo(sureFg8, cv.CV_8U);                            // connectedComponents 需 8U
 
   // 标记前景种子 (1..K)
   const markers = new cv.Mat(thresh.rows, thresh.cols, cv.CV_32SC1, new cv.Scalar(0));
-  const nSeeds = cv.connectedComponents(sureFg, markers);
+  const nSeeds = cv.connectedComponents(sureFg8, markers);
 
   // 原图背景区域标记为单独标签, 防止分水岭把背景淹没成颗粒
   const bgLabel = nSeeds + 1;
   const bgMask = new cv.Mat();
-  cv.threshold(thresh, bgMask, 1, 255, cv.THRESH_BINARY_INV); // 原背景=255
+  cv.threshold(thresh, bgMask, 1, 255, cv.THRESH_BINARY_INV); // 原背景=255 (8U)
   markers.setTo(new cv.Scalar(bgLabel), bgMask);
 
   // watershed 需要 3 通道
@@ -228,17 +230,12 @@ async function watershedSplit(gray, thresh, src) {
   cv.cvtColor(src, src3, cv.COLOR_RGBA2BGR);
   cv.watershed(src3, markers);
 
-  // 仅保留颗粒区域(标签 1..K), 排除背景(bgLabel)与边界(-1)
-  const mask1 = new cv.Mat();
-  cv.threshold(markers, mask1, 0, 255, cv.THRESH_BINARY);             // >0
-  const mask2 = new cv.Mat();
-  cv.threshold(markers, mask2, bgLabel - 1, 255, cv.THRESH_BINARY_INV); // <=K
+  // 仅保留颗粒区域(标签 1..K), 排除背景(bgLabel)与边界(-1); inRange 直接输出 8U
   const regionMask = new cv.Mat();
-  cv.bitwise_and(mask1, mask2, regionMask);
+  cv.inRange(markers, new cv.Scalar(1), new cv.Scalar(bgLabel - 1), regionMask);
 
   dist.delete();
-  sureFg.delete(); bgMask.delete(); src3.delete();
-  mask1.delete(); mask2.delete();
+  sureFg.delete(); sureFg8.delete(); bgMask.delete(); src3.delete();
   return { markers, regionMask, bgLabel };
 }
 
