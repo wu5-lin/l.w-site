@@ -208,9 +208,8 @@ async function watershedSplit(gray, thresh, src) {
   // 距离变换: 每个前景像素到最近背景的距离
   const dist = new cv.Mat();
   cv.distanceTransform(thresh, dist, cv.DIST_L2, 3);
-  const minVal = new cv.Mat(), maxVal = new cv.Mat();
-  cv.minMaxLoc(dist, minVal, maxVal);
-  const maxD = (maxVal.doubleAt(0, 0) || 1);
+  const mm = cv.minMaxLoc(dist);
+  const maxD = (mm.maxVal || 1);
   const sureFg = new cv.Mat();
   cv.threshold(dist, sureFg, maxD * 0.4, 255, cv.THRESH_BINARY); // 种子 = 距离较大的核心
 
@@ -237,7 +236,7 @@ async function watershedSplit(gray, thresh, src) {
   const regionMask = new cv.Mat();
   cv.bitwise_and(mask1, mask2, regionMask);
 
-  dist.delete(); minVal.delete(); maxVal.delete();
+  dist.delete();
   sureFg.delete(); bgMask.delete(); src3.delete();
   mask1.delete(); mask2.delete();
   return { markers, regionMask, bgLabel };
