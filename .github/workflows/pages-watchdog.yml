@@ -1,0 +1,33 @@
+name: pages-watchdog
+
+# 自动检测并修复 GitHub Pages 部署失败（此前遇到过 deploy 步骤瞬时 500 导致线上不刷新）。
+# 每 30 分钟检查一次最近的 pages-build-deployment 运行；若结论为 failure 则自动重跑。
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch: {}
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Re-run failed Pages deployment
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          data=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow pages-build-deployment --limit 1 --json databaseId,conclusion,status,createdAt)
+          echo "latest Pages run: $data"
+          id=$(echo "$data" | python3 -c "import sys,json;print(json.load(sys.stdin)[0]['databaseId'])")
+          concl=$(echo "$data" | python3 -c "import sys,json;print(json.load(sys.stdin)[0]['conclusion'])")
+          status=$(echo "$data" | python3 -c "import sys,json;print(json.load(sys.stdin)[0]['status'])")
+          if [ "$concl" = "failure" ]; then
+            echo "Pages 部署失败 (run #$id)，自动重跑…"
+            gh run rerun "$id" --repo "$GITHUB_REPOSITORY"
+          else
+            echo "Pages 部署状态正常 (status=$status, conclusion=$concl)，跳过。"
+          fi
