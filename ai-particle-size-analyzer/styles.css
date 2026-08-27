@@ -86,6 +86,8 @@ select, input[type="number"] {
 .inline input { flex: 1; }
 .radio-row { display: flex; gap: 16px; margin-top: 4px; font-size: 13px; color: var(--text); }
 .radio-row label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+.field.check { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--text); line-height: 1.5; }
+.field.check input { margin-top: 3px; accent-color: var(--accent); flex: none; }
 
 input[type="range"] { width: 100%; accent-color: var(--accent); }
 

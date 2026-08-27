@@ -82,6 +82,19 @@
             <label><input type="radio" name="polar" value="dark" /> 颗粒暗</label>
           </div>
         </label>
+
+        <label class="field">
+          <span>轮廓着色</span>
+          <select id="colorMode">
+            <option value="gradient" selected>按粒径梯度（青→紫）</option>
+            <option value="multi">多色区分（每颗不同色）</option>
+          </select>
+        </label>
+
+        <label class="field check">
+          <input type="checkbox" id="ws" checked />
+          <span>分水岭分离重叠颗粒（拆分团聚粉末，提升识别准确度）</span>
+        </label>
       </section>
 
       <section class="block">
@@ -192,7 +205,9 @@
     <h2>常见问题</h2>
     <details><summary>页面打开后一直显示"加载 OpenCV"？</summary><p>OpenCV.js 约 13MB（wasm 已内联），首次加载需几秒，请耐心等待；若长时间不动，可强制刷新（Ctrl+F5）清除缓存后重试。</p></details>
     <details><summary>结果颗粒数偏多/偏少？</summary><p>调整"最小颗粒面积""最小圆度"，或切换"颗粒亮/暗"；显微镜图像对比度低时可改用"手动阈值"微调。</p></details>
-    <details><summary>直径单位怎么选？</summary><p>用"标尺校准"：量出图中已知长度对应的像素数并填入实际长度与单位（nm/µm/mm）。不填则按像素显示。</p></details>
+    <details><summary>直径单位怎么选？</summary><p>用"标尺校准"：量出图中已知长度对应的像素数并填入实际长度与单位（nm/µm/mm）。不填则按像素显示。修改标定值后，已出的统计结果与直方图会<strong>即时按新单位重算</strong>，无需重新分析。</p></details>
+    <details><summary>轮廓为什么是五颜六色的？能否改？</summary><p>在"轮廓着色"里可切换：<b>按粒径梯度</b>（青→紫，一眼看出大小分布，默认）或 <b>多色区分</b>（每颗颗粒一个独立颜色，便于核对单颗）。两者都不影响统计数值。</p></details>
+    <details><summary>什么是"分水岭分离"？</summary><p>粉末 SEM 中颗粒常相互接触、被误判成一整块。开启"分水岭分离"后，工具用距离变换+分水岭算法把<strong>重叠/团聚的颗粒切开</strong>再分别测量，颗粒数与粒径分布更准确。细长或严重堆叠的颗粒可能仍被切分，此时可关闭该选项。</p></details>
   </section>
 
   <footer class="foot">

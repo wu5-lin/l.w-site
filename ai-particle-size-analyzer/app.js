@@ -163,6 +163,12 @@ function hslToScalar(h, s, l) {
   return new cv.Scalar((b + m) * 255, (g + m) * 255, (r + m) * 255);
 }
 
+/* 多色区分: 黄金角色相, 同一图中每颗颗粒颜色各不相同 (五彩标注) */
+function colorForIndex(i) {
+  const hue = (i * 137.508) % 360;
+  return hslToScalar(hue, 0.72, 0.62);
+}
+
 /* ---------- 对数正态拟合 (微波介电陶瓷粒径分布标准) ---------- */
 function lognormalFit(values) {
   const ln = values.map(Math.log);
@@ -191,7 +197,50 @@ function readParams() {
   const calLen = +$("calLen").value;
   const calUnit = $("calUnit").value;
   const unitPerPx = calUnit === "px" ? 1 : (calPx > 0 ? calLen / calPx : 1);
-  return { mode, thr, block, kern, minArea, minCirc, polar, calPx, calLen, calUnit, unitPerPx, unitLabel: calUnit };
+  const ws = $("ws") ? $("ws").checked : false;
+  const colorMode = $("colorMode") ? $("colorMode").value : "gradient";
+  return { mode, thr, block, kern, minArea, minCirc, polar, calPx, calLen, calUnit, unitPerPx, unitLabel: calUnit, ws, colorMode };
+}
+
+/* ---------- 分水岭分离重叠/团聚颗粒 (提升准确度) ----------
+ * 用距离变换找种子, 再 watershed 把相互接触的颗粒切开, 返回分离后的二值掩膜。 */
+async function watershedSplit(gray, thresh, src) {
+  // 距离变换: 每个前景像素到最近背景的距离
+  const dist = new cv.Mat();
+  cv.distanceTransform(thresh, dist, cv.DIST_L2, 3);
+  const minVal = new cv.Mat(), maxVal = new cv.Mat();
+  cv.minMaxLoc(dist, minVal, maxVal);
+  const maxD = (maxVal.doubleAt(0, 0) || 1);
+  const sureFg = new cv.Mat();
+  cv.threshold(dist, sureFg, maxD * 0.4, 255, cv.THRESH_BINARY); // 种子 = 距离较大的核心
+
+  // 标记前景种子 (1..K)
+  const markers = new cv.Mat(thresh.rows, thresh.cols, cv.CV_32SC1, new cv.Scalar(0));
+  const nSeeds = cv.connectedComponents(sureFg, markers);
+
+  // 原图背景区域标记为单独标签, 防止分水岭把背景淹没成颗粒
+  const bgLabel = nSeeds + 1;
+  const bgMask = new cv.Mat();
+  cv.threshold(thresh, bgMask, 1, 255, cv.THRESH_BINARY_INV); // 原背景=255
+  markers.setTo(new cv.Scalar(bgLabel), bgMask);
+
+  // watershed 需要 3 通道
+  const src3 = new cv.Mat();
+  cv.cvtColor(src, src3, cv.COLOR_RGBA2BGR);
+  cv.watershed(src3, markers);
+
+  // 仅保留颗粒区域(标签 1..K), 排除背景(bgLabel)与边界(-1)
+  const mask1 = new cv.Mat();
+  cv.threshold(markers, mask1, 0, 255, cv.THRESH_BINARY);             // >0
+  const mask2 = new cv.Mat();
+  cv.threshold(markers, mask2, bgLabel - 1, 255, cv.THRESH_BINARY_INV); // <=K
+  const regionMask = new cv.Mat();
+  cv.bitwise_and(mask1, mask2, regionMask);
+
+  dist.delete(); minVal.delete(); maxVal.delete();
+  sureFg.delete(); bgMask.delete(); src3.delete();
+  mask1.delete(); mask2.delete();
+  return { markers, regionMask, bgLabel };
 }
 
 /* ---------- 分割 + 提取轮廓 (供 分析 / 实时预览 复用) ---------- */
@@ -215,13 +264,32 @@ async function segment(p) {
     cv.morphologyEx(tmp, thresh, cv.MORPH_CLOSE, kernel);
     tmp.delete();
   }
+
+  // 是否用分水岭拆分重叠颗粒
+  let markers = null;
+  let regionMask;
+  if (p.ws) {
+    const wsRes = await watershedSplit(gray, thresh, src);
+    // 若没有有效种子(颗粒过小), 退回直接阈值掩膜, 避免漏检
+    if (wsRes && wsRes.bgLabel > 1) {
+      markers = wsRes.markers;
+      regionMask = wsRes.regionMask;
+    } else {
+      if (wsRes) { wsRes.markers.delete(); wsRes.regionMask.delete(); }
+      regionMask = thresh;
+    }
+  } else {
+    regionMask = thresh;
+  }
+
   const contours = new cv.MatVector();
   const hierarchy = new cv.Mat();
-  cv.findContours(thresh, contours, hierarchy, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE);
+  cv.findContours(regionMask, contours, hierarchy, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE);
   const W = srcCanvas.width, H = srcCanvas.height;
   const keptIdx = [];
   const diametersPx = [];
   const rows = [];
+  const labels = [];
   let dMin = Infinity, dMax = 0;
   for (let i = 0; i < contours.size(); i++) {
     const c = contours.get(i);
@@ -236,22 +304,64 @@ async function segment(p) {
     const mom = cv.moments(c);
     const cx = mom.m00 ? mom.m10 / mom.m00 : r.x + r.width / 2;
     const cy = mom.m00 ? mom.m01 / mom.m00 : r.y + r.height / 2;
+    let lab = keptIdx.length + 1;
+    if (markers) {
+      const v = markers.intAt(Math.round(cy), Math.round(cx));
+      if (v > 0) lab = v;
+    }
     diametersPx.push(dPx);
     rows.push({ dPx, areaPx: area, circ, cx: Math.round(cx), cy: Math.round(cy) });
+    labels.push(lab);
     keptIdx.push(i);
     if (dPx < dMin) dMin = dPx;
     if (dPx > dMax) dMax = dPx;
   }
-  return { src, gray, thresh, kernel, contours, hierarchy, keptIdx, diametersPx, rows, dMin, dMax, W, H };
+  return { src, gray, thresh, kernel, contours, hierarchy, keptIdx, diametersPx, rows, labels, dMin, dMax, W, H };
 }
 
-/* ---------- 按粒径排名在 dst 上着色轮廓 ---------- */
-function drawContoursColored(dst, contours, keptIdx, diametersPx, dMin, dMax) {
+/* ---------- 按模式在 dst 上着色轮廓 ---------- */
+function drawContoursColored(dst, contours, keptIdx, diametersPx, dMin, dMax, colorMode, labels) {
   const span = (dMax - dMin) || 1;
   for (let j = 0; j < keptIdx.length; j++) {
-    const t = (diametersPx[j] - dMin) / span;
-    cv.drawContours(dst, contours, keptIdx[j], colorForRank(t), 2);
+    let col;
+    if (colorMode === "multi") {
+      col = colorForIndex(labels ? labels[j] : (j + 1));
+    } else {
+      const t = (diametersPx[j] - dMin) / span;
+      col = colorForRank(t);
+    }
+    cv.drawContours(dst, contours, keptIdx[j], col, 2);
   }
+}
+
+/* ---------- 统计指标计算 (纯函数, 供分析与实时重算复用) ---------- */
+function computeStats(diameters) {
+  const n = diameters.length;
+  if (n === 0) return null;
+  const sorted = diameters.slice().sort((a, b) => a - b);
+  const mean = diameters.reduce((s, v) => s + v, 0) / n;
+  const d10 = percentile(sorted, 0.1);
+  const d30 = percentile(sorted, 0.3);
+  const d50 = percentile(sorted, 0.5);
+  const d60 = percentile(sorted, 0.6);
+  const d90 = percentile(sorted, 0.9);
+  const cu = d10 > 0 ? d60 / d10 : 0;
+  const cc = (d10 > 0 && d60 > 0) ? (d30 * d30) / (d10 * d60) : 0;
+  const span = d50 > 0 ? (d90 - d10) / d50 : 0;
+  return { n, mean, median: d50, d10, d30, d50, d60, d90, cu, cc, span };
+}
+function renderStats(stats, unit) {
+  const fmt = (v) => (v >= 100 ? v.toFixed(0) : v.toFixed(2));
+  $("sCount").textContent = stats.n;
+  $("sMean").textContent = `${fmt(stats.mean)} ${unit}`;
+  $("sMedian").textContent = `${fmt(stats.median)} ${unit}`;
+  $("sD10").textContent = `${fmt(stats.d10)} ${unit}`;
+  $("sD50").textContent = `${fmt(stats.d50)} ${unit}`;
+  $("sD90").textContent = `${fmt(stats.d90)} ${unit}`;
+  $("sCu").textContent = stats.cu ? stats.cu.toFixed(2) : "–";
+  $("sCc").textContent = stats.cc ? stats.cc.toFixed(2) : "–";
+  $("sSpan").textContent = stats.span ? stats.span.toFixed(2) : "–";
+  $("stats").hidden = false;
 }
 
 /* ---------- 主分析 ---------- */
@@ -280,13 +390,10 @@ async function analyze() {
     }
 
     dst = s.src.clone();
-    drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax);
+    drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax, p.colorMode, s.labels);
     cv.imshow(dstCanvas, dst);
 
-    // 按直径排序计算分位数
-    const sorted = s.diametersPx.slice().sort((a, b) => a - b);
-    const n = sorted.length;
-    const diameters = sorted.map((d) => d * p.unitPerPx);
+    const diameters = s.diametersPx.map((d) => d * p.unitPerPx);
     const rowsUnit = s.rows.map((row) => ({
       d: row.dPx * p.unitPerPx,
       area: row.areaPx * p.unitPerPx * p.unitPerPx,
@@ -296,39 +403,28 @@ async function analyze() {
     }));
 
     // 统计指标
-    const mean = diameters.reduce((sum, v) => sum + v, 0) / n;
-    const median = percentile(diameters, 0.5);
-    const d10 = percentile(diameters, 0.1);
-    const d30 = percentile(diameters, 0.3);
-    const d50 = percentile(diameters, 0.5);
-    const d60 = percentile(diameters, 0.6);
-    const d90 = percentile(diameters, 0.9);
-    const cu = d10 > 0 ? d60 / d10 : 0;
-    const cc = (d10 > 0 && d60 > 0) ? (d30 * d30) / (d10 * d60) : 0;
-    const span = d50 > 0 ? (d90 - d10) / d50 : 0;
-
-    const fmt = (v) => (v >= 100 ? v.toFixed(0) : v.toFixed(2));
-    $("sCount").textContent = n;
-    $("sMean").textContent = `${fmt(mean)} ${p.unitLabel}`;
-    $("sMedian").textContent = `${fmt(median)} ${p.unitLabel}`;
-    $("sD10").textContent = `${fmt(d10)} ${p.unitLabel}`;
-    $("sD50").textContent = `${fmt(d50)} ${p.unitLabel}`;
-    $("sD90").textContent = `${fmt(d90)} ${p.unitLabel}`;
-    $("sCu").textContent = cu ? cu.toFixed(2) : "–";
-    $("sCc").textContent = cc ? cc.toFixed(2) : "–";
-    $("sSpan").textContent = span ? span.toFixed(2) : "–";
-    $("stats").hidden = false;
+    const stats = computeStats(diameters);
+    if (!stats) {
+      status.style.color = "var(--bad)";
+      status.textContent = "未检测到颗粒，请调低最小面积/圆度，或切换颗粒明暗。";
+      return;
+    }
+    renderStats(stats, p.unitLabel);
 
     const fit = lognormalFit(diameters);
-    lastResults = { diameters, unit: p.unitLabel, rows: rowsUnit, stats: { n, mean, median, d10, d30, d50, d60, d90, cu, cc, span }, fit };
+    lastResults = {
+      px: s.diametersPx.slice(),
+      rowsPx: s.rows.map((r) => ({ ...r })),
+      diameters, unit: p.unitLabel, rows: rowsUnit, stats, fit,
+    };
 
     $("chartBlock").hidden = false;
-    renderHistogram($("hist"), { values: diameters, unit: p.unitLabel, marks: { d10, d50, d90 }, fit });
+    renderHistogram($("hist"), { values: diameters, unit: p.unitLabel, marks: { d10: stats.d10, d50: stats.d50, d90: stats.d90 }, fit });
     renderHistogramFitInfo(fit, p.unitLabel);
     renderTable(rowsUnit, p.unitLabel);
 
     status.style.color = "var(--good)";
-    status.textContent = `分析完成：共 ${n} 个颗粒（已排除边界接触颗粒）`;
+    status.textContent = `分析完成：共 ${stats.n} 个颗粒（已排除边界接触颗粒）`;
   } catch (e) {
     status.style.color = "var(--bad)";
     status.textContent = "分析出错：" + (e && e.message ? e.message : e);
@@ -339,6 +435,8 @@ async function analyze() {
       try { s.gray.delete(); } catch (_) {}
       try { s.thresh.delete(); } catch (_) {}
       try { if (s.kernel) s.kernel.delete(); } catch (_) {}
+      try { if (s.regionMask && s.regionMask !== s.thresh) s.regionMask.delete(); } catch (_) {}
+      try { if (s.markers) s.markers.delete(); } catch (_) {}
       try { for (const idx of s.keptIdx) { try { s.contours.get(idx).delete(); } catch (_) {} } } catch (_) {}
       try { s.contours.delete(); } catch (_) {}
       try { s.hierarchy.delete(); } catch (_) {}
@@ -580,7 +678,7 @@ async function runPreview() {
     s = await segment(p);
     if (s.diametersPx.length > 0) {
       dst = s.src.clone();
-      drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax);
+      drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax, p.colorMode, s.labels);
       cv.imshow(dstCanvas, dst);
       $("previewBadge").textContent = `预览 ${s.diametersPx.length} 颗`;
       $("previewBadge").hidden = false;
@@ -596,6 +694,8 @@ async function runPreview() {
       try { s.gray.delete(); } catch (_) {}
       try { s.thresh.delete(); } catch (_) {}
       try { if (s.kernel) s.kernel.delete(); } catch (_) {}
+      try { if (s.regionMask && s.regionMask !== s.thresh) s.regionMask.delete(); } catch (_) {}
+      try { if (s.markers) s.markers.delete(); } catch (_) {}
       try { for (const idx of s.keptIdx) { try { s.contours.get(idx).delete(); } catch (_) {} } } catch (_) {}
       try { s.contours.delete(); } catch (_) {}
       try { s.hierarchy.delete(); } catch (_) {}
@@ -641,7 +741,13 @@ function drawScaleOverlay() {
   ctx.font = `${Math.max(11, ov.width / 38)}px Arial`;
   ctx.textAlign = "center";
   ctx.textBaseline = "bottom";
-  ctx.fillText(`${len.toFixed(0)} px`, mx, my - tk - 2);
+  const calPx = +$("calpx").value, calLen = +$("calLen").value;
+  let txt = `${len.toFixed(0)} px`;
+  if (calPx > 0 && calLen > 0) {
+    const real = (calLen * len) / calPx;
+    txt = `${real.toFixed(2)} ${$("calUnit").value}  (${len.toFixed(0)} px)`;
+  }
+  ctx.fillText(txt, mx, my - tk - 2);
 }
 function ovPos(e) {
   const ov = $("srcOverlay");
@@ -759,11 +865,13 @@ function bindUI() {
   document.querySelectorAll('input[name="polar"]').forEach((r) =>
     r.addEventListener("change", schedulePreview)
   );
+  $("ws").addEventListener("change", schedulePreview);
+  $("colorMode").addEventListener("change", schedulePreview);
 
   // 标尺校准
-  $("calpx").addEventListener("input", () => { $("calPxVal").textContent = $("calpx").value; updateScaleInfo(); });
-  $("calLen").addEventListener("input", updateScaleInfo);
-  $("calUnit").addEventListener("change", updateScaleInfo);
+  $("calpx").addEventListener("input", () => { $("calPxVal").textContent = $("calpx").value; updateScaleInfo(); drawScaleOverlay(); applyCalibration(); });
+  $("calLen").addEventListener("input", () => { updateScaleInfo(); drawScaleOverlay(); applyCalibration(); });
+  $("calUnit").addEventListener("change", () => { updateScaleInfo(); drawScaleOverlay(); applyCalibration(); });
 
   bindScale();
 }
@@ -775,7 +883,31 @@ function updateScaleInfo() {
   if (calPx > 0 && calLen > 0) {
     const perPx = calLen / calPx;
     $("scaleInfo").textContent = `1 px ≈ ${perPx.toFixed(4)} ${unit}（或 1 ${unit} ≈ ${(calPx / calLen).toFixed(2)} px）`;
+  } else {
+    $("scaleInfo").textContent = "请填写对应实际长度与单位以完成标定。";
   }
+}
+
+/* ---------- 校准变更后实时重算结果 (无需重新"分析") ---------- */
+function applyCalibration() {
+  if (!lastResults || !lastResults.px || lastResults.px.length === 0) return;
+  const p = readParams();
+  const diameters = lastResults.px.map((d) => d * p.unitPerPx);
+  const rowsUnit = lastResults.rowsPx.map((r) => ({
+    d: r.dPx * p.unitPerPx,
+    area: r.areaPx * p.unitPerPx * p.unitPerPx,
+    circ: r.circ, cx: r.cx, cy: r.cy,
+  }));
+  const stats = computeStats(diameters);
+  if (!stats) return;
+  renderStats(stats, p.unitLabel);
+  const fit = lognormalFit(diameters);
+  lastResults = { ...lastResults, diameters, unit: p.unitLabel, rows: rowsUnit, stats, fit };
+  renderHistogram($("hist"), { values: diameters, unit: p.unitLabel, marks: { d10: stats.d10, d50: stats.d50, d90: stats.d90 }, fit });
+  renderHistogramFitInfo(fit, p.unitLabel);
+  renderTable(rowsUnit, p.unitLabel);
+  $("chartBlock").hidden = false;
+  $("tableBlock").hidden = false;
 }
 
 /* ---------- 启动 ---------- */
