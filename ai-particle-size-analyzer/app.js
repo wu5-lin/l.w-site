@@ -437,7 +437,6 @@ async function analyze() {
     status.style.color = "var(--bad)";
     const msg = (e && e.message) ? e.message : String(e);
     status.textContent = "分析出错：" + msg;
-    console.error("ANALYZE_ERR", e, e && e.stack ? e.stack : "");
   } finally {
     if (s) {
       try { if (dst) dst.delete(); } catch (_) {}
@@ -697,7 +696,6 @@ async function runPreview() {
     }
   } catch (e) {
     // 预览失败不影响主流程
-    console.error("PREVIEW_ERR", e && e.message ? e.message : String(e));
   } finally {
     if (s) {
       try { if (dst) dst.delete(); } catch (_) {}
