@@ -891,9 +891,9 @@ function updateScaleInfo() {
   const unit = $("calUnit").value;
   if (calPx > 0 && calLen > 0) {
     const perPx = calLen / calPx;
-    $("scaleInfo").textContent = `1 px ≈ ${perPx.toFixed(4)} ${unit}（或 1 ${unit} ≈ ${(calPx / calLen).toFixed(2)} px）`;
+    $("scaleInfo").textContent = `✅ 已标定：1 px ≈ ${perPx.toFixed(4)} ${unit}（或 1 ${unit} ≈ ${(calPx / calLen).toFixed(2)} px），可进行分割调节与正式分析。`;
   } else {
-    $("scaleInfo").textContent = "请填写对应实际长度与单位以完成标定。";
+    $("scaleInfo").textContent = "⚠️ 请先标出已知长度并输入对应实际长度 / 单位，再进行分析。";
   }
 }
 
