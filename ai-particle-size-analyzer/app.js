@@ -12,16 +12,22 @@ let dstCanvas = $("dst");
 let imgLoaded = false;
 let lastResults = null; // { diameters:[], unit, rows:[] }
 
-/* ---------- 等待 OpenCV.js wasm 就绪 ---------- */
-function waitCv(timeout = 35000) {
-  return new Promise((resolve, reject) => {
-    const t0 = Date.now();
-    (function loop() {
-      if (window.cv && typeof window.cv.matFromImageData === "function") return resolve();
-      if (Date.now() - t0 > timeout) return reject(new Error("OpenCV 加载超时，请强制刷新（Ctrl+F5）后重试"));
-      setTimeout(loop, 80);
-    })();
-  });
+/* ---------- 等待 OpenCV.js wasm 就绪 ----------
+ * 注意: @techstark/opencv-js 的 module.exports 是一个 Promise,
+ * 解析后才是真正的 cv 命名空间; 经典 opencv.js 则 window.cv 直接是命名空间。
+ * 这里先解析 Promise, 再轮询 cv.imread 是否就绪。 */
+async function waitCv(timeout = 150000) {
+  if (window.cv && typeof window.cv.then === "function") {
+    window.cv = await window.cv; // 解析出真正的 cv 命名空间
+  }
+  const t0 = Date.now();
+  while (true) {
+    if (window.cv && typeof window.cv.imread === "function") return;
+    if (Date.now() - t0 > timeout) {
+      throw new Error("OpenCV 加载超时，请强制刷新（Ctrl+F5）后重试");
+    }
+    await new Promise((r) => setTimeout(r, 100));
+  }
 }
 
 /* ---------- 把图片画到 src canvas (等比缩放, 最长边 1200) ---------- */
@@ -189,6 +195,8 @@ async function analyze() {
     const W = srcCanvas.width, H = srcCanvas.height;
     const rows = [];
     const diametersPx = [];
+    const keptIdx = [];
+    let dMin = Infinity, dMax = 0;
 
     // 结果画布 = 原图副本
     const dst = src.clone();
@@ -223,11 +231,17 @@ async function analyze() {
         cx: Math.round(cx),
         cy: Math.round(cy),
       });
+      keptIdx.push(i);
+      if (dPx < dMin) dMin = dPx;
+      if (dPx > dMax) dMax = dPx;
+      // 轮廓暂存，统一着色阶段按粒径排名上色
+    }
 
-      // 绘制轮廓
-      const col = colorForRank(0.5);
-      cv.drawContours(dst, contours, i, col, 1);
-      c.delete();
+    // 按粒径排名着色：小颗粒偏青、大颗粒偏紫，演示更直观
+    const dSpan = (dMax - dMin) || 1;
+    for (let j = 0; j < keptIdx.length; j++) {
+      const t = (diametersPx[j] - dMin) / dSpan;
+      cv.drawContours(dst, contours, keptIdx[j], colorForRank(t), 2);
     }
 
     cv.imshow(dstCanvas, dst);
@@ -239,6 +253,7 @@ async function analyze() {
     // 着色: 第二次按排名上色 (让大小层次更明显)
     // 已绘制轮廓(统一色)，这里仅更新统计；如需按大小着色可重画。保持简单。
 
+    for (const idx of keptIdx) { try { contours.get(idx).delete(); } catch (_) {} }
     contours.delete();
     hierarchy.delete();
 
