@@ -307,6 +307,7 @@ async function analyze() {
     $("sD90").textContent = `${fmt(d90)} ${p.unitLabel}`;
     $("sCu").textContent = cu ? cu.toFixed(2) : "–";
     $("sCc").textContent = cc ? cc.toFixed(2) : "–";
+    $("sSpan").textContent = span ? span.toFixed(2) : "–";
     $("stats").hidden = false;
 
     const fit = lognormalFit(diameters);
