@@ -57,11 +57,9 @@
     .arch-card h4 { font-size: 1rem; margin-bottom: 6px; }
     .arch-card p { color: var(--text-dim); font-size: 0.86rem; }
     .qr-row { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; }
-    .qr-box { width: 150px; height: 150px; border-radius: 16px; background:
-      repeating-conic-gradient(#0b0d14 0% 25%, #16181f 0% 50%) 50% / 22px 22px;
-      border: 1px solid var(--line-strong); position: relative; flex: none; }
-    .qr-box::after { content: "小程序码"; position: absolute; inset: 0; display: grid; place-items: center;
-      color: var(--text-muted); font-size: 0.8rem; background: rgba(7,7,10,0.6); }
+    .qr-img { width: 150px; height: 150px; border-radius: 16px; border: 1px solid var(--line-strong); object-fit: cover; background: var(--surface); flex: none; }
+    .qr-box { width: 150px; height: 150px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line-strong); position: relative; flex: none; display: grid; place-items: center; }
+    .qr-box span { color: var(--text-muted); font-size: 0.8rem; text-align: center; padding: 0 12px; line-height: 1.5; }
     .qr-note h3 { font-size: 1.2rem; margin-bottom: 10px; }
     .qr-note p { color: var(--text-dim); max-width: 46ch; }
     @media (max-width: 880px) {
@@ -200,12 +198,15 @@
         <h2 class="section-title">体验方式</h2>
       </div>
       <div class="qr-row">
-        <div class="qr-box" aria-hidden="true"></div>
+        <!-- 部署说明：将微信公众平台/开发者工具导出的小程序码（太阳码）命名为 qrcode.png 放在本目录即可自动显示；未提供时优雅降级为占位提示，不会报错。若当前为体验版，请在下方 <p> 末补充「（体验版，需先成为体验成员）」。 -->
+        <img class="qr-img" src="qrcode.png" alt="LIDA 小程序码"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';" />
+        <div class="qr-box" aria-hidden="true" style="display:none"><span>小程序码<br>筹备中</span></div>
         <div class="qr-note">
           <h3>扫码体验小程序</h3>
           <p>
-            小程序码占位中。正式发布后，用微信扫一扫即可进入 LIDA，
-            上传一张电镜颗粒图，几秒内看到粒径分布。内部测试阶段也可联系我们获取体验入口。
+            用微信扫一扫即可进入 LIDA，上传一张电镜颗粒图，几秒内看到粒径分布。
+            正式发布后所有微信用户均可扫码进入。
           </p>
           <div class="subhero-actions">
             <a href="../ai-particle-size-analyzer/" class="btn btn-ghost">先用网页版工具 →</a>
@@ -228,9 +229,9 @@
         </article>
         <article class="product-card">
           <div class="product-icon" aria-hidden="true">▣</div>
-          <h3 class="product-title">科研图表工作流</h3>
-          <p class="product-desc">微波介电陶瓷 P-V-L 化学键参数与介电性能的 SCI 出版级配图。</p>
-          <a href="../research-charts/" class="product-link">查看工作流 →</a>
+          <h3 class="product-title">科研图表生成器</h3>
+          <p class="product-desc">浏览器内输入数据，生成符合 SCI 规范的出版级图表，支持 SVG/PNG 导出。</p>
+          <a href="../research-charts/" class="product-link">打开工具 →</a>
         </article>
       </div>
     </section>
