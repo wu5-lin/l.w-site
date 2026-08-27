@@ -354,7 +354,7 @@ function drawContoursColored(dst, contours, keptIdx, diametersPx, dMin, dMax, co
         : colorForRank((diametersPx[j] - dMin) / span);
       cv.drawContours(overlay, contours, keptIdx[j], col, -1);
     }
-    cv.addWeighted(src, 0.55, overlay, 0.45, 0, dst);
+    cv.addWeighted(src, 0.40, overlay, 0.60, 0, dst);
     overlay.delete();
     // 再描边让边界更清晰
     for (let j = 0; j < keptIdx.length; j++) {
@@ -706,11 +706,18 @@ function exportHistPng() {
 function schedulePreview() {
   if (!imgLoaded) return;
   if (previewTimer) clearTimeout(previewTimer);
-  previewTimer = setTimeout(runPreview, 150);
+  previewTimer = setTimeout(runPreview, 50);
+}
+function schedulePreviewImmediate() {
+  if (!imgLoaded) return;
+  if (previewTimer) clearTimeout(previewTimer);
+  previewTimer = setTimeout(runPreview, 0);
 }
 async function runPreview() {
   if (previewRunning) { previewPending = true; return; }
   previewRunning = true;
+  $("previewBadge").textContent = "预览更新中…";
+  $("previewBadge").hidden = false;
   let s = null, dst = null;
   try {
     await waitCv();
@@ -723,10 +730,26 @@ async function runPreview() {
       $("previewBadge").textContent = `预览 ${s.diametersPx.length} 颗`;
       $("previewBadge").hidden = false;
     } else {
-      $("previewBadge").hidden = true;
+      // 无颗粒时也要刷新画面，避免旧图/旧 badge 误导
+      cv.imshow(dstCanvas, s.src);
+      const ctx = dstCanvas.getContext("2d");
+      ctx.fillStyle = "rgba(10,13,20,0.55)";
+      ctx.fillRect(0, 0, dstCanvas.width, dstCanvas.height);
+      const fs = Math.max(14, Math.floor(dstCanvas.width / 30));
+      ctx.fillStyle = "#fb7185";
+      ctx.font = `${fs}px Arial, sans-serif`;
+      ctx.textAlign = "center"; ctx.textBaseline = "middle";
+      ctx.fillText("未检测到颗粒", dstCanvas.width / 2, dstCanvas.height / 2 - fs * 0.6);
+      ctx.fillStyle = "#8b97ad";
+      ctx.font = `${Math.max(12, Math.floor(fs * 0.75))}px Arial, sans-serif`;
+      ctx.fillText("请调低 最小颗粒面积 / 最小圆度，或切换颗粒明暗", dstCanvas.width / 2, dstCanvas.height / 2 + fs * 0.8);
+      $("previewBadge").textContent = "未检测到";
+      $("previewBadge").hidden = false;
     }
   } catch (e) {
-    // 预览失败不影响主流程
+    // 预览失败不影响主流程，但记录日志便于排查
+    // eslint-disable-next-line no-console
+    console.error("Preview error:", e && e.message ? e.message : e);
   } finally {
     if (s) {
       try { if (dst) dst.delete(); } catch (_) {}
@@ -896,20 +919,25 @@ function bindUI() {
     const m = $("mode").value;
     $("manualWrap").hidden = m !== "manual";
     $("blockWrap").hidden = m !== "adaptive";
-    schedulePreview();
+    schedulePreviewImmediate();
   });
   $("thr").addEventListener("input", () => { $("thrVal").textContent = $("thr").value; schedulePreview(); });
+  $("thr").addEventListener("change", schedulePreviewImmediate);
   $("blk").addEventListener("input", () => { $("blkVal").textContent = $("blk").value; schedulePreview(); });
+  $("blk").addEventListener("change", schedulePreviewImmediate);
   $("kern").addEventListener("input", () => { $("kVal").textContent = $("kern").value; schedulePreview(); });
+  $("kern").addEventListener("change", schedulePreviewImmediate);
   $("minarea").addEventListener("input", () => { $("minVal").textContent = $("minarea").value; schedulePreview(); });
+  $("minarea").addEventListener("change", schedulePreviewImmediate);
   $("circ").addEventListener("input", () => { $("cirVal").textContent = (+$("circ").value).toFixed(2); schedulePreview(); });
+  $("circ").addEventListener("change", schedulePreviewImmediate);
   document.querySelectorAll('input[name="polar"]').forEach((r) =>
-    r.addEventListener("change", schedulePreview)
+    r.addEventListener("change", schedulePreviewImmediate)
   );
-  $("ws").addEventListener("change", schedulePreview);
-  $("colorMode").addEventListener("change", schedulePreview);
-  $("blur").addEventListener("change", schedulePreview);
-  $("fill").addEventListener("change", schedulePreview);
+  $("ws").addEventListener("change", schedulePreviewImmediate);
+  $("colorMode").addEventListener("change", schedulePreviewImmediate);
+  $("blur").addEventListener("change", schedulePreviewImmediate);
+  $("fill").addEventListener("change", schedulePreviewImmediate);
 
   // 标尺校准
   $("calpx").addEventListener("input", () => { $("calPxVal").textContent = $("calpx").value; updateScaleInfo(); drawScaleOverlay(); applyCalibration(); });
