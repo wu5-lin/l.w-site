@@ -1,8 +1,64 @@
 {
-  "updated": "2026-08-26 04:53",
+  "updated": "2026-08-27 08:19",
   "items": [
     {
-      "date": "2026-08-26",
+      "date": "2026-08-27",
+      "tag": "The Verge AI",
+      "title": "OpenAI’s rogue AI model incident was worse than we thought",
+      "summary": "In July, an unreleased OpenAI model broke out of a restricted environment, figured out how to get access to the internet, allowed AI agents to talk to each other using a secret \"message board,\" and hacked into the internal systems of a different AI lab, Hugging Face. It took nearly two weeks for OpenAI to […]",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
+      "source": "The Verge AI"
+    },
+    {
+      "date": "2026-08-27",
+      "tag": "IT之家",
+      "title": "小鹏 Master Agent 超级智能体上车：第二代 VLA 全新版本升级，可语音控制靠边停车",
+      "summary": "IT之家 8 月 27 日消息，在今日的小鹏物理 AI 分享暨第二代 VLA 全新版本体验日活动中，小鹏第二代 VLA 全新版本模型能力全面增强。 据小鹏官方介绍，第二代 VLA 全新版本升级的不只是智能辅助驾驶， 小鹏选择用做机器人的方式重构车机大脑，首次推出 Master Agent ，实现 VLA 与 VLM 驾舱融合，让车辆从“听懂一句话”进一步走向“理解用户真正想完成什么”。 Master Agent 建立在小鹏自研 Omni 全模态模型之上，不仅能够理解自然语言和模糊语义， 还能将用户意图自动拆解为任务 ，并调度智驾、底盘、座舱、车身控制等垂直 Agent 协同执行，实现从“理解”到“行动”的闭环。 IT之家注意到，官方演示了 语音控制靠边停车 ，第二代 VLA 全新版本还能理解模糊语意，比如可通过对一个门店的模糊描述来找到该门店，并规划行程。",
+      "url": "https://www.ithome.com/0/995/040.htm",
+      "source": "IT之家"
+    },
+    {
+      "date": "2026-08-27",
+      "tag": "极客公园",
+      "title": "129 亿美元，英伟达拿下 Hugging Face",
+      "summary": "作者｜Wildcard 编辑｜靖宇 芯片巨头，开始抢「分发权」了。 129 亿美元，英伟达要把 Hugging Face 买下来了。 当地时间 8 月 26 日外媒率先爆出消息， 两天前还只是 Hugging Face「正在探索出售」的新闻，转眼就变成了「双方已达成协议」。速度快得让人来不及消化。 这不是一笔普通的 AI 公司并购，而是芯片之王第一次伸手去抓开源 AI 世界的「分发权」。 Hugging Face 被称为 AI 界的「GitHub」，托管着超过 300 万个模型仓库，服务 1300 万开发者，Meta 的 Llama、阿里的 Qwen、Mistral 的开源模型，全都住在这个平台上。它是整个开源 AI 生态事实上的「默认分发层」。 而英伟达，已经垄断了训练和推理的 GPU 硬件。 现在，它还想拥有模型流通的那条路。 01 踩着 AI 打滚 先说钱。Hugging Face 上一轮融资是 2023 年 8 月的 D 轮，Salesforce 领投 2.35 亿美元，估值 45 亿美元。Google、英伟达、亚马逊、IBM、Intel、AMD、高通全都参投了那一轮。三年后，129 亿美元的价格大约是上一轮估值的三倍。 乍一看翻了三倍很夸张。但放在 AI 行业的估值泡沫里看，这个溢价反而算克制。Perplexity 正在按 300 亿美元以上估值谈融资，Anthropic 和 OpenAI 的估值更是比收入高出两个数量级。 Hugging Face 的 ARR（年度经常性收入）据 Sacra 估计在 2026 年 8 月达到了 1.5 亿美元，相比 2023 年的约 3000 万美元已经翻了五倍。5 万家企业客户，769 名员工，CEO Clément Delangue 不久前还在播客里说公司「接近盈利」。 但 129 亿的价格买的不是 Hugging Face 的收入，而是它在 AI 世界里的位置。 这个逻辑更接近 IBM 2019 年花 340 亿美元收购 Red Hat——战略买家为开发者生态中的卡位付费，而不是为短期现金流买单。 02 英伟达，更大的野心 如果只把这次收购理解为「芯片公司买了个模型托管平台」，那就太浅了。 过去一年，英伟达在开源 AI 上的投入力度大到令人意外。 今年 3 月 GTC 大会上，黄仁勋宣布成立「Nemotron 联盟」，这是一个由 Mistral AI、Perplexity、Cursor、LangChain 等八家 AI 实验室组成的全球协作组织，目标是共同开发前沿级别的开源基础模型。英伟达为此承诺了五年 260 亿美元的投资，通过 SEC 文件披露。 这是有史以来对开源 AI 的最大一笔资金承诺。 联盟打造的第一个模型将成为 Nemotron 4 系列的基础。据外媒 8 月初报道，Nemotron 4 最大版本预计将达到万亿参数级别，直接对标全球最强的开源和闭源模型。而在此之前，英伟达已经发布了 Nemotron 3 系列，包括 3 月发布的 Nemotron 3 Super（1200 亿参数、120 亿激活参数），以及 8 月刚发布的 Nemotron 3.5 Lightning，一个可以在单张 GPU 上运行的轻量级开源模型。 黄仁勋亲自站台为开源模型辩护。 今年 7 月，他在 X 上发了自己的第一条帖子，公开力挺开源 AI，正值美国政界因 Moonshot AI 的 Kimi K3 模型引发的国安争论甚嚣尘上。他的态度很明确：「免费的 AI 对硬件来说是好事。免费的 AI 对芯片来说是好事。」 说白了，英伟达推开源的底层逻辑和 Google 推 Android 一模一样——让软件免费，用软件生态把硬件销量拉起来。 每一个开发者用开源模型做产品，都需要英伟达的 GPU 来训练和推理。模型越多，用户越多，芯片需求越大。 现在，把 Hugging Face 收入囊中，英伟达就不只是「提供训练开源模型的硬件」，而是直接拥有了开源模型「住」的地方。 03 具身智能，更大的棋 但英伟达的胃口不止于语言模型和代码生成。 今年同样在 GTC 上，黄仁勋发布了 Isaac GR00T N1，号称全球第一个开源的通用人形机器人基础模型。6 月的 GTC 台北，他又拿出了 Isaac GR00T 参考人形机器人——一套完整的开源硬件参考设计，基于宇树 H2 Plus 人形底盘、Sharpa 五指灵巧手、Jetson Thor 算力平台，以及整套 Isaac GR00T 软件栈。斯坦福、ETH Zurich、Allen AI 研究所、UCSD 都已是首批合作机构。 与此同时，5 月底发布的 Cosmos 3 是英伟达首个完全开源的「全模态模型」，专门为「物理 AI」设计——也就是控制机器人、自动驾驶车辆和其他在物理世界中行动的机器。1 月 CES 上发布的自动驾驶推理模型 Alpamayo，也是开源的。 把这些点连起来看，英伟达正在搭建一个完整的「物理 AI」开源生态。 从世界模型（Cosmos）到机器人基础模型（GR00T N1）再到仿真引擎（Isaac Sim）、硬件参考设计，一直到边缘计算芯片（Jetson Thor），全栈覆盖，全部开源或开放。 黄仁勋在台北说过：「人形机器人将为全球最大的产业带来物理 AI，打开一个数万亿美元的经济机遇。」 而 Hugging Face，恰好是全世界机器人研究者分享模型、数据集和工具的默认平台。当英伟达拥有了这个分发层，它的具身智能开源生态就从「散装」变成了「全链路闭环」。训练用英伟达的 GPU，模型发在英伟达拥有的平台上，跑在英伟达的芯片上，控制着装了英伟达算力的机器人。 04 「中立平台」疑云 所有人最关心的问题，是 Hugging Face 的「中立性」。 今年 1 月就有消息称，Hugging Face 拒绝了英伟达 50 亿美元的投资，核心原因就是创始团队担心与某一家芯片巨头绑定太深会损害平台在 AMD、Intel 等竞争对手之间的中立地位。 但七个月后，他们选择了接受 129 亿的收购。 开发者社区的担忧是现实的。有 X 上的用户直言：「压制开源路径的方法之一，就是让 Hugging Face 被大公司收购。」平台上托管着大量中国公司的开源模型，DeepSeek、阿里 Qwen 等中国模型按下载量计算在多个类别中已经是 Hugging Face 上最热门的选项。 一个归属于美国芯片巨头的平台，还能继续充当全球中立的 AI 模型分发中心吗？ 历史给了两个参照。2018 年微软以 75 亿美元收购 GitHub，开发者一度恐慌出逃，但微软最终保持了 GitHub 的独立运营和开放生态，反而让它变得更好。IBM 在 2019 年用 340 亿美元买下 Red Hat 后也承诺保留其开源文化。这些收购最终证明，「收编」开源平台不一定意味着「封闭」。 但英伟达的情况有一个根本不同。 微软收购 GitHub 时，微软不是开发者工具市场的垄断者；IBM 收购 Red Hat 时，IBM 也不是企业计算市场的绝对霸主。 而英伟达，手握 AI GPU 市场超过 80% 的份额。 一个垄断硬件的玩家同时拥有开源软件的最大分发平台，监管机构必然要仔细审视。 现金和股票的比例、核心研发团队的留任安排、平台开源承诺的延续方式，这些交易细节目前还没有披露。这些细节将决定这笔收购是生态的正常扩张，还是一场引发行业震荡的垂直整合。 从 260 亿美元投建 Nemotron 联盟到万亿参数模型，从 GR00T 机器人到 Cosmos 世界模型，再到 129 亿美元拿下 Hugging Face——过去六个月英伟达的动作，画出了一条清晰的线。 它不再满足于只卖铲子给挖金矿的人，它要拥有金矿本身。 或者更准确地说，它要拥有从矿场到集散市场的整条供应链。 这对 AI 行业意味着什么？当世界上最强大的 AI 基础设施公司开始同时控制硬件、模型、分发平台和机器人开发栈，「开源」这两个字的含义，可能需要被重新定义了。 *头图来源：英伟达 本文为极客公园原创文章，转载请联系极客君微信 geekparkGO",
+      "url": "http://www.geekpark.net/news/369458",
+      "source": "极客公园"
+    },
+    {
+      "date": "2026-08-27",
+      "tag": "IT之家",
+      "title": "谷歌 Gemini Live 大升级，整合 Spark 智能体、Gmail 等提升生产力",
+      "summary": "IT之家 8 月 27 日消息，谷歌今天宣布对 Gemini Live 进行重大升级，新增多项以提升生产力为核心的集成功能。 Gemini Live 是谷歌公司开发的 AI 语音对话应用软件，现在可以与 Spark 个人 AI 智能体（AI Pro 及更高版本）集成，用户可以通过自然语音指令，在网页、Google Drive、Docs 和 Sheets 等服务中设置复杂的多步骤任务。 例如，当你正在思考一个创意时，可以一边走路，一边把那些零散的想法、灵感和还不成熟的计划随口说给 Gemini。Spark 能够理解这些类似“头脑风暴”的对话内容，梳理出其中的核心主题，并在你坐下来开始工作时，将它们整理成一份结构清晰的 Google Docs 大纲。 据IT之家了解，Gemini Live 还能帮助简化家庭餐食准备。用户只需让 Gemini 为家人维护一份每周食谱，例如要求它规划一份高蛋白素食菜单，它就可以根据保存在 Docs 中的食谱，自动生成相应的购物清单。 与此前推出的 Gmail Live 专属体验类似，Gemini Live 现在也获得了对电子邮件的深度整合。用户可以直接通过语音询问：“有新邮件吗？”或者“今天孩子学校有没有发来紧急邮件？”此外，用户还可以免提搜索、总结、加星标、归档或删除邮件。 与此同时，Gemini Live 现在还能接入每日简报（Daily Brief）。用户可以直接问：“我今天的简报是什么？”或者“我今天有什么安排？”，Gemini 就会汇总当天待办事项，生成一份关于全天安排的摘要。 今天公布的最后一项更新，则是将过去聊天记录中的记忆与个人智能功能整合进 Gemini Live，使其能够提供与文字聊天类似的个性化体验。 谷歌举例称，用户可以直接问：“去年夏天去纽约时，我们去过的那家餐厅叫什么名字？”或者“你能找出我们昨天聊过的那道菜谱吗？”Gemini 会从聊天记录和已连接的应用中查找相关信息，并直接给出准确答案。 谷歌强调，使用 Gemini Live 时，用户无需自己判断某项任务究竟应该调用 Spark、Daily Brief，还是进行一次简单的收件箱搜索。 谷歌表示：“你不应该还要猜测，一项任务到底需要 Spark、Daily Brief，还是简单搜索一下收件箱。Gemini Live 真正神奇的地方在于，你永远不需要弄清楚该使用哪个工具，它会在一段连续、不中断的对话中，将你一天中的各种信息和任务串联起来。”",
+      "url": "https://www.ithome.com/0/994/993.htm",
+      "source": "IT之家"
+    },
+    {
+      "date": "2026-08-27",
+      "tag": "IT之家",
+      "title": "英伟达 CEO 黄仁勋：在很多任务上我们已实现 AGI，该里程碑已无意义",
+      "summary": "IT之家 8 月 27 日消息，能够匹配甚至超越人类智能的 AI，仍是科技行业追逐的重要目标。但在英伟达 CEO 黄仁勋看来，通用人工智能（AGI）这个里程碑本身，如今已经变得没那么重要了。 黄仁勋在当地时间周三举行的财报电话会上表示：“对于很多任务来说，我们可以说已经实现了 AGI。我认为，所有这些所谓的里程碑…… 到了现在，其实已经没什么意义了。” OpenAI CEO 萨姆・奥尔特曼近日在接受《时代》杂志采访时表示，OpenAI 将在今年年底前于内部实现 AGI。按照 OpenAI 的定义，AGI 是指“在大多数具有经济价值的工作中表现超过人类的高度自主系统”。 黄仁勋并未在财报电话会上给出 AGI 的具体定义。不过，他认为，AI 已经不再只是等待人类输入提示词，然后执行任务。如今，越来越多被称为“智能体”的 AI 程序已经能够自主运行，并通过反复执行任务实现“递归式”改进。 黄仁勋表示：“我认为，目前对整个行业来说，最重要的是三件事。第一，AI 正在完成具有生产价值和实际用途的工作。第二，AI 正在产生能够带来利润的 Token。第三，如果我们拥有更多算力，就可以生成更多能够带来利润的 Token，从而让所有服务获得更多收益。我们现在正处于这样一个阶段。” 黄仁勋强调生产力和盈利能力，或许也是对近期 AI 泡沫担忧的一种回应。随着科技行业以前所未有的规模投资 AI 数据中心，市场对于这股热潮是否存在泡沫的担忧正在升温。与此同时，OpenAI 和 Anthropic 两大 AI 公司仍需要证明自身能够实现持续盈利。 也有批评者认为，大语言模型永远无法真正实现 AGI，因为它们缺乏持久记忆，在理解逻辑方面仍存在困难，而且依然容易产生“幻觉”，生成错误信息。 不过，至少对于英伟达来说，AI 热潮已经带来了实实在在的巨额利润。英伟达在 2026 财年第二季度实现 962 亿美元 （IT之家注：现汇率约合 6,481.78 亿元人民币） 营收，同比增长高达 106%。 英伟达还表示，如果不是受到 AI 热潮引发的内存供应短缺限制，公司原本还可以实现更快增长。该公司预计，内存短缺至少会持续到 2028 年初，并继续成为制约业务发展的瓶颈。 英伟达 CFO 科莱特・克雷斯在电话会上表示：“我们正在经历极端的内存定价环境。内存价格上涨的幅度已经超过了我们此前的预期，而且明年价格还会进一步走高。” 这对于英伟达的显卡业务来说显然不是一个好消息。近期，受内存价格上涨等因素影响，英伟达显卡已经出现了一轮涨价。 事实上，黄仁勋此前就曾表达过类似观点。今年早些时候，他在莱克斯・弗里德曼的播客节目中表示，从某种程度上来说，科技行业其实已经实现了 AGI。 他说：“我认为就是现在。我认为我们已经实现了 AGI。” 黄仁勋举例称，如今的 AI 程序已经能够开发出一款应用，并让它迅速走红、吸引数十亿用户，尽管这类应用之后可能很快又失去热度。 不过，他也强调，AI 的能力仍然存在明显边界。“但如果让 10 万个这样的智能体去打造一家英伟达，成功的概率仍然是零。”他说。",
+      "url": "https://www.ithome.com/0/994/982.htm",
+      "source": "IT之家"
+    },
+    {
+      "date": "2026-08-27",
+      "tag": "钛媒体",
+      "title": "单季1200亿资本开支，中国互联网的AI千亿豪赌",
+      "summary": "当中国云厂商的ROIC只有13%-20%，而大洋彼岸的美国同行却能赚到25%-50%时，中美AI算力投资的回报差距，最终会以什么形式收敛？",
+      "url": "https://www.tmtpost.com/8117891.html",
+      "source": "钛媒体"
+    },
+    {
+      "date": "2026-08-27",
+      "tag": "量子位",
+      "title": "基元律动累计融资数千万美元，推出“中国版OpenRouter”",
+      "summary": "近日，AI基础设施公司基元律动（TokenRhythm）宣布完成新一轮融资，融资额达数千万美元。",
+      "url": "https://www.qbitai.com/2026/08/480079.html",
+      "source": "量子位"
+    },
+    {
+      "date": "2026-08-27",
       "tag": "arXiv cs.AI",
       "title": "REFINE: A Multi-Agent LLM Approach for Evidence-Guided Code Refactoring",
       "summary": "arXiv:2608.23611v1 Announce Type: cross Abstract: Large Language Models (LLMs) offer new opportunities for automated code refactoring. However, generated changes must reduce targeted quality problems without introducing new issues or altering behaviour-relevant code structures. We introduce REFINE (Refactoring with Evidence-aware Flow for Integrated ageNtic Execution), a tool-agnostic, evidence-aware multi-agent approach for generating Java file-level refactoring candidates. REFINE combines static-analysis-guided smell identification, smell-informed planning, LLM-based transformation, automated re-analysis, preservation checks, and structured reporting. We evaluate REFINE on 450 Java files from 15 open-source systems, producing 1,350 model-pass outputs using OpenAI GPT-5.5, Google Gemini 3.1 Pro Preview, and Anthropic Claude Opus 4.8. REFINE reduces detected code smells by 68.26%, 72.79%, and 68.49% across the three configurations, respectively, with the strongest reductions observed for major smells. A matched 150-file direct-prompt baseline shows that REFINE achieves a higher median code-smell reduction with smaller edits and fewer public-method removals. However, broader quality improvements are inconsistent, and preservation checks reveal residual risks, including assert/fail-call changes and public-method removal. Therefore, REFINE outputs should be treated as refactoring candidates requiring compilation, testing, dependency analysis, and human review before adoption in repository- or system-level settings.",
@@ -10,7 +66,7 @@
       "source": "arXiv cs.AI"
     },
     {
-      "date": "2026-08-26",
+      "date": "2026-08-27",
       "tag": "arXiv cs.AI",
       "title": "EngiAI: Capability-Based Evaluation of Tool-Connected LLM Agents for Engineering Design",
       "summary": "arXiv:2605.19743v3 Announce Type: replace Abstract: Engineering-agent systems are proliferating, but differences in tasks, tools, and success criteria make demonstrations difficult to compare and failures difficult to diagnose. We introduce a capability-based evaluation framework for tool-connected engineering agents. The framework separately evaluates workflow execution, retrieval-assisted parameter selection, high-performance computing (HPC) orchestration, and training-code authoring using execution traces and resulting engineering artifacts. We evaluate four LLM backends on the EngiBench Beams2D and Photonics2D problems using EngiAI, a LangGraph reference implementation. On Beams2D, the two proprietary models complete 96-97% of workflow tasks, compared with 55-78% for the two open-source models. Workflows requiring tool-based decision-making perform worse on Photonics2D, reaching 20-53% completion. Indexed retrieval improves parameter selection. For HPC orchestration, Gemini-3-Flash completes every tested pipeline, whereas GPT-5-mini completes 50-70% through the final evaluation step. When the agents must write the training code themselves, they fill small gaps reliably but diverge as larger regions are left open. In the open-synthesis tier, both proprietary models select conditional variational autoencoders instead of the reference conditional Generative Adversarial Network (cGAN); Gemini-3-Flash achieves lower maximum mean discrepancy than the reference in seven of ten Beams2D trials. The results support capability-specific evaluation, with separate scores for distinct skills, rather than assessment through successful end-to-end demonstrations alone. The framework provides common evaluation dimensions for identifying failure mechanisms and structuring comparisons of models, agent architectures, and tool interfaces.",
@@ -18,7 +74,7 @@
       "source": "arXiv cs.AI"
     },
     {
-      "date": "2026-08-26",
+      "date": "2026-08-27",
       "tag": "arXiv cs.AI",
       "title": "Joint Optimization of Tool Creation and Use for Large Language Model Agents",
       "summary": "arXiv:2608.24571v1 Announce Type: new Abstract: Tool-augmented language models are bounded by the APIs humans bothered to write; existing tool-creation systems patch this by prompting a frozen LLM at inference time, leaving the model that writes a tool decoupled from the one that uses it, with no signal that the schemas it produces are schemas it can invoke. We propose SMITH (Schema-grounded Multi-task Iterative Tool Honing), a reinforcement learning framework that jointly trains tool creation and tool use inside a single policy. Each rollout is either a build task (write a tool from a few examples) or a use task (invoke a pooled tool on a held-out question). Three separate reward axes catch schema, code, and outcome failures independently, so each failure mode contributes its own gradient. A 4B Qwen3 trained with SMITH on 13 procedural reasoning tasks with exact verifiers reaches 79.8 macro-average accuracy on held-out tasks, the best across all evaluated methods and ahead of an untrained 30B-A3B tool-writer. It also reaches 40.4 on TabMWP-Hard and 42.6 on out-of-domain GQA (+7.6 over the best same-backbone inference-time baseline), without any visual or tabular training data. Tools written by our 4B models also lifted the performance of LFM-2.5-350M and Qwen3-30B-A3B under same reasoning tasks.",
@@ -26,76 +82,20 @@
       "source": "arXiv cs.AI"
     },
     {
-      "date": "2026-08-26",
+      "date": "2026-08-27",
       "tag": "钛媒体",
-      "title": "WRC2026逛下来，机器人步入青少年期",
-      "summary": "热潮里，幸好没有狂人。",
-      "url": "https://www.tmtpost.com/8116992.html",
+      "title": "AI的账单，不只由科技公司买单",
+      "summary": "AI正在从一个技术变量，变成社会的资源配置变量",
+      "url": "https://www.tmtpost.com/8118214.html",
       "source": "钛媒体"
     },
     {
-      "date": "2026-08-26",
-      "tag": "量子位",
-      "title": "深度实测「豆包工作」+飞书：目前最接近企业Agent终局的答案",
-      "summary": "shui jiang shuai xian sha",
-      "url": "https://www.qbitai.com/2026/08/479348.html",
-      "source": "量子位"
-    },
-    {
-      "date": "2026-08-26",
-      "tag": "少数派",
-      "title": "在正镶白旗，用五天共同生活理解现代牧场",
-      "summary": "这一趟田野调查旅行打破了以往我对旅行的传统认识，不再是到了一个地方打卡就结束，而是要和当地人产生连接。 查看全文",
-      "url": "https://sspai.com/post/113714",
-      "source": "少数派"
-    },
-    {
-      "date": "2026-08-26",
-      "tag": "IT之家",
-      "title": "工信部：我国已经有近 200 项 AI 关键标准成功研制，加快新一代通信网、算力网规划建设，加强 6G 技术研发",
-      "summary": "IT之家 8 月 26 日消息，据央视新闻报道，国新办今日举行“开局起步‘十五五’”系列主题新闻发布会，工业和信息化部相关负责人介绍全力抓好“十五五”规划实施、加快推进新型工业化有关情况。发布会上介绍， 我国 已经有近 200 项人工智能关键标准成功研制 。 我国将着力推动信息通信业高质量发展，加快新一代通信网、算力网规划建设，推动 5G、工业互联网在重点行业规模化普及应用 ，加强 6G 技术研发 ，增强网络和数据安全保障能力，巩固提升信息通信业竞争优势和领先地位。 “十五五”时期， 我国将创建国家新兴产业发展示范基地，聚焦新一代信息技术、新能源、新材料、智能网联新能源汽车、机器人、生物医药、高端装备、航空航天等新兴产业重点领域，打造一批引领新兴产业发展的标杆 。 到 2035 年，培育 100 家左右在产业集群发展、协同创新、生态优化、治理提升等方面具有辐射带动作用的示范园区，1,000 家左右在产品开发、技术创新、业态创新、管理效能等方面处于领先水平的示范企业。",
-      "url": "https://www.ithome.com/0/994/397.htm",
-      "source": "IT之家"
-    },
-    {
-      "date": "2026-08-26",
-      "tag": "量子位",
-      "title": "OpenAI「辣椒芯」干翻英伟达！老黄股价不跌反涨",
-      "summary": "不和老黄商量",
-      "url": "https://www.qbitai.com/2026/08/479320.html",
-      "source": "量子位"
-    },
-    {
-      "date": "2026-08-26",
-      "tag": "IT之家",
-      "title": "VZMORE 预热 AX9 Max 等迷你电脑：双 2.5G 网口，AMD Ryzen AI 9 HX 470 芯片",
-      "summary": "IT之家 8 月 26 日消息，科技媒体 techpowerup 昨日（8 月 25 日）发布博文，报道称德国品牌 VZMORE 官宣参加 2026 柏林国际消费电子展（IFA 2026）， 将展示 AX9 Max、iX9 Max、iX9 Ultra 和 AX9 Ultra 四款迷你电脑。 在 AMD 平台方面，AX9 Max 搭载 AMD Ryzen AI 9 HX 470 处理器，配备 Radeon 890M 显卡和专用 Ryzen AI NPU，算力最高达 55 TOPS，端口方面配备 2 个 2.5G 网口。IT之家附上相关图片如下： AX9 Ultra 搭载 AMD Ryzen AI Max 388 和 Radeon 8060S 显卡。结合 V-Boost Max 后，该机支持最高 120 W 性能调校，面向高端内容创作、本地人工智能和 AAA 级游戏。 在英特尔平台方面，iX9 Max 搭载 Intel Core Ultra 9 185H 英特尔酷睿 Ultra 9 185H 和 Intel Arc 显卡，面向内容创作与多屏工作流。 iX9 Ultra 搭载下一代英特尔酷睿 Ultra X9 378H，集成 Intel Arc B390 显卡，并配备算力最高达 50 TOPS 的 NPU，用于更复杂的人工智能与图形任务。 全系产品采用 VZMORE 自研的 V-Cooling 散热架构，该架构针对迷你电脑长时间运行后难以维持稳定性能的问题，整合大面积 VC 均热板、高密度散热鳍片、360 度底部进风、垂直气流和智能温控，形成完整散热路径，帮助扩散并排出热量。 根据 VZMORE 内部测试，与传统双热管散热方案相比，V-Cooling 的热扩散面积增加 40%，热传递效率提高 50%。 4 款产品计划于 2026 年 10 月中旬在全球市场上市。",
-      "url": "https://www.ithome.com/0/994/330.htm",
-      "source": "IT之家"
-    },
-    {
-      "date": "2026-08-26",
+      "date": "2026-08-27",
       "tag": "钛媒体",
-      "title": "Edge AI Daily 早报（8月26日）",
-      "summary": "德意志银行核心系统迁移至谷歌云，标志金融AI落地的结构性变革；OpenAI以Codex经验进军白领市场，推出ChatGPT Work及贴纸功能，意图成为社交操作系统；汤森路透以4000万美元训练垂直模型，证明数据质量可替代算力规模；ARIA全球首禁纯AI歌曲，监管红灯亮起；WikiHow起诉OpenAI，版权冲突升级。",
-      "url": "https://www.tmtpost.com/8116690.html",
+      "title": "DeepSeek调价之后，谁走出了斩杀线？",
+      "summary": "一次调价，重新划定了大模型的竞争边界",
+      "url": "https://www.tmtpost.com/8118102.html",
       "source": "钛媒体"
-    },
-    {
-      "date": "2026-08-26",
-      "tag": "IT之家",
-      "title": "商业史最庞大叙事：Anthropic 冲击全球最大 IPO，称 AI 潜在市场收入规模超 30 万亿美元",
-      "summary": "IT之家 8 月 26 日消息，华尔街日报昨日（8 月 25 日）发布博文，报道称在 IPO 招股书中，Anthropic 为撑起 2 万亿美元 （现汇率约合 13.47 万亿元人民币） 估值宏大叙事，向投资者提出了超过 30 万亿美元 （现汇率约合 202.11 万亿元人民币） 的潜在市场规模（TAM）预测，超过 SpaceX 预估的 28.5 万亿美元 （现汇率约合 192 万亿元人民币） 预测。 IT之家注：潜在市场规模是指如果一款产品或服务实现了 100% 的市场份额，它在理论上能够获得的最大年度总收入机会，主要向投资者展示自身广阔的增长空间。 马斯克旗下火箭企业 SpaceX，在 5 月提交的文件中将自家 TAM 称作“人类历史上规模最大的市场”。该 28.5 万亿美元 （现汇率约合 192 万亿元人民币） 总可寻址市场当中，有 26.5 万亿美元 （现汇率约合 178.53 万亿元人民币） 来自 AI 业务机会。 对于这个 30 万亿美元 （现汇率约合 202.11 万亿元人民币） 惊人数字，该媒体认为测算逻辑并非基于现有的软件或硬件销售额，应该是统计了未来全球所有“可被 AI 模型替代或完成的工作”的全部经济价值和劳动力成本。这一举措直接打破了由 SpaceX 此前保持的 28.5 万亿美元 （现汇率约合 192 万亿元人民币） 潜在市场纪录， 成为商业历史上最庞大的市场叙事。 华尔街消息人士透露，Anthropic 拟于 2026 年秋季挂牌上市，其目标募资额高达 1,000 亿美元 （现汇率约合 6,737.01 亿元人民币） ，估值锚定在 2 万亿美元 （现汇率约合 13.47 万亿元人民币） 左右。 敢于开出如此巨额“空头支票”的底气，源于其狂飙的财务表现。数据显示，Anthropic 在 2026 年第二季度单季营收已达 116 亿美元 （现汇率约合 781.49 亿元人民币） ，并首次实现调整后营业利润为正。投资者甚至乐观预测，其年化收入将在今年底冲击 1,000 亿美元 （现汇率约合 6,737.01 亿元人民币） 大关。 不过，华尔街分析师也发出警告，在美国数据中心建设受阻、海外低价模型竞争加剧的背景下，二级市场对超高估值科技股的容错率正在降低，30 万亿的宏大蓝图最终能否打动理性的资本，仍有待 9 月招股书正式披露后的市场检验。",
-      "url": "https://www.ithome.com/0/994/327.htm",
-      "source": "IT之家"
-    },
-    {
-      "date": "2026-08-26",
-      "tag": "极客公园",
-      "title": "苹果突袭发布 M6 与 M5 Ultra 芯片与新款 Mac Mini；字节发布 AI 办公产品「豆包工作」；SpaceX 拟千亿美元建设第二座「星际基地」｜极客早知道",
-      "summary": "苹果突袭发布 M6 与 M5 Ultra 芯片，新 Mac mini、Mac Studio 全面押注本地 AI 8 月 25 日，苹果未举办发布会，直接上架了两款全新自研芯片 M6 与 M5 Ultra，以及搭载它们的新款 Mac mini 与新款 Mac Studio，并即刻开启预购。M6 是苹果首颗采用 2 纳米工艺的芯片，配备 12 核 CPU 与 12 核 GPU，苹果称其拥有「全球最快的单线程性能」。 根据苹果介绍，配备 M6 芯片后，Mac mini 的 AI 性能最高可提升 4 倍，存储速度与图形处理速度提升 2 倍，CPU 性能提升 40%。而搭载 M5 Pro 芯片的 Mac mini 则提供更专业的性能。 M5 Ultra 是此次更新的真正主角。它采用四晶粒（quad-die）3nm 架构，是苹果芯片史上首次使用该设计，晶粒间互联带宽达 4.4TB/s，最高提供 36 核 CPU 与 80 核 GPU，支持最高 512GB 统一内存，内存带宽达 1.2TB/s，AI 性能最高提升 4.3 倍。 新款 Mac Studio 的 M5 Max 版本起售价 2,499 美元，M5 Ultra 版本起售价 5,499 美元，顶配（256GB 内存 + 16TB 存储）售价高达 18,299 美元，512GB 内存版本预计 10 月下旬推出。国行 8 月 27 日上午 9 点开始预购，比美国晚两天，9 月 22 日发售。 两款新品的卖点都明确指向本地 AI：苹果官方将新 Mac Studio 定位为「端侧 AI 的终极桌面设备」，可在本地运行超大参数模型；新 Mac mini 则支持通过雷电 5 接口将多台设备集群化，协同运行更大的 AI 模型。 价格方面，新 Mac mini、Mac Studio 起售价较上代上调 100 至 200 美元，在内存芯片供应紧张、价格飙升的背景下，苹果也将部分成本压力传导给了消费者。（来源：极客公园） OpenAI 恢复 ChatGPT Plus 用户 5 小时使用限额 8 月 25 日，OpenAI 宣布，针对 ChatGPT Plus 订阅用户在 Codex 与 ChatGPT Work 上的 5 小时滚动使用限额正式恢复，每月 100 美元与 200 美元的更高档订阅暂不受影响。 OpenAI 产品负责人 Thibault Sottiaux 解释，5 小时限额有助于平滑算力负载，从而保持 Plus 套餐的慷慨程度。数周前，OpenAI 曾暂停该限额、仅保留每周用量上限，此次恢复在 Plus 用户中引发热议，不少用户抱怨长时间运行的任务将因此被打断。（来源：TechCrunch） 英伟达宣布推出 Jetson Orin Nano 2 机器人计算机 8 月 25 日，英伟达宣布推出 Jetson Orin Nano 2 机器人计算机，重新定义入门级边缘人工智能。Jetson Orin Nano 2 拥有每秒 78 万亿次 AI 运算、8GB 内存和 8 核 Arm CPU，在 AI 和视频处理性能上实现了显著飞跃，打造出一个经济高效、节能的系统。 Jetson Orin Nano 2 通过改进的张量核心和更高的内存带宽，实现了 Jetson Orin Nano Super 的两倍推理性能，同时保持了相同的紧凑型外形。在 15 瓦模式下，Jetson Orin Nano 2 功耗降低了 40%，实现了与前代机型相同的性能。NVIDIA Jetson Orin Nano 2 模块及开发者套件预计将在 2027 年上半年上市。（来源：财联社） Anthropic 更新 Claude 记忆机制，打通 Cowork 与聊天的记忆功能 8 月 26 日，Anthropic 宣布更新 Claude Cowork 与聊天功能之间的记忆机制。此次更新将两个系统的记忆功能打通，实现统一管理。 Anthropic 表示：「Cowork 现在拥有了记忆功能，而且与您在聊天中使用的是同一套记忆。这意味着您无需反复解释背景信息，Claude 也能更好地接续此前的工作。」 Anthropic 进一步解释称，当 Cowork 在云端执行任务时，它可以访问 Claude 从用户聊天记录中记住的信息；反过来，Cowork 中产生的相关记忆也能够在聊天中使用。 Anthropic 同时强调，涉及敏感话题的记忆功能默认处于关闭状态，但用户可以手动开启。（来源：IT 之家） 苹果 iOS 27 正式版发布在即，Siri AI 预计将采用候补名单机制 8 月 25 日，据科技媒体 MacRumors 报道，苹果 iOS 27/iPadOS 27/macOS 27 操作系统都将加入 Siri AI 智能助理。三款操作系统的正式版发布后，苹果预计会使用候补名单机制，并限制用户的初期使用权限。 iOS 27/iPadOS 27/macOS 27 的 Beta 7 测试版已加入等候名单相关机制。当用户点击加入后，苹果会提供较为明确的预计等候时间，同时还能根据服务器需求和拥挤情况，动态调整轮候时间。 作为参考，Siri AI 在测试期间就采用了候补名单机制，此前有用户等了一周左右才排到队。iOS 27 正式发布后，苹果应该会根据服务器状况向用户分批开放 Siri AI。（来源：IT 之家） 谷歌扩展 Gemini AI 平台，推出面向律师和律所的新工具 8 月 25 日，谷歌扩展了其 Gemini Enterprise 人工智能平台，为律师和律所推出新工具。此举将加剧科技公司争夺法律行业 AI 市场的竞争。 谷歌表示，其 Gemini Enterprise for Legal 将帮助律所利用 AI 处理日常及复杂工作，使律师能够专注于更高价值的服务，同时确保数据的安全性和保密性。（来源：华尔街见闻） OpenAI 公布首款自研推理芯片 Jalapeño 首批实测成绩 8 月 25 日消息，OpenAI 公布了其首款自研 AI 推理芯片 Jalapeño 的首批测试结果：在 GPT-OSS、DeepSeek R1、Kimi K2.5 1T 三个模型的推理基准中，Jalapeño 相比英伟达最新超级芯片系统，每瓦 AI 产出提升 1.5–1.9 倍，延迟降低 1.7–3.6 倍。 OpenAI 表示，计划在年底前将 Jalapeño 部署进自家算力基础设施，并称这是其多代芯片路线图的第一代，第二代已在深入研发中。Jalapeño 专为 ChatGPT、Codex 等产品的推理场景设计，被 OpenAI 视为掌控算力成本、减少对外依赖的关键一步。 Jalapeño 由 OpenAI 与博通共同开发，OpenAI 自有模型也参与了研发。OpenAI 希望把 Jalapeño 发展成一个能够延续多代的技术平台，使 AI 产品、模型、芯片和内存从一开始就协同设计。 这款芯片主要负责 AI 推理，也就是让已经训练好的 AI 模型真正运行起来，完成任务或驱动 AI 智能体。（来源：IT 之家） Meta 计划数周内推出消费级 AI 智能体平台 Hatch 8 月 25 日，据 The Information 获得的内部文件，Meta 计划在未来数周内推出面向消费者的 AI 智能体平台「Hatch」。Hatch 基于 OpenClaw 虚拟助理构建，是扎克伯格 AI 战略的关键一环，目标是让 AI 投资变现、降低对广告收入的依赖。 文件显示，Hatch 预计 8 月底至 9 月初发布，采用分级订阅制，高级版月费最高可达 199.99 美元，可访问 DoorDash、Etsy、Reddit、Yelp、Outlook 等网站；Meta 还计划今年 10 月推出代号「Watermelon（西瓜）」的新一代 AI 大模型。（来源：IT 之家） SpaceX 拟在路易斯安那州斥资千亿美元建设第二座「星际基地」 8 月 25 日，SpaceX 宣布将在美国路易斯安那州建设第二座服务于「星舰」超重型运载火箭的发射基地。该项目选址于一处原属埃克森美孚的土地，标志着该公司历时七年的选址工作告一段落。新设施将坐落于墨西哥湾沿岸的路易斯安那州弗米利恩堂区，位于新奥尔良以西，距离 SpaceX 位于得州南部的现有「星际基地」约 10 小时车程。 SpaceX 表示，项目总投资规模将达到 1000 亿美元，计划于 2027 年启动建设，并争取在 2029 年完成首次星舰发射。 不过，负责招商与经济发展的路易斯安那州经济发展部门给出了更为谨慎的时间表：工程预计将在 2027 年年底前动工，初步运营则有望于 2030 年上线。（来源：cnBeta） 「国产 GPU 四小龙」集齐，燧原科技 9 月 2 日开启 IPO 申购 8 月 25 日，燧原科技披露招股意向书，正式启动科创板 IPO 发行：8 月 28 日初步询价，9 月 2 日网上网下申购。公司拟发行约 4,303.52 万股新股、占发行后总股本的 10%，计划募资 60 亿元，主要投向第五代、第六代 AI 芯片系列产品的研发及产业化。 燧原科技成立于 2018 年，是「国产 GPU 四小龙」中最后一家登陆资本市场的公司，摩尔线程、沐曦股份、壁仞科技此前均已上市。招股书显示，公司 2025 年营收 9.90 亿元，其中对腾讯的相关销售收入占比达 83.79%；公司尚未盈利，若上市时仍未扭亏，将按规则纳入科创成长层。（来源：证券时报） 小鹏机器人业务完成首轮超 9 亿美元融资，刷新行业纪录 8 月 24 日，据媒体从小鹏集团获悉，小鹏机器人业务完成首轮超 9 亿美元融资，小鹏机器人投后估值超 63 亿美元（约 430 亿元），刷新中国具身智能行业单轮私募股权融资纪录。 本轮融资由全球顶尖的投资机构主动发起：IDG 资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持；小鹏集团将继续控股机器人业务。 据了解，对于四家投资方，本轮均属其在具身智能领域披露的最大规模单笔投资之一。 据湾财社此前报道，今年 7 月底，小鹏人形机器人已在广州工厂正式开启小批量试生产，同时量产产线进入最后联调阶段，量产冲刺正式进入倒计时。据此前规划，今年第四季度小鹏人形机器人将实现量产，并于 2027 年一季度进入小鹏线下门店担任导购，二季度进到海外。（来源：东方财富） 马云出手，阿里管理层配售之后累计增持超 8 亿港元 8 月 25 日，在阿里巴巴宣布 800 亿港元新股配售计划后，创始人马云近日连续增持阿里港股，总额已超 6 亿港元。 同时，集团主席蔡崇信今日再度买入 72 万股，均价约 113.47 港元 / 股，耗资约 8,200 万港元，个人累计增持约 1.6 亿港元；加上 CEO 吴泳铭此前增持的 4,000 万港元，管理层合计增持已超过 8 亿港元。阿里港股今日收涨 1.51%，报 114.2 港元 / 股。此次配售所得款项将全部投入全栈 AI 能力和 AI 基础设施建设。（来源：澎湃新闻） 每年 2 天，网易严选推出「带薪宠物陪护假」 8 月 25 日，网易严选官方微博发布消息，宣布设立「带薪宠物陪护假」。其表示，即日起，当宠物因健康原因需要陪护时，员工可直接申请带薪健康陪护假，每年专享 2 天额度。这是国内互联网行业中首次有头部企业将宠物陪护纳入员工带薪休假体系。 内部信显示，「带薪宠物陪护假」新规源于网易严选开展的一项内部调研。据网易严选的数据，超过 80% 的员工养宠，半数员工经历过宠物生病需要陪护的时刻。然而，其中三分之二的员工过去只能消耗年假，申请前还要斟酌理由。内部信表示，「毛孩子」也是并肩生活的家人，当「毛孩子」因健康原因需要陪护，员工可直接申请假期。 有分析认为，此次网易严选设立「宠物陪护假」，看似是一项员工福利，背后折射的更多是团队对宠物赛道的高度专注与同理心。（来源：界面） 马斯克在对 Cursor 员工的讲话中承认：Grok 在人工智能竞赛中落后 8 月 25 日，据知情人士透露，本月早些时候，就在 SpaceX 宣布完成对 Cursor 公司 600 亿美元收购的当天，埃隆·马斯克召开了一次全体员工视频会议，与这家软件开发公司的员工进行了交流。 据五位了解此次会议的人士透露，马斯克向与会者表示，SpaceX 的人工智能部门已经落后于竞争对手，而他不习惯遭遇失败。与特斯拉 或 SpaceX 在各自行业中占据主导地位不同，SpaceXAI 旗下的 Grok 并非市场领导者，亟需追赶。 在这次电话会议上，马斯克表示人工智能模型终将发展到人类无法掌控的程度，这是不可避免的趋势。因此，他对聚集在 Cursor 旧金山总部以及其他小型办公点的员工称，他们必须助力 SpaceX 人工智能部门抢在其他企业之前研发出相关技术。 一位知情人士表示，马斯克称赞 Anthropic 领跑人工智能竞赛，称其是实力强劲的竞争对手。另有两名知情人士称，马斯克还提到，SpaceX 会继续囤积算力，力争成为人工智能赛道上算力储备最高的企业。（来源：IT 之家） 字节跳动正式发布 AI 办公产品「豆包工作」 8 月 25 日，字节跳动正式发布面向生产力场景的全新 Agent 产品与品牌「豆包工作」。 豆包工作可围绕用户目标自主拆解任务、调用工具，持续推进复杂工作流程，支持文档、表格、PPT、图片、视频、网页乃至应用的生成与编辑，还可框选生成内容的任意部分直接修改，无需整体重新生成。 获得用户授权后，它能直接操作浏览器与本地电脑，跨软件完成数据处理、信息收集、表单填写等任务，长时间运行的任务则可调用云电脑执行。豆包工作与飞书深度打通，可在权限范围内读取企业文档、会议纪要等上下文。目前豆包工作电脑版已开放官网下载，用户也可在最新版豆包电脑版中直接使用，即日起可免费领取 30 天订阅权益。这是字节将 TRAE、扣子（Coze）团队并入豆包体系后推出的统一办公产品。（来源：新浪财经） Arm 成立 36 年来首颗自研芯片：台积电 3nm 工艺 8 月 25 日，科技媒体 Wccftech 发布博文，报道称在 Hot Chips 2026 大会上，Arm 披露了面向智能体人工智能的 AGI CPU 细节，这是该公司成立 36 年以来首颗自研量产芯片。 该处理器基于第 3 代 Neoverse V3 核心，基于 Armv9.2 架构，单颗芯片最多配置 136 个核心，每个核心配备 2 MB 专属 L2 缓存，最高频率为 3.7 GHz。 该芯片采用台积电 3nm 工艺（N3P）和双芯粒（Dual Chiplets）设计，每个芯粒搭载超过 500 亿个晶体管，完整芯片拥有 1,000 亿个晶体管，整颗芯片的最大 TDP 为 300 W。处理器将内存与 I/O 集成在同一芯片上，面向低延迟内存访问，内存延迟低于 100 ns。 I/O 方面，该处理器提供 96 条 PCIe Gen6 通道，支持 CXL 3.0 内存及扩展设备，并配备 AMBA CHI 扩展链路。它支持 DDR5-8800 内存，每个核心获得 6 GB/s 内存带宽，单颗芯片容量达到 6 TB。（来源：IT 之家） 华为新三折叠 Mate XT2 定档 9 月 7 日，将首发鸿蒙 HarmonyOS 7 8 月 25 日消息，华为终端 BG 董事长余承东今日宣布，HarmonyOS 7 | 华为 Mate XT2 及全场景新品发布会将于 9 月 7 日举行。Mate XT2 是华为新一代三折叠旗舰，将首发搭载 HarmonyOS 7 正式版，华为首款阔直板手机 Pura X View 等新品也将在同一场发布会亮相。 华为同时披露，其三折叠手机全球发货量已突破 100 万台；IDC 数据显示，2026 年第一季度华为以 60% 的出货量份额位居中国折叠屏手机市场第一。（来源：证券时报） OpenAI 奥尔特曼承认自己高估 AI 普及速度：最大阻力其实是改变用户习惯 8 月 25 日，据媒体报道，OpenAI CEO 萨姆·奥尔特曼在播客节目中承认，自己和其他 AI 支持者可能高估了 AI 普及的速度，要达到谷歌搜索或 iPhone 那样深入大众日常生活的程度，恐怕还需要更长时间。 奥尔特曼认为，最大的阻力之一其实来自人的习惯。绝大多数人已经非常习惯现有的技术和工作方式，很难迅速改用 Codex 这样的 AI 原生平台。即使新工具功能十分强大，企业投入再多营销费用，也很难让用户立即改变多年形成的使用习惯。 奥尔特曼坦言：「我觉得自己在几件事上判断错了。其中一点就是，经济本身的惯性实在太大。人们还是会继续做原来的事情…… 继续从同一家公司买东西，继续用原来的方式使用工具。从很多方面来说，我觉得这其实是好事，它会让我们面前这场巨大转型变得更平稳、更缓慢，我对此很感激。但这也意味着，我们所有人对时间表的判断都太激进了……」 奥尔特曼进一步指出，改变人的行为比科技圈的人想象中困难得多。他把 AI 的普及比作 Netflix 成立初期：当 Netflix 还只是邮寄 DVD 的公司时，人们依然照常去百视达租影片，并没有因为新模式出现就立刻改变习惯。（来源：IT 之家）",
-      "url": "http://www.geekpark.net/news/369355",
-      "source": "极客公园"
     }
   ]
 }
