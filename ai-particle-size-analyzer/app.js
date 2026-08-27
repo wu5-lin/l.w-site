@@ -231,20 +231,17 @@ async function watershedSplit(gray, thresh, src) {
   cv.watershed(src3, markers);
 
   // 仅保留颗粒区域(标签 1..K), 排除背景(bgLabel)与边界(-1)
-  const mask1 = new cv.Mat();
-  cv.threshold(markers, mask1, 0, 255, cv.THRESH_BINARY);           // 32S: >0 ->255
+  // 注意: markers 为 CV_32S, cv.threshold 不支持 32S, 改用 cv.compare (支持任意深度)
   const mask1u = new cv.Mat();
-  mask1.convertTo(mask1u, cv.CV_8U);
-  const mask2 = new cv.Mat();
-  cv.threshold(markers, mask2, bgLabel - 1, 255, cv.THRESH_BINARY_INV); // 32S: <=K ->255
+  cv.compare(markers, new cv.Scalar(0), mask1u, cv.CMP_GT);            // markers>0 -> 255 (8U)
   const mask2u = new cv.Mat();
-  mask2.convertTo(mask2u, cv.CV_8U);
+  cv.compare(markers, new cv.Scalar(bgLabel - 1), mask2u, cv.CMP_LE);  // markers<=K -> 255 (8U)
   const regionMask = new cv.Mat();
   cv.bitwise_and(mask1u, mask2u, regionMask);
 
   dist.delete();
   sureFg.delete(); sureFg8.delete(); bgMask.delete(); src3.delete();
-  mask1.delete(); mask1u.delete(); mask2.delete(); mask2u.delete();
+  mask1u.delete(); mask2u.delete();
   return { markers, regionMask, bgLabel };
 }
 
