@@ -341,27 +341,33 @@ async function segment(p) {
   return { src, gray, thresh, kernel, contours, hierarchy, keptIdx, diametersPx, rows, labels, dMin, dMax, W, H };
 }
 
-/* ---------- 按模式在 dst 上着色轮廓 / 填充 ---------- */
-function drawContoursColored(dst, contours, keptIdx, diametersPx, dMin, dMax, colorMode, labels, fill) {
+/* ---------- 按模式在 dst 上着色轮廓 / 填充 ----------
+ * src: 原始图像（dst 通常是其克隆），fill 模式用它做 alpha 混合底图 */
+function drawContoursColored(dst, contours, keptIdx, diametersPx, dMin, dMax, colorMode, labels, fill, src) {
   const span = (dMax - dMin) || 1;
-  for (let j = 0; j < keptIdx.length; j++) {
-    let col;
-    if (colorMode === "multi") {
-      col = colorForIndex(labels ? labels[j] : (j + 1));
-    } else {
-      const t = (diametersPx[j] - dMin) / span;
-      col = colorForRank(t);
+  if (fill && src) {
+    // 在独立 overlay 上填充颜色，再半透明叠回原始图
+    const overlay = src.clone();
+    for (let j = 0; j < keptIdx.length; j++) {
+      const col = (colorMode === "multi")
+        ? colorForIndex(labels ? labels[j] : (j + 1))
+        : colorForRank((diametersPx[j] - dMin) / span);
+      cv.drawContours(overlay, contours, keptIdx[j], col, -1);
     }
-    if (fill) {
-      // 半透明填充 + 细轮廓边界
-      const alpha = 0.45;
-      const fillCol = new cv.Scalar(col.data[0] * alpha + (1 - alpha) * 21,
-                                     col.data[1] * alpha + (1 - alpha) * 21,
-                                     col.data[2] * alpha + (1 - alpha) * 21,
-                                     255);
-      cv.drawContours(dst, contours, keptIdx[j], fillCol, -1);
+    cv.addWeighted(src, 0.55, overlay, 0.45, 0, dst);
+    overlay.delete();
+    // 再描边让边界更清晰
+    for (let j = 0; j < keptIdx.length; j++) {
+      const col = (colorMode === "multi")
+        ? colorForIndex(labels ? labels[j] : (j + 1))
+        : colorForRank((diametersPx[j] - dMin) / span);
       cv.drawContours(dst, contours, keptIdx[j], col, 1);
-    } else {
+    }
+  } else {
+    for (let j = 0; j < keptIdx.length; j++) {
+      const col = (colorMode === "multi")
+        ? colorForIndex(labels ? labels[j] : (j + 1))
+        : colorForRank((diametersPx[j] - dMin) / span);
       cv.drawContours(dst, contours, keptIdx[j], col, 2);
     }
   }
@@ -423,7 +429,7 @@ async function analyze() {
     }
 
     dst = s.src.clone();
-    drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax, p.colorMode, s.labels, p.fill);
+    drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax, p.colorMode, s.labels, p.fill, s.src);
     cv.imshow(dstCanvas, dst);
 
     const diameters = s.diametersPx.map((d) => d * p.unitPerPx);
@@ -712,7 +718,7 @@ async function runPreview() {
     s = await segment(p);
     if (s.diametersPx.length > 0) {
       dst = s.src.clone();
-      drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax, p.colorMode, s.labels, p.fill);
+      drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax, p.colorMode, s.labels, p.fill, s.src);
       cv.imshow(dstCanvas, dst);
       $("previewBadge").textContent = `预览 ${s.diametersPx.length} 颗`;
       $("previewBadge").hidden = false;
