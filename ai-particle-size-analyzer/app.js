@@ -196,10 +196,13 @@ function readParams() {
   const calPx = +$("calpx").value;
   const calLen = +$("calLen").value;
   const calUnit = $("calUnit").value;
-  const unitPerPx = calUnit === "px" ? 1 : (calPx > 0 ? calLen / calPx : 1);
+  const calOkay = calPx > 0 && calLen > 0 && !Number.isNaN(calLen);
+  const calibrated = calUnit !== "px" && calOkay;
+  const unitPerPx = calibrated ? (calLen / calPx) : 1;
+  const unitLabel = calibrated ? calUnit : "px";
   const ws = $("ws") ? $("ws").checked : false;
   const colorMode = $("colorMode") ? $("colorMode").value : "gradient";
-  return { mode, thr, block, kern, minArea, minCirc, polar, calPx, calLen, calUnit, unitPerPx, unitLabel: calUnit, ws, colorMode };
+  return { mode, thr, block, kern, minArea, minCirc, polar, calPx, calLen, calUnit, calibrated, unitPerPx, unitLabel, ws, colorMode };
 }
 
 /* ---------- 分水岭分离重叠/团聚颗粒 (提升准确度) ----------
@@ -893,7 +896,7 @@ function updateScaleInfo() {
     const perPx = calLen / calPx;
     $("scaleInfo").textContent = `✅ 已标定：1 px ≈ ${perPx.toFixed(4)} ${unit}（或 1 ${unit} ≈ ${(calPx / calLen).toFixed(2)} px），可进行分割调节与正式分析。`;
   } else {
-    $("scaleInfo").textContent = "⚠️ 请先标出已知长度并输入对应实际长度 / 单位，再进行分析。";
+    $("scaleInfo").textContent = "⚠️ 请先在图上拖线标出已知长度，并在右侧输入对应真实长度 / 单位，再进行分析。";
   }
 }
 
