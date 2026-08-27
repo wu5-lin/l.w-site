@@ -89,7 +89,8 @@ select, input[type="number"] {
   border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 13px;
 }
 .inline { display: flex; gap: 8px; }
-.inline input { flex: 1; }
+.inline input { flex: 1; min-width: 0; }
+.inline select { flex: none; width: auto; min-width: 72px; max-width: 110px; }
 .radio-row { display: flex; gap: 16px; margin-top: 4px; font-size: 13px; color: var(--text); }
 .radio-row label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
 .field.check { display: flex; align-items: flex-start; gap: 8px; font-size: 13px; color: var(--text); line-height: 1.5; }

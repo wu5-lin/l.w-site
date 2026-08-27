@@ -74,6 +74,7 @@
           <span>阈值方式</span>
           <select id="mode">
             <option value="adaptive">自适应阈值（推荐）</option>
+            <option value="otsu">Otsu 自动阈值（适合 SEM）</option>
             <option value="manual">手动阈值</option>
           </select>
         </label>
@@ -120,9 +121,21 @@
         </label>
 
         <label class="field check">
-          <input type="checkbox" id="ws" checked />
-          <span>分水岭分离重叠颗粒（拆分团聚粉末，提升识别准确度）</span>
+          <input type="checkbox" id="blur" />
+          <span>高斯模糊降噪（让 SEM 晶界/颗粒边缘更干净）</span>
         </label>
+
+        <label class="field check">
+          <input type="checkbox" id="fill" />
+          <span>填充着色（用半透明颜色盖住每颗晶粒，更易核对）</span>
+        </label>
+
+        <label class="field check">
+          <input type="checkbox" id="ws" checked />
+          <span>分水岭分离重叠颗粒（拆分团聚粉末；烧结陶瓷建议关闭）</span>
+        </label>
+
+        <p class="hint" style="margin-top:8px">💡 SEM 烧结陶瓷建议：Otsu 自动阈值 + 高斯模糊 + 关闭分水岭 + 填充着色。</p>
       </section>
 
       <button id="run" class="primary-btn" disabled>▶ 开始分析</button>

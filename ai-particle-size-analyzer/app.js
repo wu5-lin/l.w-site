@@ -202,7 +202,9 @@ function readParams() {
   const unitLabel = calibrated ? calUnit : "px";
   const ws = $("ws") ? $("ws").checked : false;
   const colorMode = $("colorMode") ? $("colorMode").value : "gradient";
-  return { mode, thr, block, kern, minArea, minCirc, polar, calPx, calLen, calUnit, calibrated, unitPerPx, unitLabel, ws, colorMode };
+  const blur = $("blur") ? $("blur").checked : false;
+  const fill = $("fill") ? $("fill").checked : false;
+  return { mode, thr, block, kern, minArea, minCirc, polar, calPx, calLen, calUnit, calibrated, unitPerPx, unitLabel, ws, colorMode, blur, fill };
 }
 
 /* ---------- 分水岭分离重叠/团聚颗粒 (提升准确度) ----------
@@ -257,12 +259,21 @@ async function watershedSplit(gray, thresh, src) {
 /* ---------- 分割 + 提取轮廓 (供 分析 / 实时预览 复用) ---------- */
 async function segment(p) {
   const src = cv.imread(srcCanvas);
-  const gray = new cv.Mat();
+  let gray = new cv.Mat();
   cv.cvtColor(src, gray, cv.COLOR_RGBA2GRAY);
+  if (p.blur) {
+    const tmp = new cv.Mat();
+    cv.GaussianBlur(gray, tmp, new cv.Size(3, 3), 0);
+    gray.delete();
+    gray = tmp;
+  }
   const thresh = new cv.Mat();
   if (p.mode === "adaptive") {
     const flag = p.polar === "bright" ? cv.THRESH_BINARY_INV : cv.THRESH_BINARY;
     cv.adaptiveThreshold(gray, thresh, 255, cv.ADAPTIVE_THRESH_GAUSSIAN_C, flag, p.block, 2);
+  } else if (p.mode === "otsu") {
+    const flag = (p.polar === "bright" ? cv.THRESH_BINARY_INV : cv.THRESH_BINARY) | cv.THRESH_OTSU;
+    cv.threshold(gray, thresh, 0, 255, flag);
   } else {
     const flag = p.polar === "bright" ? cv.THRESH_BINARY_INV : cv.THRESH_BINARY;
     cv.threshold(gray, thresh, p.thr, 255, flag);
@@ -330,8 +341,8 @@ async function segment(p) {
   return { src, gray, thresh, kernel, contours, hierarchy, keptIdx, diametersPx, rows, labels, dMin, dMax, W, H };
 }
 
-/* ---------- 按模式在 dst 上着色轮廓 ---------- */
-function drawContoursColored(dst, contours, keptIdx, diametersPx, dMin, dMax, colorMode, labels) {
+/* ---------- 按模式在 dst 上着色轮廓 / 填充 ---------- */
+function drawContoursColored(dst, contours, keptIdx, diametersPx, dMin, dMax, colorMode, labels, fill) {
   const span = (dMax - dMin) || 1;
   for (let j = 0; j < keptIdx.length; j++) {
     let col;
@@ -341,7 +352,18 @@ function drawContoursColored(dst, contours, keptIdx, diametersPx, dMin, dMax, co
       const t = (diametersPx[j] - dMin) / span;
       col = colorForRank(t);
     }
-    cv.drawContours(dst, contours, keptIdx[j], col, 2);
+    if (fill) {
+      // 半透明填充 + 细轮廓边界
+      const alpha = 0.45;
+      const fillCol = new cv.Scalar(col.data[0] * alpha + (1 - alpha) * 21,
+                                     col.data[1] * alpha + (1 - alpha) * 21,
+                                     col.data[2] * alpha + (1 - alpha) * 21,
+                                     255);
+      cv.drawContours(dst, contours, keptIdx[j], fillCol, -1);
+      cv.drawContours(dst, contours, keptIdx[j], col, 1);
+    } else {
+      cv.drawContours(dst, contours, keptIdx[j], col, 2);
+    }
   }
 }
 
@@ -401,7 +423,7 @@ async function analyze() {
     }
 
     dst = s.src.clone();
-    drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax, p.colorMode, s.labels);
+    drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax, p.colorMode, s.labels, p.fill);
     cv.imshow(dstCanvas, dst);
 
     const diameters = s.diametersPx.map((d) => d * p.unitPerPx);
@@ -690,7 +712,7 @@ async function runPreview() {
     s = await segment(p);
     if (s.diametersPx.length > 0) {
       dst = s.src.clone();
-      drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax, p.colorMode, s.labels);
+      drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax, p.colorMode, s.labels, p.fill);
       cv.imshow(dstCanvas, dst);
       $("previewBadge").textContent = `预览 ${s.diametersPx.length} 颗`;
       $("previewBadge").hidden = false;
@@ -865,8 +887,9 @@ function bindUI() {
 
   // 参数联动显示 + 实时预览
   $("mode").addEventListener("change", () => {
-    $("manualWrap").hidden = $("mode").value !== "manual";
-    $("blockWrap").hidden = $("mode").value !== "adaptive";
+    const m = $("mode").value;
+    $("manualWrap").hidden = m !== "manual";
+    $("blockWrap").hidden = m !== "adaptive";
     schedulePreview();
   });
   $("thr").addEventListener("input", () => { $("thrVal").textContent = $("thr").value; schedulePreview(); });
@@ -879,6 +902,8 @@ function bindUI() {
   );
   $("ws").addEventListener("change", schedulePreview);
   $("colorMode").addEventListener("change", schedulePreview);
+  $("blur").addEventListener("change", schedulePreview);
+  $("fill").addEventListener("change", schedulePreview);
 
   // 标尺校准
   $("calpx").addEventListener("input", () => { $("calPxVal").textContent = $("calpx").value; updateScaleInfo(); drawScaleOverlay(); applyCalibration(); });
