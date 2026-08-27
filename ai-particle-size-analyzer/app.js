@@ -28,16 +28,25 @@ let previewPending = false;
  * 解析后才是真正的 cv 命名空间; 经典 opencv.js 则 window.cv 直接是命名空间。
  * 这里先解析 Promise, 再轮询 cv.imread 是否就绪。 */
 async function waitCv(timeout = 150000) {
-  if (window.cv && typeof window.cv.then === "function") {
-    window.cv = await window.cv; // 解析出真正的 cv 命名空间
-  }
   const t0 = Date.now();
-  while (true) {
-    if (window.cv && typeof window.cv.imread === "function") return;
+  const sleep = () => new Promise((r) => setTimeout(r, 100));
+  // 1) 先等 opencv.js 脚本执行完, window.cv 出现 (可能还在下载 13MB wasm)
+  while (!window.cv) {
+    if (Date.now() - t0 > timeout) {
+      throw new Error("OpenCV 加载超时，请检查网络后强制刷新（Ctrl+F5）重试");
+    }
+    await sleep();
+  }
+  // 2) @techstark 构建 module.exports 是 Promise, 解析出真正的 cv 命名空间
+  if (typeof window.cv.then === "function") {
+    window.cv = await window.cv;
+  }
+  // 3) 再等 wasm 运行时就绪 (imread 挂载)
+  while (typeof window.cv.imread !== "function") {
     if (Date.now() - t0 > timeout) {
       throw new Error("OpenCV 加载超时，请强制刷新（Ctrl+F5）后重试");
     }
-    await new Promise((r) => setTimeout(r, 100));
+    await sleep();
   }
 }
 
