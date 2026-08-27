@@ -86,7 +86,12 @@
 
       <section class="block">
         <h2>3 · 标尺校准</h2>
-        <p class="hint">标出图像中已知长度，把像素换算成真实尺寸。</p>
+        <p class="hint">标出图像中已知长度，把像素换算成真实尺寸。可手动输入，也可在原图上<strong>拖线</strong>自动测像素数。</p>
+        <div class="calib-tools">
+          <button id="drawScale" class="ghost-btn" type="button">✏️ 画标尺线</button>
+          <button id="clearScale" class="ghost-btn" type="button">清除</button>
+        </div>
+        <p id="calHintLine" class="hint">点击「画标尺线」后，可在原图上拖线标出已知长度来设定比例尺。</p>
         <label class="field">
           <span>比例尺像素数 <b id="calPxVal">100</b></span>
           <input type="range" id="calpx" min="1" max="2000" value="100" />
@@ -114,11 +119,16 @@
     <section class="panel output">
       <div class="canvas-row">
         <figure class="canvas-box">
-          <figcaption>原图</figcaption>
-          <div class="cv-wrap"><canvas id="src"></canvas></div>
+          <figcaption>原图（可<strong>画线定标尺</strong>）</figcaption>
+          <div class="cv-wrap">
+            <div class="cv-stack">
+              <canvas id="src"></canvas>
+              <canvas id="srcOverlay"></canvas>
+            </div>
+          </div>
         </figure>
         <figure class="canvas-box">
-          <figcaption>分割结果（轮廓 + 着色）</figcaption>
+          <figcaption>分割结果（轮廓 + 着色）<span id="previewBadge" class="badge" hidden></span></figcaption>
           <div class="cv-wrap"><canvas id="dst"></canvas></div>
         </figure>
       </div>
@@ -135,8 +145,14 @@
       </div>
 
       <div class="chart-block" id="chartBlock" hidden>
-        <h2>粒径分布直方图</h2>
+        <div class="table-head">
+          <h2>粒径分布直方图</h2>
+          <div class="table-actions">
+            <button id="expPng" class="ghost-btn">导出 300 DPI 图</button>
+          </div>
+        </div>
         <canvas id="hist" height="220"></canvas>
+        <p id="fitInfo" class="meta" hidden></p>
       </div>
 
       <div class="table-block" id="tableBlock" hidden>
