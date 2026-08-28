@@ -11,7 +11,7 @@
   <meta property="og:title" content="LW · 智能实验工具" />
   <meta property="og:description" content="LW 聚焦材料研究与实验自动化，提供 AI 粒径分析、电镜图像分割与科研作图工具。" />
   <meta property="og:url" content="https://www.l-w.sryze.cc/" />
-  <meta property="og:image" content="https://www.l-w.sryze.cc/favicon.svg" />
+  <meta property="og:image" content="https://www.l-w.sryze.cc/og-image.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="LW · 智能实验工具" />
   <meta name="twitter:description" content="LW 聚焦材料研究与实验自动化，提供 AI 粒径分析、电镜图像分割与科研作图工具。" />
@@ -95,21 +95,45 @@
       <div class="section-head reveal">
         <p class="section-kicker">About</p>
         <h2 class="section-title">关于 LW</h2>
+        <p class="section-desc">LW 由材料研究者为材料研究者打造。我们聚焦微波介电陶瓷体系（如 Cr/Ta 共掺杂 Sm₂[Zr₁₋ₓ(Cr₀.₅Ta₀.₅)ₓ]₃[MoO₄]₉），用 P-V-L 化学键理论解析结构–性能关系，并把实验流程沉淀为可复用的本地工具。</p>
       </div>
       <div class="about-grid">
         <article class="about-card reveal">
           <h3 class="about-card-title">材料 + 代码</h3>
-          <p class="about-card-text">从实验设计到数据可视化，把材料科学问题拆解成可自动化的流程，减少重复劳动。</p>
+          <p class="about-card-text">从掺杂组分筛选、P-V-L 化学键参数计算（键离子性 fᵢ、晶格能、热膨胀系数）到介电性能（εr、Q×f、τf）表征，用代码把研究流程标准化、可复现。</p>
         </article>
         <article class="about-card reveal">
           <h3 class="about-card-title">本地优先</h3>
-          <p class="about-card-text">图像分析优先在浏览器或本地完成，原始数据不离开设备，兼顾效率与隐私。</p>
+          <p class="about-card-text">图像分析与粒径统计优先在浏览器本地完成，原始 SEM / 显微图像不上传服务器，兼顾效率与科研数据隐私。</p>
         </article>
         <article class="about-card reveal">
           <h3 class="about-card-title">持续迭代</h3>
-          <p class="about-card-text">工具从真实实验需求中长出来，根据使用反馈快速调整，避免过度设计。</p>
+          <p class="about-card-text">工具从真实实验需求中长出来——分水岭分割、标尺校准、SCI 规范配图，都来自一线测量的反馈，而非过度设计。</p>
         </article>
       </div>
+    </section>
+
+    <section id="cases" class="section">
+      <div class="section-head reveal">
+        <p class="section-kicker">Use Cases</p>
+        <h2 class="section-title">研究案例</h2>
+        <p class="section-desc">工具已在真实的微波介电陶瓷研究中落地。下方数据均来自实际测量与 P-V-L 计算——绝不虚构。</p>
+      </div>
+      <div class="cases-grid">
+        <article class="case-card reveal">
+          <div class="case-tag">P-V-L 化学键理论</div>
+          <h3 class="case-title">多化学键类型键离子性 fᵢ 并列对比</h3>
+          <p class="case-text">对 Sm₂[Zr₁₋ₓ(Cr₀.₅Ta₀.₅)ₓ]₃[MoO₄]₉ 在 x = 0.02–0.11 下的 Sm-O / Zr(Cr/Ta)-O / Mo-O 三类键，计算平均键离子性 fᵢ 并分组对比，直观看掺杂对化学键极性的影响。</p>
+          <a href="research-charts/?preset=pvl-fi" class="case-link">在图表生成器中打开真实数据 →</a>
+        </article>
+        <article class="case-card reveal">
+          <div class="case-tag">SEM 颗粒统计</div>
+          <h3 class="case-title">电镜颗粒粒径分布一键统计</h3>
+          <p class="case-text">上传 SEM / 显微图像，标尺校准后自动分割、分水岭分离团聚颗粒，输出等效直径、D10/D50/D90 与对数正态拟合分布，并把分布一键送入图表生成器出图。</p>
+          <a href="ai-particle-size-analyzer/" class="case-link">打开粒径分析工具 →</a>
+        </article>
+      </div>
+      <p class="cases-foot reveal">想展示你的真实成果图 / 数据？把数据或图发我，即可生成带你署名的专属案例卡片。</p>
     </section>
 
     <section id="news" class="section">

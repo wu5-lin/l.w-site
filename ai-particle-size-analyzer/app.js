@@ -702,6 +702,105 @@ function exportHistPng() {
   a.click();
 }
 
+/* ---------- 打印 / 导出 PDF 报告 ---------- */
+function exportReport() {
+  if (!lastResults || !lastResults.fit) return;
+  const { diameters, unit, rows, stats, fit } = lastResults;
+  const fmt = (v) => (v >= 100 ? v.toFixed(1) : v.toFixed(3));
+  const histData = $("hist").toDataURL("image/png");
+  const p = readParams();
+  const now = new Date().toLocaleString();
+  const rowsSorted = rows.slice().sort((a, b) => b.d - a.d).slice(0, 50);
+  const tblRows = rowsSorted.map((r, i) =>
+    `<tr><td>${i + 1}</td><td>${fmt(r.d)} ${unit}</td><td>${fmt(r.area)} ${unit}²</td><td>${r.circ.toFixed(3)}</td></tr>`
+  ).join("");
+  const w = window.open("", "_blank");
+  if (!w) { alert("请允许弹出窗口以生成报告。"); return; }
+  w.document.write(`<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/>
+<title>粒径分析报告</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: Arial, "Microsoft YaHei", sans-serif; color:#111; margin:32px; }
+  h1 { font-size:20px; margin:0 0 4px; }
+  .sub { color:#666; font-size:12px; margin-bottom:18px; }
+  .card { border:1px solid #ddd; border-radius:10px; padding:16px 18px; margin-bottom:18px; }
+  .kv { display:grid; grid-template-columns:repeat(4,1fr); gap:10px 18px; }
+  .kv div { font-size:13px; }
+  .kv b { display:block; color:#0a7; font-size:15px; font-weight:600; }
+  .sec-title { font-size:14px; font-weight:600; margin:0 0 10px; }
+  table { width:100%; border-collapse:collapse; font-size:12px; }
+  th,td { border:1px solid #e2e2e2; padding:5px 8px; text-align:right; }
+  th { background:#f5f5f5; }
+  img.hist { width:100%; max-width:560px; border:1px solid #e2e2e2; border-radius:8px; }
+  @media print { body { margin:12mm; } .noprint { display:none; } }
+  .btn { margin-top:10px; padding:8px 16px; border:1px solid #0a7; background:#0a7; color:#fff; border-radius:8px; cursor:pointer; }
+</style></head>
+<body>
+  <h1>AI 粒径分析报告</h1>
+  <div class="sub">生成时间：${now} ｜ 颗粒数：${stats.n} ｜ 单位：${unit} ｜ 标尺校准：${p.calibrated ? "已标定" : "未标定(像素)"}</div>
+  <div class="card">
+    <p class="sec-title">统计汇总</p>
+    <div class="kv">
+      <div>平均直径<b>${fmt(stats.mean)} ${unit}</b></div>
+      <div>中位 D50<b>${fmt(stats.median)} ${unit}</b></div>
+      <div>D10<b>${fmt(stats.d10)} ${unit}</b></div>
+      <div>D90<b>${fmt(stats.d90)} ${unit}</b></div>
+      <div>不均匀度 Cu<b>${stats.cu.toFixed(3)}</b></div>
+      <div>曲率 Cc<b>${stats.cc.toFixed(3)}</b></div>
+      <div>跨度 Span<b>${stats.span.toFixed(3)}</b></div>
+      <div>几何均值 dg<b>${fmt(fit.dg)} ${unit}</b></div>
+    </div>
+  </div>
+  <div class="card">
+    <p class="sec-title">粒径分布（对数正态拟合）</p>
+    <img class="hist" src="${histData}" />
+    <p style="font-size:12px;color:#555">${fit.degenerate ? "（单值分布，拟合不适用）" : `Log-normal fit: d_g=${fmt(fit.dg)} ${unit}, σ_g=${fit.sg.toFixed(2)}`}</p>
+  </div>
+  <div class="card">
+    <p class="sec-title">颗粒明细（前 50 条，完整见 CSV）</p>
+    <table><thead><tr><th>#</th><th>直径</th><th>面积</th><th>圆度</th></tr></thead><tbody>${tblRows}</tbody></table>
+  </div>
+  <button class="btn noprint" onclick="window.print()">打印 / 另存为 PDF</button>
+</body></html>`);
+  w.document.close();
+}
+
+/* ---------- 把粒径分布发送到图表生成器（两工具数据互通） ---------- */
+function sendToChart() {
+  if (!lastResults || !lastResults.diameters || !lastResults.diameters.length) {
+    alert("请先完成一次分析，再发送到图表生成器。");
+    return;
+  }
+  const unit = lastResults.unit;
+  const values = lastResults.diameters;
+  const n = values.length;
+  const min = Math.min(...values), max = Math.max(...values);
+  const range = (max - min) || 1;
+  const bins = Math.min(28, Math.max(8, Math.round(Math.sqrt(n))));
+  const binW = range / bins;
+  const counts = new Array(bins).fill(0);
+  const centers = [];
+  for (let i = 0; i < bins; i++) centers.push(min + (i + 0.5) * binW);
+  for (const v of values) {
+    let b = Math.floor((v - min) / binW);
+    if (b >= bins) b = bins - 1;
+    if (b < 0) b = 0;
+    counts[b]++;
+  }
+  let text = `# 粒径分布（来自 AI 粒径分析，单位 ${unit}）\n`;
+  text += `Distribution, Diameter(${unit}), Frequency(%)\n`;
+  for (let i = 0; i < bins; i++) {
+    const f = (counts[i] / n) * 100;
+    text += `Distribution, ${centers[i].toFixed(3)}, ${f.toFixed(2)}\n`;
+  }
+  try {
+    localStorage.setItem("lw_chart_seed", JSON.stringify({
+      text, type: "line", xTitle: `Diameter (${unit})`, yTitle: "Frequency (%)"
+    }));
+  } catch (e) { /* ignore */ }
+  window.open("../research-charts/?from=particle", "_blank");
+}
+
 /* ---------- 实时预览 (拖动参数时彩色高亮被选中晶粒) ---------- */
 function schedulePreview() {
   if (!imgLoaded) return;
@@ -894,6 +993,8 @@ function bindUI() {
   $("run").addEventListener("click", analyze);
   $("expCsv").addEventListener("click", exportCsv);
   $("expPng").addEventListener("click", exportHistPng);
+  $("expPdf").addEventListener("click", exportReport);
+  $("sendChart").addEventListener("click", sendToChart);
   $("drawScale").addEventListener("click", toggleScale);
   $("clearScale").addEventListener("click", () => { scaleLine = null; drawEnd = null; drawScaleOverlay(); });
 

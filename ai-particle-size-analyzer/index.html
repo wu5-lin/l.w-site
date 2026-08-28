@@ -11,7 +11,7 @@
   <meta property="og:title" content="AI 粒径分析 · Particle Size Analyzer" />
   <meta property="og:description" content="浏览器端基于 OpenCV.js 的 SEM 颗粒粒径分析工具：标尺标定、分水岭分割、多色标注，输出 D10/D50/D90 与分布图。" />
   <meta property="og:url" content="https://www.l-w.sryze.cc/ai-particle-size-analyzer/" />
-  <meta property="og:image" content="https://www.l-w.sryze.cc/favicon.svg" />
+  <meta property="og:image" content="https://www.l-w.sryze.cc/og-image.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="AI 粒径分析 · Particle Size Analyzer" />
   <meta name="twitter:description" content="浏览器端基于 OpenCV.js 的 SEM 颗粒粒径分析工具：标尺标定、分水岭分割、多色标注。" />
@@ -188,6 +188,7 @@
           <h2>粒径分布直方图</h2>
           <div class="table-actions">
             <button id="expPng" class="ghost-btn">导出 300 DPI 图</button>
+            <button id="sendChart" class="ghost-btn">用图表生成器作图 →</button>
           </div>
         </div>
         <canvas id="hist" height="220"></canvas>
@@ -199,6 +200,7 @@
           <h2>颗粒明细</h2>
           <div class="table-actions">
             <button id="expCsv" class="ghost-btn">导出 CSV</button>
+            <button id="expPdf" class="ghost-btn">打印 / 导出 PDF 报告</button>
           </div>
         </div>
         <div class="table-scroll">

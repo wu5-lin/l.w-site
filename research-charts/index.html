@@ -11,7 +11,7 @@
   <meta property="og:title" content="科研图表生成器 · LW" />
   <meta property="og:description" content="浏览器内输入数据，生成符合 SCI 期刊规范的出版级图表（分组柱状图 / 折线 / 散点），可下载 SVG 与 300 DPI PNG。" />
   <meta property="og:url" content="https://www.l-w.sryze.cc/research-charts/" />
-  <meta property="og:image" content="https://www.l-w.sryze.cc/favicon.svg" />
+  <meta property="og:image" content="https://www.l-w.sryze.cc/og-image.png" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="科研图表生成器 · LW" />
   <meta name="twitter:description" content="浏览器内输入数据，生成符合 SCI 期刊规范的出版级图表，可下载 SVG 与 300 DPI PNG。" />
@@ -146,6 +146,7 @@
               <button data-type="bar" class="active">分组柱状图</button>
               <button data-type="line">折线图</button>
               <button data-type="scatter">散点图</button>
+              <button data-type="box">箱线图</button>
             </div>
           </div>
 
@@ -154,6 +155,12 @@
             <textarea id="data" spellcheck="false"></textarea>
             <div class="hint" id="fmtHint"></div>
             <div class="example-btns" id="examples"></div>
+          </div>
+
+          <div class="field">
+            <label>陶瓷研究模板</label>
+            <div class="example-btns" id="presets"></div>
+            <div class="hint">一键载入 P-V-L 键离子性（真实计算值）或介电性能示例结构，替换为你的实测值即可出图。</div>
           </div>
 
           <div class="field">
@@ -194,6 +201,9 @@
             <div class="row2">
               <label class="check"><input type="checkbox" id="grid" /> 网格线</label>
               <label class="check"><input type="checkbox" id="legend" checked /> 图例</label>
+            </div>
+            <div class="row2">
+              <label class="check" style="display:none"><input type="checkbox" id="fit" /> 线性拟合趋势线</label>
             </div>
           </div>
 
