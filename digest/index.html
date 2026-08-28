@@ -88,6 +88,9 @@
       text-align: center; color: var(--text-muted); padding: 60px 20px; border: 1px dashed var(--line-strong);
       border-radius: 16px; line-height: 1.8; font-size: 0.92rem;
     }
+
+    .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    @media (max-width: 860px) { .related-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -150,6 +153,27 @@
         <div class="empty" id="empty" hidden>
           暂无数据。<br />简报由 GitHub Actions 每日（北京 09:00）自动抓取并更新；首次运行后此处即出现内容。
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <p class="section-kicker">Related</p>
+        <h2 class="section-title">相关工具</h2>
+      </div>
+      <div class="related-grid">
+        <article class="product-card">
+          <div class="product-icon" aria-hidden="true">◎</div>
+          <h3 class="product-title">AI 粒径分析（网页版）</h3>
+          <p class="product-desc">浏览器端 OpenCV.js 本地分割，输出 D10/D50/D90 与粒径分布图。</p>
+          <a href="../ai-particle-size-analyzer/" class="product-link">打开工具 →</a>
+        </article>
+        <article class="product-card">
+          <div class="product-icon" aria-hidden="true">◈</div>
+          <h3 class="product-title">科研图表生成器</h3>
+          <p class="product-desc">粘贴数据即出 SCI 规范图表（柱状 / 折线 / 散点 / 箱线），支持线性拟合与陶瓷模板。</p>
+          <a href="../research-charts/" class="product-link">打开工具 →</a>
+        </article>
       </div>
     </section>
   </main>
