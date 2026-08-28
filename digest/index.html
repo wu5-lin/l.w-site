@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>每日简报 · LW</title>
+  <meta name="description" content="每日自动聚合的国内外投资、科研、web3 与科技前沿资讯——多类别、可筛选、纯静态。" />
+  <meta name="keywords" content="每日简报, 投资资讯, 科研资讯, web3资讯, 科技资讯, 信息聚合, RSS聚合" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="LW · 智能实验工具" />
+  <meta property="og:title" content="每日简报 · LW" />
+  <meta property="og:description" content="每日自动聚合的国内外投资、科研、web3 与科技前沿资讯——多类别、可筛选、纯静态。" />
+  <meta property="og:url" content="https://www.l-w.sryze.cc/digest/" />
+  <meta property="og:image" content="https://www.l-w.sryze.cc/og-image.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="每日简报 · LW" />
+  <meta name="twitter:description" content="每日自动聚合的国内外投资、科研、web3 与科技前沿资讯。" />
+  <meta name="theme-color" content="#07070a" />
+  <link rel="icon" href="../favicon.svg" />
+  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600|noto-serif-sc:400,500,600" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <style>
+    .subhero { padding: calc(var(--nav-h) + 56px) 0 18px; }
+    .subhero-kicker { color: var(--accent); font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 14px; }
+    .subhero h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; font-weight: 600; margin-bottom: 14px; }
+    .subhero-lead { color: var(--text-dim); font-size: 1.05rem; max-width: 64ch; font-weight: 300; }
+
+    /* ---------- 控制条 ---------- */
+    .controls {
+      position: sticky; top: calc(var(--nav-h) + 8px); z-index: 20;
+      background: rgba(10, 11, 16, 0.82); backdrop-filter: blur(12px);
+      border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px;
+      margin: 8px 0 26px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center;
+    }
+    .ctl-group { display: flex; align-items: center; gap: 8px; }
+    .ctl-label { font-size: 0.74rem; color: var(--text-muted); margin-right: 2px; }
+    .seg { display: flex; gap: 6px; flex-wrap: wrap; }
+    .seg button {
+      padding: 7px 14px; border-radius: 9px; border: 1px solid var(--line-strong);
+      background: transparent; color: var(--text-dim); cursor: pointer; font-size: 0.84rem; transition: all 0.16s;
+    }
+    .seg button:hover { border-color: var(--accent); color: var(--text); }
+    .seg button.active { background: rgba(34,211,238,0.14); border-color: var(--accent); color: var(--accent); }
+    .search-box { flex: 1; min-width: 200px; }
+    .search-box input {
+      width: 100%; background: var(--bg); color: var(--text); border: 1px solid var(--line-strong);
+      border-radius: 10px; padding: 9px 12px; font-size: 0.9rem; font-family: var(--font-sans);
+    }
+    .search-box input:focus { outline: none; border-color: var(--accent); }
+    @media (max-width: 680px) { .controls { position: static; } }
+
+    .digest-meta { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 18px; }
+
+    /* ---------- 卡片网格 ---------- */
+    .news-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    @media (max-width: 860px) { .news-grid { grid-template-columns: 1fr; } }
+
+    .dcard {
+      background: linear-gradient(180deg, var(--surface) 0%, var(--bg-elevated) 100%);
+      border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px;
+      display: flex; flex-direction: column; gap: 10px; transition: border-color 0.18s, transform 0.18s;
+    }
+    .dcard:hover { border-color: var(--line-strong); transform: translateY(-2px); }
+    .dcard-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .tag {
+      font-size: 0.72rem; padding: 3px 9px; border-radius: 999px; font-weight: 500;
+      border: 1px solid currentColor;
+    }
+    .cat-投资 { color: #fbbf24; }
+    .cat-科研 { color: #22d3ee; }
+    .cat-web3 { color: #c084fc; }
+    .cat-科技 { color: #34d399; }
+    .region-badge {
+      font-size: 0.68rem; padding: 2px 8px; border-radius: 999px; color: var(--text-muted);
+      background: rgba(255,255,255,0.06); border: 1px solid var(--line);
+    }
+    .region-badge.cn { color: #7dd3fc; }
+    .region-badge.en { color: #a5b4fc; }
+    .dcard h3 { font-size: 1.02rem; font-weight: 600; line-height: 1.45; }
+    .dcard h3 a { color: var(--text); text-decoration: none; }
+    .dcard h3 a:hover { color: var(--accent); }
+    .dcard .sum { font-size: 0.85rem; color: var(--text-dim); line-height: 1.6; font-weight: 300;
+      display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .dcard .date { font-size: 0.74rem; color: var(--text-muted); font-variant-numeric: tabular-nums; margin-top: auto; }
+
+    .empty {
+      text-align: center; color: var(--text-muted); padding: 60px 20px; border: 1px dashed var(--line-strong);
+      border-radius: 16px; line-height: 1.8; font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../" class="logo">
+        <span class="logo-mark">LW</span>
+        <span class="logo-text">智能实验工具</span>
+      </a>
+      <nav class="nav-links">
+        <a href="../#products">产品</a>
+        <a href="../#news">资讯</a>
+        <a href="../digest/" style="color: var(--accent)">简报</a>
+        <a href="../#contact" class="nav-cta">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section subhero">
+      <div class="section-inner">
+        <p class="subhero-kicker">Daily Digest</p>
+        <h1>每日简报</h1>
+        <p class="subhero-lead">
+          每日自动聚合的<strong style="color:var(--text)">国内外投资</strong>、<strong style="color:var(--text)">科研</strong>、
+          <strong style="color:var(--text)">web3</strong> 与<strong style="color:var(--text)">科技</strong>前沿资讯。
+          多类别、可按地区与关键词筛选，纯静态、无追踪。
+        </p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 8px">
+      <div class="section-inner">
+        <div class="controls">
+          <div class="ctl-group">
+            <span class="ctl-label">类别</span>
+            <div class="seg" id="catSeg">
+              <button data-cat="全部" class="active">全部</button>
+              <button data-cat="投资">投资</button>
+              <button data-cat="科研">科研</button>
+              <button data-cat="web3">web3</button>
+              <button data-cat="科技">科技</button>
+            </div>
+          </div>
+          <div class="ctl-group">
+            <span class="ctl-label">地区</span>
+            <div class="seg" id="regionSeg">
+              <button data-region="全部" class="active">全部</button>
+              <button data-region="cn">国内</button>
+              <button data-region="en">国际</button>
+            </div>
+          </div>
+          <div class="search-box">
+            <input type="text" id="q" placeholder="搜索标题 / 摘要 / 来源…" />
+          </div>
+        </div>
+
+        <div class="digest-meta" id="meta">加载中…</div>
+        <div class="news-grid" id="grid"></div>
+        <div class="empty" id="empty" hidden>
+          暂无数据。<br />简报由 GitHub Actions 每日（北京 09:00）自动抓取并更新；首次运行后此处即出现内容。
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© <span id="year"></span> LW. 保留所有权利。</p>
+      <p class="footer-domain"><a href="../" style="color:inherit;text-decoration:none">l-w.sryze.cc</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
