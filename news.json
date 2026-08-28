@@ -1,101 +1,101 @@
 {
-  "updated": "2026-08-27 08:19",
+  "updated": "2026-08-28 10:21",
   "items": [
     {
-      "date": "2026-08-27",
-      "tag": "The Verge AI",
-      "title": "OpenAI’s rogue AI model incident was worse than we thought",
-      "summary": "In July, an unreleased OpenAI model broke out of a restricted environment, figured out how to get access to the internet, allowed AI agents to talk to each other using a secret \"message board,\" and hacked into the internal systems of a different AI lab, Hugging Face. It took nearly two weeks for OpenAI to […]",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/985385/openais-rogue-ai-model-hugging-face-cybersecurity-incident-reports-metr",
-      "source": "The Verge AI"
-    },
-    {
-      "date": "2026-08-27",
-      "tag": "IT之家",
-      "title": "小鹏 Master Agent 超级智能体上车：第二代 VLA 全新版本升级，可语音控制靠边停车",
-      "summary": "IT之家 8 月 27 日消息，在今日的小鹏物理 AI 分享暨第二代 VLA 全新版本体验日活动中，小鹏第二代 VLA 全新版本模型能力全面增强。 据小鹏官方介绍，第二代 VLA 全新版本升级的不只是智能辅助驾驶， 小鹏选择用做机器人的方式重构车机大脑，首次推出 Master Agent ，实现 VLA 与 VLM 驾舱融合，让车辆从“听懂一句话”进一步走向“理解用户真正想完成什么”。 Master Agent 建立在小鹏自研 Omni 全模态模型之上，不仅能够理解自然语言和模糊语义， 还能将用户意图自动拆解为任务 ，并调度智驾、底盘、座舱、车身控制等垂直 Agent 协同执行，实现从“理解”到“行动”的闭环。 IT之家注意到，官方演示了 语音控制靠边停车 ，第二代 VLA 全新版本还能理解模糊语意，比如可通过对一个门店的模糊描述来找到该门店，并规划行程。",
-      "url": "https://www.ithome.com/0/995/040.htm",
-      "source": "IT之家"
-    },
-    {
-      "date": "2026-08-27",
-      "tag": "极客公园",
-      "title": "129 亿美元，英伟达拿下 Hugging Face",
-      "summary": "作者｜Wildcard 编辑｜靖宇 芯片巨头，开始抢「分发权」了。 129 亿美元，英伟达要把 Hugging Face 买下来了。 当地时间 8 月 26 日外媒率先爆出消息， 两天前还只是 Hugging Face「正在探索出售」的新闻，转眼就变成了「双方已达成协议」。速度快得让人来不及消化。 这不是一笔普通的 AI 公司并购，而是芯片之王第一次伸手去抓开源 AI 世界的「分发权」。 Hugging Face 被称为 AI 界的「GitHub」，托管着超过 300 万个模型仓库，服务 1300 万开发者，Meta 的 Llama、阿里的 Qwen、Mistral 的开源模型，全都住在这个平台上。它是整个开源 AI 生态事实上的「默认分发层」。 而英伟达，已经垄断了训练和推理的 GPU 硬件。 现在，它还想拥有模型流通的那条路。 01 踩着 AI 打滚 先说钱。Hugging Face 上一轮融资是 2023 年 8 月的 D 轮，Salesforce 领投 2.35 亿美元，估值 45 亿美元。Google、英伟达、亚马逊、IBM、Intel、AMD、高通全都参投了那一轮。三年后，129 亿美元的价格大约是上一轮估值的三倍。 乍一看翻了三倍很夸张。但放在 AI 行业的估值泡沫里看，这个溢价反而算克制。Perplexity 正在按 300 亿美元以上估值谈融资，Anthropic 和 OpenAI 的估值更是比收入高出两个数量级。 Hugging Face 的 ARR（年度经常性收入）据 Sacra 估计在 2026 年 8 月达到了 1.5 亿美元，相比 2023 年的约 3000 万美元已经翻了五倍。5 万家企业客户，769 名员工，CEO Clément Delangue 不久前还在播客里说公司「接近盈利」。 但 129 亿的价格买的不是 Hugging Face 的收入，而是它在 AI 世界里的位置。 这个逻辑更接近 IBM 2019 年花 340 亿美元收购 Red Hat——战略买家为开发者生态中的卡位付费，而不是为短期现金流买单。 02 英伟达，更大的野心 如果只把这次收购理解为「芯片公司买了个模型托管平台」，那就太浅了。 过去一年，英伟达在开源 AI 上的投入力度大到令人意外。 今年 3 月 GTC 大会上，黄仁勋宣布成立「Nemotron 联盟」，这是一个由 Mistral AI、Perplexity、Cursor、LangChain 等八家 AI 实验室组成的全球协作组织，目标是共同开发前沿级别的开源基础模型。英伟达为此承诺了五年 260 亿美元的投资，通过 SEC 文件披露。 这是有史以来对开源 AI 的最大一笔资金承诺。 联盟打造的第一个模型将成为 Nemotron 4 系列的基础。据外媒 8 月初报道，Nemotron 4 最大版本预计将达到万亿参数级别，直接对标全球最强的开源和闭源模型。而在此之前，英伟达已经发布了 Nemotron 3 系列，包括 3 月发布的 Nemotron 3 Super（1200 亿参数、120 亿激活参数），以及 8 月刚发布的 Nemotron 3.5 Lightning，一个可以在单张 GPU 上运行的轻量级开源模型。 黄仁勋亲自站台为开源模型辩护。 今年 7 月，他在 X 上发了自己的第一条帖子，公开力挺开源 AI，正值美国政界因 Moonshot AI 的 Kimi K3 模型引发的国安争论甚嚣尘上。他的态度很明确：「免费的 AI 对硬件来说是好事。免费的 AI 对芯片来说是好事。」 说白了，英伟达推开源的底层逻辑和 Google 推 Android 一模一样——让软件免费，用软件生态把硬件销量拉起来。 每一个开发者用开源模型做产品，都需要英伟达的 GPU 来训练和推理。模型越多，用户越多，芯片需求越大。 现在，把 Hugging Face 收入囊中，英伟达就不只是「提供训练开源模型的硬件」，而是直接拥有了开源模型「住」的地方。 03 具身智能，更大的棋 但英伟达的胃口不止于语言模型和代码生成。 今年同样在 GTC 上，黄仁勋发布了 Isaac GR00T N1，号称全球第一个开源的通用人形机器人基础模型。6 月的 GTC 台北，他又拿出了 Isaac GR00T 参考人形机器人——一套完整的开源硬件参考设计，基于宇树 H2 Plus 人形底盘、Sharpa 五指灵巧手、Jetson Thor 算力平台，以及整套 Isaac GR00T 软件栈。斯坦福、ETH Zurich、Allen AI 研究所、UCSD 都已是首批合作机构。 与此同时，5 月底发布的 Cosmos 3 是英伟达首个完全开源的「全模态模型」，专门为「物理 AI」设计——也就是控制机器人、自动驾驶车辆和其他在物理世界中行动的机器。1 月 CES 上发布的自动驾驶推理模型 Alpamayo，也是开源的。 把这些点连起来看，英伟达正在搭建一个完整的「物理 AI」开源生态。 从世界模型（Cosmos）到机器人基础模型（GR00T N1）再到仿真引擎（Isaac Sim）、硬件参考设计，一直到边缘计算芯片（Jetson Thor），全栈覆盖，全部开源或开放。 黄仁勋在台北说过：「人形机器人将为全球最大的产业带来物理 AI，打开一个数万亿美元的经济机遇。」 而 Hugging Face，恰好是全世界机器人研究者分享模型、数据集和工具的默认平台。当英伟达拥有了这个分发层，它的具身智能开源生态就从「散装」变成了「全链路闭环」。训练用英伟达的 GPU，模型发在英伟达拥有的平台上，跑在英伟达的芯片上，控制着装了英伟达算力的机器人。 04 「中立平台」疑云 所有人最关心的问题，是 Hugging Face 的「中立性」。 今年 1 月就有消息称，Hugging Face 拒绝了英伟达 50 亿美元的投资，核心原因就是创始团队担心与某一家芯片巨头绑定太深会损害平台在 AMD、Intel 等竞争对手之间的中立地位。 但七个月后，他们选择了接受 129 亿的收购。 开发者社区的担忧是现实的。有 X 上的用户直言：「压制开源路径的方法之一，就是让 Hugging Face 被大公司收购。」平台上托管着大量中国公司的开源模型，DeepSeek、阿里 Qwen 等中国模型按下载量计算在多个类别中已经是 Hugging Face 上最热门的选项。 一个归属于美国芯片巨头的平台，还能继续充当全球中立的 AI 模型分发中心吗？ 历史给了两个参照。2018 年微软以 75 亿美元收购 GitHub，开发者一度恐慌出逃，但微软最终保持了 GitHub 的独立运营和开放生态，反而让它变得更好。IBM 在 2019 年用 340 亿美元买下 Red Hat 后也承诺保留其开源文化。这些收购最终证明，「收编」开源平台不一定意味着「封闭」。 但英伟达的情况有一个根本不同。 微软收购 GitHub 时，微软不是开发者工具市场的垄断者；IBM 收购 Red Hat 时，IBM 也不是企业计算市场的绝对霸主。 而英伟达，手握 AI GPU 市场超过 80% 的份额。 一个垄断硬件的玩家同时拥有开源软件的最大分发平台，监管机构必然要仔细审视。 现金和股票的比例、核心研发团队的留任安排、平台开源承诺的延续方式，这些交易细节目前还没有披露。这些细节将决定这笔收购是生态的正常扩张，还是一场引发行业震荡的垂直整合。 从 260 亿美元投建 Nemotron 联盟到万亿参数模型，从 GR00T 机器人到 Cosmos 世界模型，再到 129 亿美元拿下 Hugging Face——过去六个月英伟达的动作，画出了一条清晰的线。 它不再满足于只卖铲子给挖金矿的人，它要拥有金矿本身。 或者更准确地说，它要拥有从矿场到集散市场的整条供应链。 这对 AI 行业意味着什么？当世界上最强大的 AI 基础设施公司开始同时控制硬件、模型、分发平台和机器人开发栈，「开源」这两个字的含义，可能需要被重新定义了。 *头图来源：英伟达 本文为极客公园原创文章，转载请联系极客君微信 geekparkGO",
-      "url": "http://www.geekpark.net/news/369458",
-      "source": "极客公园"
-    },
-    {
-      "date": "2026-08-27",
-      "tag": "IT之家",
-      "title": "谷歌 Gemini Live 大升级，整合 Spark 智能体、Gmail 等提升生产力",
-      "summary": "IT之家 8 月 27 日消息，谷歌今天宣布对 Gemini Live 进行重大升级，新增多项以提升生产力为核心的集成功能。 Gemini Live 是谷歌公司开发的 AI 语音对话应用软件，现在可以与 Spark 个人 AI 智能体（AI Pro 及更高版本）集成，用户可以通过自然语音指令，在网页、Google Drive、Docs 和 Sheets 等服务中设置复杂的多步骤任务。 例如，当你正在思考一个创意时，可以一边走路，一边把那些零散的想法、灵感和还不成熟的计划随口说给 Gemini。Spark 能够理解这些类似“头脑风暴”的对话内容，梳理出其中的核心主题，并在你坐下来开始工作时，将它们整理成一份结构清晰的 Google Docs 大纲。 据IT之家了解，Gemini Live 还能帮助简化家庭餐食准备。用户只需让 Gemini 为家人维护一份每周食谱，例如要求它规划一份高蛋白素食菜单，它就可以根据保存在 Docs 中的食谱，自动生成相应的购物清单。 与此前推出的 Gmail Live 专属体验类似，Gemini Live 现在也获得了对电子邮件的深度整合。用户可以直接通过语音询问：“有新邮件吗？”或者“今天孩子学校有没有发来紧急邮件？”此外，用户还可以免提搜索、总结、加星标、归档或删除邮件。 与此同时，Gemini Live 现在还能接入每日简报（Daily Brief）。用户可以直接问：“我今天的简报是什么？”或者“我今天有什么安排？”，Gemini 就会汇总当天待办事项，生成一份关于全天安排的摘要。 今天公布的最后一项更新，则是将过去聊天记录中的记忆与个人智能功能整合进 Gemini Live，使其能够提供与文字聊天类似的个性化体验。 谷歌举例称，用户可以直接问：“去年夏天去纽约时，我们去过的那家餐厅叫什么名字？”或者“你能找出我们昨天聊过的那道菜谱吗？”Gemini 会从聊天记录和已连接的应用中查找相关信息，并直接给出准确答案。 谷歌强调，使用 Gemini Live 时，用户无需自己判断某项任务究竟应该调用 Spark、Daily Brief，还是进行一次简单的收件箱搜索。 谷歌表示：“你不应该还要猜测，一项任务到底需要 Spark、Daily Brief，还是简单搜索一下收件箱。Gemini Live 真正神奇的地方在于，你永远不需要弄清楚该使用哪个工具，它会在一段连续、不中断的对话中，将你一天中的各种信息和任务串联起来。”",
-      "url": "https://www.ithome.com/0/994/993.htm",
-      "source": "IT之家"
-    },
-    {
-      "date": "2026-08-27",
-      "tag": "IT之家",
-      "title": "英伟达 CEO 黄仁勋：在很多任务上我们已实现 AGI，该里程碑已无意义",
-      "summary": "IT之家 8 月 27 日消息，能够匹配甚至超越人类智能的 AI，仍是科技行业追逐的重要目标。但在英伟达 CEO 黄仁勋看来，通用人工智能（AGI）这个里程碑本身，如今已经变得没那么重要了。 黄仁勋在当地时间周三举行的财报电话会上表示：“对于很多任务来说，我们可以说已经实现了 AGI。我认为，所有这些所谓的里程碑…… 到了现在，其实已经没什么意义了。” OpenAI CEO 萨姆・奥尔特曼近日在接受《时代》杂志采访时表示，OpenAI 将在今年年底前于内部实现 AGI。按照 OpenAI 的定义，AGI 是指“在大多数具有经济价值的工作中表现超过人类的高度自主系统”。 黄仁勋并未在财报电话会上给出 AGI 的具体定义。不过，他认为，AI 已经不再只是等待人类输入提示词，然后执行任务。如今，越来越多被称为“智能体”的 AI 程序已经能够自主运行，并通过反复执行任务实现“递归式”改进。 黄仁勋表示：“我认为，目前对整个行业来说，最重要的是三件事。第一，AI 正在完成具有生产价值和实际用途的工作。第二，AI 正在产生能够带来利润的 Token。第三，如果我们拥有更多算力，就可以生成更多能够带来利润的 Token，从而让所有服务获得更多收益。我们现在正处于这样一个阶段。” 黄仁勋强调生产力和盈利能力，或许也是对近期 AI 泡沫担忧的一种回应。随着科技行业以前所未有的规模投资 AI 数据中心，市场对于这股热潮是否存在泡沫的担忧正在升温。与此同时，OpenAI 和 Anthropic 两大 AI 公司仍需要证明自身能够实现持续盈利。 也有批评者认为，大语言模型永远无法真正实现 AGI，因为它们缺乏持久记忆，在理解逻辑方面仍存在困难，而且依然容易产生“幻觉”，生成错误信息。 不过，至少对于英伟达来说，AI 热潮已经带来了实实在在的巨额利润。英伟达在 2026 财年第二季度实现 962 亿美元 （IT之家注：现汇率约合 6,481.78 亿元人民币） 营收，同比增长高达 106%。 英伟达还表示，如果不是受到 AI 热潮引发的内存供应短缺限制，公司原本还可以实现更快增长。该公司预计，内存短缺至少会持续到 2028 年初，并继续成为制约业务发展的瓶颈。 英伟达 CFO 科莱特・克雷斯在电话会上表示：“我们正在经历极端的内存定价环境。内存价格上涨的幅度已经超过了我们此前的预期，而且明年价格还会进一步走高。” 这对于英伟达的显卡业务来说显然不是一个好消息。近期，受内存价格上涨等因素影响，英伟达显卡已经出现了一轮涨价。 事实上，黄仁勋此前就曾表达过类似观点。今年早些时候，他在莱克斯・弗里德曼的播客节目中表示，从某种程度上来说，科技行业其实已经实现了 AGI。 他说：“我认为就是现在。我认为我们已经实现了 AGI。” 黄仁勋举例称，如今的 AI 程序已经能够开发出一款应用，并让它迅速走红、吸引数十亿用户，尽管这类应用之后可能很快又失去热度。 不过，他也强调，AI 的能力仍然存在明显边界。“但如果让 10 万个这样的智能体去打造一家英伟达，成功的概率仍然是零。”他说。",
-      "url": "https://www.ithome.com/0/994/982.htm",
-      "source": "IT之家"
-    },
-    {
-      "date": "2026-08-27",
+      "date": "2026-08-28",
       "tag": "钛媒体",
-      "title": "单季1200亿资本开支，中国互联网的AI千亿豪赌",
-      "summary": "当中国云厂商的ROIC只有13%-20%，而大洋彼岸的美国同行却能赚到25%-50%时，中美AI算力投资的回报差距，最终会以什么形式收敛？",
-      "url": "https://www.tmtpost.com/8117891.html",
+      "title": "光本位科技完成数十亿元融资，估值达到近200亿元",
+      "summary": "光本位科技已成为全球融资规模最大、产品研发和商业化进度最快的光计算公司之一。",
+      "url": "https://www.tmtpost.com/8120301.html",
       "source": "钛媒体"
     },
     {
-      "date": "2026-08-27",
+      "date": "2026-08-28",
+      "tag": "IT之家",
+      "title": "AMD 发布 ROCm 10.0.0，重点关注 AI 推理、开发者工具、性能分析",
+      "summary": "IT之家 8 月 28 日消息，AMD 本周发布了 GPU 加速计算开放软件堆栈 ROCm 的 10.0.0 版本，这一版本号旨在纪念其诞生 10 周年。新版本 重点关注 Instinct、Radeon、Ryzen AI 平台上的 AI 推理、开发者工具、性能分析 。 ROCm 10.0.0 扩展了对 GPU、虚拟化的支持，将 8GB 与 4GB 显存版本的 Radeon RX 9050 显卡纳入其中； 升级了 PyTorch、JAX、vLLM、SGLang、MIGraphX、ONNX Runtime 人工智能框架 ；改进 HIP 性能；更新数学、稀疏、通信库。 AMD 还向用户开放了 ROCm.AI 。其可利用人工智能技术加速 AMD 硬件上的开发速度和性能优化，包括 ROCm Hyperloom 自主智能体系统、AMD Skills 技能库、ROCm CLI 命令行界面。",
+      "url": "https://www.ithome.com/0/995/683.htm",
+      "source": "IT之家"
+    },
+    {
+      "date": "2026-08-28",
+      "tag": "钛媒体",
+      "title": "Cheaper AI Inference Drives Record Infrastructure Spending",
+      "summary": "The cost of running equivalent AI models has fallen sharply since 2022, yet major technology firms continue to increase capital spending on data centers, memory, packaging, and power. Efficiency gains are expanding total demand through multi-step agent systems, shifting physical bottlenecks and concentrating value in slower-to-scale assets.",
+      "url": "https://www.tmtpost.com/8120746.html",
+      "source": "钛媒体"
+    },
+    {
+      "date": "2026-08-28",
+      "tag": "钛媒体",
+      "title": "造得出一万台机器人，却喂不饱一个大脑",
+      "summary": "身体已经进量产时代，大脑还在等米下锅。人形机器人的\"数据饥荒\"，比你想的更严重。",
+      "url": "https://www.tmtpost.com/8120504.html",
+      "source": "钛媒体"
+    },
+    {
+      "date": "2026-08-28",
+      "tag": "IT之家",
+      "title": "赛力斯投资的赛豆科技首款量产车 AIVA ME7 伪装车曝光，现身新疆吐鲁番高温路试",
+      "summary": "IT之家 8 月 28 日消息，由重庆市沙坪坝区与赛力斯共同投资的 赛豆科技在今年 6 月迎来首秀 ，发布 AIVA 首款概念车 AIVA Origin Concept， 并宣布首款量产车型 AIVA ME7 将于年内发布 ，全系车型将覆盖 20 万元以上主流市场。 博主 @孙少军09 今日晒出照片，有人在新疆吐鲁番碰到了正在进行高温测试的 AIVA ME7 伪装车。 从图中可以看到，AIVA ME7 的车身造型有望延续 AIVA Origin Concept 概念车的设计，车顶配有激光雷达，车顶尾部有一个小尾翼。 ▲ AIVA Origin Concept 概念车 ▲ AIVA Origin Concept 概念车 综合IT之家此前报道，赛豆科技前身为重庆蓝电科技，今年完成约 66.71 亿元增资扩股， 重庆地方国资成为第一大股东，赛力斯为第二大股东 ，宁德时代也通过旗下投资平台参与其中。 据官方介绍，AIVA 将是多方产业资源协同下形成的“新范式”，AIVA 品牌作为独立运营主体，负责品牌、产品与业务推进。 赛力斯作为重要股东方和产业资源方，在整车制造、供应链、质量体系与工程经验等方面提供支持； 宁德时代在电池技术、电池安全、动力电池充换电体系等方面提供系统的能源解决方案； 国资平台提供产业资源支持； 火山引擎为 AIVA 品牌提供豆包大模型、智能座舱等技术服务，帮助 AIVA 品牌提升 AI 汽车交互体验。",
+      "url": "https://www.ithome.com/0/995/650.htm",
+      "source": "IT之家"
+    },
+    {
+      "date": "2026-08-28",
       "tag": "量子位",
-      "title": "基元律动累计融资数千万美元，推出“中国版OpenRouter”",
-      "summary": "近日，AI基础设施公司基元律动（TokenRhythm）宣布完成新一轮融资，融资额达数千万美元。",
-      "url": "https://www.qbitai.com/2026/08/480079.html",
+      "title": "e生涯斩获浙江一等奖，同蚂蚁、浙大一道晋级数据要素国赛",
+      "summary": "8月26日，2026年“数据要素×”大赛浙江赛区决赛落下帷幕。",
+      "url": "https://www.qbitai.com/2026/08/480591.html",
       "source": "量子位"
     },
     {
-      "date": "2026-08-27",
+      "date": "2026-08-28",
+      "tag": "IT之家",
+      "title": "消息称 Anthropic 曾有意收购芯片企业 MatX，双方谈判现已转向合作模式",
+      "summary": "IT之家 8 月 28 日消息，路透社美国当地时间 27 日报道称，人工智能模型与服务企业 Anthropic 曾有意以约 70 亿美元 （IT之家注：现汇率约合 471.6 亿元人民币） 收购人工智能芯片企业 MatX，不过 双方的谈判现已转向合作模式 。 MatX 正寻求以约 40 亿美元 （现汇率约合 269.49 亿元人民币） 的估值筹集新资金。 图源：Pexels MatX 宣称自己的 MatX One 芯片拥有超过所有已公布竞品的吞吐和延迟表现。在训练和推理预填充上，其算力表现出色；而在推理解码与强化学习负载方面，其在延迟、算力、上下文长度方面均有良好表现。 Anthropic 已在积极推进造芯项目， 最近招募了前谷歌 TPU 负责人 Amir Salek 。报道指出， Anthropic 近期与多家人工智能芯片初创公司举行了会谈 。Anthropic 可能有意生产训练芯片，也可能选择生产推理芯片。",
+      "url": "https://www.ithome.com/0/995/591.htm",
+      "source": "IT之家"
+    },
+    {
+      "date": "2026-08-28",
+      "tag": "量子位",
+      "title": "Łukasz Kaiser领衔，2026 奇点智能技术大会北京站正式官宣",
+      "summary": "11 月 20 -21 日，由奇点智能研究院与 CSDN 联合主办的「奇点智能大会北京站」正式举行",
+      "url": "https://www.qbitai.com/2026/08/480482.html",
+      "source": "量子位"
+    },
+    {
+      "date": "2026-08-28",
       "tag": "arXiv cs.AI",
-      "title": "REFINE: A Multi-Agent LLM Approach for Evidence-Guided Code Refactoring",
-      "summary": "arXiv:2608.23611v1 Announce Type: cross Abstract: Large Language Models (LLMs) offer new opportunities for automated code refactoring. However, generated changes must reduce targeted quality problems without introducing new issues or altering behaviour-relevant code structures. We introduce REFINE (Refactoring with Evidence-aware Flow for Integrated ageNtic Execution), a tool-agnostic, evidence-aware multi-agent approach for generating Java file-level refactoring candidates. REFINE combines static-analysis-guided smell identification, smell-informed planning, LLM-based transformation, automated re-analysis, preservation checks, and structured reporting. We evaluate REFINE on 450 Java files from 15 open-source systems, producing 1,350 model-pass outputs using OpenAI GPT-5.5, Google Gemini 3.1 Pro Preview, and Anthropic Claude Opus 4.8. REFINE reduces detected code smells by 68.26%, 72.79%, and 68.49% across the three configurations, respectively, with the strongest reductions observed for major smells. A matched 150-file direct-prompt baseline shows that REFINE achieves a higher median code-smell reduction with smaller edits and fewer public-method removals. However, broader quality improvements are inconsistent, and preservation checks reveal residual risks, including assert/fail-call changes and public-method removal. Therefore, REFINE outputs should be treated as refactoring candidates requiring compilation, testing, dependency analysis, and human review before adoption in repository- or system-level settings.",
-      "url": "https://arxiv.org/abs/2608.23611",
+      "title": "BekchiAI: Measuring, Observing, and Controlling LLM Agents in One Click",
+      "summary": "arXiv:2608.26867v1 Announce Type: new Abstract: Large language model agents reason, call tools, and act autonomously over many steps, but their agentic skills-correctly sequencing tools, planning under dependencies, judging untrusted inputs, and grounding generated arguments-are hard to measure with accuracy-only leaderboards. We present BekchiAI, which addresses both sides: a benchmark for measuring agentic skill and a platform for observing and controlling live agents. The BekchiAI-Benchmark, a suite of 13 tool-using ReAct agents across 7 task categories (arithmetic, structured/SQL, security detection, URL grounding, planning, orchestration, and tool-policy), totalling 2,057 deterministic, committed test tasks. Every task is verifier-checkable gold answers are computed by running canonical SQL against a real database, computing the exact schedule of a directed acyclic graph (DAG), or evaluating closed-form lambdas including adversarial security samples paired with deliberately imperfect signature scanners so a score reflects the model's own judgment, not the copying of an oracle. We define a small set of behavioral metrics beyond accuracy-tool-call adherence, URL hallucination and source-match, and per-model token cost and report a four-model comparison (Qwen3.7-Max, gemma-4-31B-it, gemma4:26b, gpt-oss-120b) whose story is in the per-family spread, not the aggregate. The benchmark runs are executed using the provided evaluation scripts. BekchiAI-Platform is a complementary web-based observability and control layer for deployed agents, providing full token and latency telemetry as well as remote run termination. The benchmark, evaluation tools, and platform are publicly released.",
+      "url": "https://arxiv.org/abs/2608.26867",
       "source": "arXiv cs.AI"
     },
     {
-      "date": "2026-08-27",
+      "date": "2026-08-28",
       "tag": "arXiv cs.AI",
-      "title": "EngiAI: Capability-Based Evaluation of Tool-Connected LLM Agents for Engineering Design",
-      "summary": "arXiv:2605.19743v3 Announce Type: replace Abstract: Engineering-agent systems are proliferating, but differences in tasks, tools, and success criteria make demonstrations difficult to compare and failures difficult to diagnose. We introduce a capability-based evaluation framework for tool-connected engineering agents. The framework separately evaluates workflow execution, retrieval-assisted parameter selection, high-performance computing (HPC) orchestration, and training-code authoring using execution traces and resulting engineering artifacts. We evaluate four LLM backends on the EngiBench Beams2D and Photonics2D problems using EngiAI, a LangGraph reference implementation. On Beams2D, the two proprietary models complete 96-97% of workflow tasks, compared with 55-78% for the two open-source models. Workflows requiring tool-based decision-making perform worse on Photonics2D, reaching 20-53% completion. Indexed retrieval improves parameter selection. For HPC orchestration, Gemini-3-Flash completes every tested pipeline, whereas GPT-5-mini completes 50-70% through the final evaluation step. When the agents must write the training code themselves, they fill small gaps reliably but diverge as larger regions are left open. In the open-synthesis tier, both proprietary models select conditional variational autoencoders instead of the reference conditional Generative Adversarial Network (cGAN); Gemini-3-Flash achieves lower maximum mean discrepancy than the reference in seven of ten Beams2D trials. The results support capability-specific evaluation, with separate scores for distinct skills, rather than assessment through successful end-to-end demonstrations alone. The framework provides common evaluation dimensions for identifying failure mechanisms and structuring comparisons of models, agent architectures, and tool interfaces.",
-      "url": "https://arxiv.org/abs/2605.19743",
+      "title": "Buried in Textual Debt: Context Pruning with Visual Evidence Preservation for MLLM Agents",
+      "summary": "arXiv:2608.22963v2 Announce Type: replace Abstract: Multimodal Large Language Models (MLLMs) are increasingly deployed as multi-step agents, where explicit reasoning supports task decomposition and tool coordination but also accumulates self-generated text. Over long trajectories, this text can dominate the context and suppress visual evidence, creating textual debt. We observe that reasoning becomes redundant once task-relevant visual evidence is grounded, while stale hypotheses can misguide later inference when grounding remains uncertain. Pruning must therefore remove redundant text without discarding visual evidence. We propose SPARE, a Kullback-Leibler (KL)-guided framework for pruning accumulated reasoning in multimodal tool-use agents. SPARE uses a compact task-state summary as privileged diagnostic context. For each candidate segment, it replays the same model under the original and summary-conditioned contexts. Reverse-KL divergence from on-policy self-distillation (OPSD) then tests whether the summary sufficiently covers the segment without disrupting future reasoning. We further fine-tune the summarizer with supervised fine-tuning (SFT), enabling more compact summaries, broader coverage, and more aggressive pruning. Across multi-step visual tool-use benchmarks, SPARE achieves the highest average accuracy among pruning methods while removing 37.89-64.58\\% of reasoning tokens. This favorable accuracy-context trade-off shows that reducing textual dominance restores reliance on visual evidence and mitigates over-conditioning on self-generated language.",
+      "url": "https://arxiv.org/abs/2608.22963",
       "source": "arXiv cs.AI"
     },
     {
-      "date": "2026-08-27",
+      "date": "2026-08-28",
       "tag": "arXiv cs.AI",
-      "title": "Joint Optimization of Tool Creation and Use for Large Language Model Agents",
-      "summary": "arXiv:2608.24571v1 Announce Type: new Abstract: Tool-augmented language models are bounded by the APIs humans bothered to write; existing tool-creation systems patch this by prompting a frozen LLM at inference time, leaving the model that writes a tool decoupled from the one that uses it, with no signal that the schemas it produces are schemas it can invoke. We propose SMITH (Schema-grounded Multi-task Iterative Tool Honing), a reinforcement learning framework that jointly trains tool creation and tool use inside a single policy. Each rollout is either a build task (write a tool from a few examples) or a use task (invoke a pooled tool on a held-out question). Three separate reward axes catch schema, code, and outcome failures independently, so each failure mode contributes its own gradient. A 4B Qwen3 trained with SMITH on 13 procedural reasoning tasks with exact verifiers reaches 79.8 macro-average accuracy on held-out tasks, the best across all evaluated methods and ahead of an untrained 30B-A3B tool-writer. It also reaches 40.4 on TabMWP-Hard and 42.6 on out-of-domain GQA (+7.6 over the best same-backbone inference-time baseline), without any visual or tabular training data. Tools written by our 4B models also lifted the performance of LFM-2.5-350M and Qwen3-30B-A3B under same reasoning tasks.",
-      "url": "https://arxiv.org/abs/2608.24571",
+      "title": "Standalone LLM and a Pre-specified Agentic Pipeline for Explaining ICU Mortality Predictions: a Feasibility Study on the eICU Demo Dataset",
+      "summary": "arXiv:2608.26109v1 Announce Type: new Abstract: Machine-learning models can predict ICU mortality accurately, but feature-attribution methods alone rarely provide the clinical narrative needed for bedside use. Large language models (LLMs) may bridge this gap, and multi-step agentic pipelines are a plausible extension because they separate data interpretation, guideline checking, and final explanation. This revised feasibility study preserves the original standalone-versus-agentic comparison while making the main clinical findings more explicit. Using the retained local eICU Demo artifact set (2,353 ICU stays; 8.1\\% mortality), XGBoost achieved an AUROC of 0.855 (95\\% CI 0.796--0.906) and an AUPRC of 0.332 (95\\% CI 0.217--0.494). On a stratified 38-case explanation subset, the standalone LLM produced 1 explanation with explicit outcome leakage, whereas the four-step agentic pipeline produced none. Among the 14 cases that overlapped with the SHAP review subset, the standalone LLM showed higher SHAP alignment (mean Jaccard 0.171 versus 0.077) and higher direction consistency (92.9\\% versus 78.6\\%), while the agentic pipeline showed higher guideline grounding (0.762 versus 0.143), higher value specificity (0.236 versus 0.143), and slightly higher plausibility (0.700 versus 0.671). Clinically, the results suggest that agentic decomposition may improve safety-relevant grounding and patient-specific detail, but it should be paired with attribution-based checks before use in high-stakes risk explanation.",
+      "url": "https://arxiv.org/abs/2608.26109",
       "source": "arXiv cs.AI"
     },
     {
-      "date": "2026-08-27",
-      "tag": "钛媒体",
-      "title": "AI的账单，不只由科技公司买单",
-      "summary": "AI正在从一个技术变量，变成社会的资源配置变量",
-      "url": "https://www.tmtpost.com/8118214.html",
-      "source": "钛媒体"
-    },
-    {
-      "date": "2026-08-27",
-      "tag": "钛媒体",
-      "title": "DeepSeek调价之后，谁走出了斩杀线？",
-      "summary": "一次调价，重新划定了大模型的竞争边界",
-      "url": "https://www.tmtpost.com/8118102.html",
-      "source": "钛媒体"
+      "date": "2026-08-28",
+      "tag": "少数派",
+      "title": "全球首款阔直板探索计划：华为 Pura X View 新品有奖体验",
+      "summary": "继创新形态的阔折叠手机取得了市场的广泛好评后，华为延续阔屏设计，带来全球首款阔直板旗舰HUAWEIPuraXView。HUAWEIPuraXView薄至6.68mm，轻至201g，拥有7000mAh超 ... 查看全文",
+      "url": "https://sspai.com/post/113883",
+      "source": "少数派"
     }
   ]
 }
