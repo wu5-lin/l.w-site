@@ -1,169 +1,209 @@
 {
-  "updated": "2026-09-26 05:56 UTC",
+  "updated": "2026-09-27 06:22 UTC",
   "categories": {
     "投资": [
       {
+        "date": "2026-09-27",
+        "tag": "Financial Times",
+        "title": "Swiss voters to decide fate of centuries-old neutrality",
+        "summary": "A Yes vote would bar the country from co-operating with military alliances unless attacked",
+        "url": "https://www.ft.com/content/aaf4c7d7-b4bc-4b5c-83b7-7f761d315b63?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-09-27",
+        "tag": "Financial Times",
+        "title": "US housing crunch puts private equity in midterm campaign crosshairs",
+        "summary": "FT analysis shows that institutional investors are being blamed for soaring costs",
+        "url": "https://www.ft.com/content/7e91f857-30d9-4bf9-b7c9-ec04d4a6e1ed?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-09-27",
+        "tag": "Financial Times",
+        "title": "De Beers bets on a taste for the real to restore diamonds’ sparkle",
+        "summary": "Chief executive believes cultural shift back to ‘natural’ products can help it battle lab-grown rivals",
+        "url": "https://www.ft.com/content/40ec5413-3990-40b8-8066-6d6c215626f7?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-09-27",
+        "tag": "Financial Times",
+        "title": "The executives going ‘fractional’, not freelance",
+        "summary": "Some workers are choosing to be embedded at a senior level in several companies at a time",
+        "url": "https://www.ft.com/content/d08d8530-ef99-49f3-a7b3-a886139f6b27",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Seeking Alpha",
+        "title": "Sheffield says Exxon launched 'smear campaign' to keep him off company's board",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4647174-sheffield-says-exxon-launched-smear-campaign-to-keep-him-off-companys-board?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Seeking Alpha",
+        "title": "Apple owes Taction Technology $5.7B for violating haptics patents",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4647381-apple-owes-taction-technology-5_7b-violating-haptics-patents?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Seeking Alpha",
+        "title": "Trump OKs new fuel economy standards, ends Biden EV mandate",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4647380-trump-oks-new-fuel-economy-standards-ends-biden-ev-mandate?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "MarketWatch",
+        "title": "My friend grosses $300,000 a year with her pet-sitting business. She pays herself $50,000. Should I do the same?",
+        "summary": "“She currently has about 15 sitters, all independent contractors.”",
+        "url": "https://www.marketwatch.com/story/my-friend-grosses-300-000-a-year-with-her-pet-sitting-business-she-pays-herself-50-000-should-i-do-the-same-8ab5cba3?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "MarketWatch",
+        "title": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
+        "summary": "“As a country, we have grown dangerously comfortable.”",
+        "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Seeking Alpha",
+        "title": "Boeing identifies 737 MAX software glitch that could impact navigation: WSJ",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4647379-boeing-identifies-737-max-software-glitch-could-impact-navigation?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "MarketWatch",
+        "title": "From $6 eggs to $50,000 cars, these charts show how inflation has defined the past 5 years",
+        "summary": "Rising prices have been crushing consumer confidence and biting at Americans’ wallets for more than five years now.",
+        "url": "https://www.marketwatch.com/story/from-6-eggs-to-50-000-cars-these-charts-show-how-inflation-has-defined-the-past-5-years-3c7b9ab9?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "The Block",
+        "title": "Bitcoin ETFs turn positive for 2026 with $2.4 billion weekly inflow, their largest since October",
+        "summary": "The inflows pushed bitcoin ETFs' year-to-date net flows back above zero, after the funds sat roughly $5.8 billion in the red just two months ago.",
+        "url": "https://www.theblock.co/news/markets/2026-09-26-bitcoin-etfs-turn-positive-for-2026-with-2-4-billion-weekly-inflow-their-largest-since-october-416944",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "MarketWatch",
+        "title": "Social Security checks are projected to be cut by $540 a month in just six years",
+        "summary": "Social Security’s future may be even more dire than expected as time is running out to shore up the program’s finances.",
+        "url": "https://www.marketwatch.com/story/social-security-checks-are-projected-to-be-cut-by-540-a-month-in-just-six-years-a8842912?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "The Block",
+        "title": "Kalshi loses appeal over Ohio and Tennessee sports betting laws, widening circuit split",
+        "summary": "A federal appeals court ruled on Friday that Kalshi has not adequately shown its sports event contracts are swaps under the Commodity Exchange Act.",
+        "url": "https://www.theblock.co/news/regulation/2026-09-26-kalshi-loses-appeal-over-ohio-and-tennessee-sports-betting-laws-widening-circuit-split-416937",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
         "date": "2026-09-26",
         "tag": "CNBC Markets",
-        "title": "Why Xi believes the U.S. and China can overcome the 'Thucydides Trap'",
-        "summary": "In May, Chinese President Xi Jinping asked U.S. President Donald Trump whether the countries could avoid destructive rivalry. Now, it seems, he thinks they can",
-        "url": "https://www.cnbc.com/2026/09/26/xi-trump-thucydides-trap-us-china.html",
+        "title": "This may be the ‘missing piece’ for investors looking to boost AI exposure",
+        "summary": "Matthews Asia portfolio manager Andrew Mattock delivers a strategy that revolves around the world's second largest economy.",
+        "url": "https://www.cnbc.com/2026/09/26/ai-portfolios-may-need-china-to-grab-the-biggest-gains.html",
         "source": "CNBC Markets",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-09-26",
-        "tag": "Financial Times",
-        "title": "The climate doom-mongers now dread sovereign debt blowouts",
-        "summary": "The same people are gnashing the same teeth and making the same arguments",
-        "url": "https://www.ft.com/content/9c071d82-4a23-4b77-b5dd-384e39a95140?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-26",
-        "tag": "Financial Times",
-        "title": "Cyber security stocks are pumped up on P(doom)",
-        "summary": "Besieged by growing cyber threats, organisations are hurling money at the problem",
-        "url": "https://www.ft.com/content/c3d9c47c-5431-4b1f-a737-504be06c7c5a?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-26",
-        "tag": "Financial Times",
-        "title": "Tennis should embrace social media influencers, says Roger Federer",
-        "summary": "Former world number one insists TikTokers, YouTubers and Instagrammers are needed despite US Open complaints from players",
-        "url": "https://www.ft.com/content/a172727e-225c-4da4-b589-4b91cc4fb71d?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-26",
-        "tag": "Financial Times",
-        "title": "Tourist taxes on the march",
-        "summary": "Governments see a revenue raiser that doesn’t annoy voters and a way to manage the tourist hordes. The leisure industry isn’t so keen",
-        "url": "https://www.ft.com/content/e6856a1a-77e4-42b5-bcd8-f91973ca9755?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-26",
-        "tag": "MarketWatch",
-        "title": "I’m 77, pay rent and live off Social Security, but I help homeless people. Why are so many people going hungry?",
-        "summary": "“I am a retired senior citizen living check-to-check.”",
-        "url": "https://www.marketwatch.com/story/im-77-pay-rent-and-live-off-social-security-but-i-help-homeless-people-why-are-so-many-people-going-hungry-5818465f?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Seeking Alpha",
-        "title": "Trump said to weigh range of options for lowering diesel costs without full export ban",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4647366-trump-said-to-weigh-range-of-options-for-lowering-diesel-costs-without-full-export-ban?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "MarketWatch",
-        "title": "My friend is terminally ill. Should she sell her rental home and pay $100,000 in capital gains?",
-        "summary": "“Her younger son lives in the condo, but wants to move elsewhere with friends.”",
-        "url": "https://www.marketwatch.com/story/my-friend-is-terminally-ill-should-she-sell-her-rental-home-and-pay-100-000-in-capital-gains-8568aada?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-25",
         "tag": "CNBC Markets",
-        "title": "Appeals court rules that states can regulate Kalshi’s sports prediction markets, dealing another legal blow to platforms",
-        "summary": "The decision is the second in less than a month by an appeals court that states have a role in regulating sports-related event contracts.",
-        "url": "https://www.cnbc.com/2026/09/25/appeals-court-rules-states-can-regulate-sports-prediction-markets.html",
+        "title": "The 10-year Treasury yield is at its highest in nearly two decades. How we got here",
+        "summary": "The benchmark yield has climbed to a 19-year high, fueled by sticky inflation, heavy bond issuance and an AI-fueled investment boom.",
+        "url": "https://www.cnbc.com/2026/09/26/10-year-treasury-yield-is-at-its-highest-in-19-years-how-we-got-here.html",
         "source": "CNBC Markets",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Seeking Alpha",
-        "title": "U.S. grain futures pull back from sharp losses with China ag deal news pending",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4647365-us-grain-futures-pull-back-from-sharp-losses-with-china-ag-deal-news-pending?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "MarketWatch",
-        "title": "‘She says it’s just money’: My friend pays for everything. I should be grateful, but I can’t stand her anymore.",
-        "summary": "“On each of these weekends away, she’s probably spending $500.”",
-        "url": "https://www.marketwatch.com/story/she-says-its-just-money-my-friend-pays-for-everything-i-should-be-grateful-but-i-cant-stand-her-anymore-2e7c5c10?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "MarketWatch",
-        "title": "A ‘death cross’ is coming for the dollar. Why Trump will be happy.",
-        "summary": "Don’t look now, but there are some technical reasons to believe that U.S. Treasury Secretary Scott Bessent was right when he declared to the financial markets that “I am the house now.”",
-        "url": "https://www.marketwatch.com/story/a-death-cross-is-coming-for-the-dollar-why-trump-will-be-happy-0766303d?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Seeking Alpha",
-        "title": "Eli Lilly's Olumiant receives expanded alopecia indication for children 12 and up",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4647363-eli-lilly-olumiant-receives-expanded-alopecia-indication-children-12-and-up?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Seeking Alpha",
-        "title": "Northrop Grumman's strategic deterrent deal gets $111.4M boost",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4647362-northrop-grummans-strategic-deterrent-deal-gets-1114m-boost?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "The Block",
-        "title": "SEC crypto FAQ addresses token buybacks, network upgrades and promises of profit",
-        "summary": "Promoting a network’s current uses generally would not create an expectation of profit, SEC staff said.",
-        "url": "https://www.theblock.co/news/regulation/2026-09-25-sec-crypto-faq-addresses-token-buybacks-network-upgrades-promises-profit-416914",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "The Block",
-        "title": "Blockchain Association CEO Summer Mersinger to step down, Kristin Smith to return as interim CEO",
-        "summary": "The Blockchain Association is switching up its leadership with CEO Summer Mersinger set to step down next month.",
-        "url": "https://www.theblock.co/news/regulation/2026-09-25-blockchain-association-ceo-summer-mersinger-tstep-down-kristin-smith-interim-ceo-416913",
-        "source": "The Block",
         "region": "en",
         "category": "投资"
       }
     ],
     "科研": [
+      {
+        "date": "2026-09-27",
+        "tag": "Nature 材料",
+        "title": "Direct loading of cylindrical WST specimens for Mode I rock fracture energy evaluation: a proof-of-concept study",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-73587-4",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "ScienceDaily 材料",
+        "title": "Quantum computer simulates matter “popping into existence”",
+        "summary": "Scientists recreated a particle-forming process linked to the extreme physics of the early universe using a 13-ion quantum simulator. The breakthrough suggests quantum computers could eventually help researchers investigate how matter formed and evolved after the Big Bang.",
+        "url": "https://www.sciencedaily.com/releases/2026/09/260925005416.htm",
+        "source": "ScienceDaily 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Nature 材料",
+        "title": "Branched-type nanocluster-junction fluorofluidic-gels for interface-adaptive thermal conduction and mechanical resistance",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41467-026-78046-2",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Nature 材料",
+        "title": "Multifunctional Aerogel Fiber Radiative Cooling Fabric for Outdoor Personal Thermal Management",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41467-026-77997-w",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
       {
         "date": "2026-09-26",
         "tag": "Nature 材料",
@@ -177,9 +217,9 @@
       {
         "date": "2026-09-26",
         "tag": "Nature 材料",
-        "title": "Manipulation of ferromagnetism with a light-driven nonlinear Edelstein-Zeeman field",
+        "title": "Evolution and breakdown of chiral anomaly in Weyl semiconductor tellurium",
         "summary": "",
-        "url": "https://www.nature.com/articles/s41467-026-77965-4",
+        "url": "https://www.nature.com/articles/s42005-026-02901-3",
         "source": "Nature 材料",
         "region": "en",
         "category": "科研"
@@ -187,9 +227,9 @@
       {
         "date": "2026-09-26",
         "tag": "Nature 材料",
-        "title": "In vitro evaluation of pH, calcium ion release and interfacial characterization of calcium silicate–based and epoxy resin–based sealers",
+        "title": "Photocatalytic degradation of methyl orange under ultraviolet–visible light irradiation using WO3-ZnO nanocomposites synthesized via Saffron petal extract",
         "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-73036-2",
+        "url": "https://www.nature.com/articles/s41598-026-72803-5",
         "source": "Nature 材料",
         "region": "en",
         "category": "科研"
@@ -197,9 +237,9 @@
       {
         "date": "2026-09-26",
         "tag": "Nature 材料",
-        "title": "Structural, thermal, mechanical and physical performance of cellulose fibers based low-density polyethylene/recycled polyethylene terephthalate blend composites",
+        "title": "Synergistic role of Fe in enhancing coke resistance and long-term stability of Ni/MgAl2O4 catalysts during dry reforming of methane",
         "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-72027-7",
+        "url": "https://www.nature.com/articles/s41598-026-73398-7",
         "source": "Nature 材料",
         "region": "en",
         "category": "科研"
@@ -207,9 +247,9 @@
       {
         "date": "2026-09-26",
         "tag": "Nature 材料",
-        "title": "Beyond conventional performance assessment of recycled aggregate concrete through integrated data analytics",
+        "title": "Potential-dependent removal of Cu, Sn, Ni, and Cr from molten Fe in contact with FeS-containing slag",
         "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-72630-8",
+        "url": "https://www.nature.com/articles/s41598-026-73440-8",
         "source": "Nature 材料",
         "region": "en",
         "category": "科研"
@@ -217,9 +257,39 @@
       {
         "date": "2026-09-26",
         "tag": "Nature 材料",
-        "title": "Data-driven and interpretable modeling frameworks for frost accumulation during natural convection on polymer composite fins",
+        "title": "A new fluidic MEMS-based mercury ion sensor for water sources",
         "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-73138-x",
+        "url": "https://www.nature.com/articles/s41598-026-72969-y",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Nature 材料",
+        "title": "Interplay between structure, phase transition, and molecular dynamics in the organic–inorganic hybrid [N(C2H5)4]2ZnCl4",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-73545-0",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Nature 材料",
+        "title": "Efficient transport kinetics of indirect excitons in van der Waals heterostructure",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41467-026-77967-2",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Nature 材料",
+        "title": "Molecular modelling of high-entropy alloys: from quantum to atomistic, and machine learning",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41524-026-02319-z",
         "source": "Nature 材料",
         "region": "en",
         "category": "科研"
@@ -253,85 +323,75 @@
         "source": "ScienceDaily 材料",
         "region": "en",
         "category": "科研"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Nature 材料",
-        "title": "Sub-10-nm stacking bands enable ultrastrong additively manufactured titanium",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41563-026-02749-6",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Nature 材料",
-        "title": "High-capacity data decoding from miniaturized magnetic tags for anti-counterfeiting and reliable identification",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s43246-026-01368-7",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Nature 材料",
-        "title": "Three-dimensional atomic evolution of amorphous phase-change materials upon photon irradiation",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s43246-026-01375-8",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Nature 材料",
-        "title": "High-sensitivity deep shortwave infrared organic photodetectors enabled by selenium-integrated quinoidal molecular semiconductor",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41467-026-78139-y",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Nature 材料",
-        "title": "Electrical control of perpendicular altermagnets",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41563-026-02764-7",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Nature 材料",
-        "title": "Multivariate approach of metal-chiral covalent organic frameworks for leaching-resistant asymmetric transfer hydrogenation",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41467-026-78066-y",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-09-24",
-        "tag": "ScienceDaily 材料",
-        "title": "Distant time crystals can somehow fall into the same rhythm",
-        "summary": "Researchers have shown that multiple time crystals inside a semiconductor can synchronize their oscillations, much like pendulum clocks gradually falling into the same rhythm. The coupling is carried by spin-polarized electrons, allowing time crystals separated by up to 40 micrometers to lock to a common frequency. The discovery reveals surprisingly long-range connections between these exotic spin systems and could help researchers develop future spin-based devices.",
-        "url": "https://www.sciencedaily.com/releases/2026/09/260923035934.htm",
-        "source": "ScienceDaily 材料",
-        "region": "en",
-        "category": "科研"
       }
     ],
     "web3": [
       {
         "date": "2026-09-26",
+        "tag": "Decrypt",
+        "title": "Bitcoin ETFs Notch Seven-Day Winning Streak as 2026 Flows Turn Green",
+        "summary": "Bitcoin ETFs have drawn nearly $3 billion over seven straight sessions, erasing post-Clarity Act losses and pushing 2026 flows back into positive territory.",
+        "url": "https://decrypt.co/379391/bitcoin-etfs-notch-seven-day-winning-streak-as-2026-flows-turn-green",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Decrypt",
+        "title": "How Crypto Stopped Waiting for Congress and Learned to Love the Regulators",
+        "summary": "After the Clarity Act failed in the Senate, the SEC, CFTC, and the Fed moved within days to write crypto's rules themselves. Will it be enough?",
+        "url": "https://decrypt.co/379383/how-crypto-stopped-waiting-congress-learned-love-regulators",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Decrypt",
+        "title": "AI Agents Are Racing to Make Quantum-Safe Bitcoin Cheap—And Winning",
+        "summary": "An open competition run by StarkWare, Yukon Research, and Eigen Labs drove the estimated cost of building a quantum-safe Bitcoin transaction from about $320 to roughly $67, with AI models topping the leaderboards.",
+        "url": "https://decrypt.co/379378/ai-agents-racing-make-quantum-safe-bitcoin-cheap",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-09-26",
         "tag": "CoinDesk",
-        "title": "Solana’s 150-millisecond settlement upgrade reaches second public test network",
-        "summary": "Alpenglow is running on both public test networks, giving application teams a place to check their software before the live blockchain switches.",
-        "url": "https://www.coindesk.com/tech/2026/09/26/solana-s-150-millisecond-settlement-upgrade-reaches-second-public-test-network",
+        "title": "Kraken’s parent Payward is betting billions on becoming financial infrastructure, not just a crypto exchange",
+        "summary": "Kraken parent Payward is unifying trading, payments, asset management and institutional services on common rails, co-CEO Arjun Sethi said.",
+        "url": "https://www.coindesk.com/business/2026/09/26/kraken-s-parent-payward-is-betting-billions-on-becoming-financial-infrastructure-not-just-a-crypto-exchange",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Cointelegraph",
+        "title": "Kalshi loses appeal, setting up potential Supreme Court case",
+        "summary": "The 6th US Circuit Court of Appeals ruled against prediction market Kalshi, siding with Ohio and Tennessee on regulating sports-event contracts under state laws.",
+        "url": "https://cointelegraph.com/news/kalshi-loses-appeal-setting-up-potential-supreme-court-case?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Decrypt",
+        "title": "Google Just Made Free 1080p AI Video Generation Available to Anyone",
+        "summary": "Google Vids now lets any Google account holder generate free HD AI video using Gemini Omni 1.1 Flash, with new scene, timing, and watermark controls.",
+        "url": "https://decrypt.co/379353/google-free-1080p-ai-video-generation",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "CoinDesk",
+        "title": "Binance deal gives Circle a boost in stablecoin race with Tether, analysts say",
+        "summary": "The five-year deal could strengthen USDC’s reach in emerging markets, though Tether’s liquidity advantage remains hard to dislodge, analysts told CoinDesk.",
+        "url": "https://www.coindesk.com/business/2026/09/26/binance-deal-gives-circle-a-boost-in-stablecoin-race-with-tether-analysts-say",
         "source": "CoinDesk",
         "region": "en",
         "category": "web3"
@@ -339,10 +399,20 @@
       {
         "date": "2026-09-26",
         "tag": "CoinDesk",
-        "title": "XRP Ledger’s Batch upgrade slips to Oct. 9 after validator support resets",
-        "summary": "The feature would let users bundle up to eight transactions, including asset-and-payment transfers, but a brief drop below the network’s 80% support threshold restarted its two-week activation clock.",
-        "url": "https://www.coindesk.com/tech/2026/09/26/xrp-ledger-s-batch-upgrade-slips-to-oct-9-after-validator-support-resets",
+        "title": "Bitget hacker moves $83 million in stolen XRP that Ripple cannot freeze",
+        "summary": "Two wallets have been almost emptied and a third is being drained, with about $75 million remaining across the five original holding accounts.",
+        "url": "https://www.coindesk.com/markets/2026/09/26/bitget-hacker-moves-usd83-million-in-stolen-xrp-that-ripple-cannot-freeze",
         "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Cointelegraph",
+        "title": "Here’s what happened in crypto today",
+        "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
       },
@@ -357,92 +427,22 @@
         "category": "web3"
       },
       {
-        "date": "2026-09-25",
-        "tag": "CoinDesk",
-        "title": "U.S. SEC's steadiest crypto advocate, Hester Peirce, to depart next week",
-        "summary": "The long-anticipated exit of the commissioner sometimes known as Crypto Mom is Oct. 2, announced as the agency was sending out its latest crypto work.",
-        "url": "https://www.coindesk.com/policy/2026/09/25/u-s-sec-s-steadiest-crypto-advocate-hester-peirce-to-depart-next-week",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Decrypt",
-        "title": "US Prosecutors Want $84.2 Million From a Bank Tied to Tether",
-        "summary": "Federal prosecutors are targeting a Montana payments firm and a Caribbean bank accused of moving money without a license.",
-        "url": "https://decrypt.co/379380/us-prosecutors-84-million-bank-tether-and-bitfinex",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "tag": "Cointelegraph",
-        "title": "OG.com seeks CFTC approval for single-stock perpetual futures",
-        "summary": "OG.com, recently spun out of Crypto.com, joins Coinbase, Kalshi and Kraken parent Payward in seeking approval to bring perpetual futures to individual US stocks.",
-        "url": "https://cointelegraph.com/news/og-com-seeks-cftc-approval-single-stock-perpetual-futures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "SEC Commissioner Hester Peirce to leave post on Oct. 2",
+        "summary": "Peirce, known as “Crypto Mom,” served on the SEC for about eight years, including as director of the Crypto Task Force.",
+        "url": "https://cointelegraph.com/news/sec-commissioner-hester-peirce-to-leave-post-on-oct-2?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
       },
       {
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "tag": "Cointelegraph",
-        "title": "Ex-CFTC leader to leave Blockchain Association after CLARITY vote fails",
-        "summary": "Former CFTC Commissioner Summer Mersinger joined the Blockchain Association in 2025 after resigning during her second term at the federal commodities regulator.",
-        "url": "https://cointelegraph.com/news/cftc-commissioner-leaving-blockchain-association-ceo?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "CFTC sues Cash FX, alleges $950M crypto-linked forex scheme",
+        "summary": "The CFTC claimed that Cash FX engaged in minimal forex trading and misappropriated most of the participant funds.",
+        "url": "https://cointelegraph.com/news/cftc-sues-cash-fx-alleges-950m-crypto-linked-forex-scheme?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Decrypt",
-        "title": "AI Agents Hacked Their Own Test Environment to Cheat, Cybersecurity Firm Finds",
-        "summary": "Darktrace's new Signal Labs found AI agents hacking their own evaluation environment to fake a perfect score—and tricking coding assistants into running unauthorized network attacks.",
-        "url": "https://decrypt.co/379369/ai-agents-hacked-test-environment-cheat-darktrace",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Decrypt",
-        "title": "Google Built an AI That Hunts Its Own Security Bugs",
-        "summary": "Google's PageBreak agent autonomously finds and verifies real vulnerabilities in its own web apps, cutting through the flood of noisy AI-generated security reports.",
-        "url": "https://decrypt.co/379364/google-built-ai-hunts-security-bugs",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Cointelegraph",
-        "title": "Tether says it had ‘limited’ exposure to bank linked to $84M US seizure",
-        "summary": "US prosecutors alleged that a payments business illegally transferred hundreds of millions of dollars at the direction of EQIBank, where Tether holds some assets.",
-        "url": "https://cointelegraph.com/news/us-authorities-seize-accounts-tether-bitfinex?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Cointelegraph",
-        "title": "Here’s what happened in crypto today",
-        "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Decrypt",
-        "title": "Circle and Tether Freeze Stablecoins Tied to Bitget Hack—But Most Funds Slip Away",
-        "summary": "The two stablecoin issuers blacklisted a wallet labeled \"Bitget Exploiter 8,\" locking about $318,000 in USDC and USDT—but the attacker swapped most funds into unfreezable ETH before they could act.",
-        "url": "https://decrypt.co/379365/circle-tether-freeze-stablecoins-bitget-hack",
-        "source": "Decrypt",
         "region": "en",
         "category": "web3"
       },
@@ -489,163 +489,163 @@
     ],
     "科技": [
       {
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "tag": "IT之家",
-        "title": "联想 Googlebook 二合一平板电脑曝光：预估配联发科 Kompanio Ultra 910 芯片",
-        "summary": "IT之家 9 月 26 日消息，消息源 Evan Blass 昨日（9 月 25 日）在 X 平台发布推文， 分享了两张图片，展示了联想尚未发布的 Googlebook 二合一平板电脑。 该设备采用平板式布局，背部配有支架，键盘比现有 Googlebook 更薄，左侧扶手印有“Googlebook”标识。 机身右侧设有一个开关按钮，用于关闭键盘以防误触，旁侧附有蓝牙标志，暗示键盘可拆卸独立使用。背面摄像头与贯穿式灯带同时曝光，灯带目前仅显示电量状态。IT之家附上相关图片如下： 早先泄露称其配备 13 英寸显示屏与联发科 Kompanio Ultra 910 处理器，上市后预估名为联想 Googlebook Duet。 联发科 Kompanio Ultra 910 是一款面向高端 Chromebook 的 ARM 架构处理器，主打“全大核”CPU 设计、强劲 AI 算力与长续航，采用台积电 3nm（N3E）工艺。",
-        "url": "https://www.ithome.com/1/007/350.htm",
+        "title": "菲斯曼冷凝燃气壁挂炉接入米家 App，支持小米澎湃智联、超级小爱控制",
+        "summary": "IT之家 9 月 27 日消息，据小米米家 App 官方微博今日分享， 菲斯曼冷凝燃气壁挂炉已接入米家 App ，支持小米澎湃智联、超级小爱控制等。 菲斯曼冷凝燃气壁挂炉绑定流程：打开米家 App，点击“添加设备”，连接三方平台，绑定菲斯曼互联，同步设备到米家。 IT之家从小米官方获悉， 菲斯曼冷凝燃气壁挂炉用户使用米家 App 即可远程开启、关闭壁挂炉 ，还能进行各类功能设置，随时掌控温度。 壁挂炉还支持小爱同学语音控制 ，用户想要开关设备，或调节温度只要呼叫“小爱同学”，小爱同学随时候命。 延伸阅读 菲斯曼（Viessmann）是一家德国的供热、制冷和空调系统制造商，1917 年成立，主攻供热设备领域。其壁挂炉产品线主要包括 100、200 和 300 三个系列，冷凝机型采用预混燃烧与铸造硅铝换热器等技术。 2023 年 6 月，国家市场监督管理总局曾公示开利全球公司收购菲斯曼气候解决方案欧洲股份公司股权案，菲斯曼相关业务此后纳入开利体系。 文中提到的“小米澎湃智联”是小米于 2023 年 11 月 16 日发布的面向“人车家全生态”的技术品牌，为软硬件开发者提供跨端智联解决方案，官方称当时已有 9000 多个品牌生态伙伴。 米家 App 的“连接三方平台”入口，是第三方品牌设备接入米家的官方通道之一，采用账号授权绑定（云云对接）方式。此前 LG、博世、西门子等品牌的部分家电也已通过类似方式接入米家生态。绑定后设备会同步至米家，并支持澎湃智联与超级小爱语音控制。 “菲斯曼互联”是北京菲斯曼供热技术有限公司推出的壁挂炉智能助手 App，支持手机与壁挂炉及配套硬件的交互，具备无线操控、设备状态查看、异常远程提醒、智能定时等功能，此次米家接入需通过该 App 完成账号绑定同步。 在官方接入前，已有用户通过加装蓝牙 Mesh 干接点通断器等低成本方式，将菲斯曼锅炉接入米家，实现远程开关及与温湿度计的联动。",
+        "url": "https://www.ithome.com/1/007/516.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "tag": "IT之家",
-        "title": "荣耀 HONOR Life 高速吹风机 2 Pro 上架：可视化彩屏、支持一键倒吹自清洁，339 元",
-        "summary": "IT之家 9 月 26 日消息，荣耀京东自营旗舰店现已上架 HONOR Life 高速吹风机 2 Pro，定价为 359 元， 首发价 339 元 。 京东 HONOR Life 高速吹风机 2 Pro 339 元 直达链接 该吹风机提供晴空蓝和柔雾粉两种配色选择，机身配备可视化彩屏与 360 度磁吸式风嘴，不含电源线的重量为 354g。 该吹风机搭载 11 万转无刷电机，额定功率为 1600W，出风口速度可达 65m/s。运行噪音控制在≤66dB，工作时号称可释放 40 亿等离子以抚平头发毛躁。 同时，该吹风机搭载 TOF 系统，提供智能感温、婴童、恒温、顺发及冷热循环 5 大吹护模式。吹风机具备灵敏握持感应功能，能够识别手部动作实现离手自动休眠，同时还支持一键倒吹自清洁，通过开启反向气流排出风道内部的灰尘与毛屑。 IT之家附产品参数：",
-        "url": "https://www.ithome.com/1/007/349.htm",
+        "title": "磐镭展示英特尔平台旗舰迷你主机 YO4，搭载酷睿 Ultra X7 处理器 358H",
+        "summary": "IT之家 9 月 27 日消息，磐镭 (PELADN) 在 22 日的英特尔技术创新与产业生态大会 (Intel Connection 2026) 上展示了其尚未正式发布的 YO4 迷你主机。这也是 磐镭首款隶属其极致全能 \"Y\" 系列的英特尔平台设备 。 YO4 搭载英特尔酷睿 Ultra X7 处理器 358H，拥有同 YO2 395 类似的曲线机身， 前面板提供 1 个二合一音频插孔、1 个 USB-C、3 个 USB-A、1 个 SD 读卡器 ，集成指纹识别模块，还有一条智能 RGB 灯效带。",
+        "url": "https://www.ithome.com/1/007/514.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "tag": "IT之家",
-        "title": "红龙 KS99 Turbo 三模机械键盘上架：100 键布局配旋钮，249 元起",
-        "summary": "IT之家 9 月 26 日消息，红龙现已在京东上架 K99 Turbo 三模机械键盘，可选暗夜轴和凝霜轴 V3 版本，定价为 249 元起。 系列键盘采用 100 键布局，保留了实用的 2U0 大键。外观方面提供白蓝 UV、黑绿 UV 和量子蜂巢三种键帽配色，其中量子蜂巢版本在背部带有专属的 UV 打印图案。键盘配备约 1600 万色高亮 RGB 灯光，右上角的旋钮支持调节音量、一键静音及切换灯效。 系列键盘内部采用 Gasket 结构与五层消音填充，提供暗夜轴或凝霜轴 V3 两种线性轴。两者的导通力均为 40±10 gf，触底行程分别为 3.30 mm 与 3.60 mm。 此外，系列键盘内置 8000 mAh 电池，IT之家附产品参数： 京东 红龙 KS99Turbo 键盘 249 元起 直达链接",
-        "url": "https://www.ithome.com/1/007/347.htm",
+        "title": "《龙之信条 2》资料片《黑暗觉者》各平台容量出炉：PS5 版约 17GB、XBOX 版约 67GB",
+        "summary": "IT之家 9 月 27 日消息，据外媒 TwistedVoxel 报道，《龙之信条 2》资料片《黑暗觉者》文件体积已经公布， 其中 PS5 版大约为 17GB 。 据介绍，该资料片的 PS5 版体积为 17.060 GB，XBOX Series X|S 版为 66.92 GB。本作将在 10 月 7 日开放预加载，10 月 9 日正式推出，定价 29.99 美元 （IT之家注：现汇率约合 201.8 元人民币） 。 《龙之信条 2》制作人大山直人（IT之家注：Naoto Oyama）对此表示，该资料片将提供相当可观的内容：“全新的故事将发生在 Norgan 全新地区。我们预计玩家通关主线剧情需要 15-20 小时。此外，我们还将为游戏本体新增 12 座风格各异的地下城，每座地下城需要 30 分钟-1 小时才能完成，全部体验下来的游戏时间将超过 25 小时”。",
+        "url": "https://www.ithome.com/1/007/513.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "tag": "IT之家",
-        "title": "vivo S2 FE 手机曝光：联发科天玑 7300e 芯片、10000mAh 容量电池",
-        "summary": "IT之家 9 月 26 日消息，科技媒体 gizmochina 昨日（9 月 25 日）发布博文， 报道称 vivo S2 FE 手机曝光，预估配联发科天玑 7300e 芯片，以及 10000mAh 容量电池，预估 10 月 6 日发布。 消息称 S2 FE 机身正面配备 6.83 英寸 1.5K AMOLED 显示屏，刷新率为 120Hz，后置 5,000 万像素主摄像头，前置 3,200 万像素摄像头，以及屏下指纹识别器。 该机最大的亮点采用 10000mAh 容量电池，支持 44W 有线快充。作为对比，8 月发布的 vivo S2 电池容量为 7050mAh，充电功率同样为 44W。 芯片方面，vivo S2 FE 搭载联发科天玑 7300e 处理器，而 vivo S2 使用天玑 7,360 Turbo 芯片。IT之家附上相关图片如下：",
-        "url": "https://www.ithome.com/1/007/346.htm",
+        "title": "消息称 OpenAI 将推出常驻 AI 助手「O」，预计 9 月 29 日发布",
+        "summary": "IT之家 9 月 27 日消息，据消息人士 Alexey Shabanov 昨日透露，OpenAI 即将推出一款常驻 AI 助手，其代号为「O」， 预计将在 9 月 29 日的 OpenAI DevDay 推出 。 IT之家从原爆料获悉，ChatGPT 的配置文件中已经出现了许多与「O」相关的线索，包括将「O」设置为显示名称、配置“-o”的电子邮件后缀。综合这些线索来看，这款智能体预计将能够在普通聊天之外持续运行，还可能拥有独立身份。 同时该项目可能与“Aeon”有关。此前已有消息称，Aeon 是 OpenAI 常驻型智能体项目使用的名称。不过我们目前尚不清楚它支持哪些任务、具备拥有何种权限，以及是否支持定时任务、记忆功能或何时开放。 值得注意的是，此前曾有传闻称 OpenAI 正在研究一款甜甜圈形状的硬件。因此这些项目如果能产生关联，单字母代号可能会成为一种有趣的双关。",
+        "url": "https://www.ithome.com/1/007/512.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "tag": "钛媒体",
-        "title": "【数智周报】 千问办公发布企业级Agent基础设施；谷歌推出Gemini 3.8 Flash TTS及Flash-Lite TTS；Anthropic诉特朗普政府受挫",
-        "summary": "（9月21日~9月26日）亚马逊官宣接入Kimi K3；超聚变发布FusionServer“无极”架构；《AI原生组织转型指南》发布",
-        "url": "https://www.tmtpost.com/8153052.html",
+        "title": "不用专门训练自动驾驶，GPT-6 Astra已经能开真车了？",
+        "summary": "GPT-6 Astra成功控制真车完成封闭场地测试，通用大模型开始迈向真实物理世界。",
+        "url": "https://www.tmtpost.com/8153325.html",
         "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "tag": "钛媒体",
-        "title": "从买东西到买体验：为什么4个周末替代不了一个8天长假？",
-        "summary": "“请3休13”带火长线旅行，背后不只是拼假技巧。随着服务消费占比接近一半，越来越多消费需要消费者本人到场、停留和参与。钱可以储存，时间却很难跨日期合并。四个周末和一个八天长假总量相同，却对应着完全不同的消费边界。",
-        "url": "https://www.tmtpost.com/8153043.html",
+        "title": "豆包上车之后，AI原生汽车真的来了吗？",
+        "summary": "“AI原生汽车”的概念频繁出现，从互联网汽车到AI原生汽车，荣威还能再定义一次吗？",
+        "url": "https://www.tmtpost.com/8153291.html",
         "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "tag": "钛媒体",
-        "title": "山姆没有捷径，中国零售平台集体追赶30%自营率",
-        "summary": "一种从经营渠道进一步深入需求、商品和供应链的变化。",
-        "url": "https://www.tmtpost.com/8152993.html",
+        "title": "京东101HOME落地静安寺：线下家居卖场，该换个活法了",
+        "summary": "当整个行业都在求索线下零售的破局方向时，京东101HOME将这套创新模式，交由国内一批眼光毒辣又“挑剔”的消费者检验，开启了一场压力测试。",
+        "url": "https://www.tmtpost.com/8152919.html",
         "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "tag": "钛媒体",
-        "title": "0元购机，卒于2026",
-        "summary": "踩下“0元购机”刹车，先飞出去的是营业厅KPI。",
-        "url": "https://www.tmtpost.com/8152955.html",
+        "title": "星舰第14飞，为什么准备绕地球六圈？",
+        "summary": "六圈没有魔力，近10小时才是第14飞的关键。",
+        "url": "https://www.tmtpost.com/8153306.html",
         "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "tag": "TechCrunch AI",
-        "title": "At Meta Connect, the company’s smart glasses were everywhere",
-        "summary": "The company behind Facebook and Instagram wants to keep consumers connected to the digital world via its ever-growing line of smart glasses.",
-        "url": "https://techcrunch.com/2026/09/25/at-meta-connect-the-companys-smart-glasses-were-everywhere/",
+        "title": "Google tests buying from Walmart-owned Flipkart through Gemini and AI Mode in India",
+        "summary": "The limited test covers select products and users, with a broader rollout planned for later in October.",
+        "url": "https://techcrunch.com/2026/09/26/google-tests-buying-from-walmart-owned-flipkart-through-gemini-and-ai-mode-in-india/",
         "source": "TechCrunch AI",
         "region": "en",
         "category": "科技"
       },
       {
-        "date": "2026-09-26",
+        "date": "2026-09-27",
         "tag": "极客公园",
-        "title": "Deepseek 桌面版悄悄上线；Muse 大火，扎克伯格跃升全球第四大富豪；OpenAI 被曝筹备推出 ProMax 订阅层级，月费或达 500-600 美元",
-        "summary": "Anthropic 与 Akamai 达成 7 年 116 亿美元协议，扩充 CPU 算力 9 月 26 日消息，云计算、网络安全、内容交付企业 Akamai 当地时间 24 日宣布大幅扩展与 Anthropic 的合作关系，两家公司签署了一份为期 7 年、价值 116 亿美元（现汇率约合 779.2 亿元人民币）的合同。 根据协议，Akamai 将以其分布式人工智能基础设施和软件满足 Anthropic 日益增长的 CPU 工作负载需求。这 116 亿美元承诺对应 Akamai 的 55 亿美元额外总资本支出。双方还可将合同扩大最多 90 亿美元。 作为两家企业加强战略合作的一部分，Akamai 已向 Anthropic 发行认股权证，允许 Anthropic 购买 Akamai 至多 5% 的已发行普通股，其中 2% 与本次承诺绑定、剩余 3% 则和后续的追加承诺相关。（来源：IT 之家） SK 海力士旗下 Solidigm 最快明年在美 IPO，估值或高达 1500 亿美元 SK 海力士旗下美国子公司 Solidigm 正在评估上市计划，潜在估值最高达 1500 亿美元，有望成为美国半导体史上规模最大的 IPO。 据路透援引知情人士透露，Solidigm 本周已与多家投行举行竞标会议，就 IPO 承销角色展开角逐，标志着上市进程迈出实质性一步。 该公司计划最早于明年完成上市，目标募资规模约 150 亿美元。消息人士提醒，包括交易规模和时间表在内的相关计划仍处于早期阶段，可能因市场状况而调整。 据彭博报道，今年 8 月，Solidigm 与 CoreWeave 达成多年期协议，向后者提供企业级固态硬盘（SSD）容量。Solidigm 的其他客户还包括 Vast Data、戴尔和腾讯。 若最终成行，此次上市将为这家专注于 NAND 闪存和企业级固态硬盘的公司提供独立估值，同时借助人工智能基础设施投资热潮吸引市场资金。 AI 相关需求持续推动半导体硬件股上涨，Solidigm 所在赛道正处于这一趋势的核心位置。 在推进上市计划的同时，Solidigm 亦在考虑扩大本土生产能力。据媒体此前报道，该公司正评估在美国建设 NAND 闪存芯片工厂的方案，纽约州北部已成为选址的主要候选地。（来源：华尔街见闻） 最贵 AI 订阅服务之一：曝 OpenAI 正筹备 ChatGPT Pro Max 订阅层级 9 月 25 日消息，Tibor Blaho 通过开发者工具查看 ChatGPT 网页端源代码时发现，其代码中出现了 PROMAX 相关字段。 他认为，OpenAI 正在准备推出更高阶的 ChatGPT Pro 订阅方案，其推测月费可能达到 500~600 美元（现汇率约合 3,359 ~ 4,030 元人民币），这将是市面上最昂贵的 AI 订阅服务之一。 目前，OpenAI 尚未正式宣布推出这一更高阶 ChatGPT Pro 计划，也未确认相关代码是否对应未来正式上线的产品，因此产品名称、功能以及最终定价仍存在较大不确定性。 近年来，OpenAI 持续调整 ChatGPT 的订阅体系，已推出 Plus、Pro 以及面向企业和团队用户的多种付费方案。 在此之前，OpenAI 已经暂停 200 美元（现汇率约合 1,343 元人民币）的 ChatGPT Pro 订阅，以减缓系统压力并保障更多用户能够流畅使用。（来源：IT 之家） DeepSeek Harness 出桌面版了 DeepSeek Harness，终于有官方桌面版了？这次，DeepSeek 没有发公告，但相关下载链接已经在社交媒体上传开了。 从界面来看，它已经是一套相当完整的 GUI：打开 App，登录 DeepSeek 账号或者添加 API Key，选一个本地文件夹作为工作区，接下来就可以像使用普通桌面 AI 应用一样，直接给 Agent 布置任务。 随后，Harness 会让用户选择自己的使用方向。它把需求粗略分成了办公科研、代码开发等类别。 接下来，它还会询问用户更倾向于哪种工作流程。 DeepSeek 还给 Agent 准备了几种「工作方式」：标准模式、PTC 模式、极简模式、创造模式。 标准模式适合大多数任务，可能也是普通用户最容易理解的 Harness 使用方式。 PTC 就稍微技术一点，允许模型先写一小段程序，再通过程序批量组织和调用工具，特别适合批量处理。 极简模式更加简单粗暴，Agent 只使用终端工具完成任务，这更接近传统 Coding Agent，对于熟悉命令行的开发者来说非常直接。 创造模式允许 Agent 编写插件、添加新功能或界面，也可以组合工具和提示词，创建自己的模式。这和 DeepSeek Harness 从一开始强调的设计理念是一致的——官方把自己的架构概括为 Everything is a Plugin，也就是尽可能把 Harness 的能力设计成可组合、可扩展的插件。 从当前界面来看，DeepSeek Harness 已经内置了 6 个官方插件，包括智能体团队、语音输入、终端、Agent 循环、Subagent 和网页搜索。其中「智能体团队」和「语音输入」目前还标着「实验性」，前者用于开启多 Agent 协作，支持团队工具、成员列表和共享任务看板；后者则可以在本机调用 SenseVoice，把语音直接转成文字，不过首次使用需要额外安装依赖。（来源：机器之心） 聊天、编程、智能体三合一，微软正式发布新版 Copilot「超级应用」 9 月 25 日消息，25 日晚间，微软正式发布新版 Copilot「超级应用」。新版 Copilot 把聊天、编程和智能体三类 AI 能力集中到同一个界面中。 微软为其给出的新定位是「为工作而生的 AI」，甚至把 Copilot 与 Office 当年对生产力的影响相提并论。微软 AI 工作业务首席营销官贾里德 · 斯帕塔罗表示：「正如 Office 定义了 PC 时代的工作方式，新 Copilot 旨在定义 AI 时代的工作方式。」 新版 Copilot 分为 Home、Code 和 Autopilot 三个标签页。 Home 把 Copilot Chat 和 Cowork 整合到一起，也是用户打开 Copilot 后默认进入的页面。微软还计划在 Home 中加入 Today 功能，以个性化仪表盘的形式汇总重要邮件、会议请求、Teams 讨论串等信息。 借助 Code，任何人都能创建应用、跟踪器、仪表盘或自动化流程，再把成果以云端内部应用的形式分享给同事。Code 采用与 GitHub Copilot 相同的底层技术，在沙盒环境中运行，也可以安全托管在企业租户内。 Autopilot 同样是 Copilot 新增的重要部分，斯帕塔罗称其为「数字队友」。Autopilot 原名 Scout，最初是一款桌面应用；更名后的版本转向云端，让个人 AI 助手即使在用户睡觉时也能继续执行任务。 新版 Copilot 中的 Cowork、Code 和 Autopilot 都采用按使用量计费的机制，持续运行的智能体功能以及 Astra、Fable 等模型的调用，都将按照实际用量收费。 微软通过自动模型选择器为不同任务匹配模型，而 IT 管理员则需要借助新推出的 FinOps for AI 控制 AI 支出，防止智能体用量失控。（来源：IT 之家） Anthropic 为 Claude 上线「限时免费额度重置」功能，每位用户仅可使用一次 9 月 26 日消息，Anthropic 宣布为 Claude 上线「限时免费额度重置」功能，允许用户免费手动重置每周使用额度，不过每位用户仅可使用一次。该功能目前预计开放至 10 月 22 日，用户需要谨慎选择使用时机。 目前，部分 Claude 用户已可以在界面中看到用于重置每周使用额度的按钮。点击后无需额外付费即可刷新每周额度，如果用户同时触及了 5 小时使用上限，该限制也会一并重置。 需要注意的是，点击按钮并不会改变用户原本的额度刷新周期。也就是说，用户在本周中途执行重置后获得的新额度，仍会按照原有时间表在下一周到期，而不会从点击重置按钮的时间重新计算一周。 目前这项福利有两项限制。首先，每名用户只能免费重置一次，使用后暂时不会再次获得免费重置机会。其次，该功能仅开放至 10 月 22 日，之后是否继续提供尚未明确。（来源：IT 之家） 扎克伯格跃升为全球第四大富豪，Muse 大火 据中新经纬援引美国《福布斯》网站报道，当地时间 9 月 24 日，Meta 首席执行官马克·扎克伯格身家超越戴尔科技董事长兼首席执行官迈克尔·戴尔，成为全球第四大富豪。 当地时间周四，Meta 股价上涨 4.5% 至 777.59 美元/股，创下年内收盘新高。扎克伯格的净资产估计达到 2664 亿美元（约合人民币 1.79 万亿元）。 自今年年初以来，Meta 股价已上涨 17.8%，并在本月早些时候 Muse 发布后持续反弹。 Meta 在本月初推出了 Muse，这是一款可以预订旅行、发送电子邮件和管理联网家居设备的自主人工智能助手。扎克伯格将其描述为在 Meta 平台上实现「个人超级智能」的一步。 市场分析公司 Sensor Tower 的数据显示，Muse 在 9 月 8 日上线后短短五天内，下载量就超过了 ChatGPT，成为美国 iOS 平台下载量最高的免费应用。截至当地时间本周一，Muse 自发布以来累计下载量已超过 250 万次。（来源：中新经纬） AI 眼镜卖爆了！全球出货量暴涨 263%：Meta 独占 94% 份额 Counterpoint Research 最新发布的数据显示，2026 年上半年全球 AI 眼镜出货量同比大幅增长 263%，其中无显示屏 AI 眼镜占总出货量的 96%，持续主导市场，AR&AI 眼镜细分品类同期同比增速高达 449%。 无显示屏 AI 眼镜赛道中，Meta 约占该品类同期出货量的 94%，进一步巩固主导地位，其余玩家市场分布较为分散。AR&AI 眼镜赛道中中国厂商商业化更为活跃，中国占该细分市场出货量的 45%。 当前行业面临存储等元器件涨价、公众对 AI 眼镜摄像头隐私关注度上升两大挑战，相关机构预计行业整体增长趋势不会改变，后续增长将由智能体 AI 眼镜推动。（来源：快科技） 曝特斯拉 Optimus 产量扩至原有规模约 10 倍，规模化量产难题仍未解决 The Information 25 日晚间报道称，特斯拉近几个月已将 Optimus 人形机器人的产量扩大到原来的约 10 倍（tenfold），然而稳定规模化生产的难题仍未解决。 多名熟悉 Optimus 项目的人士透露，当前生产线面临的障碍包括结构复杂的手部、自动化设备以及供应商方面的限制。 两名熟悉生产工作的人士称，特斯拉上个月每周可生产数百台机器人，而第二季度进行量产前小批量测试时，每周产量只有几十台。管理人员已告知员工，公司希望在年底前建成一条可连续运行的自动化产线，将每周产能提升至 1000 台以上。即便如此，距离特斯拉最终计划实现的每周约 20000 台仍相差很远。 知情人士称，随着 Optimus 的运行表现逐步提高并趋于稳定，特斯拉计划逐渐扩大机器人的作业范围。 一名知情人士透露，特斯拉计划在初期向外部商业客户出租 Optimus，而不是直接销售。租期结束后，公司可以收回机器人，对设备进行升级或翻新。据悉，特斯拉计划利用 Optimus 在客户工厂和仓库收集的数据改进 AI 系统。（来源：IT 之家） 马斯克押注超大规模 AI 算力，xAI 计划部署逾 120 万颗英伟达 GPU 马斯克旗下人工智能公司 xAI 正在进一步扩大数据中心规模，并计划在未来几年部署超过 120 万颗英伟达 AI GPU。随着 Colossus 数据中心持续扩建，xAI 希望通过大规模算力基础设施训练和运行下一代 Grok 模型，与 OpenAI 等竞争对手展开更加激烈的 AI 基础设施竞争。 不过，120 万颗 GPU 的规模仍然是一个未来目标，而不是 xAI 当前已经部署完成的数量。数据中心建设速度、GPU 供应、电力供应、冷却设施、网络设备以及资金投入都会影响最终部署速度。因此，最终实际运行的 GPU 数量以及完成时间仍可能发生变化。 无论最终数字能否达到目前规划的规模，xAI 正在建设的 Colossus 已经显示出 AI 基础设施竞争正在进入一个新的阶段。随着 OpenAI、Google、Meta、微软以及其他 AI 公司纷纷建设吉瓦级数据中心，未来 AI 模型之间的竞争很大程度上也将演变成数据中心规模、电力供应和先进 GPU 获取能力之间的竞争。（来源：cnBeta） 宇树科技王兴兴：机器人核心瓶颈是能否解决几毫米的工作误差 9 月 24 日，第五届全球数字贸易博览会在杭州举行，宇树科技创始人王兴兴发表《从机械到灵智—具身未来进化论》主题演讲。 回顾 AI 行业发展，ChatGPT 的出现彻底重塑了大众对人工智能的认知，打开了行业想象力。对此王兴兴判断，具身智能赛道未来也必将迎来专属的「ChatGPT 时刻」。当机器人可在 80% 的陌生场景中，通过语音具身能力完成 80% 的任务时，就意味着行业抵达爆发临界点。届时全球企业与各国资源将集中涌入赛道，这一产业拐点有望在未来几年落地。 让机器人说指令、象征意义执行某个具体工作，在去年已能实现。王兴兴认为，目前最大的问题是 AI 模型的输入、输出与真实物理世界精准匹配度不足，机器人工作会有几毫米的误差。 「未来谁能解决这个问题，机器人的问题就完全解决了。」王兴兴说。（来源：界面新闻） 世界第一辆汽车专利申请 140 周年「献礼作」，AMG 首款纯电专属架构 SUV 谍照再曝 9 月 25 日消息，梅赛德斯-AMG 即将扩充产品阵容，迎来品牌首款基于专属架构开发的纯电 SUV。官方预告图发布后不久，外媒 Carscoops 今天（25 日）晚间公布了一辆原型车的新谍照，车身伪装相比此前大幅减少。 新车代号 X591，是 AMG GT 四门轿跑车对应的 SUV 车型。车身仍有部分伪装，整体造型却已相当清晰：流畅低伏的车顶配合宽厚有力的肩部线条，使整车兼具轿跑 SUV 和运动旅行车的视觉特征。 最新曝光的原型车可以完整看到座舱玻璃区域。新车还会通过独有灯组设计强化辨识度，车头配备 Y 形 LED 灯组和超大尺寸前格栅，车尾采用圆形尾灯。据悉，圆形尾灯或将成为 AMG 最新一批独立车型的代表性设计元素。 黑色铝合金轮毂同样十分醒目，大型制动盘和黄色制动卡钳清晰可见。座舱预计会采用与 AMG GT 四门轿跑车相近的多屏幕布局，同时凭借 SUV 车身为乘员和行李腾出更多空间。 动力部分，新车基于 AMG.EA 专属纯电平台打造，采用 800V 电气系统，并搭载 Yasa 开发的轴向磁通电机。电池技术则借鉴 F1 赛车方案，通过液体直接冷却电芯。 电池方面，新车预计沿用 AMG GT 四门轿跑车的 106kWh 电池，直流快充功率最高可达 600kW。充电 10 分钟可补充约 460km 续航。 底盘配置同样会采用 AMG 最新技术，包括带半主动侧倾稳定功能的 AMG Active Ride Control 空气悬架，以及已经在谍照中现身的后轮转向系统。（来源：IT 之家） 苹果 iPad 12 曝光，支持 Apple Intelligence 性能与连接能力全面增强 苹果下一代入门级平板电脑 iPad 12 的更多信息近日浮出水面。根据最新曝光的内部资料和供应链消息，这款产品虽然不会迎来全新的外观设计，但将在处理器、内存、无线连接以及人工智能功能方面获得近年来最重要的一次升级。 从目前披露的信息来看，iPad 12 将继续沿用现有 11 英寸全面屏设计，整体外观与上一代产品基本保持一致。 苹果此次升级的重点集中在内部配置。消息显示，iPad 12 预计将搭载 A18 或 A19 系列处理器。无论最终采用哪一款芯片，都将基于更先进的 3 纳米工艺制造，在性能和能效方面明显领先于现款产品所使用的 A16 芯片。 除了处理器升级之外，内存容量也将同步提升。新机预计配备 8GB 内存，高于现有机型的 6GB 配置。 与此同时，苹果预计不会对显示屏进行重大升级。 泄露信息显示，iPad 12 仍将采用 LCD 显示屏，并继续维持 60Hz 刷新率。因此，与 iPad Pro 和部分高端 iPad Air 产品相比，它依然定位于大众市场而非专业用户群体。 不过，业内普遍认为苹果此次产品策略相当明确。公司并不打算通过昂贵的显示面板或复杂的新设计提高成本，而是希望利用更强芯片、更大内存以及 Apple Intelligence 支持，让入门级产品获得更长生命周期和更高竞争力。 如果目前曝光的信息最终得到证实，那么 iPad 12 虽然在外观上变化有限，但其实际升级幅度可能会成为近年来入门级 iPad 产品线中最大的一次。从传统内容消费设备向 AI 增强型个人计算平台转变，也将成为这款新机最值得关注的变化之一。（来源：cnBeta） 华为麒麟 9035 芯片本月登场：Mate 90 Pro 首发搭载 9 月 25 日，有博主披露，华为 Mate 90 Pro 将首发搭载麒麟 9035 芯片，该机还将采用双层 OLED 屏幕。 据披露信息，麒麟 9035 保留了麒麟 9030 系列的原始规模，在原有基础上进行提频优化，目前其核心规格和频率尚不确定，需等待发布会正式揭晓。麒麟 9030 系列包含麒麟 9030、麒麟 9030 Pro 两款芯片，二者核心数量、GPU 配置存在差异。 双层 OLED 屏幕采用垂直堆叠的双层 RGB 发光单元结构，可使屏幕亮度翻倍，延缓材料老化，大幅延长屏幕寿命，在显示效果和耐用性之间取得更好平衡。（来源：快科技） OpenAI 内部 AI 智能体曾将 53 张用户图片发布到互联网，公司事先并不知情 OpenAI 近日披露了一起此前未公开的安全事件：在公司研究环境中运行的 AI 智能体曾将用户上传到 OpenAI 模型中的 53 张图片发布到公开的图片托管网站，而 OpenAI 当时并不知道这些智能体已经进行了相关操作。 虽然这些图片并不是以公开索引页面的形式发布，但任何获得相关链接的人仍然可以访问这些内容，部分图片目前似乎仍然能够在互联网上找到。 OpenAI 在此次事件的公开说明中承认，将用户提供的图片发布到互联网并不属于这些数据应有的使用方式。公司表示，相关图片被发布时使用的是没有公开列出的链接，也就是说搜索引擎等常规方式可能无法直接发现，但这并不意味着图片真正处于私密状态，只要链接被发现，其他人仍然能够访问。 OpenAI 目前正在与相关图片托管服务提供商合作，希望删除这些图片。不过，公司没有透露目前究竟有多少内容已经被成功删除，也没有确认所有图片是否都已经从互联网彻底清除。 此次图片事件因此也再次凸显了 AI 数据使用和 AI 智能体权限之间的复杂关系。传统的数据隐私政策通常能够比较明确地描述公司如何收集、存储和使用用户数据，但当 AI 系统本身拥有自主执行任务的能力后，模型在研究环境中究竟会采取哪些行动，也成为新的风险来源。（来源：cnBeta）",
-        "url": "http://www.geekpark.net/news/371038",
+        "title": "接连发生 AI 失控，OpenAI 暂停最强模型训练；腾讯推出云端小龙虾：已接入微信 QQ；王兴兴回应造 390 万元变形机甲",
+        "summary": "接连发生 AI 失控事件，OpenAI 再次暂停其最强模型训练 9 月 27 日消息，随着有关 OpenAI 模型突破限制、攻击网站以及整体行为失控的报告不断增加，该公司决定暂停训练旗下能力最强的模型。 这一决定是在一款处于沙盒环境中测试的模型利用漏洞获得互联网访问权限后作出的。该事件发生于 9 月 20 日。截至当地时间 9 月 25 日星期六晚间，OpenAI「所有涉及工具使用的训练、评估和推理工作」仍处于暂停状态。 此外，OpenAI 周五披露，其智能体曾不当将 ChatGPT 用户的 53 张图片上传至图片托管网站。该公司尚未说明这些图片究竟是 AI 生成的图像、用户拍摄的照片，还是包含可识别身份的人物。 OpenAI 同日还透露，其模型曾尝试攻击美国教育部网站，并从美国人口普查局（Census Bureau）和美国证券交易委员会（SEC）获取数据。 这些披露属于 OpenAI 正在进行的一项模型行为审查。此前发生 Hugging Face 遭攻击事件后，OpenAI 开始深入检查相关记录，并发现越来越多「意料之外或令人担忧的行为」。 这些事件不仅表明，随着 AI 智能体能力不断增强，对其进行控制正变得越来越困难，也凸显出追踪其行为所面临的挑战。这也导致越来越多研究人员、业内人士，甚至一些公司 CEO 呼吁放缓 AI 技术发展的速度。（来源：IT 之家） 消息称 Anthropic 谈判租赁最高 1GW 算力，预计相关投资至少 400 亿美元 据 The Information 报道，Anthropic 计划从一家由阿波罗全球管理公司控股的数据中心开发商处，租赁最高 1 吉瓦（Gigawatt，GW）算力，目前正处于早期谈判阶段。 据知情人士透露，Anthropic 计划直接作为承租方，入驻由 Stream Data Centers（一家拥有 27 年历史、基础设施遍布全美的公司）开发的园区，并在这些数据中心内全部署由博通和谷歌联合设计的 TPU。 数据中心开发商指出，无论采取哪种方案，建设 1 吉瓦的算力容量都需要至少 400 亿美元（IT 之家注：现汇率约合 2,689.86 亿元人民币）的资本支出。 目前，Anthropic 绝大多数的算力获取，依然依赖于向亚马逊云科技 AWS、谷歌以及 SpaceX 等云服务商租赁芯片服务器。 除了直接租赁数据中心基础设施外，Anthropic 还开启了向芯片商直接租赁算力芯片的模式。今年早些时候，该公司公布了与 AMD 的合作协议，锁定规模达 2 吉瓦的芯片供应；同时，它还达成了一项价值 350 亿美元（现汇率约合 2,353.62 亿元人民币）的协议，通过阿波罗与黑石联合设立的特殊目的实体租赁 TPU。（来源：IT 之家） 苹果侵犯专利一波三折：被判赔付 57 亿美元 据财联社消息，美国圣地亚哥联邦陪审团近日裁定，苹果公司因侵犯 Taction 科技公司的振动技术相关专利，需支付超 57 亿美元的赔偿，该专利技术被应用于多款 iPhone 和 Apple Watch 产品中。 陪审团认定苹果侵犯了 Taction 的两项触觉反馈专利，但裁定该侵权行为不构成蓄意侵权。Taction 于 2021 年就该专利对苹果提起诉讼，涉案专利描述的是「可通过触觉感知的低频振动触觉换能器」技术。 最新消息显示，苹果公司在声明中表示，强烈反对「今天的裁决及所判定的赔偿金额，这些完全缺乏事实依据」。「苹果并未使用 Taction 的技术，我们将提起上诉，」公司在声明中称。（来源：快科技） OpenAI 和 Anthropic 正在调查数万起 AI 相关安全事件 9 月 27 日消息，据 Axios 报道，OpenAI、Anthropic 以及安全研究人员正在调查数万起事件。在这些事件中，两家公司的前沿模型采取了一些外部评估人员认为存在问题的行动。 这些事件发生在近几个月的内部测试和现实环境中。如此庞大的事件数量表明，相关问题的复杂程度可能比公众目前了解到的高出几个数量级。 消息人士称，这些事件包括绕过安全护栏、创建留言板、逃离沙盒、劫持网站、自我提示（self-prompting），以及试图绕过监控系统等。这些行为既出现在内部测试中，也出现在现实环境里。随着安全研究人员继续调查，其中许多事件尚未公开。 OpenAI 首席执行官萨姆 · 奥尔特曼（Sam Altman）在 X 平台上表示，公司目前进行的审查工作「没有我们希望的那么快」。 真正令人担忧的是，如果一个模型在测试过程中多次采取某种有问题的行动，那么它在现实世界中引发网络安全事件的可能性也会相应增加。 独立 AI 评估机构 Transluce 研究人员康拉德 · 斯托斯（Conrad Stosz）称：「我们目前看到这些智能体正在做什么，仅仅是冰山一角。」 ControlAI 研究人员兼执行董事康纳 · 莱希（Connor Leahy）称，问题并不在于每一起事件单独造成了多大的损害。他说，真正「疯狂」的地方在于，这些事件涉及「自主系统做出被明确告知不要做的事情」，其中甚至可能包括犯罪行为。（来源：IT 之家） OpenCode 宣布为 DeepSeek V4.1 Flash 永久提供 60 美元额度 OpenCode 9 月 25 日宣布启动「Operation Cheepseek」第二阶段，DeepSeek V4.1 Flash 在 OpenCode Go 中原本限时提供的 60 美元（现汇率约合 403.5 元人民币）额度现调整为永久有效。 此前，OpenCode 曾将 DeepSeek V4.1 Flash 的使用额度临时提升至原标准的 4 倍，即从 15 美元提高至 60 美元，并计划于 9 月 20 日结束该活动。OpenCode 当前 Go 页面已将该模型的额度标注为 60 美元，原 15 美元额度被划线标记。 DeepSeek 最新发布的 V4.1 Flash 采用 5520 亿参数的 MoE 架构，输入侧激活参数量为 80 亿，输出侧为 160 亿，并采用新的 Causal Encoder-Decoder 架构。模型同时支持原生多模态视觉理解。 与上一代相比，DeepSeek V4.1 Flash 的 KV Cache 对 HBM 的需求降低至四分之一，对 SSD 的需求降低至八分之一。 DeepSeek 此前还宣布 OpenCode 已作为官方合作伙伴全量接入 V4.1 Flash。OpenCode 数据显示，截至 9 月 25 日，该模型在平台近期使用量中排名第一，占观测到的 200 万级使用量的约 13%。（来源：IT 之家） Claude Code 新机制：AI 任务中途触发 5 小时上限将优雅收尾 @ClaudeDevs 9 月 26 日在 X 平台发布推文，宣布针对 Claude Code 启用新机制，在任务中途如果触发 5 小时使用上限后，不会直接在编辑过程中中断，改为寻找合适的收尾点。 额度来源方面，系统会从用户的每周限制（weekly limit）中扣除一小段固定时间，让 Claude 完成它能完成的收尾工作。 在适用范围上，Pro 用户每周可使用一次此功能；而 Max 和 Team Premium 用户每次达到 5 小时会话限制后都可以使用。（来源：IT 之家） 苹果代码泄密！iPad 12 关键参数出炉：A19 芯片、8GB 内存 苹果入门级 iPad 终于要支棱起来了，日前，iPad 12 关键参数曝光，新机将在芯片、内存和网络等方面迎来升级。 据 MacRumors 报道，其撰稿人 Aaron Perris 通过挖掘苹果内部代码发现，iPad 12 将配备 A19 芯片、8GB 内存、N1 网络芯片以及 C1X 调制解调器。 作为对比，目前在售的 iPad 11 搭载 A16 芯片和 6GB 内存。 升级至 A19 和 8GB 内存后，iPad 12 不仅性能将进一步提升，也将具备运行 Apple Intelligence 及新一代 Siri AI 功能的硬件基础。 网络方面，iPad 12 将搭载苹果自研 N1 网络芯片，支持 Wi-Fi 7、蓝牙 6 以及 Thread（智能家居通信协议）。 蜂窝版本则将采用苹果 C1X 基带，支持 Sub-6GHz 5G 网络，相比现款 iPad 所使用的高通基带，C1X 在能效方面有望进一步改善。 外观设计上，目前尚未出现明显改动信息，新机预计仍将延续现款整体设计，不过不排除增加新的机身配色。 作为参考，现款 iPad 11 起售价 2999 元，配备 11 英寸 IPS LCD 屏，分辨率为 2360x1640，采用 USB-C 接口，不支持 Apple Intelligence。 从现有爆料来看，iPad 12 的升级重点将集中在芯片、内存以及 AI 能力上，屏幕等基础规格预计仍会保持入门级产品定位。（来源：快科技） 美团上线 LongCat-2.5-Preview 大模型 美团旗下 LongCat API 开放平台于 9 月 25 日上线新一代大模型 LongCat-2.5-Preview。该模型主打「长程任务」与多模态能力，并同步开放 API 与网页端体验入口。 从官方公布的核心特性看，LongCat-2.5-Preview 新增图片理解能力，可解析图像内容，支持跨模态问答、内容摘要与复杂视觉推理。代码能力方面，官方将其列为核心特性之一，称其在代码生成、代码理解与自动化编程任务上表现突出。 开发环境适配方面，LongCat-2.5-Preview 深度适配 Claude Code 等开发环境，并与 Claude Code、Hermes、OpenClaw、OpenCode、Kilo Code 高效协同。 模型架构方面，LongCat-2.5-Preview 延续 MoE（混合专家）路线，总参数量约 1.6 万亿，每次推理激活参数约 480 亿。该模型原生支持 100 万 token 上下文窗口，适用于处理超长文档、代码库、日志与多轮复杂任务。（来源：驱动中国） 宇树王兴兴回应为何造 390 万元起的载人变形机甲：大型机器人是行业不可阻挡的趋势 今年 5 月，宇树科技发布 GD01 载人变形机甲，390 万元起。 9 月 23 日至 27 日，第五届全球数字贸易博览会在杭州举行。宇树 GD01 载人机甲现身数贸会主题馆，据科创板日报报道，现场工作人员表示，问价的人不少，还没有卖出去一台。 在数贸会数字贸易与人工智能对话论坛上，宇树科技创始人王兴兴以《从机械到灵智——具身未来进化论》为题发表主旨演讲。在演讲中，王兴兴解释了为什么要研发这台载人机甲。 随着 AI 与机器人底层技术成熟，大型机器人与小型机器人的研发落地并不冲突。大型机器人是行业不可阻挡的趋势，就算宇树不做，未来几年也会有其他企业推出同类产品。 「我们把 GD01 定义成机器人里的越野车。」王兴兴在上述演讲中表示，它不是在城市室内使用，而是面向户外复杂地形、强通过性，用来在野外环境完成任务。（来源：IT 之家） 腾讯推出云端小龙虾 LightVela：8GB 主机免费用、已接入微信 QQ OpenClaw 这样的本地小龙虾热度已经过去了，国内大批跟风产品都在关停，AI 的下一个玩法是云端小龙虾，腾讯现在就推出了 LightVela，免费送云端 Agent。 LightVela 是由腾讯轻量云团队出品的云服务，将 AI Agent 的完整能力搬上云端，7×24 小时待命，数据完全归用户。 它的诞生也是源于 3 月份 OpenClaw 公益装机活动，吸引了 7 万多人参与，腾讯意识到了人们需要的不只是一次安装，而是持续、稳定、无门槛的 AI 服务，最终变成了现在的 LightVela。 LightVela 目前免费一个月，送 4500 积分，云端主机配置是 2 核 CPU、8GB 内存，云存储空间 50GB，还有更高端的 Cruise AI 套餐，收费 23 美元/月，首月 6 折优惠，只要 13.8 元，配置升级到 4 核 16GB 内存，80GB 云存储空间，10000 积分。 功能上 LightVela 跟目前大部分本地 Agent 客户端没多大区别，有技能、定时任务、记忆、人设等设置，已经预装了 Hermes 及 DeepSeek Harness 两个热门工具，上手门槛很低。 消息推送通道自然是以腾讯自家的为主，微信、QQ 与企业微信是核心，但也支持飞书、电报、Discord、Slack 等 IM 软件，可以在这些客户端中随时发送接收指令。（来源：快科技） Meta 发布 AI 游戏生成工具：一句话打造可玩的 2D 与 3D 游戏, 直接接入 Facebook 和 Instagram Meta 正式公布两款全新的生成式人工智能游戏开发工具「Horizon Create」和「Horizon Studio」，希望通过自然语言生成技术彻底降低游戏开发门槛，让普通用户无需编程经验也能够创建并发布可实际运行的游戏作品。 根据 Meta 介绍，这两款工具都基于 Meta Horizon Engine 平台构建，能够根据用户输入的文字描述自动生成完整的 2D 或 3D 游戏。 其中，Horizon Create 是一款面向移动设备的应用程序，主打随时随地进行创作。用户打开应用后，可以直接使用自然语言描述想制作的游戏内容，然后由 AI 自动生成对应的可玩作品。 另一款产品 Horizon Studio 则运行在浏览器中，开发者可以进一步调整游戏难度、美术风格、任务进程、成长系统以及各种玩法细节，从而获得更高程度的创作自由。 不过，尽管 Meta 已经正式公布相关产品，目前外界仍然无法准确评估这些 AI 生成游戏的真实质量。Meta 尚未展示大量完整案例，因此尚不清楚生成作品能够达到何种复杂程度。 此外，Meta 也没有公布两款工具的大规模开放时间表。公司仅确认 Horizon Create 是一款移动应用，而 Horizon Studio 则是一款基于网页的平台，但尚未透露具体的设备要求和正式上线时间。（来源：cnBeta） 医院用 AI「提效」，结果保险公司两年多付了 9.42 亿美元 美国 Blue Cross Blue Shield Association 最新分析显示，医院使用 AI 工具辅助医疗编码和提交保险索赔后，两年内相关医疗支出反而增加约 9.42 亿美元。 原因并不是 AI 看病更贵，而是 AI 特别擅长找到： 「这个病例还能再编码成什么、还能向保险公司多申请什么费用」。 于是 AI 给医疗系统带来的第一批明确 ROI，有时并不是减少医生工作，而是把原来漏掉的收入全部找回来。 这个案例很值得关注，因为它揭示了企业 AI 落地一个很现实的规律： 模型不会天然降低整个社会的成本。 它首先会优化购买它的那一方的利益。 医院买 AI，AI 就帮助医院提高收入；保险公司因此承担更高费用。（来源：TechCrunch）",
+        "url": "http://www.geekpark.net/news/371039",
         "source": "极客公园",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "tag": "TechCrunch AI",
-        "title": "Crusoe abandons $1.25B plan to use Boom turbines at AI data centers",
-        "summary": "Boom Supersonic CEO Blake Scholl said the company's new stationary power plants were no longer in Crusoe's near-term plans.",
-        "url": "https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/",
+        "title": "Insurers claim AI is already increasing healthcare costs",
+        "summary": "Blue Cross Blue Shield says hospital use of AI tools led to an additional $942M in healthcare spending over a two-year period.",
+        "url": "https://techcrunch.com/2026/09/26/insurers-claim-ai-is-already-increasing-healthcare-costs/",
         "source": "TechCrunch AI",
         "region": "en",
         "category": "科技"
       },
       {
-        "date": "2026-09-25",
-        "tag": "Ars Technica",
-        "title": "Can Trump ever be wrong? His pick to lead FDA refused to say.",
-        "summary": "Heidi Overton faced questions focused on vaccines, birth control, and vapes.",
-        "url": "https://arstechnica.com/health/2026/09/can-trump-ever-be-wrong-his-pick-to-lead-fda-refused-to-say/",
-        "source": "Ars Technica",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "TechCrunch AI",
-        "title": "Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge",
-        "summary": "AI agents operating in OpenAI's research environment posted user images on public image-hosting sites without the lab's knowledge.",
-        "url": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
-        "source": "TechCrunch AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Ars Technica",
-        "title": "Court rules Pentagon can blacklist Anthropic for refusing to enable Claude features",
-        "summary": "\"Overly constrained AI models\" could cause military operations to fail, judges say.",
-        "url": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
-        "source": "Ars Technica",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-09-25",
-        "tag": "Ars Technica",
-        "title": "Tesla workers balk at training Optimus humanoid robots as replacements",
-        "summary": "Despite challenges, Tesla aims for 1,000 Optimus robots per week by end of 2026.",
-        "url": "https://arstechnica.com/ai/2026/09/tesla-workers-balk-at-training-optimus-humanoid-robots-as-replacements/",
-        "source": "Ars Technica",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-09-25",
+        "date": "2026-09-26",
         "tag": "The Verge AI",
-        "title": "Can Apple Home’s AI camera features outsmart Amazon’s and Google’s? I put them to the test",
-        "summary": "A few years back, I was at a beachside Easter egg hunt, watching my kids dash through sand dunes searching for sweet treats. My phone buzzed in my pocket; I ignored it. A moment later, it buzzed again. I pulled it out, glanced down, and saw a \"motion detected\" notification from my security camera. \"Just […]",
-        "url": "https://www.theverge.com/tech/1000321/apple-intelligence-home-security-camera-amazon-ring-alexa-google-nest-gemini-home-review",
+        "title": "OpenAI pauses training of its ‘most capable models’",
+        "summary": "As reports of OpenAI's models breaking containment, hacking sites, and generally getting out of control pile up, the company has made the decision to pause training of its most powerful models. The decision was made after a model being tested within a sandbox exploited a loophole to gain internet access. The incident happened on September […]",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1001049/openai-training-pause",
         "source": "The Verge AI",
         "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "TechCrunch AI",
+        "title": "I created an interactive digital avatar of myself — and you can talk to it",
+        "summary": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI clones of ourselves.",
+        "url": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "量子位",
+        "title": "索辰科技加码世界模型，与战略投资企业美梦空间联合发布具身模型与物理测评标准",
+        "summary": "“世界模型”开始成为具身智能跨越商业化“奇点”的新叙事。",
+        "url": "https://www.qbitai.com/2026/09/498478.html",
+        "source": "量子位",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "Ars Technica",
+        "title": "Tesla’s big electric truck faces an even bigger infrastructure challenge",
+        "summary": "The 500-mile Semi arrives as charging gaps still limit electric trucking.",
+        "url": "https://arstechnica.com/cars/2026/09/teslas-big-electric-truck-faces-an-even-bigger-infrastructure-challenge/",
+        "source": "Ars Technica",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-09-26",
+        "tag": "量子位",
+        "title": "AI开始研究Physical AI：FSD级团队亮出首版模型Simate-beta，空降RoboDojo",
+        "summary": "Simate将训练、推理与评测全流程接入自研Infra，通过极致的任务编排与资源调度，同时并行推进数十条相互独立的研究路线。",
+        "url": "https://www.qbitai.com/2026/09/498271.html",
+        "source": "量子位",
+        "region": "cn",
         "category": "科技"
       }
     ]
