@@ -83,6 +83,22 @@
         <p id="scaleInfo" class="meta"></p>
       </section>
 
+      <section class="block" id="figureBlock" hidden>
+        <h2>2b · 论文插图模式</h2>
+        <p class="hint">检测到这张图由<b>多个子图拼成</b>（论文里常见的 2×2 / 1×N 版式）。
+          工具已自动按白色分隔条拆分，并定位了各子图右下角的<b>比例尺白板</b>与顶部的文字标注。
+          顶部文字带与右下角标尺会被自动屏蔽、不参与分割；子图边缘那圈尺寸不完整的晶粒按默认规则剔除
+          （如需保留请自行勾选「保留接触图像边缘的颗粒」，但会拉偏统计）。</p>
+        <p id="figureInfo" class="meta"></p>
+        <label class="field">
+          <span>比例尺代表的真实长度 <b id="barUmVal">20</b> µm</span>
+          <input type="range" id="barUm" min="1" max="200" step="1" value="20" />
+        </label>
+        <div id="panelChips" class="panel-chips"></div>
+        <p class="hint">选中某个子图后点「开始分析」可单独细看；点下面的按钮则一次性测完所有子图并出对比表。</p>
+        <button id="batchRun" class="primary-btn">批量测量全部子图</button>
+      </section>
+
       <section class="block">
         <h2>3 · 分割参数与标注</h2>
 
@@ -91,6 +107,7 @@
           <select id="mode">
             <option value="grain" selected>晶粒模式（致密烧结晶粒 · SEM 推荐）</option>
             <option value="otsu">Otsu 自动阈值（分散粉末）</option>
+            <option value="percentile">分位阈值（断口面凸起晶粒）</option>
             <option value="adaptive">自适应阈值（分散粉末）</option>
             <option value="manual">手动阈值</option>
           </select>
@@ -116,6 +133,11 @@
         <label class="field" id="manualWrap" hidden>
           <span>手动阈值 <b id="thrVal">128</b></span>
           <input type="range" id="thr" min="1" max="254" value="128" />
+        </label>
+
+        <label class="field" id="pctWrap" hidden>
+          <span>亮度分位 <b id="thrPctVal">65</b> %（越大越暗，保留越亮的凸起晶粒）</span>
+          <input type="range" id="thrPct" min="30" max="90" step="1" value="65" />
         </label>
 
         <label class="field" id="blockWrap">
@@ -243,6 +265,23 @@
           </table>
         </div>
       </div>
+      <div class="table-block" id="batchBlock" hidden>
+        <div class="table-head">
+          <h2 id="batchTitle">多子图对比</h2>
+          <div class="table-actions">
+            <button id="batchCsv" class="ghost-btn">导出对比表 CSV</button>
+          </div>
+        </div>
+        <p class="meta" id="batchNote"></p>
+        <div class="table-scroll">
+          <table id="batchTbl">
+            <thead>
+              <tr><th>子图</th><th>标尺 px</th><th>计数 n</th><th>平均</th><th>σ</th><th>D10</th><th>D50</th><th>D90</th><th>CV</th><th>实心度</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -264,7 +303,9 @@
     <h2>常见问题</h2>
     <details><summary>页面打开后一直显示"加载 OpenCV"？</summary><p>OpenCV.js 磁盘文件约 12.7MB，服务器启用了 gzip 压缩，<b>实际下载约 3.6MB</b>，正常宽带几秒内即可就绪。若长时间不动，可强制刷新（Ctrl+F5）清除缓存后重试。</p></details>
     <details><summary>结果颗粒数偏多/偏少？</summary><p>晶粒模式：先调「晶界灵敏度」，调高会切出更多晶粒（晶界判定更严），调低则反之；再调「最小晶粒面积」滤掉碎片。阈值模式：调整「最小面积」「最小圆度」，或切换「颗粒亮/暗」；对比度低时改用「手动阈值」微调。</p></details>
-    <details><summary>怎么判断该用晶粒模式还是阈值模式？</summary><p>看整幅图有没有"背景"：<b>晶粒互相紧贴、看不到空隙</b>（烧结致密陶瓷的表面/断口）→ 晶粒模式；<b>能看到颗粒之间的背景</b>（分散粉末、悬浮液）→ 阈值模式。判断错了会有很明显的征兆：致密组织用阈值模式会切出大量碎片、圆度被迫降到很低；分散粉末用晶粒模式则几乎只能切出孤立的小块。</p></details>
+    <details><summary>怎么判断该用晶粒模式还是阈值模式？</summary><p>看整幅图有没有"背景"：<b>晶粒互相紧贴、被连续暗线界定</b>（抛光+腐蚀的截面）→ 晶粒模式；<b>能看到颗粒之间的背景</b>（分散粉末、悬浮液）→ 阈值模式。判断错了会有很明显的征兆：致密截面用阈值模式会切出大量碎片、圆度被迫降到很低；分散粉末用晶粒模式则几乎只能切出孤立的小块。</p>
+      <p style="margin-top:8px">还要注意<b>断口面</b>是介于两者之间的一类：晶粒是断口上凸起的亮区，彼此直接相接，晶界只是不连续的阴影凹槽。这种图用晶粒模式会严重欠分割（大片粘连），应改用<b>分位阈值</b>模式切出亮区。判据是看「实心度」列：明显低于 0.9 就说明轮廓凹陷、多颗粘在一起。</p></details>
+    <details><summary>论文里那种 2×2 / 1×3 的拼图能直接丢进来吗？</summary><p>能。上传后若检测到白色分隔条，工具会自动进入<b>论文插图模式</b>：拆出各子图、逐张定位右下角的比例尺白板并用半高插值亚像素定边、屏蔽顶部文字标注与标尺区，然后你只要填一次"比例尺代表多长"（默认 20 µm）即可。<b>点「批量测量全部子图」</b>会一次测完所有子图并给出对比表（含标尺像素数、计数、平均、σ、D10/D50/D90、CV、平均实心度），可导出 CSV。子图按钮可以切换到单张细看。注意：自动标定的精度取决于比例尺白板在图中的像素长度，子图之间测得的宽度若相差超过 3%，界面会提示离散度——那通常意味着各子图倍率不同或白板被 JPEG 压花，此时建议改用单张原图分析。</p></details>
     <details><summary>直径单位怎么选？</summary><p>推荐流程：<strong>先完成标尺校准</strong>，再做分割调节与正式分析。用"标尺校准"：量出图中已知长度对应的像素数并填入实际长度与单位（nm/µm/mm）。不填则按像素显示。修改标定值后，已出的统计结果与直方图会<strong>即时按新单位重算</strong>，无需重新分析。</p></details>
     <details><summary>轮廓为什么是五颜六色的？能否改？</summary><p>在"轮廓着色"里可切换：<b>按粒径梯度</b>（青→紫，一眼看出大小分布，默认）或 <b>多色区分</b>（每颗颗粒一个独立颜色，便于核对单颗）。两者都不影响统计数值。</p></details>
     <details><summary>什么是"分水岭分离"？为什么默认关着？</summary><p>颗粒相互接触时，阈值法会把它们并成一整块。该选项对距离变换图取<b>局部极大</b>作种子，再用分水岭把接触处切开分别测量。<b>但实测它弊大于利，因此默认关闭</b>：分水岭会把颗粒与背景的交界标成 -1，若直接丢弃，每颗颗粒会被削掉一圈，导致大量颗粒被"最小面积""最小圆度"误杀。合成基准上的实测对照：分散粉末 72 颗颗粒，开启后只剩 8~23 颗，关闭则为 37~69 颗；团聚粉末（真值 46 颗）开启 15~29 颗，关闭 37~39 颗。只有当你的样品里颗粒明显粘连、且关闭该项时计数明显偏少，才值得打开试试——打开后请务必把"最小面积"适当调小。</p></details>

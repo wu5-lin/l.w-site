@@ -103,6 +103,12 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .meta.meta-warn { color: var(--warn); }
 .sample-row { display: flex; gap: 8px; flex-wrap: wrap; }
 .sample-row .ghost-btn { flex: 1 1 auto; }
+.panel-chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0 10px; }
+.panel-chip {
+  border: 1px solid var(--border); background: var(--panel-2); color: var(--text);
+  border-radius: 8px; padding: 6px 10px; font-size: 12px; cursor: pointer;
+}
+.panel-chip.active { border-color: var(--accent); color: var(--accent); background: rgba(56,225,255,.10); }
 .note { font-size: 13px; color: var(--text-dim); background: var(--panel-2); padding: 12px; border-radius: 10px; border-left: 3px solid var(--accent); }
 
 /* ---------- buttons ---------- */

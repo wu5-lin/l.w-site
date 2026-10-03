@@ -103,8 +103,73 @@ function drawToSrc(img) {
   $("fitInfo").hidden = true;
   // 新图重置标尺线
   scaleLine = null; drawEnd = null;
+  figureGray = null; figurePanels = null; lastBatch = null;
+  $("batchBlock").hidden = true;
+  detectFigureIfComposite();
   syncOverlay();
   schedulePreview();
+}
+
+/* 论文拼图检测: 只有当"白色分隔条把图切成 >=2 块"时才认定为拼图 */
+function detectFigureIfComposite() {
+  // OpenCV 还没就绪时先不检测, 等就绪后由 initImgAnalysis 补上
+  if (!(window.cv && window.cv.imread)) return;
+  try {
+    const src = cv.imread(srcCanvas);
+    const gray = new cv.Mat();
+    cv.cvtColor(src, gray, cv.COLOR_RGBA2GRAY);
+    const panels = detectFigurePanels(gray);
+    if (!panels) {
+      figureGray = null; figurePanels = null;
+      $("figureBlock").hidden = true;
+      gray.delete(); src.delete();
+      return;
+    }
+    figureGray = gray;
+    src.delete();
+    for (const r of panels) r.bar = detectScaleBar(figureGray, r);
+    figurePanels = panels;
+    panelIndex = 0;
+    renderPanelChips();
+  } catch (e) {
+    figureGray = null; figurePanels = null;
+    $("figureBlock").hidden = true;
+  }
+}
+
+const PANEL_NAMES = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+
+function renderPanelChips() {
+  const box = $("panelChips");
+  box.innerHTML = "";
+  figurePanels.forEach((r, i) => {
+    const b = document.createElement("button");
+    b.className = "panel-chip" + (i === panelIndex ? " active" : "");
+    b.textContent = `子图 ${PANEL_NAMES[i] || (i + 1)}`;
+    b.addEventListener("click", () => { selectPanel(i); });
+    box.appendChild(b);
+  });
+  const found = figurePanels.filter((r) => r.bar);
+  let info = `识别到 ${figurePanels.length} 个子图，尺寸约 ${figurePanels[0].w}×${figurePanels[0].h} px。`;
+  if (found.length === figurePanels.length) {
+    const ws = found.map((r) => r.bar.widthPx);
+    const mean = ws.reduce((s, v) => s + v, 0) / ws.length;
+    const sd = Math.sqrt(ws.reduce((s, v) => s + (v - mean) ** 2, 0) / ws.length);
+    info += ` ${figurePanels.length} 个子图都找到了比例尺白板，平均 ${mean.toFixed(1)} px`
+      + `（子图间离散 ${(100 * sd / mean).toFixed(1)}% → 标定不确定度约 ±${(50 * sd / mean).toFixed(1)}%）。`;
+  } else {
+    info += ` 仅在 ${found.length} 个子图里找到比例尺白板，未找到的子图需要手动标定。`;
+  }
+  info += " 顶部文字带与右下角标尺已自动屏蔽，不参与分割。";
+  $("figureInfo").textContent = info;
+  $("figureBlock").hidden = false;
+}
+
+function selectPanel(i) {
+  panelIndex = i;
+  renderPanelChips();
+  $("previewBadge").hidden = true;
+  schedulePreviewImmediate();
 }
 
 
@@ -150,6 +215,9 @@ function drawSampleCanvas(w, h, paint, note) {
   $("previewBadge").hidden = true;
   $("fitInfo").hidden = true;
   scaleLine = null; drawEnd = null;
+  figureGray = null; figurePanels = null; lastBatch = null;
+  $("batchBlock").hidden = true;
+  $("figureBlock").hidden = true;
   syncOverlay();
   schedulePreview();
 }
@@ -322,6 +390,7 @@ function lnpdf(d, mu, sigma) {
 function readParams() {
   const mode = $("mode").value;
   const thr = +$("thr").value;
+  const thrPct = $("thrPct") ? +$("thrPct").value : 65;
   const block = +$("blk").value;
   const kern = +$("kern").value;
   const minArea = +$("minarea").value;
@@ -330,10 +399,16 @@ function readParams() {
   const calPx = +$("calpx").value;
   const calLen = +$("calLen").value;
   const calUnit = $("calUnit").value;
-  const calOkay = calPx > 0 && calLen > 0 && !Number.isNaN(calLen);
-  const calibrated = calUnit !== "px" && calOkay;
-  const unitPerPx = calibrated ? (calLen / calPx) : 1;
-  const unitLabel = calibrated ? calUnit : "px";
+  // 拼图模式: 若当前子图找到了比例尺白板, 直接用自动标定的比例, 优先于手动输入
+  const autoUm = panelUmPerPx();
+  const useAuto = autoUm !== null;
+  const effPx = useAuto ? 1 : calPx;
+  const effLen = useAuto ? autoUm : calLen;
+  const effUnit = useAuto ? "um" : calUnit;
+  const calOkay = effPx > 0 && effLen > 0 && !Number.isNaN(effLen);
+  const calibrated = effUnit !== "px" && calOkay;
+  const unitPerPx = calibrated ? (effLen / effPx) : 1;
+  const unitLabel = calibrated ? effUnit : "px";
   const ws = $("ws") ? $("ws").checked : false;
   const colorMode = $("colorMode") ? $("colorMode").value : "gradient";
   const blur = $("blur") ? $("blur").checked : false;
@@ -357,7 +432,7 @@ function readParams() {
   const effMinCirc = isGrain ? 0 : minCirc;
 
   return {
-    mode, thr, block, kern, minArea, minCirc, effMinCirc, polar,
+    mode, thr, thrPct, block, kern, minArea, minCirc, effMinCirc, polar,
     calPx, calLen, calUnit, calibrated, unitPerPx, unitLabel,
     ws, colorMode, blur, fill, keepEdge, isGrain,
     grainBlur, edgePct, dilateW, gradK, closeW, grainMinSeed, wsPeakK,
@@ -669,17 +744,176 @@ function extractByLabel(labelMat, p, W, H, out, skipLabel) {
 }
 
 /* ---------- 分割 + 提取轮廓 (供 分析 / 实时预览 复用) ---------- */
-async function segment(p) {
-  const src = cv.imread(srcCanvas);
+/* ---------- 论文插图模式: 多子图拆分 + 标尺自动识别 + 文字屏蔽 ----------
+ * 论文里的 SEM 拼图通常是 2×2 / 1×N 版式, 子图之间有白色分隔条,
+ * 每张子图左上角有 "(a)"、右上角有 "S.T=xxx℃", 右下角有比例尺白板与 "20μm"。
+ * 这些都是后期叠加的标注, 不属于显微组织, 直接参与分割会污染结果, 所以要:
+ *   ① 按分隔条拆出子图   ② 定位并屏蔽标注区   ③ 亚像素测出标尺像素宽度 -> 自动标定
+ * 其中标尺必须用"半高插值"而不是阈值法: 标尺白板是饱和平台(灰度 241~255),
+ * 阈值法会把边缘的 JPEG 振铃算进去, 四个子图之间能差出 10%。 */
+let figureGray = null;      // 整图灰度 Mat(缓存)
+let figurePanels = null;   // [{x,y,w,h,bar}] 或 null(非拼图)
+let panelIndex = 0;
+let lastBatch = null;      // [{i,name,barPx,umPerPx,stats,...}]
+
+function longestSpan(arr, n) {
+  let best = null, cur = -1;
+  for (let i = 0; i <= n; i++) {
+    if (i < n && arr[i]) { if (cur < 0) cur = i; }
+    else if (cur >= 0) { if (!best || i - 1 - cur > best[1] - best[0]) best = [cur, i - 1]; cur = -1; }
+  }
+  return best;
+}
+
+function detectFigurePanels(gray) {
+  const H = gray.rows, W = gray.cols, d = gray.data;
+  const rowHit = new Uint8Array(H), colHit = new Uint8Array(W);
+  for (let y = 0; y < H; y++) {
+    const off = y * W; let c = 0;
+    for (let x = 0; x < W; x++) if (d[off + x] > 235) c++;
+    if (c / W > 0.5) rowHit[y] = 1;
+  }
+  for (let x = 0; x < W; x++) {
+    let c = 0;
+    for (let y = 0; y < H; y++) if (d[y * W + x] > 235) c++;
+    if (c / H > 0.5) colHit[x] = 1;
+  }
+  const rs = longestSpan(rowHit, H), cs = longestSpan(colHit, W);
+  if (!rs && !cs) return null;
+  const yBands = rs ? [[0, rs[0]], [rs[1] + 1, H]] : [[0, H]];
+  const xBands = cs ? [[0, cs[0]], [cs[1] + 1, W]] : [[0, W]];
+  const rects = [];
+  for (const [y0, y1] of yBands) {
+    for (const [x0, x1] of xBands) {
+      if (y1 - y0 < 120 || x1 - x0 < 120) continue;
+      rects.push({ x: x0, y: y0, w: x1 - x0, h: y1 - y0 });
+    }
+  }
+  return rects.length >= 2 ? rects : null;
+}
+
+/* 在子图内找右下角的标尺白板, 并用半高插值亚像素定边 */
+function detectScaleBar(gray, rect) {
+  const d = gray.data, cols = gray.cols;
+  const H = rect.h, W = rect.w;
+  let best = null;
+  for (let y = Math.floor(H * 0.55); y < H; y++) {
+    const off = (rect.y + y) * cols + rect.x;
+    let run = 0, bRun = 0, bStart = 0, cStart = 0;
+    for (let x = 0; x < W; x++) {
+      if (d[off + x] > 232) {
+        if (run === 0) cStart = x;
+        run++;
+        if (run > bRun) { bRun = run; bStart = cStart; }
+      } else run = 0;
+    }
+    if (bRun >= 80 && (!best || bRun > best.len)) best = { row: y, x0: bStart, len: bRun };
+  }
+  if (!best) return null;
+  // 取"白板 ±45px"的亮度剖面
+  const xa = Math.max(0, best.x0 - 45), xb = Math.min(W, best.x0 + best.len + 45);
+  const ya = Math.max(0, best.row - 3), yb = Math.min(H, best.row + 17);
+  const n = xb - xa;
+  if (n < 60) return null;
+  const prof = new Float32Array(n);
+  for (let x = 0; x < n; x++) {
+    let s = 0;
+    for (let y = ya; y < yb; y++) s += d[(rect.y + y) * cols + rect.x + xa + x];
+    prof[x] = s / (yb - ya);
+  }
+  const edge = [];
+  for (let x = 0; x < 25; x++) edge.push(prof[x], prof[n - 1 - x]);
+  edge.sort((a, b) => a - b);
+  const bg = edge[Math.floor(edge.length / 2)];
+  const pa = Math.max(0, best.x0 - xa - 10), pb = Math.min(n, best.x0 - xa + best.len + 10);
+  const plat = Array.from(prof.slice(pa, pb)).sort((a, b) => a - b);
+  const peak = plat[Math.floor(plat.length * 0.75)];
+  if (peak - bg < 40) return null;
+  const half = bg + 0.5 * (peak - bg);
+  let L = best.x0 - xa - 1;
+  while (L > 0 && prof[L] > half) L--;
+  const tL = (prof[L + 1] - half) / ((prof[L + 1] - prof[L]) || 1);
+  const leftPx = L + tL;
+  let R = best.x0 - xa + best.len;
+  while (R < n - 1 && prof[R] > half) R++;
+  const tR = (half - prof[R - 1]) / ((prof[R] - prof[R - 1]) || 1);
+  const rightPx = R - 1 + tR;
+  return {
+    rowAbs: rect.y + best.row,
+    leftAbs: rect.x + xa + leftPx,
+    rightAbs: rect.x + xa + rightPx,
+    widthPx: rightPx - leftPx,
+  };
+}
+
+/* 标注屏蔽区: 顶部文字带 + 右下角标尺(含 "20µm" 文字) */
+function buildValidMask(rect, bar) {
+  const W = rect.w, H = rect.h;
+  const m = new Uint8Array(W * H);
+  const top = Math.floor(H * 0.16);
+  for (let y = 0; y < top; y++) m.fill(1, y * W, y * W + W);
+  if (bar) {
+    // 注意必须取整: 标尺边界是亚像素浮点数(如 621.16), 直接拿它当 Uint8Array
+    // 下标会因非整数索引而静默失效, 屏蔽区会一个像素都没盖上。
+    const y0 = Math.max(0, Math.floor(bar.rowAbs - rect.y - 75));
+    const y1 = Math.min(H, Math.ceil(bar.rowAbs - rect.y + 30));
+    const x0 = Math.max(0, Math.floor(bar.leftAbs - rect.x - 40));
+    const x1 = Math.min(W, Math.ceil(bar.rightAbs - rect.x + 40));
+    for (let y = y0; y < y1; y++) for (let x = x0; x < x1; x++) m[y * W + x] = 1;
+  }
+  return m;
+}
+
+/* 标注区填成有效区的平均灰, 既不制造假边界, 也不改变整体灰度分布 */
+function applyValidMask(gray, mask) {
+  const d = gray.data, n = gray.rows * gray.cols;
+  let s = 0, c = 0;
+  for (let i = 0; i < n; i++) if (!mask[i]) { s += d[i]; c++; }
+  const mean = c ? s / c : 128;
+  for (let i = 0; i < n; i++) if (mask[i]) d[i] = mean;
+}
+
+/* 取子图并转成 RGBA Mat(与整图 imread 同构), 供 segment 复用 */
+function panelMat(rect, mask) {
+  const g = new cv.Mat(rect.h, rect.w, cv.CV_8UC1);
+  const src = figureGray.data, cols = figureGray.cols;
+  const dst = g.data;
+  for (let y = 0; y < rect.h; y++) {
+    const so = (rect.y + y) * cols + rect.x;
+    dst.set(src.subarray(so, so + rect.w), y * rect.w);
+  }
+  applyValidMask(g, mask);
+  const rgba = new cv.Mat();
+  cv.cvtColor(g, rgba, cv.COLOR_GRAY2RGBA);
+  g.delete();
+  return rgba;
+}
+
+function currentPanel() {
+  return figurePanels ? figurePanels[panelIndex] : null;
+}
+
+/* 当前视图的标定比例(µm/px); 非拼图或未检出标尺时返回 null */
+function panelUmPerPx() {
+  const rect = currentPanel();
+  if (!rect || !rect.bar) return null;
+  const barUm = +$("barUm").value;
+  if (!(barUm > 0)) return null;
+  return barUm / rect.bar.widthPx;
+}
+
+async function segment(p, srcIn, validMask) {
+  const src = srcIn || cv.imread(srcCanvas);
   let gray = new cv.Mat();
   cv.cvtColor(src, gray, cv.COLOR_RGBA2GRAY);
+  if (validMask) applyValidMask(gray, validMask);
   if (p.blur) {
     const tmp = new cv.Mat();
     cv.GaussianBlur(gray, tmp, new cv.Size(3, 3), 0);
     gray.delete();
     gray = tmp;
   }
-  const W = srcCanvas.width, H = srcCanvas.height;
+  const W = gray.cols, H = gray.rows;
   const contours = new cv.MatVector();
   const hierarchy = new cv.Mat();
   const keptIdx = [];
@@ -707,6 +941,14 @@ async function segment(p) {
     } else if (p.mode === "otsu") {
       const flag = (p.polar === "bright" ? cv.THRESH_BINARY : cv.THRESH_BINARY_INV) | cv.THRESH_OTSU;
       cv.threshold(gray, thresh, 0, 255, flag);
+    } else if (p.mode === "percentile") {
+      // 分位阈值: 取灰度的第 p.percentile 分位做分割。
+      // 断口面 SEM 里晶粒是凸起的亮区、晶界/孔洞是暗网络, 灰度分布双峰不明显,
+      // Otsu 会在四张子图之间飘(Otsu 阈值实测 85~107), 而分位阈值对整体明暗不敏感,
+      // 更适合"按亮度切出凸起晶粒"这种用法。
+      const t = matPercentile(gray, p.thrPct);
+      const flag = p.polar === "bright" ? cv.THRESH_BINARY : cv.THRESH_BINARY_INV;
+      cv.threshold(gray, thresh, t, 255, flag);
     } else {
       const flag = p.polar === "bright" ? cv.THRESH_BINARY : cv.THRESH_BINARY_INV;
       cv.threshold(gray, thresh, p.thr, 255, flag);
@@ -885,8 +1127,11 @@ async function analyze() {
   status.textContent = "分析中…";
   const p = readParams();
   let s = null, dst = null;
+  // 拼图模式: 只分析当前选中的子图, 并套用该子图的标注屏蔽
+  const rect = currentPanel();
   try {
-    s = await segment(p);
+    s = rect ? await segment(p, panelMat(rect, buildValidMask(rect, rect.bar)), null)
+             : await segment(p);
     const noun = p.isGrain ? "晶粒" : "颗粒";
     if (s.diametersPx.length === 0) {
       status.style.color = "var(--bad)";
@@ -898,6 +1143,7 @@ async function analyze() {
 
     dst = s.src.clone();
     drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax, p.colorMode, s.labels, p.fill, s.src);
+    if (currentPanel()) { dstCanvas.width = currentPanel().w; dstCanvas.height = currentPanel().h; }
     cv.imshow(dstCanvas, dst);
 
     const diameters = s.diametersPx.map((d) => d * p.unitPerPx);
@@ -1178,6 +1424,87 @@ function exportCsv() {
   URL.revokeObjectURL(url);
 }
 
+/* ---------- 论文插图模式: 批量测量所有子图 ---------- */
+async function runBatch() {
+  if (!figurePanels) return;
+  const status = $("status");
+  status.style.color = "var(--warn)";
+  try { await waitCv(); } catch (e) { status.style.color = "var(--bad)"; status.textContent = e.message; return; }
+  const barUm = +$("barUm").value;
+  if (!(barUm > 0)) { status.textContent = "请先填写比例尺代表的真实长度。"; return; }
+  const saved = panelIndex;
+  const out = [];
+  for (let i = 0; i < figurePanels.length; i++) {
+    panelIndex = i;
+    const rect = figurePanels[i];
+    status.textContent = `正在测量子图 ${PANEL_NAMES[i] || (i + 1)} / ${figurePanels.length}…`;
+    const p = readParams();               // 内部按当前子图的标尺自动标定
+    let src = null;
+    if (rect.bar) src = panelMat(rect, buildValidMask(rect, rect.bar));
+    const s = src ? await segment(p, src, null) : await segment(p);
+    const diam = s.diametersPx.map((d) => d * p.unitPerPx);
+    const stats = computeStats(diam);
+    const sol = s.rows.map((r) => r.solidity).filter((v) => typeof v === "number");
+    out.push({
+      name: PANEL_NAMES[i] || String(i + 1),
+      barPx: rect.bar ? rect.bar.widthPx : null,
+      umPerPx: p.unitPerPx,
+      unit: p.unitLabel,
+      n: s.diametersPx.length,
+      stats,
+      solidity: sol.length ? sol.reduce((a, b) => a + b, 0) / sol.length : null,
+    });
+  }
+  panelIndex = saved;
+  lastBatch = out;
+  renderBatchTable(out);
+  $("batchBlock").hidden = false;
+  status.style.color = "var(--good)";
+  status.textContent = `批量测量完成：${out.length} 个子图。`;
+}
+
+function renderBatchTable(out) {
+  const tb = $("batchTbl").querySelector("tbody");
+  tb.innerHTML = "";
+  const unit = out[0] ? out[0].unit : "µm";
+  for (const r of out) {
+    const st = r.stats;
+    const f = (v, n = 2) => (typeof v === "number" && isFinite(v) ? v.toFixed(n) : "–");
+    const tr = document.createElement("tr");
+    tr.innerHTML = `<td>${r.name}</td><td>${r.barPx ? r.barPx.toFixed(1) : "–"}</td>`
+      + `<td>${st ? st.n : 0}</td>`
+      + `<td>${st ? f(st.mean) : "–"}</td><td>${st ? f(st.std) : "–"}</td>`
+      + `<td>${st ? f(st.d10) : "–"}</td><td>${st ? f(st.d50) : "–"}</td><td>${st ? f(st.d90) : "–"}</td>`
+      + `<td>${st ? f(st.cv, 1) + "%" : "–"}</td>`
+      + `<td>${f(r.solidity, 3)}</td>`;
+    tb.appendChild(tr);
+  }
+  $("batchTitle").textContent = `多子图对比（单位：${unit}）`;
+  $("batchNote").textContent = "标尺像素数为各子图自动测得的半高插值宽度；σ、CV、D10/D50/D90 由各子图全部晶粒统计；"
+    + "「实心度」明显偏低（<0.9）说明该子图存在较多未分开的粘连体，横向比较时需留意。";
+}
+
+function exportBatchCsv() {
+  if (!lastBatch) return;
+  const unit = lastBatch[0] ? lastBatch[0].unit : "um";
+  const f = (v, n = 3) => (typeof v === "number" && isFinite(v) ? v.toFixed(n) : "");
+  let csv = "论文插图多子图测量结果\n";
+  csv += `单位,${unit}\n`;
+  csv += `子图,标尺px,计数n,平均,标准差,D10,D50,D90,变异系数CV%,平均实心度\n`;
+  for (const r of lastBatch) {
+    const st = r.stats || {};
+    csv += `${r.name},${f(r.barPx, 1)},${st.n || 0},${f(st.mean)},${f(st.std)},`
+      + `${f(st.d10)},${f(st.d50)},${f(st.d90)},${f(st.cv, 2)},${f(r.solidity, 4)}\n`;
+  }
+  const blob = new Blob(["﻿" + csv], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "figure_panels_result.csv";
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
 /* ---------- 导出 300 DPI 出版级直方图 PNG ---------- */
 function exportHistPng() {
   if (!lastResults || !lastResults.fit) return;
@@ -1326,8 +1653,11 @@ async function runPreview() {
   try {
     await waitCv();
     const p = readParams();
-    s = await segment(p);
+    const rect = currentPanel();
+    s = rect ? await segment(p, panelMat(rect, buildValidMask(rect, rect.bar)), null)
+             : await segment(p);
     if (s.diametersPx.length > 0) {
+      if (rect) { dstCanvas.width = rect.w; dstCanvas.height = rect.h; }
       dst = s.src.clone();
       drawContoursColored(dst, s.contours, s.keptIdx, s.diametersPx, s.dMin, s.dMax, p.colorMode, s.labels, p.fill, s.src);
       cv.imshow(dstCanvas, dst);
@@ -1383,6 +1713,47 @@ function drawScaleOverlay() {
   const ov = $("srcOverlay");
   const ctx = ov.getContext("2d");
   ctx.clearRect(0, 0, ov.width, ov.height);
+  // 拼图模式: 把当前子图框出来, 并把被屏蔽的标注区标出来
+  const rect = currentPanel();
+  if (rect && figurePanels) {
+    const lw = Math.max(2, ov.width / 300);
+    ctx.lineWidth = lw;
+    // 其他子图压暗
+    ctx.fillStyle = "rgba(8,10,16,0.55)";
+    ctx.beginPath();
+    ctx.rect(0, 0, ov.width, ov.height);
+    ctx.rect(rect.x, rect.y, rect.w, rect.h);
+    ctx.fill("evenodd");
+    // 当前子图边框
+    ctx.strokeStyle = "#38e1ff";
+    ctx.setLineDash([]);
+    ctx.strokeRect(rect.x, rect.y, rect.w, rect.h);
+    ctx.fillStyle = "#38e1ff";
+    ctx.font = `${Math.max(14, Math.round(ov.width / 45))}px Arial, sans-serif`;
+    ctx.textAlign = "left"; ctx.textBaseline = "top";
+    ctx.fillText(`子图 ${PANEL_NAMES[panelIndex] || panelIndex + 1}`, rect.x + 8, rect.y + 8);
+    // 标注屏蔽区
+    const mask = buildValidMask(rect, rect.bar);
+    ctx.fillStyle = "rgba(248,113,113,0.28)";
+    const W = rect.w;
+    for (let y = 0; y < rect.h; y++) {
+      let run = 0;
+      for (let x = 0; x <= rect.w; x++) {
+        const on = x < rect.w && mask[y * W + x];
+        if (on) run++;
+        else if (run) { ctx.fillRect(rect.x + x - run, rect.y + y, run, 1); run = 0; }
+      }
+    }
+    // 标尺白板位置
+    if (rect.bar) {
+      ctx.strokeStyle = "#fbbf24";
+      ctx.lineWidth = lw;
+      ctx.beginPath();
+      ctx.moveTo(rect.bar.leftAbs, rect.bar.rowAbs);
+      ctx.lineTo(rect.bar.rightAbs, rect.bar.rowAbs);
+      ctx.stroke();
+    }
+  }
   const line = drawEnd ? { x1: scaleLine.x1, y1: scaleLine.y1, x2: drawEnd.x, y2: drawEnd.y } : scaleLine;
   if (!line) return;
   const lw = Math.max(2, ov.width / 300);
@@ -1501,6 +1872,13 @@ function bindUI() {
   $("expPng").addEventListener("click", exportHistPng);
   $("expPdf").addEventListener("click", exportReport);
   $("sendChart").addEventListener("click", sendToChart);
+  $("batchRun").addEventListener("click", runBatch);
+  $("batchCsv").addEventListener("click", exportBatchCsv);
+  $("barUm").addEventListener("input", () => {
+    $("barUmVal").textContent = $("barUm").value;
+    updateScaleInfo();
+    applyCalibration();
+  });
   $("drawScale").addEventListener("click", toggleScale);
   $("clearScale").addEventListener("click", () => { scaleLine = null; drawEnd = null; drawScaleOverlay(); });
 
@@ -1531,16 +1909,18 @@ function bindUI() {
   const MODE_PRESETS = {
     grain: { minarea: "150", circ: "0.30" },
     otsu: { minarea: "20", circ: "0.50" },
+    percentile: { minarea: "100", circ: "0.20" },
     adaptive: { minarea: "20", circ: "0.50" },
     manual: { minarea: "20", circ: "0.50" },
   };
-  const PRESET_LABEL = { minarea: "minVal", circ: "cirVal", kern: "kVal" };
-  const userTouched = { minarea: false, circ: false, kern: false };
+  const PRESET_LABEL = { minarea: "minVal", circ: "cirVal", kern: "kVal", thrPct: "thrPctVal" };
+  const userTouched = { minarea: false, circ: false, kern: false, thrPct: false };
 
   const syncModeUI = () => {
     const m = $("mode").value;
     const grain = m === "grain";
     $("manualWrap").hidden = m !== "manual";
+    $("pctWrap").hidden = m !== "percentile";
     $("blockWrap").hidden = m !== "adaptive";
     if ($("grainWrap")) $("grainWrap").hidden = !grain;
     if ($("kernWrap")) $("kernWrap").hidden = grain;
@@ -1576,6 +1956,8 @@ function bindUI() {
   bindRange("grainMinSeed", "gseedVal");
   $("thr").addEventListener("input", () => { $("thrVal").textContent = $("thr").value; schedulePreview(); });
   $("thr").addEventListener("change", schedulePreviewImmediate);
+  $("thrPct").addEventListener("input", () => { userTouched.thrPct = true; $("thrPctVal").textContent = $("thrPct").value; schedulePreview(); });
+  $("thrPct").addEventListener("change", schedulePreviewImmediate);
   $("blk").addEventListener("input", () => { $("blkVal").textContent = $("blk").value; schedulePreview(); });
   $("blk").addEventListener("change", schedulePreviewImmediate);
   $("kern").addEventListener("input", () => { userTouched.kern = true; $("kVal").textContent = $("kern").value; schedulePreview(); });
@@ -1602,6 +1984,15 @@ function bindUI() {
 }
 
 function updateScaleInfo() {
+  const rect = currentPanel();
+  if (rect && rect.bar) {
+    const barUm = +$("barUm").value;
+    if (barUm > 0) {
+      const perPx = barUm / rect.bar.widthPx;
+      $("scaleInfo").textContent = `✅ 已自动标定（子图 ${PANEL_NAMES[panelIndex] || panelIndex + 1}）：比例尺白板宽 ${rect.bar.widthPx.toFixed(1)} px = ${barUm} µm，即 1 px ≈ ${perPx.toFixed(4)} µm。此标定优先于手动输入。`;
+      return;
+    }
+  }
   const calPx = +$("calpx").value;
   const calLen = +$("calLen").value;
   const unit = $("calUnit").value;
@@ -1647,6 +2038,8 @@ window.addEventListener("DOMContentLoaded", () => {
   waitCv().then(() => {
     $("status").style.color = "var(--good)";
     $("status").textContent = "OpenCV 已就绪，上传图像或载入示例即可分析。";
+    // 若用户在 OpenCV 就绪前就上传了图, 此刻补做拼图检测
+    if (imgLoaded) detectFigureIfComposite();
   }).catch((e) => {
     $("status").style.color = "var(--bad)";
     $("status").textContent = e.message;
