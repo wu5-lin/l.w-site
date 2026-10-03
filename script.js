@@ -111,18 +111,24 @@ function renderNews(items, updated) {
 }
 
 function loadNews() {
-  fetch("news.json", { cache: "no-store" })
+  // 统一读取 digest.json（每日简报管线），首页展示「科技」类别
+  fetch("digest.json", { cache: "no-store" })
     .then((r) => {
       if (!r.ok) throw new Error("HTTP " + r.status);
       return r.json();
     })
     .then((data) => {
-      const arr = Array.isArray(data) ? data : data.items || [];
-      const updated = Array.isArray(data) ? "" : data.updated || "";
-      renderNews(arr, updated);
+      const cats = (data && data.categories) || {};
+      let arr = cats["科技"] || [];
+      // 若「科技」类别缺失，退化为合并全部类别并按日期倒序，避免首页空白
+      if (!arr.length) {
+        arr = Object.keys(cats).reduce((acc, k) => acc.concat(cats[k] || []), []);
+        arr.sort((a, b) => String(b.date || "").localeCompare(String(a.date || "")));
+      }
+      renderNews(arr, (data && data.updated) || "");
     })
     .catch((err) => {
-      console.warn("news.json 加载失败，显示兜底内容：", err);
+      console.warn("digest.json 加载失败，显示兜底内容：", err);
       const upd = document.getElementById("news-updated");
       if (upd) upd.textContent = "离线";
     });
