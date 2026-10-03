@@ -340,8 +340,13 @@ Q×f, 825, 16700`
       `<rect x="0" y="0" width="${W}" height="${H}" fill="#ffffff"/>` + inner + `</svg>`;
   }
 
-  /* ---- 通用轴绘制（供 bar/line/box 复用） ---- */
+  /* ---- 通用轴绘制（供 bar/line/scatter/box 复用） ----
+   * g.xPos: 数值 x -> 像素 x 的映射函数。折线/散点传这个；
+   * 柱状/箱线图不传, 此时 xTicks 里放的**已经是像素位置**（类目中心），
+   * 直接当坐标用即可。以前这里无条件调用 g.xPos(v), 柱状图与分组柱状图
+   * 一渲染就抛 "g.xPos is not a function"。 */
   function drawAxes(o, g) {
+    const xAt = g.xPos || ((v) => v);
     const tlen = mm(3, o.dpi);
     const fs2 = (9 * o.dpi) / 72;
     const small = (7.5 * o.dpi) / 72;
@@ -355,7 +360,7 @@ Q×f, 825, 16700`
       s += `<text x="${g.plotL - mm(3.5, o.dpi)}" y="${yy}" font-size="${fs2}" fill="${INK}" text-anchor="end" dominant-baseline="middle">${esc(fmtNum(v, g.yStep))}</text>`;
     });
     g.xTicks.forEach((v, i) => {
-      const xx = g.xPos(v);
+      const xx = xAt(v);
       if (o.grid) s += `<line x1="${xx}" y1="${g.plotT}" x2="${xx}" y2="${plotB}" stroke="${GRID}" stroke-width="1"/>`;
       const d = o.inward ? tlen : -tlen;
       s += `<line x1="${xx}" y1="${plotB}" x2="${xx}" y2="${plotB - d}" stroke="${INK}" stroke-width="1"/>`;
@@ -422,7 +427,6 @@ Q×f, 825, 16700`
       s += `<rect x="${bx.toFixed(2)}" y="${by.toFixed(2)}" width="${effW.toFixed(2)}" height="${Math.max(0, bh).toFixed(2)}" fill="${seriesColors[d.series[j].name] || "#888"}"/>`;
     }
     s += drawAxes(o, { plotL, plotT, plotW, plotH, yTicks: tk.ticks, yStep: tk.step, xTicks: d.categories.map((_, i) => catCenter(i)), xTickLabels: d.categories, xStep: 1, yPos });
-    d.categories.forEach((c, i) => { s += `<text x="${catCenter(i)}" y="${plotT + plotH + mm(4, o.dpi)}" font-size="${(9 * o.dpi) / 72}" fill="${INK}" text-anchor="middle" dominant-baseline="hanging">${esc(c)}</text>`; });
     s += titleAndLegend(o, f.W, f.titleY, f.legendY, d.series);
     return svgWrap(o, s);
   }
