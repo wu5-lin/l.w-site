@@ -100,6 +100,9 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 
 .hint { font-size: 12px; color: var(--text-dim); margin: 0 0 10px; }
 .meta { font-size: 12px; color: var(--text-dim); margin: 8px 0 0; }
+.meta.meta-warn { color: var(--warn); }
+.sample-row { display: flex; gap: 8px; flex-wrap: wrap; }
+.sample-row .ghost-btn { flex: 1 1 auto; }
 .note { font-size: 13px; color: var(--text-dim); background: var(--panel-2); padding: 12px; border-radius: 10px; border-left: 3px solid var(--accent); }
 
 /* ---------- buttons ---------- */
