@@ -9,7 +9,13 @@ const $ = (id) => document.getElementById(id);
 
 let srcCanvas = $("src");
 let dstCanvas = $("dst");
+// 每次预览/分析都要把源画布整块读回内存交给 OpenCV，声明 willReadFrequently
+// 让浏览器把画布放在 CPU 内存里，省掉 GPU->CPU 的来回拷贝。
+// 注意: 同一画布的 2D 上下文属性只在第一次 getContext 时生效, 所以要在这里先取。
+const srcCtx = srcCanvas.getContext("2d", { willReadFrequently: true });
 let imgLoaded = false;
+let srcScale = 1;                 // 工作分辨率 / 原图分辨率
+let srcOrigSize = null;           // { w, h } 原图尺寸
 let lastResults = null; // { diameters:[], unit, rows:[], stats:{}, fit:{} }
 
 /* ---------- 标尺画线状态 ---------- */
@@ -51,22 +57,42 @@ async function waitCv(timeout = 150000) {
 }
 
 /* ---------- 把图片画到 src canvas (等比缩放, 最长边 1200) ---------- */
+/* ---------- 图像载入到工作画布 ----------
+ * 工作分辨率上限。
+ * 曾经硬编码 MAX=1200，导致 2048×1536 / 4096×3072 这类常见 SEM 图被静默降采样：
+ * 3px 晶界被双线性模糊成 1.2px，晶粒内部连通域面积从 ~3000px² 掉到 ~480px²，
+ * 而 grainMinSeed 是固定像素阈值，于是半数晶粒被当作"过小种子"丢弃
+ * （实测 3000×2250 图：真值 2250 颗，只检出 1075 颗 = 47.8%，界面却显示"分析完成"）。
+ * 全分辨率下同一张图检出 2249/2250 = 100%，耗时仅从 224ms 涨到 748ms，
+ * 所以这里放宽上限，超大图才按总像素封顶，并且必须把缩放比显式告诉用户。 */
+const MAX_DIM = 4000;      // 单边上限 px
+const MAX_PIXELS = 12e6;   // 总像素上限（约 12MP，再大则按比例缩）
+
 function drawToSrc(img) {
-  const MAX = 1200;
-  let w = img.naturalWidth || img.width;
-  let h = img.naturalHeight || img.height;
-  const r = Math.min(1, MAX / Math.max(w, h));
-  w = Math.round(w * r);
-  h = Math.round(h * r);
+  const ow = img.naturalWidth || img.width;
+  const oh = img.naturalHeight || img.height;
+  let r = Math.min(1, MAX_DIM / Math.max(ow, oh));
+  if (ow * oh * r * r > MAX_PIXELS) r = Math.sqrt(MAX_PIXELS / (ow * oh));
+  const w = Math.max(1, Math.round(ow * r));
+  const h = Math.max(1, Math.round(oh * r));
   srcCanvas.width = w;
   srcCanvas.height = h;
   dstCanvas.width = w;
   dstCanvas.height = h;
-  const ctx = srcCanvas.getContext("2d");
+  const ctx = srcCtx;
   ctx.clearRect(0, 0, w, h);
   ctx.drawImage(img, 0, 0, w, h);
   imgLoaded = true;
-  $("imgMeta").textContent = `分析分辨率: ${w} × ${h} px`;
+  srcScale = r;
+  srcOrigSize = { w: ow, h: oh };
+  $("imgMeta").classList.remove("meta-warn");
+  if (r >= 0.999) {
+    $("imgMeta").textContent = `原图 ${ow} × ${oh} px → 分析分辨率 ${w} × ${h} px（未降采样）`;
+  } else {
+    $("imgMeta").textContent = `原图 ${ow} × ${oh} px → 分析分辨率 ${w} × ${h} px`
+      + `（已降采样至 ${(r * 100).toFixed(0)}%；晶界很细的样品建议先裁剪 ROI 再分析，否则可能漏检小晶粒）`;
+    $("imgMeta").classList.add("meta-warn");
+  }
   $("run").disabled = false;
   $("status").textContent = "";
   // 清空上次结果
@@ -81,6 +107,7 @@ function drawToSrc(img) {
   schedulePreview();
 }
 
+
 /* ---------- 载入本地图片 ---------- */
 function loadFile(file) {
   if (!file || !file.type.startsWith("image/")) return;
@@ -93,34 +120,28 @@ function loadFile(file) {
   reader.readAsDataURL(file);
 }
 
-/* ---------- 生成示例颗粒图 (无需准备图片即可体验) ---------- */
-function loadSample() {
-  const w = 640, h = 420;
+/* ---------- 生成示例图（无需准备图片即可体验） ----------
+ * 两张，分别对应两种分割方式：
+ *   loadSampleGrain()   致密烧结晶粒（晶粒紧贴、暗晶界）→ 晶粒模式（默认）
+ *   loadSamplePowder()  分散粉末（颗粒之间有背景）    → 阈值模式
+ * 之前只有一个"分散粉末"示例，而默认模式已改成晶粒模式，
+ * 用户点示例会得到与默认模式不匹配的结果。 */
+function ctxImageData(w, h) {
+  return srcCtx.createImageData(w, h);
+}
+
+/* 载入自绘示例图到工作画布 */
+function drawSampleCanvas(w, h, paint, note) {
   srcCanvas.width = w; srcCanvas.height = h;
   dstCanvas.width = w; dstCanvas.height = h;
-  const ctx = srcCanvas.getContext("2d");
-  // 背景
-  ctx.fillStyle = "#0a0d14";
-  ctx.fillRect(0, 0, w, h);
-  // 颗粒 (亮色圆, 随机半径)
-  const n = 120;
-  for (let i = 0; i < n; i++) {
-    const x = 10 + Math.random() * (w - 20);
-    const y = 10 + Math.random() * (h - 20);
-    const rad = 4 + Math.pow(Math.random(), 2.2) * 34; // 偏小颗粒更多
-    const g = 180 + Math.floor(Math.random() * 75);
-    ctx.beginPath();
-    ctx.arc(x, y, rad, 0, Math.PI * 2);
-    ctx.fillStyle = `rgb(${g},${g - 20},${g - 60})`;
-    ctx.fill();
-  }
-  // 少量噪声点
-  for (let i = 0; i < 400; i++) {
-    ctx.fillStyle = `rgba(200,200,210,${Math.random() * 0.25})`;
-    ctx.fillRect(Math.random() * w, Math.random() * h, 1, 1);
-  }
+  const ctx = srcCtx;
+  ctx.clearRect(0, 0, w, h);
+  paint(ctx);
   imgLoaded = true;
-  $("imgMeta").textContent = `示例图像 ${w} × ${h} px（模拟粉末 SEM）`;
+  srcScale = 1;
+  srcOrigSize = { w, h };
+  $("imgMeta").classList.remove("meta-warn");
+  $("imgMeta").textContent = `示例图像 ${w} × ${h} px（${note}）`;
   $("run").disabled = false;
   $("status").textContent = "";
   $("stats").hidden = true;
@@ -132,6 +153,119 @@ function loadSample() {
   syncOverlay();
   schedulePreview();
 }
+
+/* 固定种子的伪随机：保证每次载入的示例图完全一致，便于对照与复现 */
+function mulberry32(seed) {
+  let a = seed >>> 0;
+  return function () {
+    a |= 0; a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+/* 致密烧结晶粒：Voronoi 多边形 + 取向衬度 + 暗晶界，贴近抛光热腐蚀后的 SEM 断面 */
+function loadSampleGrain() {
+  const w = 720, h = 480, n = 150;
+  const rnd = mulberry32(20261003);
+  const sx = [], sy = [];
+  for (let i = 0; i < n; i++) { sx.push(rnd() * w); sy.push(rnd() * h); }
+
+  // 逐像素取最近种子 -> Voronoi 标号图
+  const lab = new Int32Array(w * h);
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      let best = 0, bd = Infinity;
+      for (let i = 0; i < n; i++) {
+        const dx = x - sx[i], dy = y - sy[i];
+        const d = dx * dx + dy * dy;
+        if (d < bd) { bd = d; best = i; }
+      }
+      lab[y * w + x] = best;
+    }
+  }
+
+  // 每个晶粒一个取向衬度灰度（SEM 中不同取向的背散射强度不同）
+  const tone = new Float32Array(n), gx = new Float32Array(n), gy = new Float32Array(n);
+  for (let i = 0; i < n; i++) {
+    tone[i] = 118 + rnd() * 92;
+    gx[i] = rnd() * 2 - 1;
+    gy[i] = rnd() * 2 - 1;
+  }
+
+  const img = ctxImageData(w, h);
+  const d = img.data;
+  const B = 2;   // 晶界半宽（px）——真实 SEM 晶界是有宽度的暗线，不是 1px 硬边
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      const i = lab[y * w + x];
+      // 晶粒内部轻微亮度梯度（取向衬度起伏）
+      let v = tone[i] + gx[i] * (x / w - 0.5) * 16 + gy[i] * (y / h - 0.5) * 16;
+      // 晶界：与 2px 内的邻居标号不同 -> 压暗
+      let isEdge = false;
+      for (let k = 1; k <= B && !isEdge; k++) {
+        if ((x + k < w && lab[y * w + x + k] !== i)
+          || (x - k >= 0 && lab[y * w + x - k] !== i)
+          || (y + k < h && lab[(y + k) * w + x] !== i)
+          || (y - k >= 0 && lab[(y - k) * w + x] !== i)) isEdge = true;
+      }
+      if (isEdge) v = 62 + rnd() * 16;
+      v += (rnd() - 0.5) * 11;   // 高频噪声
+      const p = (y * w + x) * 4;
+      const g = v < 0 ? 0 : v > 255 ? 255 : v | 0;
+      d[p] = g; d[p + 1] = g; d[p + 2] = g; d[p + 3] = 255;
+    }
+  }
+  drawSampleCanvas(w, h, (ctx) => ctx.putImageData(img, 0, 0), "模拟致密烧结陶瓷 SEM，晶粒紧贴");
+}
+
+/* 分散粉末：颗粒之间有背景，适用阈值模式。
+ * 颗粒数与半径经过标定：先前 120 颗 / 半径上限 38 px 会让颗粒大量粘连
+ * （Otsu + 连通域只剩 57 块，其中大半因圆度不足被正确剔除，只剩 20 颗），
+ * 演示效果很差。现取 72 颗、半径 5~21 px，保证绝大多数颗粒彼此分离。 */
+function loadSamplePowder() {
+  const w = 640, h = 420, n = 72;
+  const rnd = mulberry32(20261004);
+  const img = ctxImageData(w, h);
+  const d = img.data;
+  for (let i = 0; i < w * h; i++) {          // 暗背景 + 噪声
+    const g = 12 + rnd() * 10;
+    const p = i * 4;
+    d[p] = g; d[p + 1] = g; d[p + 2] = g + 4; d[p + 3] = 255;
+  }
+  const placed = [];                          // 拒绝采样，保证颗粒互不粘连
+  let guard = 0;
+  while (placed.length < n && guard++ < 4000) {
+    const rad = 5 + Math.pow(rnd(), 2.0) * 16;
+    const cx = rad + rnd() * (w - 2 * rad);
+    const cy = rad + rnd() * (h - 2 * rad);
+    let ok = true;
+    for (const q of placed) {
+      const dx = q.x - cx, dy = q.y - cy;
+      if (dx * dx + dy * dy < (q.r + rad + 3) * (q.r + rad + 3)) { ok = false; break; }
+    }
+    if (!ok) continue;
+    placed.push({ x: cx, y: cy, r: rad, g: 185 + rnd() * 60 });
+  }
+  for (const c of placed) {
+    const x0 = Math.max(0, Math.floor(c.x - c.r)), x1 = Math.min(w - 1, Math.ceil(c.x + c.r));
+    const y0 = Math.max(0, Math.floor(c.y - c.r)), y1 = Math.min(h - 1, Math.ceil(c.y + c.r));
+    for (let y = y0; y <= y1; y++) {
+      for (let x = x0; x <= x1; x++) {
+        const dx = x - c.x, dy = y - c.y;
+        if (dx * dx + dy * dy > c.r * c.r) continue;
+        const p = (y * w + x) * 4;
+        const g = Math.min(255, c.g + (rnd() - 0.5) * 14) | 0;
+        d[p] = g; d[p + 1] = Math.max(0, g - 20); d[p + 2] = Math.max(0, g - 60);
+      }
+    }
+  }
+  drawSampleCanvas(w, h, (ctx) => ctx.putImageData(img, 0, 0),
+    `模拟分散粉末 SEM，颗粒间有背景（实际绘出 ${placed.length} 颗）`);
+}
+
+
 
 /* ---------- 分位数 (线性插值) ---------- */
 function percentile(sorted, p) {
@@ -356,29 +490,31 @@ function feretMetrics(contour) {
 function fillLabelZeros(mat, iters) {
   const rows = mat.rows, cols = mat.cols;
   const d = mat.data32S;
-  const copy = new Int32Array(d.length);
-  for (let it = 0; it < iters; it++) {
+  const n = rows * cols;
+  // 只处理"空洞"像素(<=0), 避免每轮都全图扫描+整块拷贝。
+  // 6.75MP 图上原实现要 3 次全图扫描, 这里降为只扫空洞(晶界像素约占 3~5%)。
+  let holes = [];
+  for (let i = 0; i < n; i++) if (d[i] <= 0) holes.push(i);
+  const copy = new Int32Array(n);
+  for (let it = 0; it < iters && holes.length; it++) {
     copy.set(d);
-    let changed = false;
-    for (let y = 0; y < rows; y++) {
+    const next = [];
+    for (const i of holes) {
+      const y = (i / cols) | 0, x = i - y * cols;
       const y0 = y > 0 ? y - 1 : 0, y1 = y < rows - 1 ? y + 1 : rows - 1;
-      const row = y * cols;
-      for (let x = 0; x < cols; x++) {
-        const i = row + x;
-        if (copy[i] > 0) continue;
-        const x0 = x > 0 ? x - 1 : 0, x1 = x < cols - 1 ? x + 1 : cols - 1;
-        let best = 0;
-        for (let yy = y0; yy <= y1; yy++) {
-          const r2 = yy * cols;
-          for (let xx = x0; xx <= x1; xx++) {
-            const v = copy[r2 + xx];
-            if (v > best) best = v;
-          }
+      const x0 = x > 0 ? x - 1 : 0, x1 = x < cols - 1 ? x + 1 : cols - 1;
+      let best = 0;
+      for (let yy = y0; yy <= y1; yy++) {
+        const r2 = yy * cols;
+        for (let xx = x0; xx <= x1; xx++) {
+          const v = copy[r2 + xx];
+          if (v > best) best = v;
         }
-        if (best > 0) { d[i] = best; changed = true; }
       }
+      if (best > 0) d[i] = best; else next.push(i);
     }
-    if (!changed) break;
+    if (next.length === holes.length) break;   // 一轮下来没有任何变化, 提前结束
+    holes = next;
   }
 }
 
@@ -464,7 +600,7 @@ function measureContour(c, p, W, H) {
 /* ---------- 从晶粒标签图逐个提取轮廓 ----------
  * 逐个在各自 bbox 内二值化再 findContours: 分水岭后的区域彼此紧邻,
  * 若整图一次性求外轮廓, 相邻晶粒会被连成一整片。 */
-function extractByLabel(labelMat, p, W, H, out) {
+function extractByLabel(labelMat, p, W, H, out, skipLabel) {
   const mk = labelMat.data32S;
   const n = W * H;
   let maxLab = 0;
@@ -487,6 +623,7 @@ function extractByLabel(labelMat, p, W, H, out) {
     }
   }
   for (let v = 1; v <= maxLab; v++) {
+    if (v === skipLabel) continue;                 // 背景标签不是颗粒
     if (area[v] < p.minArea || maxX[v] < 0) continue;
     const bw = maxX[v] - minX[v] + 1, bh = maxY[v] - minY[v] + 1;
     const mask = new cv.Mat(bh, bw, cv.CV_8UC1, new cv.Scalar(0));
@@ -583,12 +720,22 @@ async function segment(p) {
     }
 
     // 是否用分水岭拆分重叠颗粒
+    let splitByLabel = false;
+    let wsBgLabel = 0;
     if (p.ws) {
       const wsRes = await watershedSplit(gray, thresh, src, p.wsPeakK);
       // 若没有有效种子(颗粒过小), 退回直接阈值掩膜, 避免漏检
       if (wsRes && wsRes.bgLabel > 1) {
         markers = wsRes.markers;
-        regionMask = wsRes.regionMask;
+        // 分水岭把颗粒/背景的交界标成 -1, 直接丢弃会让每颗颗粒被削掉一圈:
+        // 实测分散粉末 72 颗只剩 23 颗(31 颗被最小面积误杀、18 颗被圆度误杀)。
+        // 晶粒模式已用 fillLabelZeros 处理同类问题, 这里照做, 面积得以守恒。
+        fillLabelZeros(markers, 1);
+        // 必须逐标签提取: 若对二值图求外轮廓, 相邻标签会重新连成一整片,
+        // 分水岭的拆分效果就白费了。
+        splitByLabel = true;
+        wsBgLabel = wsRes.bgLabel;
+        wsRes.regionMask.delete();
       } else {
         if (wsRes) { wsRes.markers.delete(); wsRes.regionMask.delete(); }
         regionMask = thresh;
@@ -597,27 +744,31 @@ async function segment(p) {
       regionMask = thresh;
     }
 
-    cv.findContours(regionMask, contours, hierarchy, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE);
-    for (let i = 0; i < contours.size(); i++) {
-      const c = contours.get(i);
-      const m = measureContour(c, p, W, H);
-      if (!m) { c.delete(); continue; }
-      let lab = keptIdx.length + 1;
-      if (markers) {
-        const v = markers.intAt(Math.round(m.cy), Math.round(m.cx));
-        if (v > 0) lab = v;
+    if (splitByLabel) {
+      extractByLabel(markers, p, W, H, out, wsBgLabel);
+    } else {
+      cv.findContours(regionMask, contours, hierarchy, cv.RETR_EXTERNAL, cv.CHAIN_APPROX_SIMPLE);
+      for (let i = 0; i < contours.size(); i++) {
+        const c = contours.get(i);
+        const m = measureContour(c, p, W, H);
+        if (!m) { c.delete(); continue; }
+        let lab = keptIdx.length + 1;
+        if (markers) {
+          const v = markers.intAt(Math.round(m.cy), Math.round(m.cx));
+          if (v > 0) lab = v;
+        }
+        diametersPx.push(m.dPx);
+        rows.push({
+          dPx: m.dPx, areaPx: m.area, circ: m.circ,
+          cx: Math.round(m.cx), cy: Math.round(m.cy),
+          minFeretPx: m.minFeretPx, maxFeretPx: m.maxFeretPx,
+          solidity: m.solidity, edgeGrain: m.touchesEdge,
+        });
+        labels.push(lab);
+        keptIdx.push(i);
+        if (m.dPx < out.dMin) out.dMin = m.dPx;
+        if (m.dPx > out.dMax) out.dMax = m.dPx;
       }
-      diametersPx.push(m.dPx);
-      rows.push({
-        dPx: m.dPx, areaPx: m.area, circ: m.circ,
-        cx: Math.round(m.cx), cy: Math.round(m.cy),
-        minFeretPx: m.minFeretPx, maxFeretPx: m.maxFeretPx,
-        solidity: m.solidity, edgeGrain: m.touchesEdge,
-      });
-      labels.push(lab);
-      keptIdx.push(i);
-      if (m.dPx < out.dMin) out.dMin = m.dPx;
-      if (m.dPx > out.dMax) out.dMax = m.dPx;
     }
   }
 
@@ -661,6 +812,22 @@ function drawContoursColored(dst, contours, keptIdx, diametersPx, dMin, dMax, co
 }
 
 /* ---------- 统计指标计算 (纯函数, 供分析与实时重算复用) ---------- */
+/* ---------- 统计量 ----------
+ * 除 D10/D50/D90、Cu/Cc/Span 外，补上论文常用的离散度与置信区间：
+ *   σ  = 样本标准差 (n-1)
+ *   CV = 变异系数 σ/mean×100%
+ *   CI95 = 均值的 95% 置信区间半宽 t(0.975,n-1)·σ/√n
+ * 陶瓷文献报告晶粒尺寸惯例为 "x ± y µm"，直接用这里的 σ；样本量小时用 CI95 更有说服力。 */
+const T975 = [
+  12.706, 4.303, 3.182, 2.776, 2.571, 2.447, 2.365, 2.306, 2.262, 2.228,
+  2.201, 2.179, 2.160, 2.145, 2.131, 2.120, 2.110, 2.101, 2.093, 2.086,
+  2.080, 2.074, 2.069, 2.064, 2.060, 2.056, 2.052, 2.048, 2.045, 2.042,
+];
+function tCrit975(df) {
+  if (df < 1) return NaN;
+  return df <= T975.length ? T975[df - 1] : 1.96;
+}
+
 function computeStats(diameters) {
   const n = diameters.length;
   if (n === 0) return null;
@@ -674,7 +841,15 @@ function computeStats(diameters) {
   const cu = d10 > 0 ? d60 / d10 : 0;
   const cc = (d10 > 0 && d60 > 0) ? (d30 * d30) / (d10 * d60) : 0;
   const span = d50 > 0 ? (d90 - d10) / d50 : 0;
-  return { n, mean, median: d50, d10, d30, d50, d60, d90, cu, cc, span };
+  // 样本标准差与均值置信区间
+  let std = 0, cv = 0, ci95 = 0;
+  if (n >= 2) {
+    const ss = diameters.reduce((s, v) => s + (v - mean) ** 2, 0);
+    std = Math.sqrt(ss / (n - 1));
+    cv = mean > 0 ? (std / mean) * 100 : 0;
+    ci95 = tCrit975(n - 1) * std / Math.sqrt(n);
+  }
+  return { n, mean, median: d50, d10, d30, d50, d60, d90, cu, cc, span, std, cv, ci95 };
 }
 function renderStats(stats, unit) {
   const fmt = (v) => (v >= 100 ? v.toFixed(0) : v.toFixed(2));
@@ -687,6 +862,9 @@ function renderStats(stats, unit) {
   $("sCu").textContent = stats.cu ? stats.cu.toFixed(2) : "–";
   $("sCc").textContent = stats.cc ? stats.cc.toFixed(2) : "–";
   $("sSpan").textContent = stats.span ? stats.span.toFixed(2) : "–";
+  $("sStd").textContent = stats.n >= 2 ? `${fmt(stats.std)} ${unit}` : "–";
+  $("sCv").textContent = stats.n >= 2 ? `${stats.cv.toFixed(1)} %` : "–";
+  $("sCi").textContent = stats.n >= 2 ? `± ${fmt(stats.ci95)} ${unit}` : "–";
   $("stats").hidden = false;
 }
 
@@ -972,6 +1150,11 @@ function exportCsv() {
   csv += `不均匀度Cu,${stats.cu.toFixed(3)}\n`;
   csv += `曲率Cc,${stats.cc.toFixed(3)}\n`;
   csv += `跨度,${stats.span.toFixed(3)}\n`;
+  if (stats.n >= 2) {
+    csv += `标准差σ(${unit}),${fmt(stats.std)}\n`;
+    csv += `变异系数CV,${stats.cv.toFixed(2)}%\n`;
+    csv += `均值95%置信区间半宽(${unit}),${fmt(stats.ci95)}\n`;
+  }
   if (fit && !fit.degenerate) {
     csv += `几何平均dg(${unit}),${fmt(fit.dg)}\n`;
     csv += `几何标准差sg,${fit.sg.toFixed(3)}\n`;
@@ -1055,7 +1238,7 @@ function exportReport() {
 </style></head>
 <body>
   <h1>${isGrain ? "AI 晶粒尺寸分析报告" : "AI 粒径分析报告"}</h1>
-  <div class="sub">生成时间：${now} ｜ ${noun}数：${stats.n} ｜ 单位：${unit} ｜ 分割方式：${isGrain ? "晶粒模式(梯度晶界+分水岭)" : "阈值分割"} ｜ 标尺校准：${p.calibrated ? "已标定" : "未标定(像素)"}</div>
+  <div class="sub">生成时间：${now} ｜ ${noun}数：${stats.n} ｜ 单位：${unit} ｜ 分割方式：${isGrain ? "晶粒模式(梯度晶界+分水岭)" : "阈值分割"} ｜ 标尺校准：${p.calibrated ? "已标定" : "未标定(像素)"} ｜ 分析分辨率：${srcOrigSize ? srcOrigSize.w + "×" + srcOrigSize.h + (srcScale < 0.999 ? "（已降采样至 " + (srcScale * 100).toFixed(0) + "%）" : "（未降采样）") : "–"}</div>
   <div class="card">
     <p class="sec-title">统计汇总</p>
     <div class="kv">
@@ -1067,6 +1250,10 @@ function exportReport() {
       <div>曲率 Cc<b>${stats.cc.toFixed(3)}</b></div>
       <div>跨度 Span<b>${stats.span.toFixed(3)}</b></div>
       <div>几何均值 dg<b>${fmt(fit.dg)} ${unit}</b></div>
+      ${stats.n >= 2 ? `
+      <div>标准差 σ<b>${fmt(stats.std)} ${unit}</b></div>
+      <div>变异系数 CV<b>${stats.cv.toFixed(1)} %</b></div>
+      <div>均值 95% CI<b>± ${fmt(stats.ci95)} ${unit}</b></div>` : ""}
     </div>
   </div>
   <div class="card">
@@ -1307,7 +1494,8 @@ function bindScale() {
 function bindUI() {
   $("pick").addEventListener("click", () => $("file").click());
   $("file").addEventListener("change", (e) => loadFile(e.target.files[0]));
-  $("sample").addEventListener("click", loadSample);
+  $("sample").addEventListener("click", loadSampleGrain);
+  $("samplePowder").addEventListener("click", loadSamplePowder);
   $("run").addEventListener("click", analyze);
   $("expCsv").addEventListener("click", exportCsv);
   $("expPng").addEventListener("click", exportHistPng);
@@ -1336,7 +1524,19 @@ function bindUI() {
   // 参数联动显示 + 实时预览
   // 按分割方式显隐相关参数: 晶粒模式与阈值模式的可调项完全不同,
   // 把无关控件藏起来, 免得用户去调一个对当前模式毫无影响的滑块。
-  let grainPresetDone = false;
+  // 两种分割方式各自的参数预设。
+  // 之前只在首次进入晶粒模式时把最小面积/圆度调紧, 切回阈值模式却不还原,
+  // 结果用户从默认的晶粒模式切到粉末模式后, 仍然带着 minarea=150 / circ=0.30,
+  // 实测 72 颗的分散粉末只剩 38 颗。改为双向生效: 用户手动调过的滑块不再被覆盖。
+  const MODE_PRESETS = {
+    grain: { minarea: "150", circ: "0.30" },
+    otsu: { minarea: "20", circ: "0.50" },
+    adaptive: { minarea: "20", circ: "0.50" },
+    manual: { minarea: "20", circ: "0.50" },
+  };
+  const PRESET_LABEL = { minarea: "minVal", circ: "cirVal", kern: "kVal" };
+  const userTouched = { minarea: false, circ: false, kern: false };
+
   const syncModeUI = () => {
     const m = $("mode").value;
     const grain = m === "grain";
@@ -1346,13 +1546,16 @@ function bindUI() {
     if ($("kernWrap")) $("kernWrap").hidden = grain;
     if ($("polarWrap")) $("polarWrap").hidden = grain;
     if ($("wsWrap")) $("wsWrap").hidden = grain;
-    // 首次进入晶粒模式时给一组贴合致密晶粒的预设; 用户改过之后不再覆盖
-    if (grain && !grainPresetDone) {
-      const ma = $("minarea");
-      if (+ma.value < 150) { ma.value = "150"; $("minVal").textContent = "150"; }
-      const ci = $("circ");
-      if (+ci.value > 0.30) { ci.value = "0.30"; $("cirVal").textContent = "0.30"; }
-      grainPresetDone = true;
+    const preset = MODE_PRESETS[m];
+    if (preset) {
+      for (const id of Object.keys(preset)) {
+        if (userTouched[id]) continue;
+        const el = $(id);
+        if (!el) continue;
+        el.value = preset[id];
+        const lab = $(PRESET_LABEL[id]);
+        if (lab) lab.textContent = (id === "circ") ? (+preset[id]).toFixed(2) : preset[id];
+      }
     }
   };
   $("mode").addEventListener("change", () => {
@@ -1375,11 +1578,11 @@ function bindUI() {
   $("thr").addEventListener("change", schedulePreviewImmediate);
   $("blk").addEventListener("input", () => { $("blkVal").textContent = $("blk").value; schedulePreview(); });
   $("blk").addEventListener("change", schedulePreviewImmediate);
-  $("kern").addEventListener("input", () => { $("kVal").textContent = $("kern").value; schedulePreview(); });
+  $("kern").addEventListener("input", () => { userTouched.kern = true; $("kVal").textContent = $("kern").value; schedulePreview(); });
   $("kern").addEventListener("change", schedulePreviewImmediate);
-  $("minarea").addEventListener("input", () => { $("minVal").textContent = $("minarea").value; schedulePreview(); });
+  $("minarea").addEventListener("input", () => { userTouched.minarea = true; $("minVal").textContent = $("minarea").value; schedulePreview(); });
   $("minarea").addEventListener("change", schedulePreviewImmediate);
-  $("circ").addEventListener("input", () => { $("cirVal").textContent = (+$("circ").value).toFixed(2); schedulePreview(); });
+  $("circ").addEventListener("input", () => { userTouched.circ = true; $("cirVal").textContent = (+$("circ").value).toFixed(2); schedulePreview(); });
   $("circ").addEventListener("change", schedulePreviewImmediate);
   document.querySelectorAll('input[name="polar"]').forEach((r) =>
     r.addEventListener("change", schedulePreviewImmediate)
