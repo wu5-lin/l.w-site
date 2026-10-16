@@ -71,10 +71,24 @@ Q×f, 825, 16700`
       title: "Sm₂[Zr₁₋ₓ(Cr₀.₅Ta₀.₅)ₓ]₃[MoO₄]₉ 键离子性",
       text:
 `# 真实 P-V-L 计算值（平均 fᵢ，来源：pvl 计算表 x=0.02/0.05/0.08/0.11）
+# 如需误差棒，把数值写成「值±σ」，σ = 同一组分内多条同类型键 fᵢ 的标准差（格式见下方 pvl-fi-sd）
 化学键, x=0.02, x=0.05, x=0.08, x=0.11
 Sm-O, 0.8503, 0.8489, 0.8511, 0.8506
 Zr(Cr/Ta)-O, 0.7923, 0.7918, 0.7917, 0.7880
 Mo-O, 0.7253, 0.7258, 0.7232, 0.7233`
+    },
+    "pvl-fi-sd": {
+      label: "P-V-L fᵢ（带 σ 误差棒）",
+      type: "bar",
+      xTitle: "掺杂组分 x",
+      yTitle: "平均键离子性 fᵢ",
+      title: "键离子性 fᵢ（示例 σ，请替换为实测标准差）",
+      text:
+`# 值±σ 格式绘制误差棒。σ 为占位示例，请替换为同一组分内多条同类型键 fᵢ 的实测标准差
+化学键, x=0.02, x=0.05, x=0.08, x=0.11
+Sm-O, 0.8503±0.006, 0.8489±0.007, 0.8511±0.005, 0.8506±0.006
+Zr(Cr/Ta)-O, 0.7923±0.010, 0.7918±0.009, 0.7917±0.011, 0.7880±0.012
+Mo-O, 0.7253±0.014, 0.7258±0.013, 0.7232±0.015, 0.7233±0.014`
     },
     "epsr": {
       label: "介电常数 εr",
@@ -105,7 +119,7 @@ Q×f, 825, 16700`
   };
 
   const HINTS = {
-    bar: "首行为表头：第一列是分组名（如化学键），其余每列是一个系列（如掺杂组分）。下方每行对应一个分组与各系列的数值。以 # 开头的行为注释。",
+    bar: "首行为表头：第一列是分组名（如化学键），其余每列是一个系列（如掺杂组分）。下方每行对应一个分组与各系列的数值；数值可写成「值±误差」（如 0.85±0.02）以绘制误差棒。以 # 开头的行为注释。",
     line: "每行：系列名, X, Y。同一系列的多行按 X 排序连成线。以 # 开头的行为注释。不同量纲请分图绘制。",
     scatter: "每行：系列名, X, Y。仅绘制散点，不连线。以 # 开头的行为注释。",
     box: "首列=分组（如烧结温度），其余列=系列（如样品/批次）；每行是一条独立观测，同一分组可有多行（重复样）。程序自动算中位数/四分位/须/异常点。以 # 开头的行为注释。"
@@ -228,22 +242,34 @@ Q×f, 825, 16700`
     return parseXY(lines);
   }
 
+  function parseCellVal(s) {
+    // 支持 "0.85" 或 "0.85±0.02"（± 或 +/- 分隔值/误差，误差棒可选）
+    const str = String(s).trim();
+    const m = str.match(/^([-+]?\d*\.?\d+(?:[eE][-+]?\d+)?)\s*(?:±|\+\/-)\s*([-+]?\d*\.?\d+(?:[eE][-+]?\d+)?)$/);
+    if (m) return { value: Number(m[1]), error: Number(m[2]) };
+    return { value: Number(str), error: null };
+  }
+
   function parseBar(lines) {
     const header = lines[0].split(",").map((s) => s.trim());
     if (header.length < 2) return { error: "分组柱状图至少需要 1 个分组 + 1 个系列（表头至少两列）" };
     const catLabel = header[0] || "分组";
     const seriesNames = header.slice(1);
     const categories = [];
-    const rows = [];
+    const cells = [];  // [ [ {value, error}, ... ], ... ]
     for (let i = 1; i < lines.length; i++) {
       const parts = lines[i].split(",").map((s) => s.trim());
       if (parts.length < seriesNames.length + 1) return { error: `第 ${i + 1} 行列数不足` };
       categories.push(parts[0]);
-      const vals = parts.slice(1, seriesNames.length + 1).map((x) => Number(x));
-      if (vals.some((v) => isNaN(v))) return { error: `第 ${i + 1} 行存在非数值` };
-      rows.push(vals);
+      const row = parts.slice(1, seriesNames.length + 1).map(parseCellVal);
+      if (row.some((c) => isNaN(c.value))) return { error: `第 ${i + 1} 行存在非数值` };
+      cells.push(row);
     }
-    const series = seriesNames.map((name, j) => ({ name, values: rows.map((r) => r[j]) }));
+    const series = seriesNames.map((name, j) => ({
+      name,
+      values: cells.map((r) => r[j].value),
+      errors: cells.some((r) => r[j].error != null) ? cells.map((r) => r[j].error) : null
+    }));
     return { categories, series };
   }
 
@@ -404,8 +430,11 @@ Q×f, 825, 16700`
     o.W = f.W; o.H = f.H;
     const plotL = f.plotL, plotT = f.plotT, plotW = f.plotW, plotH = f.plotH;
     const n = d.categories.length, m = d.series.length;
-    const allV = d.series.flatMap((s) => s.values);
-    const maxV = Math.max(...allV, 0);
+    let maxV = 0;
+    d.series.forEach((s) => s.values.forEach((v, i) => {
+      maxV = Math.max(maxV, v);
+      if (s.errors && s.errors[i] != null) maxV = Math.max(maxV, v + s.errors[i]);
+    }));
     const tk = niceTicks(0, maxV, 5);
     const ymin = 0, ymax = tk.niceMax;
     const yPos = (v) => plotT + plotH - ((v - ymin) / (ymax - ymin)) * plotH;
@@ -417,6 +446,8 @@ Q×f, 825, 16700`
     const gap = barW * 0.14;
     const effW = barW - gap;
 
+    const errStroke = "#2b2b2b";
+    const errW = (0.9 * o.dpi) / 72;
     let s = "";
     if (o.grid) tk.ticks.forEach((v) => { const yy = yPos(v); s += `<line x1="${plotL}" y1="${yy}" x2="${plotL + plotW}" y2="${yy}" stroke="${GRID}" stroke-width="1"/>`; });
     for (let i = 0; i < n; i++) for (let j = 0; j < m; j++) {
@@ -425,6 +456,14 @@ Q×f, 825, 16700`
       const bh = ((v - ymin) / (ymax - ymin)) * plotH;
       const bx = cx - effW / 2; const by = yPos(v);
       s += `<rect x="${bx.toFixed(2)}" y="${by.toFixed(2)}" width="${effW.toFixed(2)}" height="${Math.max(0, bh).toFixed(2)}" fill="${seriesColors[d.series[j].name] || "#888"}"/>`;
+      const e = d.series[j].errors ? d.series[j].errors[i] : null;
+      if (e != null && isFinite(e) && e > 0) {
+        const yTop = yPos(v + e), yBot = yPos(v - e);
+        const capW = Math.min(effW, mm(2, o.dpi));
+        s += `<line x1="${cx.toFixed(2)}" y1="${yTop.toFixed(2)}" x2="${cx.toFixed(2)}" y2="${yBot.toFixed(2)}" stroke="${errStroke}" stroke-width="${errW.toFixed(2)}"/>`;
+        s += `<line x1="${(cx - capW / 2).toFixed(2)}" y1="${yTop.toFixed(2)}" x2="${(cx + capW / 2).toFixed(2)}" y2="${yTop.toFixed(2)}" stroke="${errStroke}" stroke-width="${errW.toFixed(2)}"/>`;
+        s += `<line x1="${(cx - capW / 2).toFixed(2)}" y1="${yBot.toFixed(2)}" x2="${(cx + capW / 2).toFixed(2)}" y2="${yBot.toFixed(2)}" stroke="${errStroke}" stroke-width="${errW.toFixed(2)}"/>`;
+      }
     }
     s += drawAxes(o, { plotL, plotT, plotW, plotH, yTicks: tk.ticks, yStep: tk.step, xTicks: d.categories.map((_, i) => catCenter(i)), xTickLabels: d.categories, xStep: 1, yPos });
     s += titleAndLegend(o, f.W, f.titleY, f.legendY, d.series);
