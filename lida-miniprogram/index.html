@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LIDA · 电镜颗粒分析 · LW</title>
-  <meta name="description" content="LIDA 是微信小程序形态的 SEM 颗粒分析工具，基于分水岭分割与云端云函数 analyzeParticle，提供实时粒径反馈。" />
-  <meta name="keywords" content="LIDA, 电镜颗粒分析, SEM 颗粒分析, 微信小程序, 分水岭分割, 粒径分布, analyzeParticle" />
+  <title>LIDA · 介电常数计算器 · LW</title>
+  <meta name="description" content="LIDA 是微信小程序形态的微波介电陶瓷计算工具箱：介质谐振器法（TE01δ 模）介电常数计算器，输入样品尺寸与网分读数，精确求解相对介电常数 εr、Q×f 与损耗 tanδ。" />
+  <meta name="keywords" content="LIDA, 介电常数计算器, 介质谐振器法, TE01δ, Hakki-Coleman, Kobayashi-Katoh, Q×f, 相对介电常数, 微波介电陶瓷, 微信小程序" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="LW · 智能实验工具" />
-  <meta property="og:title" content="LIDA · 电镜颗粒分析 · LW" />
-  <meta property="og:description" content="LIDA 是微信小程序形态的 SEM 颗粒分析工具，基于分水岭分割与云端云函数 analyzeParticle，提供实时粒径反馈。" />
+  <meta property="og:title" content="LIDA · 介电常数计算器 · LW" />
+  <meta property="og:description" content="介质谐振器法（TE01δ 模）介电常数计算器：输入直径、厚度、谐振频率与品质因数，精确求解 εr、Q×f 与 tanδ。" />
   <meta property="og:url" content="https://www.l-w.sryze.cc/lida-miniprogram/" />
   <meta property="og:image" content="https://www.l-w.sryze.cc/og-image.png" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="LIDA · 电镜颗粒分析 · LW" />
-  <meta name="twitter:description" content="LIDA 是微信小程序形态的 SEM 颗粒分析工具，基于分水岭分割与云端云函数 analyzeParticle。" />
+  <meta name="twitter:title" content="LIDA · 介电常数计算器 · LW" />
+  <meta name="twitter:description" content="介质谐振器法（TE01δ 模）介电常数计算器，精确求解 εr、Q×f 与 tanδ。" />
   <meta name="theme-color" content="#07070a" />
   <link rel="icon" href="../favicon.svg" />
   <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
@@ -37,17 +37,13 @@
     .phone-notch { position: absolute; top: 14px; left: 50%; transform: translateX(-50%); width: 90px; height: 18px; background: #05060a; border-radius: 0 0 12px 12px; }
     .phone-screen { margin-top: 30px; height: calc(100% - 36px); border-radius: 24px; background:
       radial-gradient(120% 80% at 50% 0%, rgba(34,211,238,0.12), transparent 60%), #070810;
-      border: 1px solid var(--line); overflow: hidden; display: grid; place-items: center; }
-    .phone-screen .scan { width: 78%; aspect-ratio: 1; border-radius: 14px;
-      background:
-        radial-gradient(circle at 30% 35%, rgba(180,210,255,0.9), transparent 14%),
-        radial-gradient(circle at 62% 30%, rgba(160,230,255,0.85), transparent 12%),
-        radial-gradient(circle at 48% 62%, rgba(190,200,255,0.8), transparent 13%),
-        radial-gradient(circle at 72% 68%, rgba(150,220,255,0.8), transparent 11%),
-        #0a0e18;
-      box-shadow: inset 0 0 0 2px rgba(34,211,238,0.4);
-    }
-    .phone-screen .scan::after { content: ""; position: absolute; }
+      border: 1px solid var(--line); overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; }
+    .phone-screen .readout { text-align: center; }
+    .phone-screen .readout .big { font-size: 1.9rem; font-weight: 600; color: var(--accent); letter-spacing: 0.02em; }
+    .phone-screen .readout .lbl { font-size: 0.68rem; color: var(--text-muted); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 4px; }
+    .phone-screen .rows { width: 72%; display: flex; flex-direction: column; gap: 6px; }
+    .phone-screen .row { display: flex; justify-content: space-between; font-size: 0.66rem; color: var(--text-dim); padding: 5px 8px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); border-radius: 8px; }
+    .phone-screen .row b { color: var(--text); font-weight: 500; }
     .phone-caption { position: absolute; bottom: 18px; left: 0; right: 0; text-align: center; font-size: 0.72rem; color: var(--text-muted); }
     .feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
     .feature-card { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 26px; }
@@ -100,24 +96,34 @@
       <div class="section-inner subhero-grid">
         <div>
           <p class="subhero-kicker">LIDA · WeChat Mini Program</p>
-          <h1>电镜颗粒分析，<br />装进口袋里</h1>
+          <h1>介质谐振器法<br />介电常数计算器</h1>
           <p class="subhero-lead">
-            LIDA 把 SEM 颗粒分析做成微信小程序：上传电镜图像，云端云函数
-            <code style="color:var(--accent)">analyzeParticle</code> 基于分水岭分割实时给出粒径分布，
-            适合实验室现场快速测量与协作。
+            LIDA 是微波介电陶瓷科研计算工具箱：输入样品直径、厚度与网分读到的
+            谐振频率 f₀、品质因数 Q，精确求解相对介电常数
+            <code style="color:var(--accent)">εr</code>、
+            <code style="color:var(--accent)">Q×f</code> 与损耗
+            <code style="color:var(--accent)">tanδ</code>。纯前端本地计算，无需云函数。
           </p>
           <div class="subhero-actions">
             <a href="#experience" class="btn btn-primary">体验小程序</a>
-            <a href="../ai-particle-size-analyzer/" class="btn btn-ghost">用网页版工具 →</a>
+            <a href="../research-charts/" class="btn btn-ghost">用图表生成器出图 →</a>
           </div>
         </div>
         <div>
           <div class="phone-mock">
             <div class="phone-notch"></div>
             <div class="phone-screen">
-              <div class="scan"></div>
+              <div class="readout">
+                <div class="lbl">相对介电常数</div>
+                <div class="big">εr = 17.48</div>
+              </div>
+              <div class="rows">
+                <div class="row"><span>Q × f</span><b>245,100 GHz</b></div>
+                <div class="row"><span>tanδ</span><b>3.3×10⁻⁵</b></div>
+                <div class="row"><span>方法</span><b>TE₀₁δ 精确解</b></div>
+              </div>
             </div>
-            <div class="phone-caption">实时粒径反馈 · analyzeParticle</div>
+            <div class="phone-caption">介质谐振器法 · TE₀₁δ 模</div>
           </div>
         </div>
       </div>
@@ -127,28 +133,28 @@
       <div class="section-head">
         <p class="section-kicker">Capabilities</p>
         <h2 class="section-title">核心能力</h2>
-        <p class="section-desc">面向真实电镜图像的轻量分析流水线。</p>
+        <p class="section-desc">把你每天在网分上测的数据直接变成论文里的 εr 与 Q×f。</p>
       </div>
       <div class="feature-grid">
         <div class="feature-card">
-          <div class="ic">▦</div>
-          <h3>分水岭分割</h3>
-          <p>针对粘连颗粒采用分水岭算法分离，比简单阈值更能处理重叠与接触颗粒，提升计数可靠性。</p>
+          <div class="ic">Σ</div>
+          <h3>精确解（Kobayashi–Katoh）</h3>
+          <p>数值求解 TE₀₁δ 模特征方程 J₀(u)/(u·J₁(u)) = K₀(w)/(w·K₁(w))，把样品外的倏逝场算进去，结果作为主值。</p>
         </div>
         <div class="feature-card">
-          <div class="ic">⚡</div>
-          <h3>实时粒径反馈</h3>
-          <p>图像上传后由云端云函数处理，秒级返回等效直径、D10/D50/D90 与分布，边测边看。</p>
+          <div class="ic">◎</div>
+          <h3>磁壁参考（Hakki–Coleman）</h3>
+          <p>提供常用磁壁近似作对照。注意它在 D/L≈2 的典型几何下会系统性偏高约 14%，页面已明确标注区分。</p>
         </div>
         <div class="feature-card">
-          <div class="ic">📱</div>
-          <h3>微信小程序形态</h3>
-          <p>无需安装桌面软件，手机扫码即用；样品在电镜下即可现场测量，结果随微信会话流转。</p>
+          <div class="ic">ƒ</div>
+          <h3>Q×f 与 tanδ 直出</h3>
+          <p>由无载品质因数 Q₀ 与谐振频率 f₀ 直接算出 Q×f，并按 tanδ ≈ 1/Q₀ 给出损耗角正切。</p>
         </div>
         <div class="feature-card">
-          <div class="ic">☁️</div>
-          <h3>云端 analyzeParticle</h3>
-          <p>计算在微信云开发云函数中完成，前端只负责可视化与交互，便于在小程序内持续迭代算法。</p>
+          <div class="ic">🛡</div>
+          <h3>纯前端本地计算</h3>
+          <p>全部公式在手机本地运行，数据不上传，无云函数、免运维，结果可复现、可审计。</p>
         </div>
       </div>
     </section>
@@ -157,24 +163,24 @@
       <div class="section-head">
         <p class="section-kicker">Workflow</p>
         <h2 class="section-title">工作流程</h2>
-        <p class="section-desc">从电镜图像到粒径报告，四步完成。</p>
+        <p class="section-desc">从样品尺寸与网分读数到 εr、Q×f，四步完成。</p>
       </div>
       <div class="step-flow">
         <div class="step">
-          <h4>上传图像</h4>
-          <p>在手机端选择或拍摄 SEM / 显微镜粉末照片，自动压缩后上传云函数。</p>
+          <h4>输入样品尺寸</h4>
+          <p>填入圆柱样品的直径 D 与厚度 L（每个块体一组）。</p>
         </div>
         <div class="step">
-          <h4>分割预处理</h4>
-          <p>灰度化、阈值分离、形态学去噪，再由分水岭算法切分粘连颗粒。</p>
+          <h4>输入网分读数</h4>
+          <p>填入谐振频率 f₀（GHz）与无载品质因数 Q₀。</p>
         </div>
         <div class="step">
-          <h4>粒径统计</h4>
-          <p>提取轮廓、按面积 / 圆度 / 边界过滤，计算等效圆直径与 D10/D50/D90。</p>
+          <h4>精确求解 εr</h4>
+          <p>解 TE₀₁δ 特征方程，输出精确解，磁壁近似作参考。</p>
         </div>
         <div class="step">
-          <h4>实时反馈</h4>
-          <p>结果以分布图与明细返回小程序，可一键导出或转发给同事。</p>
+          <h4>输出 Q×f 与 tanδ</h4>
+          <p>直接得到论文要的 Q×f 与损耗角正切，可一键复制。</p>
         </div>
       </div>
     </section>
@@ -182,23 +188,23 @@
     <section class="section">
       <div class="section-head">
         <p class="section-kicker">Architecture</p>
-        <h2 class="section-title">技术架构</h2>
+        <h2 class="section-title">技术要点</h2>
       </div>
       <div class="arch-grid">
         <div class="arch-card">
-          <div class="big">🌉</div>
-          <h4>分水岭分割</h4>
-          <p>形态学标记控制的分水岭，解决颗粒粘连导致的重复计数。</p>
+          <div class="big">Δ</div>
+          <h4>特征方程数值解</h4>
+          <p>Bessel J₀/J₁/K₀/K₁ + 二分求根，精确解可回代验证。</p>
         </div>
         <div class="arch-card">
-          <div class="big">🔧</div>
-          <h4>微信云开发</h4>
-          <p>云函数 analyzeParticle 承载计算，免运维、按量伸缩。</p>
+          <div class="big">≠</div>
+          <h4>精确解 vs 磁壁近似</h4>
+          <p>磁壁近似在 D/L≈2 时偏高约 14%，论文数据须用精确解。</p>
         </div>
         <div class="arch-card">
-          <div class="big">📊</div>
-          <h4>前端可视化</h4>
-          <p>小程序内 Canvas 绘制分布直方图与轮廓叠加，交互调参即时反馈。</p>
+          <div class="big">⚙</div>
+          <h4>超截止预警</h4>
+          <p>内置 f₀ &lt; c/(2L) 适用前提校验，超限自动提示。</p>
         </div>
       </div>
     </section>
@@ -216,11 +222,11 @@
         <div class="qr-note">
           <h3>扫码体验小程序</h3>
           <p>
-            用微信扫一扫即可进入 LIDA，上传一张电镜颗粒图，几秒内看到粒径分布。
+            用微信扫一扫即可进入 LIDA，输入样品尺寸与网分读数，几秒内得到 εr 与 Q×f。
             正式发布后所有微信用户均可扫码进入。
           </p>
           <div class="subhero-actions">
-            <a href="../ai-particle-size-analyzer/" class="btn btn-ghost">先用网页版工具 →</a>
+            <a href="../research-charts/" class="btn btn-ghost">用图表生成器出图 →</a>
           </div>
         </div>
       </div>
