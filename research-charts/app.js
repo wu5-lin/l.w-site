@@ -58,6 +58,29 @@ Q×f, 825, 16700`
 800°C, 8.5, 7.95
 825°C, 8.3, 7.9
 825°C, 8.1, 7.7`
+    },
+    hist: {
+      label: "示例 · 分布直方图",
+      text:
+`# 单列粒径值（每行一个），首行为列名；或整段粘贴 liji 结果 CSV（自动识别 equivalent_diameter_area 列）
+equivalent_diameter_area
+1.025
+1.232
+1.418
+1.527
+1.591
+1.675
+1.753
+1.83
+1.855
+1.942
+2.006
+2.063
+2.211
+2.285
+2.599
+2.881
+3.582`
     }
   };
 
@@ -115,6 +138,39 @@ Q×f, 725, 9200
 Q×f, 750, 13800
 Q×f, 800, 21500
 Q×f, 825, 16700`
+    },
+    "liji-dist": {
+      label: "粒径分布（liji CSV 直读）",
+      type: "hist",
+      xTitle: "等效直径 (µm)",
+      yTitle: "颗粒数",
+      title: "粒径分布直方图",
+      text:
+`# liji 结果 CSV 整段粘贴即可：# 溯源注释行自动跳过，自动识别 equivalent_diameter_area 列
+# liji-provenance v1
+# tool: liji 阈值法粒径分析（示例数据，请替换为你的 data/*.csv 内容）
+# git_commit: demo
+mask_index, area, equivalent_diameter_area, solidity
+0, 0.825, 1.025, 0.95
+1, 0.938, 1.093, 0.97
+2, 1.192, 1.232, 0.96
+3, 1.276, 1.275, 0.98
+4, 1.419, 1.344, 0.94
+5, 1.58, 1.418, 0.96
+6, 1.834, 1.528, 0.97
+7, 1.989, 1.591, 0.95
+8, 2.204, 1.675, 0.96
+9, 2.414, 1.753, 0.97
+10, 2.63, 1.83, 0.95
+11, 2.679, 1.847, 0.96
+12, 2.767, 1.877, 0.94
+13, 2.963, 1.942, 0.97
+14, 3.03, 1.964, 0.95
+15, 3.288, 2.046, 0.96
+16, 3.343, 2.063, 0.97
+17, 3.839, 2.211, 0.95
+18, 4.101, 2.285, 0.96
+19, 5.287, 2.594, 0.97`
     }
   };
 
@@ -122,7 +178,8 @@ Q×f, 825, 16700`
     bar: "首行为表头：第一列是分组名（如化学键），其余每列是一个系列（如掺杂组分）。下方每行对应一个分组与各系列的数值；数值可写成「值±误差」（如 0.85±0.02）以绘制误差棒。以 # 开头的行为注释。",
     line: "每行：系列名, X, Y。同一系列的多行按 X 排序连成线。以 # 开头的行为注释。不同量纲请分图绘制。",
     scatter: "每行：系列名, X, Y。仅绘制散点，不连线。以 # 开头的行为注释。",
-    box: "首列=分组（如烧结温度），其余列=系列（如样品/批次）；每行是一条独立观测，同一分组可有多行（重复样）。程序自动算中位数/四分位/须/异常点。以 # 开头的行为注释。"
+    box: "首列=分组（如烧结温度），其余列=系列（如样品/批次）；每行是一条独立观测，同一分组可有多行（重复样）。程序自动算中位数/四分位/须/异常点。以 # 开头的行为注释。",
+    hist: "直接粘贴 liji 结果 CSV 整段（含 # 溯源注释行，自动识别 equivalent_diameter_area 列），或单列粒径值（每行一个、首行为列名）。自动分箱并标注 D10/D50/D90 与统计框。"
   };
 
   const $ = (id) => document.getElementById(id);
@@ -238,6 +295,9 @@ Q×f, 825, 16700`
     if (type === "box") {
       return parseBox(lines);
     }
+    if (type === "hist") {
+      return parseHist(lines);
+    }
     // line / scatter
     return parseXY(lines);
   }
@@ -289,6 +349,105 @@ Q×f, 825, 16700`
     if (!count) return { error: "未能解析到有效的 系列,X,Y 数据行" };
     const series = [...map.entries()].map(([name, points]) => ({ name, points: points.sort((a, b) => a.x - b.x) }));
     return { series };
+  }
+
+  /* ---- 分布直方图（liji CSV 直读） ----
+   * 输入：liji 结果 CSV 整段（# 溯源注释行自动跳过）或单列粒径值。
+   * 列识别顺序：equivalent_diameter_area → 含 diameter 的列 → 数值最多的列。 */
+  function parseHist(lines) {
+    const header = lines[0].split(",").map((s) => s.trim());
+    const rows = lines.slice(1).map((l) => l.split(",").map((s) => s.trim()));
+    if (!rows.length) return { error: "没有数据行" };
+    let col = header.findIndex((h) => h === "equivalent_diameter_area");
+    if (col < 0) col = header.findIndex((h) => /diameter/i.test(h));
+    if (col < 0) {
+      let best = -1, bestN = 0;
+      for (let j = 0; j < header.length; j++) {
+        const n = rows.filter((r) => j < r.length && r[j] !== "" && isFinite(Number(r[j]))).length;
+        if (n > bestN) { bestN = n; best = j; }
+      }
+      col = best;
+    }
+    if (col < 0) return { error: "未能识别数值列" };
+    const values = [];
+    for (const r of rows) {
+      if (col >= r.length || r[col] === "") continue;
+      const v = Number(r[col]);
+      if (isFinite(v)) values.push(v);
+    }
+    if (values.length < 3) return { error: `第 ${col + 1} 列只解析到 ${values.length} 个数值` };
+    return { values, name: header[col] || ("列" + (col + 1)), series: [{ name: header[col] || "粒径" }] };
+  }
+
+  function renderHist(d, o) {
+    const f = frame(o);
+    o.W = f.W; o.H = f.H;
+    const plotL = f.plotL, plotT = f.plotT, plotW = f.plotW, plotH = f.plotH;
+    const vals = d.values.slice().sort((a, b) => a - b);
+    const n = vals.length;
+    const mean = vals.reduce((a, b) => a + b, 0) / n;
+    const std = n > 1 ? Math.sqrt(vals.reduce((a, b) => a + (b - mean) ** 2, 0) / (n - 1)) : 0;
+    const q = (p) => quantile(vals, p);
+    const d10 = q(0.1), d50 = q(0.5), d90 = q(0.9);
+    const cv = mean > 0 ? std / mean * 100 : 0;
+
+    // Freedman-Diaconis 箱宽，退化时回退 Sturges
+    const iqr = q(0.75) - q(0.25);
+    const span = vals[n - 1] - vals[0];
+    let nbins = Math.round(span / (2 * iqr / Math.cbrt(n)));
+    if (!(nbins >= 4) || nbins > 40) nbins = Math.max(4, Math.min(40, Math.round(Math.sqrt(n))));
+    nbins = Math.max(4, nbins);
+    const x0 = Math.floor(vals[0]);
+    const x1 = Math.ceil(vals[n - 1]);
+    const bw = (x1 - x0) / nbins || 1;
+    const counts = new Array(nbins).fill(0);
+    for (const v of vals) {
+      let k = Math.floor((v - x0) / bw);
+      if (k >= nbins) k = nbins - 1;
+      if (k < 0) k = 0;
+      counts[k]++;
+    }
+
+    const xt = niceTicks(x0, x1, 6);
+    const yt = niceTicks(0, Math.max(...counts), 5);
+    const ymax = yt.niceMax;
+    const xPos = (v) => plotL + ((v - xt.niceMin) / (xt.niceMax - xt.niceMin)) * plotW;
+    const yPos = (v) => plotT + plotH - ((v - 0) / (ymax - 0)) * plotH;
+
+    const color = seriesColors[d.series[0].name] || PALETTE[0];
+    let s = "";
+    if (o.grid) yt.ticks.forEach((v) => { const yy = yPos(v); s += `<line x1="${plotL}" y1="${yy}" x2="${plotL + plotW}" y2="${yy}" stroke="${GRID}" stroke-width="1"/>`; });
+    for (let k = 0; k < nbins; k++) {
+      const bx0 = x0 + k * bw;
+      const bx1 = bx0 + bw;
+      const yTop = yPos(counts[k]);
+      s += `<rect x="${(xPos(bx0) + 0.5).toFixed(2)}" y="${yTop.toFixed(2)}" width="${Math.max(0.5, xPos(bx1) - xPos(bx0) - 1).toFixed(2)}" height="${(yPos(0) - yTop).toFixed(2)}" fill="${color}" fill-opacity="0.85"/>`;
+    }
+    // D10/D50/D90 标记线
+    const mark = (v, lab) => {
+      const xx = xPos(v);
+      return `<line x1="${xx.toFixed(2)}" y1="${plotT}" x2="${xx.toFixed(2)}" y2="${plotT + plotH}" stroke="#2b2b2b" stroke-width="1" stroke-dasharray="4,3"/>` +
+        `<text x="${xx.toFixed(2)}" y="${plotT + mm(2, o.dpi)}" font-size="${(7.5 * o.dpi) / 72}" fill="#2b2b2b" text-anchor="middle">${lab}</text>`;
+    };
+    s += mark(d10, "D10") + mark(d50, "D50") + mark(d90, "D90");
+    s += drawAxes(o, { plotL, plotT, plotW, plotH, yTicks: yt.ticks, yStep: yt.step, xTicks: xt.ticks, xStep: xt.step, xPos, yPos });
+    // 统计框（与 liji pub_histogram 同口径：N / D50 / CV / D10–D90）
+    const box = [
+      "N = " + n,
+      "D50 = " + d50.toFixed(2),
+      "CV = " + cv.toFixed(1) + " %",
+      "D10–D90: " + d10.toFixed(2) + "–" + d90.toFixed(2),
+      "mean = " + mean.toFixed(2) + " ± " + std.toFixed(2)
+    ].join("\n");
+    const fs = (8 * o.dpi) / 72;
+    const bx = plotL + plotW - mm(1.5, o.dpi), by = plotT + mm(1.5, o.dpi);
+    const lineH = fs * 1.35;
+    s += `<rect x="${(bx - mm(30, o.dpi)).toFixed(2)}" y="${by.toFixed(2)}" width="${mm(30, o.dpi).toFixed(2)}" height="${(lineH * box.split("\n").length + fs * 0.6).toFixed(2)}" fill="#ffffff" fill-opacity="0.7" rx="${mm(1, o.dpi).toFixed(2)}"/>`;
+    box.split("\n").forEach((t, i) => {
+      s += `<text x="${bx.toFixed(2)}" y="${(by + fs * (i + 0.7)).toFixed(2)}" font-size="${fs.toFixed(2)}" fill="${INK}" text-anchor="end">${esc(t)}</text>`;
+    });
+    s += titleAndLegend(o, f.W, f.titleY, f.legendY, d.series);
+    return svgWrap(o, s);
   }
 
   function parseBox(lines) {
@@ -598,6 +757,7 @@ Q×f, 825, 16700`
 
     let svg, fitSumm = [];
     if (currentType === "bar") svg = renderBar(parsed, o);
+    else if (currentType === "hist") svg = renderHist(parsed, o);
     else if (currentType === "box") { const r = renderBox(parsed, o); if (r.error) { statusEl.className = "status err"; statusEl.textContent = "⚠ " + r.error; return; } svg = r.svg; }
     else { const r = renderLine(parsed, o, currentType === "scatter"); svg = r.svg; fitSumm = r.fitSumm; }
 
@@ -606,7 +766,9 @@ Q×f, 825, 16700`
     window.__W = o.W; window.__H = o.H;
     dimsEl.textContent = `${o.W} × ${o.H} px · ${o.dpi} DPI · ${o.figW}×${o.figH} mm`;
     statusEl.className = "status ok";
-    let msg = `✓ 已渲染 · ${seriesMeta.length} 个系列`;
+    let msg = currentType === "hist"
+      ? `✓ 已渲染 · ${parsed.values.length} 个数据点 · D50 = ${quantile(parsed.values.slice().sort((a, b) => a - b), 0.5).toFixed(3)}`
+      : `✓ 已渲染 · ${seriesMeta.length} 个系列`;
     if (fitSumm.length) msg += ` ｜ 趋势线: ${fitSumm.join("；")}`;
     statusEl.textContent = msg;
     fitEl.parentElement.style.display = (currentType === "line" || currentType === "scatter") ? "flex" : "none";
