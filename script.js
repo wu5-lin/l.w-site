@@ -70,6 +70,12 @@ function esc(s) {
   }[c]));
 }
 
+/* 仅允许 http(s) 协议，避免 javascript:/data: 等注入；非法链接退化为不可跳转 */
+function safeUrl(u) {
+  const s = String(u == null ? "" : u).trim();
+  return /^https?:\/\//i.test(s) ? s : "#";
+}
+
 function clip(s, n) {
   const t = String(s || "").replace(/\s+/g, " ").trim();
   if (t.length <= n) return t;
@@ -77,24 +83,28 @@ function clip(s, n) {
 }
 
 function renderNews(items, updated) {
-  const box = document.getElementById("news");
+  const box = document.getElementById("newsList");
   const upd = document.getElementById("news-updated");
   const more = document.getElementById("newsMore");
   if (updated) upd.textContent = updated;
   if (!items || !items.length) return;
 
   const paint = (limit) => {
-    box.innerHTML = items.slice(0, limit).map((it) => `
+    box.innerHTML = items.slice(0, limit).map((it) => {
+      const href = safeUrl(it.url);
+      const attrs = href === "#" ? "" : ' target="_blank" rel="noopener"';
+      return `
       <article class="news-item">
         <div class="news-meta">
           <time class="news-date">${esc(it.date)}</time>
           <span class="tag">${esc(it.tag || it.source || "AI")}</span>
         </div>
         <h3 class="news-title">
-          <a href="${esc(it.url)}" target="_blank" rel="noopener">${esc(it.title)}</a>
+          <a href="${esc(href)}"${attrs}>${esc(it.title)}</a>
         </h3>
         <p class="news-sum">${esc(clip(it.summary, 110))}</p>
-      </article>`).join("");
+      </article>`;
+    }).join("");
   };
 
   paint(NEWS_PREVIEW);

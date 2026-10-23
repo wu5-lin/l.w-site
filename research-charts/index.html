@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.bunny.net; font-src 'self' https://fonts.bunny.net; script-src 'self'; connect-src 'self'; form-action 'self'" />
   <title>科研图表生成器 · LW</title>
   <meta name="description" content="浏览器内输入数据，生成符合 SCI 期刊规范的出版级图表（分组柱状图 / 折线 / 散点），可下载 SVG 与 300 DPI PNG。" />
   <meta name="keywords" content="科研图表生成器, SCI 图表, 分组柱状图, 折线图, 散点图, 科研作图, P-V-L, 微波介电陶瓷, 出版级配图" />
@@ -15,10 +16,14 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="科研图表生成器 · LW" />
   <meta name="twitter:description" content="浏览器内输入数据，生成符合 SCI 期刊规范的出版级图表，可下载 SVG 与 300 DPI PNG。" />
-  <meta name="theme-color" content="#07070a" />
+  <meta name="theme-color" content="#0b0e13" />
+  <link rel="canonical" href="https://www.l-w.sryze.cc/research-charts/" />
   <link rel="icon" href="../favicon.svg" />
   <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
-  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600|noto-serif-sc:400,500,600" rel="stylesheet" />
+  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600|noto-serif-sc:400,500,600&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"科研图表生成器","url":"https://www.l-w.sryze.cc/research-charts/","applicationCategory":"ScientificApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"description":"浏览器内生成符合 SCI 期刊规范的出版级图表（分组柱状图/折线/散点/箱线/直方图），支持 SVG 与 300 DPI PNG 导出。"}
+  </script>
   <link rel="stylesheet" href="../styles.css" />
   <style>
     .subhero { padding: calc(var(--nav-h) + 56px) 0 24px; }
@@ -45,7 +50,7 @@
       flex: 1; padding: 9px 0; border-radius: 10px; border: 1px solid var(--line-strong);
       background: transparent; color: var(--text-dim); cursor: pointer; font-size: 0.86rem; transition: all 0.18s;
     }
-    .seg button.active { background: rgba(34,211,238,0.12); border-color: var(--accent); color: var(--accent); }
+    .seg button.active { background: rgba(77,187,213,0.12); border-color: var(--accent); color: var(--accent); }
     textarea, .tool-panel input[type="text"], .tool-panel input[type="number"], .tool-panel select {
       width: 100%; background: var(--bg); color: var(--text); border: 1px solid var(--line-strong);
       border-radius: 10px; padding: 10px 12px; font-size: 0.9rem; font-family: var(--font-sans);
@@ -77,14 +82,14 @@
     .preview-head .dims { font-size: 0.78rem; color: var(--text-muted); font-variant-numeric: tabular-nums; }
     .preview-stage {
       background:
-        linear-gradient(45deg, #0c0d12 25%, transparent 25%, transparent 75%, #0c0d12 75%) 0 0/22px 22px,
-        linear-gradient(45deg, #0c0d12 25%, #0a0b10 25%, #0a0b10 75%, #0c0d12 75%) 11px 11px/22px 22px,
-        #0a0b10;
+        linear-gradient(45deg, #12161e 25%, transparent 25%, transparent 75%, #12161e 75%) 0 0/22px 22px,
+        linear-gradient(45deg, #12161e 25%, #0b0e13 25%, #0b0e13 75%, #12161e 75%) 11px 11px/22px 22px,
+        #0b0e13;
       border: 1px solid var(--line); border-radius: 16px; padding: 22px; display: flex; justify-content: center;
     }
     .preview-stage svg { width: 100%; max-width: 720px; height: auto; display: block; border-radius: 4px; box-shadow: 0 18px 50px rgba(0,0,0,0.45); }
     .status { margin-top: 12px; font-size: 0.82rem; min-height: 1.2em; }
-    .status.err { color: #fb7185; }
+    .status.err { color: #d4736f; }
     .status.ok { color: var(--accent); }
 
     .spec-note {
@@ -93,6 +98,15 @@
     }
     .spec-note .item h4 { font-size: 0.92rem; color: var(--accent); margin-bottom: 6px; }
     .spec-note .item p { font-size: 0.84rem; color: var(--text-dim); line-height: 1.6; }
+
+    /* 子图编号 / 拼版 */
+    .panel-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .panel-grid .panel-thumb { position: relative; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--bg); }
+    .panel-grid .panel-thumb .sub-label {
+      position: absolute; top: 6px; left: 8px; font-size: 0.78rem; font-weight: 600;
+      background: rgba(0,0,0,0.7); color: #fff; padding: 2px 7px; border-radius: 6px; font-family: var(--font-serif);
+    }
+    .panel-grid .panel-thumb img { width: 100%; display: block; }
 
     /* related */
     .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
@@ -106,13 +120,17 @@
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">跳到正文</a>
   <header class="nav">
     <div class="nav-inner">
       <a href="../" class="logo">
         <span class="logo-mark">LW</span>
         <span class="logo-text">智能实验工具</span>
       </a>
-      <nav class="nav-links">
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
         <a href="../#products">产品</a>
         <a href="../#news">资讯</a>
         <a href="../digest/">简报</a>
@@ -121,7 +139,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="section subhero">
       <div class="section-inner">
         <p class="subhero-kicker">Research Chart Generator</p>
@@ -148,6 +166,7 @@
               <button data-type="line">折线图</button>
               <button data-type="scatter">散点图</button>
               <button data-type="box">箱线图</button>
+              <button data-type="hist">分布直方图</button>
             </div>
           </div>
 
@@ -206,6 +225,13 @@
             <div class="row2">
               <label class="check" style="display:none"><input type="checkbox" id="fit" /> 线性拟合趋势线</label>
             </div>
+            <div style="height:10px"></div>
+            <input type="text" id="subLabel" placeholder="子图编号（可选）：填 a 渲染为 (a)，置于图左上角" />
+            <div style="height:10px"></div>
+            <label class="check">
+              <input type="checkbox" id="engMode" />
+              <span>英文投稿模式（内置中文标签自动转英文）</span>
+            </label>
           </div>
 
           <div class="tool-actions">
@@ -248,10 +274,10 @@
           <a href="../ai-particle-size-analyzer/" class="product-link">打开工具 →</a>
         </article>
         <article class="product-card">
-          <div class="product-icon" aria-hidden="true">◉</div>
-          <h3 class="product-title">LIDA · 电镜颗粒分析</h3>
-          <p class="product-desc">微信小程序形态的 SEM 实时粒径反馈，适合现场快速测量。</p>
-          <a href="../lida-miniprogram/" class="product-link">了解小程序 →</a>
+          <div class="product-icon" aria-hidden="true">☰</div>
+          <h3 class="product-title">每日简报</h3>
+          <p class="product-desc">每日自动聚合的投资、科研、web3 与科技前沿资讯，多类别可筛选。</p>
+          <a href="../digest/" class="product-link">打开简报 →</a>
         </article>
       </div>
     </section>
@@ -264,6 +290,7 @@
     </div>
   </footer>
 
+  <script src="../nav.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -1,16 +1,17 @@
 :root {
-  --bg: #0a0e17;
-  --bg-soft: #111726;
-  --panel: #151c2c;
-  --panel-2: #1b2336;
-  --border: #243049;
-  --text: #e6ecf5;
-  --text-dim: #8b97ad;
-  --accent: #38e1ff;
-  --accent-2: #a78bfa;
-  --good: #4ade80;
-  --warn: #fbbf24;
-  --bad: #fb7185;
+  /* ---- Scientific Ink · 与主站统一 ---- */
+  --bg: #0b0e13;
+  --bg-soft: #11151c;
+  --panel: #161b23;
+  --panel-2: #1d232e;
+  --border: #2a3340;
+  --text: #eceff4;
+  --text-dim: #b0b9c6;
+  --accent: #4dbbd5;
+  --accent-2: #7c8fc0;
+  --good: #5cae86;
+  --warn: #d7a24a;
+  --bad: #d4736f;
   --radius: 14px;
   --shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
 }
@@ -21,8 +22,8 @@ body {
   margin: 0;
   font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
   background:
-    radial-gradient(1200px 600px at 80% -10%, rgba(56, 225, 255, 0.08), transparent),
-    radial-gradient(900px 500px at -10% 10%, rgba(167, 139, 250, 0.08), transparent),
+    radial-gradient(1200px 600px at 80% -10%, rgba(77, 187, 213, 0.08), transparent),
+    radial-gradient(900px 500px at -10% 10%, rgba(124, 143, 192, 0.08), transparent),
     var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -46,6 +47,49 @@ body {
 .topnav { display: flex; gap: 18px; }
 .navlink { color: var(--text-dim); text-decoration: none; font-size: 14px; transition: color .2s; }
 .navlink:hover { color: var(--accent); }
+.nav-toggle {
+  display: none; width: 44px; height: 44px; border: 0; background: transparent; cursor: pointer;
+  position: relative; flex: none;
+}
+.nav-toggle span {
+  position: absolute; left: 11px; right: 11px; height: 1.5px; background: var(--text);
+  border-radius: 2px; transition: transform 0.25s var(--ease), top 0.25s var(--ease), opacity 0.2s;
+}
+.nav-toggle span:first-child { top: 17px; }
+.nav-toggle span:last-child { top: 26px; }
+.topbar.is-open .nav-toggle span:first-child { top: 21px; transform: rotate(45deg); }
+.topbar.is-open .nav-toggle span:last-child { top: 21px; transform: rotate(-45deg); }
+
+@media (max-width: 720px) {
+  .nav-toggle { display: block; }
+  .topnav {
+    position: fixed; top: 78px; left: 0; right: 0;
+    background: rgba(10, 14, 23, 0.98); backdrop-filter: blur(12px);
+    flex-direction: column; justify-content: flex-start;
+    padding: 24px 28px; gap: 18px;
+    transform: translateY(-8px); opacity: 0; pointer-events: none;
+    transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
+    border-bottom: 1px solid var(--border);
+  }
+  .topbar.is-open .topnav {
+    opacity: 1; transform: none; pointer-events: auto;
+  }
+  .topnav .navlink { font-size: 1.1rem; padding: 4px 0; }
+}
+
+/* ---------- OpenCV 加载横幅 ---------- */
+.cv-banner {
+
+  text-align: center; font-size: 13px; padding: 8px 16px;
+  color: var(--warn); background: var(--panel);
+  border-bottom: 1px solid var(--border);
+}
+.cv-banner.ok { color: var(--good); border-bottom-color: var(--good); }
+.cv-banner.err { color: var(--bad); border-bottom-color: var(--bad); }
+.cv-banner[hidden] { display: none; }
+
+/* 键盘可达性 */
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 /* ---------- layout ---------- */
 .layout {
@@ -75,7 +119,7 @@ body {
   border: 1.5px dashed var(--border); border-radius: 12px; padding: 18px;
   text-align: center; transition: border-color .2s, background .2s; cursor: pointer;
 }
-.dropzone.drag { border-color: var(--accent); background: rgba(56,225,255,.06); }
+.dropzone.drag { border-color: var(--accent); background: rgba(77,187,213,.06); }
 .dz-main { margin: 0 0 6px; font-size: 14px; }
 .dz-sub { margin: 0 0 12px; font-size: 12px; color: var(--text-dim); }
 .link-btn { background: none; border: none; color: var(--accent); cursor: pointer; font-size: 14px; padding: 0; }
@@ -98,6 +142,20 @@ select, input[type="number"] {
 
 input[type="range"] { width: 100%; accent-color: var(--accent); }
 
+/* 滑块 + 数字框：支持直接键入，免拖拽 */
+.range-row { display: flex; align-items: center; gap: 10px; }
+.range-row input[type="range"] { flex: 1; min-width: 0; width: auto; }
+.range-row .range-num {
+  flex: none; width: 82px; text-align: center;
+  background: var(--bg-soft); color: var(--text);
+  border: 1px solid var(--border); border-radius: 8px;
+  padding: 6px 8px; font-size: 13px; font-variant-numeric: tabular-nums;
+}
+.range-row .range-num:focus { outline: none; border-color: var(--accent); }
+.range-row .range-num::-webkit-outer-spin-button,
+.range-row .range-num::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.range-row .range-num { -moz-appearance: textfield; appearance: textfield; }
+
 .hint { font-size: 12px; color: var(--text-dim); margin: 0 0 10px; }
 .meta { font-size: 12px; color: var(--text-dim); margin: 8px 0 0; }
 .meta.meta-warn { color: var(--warn); }
@@ -108,7 +166,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
   border: 1px solid var(--border); background: var(--panel-2); color: var(--text);
   border-radius: 8px; padding: 6px 10px; font-size: 12px; cursor: pointer;
 }
-.panel-chip.active { border-color: var(--accent); color: var(--accent); background: rgba(56,225,255,.10); }
+.panel-chip.active { border-color: var(--accent); color: var(--accent); background: rgba(77,187,213,.10); }
 .note { font-size: 13px; color: var(--text-dim); background: var(--panel-2); padding: 12px; border-radius: 10px; border-left: 3px solid var(--accent); }
 
 /* ---------- buttons ---------- */
@@ -121,7 +179,7 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
   color: #06121b; font-weight: 700; border: none; margin-top: 4px;
 }
 .primary-btn:disabled { opacity: .5; cursor: not-allowed; }
-.primary-btn:not(:disabled):hover { box-shadow: 0 6px 20px rgba(56,225,255,.35); transform: translateY(-1px); }
+.primary-btn:not(:disabled):hover { box-shadow: 0 6px 20px rgba(77,187,213,.35); transform: translateY(-1px); }
 .ghost-btn { background: var(--panel-2); color: var(--text); }
 .ghost-btn:hover { border-color: var(--accent); }
 .status { font-size: 12px; color: var(--warn); min-height: 16px; margin: 10px 0 0; text-align: center; }
@@ -145,7 +203,7 @@ canvas { max-width: 100%; height: auto; display: block; }
 
 /* ---------- 标尺工具 ---------- */
 .calib-tools { display: flex; gap: 8px; margin: 4px 0 8px; }
-.ghost-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(56,225,255,.08); }
+.ghost-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(77,187,213,.08); }
 .badge {
   display: inline-block; background: var(--accent); color: #06121b;
   font-weight: 700; padding: 2px 8px; border-radius: 8px; font-size: 11px; margin-left: 8px;

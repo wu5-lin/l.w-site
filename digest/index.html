@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.bunny.net; font-src 'self' https://fonts.bunny.net; script-src 'self'; connect-src 'self'; form-action 'self'" />
   <title>每日简报 · LW</title>
   <meta name="description" content="每日自动聚合的国内外投资、科研、web3 与科技前沿资讯——多类别、可筛选、纯静态。" />
   <meta name="keywords" content="每日简报, 投资资讯, 科研资讯, web3资讯, 科技资讯, 信息聚合, RSS聚合" />
@@ -15,17 +16,16 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="每日简报 · LW" />
   <meta name="twitter:description" content="每日自动聚合的国内外投资、科研、web3 与科技前沿资讯。" />
-  <meta name="theme-color" content="#07070a" />
+  <meta name="theme-color" content="#0b0e13" />
+  <link rel="canonical" href="https://www.l-w.sryze.cc/digest/" />
   <link rel="icon" href="../favicon.svg" />
   <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
-  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600|noto-serif-sc:400,500,600" rel="stylesheet" />
+  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600|noto-serif-sc:400,500,600&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"每日简报 · LW","url":"https://www.l-w.sryze.cc/digest/","applicationCategory":"NewsApplication","operatingSystem":"Web","description":"每日自动聚合的国内外投资、科研、web3 与科技前沿资讯。","inLanguage":"zh-CN"}
+  </script>
   <link rel="stylesheet" href="../styles.css" />
   <style>
-    .subhero { padding: calc(var(--nav-h) + 56px) 0 18px; }
-    .subhero-kicker { color: var(--accent); font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 14px; }
-    .subhero h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; font-weight: 600; margin-bottom: 14px; }
-    .subhero-lead { color: var(--text-dim); font-size: 1.05rem; max-width: 64ch; font-weight: 300; }
-
     /* ---------- 控制条 ---------- */
     .controls {
       position: sticky; top: calc(var(--nav-h) + 8px); z-index: 20;
@@ -41,7 +41,7 @@
       background: transparent; color: var(--text-dim); cursor: pointer; font-size: 0.84rem; transition: all 0.16s;
     }
     .seg button:hover { border-color: var(--accent); color: var(--text); }
-    .seg button.active { background: rgba(34,211,238,0.14); border-color: var(--accent); color: var(--accent); }
+    .seg button.active { background: rgba(77,187,213,0.14); border-color: var(--accent); color: var(--accent); }
     .search-box { flex: 1; min-width: 200px; }
     .search-box input {
       width: 100%; background: var(--bg); color: var(--text); border: 1px solid var(--line-strong);
@@ -67,16 +67,16 @@
       font-size: 0.72rem; padding: 3px 9px; border-radius: 999px; font-weight: 500;
       border: 1px solid currentColor;
     }
-    .cat-投资 { color: #fbbf24; }
-    .cat-科研 { color: #22d3ee; }
-    .cat-web3 { color: #c084fc; }
-    .cat-科技 { color: #34d399; }
+    .cat-投资 { color: #d7a24a; }
+    .cat-科研 { color: #4dbbd5; }
+    .cat-web3 { color: #a58fd0; }
+    .cat-科技 { color: #5cae86; }
     .region-badge {
       font-size: 0.68rem; padding: 2px 8px; border-radius: 999px; color: var(--text-muted);
       background: rgba(255,255,255,0.06); border: 1px solid var(--line);
     }
-    .region-badge.cn { color: #7dd3fc; }
-    .region-badge.en { color: #a5b4fc; }
+    .region-badge.cn { color: #7fb7d4; }
+    .region-badge.en { color: #93a3d0; }
     .dcard h3 { font-size: 1.02rem; font-weight: 600; line-height: 1.45; }
     .dcard h3 a { color: var(--text); text-decoration: none; }
     .dcard h3 a:hover { color: var(--accent); }
@@ -88,19 +88,20 @@
       text-align: center; color: var(--text-muted); padding: 60px 20px; border: 1px dashed var(--line-strong);
       border-radius: 16px; line-height: 1.8; font-size: 0.92rem;
     }
-
-    .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-    @media (max-width: 860px) { .related-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#main">跳到正文</a>
   <header class="nav">
     <div class="nav-inner">
       <a href="../" class="logo">
         <span class="logo-mark">LW</span>
         <span class="logo-text">智能实验工具</span>
       </a>
-      <nav class="nav-links">
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
         <a href="../#products">产品</a>
         <a href="../#news">资讯</a>
         <a href="../digest/" style="color: var(--accent)">简报</a>
@@ -109,7 +110,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="section subhero">
       <div class="section-inner">
         <p class="subhero-kicker">Daily Digest</p>
@@ -185,6 +186,7 @@
     </div>
   </footer>
 
+  <script src="../nav.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

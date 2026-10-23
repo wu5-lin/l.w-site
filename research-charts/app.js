@@ -1,16 +1,16 @@
 /* =========================================================
    LW · 科研图表生成器
    浏览器端生成 SCI 规范图表
-   图型：分组柱状图 / 折线 / 散点 / 分组箱线图
+   图型：分组柱状图 / 折线 / 散点 / 分组箱线图 / 分布直方图
    纯静态、数据不上传，输出 SVG 与 300/600 DPI PNG
    ========================================================= */
 (function () {
   "use strict";
 
+  /* 期刊配色（源自 ggsci 的 Nature/NPG 调色板，MIT；适配白底 SCI 插图） */
   const PALETTE = [
-    "#22d3ee", "#818cf8", "#f472b6", "#34d399",
-    "#fbbf24", "#fb7185", "#60a5fa", "#a78bfa",
-    "#2dd4bf", "#f97316", "#e879f9", "#4ade80"
+    "#4dbbd5", "#e64b35", "#00a087", "#3c5488", "#f39b7f",
+    "#8491b4", "#91d1c2", "#dc0000", "#7e6148", "#b09c85"
   ];
   const INK = "#111111";
   const GRID = "#e6e6e6";
@@ -58,6 +58,29 @@ Q×f, 825, 16700`
 800°C, 8.5, 7.95
 825°C, 8.3, 7.9
 825°C, 8.1, 7.7`
+    },
+    hist: {
+      label: "示例 · 分布直方图",
+      text:
+`# 单列粒径值（每行一个），首行为列名；或整段粘贴 liji 结果 CSV（自动识别 equivalent_diameter_area 列）
+equivalent_diameter_area
+1.025
+1.232
+1.418
+1.527
+1.591
+1.675
+1.753
+1.83
+1.855
+1.942
+2.006
+2.063
+2.211
+2.285
+2.599
+2.881
+3.582`
     }
   };
 
@@ -71,10 +94,24 @@ Q×f, 825, 16700`
       title: "Sm₂[Zr₁₋ₓ(Cr₀.₅Ta₀.₅)ₓ]₃[MoO₄]₉ 键离子性",
       text:
 `# 真实 P-V-L 计算值（平均 fᵢ，来源：pvl 计算表 x=0.02/0.05/0.08/0.11）
+# 如需误差棒，把数值写成「值±σ」，σ = 同一组分内多条同类型键 fᵢ 的标准差（格式见下方 pvl-fi-sd）
 化学键, x=0.02, x=0.05, x=0.08, x=0.11
 Sm-O, 0.8503, 0.8489, 0.8511, 0.8506
 Zr(Cr/Ta)-O, 0.7923, 0.7918, 0.7917, 0.7880
 Mo-O, 0.7253, 0.7258, 0.7232, 0.7233`
+    },
+    "pvl-fi-sd": {
+      label: "P-V-L fᵢ（带 σ 误差棒）",
+      type: "bar",
+      xTitle: "掺杂组分 x",
+      yTitle: "平均键离子性 fᵢ",
+      title: "键离子性 fᵢ（示例 σ，请替换为实测标准差）",
+      text:
+`# 值±σ 格式绘制误差棒。σ 为占位示例，请替换为同一组分内多条同类型键 fᵢ 的实测标准差
+化学键, x=0.02, x=0.05, x=0.08, x=0.11
+Sm-O, 0.8503±0.006, 0.8489±0.007, 0.8511±0.005, 0.8506±0.006
+Zr(Cr/Ta)-O, 0.7923±0.010, 0.7918±0.009, 0.7917±0.011, 0.7880±0.012
+Mo-O, 0.7253±0.014, 0.7258±0.013, 0.7232±0.015, 0.7233±0.014`
     },
     "epsr": {
       label: "介电常数 εr",
@@ -101,14 +138,48 @@ Q×f, 725, 9200
 Q×f, 750, 13800
 Q×f, 800, 21500
 Q×f, 825, 16700`
+    },
+    "liji-dist": {
+      label: "粒径分布（liji CSV 直读）",
+      type: "hist",
+      xTitle: "等效直径 (µm)",
+      yTitle: "颗粒数",
+      title: "粒径分布直方图",
+      text:
+`# liji 结果 CSV 整段粘贴即可：# 溯源注释行自动跳过，自动识别 equivalent_diameter_area 列
+# liji-provenance v1
+# tool: liji 阈值法粒径分析（示例数据，请替换为你的 data/*.csv 内容）
+# git_commit: demo
+mask_index, area, equivalent_diameter_area, solidity
+0, 0.825, 1.025, 0.95
+1, 0.938, 1.093, 0.97
+2, 1.192, 1.232, 0.96
+3, 1.276, 1.275, 0.98
+4, 1.419, 1.344, 0.94
+5, 1.58, 1.418, 0.96
+6, 1.834, 1.528, 0.97
+7, 1.989, 1.591, 0.95
+8, 2.204, 1.675, 0.96
+9, 2.414, 1.753, 0.97
+10, 2.63, 1.83, 0.95
+11, 2.679, 1.847, 0.96
+12, 2.767, 1.877, 0.94
+13, 2.963, 1.942, 0.97
+14, 3.03, 1.964, 0.95
+15, 3.288, 2.046, 0.96
+16, 3.343, 2.063, 0.97
+17, 3.839, 2.211, 0.95
+18, 4.101, 2.285, 0.96
+19, 5.287, 2.594, 0.97`
     }
   };
 
   const HINTS = {
-    bar: "首行为表头：第一列是分组名（如化学键），其余每列是一个系列（如掺杂组分）。下方每行对应一个分组与各系列的数值。以 # 开头的行为注释。",
+    bar: "首行为表头：第一列是分组名（如化学键），其余每列是一个系列（如掺杂组分）。下方每行对应一个分组与各系列的数值；数值可写成「值±误差」（如 0.85±0.02）以绘制误差棒。以 # 开头的行为注释。",
     line: "每行：系列名, X, Y。同一系列的多行按 X 排序连成线。以 # 开头的行为注释。不同量纲请分图绘制。",
     scatter: "每行：系列名, X, Y。仅绘制散点，不连线。以 # 开头的行为注释。",
-    box: "首列=分组（如烧结温度），其余列=系列（如样品/批次）；每行是一条独立观测，同一分组可有多行（重复样）。程序自动算中位数/四分位/须/异常点。以 # 开头的行为注释。"
+    box: "首列=分组（如烧结温度），其余列=系列（如样品/批次）；每行是一条独立观测，同一分组可有多行（重复样）。程序自动算中位数/四分位/须/异常点。以 # 开头的行为注释。",
+    hist: "直接粘贴 liji 结果 CSV 整段（含 # 溯源注释行，自动识别 equivalent_diameter_area 列），或单列粒径值（每行一个、首行为列名）。自动分箱并标注 D10/D50/D90 与统计框。右上角统计框：N=颗粒总数；D50=中位粒径（50% 颗粒小于该值）；CV=变异系数 σ/mean，衡量分布宽窄；D10–D90=10%~90% 分位跨度；mean±σ=均值±标准差。"
   };
 
   const $ = (id) => document.getElementById(id);
@@ -128,6 +199,8 @@ Q×f, 825, 16700`
   const gridEl = $("grid");
   const legendEl = $("legend");
   const fitEl = $("fit");
+  const engModeEl = $("engMode");
+  const subLabelEl = $("subLabel");
   const previewEl = $("preview");
   const statusEl = $("status");
   const dimsEl = $("dims");
@@ -136,6 +209,7 @@ Q×f, 825, 16700`
 
   let currentType = "bar";
   const seriesColors = {};
+  let updateTimer = null;
 
   function mm(v, dpi) { return (v * dpi) / MM_PER_IN; }
 
@@ -224,8 +298,19 @@ Q×f, 825, 16700`
     if (type === "box") {
       return parseBox(lines);
     }
+    if (type === "hist") {
+      return parseHist(lines);
+    }
     // line / scatter
     return parseXY(lines);
+  }
+
+  function parseCellVal(s) {
+    // 支持 "0.85" 或 "0.85±0.02"（± 或 +/- 分隔值/误差，误差棒可选）
+    const str = String(s).trim();
+    const m = str.match(/^([-+]?\d*\.?\d+(?:[eE][-+]?\d+)?)\s*(?:±|\+\/-)\s*([-+]?\d*\.?\d+(?:[eE][-+]?\d+)?)$/);
+    if (m) return { value: Number(m[1]), error: Number(m[2]) };
+    return { value: Number(str), error: null };
   }
 
   function parseBar(lines) {
@@ -234,16 +319,20 @@ Q×f, 825, 16700`
     const catLabel = header[0] || "分组";
     const seriesNames = header.slice(1);
     const categories = [];
-    const rows = [];
+    const cells = [];
     for (let i = 1; i < lines.length; i++) {
       const parts = lines[i].split(",").map((s) => s.trim());
       if (parts.length < seriesNames.length + 1) return { error: `第 ${i + 1} 行列数不足` };
       categories.push(parts[0]);
-      const vals = parts.slice(1, seriesNames.length + 1).map((x) => Number(x));
-      if (vals.some((v) => isNaN(v))) return { error: `第 ${i + 1} 行存在非数值` };
-      rows.push(vals);
+      const row = parts.slice(1, seriesNames.length + 1).map(parseCellVal);
+      if (row.some((c) => isNaN(c.value))) return { error: `第 ${i + 1} 行存在非数值` };
+      cells.push(row);
     }
-    const series = seriesNames.map((name, j) => ({ name, values: rows.map((r) => r[j]) }));
+    const series = seriesNames.map((name, j) => ({
+      name,
+      values: cells.map((r) => r[j].value),
+      errors: cells.some((r) => r[j].error != null) ? cells.map((r) => r[j].error) : null
+    }));
     return { categories, series };
   }
 
@@ -265,12 +354,110 @@ Q×f, 825, 16700`
     return { series };
   }
 
+  /* ---- 分布直方图（liji CSV 直读） ---- */
+  function parseHist(lines) {
+    const header = lines[0].split(",").map((s) => s.trim());
+    const rows = lines.slice(1).map((l) => l.split(",").map((s) => s.trim()));
+    if (!rows.length) return { error: "没有数据行" };
+    let col = header.findIndex((h) => h === "equivalent_diameter_area");
+    if (col < 0) col = header.findIndex((h) => /diameter/i.test(h));
+    if (col < 0) {
+      let best = -1, bestN = 0;
+      for (let j = 0; j < header.length; j++) {
+        const n = rows.filter((r) => j < r.length && r[j] !== "" && isFinite(Number(r[j]))).length;
+        if (n > bestN) { bestN = n; best = j; }
+      }
+      col = best;
+    }
+    if (col < 0) return { error: "未能识别数值列" };
+    const values = [];
+    for (const r of rows) {
+      if (col >= r.length || r[col] === "") continue;
+      const v = Number(r[col]);
+      if (isFinite(v)) values.push(v);
+    }
+    if (values.length < 3) return { error: `第 ${col + 1} 列只解析到 ${values.length} 个数值` };
+    return { values, name: header[col] || ("列" + (col + 1)), series: [{ name: header[col] || "粒径" }] };
+  }
+
+  function renderHist(d, o) {
+    const f = frame(o);
+    o.W = f.W; o.H = f.H;
+    const plotL = f.plotL, plotT = f.plotT, plotW = f.plotW, plotH = f.plotH;
+    const vals = d.values.slice().sort((a, b) => a - b);
+    const n = vals.length;
+    const mean = vals.reduce((a, b) => a + b, 0) / n;
+    const std = n > 1 ? Math.sqrt(vals.reduce((a, b) => a + (b - mean) ** 2, 0) / (n - 1)) : 0;
+    const q = (p) => quantile(vals, p);
+    const d10 = q(0.1), d50 = q(0.5), d90 = q(0.9);
+    const cv = mean > 0 ? std / mean * 100 : 0;
+
+    // Freedman-Diaconis 箱宽，退化时回退 Sturges
+    const iqr = q(0.75) - q(0.25);
+    const span = vals[n - 1] - vals[0];
+    let nbins = Math.round(span / (2 * iqr / Math.cbrt(n)));
+    if (!(nbins >= 4) || nbins > 40) nbins = Math.max(4, Math.min(40, Math.round(Math.sqrt(n))));
+    nbins = Math.max(4, nbins);
+    const x0 = Math.floor(vals[0]);
+    const x1 = Math.ceil(vals[n - 1]);
+    const bw = (x1 - x0) / nbins || 1;
+    const counts = new Array(nbins).fill(0);
+    for (const v of vals) {
+      let k = Math.floor((v - x0) / bw);
+      if (k >= nbins) k = nbins - 1;
+      if (k < 0) k = 0;
+      counts[k]++;
+    }
+
+    const xt = niceTicks(x0, x1, 6);
+    const yt = niceTicks(0, Math.max(...counts), 5);
+    const ymax = yt.niceMax;
+    const xPos = (v) => plotL + ((v - xt.niceMin) / (xt.niceMax - xt.niceMin)) * plotW;
+    const yPos = (v) => plotT + plotH - ((v - 0) / (ymax - 0)) * plotH;
+
+    const color = seriesColors[d.series[0].name] || PALETTE[0];
+    let s = "";
+    if (o.grid) yt.ticks.forEach((v) => { const yy = yPos(v); s += `<line x1="${plotL}" y1="${yy}" x2="${plotL + plotW}" y2="${yy}" stroke="${GRID}" stroke-width="1"/>`; });
+    for (let k = 0; k < nbins; k++) {
+      const bx0 = x0 + k * bw;
+      const bx1 = bx0 + bw;
+      const yTop = yPos(counts[k]);
+      s += `<rect x="${(xPos(bx0) + 0.5).toFixed(2)}" y="${yTop.toFixed(2)}" width="${Math.max(0.5, xPos(bx1) - xPos(bx0) - 1).toFixed(2)}" height="${(yPos(0) - yTop).toFixed(2)}" fill="${color}" fill-opacity="0.85"/>`;
+    }
+    // D10/D50/D90 标记线
+    const mark = (v, lab) => {
+      const xx = xPos(v);
+      return `<line x1="${xx.toFixed(2)}" y1="${plotT}" x2="${xx.toFixed(2)}" y2="${plotT + plotH}" stroke="#2b2b2b" stroke-width="1" stroke-dasharray="4,3"/>` +
+        `<text x="${xx.toFixed(2)}" y="${plotT + mm(2, o.dpi)}" font-size="${(7.5 * o.dpi) / 72}" fill="#2b2b2b" text-anchor="middle">${lab}</text>`;
+    };
+    s += mark(d10, "D10") + mark(d50, "D50") + mark(d90, "D90");
+    s += drawAxes(o, { plotL, plotT, plotW, plotH, yTicks: yt.ticks, yStep: yt.step, xTicks: xt.ticks, xStep: xt.step, xPos, yPos });
+    // 统计框（与 liji pub_histogram 同口径：N / D50 / CV / D10–D90）
+    const box = [
+      "N = " + n,
+      "D50 = " + d50.toFixed(2),
+      "CV = " + cv.toFixed(1) + " %",
+      "D10–D90: " + d10.toFixed(2) + "–" + d90.toFixed(2),
+      "mean = " + mean.toFixed(2) + " ± " + std.toFixed(2)
+    ].join("\n");
+    const fs = (8 * o.dpi) / 72;
+    const bx = plotL + plotW - mm(30, o.dpi), by = plotT + mm(1.5, o.dpi);
+    const lineH = fs * 1.35;
+    s += `<rect x="${(bx - mm(30, o.dpi)).toFixed(2)}" y="${by.toFixed(2)}" width="${mm(30, o.dpi).toFixed(2)}" height="${(lineH * box.split("\n").length + fs * 0.6).toFixed(2)}" fill="#ffffff" fill-opacity="0.7" rx="${mm(1, o.dpi).toFixed(2)}"/>`;
+    box.split("\n").forEach((t, i) => {
+      s += `<text x="${bx.toFixed(2)}" y="${(by + fs * (i + 0.7)).toFixed(2)}" font-size="${fs.toFixed(2)}" fill="${INK}" text-anchor="end">${esc(t)}</text>`;
+    });
+    s += titleAndLegend(o, f.W, f.titleY, f.legendY, d.series);
+    s += subFigureLabel(o, plotL, plotT);
+    return svgWrap(o, s);
+  }
+
   function parseBox(lines) {
     const header = lines[0].split(",").map((s) => s.trim());
     if (header.length < 2) return { error: "箱线图至少需要 1 个分组 + 1 个系列（表头至少两列）" };
     const catLabel = header[0] || "分组";
     const seriesNames = header.slice(1);
-    const groups = [];          // [{ name, series: [ [v,...], [v,...] ] }]
+    const groups = [];
     const gIndex = new Map();
     for (let i = 1; i < lines.length; i++) {
       const parts = lines[i].split(",").map((s) => s.trim());
@@ -304,8 +491,69 @@ Q×f, 825, 16700`
       inward: inwardEl.checked,
       grid: gridEl.checked,
       legend: legendEl.checked,
-      fit: fitEl.checked
+      fit: fitEl.checked,
+      engMode: engModeEl.checked,
+      subLabel: subLabelEl.value.trim()
     };
+  }
+
+  /* ---- 英文投稿模式：中文标签转英文 ---- */
+  const CN_EN_MAP = {
+    "化学键": "Chemical bond",
+    "掺杂组分 x": "Doping content x",
+    "掺杂量 x": "Doping content x",
+    "烧结温度 (°C)": "Sintering temperature (°C)",
+    "烧结温度": "Sintering temperature (°C)",
+    "等效直径 (µm)": "Equivalent diameter (µm)",
+    "颗粒数": "Particle count",
+    "平均键离子性 fᵢ": "Average ionic character fᵢ",
+    "平均键离子性 f_i": "Average ionic character f_i",
+    "键离子性 fᵢ": "Ionic character fᵢ",
+    "键离子性 f_i": "Ionic character f_i",
+    "介电常数 εr": "Permittivity εr",
+    "品质因数 Q×f": "Quality factor Q×f",
+    "Q×f (GHz)": "Q×f (GHz)",
+    "Q×f": "Q×f (GHz)",
+    "平均直径": "Mean diameter",
+    "中位直径": "Median diameter",
+    "D10": "D10",
+    "D50": "D50",
+    "D90": "D90",
+    "不均匀度 Cu": "Uniformity Cu",
+    "曲率 Cc": "Curvature Cc",
+    "跨度 Span": "Span",
+    "标准差 σ": "Standard deviation σ",
+    "变异系数 CV": "Coefficient of variation CV",
+    "均值 95% 置信区间": "Mean 95% CI",
+    "粒径分布直方图": "Particle size distribution histogram",
+    "粒径分布": "Particle size distribution",
+    "颗粒明细": "Particle details",
+    "多子图对比": "Multi-panel comparison",
+    "相对介电常数": "Relative permittivity",
+    "损耗角正切": "Loss tangent",
+    "品质因数": "Quality factor",
+    "温度系数": "Temperature coefficient",
+    "晶格能": "Lattice energy",
+    "热膨胀系数": "Thermal expansion coefficient",
+    "键离子性": "Ionic character",
+    "平均": "Mean",
+    "计数 n": "Count n",
+    "实心度": "Solidity",
+    "圆度": "Circularity",
+    "面积": "Area",
+    "直径": "Diameter",
+    "Feret(min–max)": "Feret (min–max)",
+    "Feret": "Feret diameter",
+    "子图": "Panel"
+  };
+
+  function toEnglish(s) {
+    let out = String(s || "");
+    for (const k of Object.keys(CN_EN_MAP)) {
+      const re = new RegExp(k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g");
+      out = out.replace(re, CN_EN_MAP[k]);
+    }
+    return out;
   }
 
   /* ---- legend ---- */
@@ -340,11 +588,7 @@ Q×f, 825, 16700`
       `<rect x="0" y="0" width="${W}" height="${H}" fill="#ffffff"/>` + inner + `</svg>`;
   }
 
-  /* ---- 通用轴绘制（供 bar/line/scatter/box 复用） ----
-   * g.xPos: 数值 x -> 像素 x 的映射函数。折线/散点传这个；
-   * 柱状/箱线图不传, 此时 xTicks 里放的**已经是像素位置**（类目中心），
-   * 直接当坐标用即可。以前这里无条件调用 g.xPos(v), 柱状图与分组柱状图
-   * 一渲染就抛 "g.xPos is not a function"。 */
+  /* ---- 通用轴绘制（供 bar/line/scatter/box 复用） ---- */
   function drawAxes(o, g) {
     const xAt = g.xPos || ((v) => v);
     const tlen = mm(3, o.dpi);
@@ -381,11 +625,22 @@ Q×f, 825, 16700`
     return s;
   }
 
+  /* ---- 子图编号 (a)(b)(c)：置于图左上角，论文标准格式 ---- */
+  function subFigureLabel(o, plotL, plotT) {
+    if (!o.subLabel) return "";
+    let t = String(o.subLabel).trim();
+    if (!t) return "";
+    if (!/^\(.*\)$/.test(t)) t = "(" + t + ")";
+    const fs = (11 * o.dpi) / 72;
+    return `<text x="${plotL}" y="${(plotT - mm(1.8, o.dpi)).toFixed(2)}" font-size="${fs.toFixed(2)}" font-weight="700" fill="${INK}" text-anchor="start">${esc(t)}</text>`;
+  }
+
   function frame(o, plotL, plotT, plotW, plotH) {
     let mT = Math.round(mm(8, o.dpi));
     let titleY = null, legendY = null;
     if (o.title) { titleY = mm(5.2, o.dpi); mT = Math.max(mT, Math.round(mm(9, o.dpi))); }
     if (o.legend) { legendY = o.title ? mm(11.5, o.dpi) : mm(5.2, o.dpi); mT = Math.max(mT, o.title ? Math.round(mm(16, o.dpi)) : Math.round(mm(10, o.dpi))); }
+    if (o.subLabel) { mT = Math.max(mT, Math.round(mm(10, o.dpi))); }
     const mL = Math.round(mm(15, o.dpi));
     const mR = Math.round(mm(8, o.dpi));
     const mB = Math.round(mm(16, o.dpi));
@@ -404,8 +659,11 @@ Q×f, 825, 16700`
     o.W = f.W; o.H = f.H;
     const plotL = f.plotL, plotT = f.plotT, plotW = f.plotW, plotH = f.plotH;
     const n = d.categories.length, m = d.series.length;
-    const allV = d.series.flatMap((s) => s.values);
-    const maxV = Math.max(...allV, 0);
+    let maxV = 0;
+    d.series.forEach((s) => s.values.forEach((v, i) => {
+      maxV = Math.max(maxV, v);
+      if (s.errors && s.errors[i] != null) maxV = Math.max(maxV, v + s.errors[i]);
+    }));
     const tk = niceTicks(0, maxV, 5);
     const ymin = 0, ymax = tk.niceMax;
     const yPos = (v) => plotT + plotH - ((v - ymin) / (ymax - ymin)) * plotH;
@@ -417,6 +675,8 @@ Q×f, 825, 16700`
     const gap = barW * 0.14;
     const effW = barW - gap;
 
+    const errStroke = "#2b2b2b";
+    const errW = (0.9 * o.dpi) / 72;
     let s = "";
     if (o.grid) tk.ticks.forEach((v) => { const yy = yPos(v); s += `<line x1="${plotL}" y1="${yy}" x2="${plotL + plotW}" y2="${yy}" stroke="${GRID}" stroke-width="1"/>`; });
     for (let i = 0; i < n; i++) for (let j = 0; j < m; j++) {
@@ -425,9 +685,18 @@ Q×f, 825, 16700`
       const bh = ((v - ymin) / (ymax - ymin)) * plotH;
       const bx = cx - effW / 2; const by = yPos(v);
       s += `<rect x="${bx.toFixed(2)}" y="${by.toFixed(2)}" width="${effW.toFixed(2)}" height="${Math.max(0, bh).toFixed(2)}" fill="${seriesColors[d.series[j].name] || "#888"}"/>`;
+      const e = d.series[j].errors ? d.series[j].errors[i] : null;
+      if (e != null && isFinite(e) && e > 0) {
+        const yTop = yPos(v + e), yBot = yPos(v - e);
+        const capW = Math.min(effW, mm(2, o.dpi));
+        s += `<line x1="${cx.toFixed(2)}" y1="${yTop.toFixed(2)}" x2="${cx.toFixed(2)}" y2="${yBot.toFixed(2)}" stroke="${errStroke}" stroke-width="${errW.toFixed(2)}"/>`;
+        s += `<line x1="${(cx - capW / 2).toFixed(2)}" y1="${yTop.toFixed(2)}" x2="${(cx + capW / 2).toFixed(2)}" y2="${yTop.toFixed(2)}" stroke="${errStroke}" stroke-width="${errW.toFixed(2)}"/>`;
+        s += `<line x1="${(cx - capW / 2).toFixed(2)}" y1="${yBot.toFixed(2)}" x2="${(cx + capW / 2).toFixed(2)}" y2="${yBot.toFixed(2)}" stroke="${errStroke}" stroke-width="${errW.toFixed(2)}"/>`;
+      }
     }
     s += drawAxes(o, { plotL, plotT, plotW, plotH, yTicks: tk.ticks, yStep: tk.step, xTicks: d.categories.map((_, i) => catCenter(i)), xTickLabels: d.categories, xStep: 1, yPos });
     s += titleAndLegend(o, f.W, f.titleY, f.legendY, d.series);
+    s += subFigureLabel(o, plotL, plotT);
     return svgWrap(o, s);
   }
 
@@ -475,6 +744,7 @@ Q×f, 825, 16700`
     });
     s += drawAxes(o, { plotL, plotT, plotW, plotH, yTicks: yt.ticks, yStep: yt.step, xTicks: xt.ticks, xStep: xt.step, xPos, yPos });
     s += titleAndLegend(o, f.W, f.titleY, f.legendY, d.series);
+    s += subFigureLabel(o, plotL, plotT);
     return { svg: svgWrap(o, s), fitSumm };
   }
 
@@ -526,8 +796,10 @@ Q×f, 825, 16700`
     });
     s += drawAxes(o, { plotL, plotT, plotW, plotH, yTicks: yt.ticks, yStep: yt.step, xTicks: d.groups.map((_, i) => catCenter(i)), xTickLabels: d.groups.map((g) => g.name), xStep: 1, yPos });
     s += titleAndLegend(o, f.W, f.titleY, f.legendY, seriesList);
+    s += subFigureLabel(o, plotL, plotT);
     return { svg: svgWrap(o, s) };
   }
+
 
   /* ---- main update ---- */
   function renderSeriesColors(series) {
@@ -536,11 +808,11 @@ Q×f, 825, 16700`
       return `<span class="sc"><input type="color" value="${c}" data-name="${esc(s.name)}" /><span>${esc(s.name)}</span></span>`;
     }).join("");
     seriesColorsEl.querySelectorAll('input[type="color"]').forEach((inp) => {
-      inp.addEventListener("input", () => { seriesColors[inp.dataset.name] = inp.value; update(); });
+      inp.addEventListener("input", () => { seriesColors[inp.dataset.name] = inp.value; debouncedUpdate(); });
     });
   }
 
-  function update() {
+  function doUpdate() {
     const o = readOpts();
     const parsed = parseData(dataEl.value, currentType);
     if (parsed.error) {
@@ -559,18 +831,32 @@ Q×f, 825, 16700`
 
     let svg, fitSumm = [];
     if (currentType === "bar") svg = renderBar(parsed, o);
+    else if (currentType === "hist") svg = renderHist(parsed, o);
     else if (currentType === "box") { const r = renderBox(parsed, o); if (r.error) { statusEl.className = "status err"; statusEl.textContent = "⚠ " + r.error; return; } svg = r.svg; }
     else { const r = renderLine(parsed, o, currentType === "scatter"); svg = r.svg; fitSumm = r.fitSumm; }
+
+    // 英文投稿模式：替换中文标签
+    if (o.engMode) {
+      svg = toEnglish(svg);
+    }
 
     previewEl.innerHTML = svg;
     window.__lastSVG = svg;
     window.__W = o.W; window.__H = o.H;
     dimsEl.textContent = `${o.W} × ${o.H} px · ${o.dpi} DPI · ${o.figW}×${o.figH} mm`;
     statusEl.className = "status ok";
-    let msg = `✓ 已渲染 · ${seriesMeta.length} 个系列`;
+    let msg = currentType === "hist"
+      ? `✓ 已渲染 · ${parsed.values.length} 个数据点 · D50 = ${quantile(parsed.values.slice().sort((a, b) => a - b), 0.5).toFixed(3)}`
+      : `✓ 已渲染 · ${seriesMeta.length} 个系列`;
     if (fitSumm.length) msg += ` ｜ 趋势线: ${fitSumm.join("；")}`;
+    if (o.engMode) msg += " ｜ 英文投稿模式已开启";
     statusEl.textContent = msg;
     fitEl.parentElement.style.display = (currentType === "line" || currentType === "scatter") ? "flex" : "none";
+  }
+
+  function debouncedUpdate() {
+    if (updateTimer) clearTimeout(updateTimer);
+    updateTimer = setTimeout(doUpdate, 120);
   }
 
   /* ---- export ---- */
@@ -625,15 +911,15 @@ Q×f, 825, 16700`
       b.classList.add("active");
       currentType = b.dataset.type;
       fmtHint.textContent = HINTS[currentType];
-      if (!dataEl.value.trim() || window.__EXAMPLE_LOADED) {
+      if (!dataEl.value.trim() || window.__exampleLoaded) {
         dataEl.value = EXAMPLES[currentType].text;
-        window.__EXAMPLE_LOADED = true;
+        window.__exampleLoaded = true;
       }
-      update();
+      debouncedUpdate();
     });
   });
 
-  let EXAMPLE_LOADED = false;
+  window.__exampleLoaded = false;
   examplesEl.innerHTML = Object.keys(EXAMPLES).map((k) =>
     `<button data-type="${k}">${EXAMPLES[k].label}</button>`).join("");
   examplesEl.querySelectorAll("button").forEach((b) => {
@@ -641,9 +927,9 @@ Q×f, 825, 16700`
       currentType = b.dataset.type;
       typeSeg.querySelectorAll("button").forEach((x) => x.classList.toggle("active", x.dataset.type === currentType));
       dataEl.value = EXAMPLES[currentType].text;
-      EXAMPLE_LOADED = true;
+      window.__exampleLoaded = true;
       fmtHint.textContent = HINTS[currentType];
-      update();
+      debouncedUpdate();
     });
   });
 
@@ -661,9 +947,9 @@ Q×f, 825, 16700`
         titleEl.value = p.title || "";
         xTitleEl.value = p.xTitle || "";
         yTitleEl.value = p.yTitle || "";
-        EXAMPLE_LOADED = true;
+        window.__exampleLoaded = true;
         fmtHint.textContent = HINTS[currentType];
-        update();
+        debouncedUpdate();
       });
     });
   }
@@ -675,9 +961,9 @@ Q×f, 825, 16700`
     dataEl.value = text;
     if (xTitle != null) xTitleEl.value = xTitle;
     if (yTitle != null) yTitleEl.value = yTitle;
-    EXAMPLE_LOADED = true;
+    window.__exampleLoaded = true;
     fmtHint.textContent = HINTS[currentType];
-    update();
+    debouncedUpdate();
   }
 
   function checkDeepLinks() {
@@ -703,17 +989,19 @@ Q×f, 825, 16700`
   }
 
   /* ---- live updates ---- */
-  [dataEl, titleEl, xTitleEl, yTitleEl, fontEl, dpiEl, figWEl, figHEl].forEach((el) => {
-    el.addEventListener("input", update);
-    el.addEventListener("change", update);
+  // 用户手动编辑数据后视为自有数据，切换图表类型不再覆盖
+  dataEl.addEventListener("input", () => { window.__exampleLoaded = false; });
+  [dataEl, titleEl, xTitleEl, yTitleEl, fontEl, dpiEl, figWEl, figHEl, subLabelEl].forEach((el) => {
+    el.addEventListener("input", debouncedUpdate);
+    el.addEventListener("change", debouncedUpdate);
   });
-  [inwardEl, gridEl, legendEl, fitEl].forEach((el) => el.addEventListener("change", update));
+  [inwardEl, gridEl, legendEl, fitEl, engModeEl].forEach((el) => el.addEventListener("change", debouncedUpdate));
 
   /* ---- init ---- */
   document.getElementById("year").textContent = new Date().getFullYear();
   fmtHint.textContent = HINTS.bar;
   dataEl.value = EXAMPLES.bar.text;
-  EXAMPLE_LOADED = true;
+  window.__exampleLoaded = true;
   checkDeepLinks();
-  if (!window.__lastSVG) update();
+  if (!window.__lastSVG) debouncedUpdate();
 })();

@@ -39,9 +39,13 @@ PER_CATEGORY = 16      # 每个类别最终保留的条数
 PER_SOURCE = 4         # 每个来源在每个类别里最多保留的条数（保证来源多样）
 USER_AGENT = "Mozilla/5.0 (compatible; LWDigestBot/1.0)"
 
+_INSECURE_SSL = os.environ.get("DIGEST_INSECURE_SSL", "").strip().lower() in ("1", "true", "yes")
 SSL_CTX = ssl.create_default_context()
-SSL_CTX.check_hostname = False
-SSL_CTX.verify_mode = ssl.CERT_NONE
+if _INSECURE_SSL:
+    # 仅在显式设置 DIGEST_INSECURE_SSL=1 时关闭校验（个别源证书链异常时应急用）；
+    # 默认保持 TLS 证书校验，避免中间人风险。
+    SSL_CTX.check_hostname = False
+    SSL_CTX.verify_mode = ssl.CERT_NONE
 
 # ---------------------------------------------------------------------------
 # 信息源（想增删源，直接改这里；type 支持 rss / atom / hn / arxiv / xueqiu）
@@ -173,11 +177,12 @@ def parse_date(s):
     except Exception:
         pass
     s2 = s.replace("Z", "+00:00")
-    for fmt in ("%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%dT%H:%M:%S.%f%z",
-                "%Y-%m-%d %H:%M:%S", "%Y-%m-%d"):
+    try:
+        return datetime.fromisoformat(s2)
+    except Exception:
+        pass
+    for fmt in ("%Y-%m-%d %H:%M:%S", "%Y-%m-%d"):
         try:
-            if "T" in s2:
-                return datetime.fromisoformat(s2)
             return datetime.strptime(s, fmt).replace(tzinfo=timezone.utc)
         except Exception:
             continue

@@ -15,11 +15,28 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="AI 粒径分析 · Particle Size Analyzer" />
   <meta name="twitter:description" content="浏览器端基于 OpenCV.js 的 SEM 颗粒粒径分析工具：标尺标定、分水岭分割、多色标注。" />
+  <meta name="theme-color" content="#0b0e13" />
+  <link rel="canonical" href="https://www.l-w.sryze.cc/ai-particle-size-analyzer/" />
   <link rel="icon" href="../favicon.svg" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"AI 粒径分析","url":"https://www.l-w.sryze.cc/ai-particle-size-analyzer/","applicationCategory":"ScientificApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"description":"浏览器端基于 OpenCV.js 的 SEM 颗粒粒径分析工具：标尺标定、分水岭分割，输出 D10/D50/D90 与分布图，原图不上传。"}
+  </script>
   <link rel="stylesheet" href="styles.css" />
   <!-- OpenCV.js (本地 vendor 副本，wasm 已内联，无需联网/CDN) -->
+  <script>
+    // OpenCV 引擎加载状态：弱网/失败时给出可见反馈，避免"没反应"的错觉
+    function __onCvLoaded() {
+      window.__cvLoaded = true;
+      var b = document.getElementById("cvBanner");
+      if (b) { b.classList.add("ok"); b.innerHTML = "OpenCV 引擎已就绪"; setTimeout(function () { b.hidden = true; }, 1200); }
+    }
+    function __onCvError() {
+      var b = document.getElementById("cvBanner");
+      if (b) { b.className = "cv-banner err"; b.innerHTML = 'OpenCV 加载失败，请检查网络后 <a href="#" onclick="location.reload();return false;" style="color:inherit;text-decoration:underline">刷新重试</a>'; }
+    }
+  </script>
   <script async src="vendor/opencv.js"
-          onload="window.__cvLoaded = true"></script>
+          onload="__onCvLoaded()" onerror="__onCvError()"></script>
 </head>
 <body>
   <header class="topbar">
@@ -30,13 +47,17 @@
         <p class="tagline">Particle Size Analyzer · 浏览器端智能颗粒测量</p>
       </div>
     </div>
-    <nav class="topnav">
+    <nav class="topnav" id="topnav">
       <a href="../" class="navlink">首页</a>
       <a href="../digest/" class="navlink">简报</a>
       <a href="#how" class="navlink">原理</a>
       <a href="#faq" class="navlink">常见问题</a>
     </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="topnav">
+      <span></span><span></span>
+    </button>
   </header>
+  <div id="cvBanner" class="cv-banner" role="status" aria-live="polite">正在加载 OpenCV 引擎…（本地约 12.7 MB，gzip 后约 3–4 MB，就绪后自动隐藏）</div>
 
   <main class="layout">
     <!-- 左侧：上传 + 参数 -->
@@ -316,6 +337,26 @@
     <span>AI 粒径分析 · 纯前端实现，借鉴 Microsphere Size Analyzer / ParticleAnalyzer 思路</span>
   </footer>
 
+  <script>
+    var nav = document.querySelector(".topbar");
+    var toggle = document.getElementById("navToggle");
+    var links = document.getElementById("topnav");
+    if (nav && toggle && links) {
+      function setOpen(open) {
+        nav.classList.toggle("is-open", open);
+        toggle.setAttribute("aria-expanded", String(open));
+        toggle.setAttribute("aria-label", open ? "关闭菜单" : "打开菜单");
+        document.body.style.overflow = open ? "hidden" : "";
+      }
+      toggle.addEventListener("click", function () {
+        setOpen(!nav.classList.contains("is-open"));
+      });
+      links.querySelectorAll("a").forEach(function (a) {
+        a.addEventListener("click", function () { setOpen(false); });
+      });
+    }
+  </script>
+  <script src="enhance-inputs.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

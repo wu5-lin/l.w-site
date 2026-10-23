@@ -1253,7 +1253,7 @@ function renderHistogram(canvas, o) {
   const yMax = Math.max(maxFreq, curve ? maxCurve : 0) * 1.12;
 
   // 坐标轴线 (L 形)
-  ctx.strokeStyle = "#243049";
+  ctx.strokeStyle = "#2a3340";
   ctx.lineWidth = 1;
   ctx.beginPath();
   ctx.moveTo(padL, padT); ctx.lineTo(padL, padT + plotH); ctx.lineTo(padL + plotW, padT + plotH);
@@ -1266,8 +1266,8 @@ function renderHistogram(canvas, o) {
     const x = padL + i * bw;
     const y = padT + plotH - h;
     const grad = ctx.createLinearGradient(0, y, 0, padT + plotH);
-    grad.addColorStop(0, "#38e1ff");
-    grad.addColorStop(1, "#a78bfa");
+    grad.addColorStop(0, "#4dbbd5");
+    grad.addColorStop(1, "#7c8fc0");
     ctx.fillStyle = grad;
     ctx.fillRect(x + 1, y, bw - 2, h);
   }
@@ -1286,9 +1286,9 @@ function renderHistogram(canvas, o) {
   }
 
   // 刻度 + 标签 (Arial, 内向刻度)
-  ctx.fillStyle = "#8b97ad";
+  ctx.fillStyle = "#b0b9c6";
   ctx.font = `${11 * fontScale}px Arial, sans-serif`;
-  ctx.strokeStyle = "#3a4760";
+  ctx.strokeStyle = "#38414f";
   ctx.textAlign = "center"; ctx.textBaseline = "top";
   for (let i = 0; i <= 4; i++) {
     const val = min + (range * i) / 4;
@@ -1329,8 +1329,8 @@ function renderHistogram(canvas, o) {
     ctx.fillText(label, x, padT + 10 * fontScale);
   };
   mark(marks.d10, "#4ade80", "D10");
-  mark(marks.d50, "#fbbf24", "D50");
-  mark(marks.d90, "#fb7185", "D90");
+  mark(marks.d50, "#d7a24a", "D50");
+  mark(marks.d90, "#d4736f", "D90");
 
   // 图例
   if (curve) {
@@ -1670,11 +1670,11 @@ async function runPreview() {
       ctx.fillStyle = "rgba(10,13,20,0.55)";
       ctx.fillRect(0, 0, dstCanvas.width, dstCanvas.height);
       const fs = Math.max(14, Math.floor(dstCanvas.width / 30));
-      ctx.fillStyle = "#fb7185";
+      ctx.fillStyle = "#d4736f";
       ctx.font = `${fs}px Arial, sans-serif`;
       ctx.textAlign = "center"; ctx.textBaseline = "middle";
       ctx.fillText("未检测到颗粒", dstCanvas.width / 2, dstCanvas.height / 2 - fs * 0.6);
-      ctx.fillStyle = "#8b97ad";
+      ctx.fillStyle = "#b0b9c6";
       ctx.font = `${Math.max(12, Math.floor(fs * 0.75))}px Arial, sans-serif`;
       ctx.fillText("请调低 最小颗粒面积 / 最小圆度，或切换颗粒明暗", dstCanvas.width / 2, dstCanvas.height / 2 + fs * 0.8);
       $("previewBadge").textContent = "未检测到";
@@ -1725,10 +1725,10 @@ function drawScaleOverlay() {
     ctx.rect(rect.x, rect.y, rect.w, rect.h);
     ctx.fill("evenodd");
     // 当前子图边框
-    ctx.strokeStyle = "#38e1ff";
+    ctx.strokeStyle = "#4dbbd5";
     ctx.setLineDash([]);
     ctx.strokeRect(rect.x, rect.y, rect.w, rect.h);
-    ctx.fillStyle = "#38e1ff";
+    ctx.fillStyle = "#4dbbd5";
     ctx.font = `${Math.max(14, Math.round(ov.width / 45))}px Arial, sans-serif`;
     ctx.textAlign = "left"; ctx.textBaseline = "top";
     ctx.fillText(`子图 ${PANEL_NAMES[panelIndex] || panelIndex + 1}`, rect.x + 8, rect.y + 8);
@@ -1746,7 +1746,7 @@ function drawScaleOverlay() {
     }
     // 标尺白板位置
     if (rect.bar) {
-      ctx.strokeStyle = "#fbbf24";
+      ctx.strokeStyle = "#d7a24a";
       ctx.lineWidth = lw;
       ctx.beginPath();
       ctx.moveTo(rect.bar.leftAbs, rect.bar.rowAbs);

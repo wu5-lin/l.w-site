@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.bunny.net; font-src 'self' https://fonts.bunny.net; script-src 'self'; connect-src 'self'; form-action 'self'" />
   <title>LW · 智能实验工具</title>
   <meta name="description" content="LW 聚焦材料研究与实验自动化，提供 AI 粒径分析、电镜图像分割与科研作图工具。" />
   <meta name="keywords" content="智能实验工具, AI 粒径分析, 电镜图像分割, 科研图表生成器, 微波介电陶瓷, P-V-L 化学键参数, SEM 颗粒分析, 科研作图, LW" />
@@ -15,10 +16,14 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="LW · 智能实验工具" />
   <meta name="twitter:description" content="LW 聚焦材料研究与实验自动化，提供 AI 粒径分析、电镜图像分割与科研作图工具。" />
-  <meta name="theme-color" content="#07070a" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2307070a'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='14' font-family='Georgia,serif' fill='%2322d3ee'%3ELW%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#0b0e13" />
+  <link rel="canonical" href="https://www.l-w.sryze.cc/" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b0e13'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='14' font-family='Georgia,serif' fill='%234dbbd5'%3ELW%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
-  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600|noto-serif-sc:400,500,600" rel="stylesheet" />
+  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600|noto-serif-sc:400,500,600&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.l-w.sryze.cc/#website","url":"https://www.l-w.sryze.cc/","name":"LW · 智能实验工具","description":"LW 聚焦材料研究与实验自动化，提供 AI 粒径分析、电镜图像分割与科研作图工具。","inLanguage":"zh-CN"},{"@type":"ItemList","itemListElement":[{"@type":"SoftwareApplication","name":"AI 粒径分析","url":"https://www.l-w.sryze.cc/ai-particle-size-analyzer/","applicationCategory":"ScientificApplication","operatingSystem":"Web"},{"@type":"SoftwareApplication","name":"科研图表生成器","url":"https://www.l-w.sryze.cc/research-charts/","applicationCategory":"ScientificApplication","operatingSystem":"Web"},{"@type":"WebApplication","name":"每日简报","url":"https://www.l-w.sryze.cc/digest/","applicationCategory":"NewsApplication","operatingSystem":"Web"}]}]}
+  </script>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -78,12 +83,7 @@
           <a href="ai-particle-size-analyzer/" class="product-link">打开工具 →</a>
         </article>
         <article class="product-card reveal">
-          <div class="product-icon" aria-hidden="true">◉</div>
-          <h3 class="product-title">LIDA · 电镜颗粒分析</h3>
-          <p class="product-desc">微信小程序形态的云函数 analyzeParticle，基于分水岭分割实现 SEM 图像的实时粒径反馈，适合现场快速测量。</p>
-          <a href="lida-miniprogram/" class="product-link">打开小程序 →</a>
-        </article>
-        <article class="product-card reveal">
+
           <div class="product-icon" aria-hidden="true">▣</div>
           <h3 class="product-title">科研图表生成器</h3>
           <p class="product-desc">浏览器内输入数据，实时生成符合 SCI 规范的出版级图表（分组柱状图 / 折线 / 散点），可下载 SVG 与 300 DPI PNG。</p>
@@ -143,7 +143,7 @@
         <h2 class="section-title">前沿资讯</h2>
         <p class="section-desc">每日自动整理的科技与 AI 前沿动态 · <span id="news-updated">加载中…</span></p>
       </div>
-      <div class="news-list" id="news">
+      <div class="news-list" id="newsList">
         <article class="news-item">
           <div class="news-meta">
             <time class="news-date">—</time>
@@ -167,8 +167,8 @@
         <p class="contact-lead">有合作、定制需求或问题，欢迎来信。</p>
         <div class="contact-links">
           <a href="mailto:hello@l-w.sryze.cc" class="contact-link">hello@l-w.sryze.cc</a>
-          <a href="#" class="contact-link">GitHub</a>
-          <a href="#" class="contact-link">微信</a>
+          <span class="contact-link is-disabled" aria-disabled="true" title="链接待补充，可通过邮箱联系">GitHub</span>
+          <span class="contact-link is-disabled" aria-disabled="true" title="链接待补充，可通过邮箱联系">微信</span>
         </div>
       </div>
     </section>

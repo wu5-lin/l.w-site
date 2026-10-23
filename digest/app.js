@@ -17,6 +17,12 @@
       .replace(/"/g, "&quot;");
   }
 
+  // 仅允许 http(s) 协议，避免 javascript:/data: 等注入
+  function safeUrl(u) {
+    var s = String(u == null ? "" : u).trim();
+    return /^https?:\/\//i.test(s) ? s : "#";
+  }
+
   function regionLabel(r) { return r === "cn" ? "国内" : (r === "en" ? "国际" : ""); }
 
   function allItems() {
@@ -72,8 +78,8 @@
       var catClass = "cat-" + it.category;
       var rLabel = regionLabel(it.region);
       var rClass = it.region === "cn" ? "cn" : (it.region === "en" ? "en" : "");
-      var url = it.url || "#";
-      var rel = (it.region === "en") ? ' target="_blank" rel="noopener"' : "";
+      var url = safeUrl(it.url);
+      var rel = (url === "#") ? "" : ' target="_blank" rel="noopener"';
       html +=
         '<article class="dcard">' +
           '<div class="dcard-top">' +
