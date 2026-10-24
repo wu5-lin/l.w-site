@@ -49,6 +49,30 @@
     });
   }
 
+function pad(n) { return String(n).padStart(2, "0"); }
+
+/* "2026-10-23 05:49 UTC" → "10 月 23 日 13:49 · 22 小时前"（北京时间） */
+function formatUpdated(raw) {
+  var m = /^(\d{4})-(\d{2})-(\d{2})[ T](\d{2}):(\d{2})\s*UTC$/i.exec(String(raw || "").trim());
+  if (!m) return raw || "";
+  var utc = Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5]);
+  var bj = new Date(utc + 8 * 3600 * 1000);
+  var label = (bj.getUTCMonth() + 1) + " 月 " + bj.getUTCDate() + " 日 " +
+    pad(bj.getUTCHours()) + ":" + pad(bj.getUTCMinutes());
+  var diff = Date.now() - utc;
+  var rel;
+  if (diff < 3600 * 1000) rel = "刚刚";
+  else if (diff < 24 * 3600 * 1000) rel = Math.floor(diff / 3600000) + " 小时前";
+  else if (diff < 48 * 3600 * 1000) rel = "昨天";
+  else rel = Math.floor(diff / 86400000) + " 天前";
+  return label + " · " + rel;
+}
+
+function dateAttrs(d) {
+  var s = String(d || "");
+  return /^\d{4}-\d{2}-\d{2}$/.test(s) ? ' datetime="' + esc(s) + '"' : "";
+}
+
   function render() {
     var grid = $("grid");
     var empty = $("empty");
@@ -61,7 +85,7 @@
     }
 
     if (DATA.updated) {
-      meta.textContent = "更新于 " + DATA.updated +
+      meta.textContent = "更新于 " + formatUpdated(DATA.updated) +
         " · 共 " + allItems().length + " 条 · 当前筛选 " + items.length + " 条";
     }
 
@@ -88,7 +112,7 @@
           '</div>' +
           '<h3><a href="' + esc(url) + '"' + rel + '>' + esc(it.title) + '</a></h3>' +
           (it.summary ? '<p class="sum">' + esc(it.summary) + '</p>' : '') +
-          '<div class="date">' + esc(it.date) + '</div>' +
+          '<div class="date"><time' + dateAttrs(it.date) + '>' + esc(it.date) + '</time></div>' +
         '</article>';
     }
     grid.innerHTML = html;
@@ -110,7 +134,7 @@
   }
 
   function load() {
-    fetch(DATA_URL, { cache: "no-store" })
+    fetch(DATA_URL, { cache: "default" })
       .then(function (r) {
         if (!r.ok) throw new Error("HTTP " + r.status);
         return r.json();

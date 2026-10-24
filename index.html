@@ -3,26 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.bunny.net; font-src 'self' https://fonts.bunny.net; script-src 'self'; connect-src 'self'; form-action 'self'" />
-  <title>LW · 智能实验工具</title>
-  <meta name="description" content="LW 聚焦材料研究与实验自动化，提供 AI 粒径分析、电镜图像分割与科研作图工具。" />
-  <meta name="keywords" content="智能实验工具, AI 粒径分析, 电镜图像分割, 科研图表生成器, 微波介电陶瓷, P-V-L 化学键参数, SEM 颗粒分析, 科研作图, LW" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self'; connect-src 'self'; form-action 'self'" />
+  <title>SEM 颗粒粒径分析 · 科研图表生成器 | LW 智能实验工具</title>
+  <meta name="description" content="LW 聚焦材料研究与实验自动化，提供 SEM 颗粒粒径分析、电镜图像分割与科研作图工具。" />
+  <meta name="keywords" content="智能实验工具, SEM 粒径分析, 颗粒粒径分析, 电镜图像分割, 科研图表生成器, 微波介电陶瓷, P-V-L 化学键参数, SEM 颗粒分析, 科研作图, LW" />
+  <meta name="author" content="LW" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="LW · 智能实验工具" />
-  <meta property="og:title" content="LW · 智能实验工具" />
-  <meta property="og:description" content="LW 聚焦材料研究与实验自动化，提供 AI 粒径分析、电镜图像分割与科研作图工具。" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:title" content="LW 智能实验工具 · SEM 颗粒粒径分析 / 科研图表生成器" />
+  <meta property="og:description" content="LW 聚焦材料研究与实验自动化，提供 SEM 颗粒粒径分析、电镜图像分割与科研作图工具。" />
   <meta property="og:url" content="https://www.l-w.sryze.cc/" />
   <meta property="og:image" content="https://www.l-w.sryze.cc/og-image.png" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="LW · 智能实验工具" />
-  <meta name="twitter:description" content="LW 聚焦材料研究与实验自动化，提供 AI 粒径分析、电镜图像分割与科研作图工具。" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="LW 智能实验工具：SEM 颗粒粒径分析、科研图表生成器与每日简报" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LW 智能实验工具 · SEM 颗粒粒径分析 / 科研图表生成器" />
+  <meta name="twitter:description" content="浏览器端 SEM 颗粒粒径分析、科研图表生成器与每日简报。" />
+  <meta name="twitter:image" content="https://www.l-w.sryze.cc/og-image.png" />
   <meta name="theme-color" content="#0b0e13" />
   <link rel="canonical" href="https://www.l-w.sryze.cc/" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b0e13'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-size='14' font-family='Georgia,serif' fill='%234dbbd5'%3ELW%3C/text%3E%3C/svg%3E" />
-  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
-  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600|noto-serif-sc:400,500,600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="alternate" type="application/rss+xml" title="LW 每日简报" href="feed.xml" />
+  <link rel="preload" href="fonts/noto-serif-sc-subset.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="boot.js"></script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.l-w.sryze.cc/#website","url":"https://www.l-w.sryze.cc/","name":"LW · 智能实验工具","description":"LW 聚焦材料研究与实验自动化，提供 AI 粒径分析、电镜图像分割与科研作图工具。","inLanguage":"zh-CN"},{"@type":"ItemList","itemListElement":[{"@type":"SoftwareApplication","name":"AI 粒径分析","url":"https://www.l-w.sryze.cc/ai-particle-size-analyzer/","applicationCategory":"ScientificApplication","operatingSystem":"Web"},{"@type":"SoftwareApplication","name":"科研图表生成器","url":"https://www.l-w.sryze.cc/research-charts/","applicationCategory":"ScientificApplication","operatingSystem":"Web"},{"@type":"WebApplication","name":"每日简报","url":"https://www.l-w.sryze.cc/digest/","applicationCategory":"NewsApplication","operatingSystem":"Web"}]}]}
+  {"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.l-w.sryze.cc/#org","name":"LW 智能实验工具","url":"https://www.l-w.sryze.cc/","description":"聚焦材料研究与实验自动化的浏览器端科研工具。"},{"@type":"WebSite","@id":"https://www.l-w.sryze.cc/#website","url":"https://www.l-w.sryze.cc/","name":"LW · 智能实验工具","description":"LW 聚焦材料研究与实验自动化，提供 SEM 颗粒粒径分析、电镜图像分割与科研作图工具。","inLanguage":"zh-CN","publisher":{"@id":"https://www.l-w.sryze.cc/#org"}},{"@type":"ItemList","itemListElement":[{"@type":"SoftwareApplication","name":"SEM 颗粒粒径分析","url":"https://www.l-w.sryze.cc/ai-particle-size-analyzer/","applicationCategory":"ScientificApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}},{"@type":"SoftwareApplication","name":"科研图表生成器","url":"https://www.l-w.sryze.cc/research-charts/","applicationCategory":"ScientificApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"}},{"@type":"WebApplication","name":"每日简报","url":"https://www.l-w.sryze.cc/digest/","applicationCategory":"NewsApplication","operatingSystem":"Web"}]}]}
   </script>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -45,6 +54,7 @@
       </button>
       <nav class="nav-links" id="navLinks">
         <a href="#products">产品</a>
+        <a href="#cases">案例</a>
         <a href="#about">关于</a>
         <a href="#news">资讯</a>
         <a href="digest/">简报</a>
@@ -55,15 +65,15 @@
 
   <main>
     <section id="home" class="hero">
-      <p class="hero-preamble reveal">l-w.sryze.cc</p>
-      <h1 class="hero-title reveal">
+      <p class="hero-preamble">l-w.sryze.cc</p>
+      <h1 class="hero-title">
         把实验里的重复工作<br />
         <span class="gradient-text">变成可复用的工具</span>
       </h1>
-      <p class="hero-lead reveal">
+      <p class="hero-lead">
         聚焦材料研究与显微图像分析，用浏览器端 AI 和自动化脚本，让粒径统计、电镜分割、数据作图更快、更稳定、更易协作。
       </p>
-      <div class="hero-actions reveal">
+      <div class="hero-actions">
         <a href="#products" class="btn btn-primary">浏览产品</a>
         <a href="#contact" class="btn btn-ghost">联系我们</a>
       </div>
@@ -78,7 +88,7 @@
       <div class="products-grid">
         <article class="product-card reveal">
           <div class="product-icon" aria-hidden="true">◎</div>
-          <h3 class="product-title">AI 粒径分析</h3>
+          <h3 class="product-title">SEM 颗粒粒径分析</h3>
           <p class="product-desc">浏览器端直接分析 SEM / 显微镜颗粒图像。OpenCV.js 本地分割，输出等效直径、D10 / D50 / D90 与粒径分布图，原图不上传。</p>
           <a href="ai-particle-size-analyzer/" class="product-link">打开工具 →</a>
         </article>
@@ -131,7 +141,7 @@
           <div class="case-tag">SEM 颗粒统计</div>
           <h3 class="case-title">电镜颗粒粒径分布一键统计</h3>
           <p class="case-text">上传 SEM / 显微图像，标尺校准后自动分割、分水岭分离团聚颗粒，输出等效直径、D10/D50/D90 与对数正态拟合分布，并把分布一键送入图表生成器出图。</p>
-          <a href="ai-particle-size-analyzer/" class="case-link">打开粒径分析工具 →</a>
+          <a href="ai-particle-size-analyzer/" class="case-link">打开 SEM 粒径分析 →</a>
         </article>
       </div>
       <p class="cases-foot reveal">想展示你的真实成果图 / 数据？把数据或图发我，即可生成带你署名的专属案例卡片。</p>
@@ -143,14 +153,14 @@
         <h2 class="section-title">前沿资讯</h2>
         <p class="section-desc">每日自动整理的科技与 AI 前沿动态 · <span id="news-updated">加载中…</span></p>
       </div>
-      <div class="news-list" id="newsList">
+      <div class="news-list" id="newsList" aria-live="polite">
         <article class="news-item">
           <div class="news-meta">
             <time class="news-date">—</time>
             <span class="tag">前沿</span>
           </div>
           <h3 class="news-title">AI 资讯正在加载…</h3>
-          <p class="news-sum">若长时间停留在此，说明 digest.json 未能加载。</p>
+          <p class="news-sum">若长时间停留在此，说明 news-home.json / digest.json 未能加载。</p>
         </article>
       </div>
       <button class="news-more" id="newsMore" hidden>显示全部</button>
@@ -167,8 +177,7 @@
         <p class="contact-lead">有合作、定制需求或问题，欢迎来信。</p>
         <div class="contact-links">
           <a href="mailto:hello@l-w.sryze.cc" class="contact-link">hello@l-w.sryze.cc</a>
-          <span class="contact-link is-disabled" aria-disabled="true" title="链接待补充，可通过邮箱联系">GitHub</span>
-          <span class="contact-link is-disabled" aria-disabled="true" title="链接待补充，可通过邮箱联系">微信</span>
+          <a href="feed.xml" class="contact-link">订阅简报 RSS</a>
         </div>
       </div>
     </section>
@@ -181,6 +190,7 @@
     </div>
   </footer>
 
+  <script src="nav.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

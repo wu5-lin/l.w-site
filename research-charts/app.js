@@ -954,7 +954,7 @@ mask_index, area, equivalent_diameter_area, solidity
     });
   }
 
-  /* ---- 来自 AI 粒径分析 的互通数据 ---- */
+  /* ---- 来自 SEM 颗粒粒径分析 的互通数据 ---- */
   function applySeed(text, type, xTitle, yTitle) {
     currentType = type || "line";
     typeSeg.querySelectorAll("button").forEach((x) => x.classList.toggle("active", x.dataset.type === currentType));

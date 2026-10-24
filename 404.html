@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self'; connect-src 'self'; form-action 'self'" />
+  <title>页面未找到 · 404 | LW 智能实验工具</title>
+  <meta name="description" content="你访问的页面不存在，返回 LW 智能实验工具首页继续浏览。" />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#0b0e13" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="preload" href="/fonts/noto-serif-sc-subset.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="/boot.js"></script>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <div class="ambient" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">LW</span>
+        <span class="logo-text">智能实验工具</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="/#products">产品</a>
+        <a href="/#cases">案例</a>
+        <a href="/#news">资讯</a>
+        <a href="/digest/">简报</a>
+        <a href="/#contact" class="nav-cta">联系我们</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="error-wrap">
+      <div>
+        <p class="error-kicker">Lost in the lab</p>
+        <p class="error-code" aria-hidden="true">404</p>
+        <h1 class="error-title">这一页不在实验记录里</h1>
+        <p class="error-lead">链接可能已经移动、改名，或者从未存在过。回到首页，或者直接打开下面这些正在使用的工具。</p>
+        <div class="error-links">
+          <a href="/" class="btn btn-primary">返回首页</a>
+          <a href="/#products" class="btn btn-ghost">浏览工具</a>
+        </div>
+        <nav class="error-picks" aria-label="常用页面">
+          <a class="error-pick" href="/ai-particle-size-analyzer/">
+            <span>Particle Size</span>
+            <strong>SEM 颗粒粒径分析</strong>
+          </a>
+          <a class="error-pick" href="/research-charts/">
+            <span>Scientific Figures</span>
+            <strong>科研图表生成器</strong>
+          </a>
+          <a class="error-pick" href="/digest/">
+            <span>Daily Digest</span>
+            <strong>每日简报</strong>
+          </a>
+          <a class="error-pick" href="/feed.xml">
+            <span>RSS</span>
+            <strong>订阅简报更新</strong>
+          </a>
+        </nav>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© 2026 LW. 保留所有权利。</p>
+      <p class="footer-domain">l-w.sryze.cc</p>
+    </div>
+  </footer>
+
+  <script src="/nav.js"></script>
+</body>
+</html>

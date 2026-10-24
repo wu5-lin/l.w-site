@@ -1,5 +1,5 @@
 /* ============================================================
- * AI 粒径分析 —— 浏览器端核心逻辑 (OpenCV.js / wasm)
+ * SEM 颗粒粒径分析 —— 浏览器端核心逻辑 (OpenCV.js / wasm)
  * 流程: 灰度 -> 阈值分割 -> 形态学去噪 -> 连通域 -> 粒径统计
  * 图像全程在本地处理，不上传服务器。
  * 借鉴思路: Microsphere Size Analyzer (传统CV), ParticleAnalyzer (统计指标)
@@ -1383,7 +1383,7 @@ function exportCsv() {
   const { diameters, unit, rows, stats, fit, isGrain } = lastResults;
   const noun = isGrain ? "晶粒" : "颗粒";
   const fmt = (v) => (v >= 100 ? v.toFixed(1) : v.toFixed(3));
-  let csv = "AI 粒径分析结果\n";
+  let csv = "SEM 颗粒粒径分析结果\n";
   csv += "指标,值\n";
   csv += `${noun}数,${stats.n}\n`;
   csv += `平均直径(${unit}),${fmt(stats.mean)}\n`;
@@ -1545,7 +1545,7 @@ function exportReport() {
   const w = window.open("", "_blank");
   if (!w) { alert("请允许弹出窗口以生成报告。"); return; }
   w.document.write(`<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"/>
-<title>粒径分析报告</title>
+<title>SEM 颗粒粒径分析报告</title>
 <style>
   * { box-sizing: border-box; }
   body { font-family: Arial, "Microsoft YaHei", sans-serif; color:#111; margin:32px; }
@@ -1564,7 +1564,7 @@ function exportReport() {
   .btn { margin-top:10px; padding:8px 16px; border:1px solid #0a7; background:#0a7; color:#fff; border-radius:8px; cursor:pointer; }
 </style></head>
 <body>
-  <h1>${isGrain ? "AI 晶粒尺寸分析报告" : "AI 粒径分析报告"}</h1>
+  <h1>${isGrain ? "SEM 晶粒尺寸分析报告" : "SEM 颗粒粒径分析报告"}</h1>
   <div class="sub">生成时间：${now} ｜ ${noun}数：${stats.n} ｜ 单位：${unit} ｜ 分割方式：${isGrain ? "晶粒模式(梯度晶界+分水岭)" : "阈值分割"} ｜ 标尺校准：${p.calibrated ? "已标定" : "未标定(像素)"} ｜ 分析分辨率：${srcOrigSize ? srcOrigSize.w + "×" + srcOrigSize.h + (srcScale < 0.999 ? "（已降采样至 " + (srcScale * 100).toFixed(0) + "%）" : "（未降采样）") : "–"}</div>
   <div class="card">
     <p class="sec-title">统计汇总</p>
@@ -1619,7 +1619,7 @@ function sendToChart() {
     if (b < 0) b = 0;
     counts[b]++;
   }
-  let text = `# 粒径分布（来自 AI 粒径分析，单位 ${unit}）\n`;
+  let text = `# 粒径分布（来自 SEM 颗粒粒径分析，单位 ${unit}）\n`;
   text += `Distribution, Diameter(${unit}), Frequency(%)\n`;
   for (let i = 0; i < bins; i++) {
     const f = (counts[i] / n) * 100;

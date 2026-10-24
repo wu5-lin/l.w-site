@@ -3,26 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.bunny.net; font-src 'self' https://fonts.bunny.net; script-src 'self'; connect-src 'self'; form-action 'self'" />
-  <title>科研图表生成器 · LW</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self'; connect-src 'self'; form-action 'self'" />
+  <title>科研图表生成器 · SCI 分组柱状图 / 折线 / 散点 | LW</title>
   <meta name="description" content="浏览器内输入数据，生成符合 SCI 期刊规范的出版级图表（分组柱状图 / 折线 / 散点），可下载 SVG 与 300 DPI PNG。" />
   <meta name="keywords" content="科研图表生成器, SCI 图表, 分组柱状图, 折线图, 散点图, 科研作图, P-V-L, 微波介电陶瓷, 出版级配图" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="LW · 智能实验工具" />
-  <meta property="og:title" content="科研图表生成器 · LW" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:title" content="科研图表生成器 · SCI 分组柱状图 / 折线 / 散点 | LW" />
   <meta property="og:description" content="浏览器内输入数据，生成符合 SCI 期刊规范的出版级图表（分组柱状图 / 折线 / 散点），可下载 SVG 与 300 DPI PNG。" />
   <meta property="og:url" content="https://www.l-w.sryze.cc/research-charts/" />
-  <meta property="og:image" content="https://www.l-w.sryze.cc/og-image.png" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="科研图表生成器 · LW" />
+  <meta property="og:image" content="https://www.l-w.sryze.cc/og-charts.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="LW 科研图表生成器：分组柱状图、折线图与散点图" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="科研图表生成器 · SCI 分组柱状图 / 折线 / 散点 | LW" />
   <meta name="twitter:description" content="浏览器内输入数据，生成符合 SCI 期刊规范的出版级图表，可下载 SVG 与 300 DPI PNG。" />
+  <meta name="twitter:image" content="https://www.l-w.sryze.cc/og-charts.png" />
   <meta name="theme-color" content="#0b0e13" />
   <link rel="canonical" href="https://www.l-w.sryze.cc/research-charts/" />
-  <link rel="icon" href="../favicon.svg" />
-  <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
-  <link href="https://fonts.bunny.net/css?family=inter:300,400,500,600|noto-serif-sc:400,500,600&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="alternate" type="application/rss+xml" title="LW 每日简报" href="../feed.xml" />
+  <link rel="preload" href="../fonts/noto-serif-sc-subset.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="../fonts/inter-latin-400.woff2" as="font" type="font/woff2" crossorigin />
+  <script src="../boot.js"></script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"科研图表生成器","url":"https://www.l-w.sryze.cc/research-charts/","applicationCategory":"ScientificApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"description":"浏览器内生成符合 SCI 期刊规范的出版级图表（分组柱状图/折线/散点/箱线/直方图），支持 SVG 与 300 DPI PNG 导出。"}
+  {"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"科研图表生成器","url":"https://www.l-w.sryze.cc/research-charts/","applicationCategory":"ScientificApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"description":"浏览器内生成符合 SCI 期刊规范的出版级图表（分组柱状图/折线/散点/箱线/直方图），支持 SVG 与 300 DPI PNG 导出。"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://www.l-w.sryze.cc/"},{"@type":"ListItem","position":2,"name":"科研图表生成器","item":"https://www.l-w.sryze.cc/research-charts/"}]}]}
   </script>
   <link rel="stylesheet" href="../styles.css" />
   <style>
@@ -132,6 +140,7 @@
       </button>
       <nav class="nav-links" id="navLinks">
         <a href="../#products">产品</a>
+        <a href="../#cases">案例</a>
         <a href="../#news">资讯</a>
         <a href="../digest/">简报</a>
         <a href="../#contact" class="nav-cta">联系我们</a>
@@ -269,7 +278,7 @@
       <div class="related-grid">
         <article class="product-card">
           <div class="product-icon" aria-hidden="true">◎</div>
-          <h3 class="product-title">AI 粒径分析（网页版）</h3>
+          <h3 class="product-title">SEM 颗粒粒径分析（网页版）</h3>
           <p class="product-desc">浏览器端 OpenCV.js 本地分割，输出 D10/D50/D90 与粒径分布图。</p>
           <a href="../ai-particle-size-analyzer/" class="product-link">打开工具 →</a>
         </article>

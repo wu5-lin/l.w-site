@@ -14,7 +14,61 @@ permissions:
 jobs:
   watchdog:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Refresh digest when stale
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          decision=$(python3 - <<'PY'
+          import datetime
+          import json
+          import sys
+
+          now = datetime.datetime.now(datetime.timezone.utc)
+          try:
+              data = json.load(open("digest.json", encoding="utf-8"))
+              ts = datetime.datetime.strptime(data["updated"], "%Y-%m-%d %H:%M UTC")
+              ts = ts.replace(tzinfo=datetime.timezone.utc)
+              age = (now - ts).total_seconds() / 3600
+              print(f"digest age: {age:.1f}h", file=sys.stderr)
+              print("run" if age > 36 else "skip")
+          except Exception as exc:
+              print(f"无法读取 digest.json 时间（{exc}），触发一次抓取。", file=sys.stderr)
+              print("run")
+          PY
+          )
+          if [ "$decision" = "skip" ]; then
+            echo "简报仍新鲜，跳过。"
+            exit 0
+          fi
+
+          recent=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow digest.yml --limit 5 \
+            --json databaseId,status,conclusion,createdAt)
+          echo "recent digest runs: $recent"
+          if echo "$recent" | python3 -c '
+          import datetime, json, sys
+          runs = json.load(sys.stdin)
+          now = datetime.datetime.now(datetime.timezone.utc)
+          for run in runs:
+              created = datetime.datetime.fromisoformat(run["createdAt"].replace("Z", "+00:00"))
+              age = (now - created).total_seconds() / 3600
+              status = run["status"]
+              if status in ("in_progress", "queued", "waiting", "requested") or age < 2:
+                  print(f"最近一次 digest 运行在 {age:.1f}h 内（{status}），本轮不重复触发。")
+                  sys.exit(0)
+          sys.exit(1)
+          '; then
+            exit 0
+          fi
+
+          echo "触发 digest.yml 抓取最新简报…"
+          gh workflow run digest.yml --repo "$GITHUB_REPOSITORY"
+
       - name: Re-run failed Pages deployment
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

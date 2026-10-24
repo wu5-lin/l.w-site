@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self'; connect-src 'self'; form-action 'self'" />
+  <title>离线状态 | LW 智能实验工具</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#0b0e13" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+  </div>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">
+        <span class="logo-mark">LW</span>
+        <span class="logo-text">智能实验工具</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="error-wrap">
+      <div>
+        <p class="error-kicker">You are offline</p>
+        <p class="error-code" aria-hidden="true">离线</p>
+        <h1 class="error-title">当前没有网络连接</h1>
+        <p class="error-lead">已缓存的页面和工具仍然可以打开，例如粒径分析器与图表生成器。恢复网络后刷新页面，即可获取最新的简报数据。</p>
+        <div class="error-links">
+          <a href="/" class="btn btn-primary">返回首页</a>
+          <a href="/ai-particle-size-analyzer/" class="btn btn-ghost">打开 SEM 粒径分析</a>
+          <a href="/research-charts/" class="btn btn-ghost">打开图表生成器</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p>© 2026 LW. 保留所有权利。</p>
+      <p class="footer-domain">l-w.sryze.cc</p>
+    </div>
+  </footer>
+</body>
+</html>

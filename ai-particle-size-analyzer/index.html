@@ -3,48 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI 粒径分析 · Particle Size Analyzer</title>
-  <meta name="description" content="浏览器端基于 OpenCV.js 的 SEM 颗粒粒径分析工具：标尺标定、分水岭分割、多色标注，输出 D10/D50/D90 与分布图，原图不上传。" />
-  <meta name="keywords" content="AI 粒径分析, 颗粒分析, SEM, 电镜图像分割, 分水岭分割, OpenCV.js, 粒径分布, D10 D50 D90" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'wasm-unsafe-eval'; connect-src 'self'; worker-src 'self' blob:; form-action 'self'" />
+  <title>SEM 颗粒粒径分析 · D10/D50/D90 粒径分布 | LW</title>
+  <meta name="description" content="浏览器端 SEM 颗粒粒径分析工具：标尺标定、阈值与晶粒模式分割、多色标注，输出 D10/D50/D90 与粒径分布图，原图不上传。" />
+  <meta name="keywords" content="SEM 粒径分析, 颗粒粒径分析, 电镜图像分割, 分水岭分割, OpenCV.js, 粒径分布, D10 D50 D90" />
+  <meta name="author" content="LW" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="LW · 智能实验工具" />
-  <meta property="og:title" content="AI 粒径分析 · Particle Size Analyzer" />
-  <meta property="og:description" content="浏览器端基于 OpenCV.js 的 SEM 颗粒粒径分析工具：标尺标定、分水岭分割、多色标注，输出 D10/D50/D90 与分布图。" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:title" content="SEM 颗粒粒径分析 · D10/D50/D90 粒径分布 | LW" />
+  <meta property="og:description" content="浏览器端 SEM 颗粒粒径分析工具：标尺标定、阈值与晶粒模式分割、多色标注，输出 D10/D50/D90 与粒径分布图。" />
   <meta property="og:url" content="https://www.l-w.sryze.cc/ai-particle-size-analyzer/" />
-  <meta property="og:image" content="https://www.l-w.sryze.cc/og-image.png" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="AI 粒径分析 · Particle Size Analyzer" />
-  <meta name="twitter:description" content="浏览器端基于 OpenCV.js 的 SEM 颗粒粒径分析工具：标尺标定、分水岭分割、多色标注。" />
+  <meta property="og:image" content="https://www.l-w.sryze.cc/og-analyzer.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="SEM 颗粒粒径分析：颗粒分割与 D10/D50/D90 统计" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SEM 颗粒粒径分析 · D10/D50/D90 粒径分布 | LW" />
+  <meta name="twitter:description" content="浏览器端 SEM 颗粒粒径分析工具：标尺标定、阈值与晶粒模式分割、多色标注。" />
+  <meta name="twitter:image" content="https://www.l-w.sryze.cc/og-analyzer.png" />
   <meta name="theme-color" content="#0b0e13" />
   <link rel="canonical" href="https://www.l-w.sryze.cc/ai-particle-size-analyzer/" />
-  <link rel="icon" href="../favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="alternate" type="application/rss+xml" title="LW 每日简报" href="../feed.xml" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"AI 粒径分析","url":"https://www.l-w.sryze.cc/ai-particle-size-analyzer/","applicationCategory":"ScientificApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"description":"浏览器端基于 OpenCV.js 的 SEM 颗粒粒径分析工具：标尺标定、分水岭分割，输出 D10/D50/D90 与分布图，原图不上传。"}
+  {"@context":"https://schema.org","@graph":[{"@type":"SoftwareApplication","name":"SEM 颗粒粒径分析","url":"https://www.l-w.sryze.cc/ai-particle-size-analyzer/","applicationCategory":"ScientificApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"CNY"},"description":"浏览器端 SEM 颗粒粒径分析工具：标尺标定、阈值与晶粒模式分割，输出 D10/D50/D90 与粒径分布图，原图不上传。"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://www.l-w.sryze.cc/"},{"@type":"ListItem","position":2,"name":"SEM 颗粒粒径分析","item":"https://www.l-w.sryze.cc/ai-particle-size-analyzer/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"页面打开后一直显示加载 OpenCV？","acceptedAnswer":{"@type":"Answer","text":"OpenCV.js 磁盘文件约 12.7MB，服务器启用 gzip 后实际下载约 3.6MB，正常宽带几秒内即可就绪。若长时间不动，可强制刷新（Ctrl+F5）后重试。"}},{"@type":"Question","name":"结果颗粒数偏多或偏少怎么办？","acceptedAnswer":{"@type":"Answer","text":"晶粒模式先调晶界灵敏度，调高会切出更多晶粒，调低则反之，再调最小晶粒面积滤掉碎片。阈值模式调整最小面积、最小圆度，或切换颗粒亮暗；对比度低时改用手动阈值微调。"}},{"@type":"Question","name":"该用晶粒模式还是阈值模式？","acceptedAnswer":{"@type":"Answer","text":"晶粒互相紧贴、被连续暗线界定（抛光腐蚀截面）用晶粒模式；能看到颗粒之间背景（分散粉末、悬浮液）用阈值模式。断口面介于两者之间，应改用分位阈值模式切出亮区，并用实心度低于 0.9 判断是否欠分割。"}},{"@type":"Question","name":"论文里 2×2 或 1×3 的拼图能直接分析吗？","acceptedAnswer":{"@type":"Answer","text":"能。检测到白色分隔条时会自动进入论文插图模式，拆出子图并定位比例尺白板，填一次比例尺实际长度即可批量测量全部子图并导出 CSV。"}},{"@type":"Question","name":"什么是分水岭分离，为什么默认关闭？","acceptedAnswer":{"@type":"Answer","text":"分水岭以距离变换局部极大为种子切开接触颗粒，但会把颗粒与背景交界标成 -1，直接丢弃会让每颗颗粒被削掉一圈，在合成基准上漏检明显，因此默认关闭。仅在颗粒明显粘连且关闭时计数明显偏少时再开启，并适当调小最小面积。"}}]}]}
   </script>
   <link rel="stylesheet" href="styles.css" />
-  <!-- OpenCV.js (本地 vendor 副本，wasm 已内联，无需联网/CDN) -->
-  <script>
-    // OpenCV 引擎加载状态：弱网/失败时给出可见反馈，避免"没反应"的错觉
-    function __onCvLoaded() {
-      window.__cvLoaded = true;
-      var b = document.getElementById("cvBanner");
-      if (b) { b.classList.add("ok"); b.innerHTML = "OpenCV 引擎已就绪"; setTimeout(function () { b.hidden = true; }, 1200); }
-    }
-    function __onCvError() {
-      var b = document.getElementById("cvBanner");
-      if (b) { b.className = "cv-banner err"; b.innerHTML = 'OpenCV 加载失败，请检查网络后 <a href="#" onclick="location.reload();return false;" style="color:inherit;text-decoration:underline">刷新重试</a>'; }
-    }
-  </script>
-  <script async src="vendor/opencv.js"
-          onload="__onCvLoaded()" onerror="__onCvError()"></script>
+  <!-- OpenCV.js（本地 vendor 副本，wasm 已内联，无需联网/CDN） -->
+  <script src="cv-loader.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">跳到正文</a>
   <header class="topbar">
     <div class="brand">
       <span class="logo">🔬</span>
       <div>
-        <h1>AI 粒径分析</h1>
-        <p class="tagline">Particle Size Analyzer · 浏览器端智能颗粒测量</p>
+        <h1>SEM 颗粒粒径分析</h1>
+        <p class="tagline">SEM Particle Size Analysis · 本地测量</p>
       </div>
     </div>
     <nav class="topnav" id="topnav">
@@ -59,7 +56,7 @@
   </header>
   <div id="cvBanner" class="cv-banner" role="status" aria-live="polite">正在加载 OpenCV 引擎…（本地约 12.7 MB，gzip 后约 3–4 MB，就绪后自动隐藏）</div>
 
-  <main class="layout">
+  <main class="layout" id="main">
     <!-- 左侧：上传 + 参数 -->
     <aside class="panel controls">
       <p class="flow-hint">推荐流程：① <b>上传图像</b> → ② <b>标尺校准</b>（在图上拖线标出已知长度 + 输入真实数值）→ ③ <b>分割调节与标注</b> → ④ <b>开始分析</b></p>
@@ -317,7 +314,7 @@
       <li><b>统计输出</b>：D10/D50/D90、不均匀度 Cu、曲率 Cc、跨度 Span，以及论文常用的<b>标准差 σ、变异系数 CV 与均值 95% 置信区间</b>（小样本时用 CI 比直接写 ±σ 更有说服力）；明细另含圆度与<b>实心度</b>（面积/凸包面积，明显偏低说明该颗粒可能是未分开的粘连体）。</li>
       <li><b>分析分辨率</b>：优先按原图分辨率计算（单边上限 4000 px、总像素上限约 12MP）。只有超过上限的图才会降采样，并在图下方<b>明确标出缩放比</b>——降采样会把细晶界模糊掉、导致小晶粒漏检，这种情况下建议先裁剪 ROI 再分析。</li>
     </ol>
-    <p class="note">本工具在浏览器本地运行 OpenCV (wasm)，<b>图像不会上传到任何服务器</b>，适合处理敏感科研数据。算法为传统计算机视觉 + 轻量智能分割，日常测量足够；如需更高精度可后续接入 YOLO/SAM 深度学习模型。</p>
+    <p class="note">本工具在浏览器本地运行 OpenCV (wasm)，<b>图像不会上传到任何服务器</b>，适合处理敏感科研数据。算法为传统计算机视觉（阈值 / 形态学 / 分水岭分割），日常测量足够；如需更高精度可后续接入 YOLO/SAM 深度学习模型。</p>
   </section>
 
   <section id="faq" class="info">
@@ -334,28 +331,10 @@
   </section>
 
   <footer class="foot">
-    <span>AI 粒径分析 · 纯前端实现，借鉴 Microsphere Size Analyzer / ParticleAnalyzer 思路</span>
+    <span>SEM 颗粒粒径分析 · 纯前端实现，借鉴 Microsphere Size Analyzer / ParticleAnalyzer 思路</span>
   </footer>
 
-  <script>
-    var nav = document.querySelector(".topbar");
-    var toggle = document.getElementById("navToggle");
-    var links = document.getElementById("topnav");
-    if (nav && toggle && links) {
-      function setOpen(open) {
-        nav.classList.toggle("is-open", open);
-        toggle.setAttribute("aria-expanded", String(open));
-        toggle.setAttribute("aria-label", open ? "关闭菜单" : "打开菜单");
-        document.body.style.overflow = open ? "hidden" : "";
-      }
-      toggle.addEventListener("click", function () {
-        setOpen(!nav.classList.contains("is-open"));
-      });
-      links.querySelectorAll("a").forEach(function (a) {
-        a.addEventListener("click", function () { setOpen(false); });
-      });
-    }
-  </script>
+  <script src="../nav.js"></script>
   <script src="enhance-inputs.js"></script>
   <script src="app.js"></script>
 </body>

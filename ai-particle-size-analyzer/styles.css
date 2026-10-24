@@ -30,6 +30,13 @@ body {
 }
 
 /* ---------- top bar ---------- */
+.skip-link {
+  position: absolute; left: 16px; top: -48px; z-index: 200;
+  background: var(--accent); color: #050505; padding: 8px 14px;
+  border-radius: 6px; font-size: 13px; text-decoration: none; transition: top .2s;
+}
+.skip-link:focus { top: 12px; }
+
 .topbar {
   display: flex; align-items: center; justify-content: space-between;
   padding: 16px 28px; border-bottom: 1px solid var(--border);
@@ -47,6 +54,7 @@ body {
 .topnav { display: flex; gap: 18px; }
 .navlink { color: var(--text-dim); text-decoration: none; font-size: 14px; transition: color .2s; }
 .navlink:hover { color: var(--accent); }
+.navlink[aria-current] { color: var(--accent); }
 .nav-toggle {
   display: none; width: 44px; height: 44px; border: 0; background: transparent; cursor: pointer;
   position: relative; flex: none;
@@ -67,12 +75,12 @@ body {
     background: rgba(10, 14, 23, 0.98); backdrop-filter: blur(12px);
     flex-direction: column; justify-content: flex-start;
     padding: 24px 28px; gap: 18px;
-    transform: translateY(-8px); opacity: 0; pointer-events: none;
-    transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
+    transform: translateY(-8px); opacity: 0; visibility: hidden; pointer-events: none;
+    transition: opacity 0.25s var(--ease), transform 0.25s var(--ease), visibility 0s linear 0.25s;
     border-bottom: 1px solid var(--border);
   }
   .topbar.is-open .topnav {
-    opacity: 1; transform: none; pointer-events: auto;
+    opacity: 1; transform: none; visibility: visible; pointer-events: auto; transition-delay: 0s;
   }
   .topnav .navlink { font-size: 1.1rem; padding: 4px 0; }
 }

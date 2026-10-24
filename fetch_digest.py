@@ -27,7 +27,7 @@ import sys
 import html
 import urllib.request
 import urllib.error
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 import xml.etree.ElementTree as ET
 
@@ -415,6 +415,170 @@ def fmt(it):
     }
 
 
+SITE = "https://www.l-w.sryze.cc"
+HOME_NEWS_CATEGORY = "科技"
+HOME_NEWS_LIMIT = 16
+FEED_LIMIT = 60
+PRERENDER_LIMIT = 24
+
+
+def beijing_label(updated):
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}) UTC", updated or "")
+    if not m:
+        return updated or ""
+    dt = datetime(*map(int, m.groups()), tzinfo=timezone.utc).astimezone(
+        timezone(timedelta(hours=8))
+    )
+    return f"{dt.month} 月 {dt.day} 日 {dt:%H:%M}（北京时间）"
+
+
+def write_news_home(here, payload):
+    """首页只需要「科技」类别，避免每次访问下载完整 digest.json。"""
+    items = payload["categories"].get(HOME_NEWS_CATEGORY) or []
+    if not items:
+        items = [it for c in CATEGORIES for it in payload["categories"].get(c, [])]
+        items.sort(key=lambda it: it.get("date") or "", reverse=True)
+    items = [dict(it) for it in items[:HOME_NEWS_LIMIT]]
+    for it in items:
+        summary = re.sub(r"\s+", " ", it.get("summary") or "").strip()
+        it["summary"] = summary[:180] + ("…" if len(summary) > 180 else "")
+    data = {"updated": payload["updated"], "items": items}
+    with open(os.path.join(here, "news-home.json"), "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    return len(data["items"])
+
+
+def _rfc822(date_str):
+    try:
+        dt = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+    except (TypeError, ValueError):
+        return ""
+    return dt.strftime("%a, %d %b %Y %H:%M:%S +0000")
+
+
+def write_feed(here, payload):
+    items = [it for c in CATEGORIES for it in payload["categories"].get(c, [])]
+    items.sort(key=lambda it: it.get("date") or "", reverse=True)
+    items = [it for it in items if re.match(r"^https?://", it.get("url") or "")][:FEED_LIMIT]
+
+    build = ""
+    try:
+        build = datetime.strptime(payload["updated"], "%Y-%m-%d %H:%M UTC").replace(
+            tzinfo=timezone.utc
+        ).strftime("%a, %d %b %Y %H:%M:%S +0000")
+    except (KeyError, TypeError, ValueError):
+        pass
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
+        "<channel>",
+        "<title>LW 每日简报</title>",
+        f"<link>{SITE}/digest/</link>",
+        "<description>每日自动聚合的投资、科研、web3 与科技前沿资讯。</description>",
+        "<language>zh-cn</language>",
+        f'<atom:link href="{SITE}/feed.xml" rel="self" type="application/rss+xml" />',
+    ]
+    if build:
+        lines.append(f"<lastBuildDate>{build}</lastBuildDate>")
+    for it in items:
+        url = html.escape(it["url"], quote=True)
+        title = html.escape(it.get("title") or "", quote=True)
+        summary = html.escape((it.get("summary") or "").strip(), quote=True)
+        lines += [
+            "<item>",
+            f"<title>{title}</title>",
+            f"<link>{url}</link>",
+            f'<guid isPermaLink="true">{url}</guid>',
+            f"<category>{html.escape(it.get('category') or '', quote=True)}</category>",
+            f"<description>{summary or title}</description>",
+        ]
+        pub = _rfc822(it.get("date"))
+        if pub:
+            lines.append(f"<pubDate>{pub}</pubDate>")
+        lines.append("</item>")
+    lines += ["</channel>", "</rss>", ""]
+    with open(os.path.join(here, "feed.xml"), "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+    return len(items)
+
+
+def render_cards(items):
+    out = []
+    for it in items:
+        url = it.get("url") or ""
+        if not re.match(r"^https?://", url):
+            url = "#"
+        url = html.escape(url, quote=True)
+        rel = "" if url == "#" else ' target="_blank" rel="noopener"'
+        region = it.get("region")
+        r_label = "国内" if region == "cn" else ("国际" if region == "en" else "")
+        r_class = region if region in ("cn", "en") else ""
+        summary = it.get("summary") or ""
+        date = it.get("date") or ""
+        time_attr = f' datetime="{html.escape(date, quote=True)}"' if re.match(r"^\d{4}-\d{2}-\d{2}$", date) else ""
+        out.append(
+            '          <article class="dcard">'
+            '<div class="dcard-top">'
+            f'<span class="tag cat-{html.escape(it.get("category") or "", quote=True)}">'
+            f'{html.escape(it.get("source") or "", quote=True)}</span>'
+            + (f'<span class="region-badge {r_class}">{r_label}</span>' if r_label else "")
+            + "</div>"
+            f'<h3><a href="{url}"{rel}>{html.escape(it.get("title") or "", quote=True)}</a></h3>'
+            + (f'<p class="sum">{html.escape(summary, quote=True)}</p>' if summary else "")
+            + f'<div class="date"><time{time_attr}>{html.escape(date, quote=True)}</time></div>'
+            "</article>"
+        )
+    return "\n".join(out)
+
+
+def update_digest_html(here, payload):
+    """把最新条目预渲染进 digest/index.html，保证无 JS / 爬虫也能看到正文。"""
+    path = os.path.join(here, "digest", "index.html")
+    with open(path, encoding="utf-8") as f:
+        page = f.read()
+
+    items = [it for c in CATEGORIES for it in payload["categories"].get(c, [])]
+    items.sort(key=lambda it: it.get("date") or "", reverse=True)
+    cards = render_cards(items[:PRERENDER_LIMIT])
+    page = re.sub(
+        r"(<!-- DIGEST:CARDS:START -->)[\s\S]*?(<!-- DIGEST:CARDS:END -->)",
+        lambda m: m.group(1) + "\n" + cards + "\n          " + m.group(2),
+        page,
+        count=1,
+    )
+
+    total = len(items)
+    meta = html.escape(
+        f"更新于 {beijing_label(payload['updated'])} · 共 {total} 条", quote=True
+    )
+    page = re.sub(
+        r'(<div class="digest-meta" id="meta">)[\s\S]*?(</div>)',
+        lambda m: m.group(1) + meta + m.group(2),
+        page,
+        count=1,
+    )
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(page)
+    return len(items[:PRERENDER_LIMIT])
+
+
+def update_sitemap(here):
+    path = os.path.join(here, "sitemap.xml")
+    if not os.path.exists(path):
+        return
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    with open(path, encoding="utf-8") as f:
+        sitemap = f.read()
+    for url in (SITE + "/", SITE + "/digest/"):
+        sitemap = re.sub(
+            r"(<loc>" + re.escape(url) + r"</loc>\s*<lastmod>)[^<]+",
+            lambda m: m.group(1) + today,
+            sitemap,
+        )
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(sitemap)
+
+
 def main():
     here = os.path.dirname(os.path.abspath(__file__))
     out_path = os.path.join(here, "digest.json")
@@ -437,10 +601,23 @@ def main():
     for c in CATEGORIES:
         print(f"   - {c}: {len(payload['categories'][c])} 条")
 
+    if total:
+        n_home = write_news_home(here, payload)
+        n_feed = write_feed(here, payload)
+        n_cards = update_digest_html(here, payload)
+        update_sitemap(here)
+        print(f"已写入 news-home.json（{n_home} 条）、feed.xml（{n_feed} 条）、预渲染 {n_cards} 张卡片")
+    else:
+        print("本次未抓到条目，保留旧的 news-home.json / feed.xml / 预渲染内容。")
+
     if "--push" in sys.argv:
         try:
             import subprocess
-            subprocess.run(["git", "add", "digest.json"], check=True, cwd=here)
+            subprocess.run(
+                ["git", "add", "digest.json", "news-home.json", "feed.xml",
+                 "digest/index.html", "sitemap.xml"],
+                check=True, cwd=here,
+            )
             subprocess.run(["git", "commit", "-m", "auto: update digest"], check=True, cwd=here)
             subprocess.run(["git", "push"], check=True, cwd=here)
             print("已自动推送到远程仓库（GitHub Pages 将自动重新发布）。")
