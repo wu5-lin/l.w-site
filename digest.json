@@ -1,124 +1,144 @@
 {
-  "updated": "2026-10-24 05:30 UTC",
+  "updated": "2026-10-25 05:47 UTC",
   "categories": {
     "投资": [
       {
-        "date": "2026-10-24",
+        "date": "2026-10-25",
         "tag": "Financial Times",
-        "title": "France prepares for protests with big police deployment",
-        "summary": "Government puts 20 per cent more officers on the streets for Saturday to boost security following last weekend’s riots",
-        "url": "https://www.ft.com/content/643b2bc6-2963-4759-82ae-03db082c71f7?syn-25a6b1a6=1",
+        "title": "Luxury groups’ value drops by €250bn as Chinese consumer demand fades",
+        "summary": "Slowdown in China and cooling global stock markets are exacerbating a downturn for European sector",
+        "url": "https://www.ft.com/content/1c3065cf-538f-433a-9749-0355a3642c7c?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-10-25",
+        "tag": "Financial Times",
+        "title": "Bolsonaro and Lula face off in knife-edge Brazil election",
+        "summary": "Rightwing challenger seeks to oust leftist president and bring Latin America’s largest country closer to Donald Trump",
+        "url": "https://www.ft.com/content/29033fb9-2dc7-4af0-a2ff-55d1bdd5dece?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-10-25",
+        "tag": "Financial Times",
+        "title": "The right’s obsession with ‘civil war’ in Britain",
+        "summary": "Many of those stoking fears of bloody unrest don’t actually live in the country",
+        "url": "https://www.ft.com/content/3736714a-2058-4413-ac91-e8f10f33ad69?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-10-25",
+        "tag": "Financial Times",
+        "title": "The Black Sea is now the world’s deadliest shipping route",
+        "summary": "Fatalities of commercial sailors caught in battle between Russia and Ukraine are outstripping deaths in the Gulf",
+        "url": "https://www.ft.com/content/8c874f60-0041-476d-9c53-8524c374443f?syn-25a6b1a6=1",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-10-24",
-        "tag": "Financial Times",
-        "title": "Gadi Eisenkot, can Israel’s ex-military chief beat Netanyahu?",
-        "summary": "The grizzled 66-year-old who heads the centrist Yashar party is in a knife-edge race to oust the premier",
-        "url": "https://www.ft.com/content/5e9fc2a9-975b-46eb-ab5a-11615ca40459?syn-25a6b1a6=1",
-        "source": "Financial Times",
+        "tag": "Seeking Alpha",
+        "title": "Audi to build $4.2B auto plant in Georgia, pledging long-term investment in U.S. market",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4656939-audi-to-build-42b-auto-plant-in-georgia-pledging-long-term-investment-in-us-market?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-10-24",
-        "tag": "Financial Times",
-        "title": "France is in revolt. But the real storm is yet to come",
-        "summary": "As disorder engulfs Paris and Marine Le Pen waits in the wings, the country is running out of money, patience and answers",
-        "url": "https://www.ft.com/content/62b83fcf-efad-418d-ba6a-569344fa7ecb",
-        "source": "Financial Times",
+        "tag": "Seeking Alpha",
+        "title": "Musk says Ukraine violated Starlink terms with offensive drone strikes",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4656938-musk-says-ukraine-violated-starlink-terms-offensive-drone-strikes?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-10-24",
-        "tag": "Financial Times",
-        "title": "The young are conformists in denial",
-        "summary": "The reassuringly bourgeois values behind a rebellious generation",
-        "url": "https://www.ft.com/content/70280c68-2ae0-4656-b013-281eb75a197a?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Seeking Alpha",
-        "title": "Global X Equal Weight Can Insurance Idx ETF declares CAD 0.06 dividend",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4656924-global-x-equal-weight-can-insurance-idx-etf-declares-cad-0_06-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Seeking Alpha",
-        "title": "Global X Russell 2000 Covered Cll ETF declares $0.21 dividend",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4656923-global-x-russell-2000-covered-cll-etf-declares-0_21-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Seeking Alpha",
-        "title": "Global X 20+Yr US Treasury Bd Idx ETF Hdgd Unts declares CAD 0.193 dividend",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4656922-global-x-20-plusyr-us-treasury-bd-idx-etf-hdgd-unts-declares-cad-0_193-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Seeking Alpha",
-        "title": "Global X 3-10 Year U.S. Treas Bd Idx ETF CAD Hdg declares CAD 0.20 dividend",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4656921-global-x-3minus-10-year-u-s-treas-bd-idx-etf-cad-hdg-declares-cad-0_20-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-10-23",
         "tag": "MarketWatch",
-        "title": "‘I don’t feel sorry for myself’: I’m 64 and will be renting for the rest of my life. Is that so bad?",
-        "summary": "“I married a wonderful man with a good income. He left his job due to health issues and suffered a massive stroke at 53.”",
-        "url": "https://www.marketwatch.com/story/my-husband-suffered-a-massive-stroke-at-53-im-64-and-will-rent-for-the-rest-of-my-life-but-im-still-hopeful-46bd6ce9?mod=mw_rss_topstories",
+        "title": "My father-in-law, 81, sold his $75,000 home to pay his daughter’s $50,000 debt. How can I keep him from becoming destitute?",
+        "summary": "“Nothing has been set aside for his needs.”",
+        "url": "https://www.marketwatch.com/story/my-father-in-law-81-sold-his-75-000-home-and-paid-off-his-daughters-50-000-debt-what-happens-to-him-now-60e8fc72?mod=mw_rss_topstories",
         "source": "MarketWatch",
         "region": "en",
         "category": "投资"
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-24",
         "tag": "MarketWatch",
-        "title": "Will Anthropic pull off a November IPO? Time is running out to file key paperwork.",
-        "summary": "If market pressures keep building, Anthropic “could reasonably decide it is better to stay private and wait for a better opportunity,” one portfolio manager says.",
-        "url": "https://www.marketwatch.com/story/will-anthropic-pull-off-a-november-ipo-time-is-running-out-to-file-key-paperwork-52677343?mod=mw_rss_topstories",
+        "title": "‘She’s living the dream’: My stepmother said I can buy my childhood home for $850,000. Is she taking advantage of me?",
+        "summary": "“My late father bought our house for $250,000 in the 1990s.”",
+        "url": "https://www.marketwatch.com/story/shes-living-the-dream-my-stepmother-said-i-can-buy-my-childhood-home-for-850-000-is-she-taking-advantage-of-me-1fdda7b5?mod=mw_rss_topstories",
         "source": "MarketWatch",
         "region": "en",
         "category": "投资"
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-24",
         "tag": "MarketWatch",
-        "title": "Investors piled a record sum into a leveraged semiconductor ETF last week. Things didn’t work out.",
-        "summary": "Traders making bullish bets on chip stocks are getting walloped this month, as renewed fears emerged about investment returns on the buildout of artificial intelligence.",
-        "url": "https://www.marketwatch.com/story/investors-piled-a-record-sum-into-a-leveraged-semiconductor-etf-last-week-things-didnt-work-out-4680b2f3?mod=mw_rss_topstories",
+        "title": "My husband wants to sell our $1.5 million home and invest the proceeds. But this is where we raised our kids — and I can’t bear to leave.",
+        "summary": "“He wants to buy something for $600,000 now that we are empty-nesters.”",
+        "url": "https://www.marketwatch.com/story/my-husband-wants-to-sell-our-1-5-million-home-and-invest-the-proceeds-but-this-is-where-we-raised-our-kids-and-i-cant-bear-to-leave-4feb46ed?mod=mw_rss_topstories",
         "source": "MarketWatch",
         "region": "en",
         "category": "投资"
       },
       {
-        "date": "2026-10-23",
+        "date": "2026-10-24",
+        "tag": "Seeking Alpha",
+        "title": "SA Asks: How much could Tesla be worth in a merger deal?",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4656937-sa-asks-how-much-could-tesla-be-worth-in-a-merger-deal?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "Seeking Alpha",
+        "title": "Key deals this week: Visa, London Stock Exchange, Tradeweb Markets, Salesforce, and more",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4656932-key-deals-this-week-visa-london-stock-exchange-tradeweb-markets-salesforce-and-more?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-10-24",
         "tag": "MarketWatch",
-        "title": "This hot AI-fueled stock has been in a rut. It just beat earnings expectations by 36%.",
-        "summary": "A company beating earnings expectations by 36% and revenue expectations by 15% would usually see a postresults bump. But not for Bloom Energy, the fuel-cell maker that has flourished due to data-center demand.",
-        "url": "https://www.marketwatch.com/story/this-hot-ai-fueled-stock-has-been-in-a-rut-it-just-beat-earnings-expectations-by-36-4a4188cb?mod=mw_rss_topstories",
+        "title": "Young Americans are giving up on car ownership. It’s a path to financial freedom for some.",
+        "summary": "With vehicle prices soaring and ownership increasingly out of reach, some young adults are discovering that life without a car leaves them with breathing room to spend on other things.",
+        "url": "https://www.marketwatch.com/story/young-americans-are-giving-up-their-cars-its-a-path-to-financial-freedom-for-some-3cce491c?mod=mw_rss_topstories",
         "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "The Block",
+        "title": "Crypto longs lose $404 million in four hours as bitcoin briefly slips below $80,000",
+        "summary": "Spot bitcoin ETFs lost $773 million on Thursday and Friday after three days of net inflows, per SoSoValue data.",
+        "url": "https://www.theblock.co/news/markets/2026-10-24-crypto-longs-lose-404-million-in-four-hours-as-bitcoin-briefly-slips-below-80000-431608",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "The Block",
+        "title": "Argentine judge clears Milei and 10 others in LIBRA case, finding no ‘criminally relevant deception’",
+        "summary": "The judge's 60-page ruling concluded Argentine President Javier Milei's post promoting the LIBRA token did not, by itself, establish fraud.",
+        "url": "https://www.theblock.co/news/regulation/2026-10-24-argentine-judge-clears-milei-and-10-others-in-libra-case-finding-no-criminally-relevant-deception-431606",
+        "source": "The Block",
         "region": "en",
         "category": "投资"
       },
@@ -141,29 +161,49 @@
         "source": "The Block",
         "region": "en",
         "category": "投资"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "The Block",
-        "title": "Initia halts network after security incident as attacker reportedly mints tokens",
-        "summary": "Onchain data shows a $2.7 million ether transfer as Initia investigates the scope of a security incident.",
-        "url": "https://www.theblock.co/news/defi/2026-10-23-initia-halts-network-after-security-incident-attacker-reportedly-mints-tokens-427755",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "The Block",
-        "title": "Phantom rolls out Kalshi prediction markets to US users, says it’s ‘confident and comfortable’ amid state lawsuits",
-        "summary": "Phantom users will fund trades with CASH stablecoins, with market restrictions applied in Michigan, Nevada and Washington.",
-        "url": "https://www.theblock.co/news/markets/2026-10-23-phantom-rolls-out-kalshi-prediction-markets-us-421652",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
       }
     ],
     "科研": [
+      {
+        "date": "2026-10-24",
+        "tag": "Nature 材料",
+        "title": "Exsolution of metal nanoparticles by control of point defects",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41467-026-78473-1",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "Nature 材料",
+        "title": "Hydrogen-stabilized dual-phase architecture enables ductility in refractory molybdenum nanowires",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41467-026-79244-8",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "Nature 材料",
+        "title": "Supramolecular nucleotide hydrogel as an artificial carbonic anhydrase for CO2 sequestration",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s43246-026-01402-8",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "Nature 材料",
+        "title": "Predicting fish spoilage through adsorption and detection of volatile sulfur compounds on B2N monolayers: a computational study",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-76241-1",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
       {
         "date": "2026-10-24",
         "tag": "Nature 材料",
@@ -187,9 +227,59 @@
       {
         "date": "2026-10-24",
         "tag": "Nature 材料",
+        "title": "Experimental and numerical analysis of foamed concrete as a damping interlayer in metro sub-track systems",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-75443-x",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "Nature 材料",
+        "title": "Photonic simulation and design framework for optimizing perovskite/Si tandem solar cells for satellite power systems",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s44172-026-00813-2",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "Nature 材料",
         "title": "Exploring the thermal and mechanical performance of hybrid bio composites reinforced with agro waste fibers and Turbinella pyrum shell powder",
         "summary": "",
         "url": "https://www.nature.com/articles/s41598-026-77514-5",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "Nature 材料",
+        "title": "Effect of quarry dust particle sizes on the mechanical and microstructural properties of concrete",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-76216-2",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "Nature 材料",
+        "title": "Scalable binary-to-gray and Gray-to-Binary code converters using atomic silicon dangling bonds: hierarchical physical design, complexity analysis, and robustnes",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-76362-7",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "Nature 材料",
+        "title": "An integrated cathode-electrolyte architecture with Cu dual active-sites for all-solid-state Li–CO2 batteries",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41467-026-78929-4",
         "source": "Nature 材料",
         "region": "en",
         "category": "科研"
@@ -211,96 +301,6 @@
         "summary": "A massive analysis of 2,884 exploding stars has uncovered new evidence that dark energy, the mysterious force accelerating the universe’s expansion, may change over time. The findings challenge a cornerstone of modern cosmology and could reshape our understanding of how the universe works.",
         "url": "https://www.sciencedaily.com/releases/2026/10/261021231244.htm",
         "source": "ScienceDaily 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Nature 材料",
-        "title": "Singularity-free supertwisted atomic layers with giant circular dichroisms",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41467-026-78371-6",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Nature 材料",
-        "title": "Strain-driven magnetostructural relaxation revealed in Heusler alloys",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s43246-026-01390-9",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Nature 材料",
-        "title": "Engineering quantum phases in two dimensions via vacancy-induced electronic reconstruction",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s43246-026-01365-w",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Nature 材料",
-        "title": "Breaking the delithiation bottleneck in aluminum-foil anodes for rechargeable lithium batteries by Mn alloying",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s43246-026-01377-6",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Nature 材料",
-        "title": "When microplastics become chemically active",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41578-026-00978-4",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Nature 材料",
-        "title": "Nickel crossover builds single-atom catalysts",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41578-026-00980-w",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Nature 材料",
-        "title": "An edible capacitive tilt sensor towards sustainable autonomous robotics",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-70258-2",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Nature 材料",
-        "title": "Experimental analysis of AISI 304 stainless steel machinability utilizing TiO₂ and ZnO nanoparticle-infused emulsifier oil-based cutting fluids",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-71116-x",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Nature 材料",
-        "title": "Creep behavior of lightweight concrete containing fly ash ceramsite aggregate after exposure to high temperatures",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-77256-4",
-        "source": "Nature 材料",
         "region": "en",
         "category": "科研"
       },
@@ -328,11 +328,81 @@
     "web3": [
       {
         "date": "2026-10-24",
+        "tag": "Decrypt",
+        "title": "Google Quietly Updates Privacy Policy to Let Gmail and Photos Data Feed Ads",
+        "summary": "A policy change effective Oct. 16 carves out an exception to Google’s long-standing pledge—letting connected Gmail, Drive, and Photos data personalize ads through its Personal Intelligence AI features.",
+        "url": "https://decrypt.co/381775/google-quietly-updates-privacy-policy-gmail-photos-ads",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "Decrypt",
+        "title": "Sweden's Government Offices Block ChatGPT and Claude, Keep Microsoft Copilot",
+        "summary": "Sweden's Government Offices will block ChatGPT and Claude on staff computers from Monday, steering civil servants to Microsoft Copilot as the only AI that passed its security review.",
+        "url": "https://decrypt.co/381763/sweden-government-offices-block-chatgpt-claude",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-10-24",
         "tag": "CoinDesk",
-        "title": "Franklin Templeton adds $150 million in fund shares to XRP Ledger, all in one wallet",
-        "summary": "Two subscriptions on Thursday nearly quadrupled the fund’s tokens on the network. The receiving wallet shares its authorized signers with the issuer.",
-        "url": "https://www.coindesk.com/markets/2026/10/24/franklin-templeton-adds-usd150-million-in-fund-shares-to-xrp-ledger-all-in-one-wallet",
+        "title": "Strategy, Strive face balancing act between bitcoin buying and preferred stock dividends",
+        "summary": "The securities have financed purchases of nearly 136,000 bitcoin, opening a funding channel that analysts expect to complement the larger ETF market.",
+        "url": "https://www.coindesk.com/business/2026/10/24/strategy-strive-face-balancing-act-between-bitcoin-buying-and-preferred-stock-dividends",
         "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "CoinDesk",
+        "title": "Block's new voice AI sounds eerily human, sparking awe and scam fears",
+        "summary": "Reactions split between amazement at how human it sounds and fears it could fuel scams and deception, with CZ eyeing uses in children’s education.",
+        "url": "https://www.coindesk.com/tech/2026/10/24/block-s-new-voice-ai-sounds-eerily-human-sparking-awe-and-scam-fears",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "CoinDesk",
+        "title": "Crypto under weekend pressure, bitcoin slides below $80,000 on U.S. Middle East evacuations",
+        "summary": "Bitcoin has sunk to its weakest level in more than one month.",
+        "url": "https://www.coindesk.com/markets/2026/10/24/crypto-under-weekend-pressure-bitcoin-slides-below-usd80-000-on-u-s-middle-east-evacuations",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "Decrypt",
+        "title": "Game Publishers Have Pushed to Cut Discs Since 2007, Infinity Ward Veteran Says",
+        "summary": "Robert Bowling, who spent six years working on Call of Duty, told Decrypt that Activision suggested cutting discs nearly two decades ago.",
+        "url": "https://decrypt.co/381674/game-publishers-have-pushed-to-cut-discs-since-2007-infinity-ward-veteran-says",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "CoinDesk",
+        "title": "Why McDonalds, Microsoft and Google saying no to tokenized stocks isn't a dealbreaker",
+        "summary": "Some of the world's biggest companies objected to being listed on the first tokenized securities trading venue under the SEC's innovation exemption. But the early pushback may say more about issuer caution than about rejection of tokenization itself.",
+        "url": "https://www.coindesk.com/business/2026/10/23/why-mcdonalds-microsoft-and-google-saying-no-to-tokenized-stocks-isn-t-a-dealbreaker",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "Decrypt",
+        "title": "Hong Kong’s Biggest Bank Puts a Stablecoin in 3 Million Wallets",
+        "summary": "HSBC switched on its Hong Kong dollar stablecoin inside PayMe on Friday, testing whether a bank-issued token can become everyday money.",
+        "url": "https://decrypt.co/381760/hong-kong-bank-hsbc-stablecoin-3-million-wallets",
+        "source": "Decrypt",
         "region": "en",
         "category": "web3"
       },
@@ -348,51 +418,11 @@
       },
       {
         "date": "2026-10-23",
-        "tag": "Decrypt",
-        "title": "Netanyahu Considering Crypto Plan to Dodge Banking Sanctions on Israel",
-        "summary": "Days before Israel’s election, Netanyahu said he has asked for a blockchain plan in case banks are hit with sanctions, and told Israelis to prepare for a rainy day after Trump.",
-        "url": "https://decrypt.co/381758/netanyahu-crypto-plan-banking-sanctions-israel",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-10-23",
         "tag": "Cointelegraph",
         "title": "IRS plans lower tax disclosure penalties, including for crypto: Forbes",
         "summary": "The US tax agency is targeting faster resolutions and more flexible payment options for taxpayers voluntarily disclosing past tax violations under a planned program overhaul.",
         "url": "https://cointelegraph.com/news/irs-plans-lower-penalties-for-crypto-tax-disclosures-forbes-reports?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Decrypt",
-        "title": "Senate Democrat Probes Tether Payments to Ex-White House Crypto Adviser’s Firm",
-        "summary": "Sen. Richard Blumenthal demanded Tether’s records on payments to Nxum, a firm co-owned by former White House crypto adviser Bo Hines.",
-        "url": "https://decrypt.co/381755/senate-democrat-tether-payments-ex-white-house-crypto-adviser",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Decrypt",
-        "title": "SpaceX Filing Gives Elon Musk the Final Word on Tesla Merger He Says He’s Staying Out Of",
-        "summary": "SpaceX’s latest 10-Q filing quietly confirms any Tesla combination requires sign-off from its “controlling shareholder.”",
-        "url": "https://decrypt.co/381753/spacex-filing-elon-musk-final-word-tesla-merger",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Decrypt",
-        "title": "SEC Flags AI 'Super Intelligence' and Tokenization as Systemic Market Risks",
-        "summary": "The regulator's Division of Examinations named \"super intelligence and other advanced technologies\" as a focus area alongside tokenization risks.",
-        "url": "https://decrypt.co/381745/sec-ai-super-intelligence-tokenization-2027-exam-list",
-        "source": "Decrypt",
         "region": "en",
         "category": "web3"
       },
@@ -413,36 +443,6 @@
         "summary": "The Democratic ranking member of the Senate Permanent Subcommittee on Investigations asked Paolo Ardoino for records related to a reported deal between Tether and Nxum.",
         "url": "https://cointelegraph.com/news/us-senator-probe-bo-hines-trump-crypto-adviser-tether-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "CoinDesk",
-        "title": "Robinhood sees surge in bitcoin, gold prediction markets as traders move beyond sports",
-        "summary": "The company's head of futures and prediction markets said bitcoin, gold and oil contracts are among its fastest-growing prediction markets.",
-        "url": "https://www.coindesk.com/markets/2026/10/23/robinhood-sees-surge-in-bitcoin-gold-prediction-markets-as-traders-move-beyond-sports",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "CoinDesk",
-        "title": "Bitcoin Core changes security rules as AI makes finding code bugs dangerously easy",
-        "summary": "Developers merged a policy change that ends the months-long embargo for flaws a chatbot could rediscover, after a summer in which AI found hundreds of bitcoin bugs before the humans did.",
-        "url": "https://www.coindesk.com/tech/2026/10/23/bitcoin-will-now-stop-hiding-bugs-an-ai-can-find-in-one-prompt",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "CoinDesk",
-        "title": "Bitcoin's price is as jumpy as Nvidia's and eight times more turbulent than the euro",
-        "summary": "Your day-ahead look for Oct. 23, 2026",
-        "url": "https://www.coindesk.com/daybook-us/2026/10/23/bitcoin-s-volatility-is-well-above-euro-dollar-gyrations-though-it-has-calmed-to-rival-nvidia-s",
-        "source": "CoinDesk",
         "region": "en",
         "category": "web3"
       },
@@ -489,89 +489,49 @@
     ],
     "科技": [
       {
-        "date": "2026-10-24",
+        "date": "2026-10-25",
         "tag": "IT之家",
-        "title": "微软 Win11 26H2 发布 26340.9767 预览版：增强实验性功能体验、升级网络测速",
-        "summary": "IT之家 10 月 24 日消息，微软昨日（10 月 23 日）发布公告，邀请 Experimental 频道的 Windows Insider 项目成员，测试适用于 Windows 11 的预览版更新。 IT之家援引博文介绍，本次更新适用于 Experimental 频道 3 个版本： 26H2 版本更新后版本号升至 Build 26340.9767 26H1 版本更新后版本号升至 Build 28120.3302 未来平台版本更新后版本号升至 Build 29695.1001 在更新内容方面，以下是适用于 Windows 11 Build 26340.9767 的更新日志： 一、Windows 预览体验计划 在 Windows 预览体验计划设置页面中，新增了按“启用状态”筛选 Feature flags（功能标志）的能力，方便更清晰地查看哪些实验性功能已开启或关闭。 二、快速设置 2.1、移动设备控制 快速设置中正在逐步推出全新的“移动设备”体验，让你无需离开当前 Windows 工作流程，就能快速操作手机，例如让手机响铃。 连接受支持的 Android 手机后，可一键执行常见操作：在会议前开启“勿扰模式”、切换手机铃声模式，以及播放提示音以查找附近的手机。 这一入口位于你本来就常用来进行快速系统操作的“快速设置”中，让电脑与手机在日常使用中配合得更顺畅。 具体能力会因手机平台和设备配置而不同：初期为 Android 手机提供最完整的控制选项；iPhone 则先提供较有限、以状态查看为主的体验。 2.2、使用方法 从任务栏打开“快速设置”，找到“移动设备”。若手机已连接，会显示电池状态和可用控制项；若尚未连接，Windows 会引导你完成设置。 在快速设置中显示移动设备的用户界面体验。 在快速设置中显示移动设备控件的用户界面，用于管理已连接的安卓手机。 三、内置网络测速 Windows 现在能更快、更方便地检查网络连接性能。Insider 可以直接在“快速设置”中运行网速测试并查看结果，无需跳转到浏览器。 可通过以下入口启动测试：快速设置中新增的“测速”卡片、Wi‑Fi 或蜂窝网络弹出面板，或右键点击系统托盘网络图标后选择“测试网速”。 测试运行时，快速设置会显示进度及结果，包括下载速度、上传速度和 ping 延迟，帮助你快速判断当前网络表现。 四、放大镜 在设置 > 辅助功能 > 放大镜中新增了“放大镜键盘快捷方式”开关，可选择按下 Windows 徽标键 + 加号 (+) 是否启动放大镜。 该快捷方式默认保持开启，因此除非你主动更改，否则行为不变。若放大镜经常意外启动，或快捷键与其他应用、键盘布局冲突，可以关闭它；你仍可从“设置”打开放大镜，也可随时重新启用快捷键。 五、Windows 中的 Microsoft 365 订阅 新增内联管理体验，让 Microsoft 365 订阅用户能更方便地在 Windows 内管理订阅。 已关闭“定期计费”的订阅者，现在可以直接在 Windows 设置中重新开启，无需前往单独网页。 入口位于 Windows 设置的主页、帐户页面，或“开始”菜单中的“启用定期计费”/“设置定期计费”。 六、文件管理器 改进了导航至加载较慢位置（例如网络驱动器）时的进度提示，让用户更容易看出内容正在加载中。 七、讲述人 讲述人的数学内容朗读功能新增支持以下语言：希腊语、匈牙利语、印尼语、挪威语（书面挪威语）、波兰语、俄语、瑞典语和越南语。 八、小组件 小组件选择器现在采用标准 Windows 对话框外框，标题栏支持浅色与深色模式。 同时移除了此前为图标预留的空白区域，界面更整洁。 九、任务栏修复 修复了上一次更新中，登录后 explorer.exe 无法加载的问题；该问题会导致任务栏以及其他依赖资源管理器的界面元素无法显示。 十、Windows 登录修复 修复了上一次更新导致部分 Insider 在登录屏幕上错误看到“密码错误”提示的问题，即使输入的密码实际正确也会出现该提示。",
-        "url": "https://www.ithome.com/1/017/367.htm",
+        "title": "鸿蒙智行智界 RX 轿跑 SUV 整装发运：今日同步开启全国大规模交付，赛车手谢欣哲成首批车主",
+        "summary": "IT之家 10 月 25 日消息， 鸿蒙智行智界 RX 轿跑 SUV 今日宣布整装发运 ，加速驶向首批车主。 参考IT之家此前报道， 智界 RX 今日会在上海国际赛车场举办首批车主交付仪式 ，全国大规模交付也将同步开启。官方透露，后续车辆将按照锁单顺序陆续推进排产和交付， 预计交付周期为 4-6 周 。 据博主 @爱叨叨的Steven 分享的现场情况， 赛车手谢欣哲成为智界 RX 首批车主 。公开资料显示，谢欣哲 1991 年 8 月 23 日出生于湖北十堰，曾获 2007 年全国卡丁车锦标赛贵州站 NCJ-B 组冠军、2009 年 AGF 亚洲方程式国际公开赛年度季军、2010 年中国方程式大奖赛北京站冠军、2015 年 CTCC 中国房车锦标赛北京站冠军、2023 年超级杯-TCR 中国系列赛株洲站首回合 / 次回合亚军等荣誉。 延伸阅读 智界 RX 于 2026 年 9 月 28 日正式上市，共推出六款车型，售价区间为 25.98 万至 38.98 万元，定位中大型纯电轿跑 SUV，基于华为途灵平台打造。 该车提供单电机后驱与双电机四驱两种动力布局，车身尺寸为 5020×2007×1585mm，轴距 3000mm，搭载四激光雷达矩阵与 L3 级自动驾驶架构设计，最高纯电续航里程为 852km，并配备前双叉臂、后五连杆悬架。 智界品牌由华为与奇瑞共同打造，是鸿蒙智行体系内的品牌之一。品牌于 2023 年 9 月发布，首款车型智界 S7 于 2023 年 11 月上市，此后陆续推出智界 R7、智界 V9 等车型，2026 年 9 月发布智界 RX 等新品。 公开资料显示，谢欣哲为中国 90 后赛车手代表人物，16 岁起参加职业赛事，2012 年夺得 CTCC 中国房车锦标赛中国量产车组年度总冠军，成为 CTCC 最年轻的总冠军得主；赴英国留学归国后创办汽车测评栏目“欣哲频道”，并担任中国赛车学院特聘教授。 据交付仪式现场信息，除谢欣哲外，国际超模胡兵等也作为首批车主到场提车，智界汽车董事长赵长江、执行董事兼 CEO 郭锐出席，赛车手罗开罗受邀到场。 官方公布的购车权益显示，2026 年 11 月 2 日前下定可享至高价值 40500 元购车权益，包括外观选配半价、ADS 高阶功能包补贴、辅助驾驶无忧服务等，鸿蒙智行老车主增换购另享 10000 元补贴。",
+        "url": "https://www.ithome.com/1/017/587.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-10-24",
+        "date": "2026-10-25",
         "tag": "IT之家",
-        "title": "微软“邮件革命”仅一年就退场：Outlook 收件箱 AI 整理 Prioritize My Inbox 功能下周起停用",
-        "summary": "IT之家 10 月 24 日消息，科技媒体 Windows Central 昨日（10 月 23 日）发布博文，报道称微软已宣布将于 2026 年 10 月 26 日开始， 退役 Outlook 中的“优先处理我的收件箱”（Prioritize My Inbox）功能。 IT之家援引博文介绍，该功能于 2025 年上线，主要通过调用 Copilot AI 帮助 Outlook 用户整理邮件，从而在大量邮件中，帮助用户更快找到真正需要优先处理的内容。该功能在上线初期，被微软称之为“电子邮件革命”。 时任微软数字部门首席产品经理的马修 · 马尔津斯基（Matthew Marzynski）曾表示： 想象一下，如果每个人都能拥有自己的私人助理，帮你筛选并推送最有价值的信息，那该有多好。 “优先处理我的收件箱”就相当于拥有一个私人助理。它可以提高你的响应速度，节省时间，让你专注于优先事项，并帮助你处理业务关键沟通。它还能减轻我们面对海量未读邮件时的压力。 该功能可以利用 Copilot 学习用户的工作方式与邮件处理习惯，自动识别与其工作流程最相关的邮件，并将它们突出显示在收件箱中。 用户还可以通过筛选器和自定义提示，告诉 Copilot 哪些类型的邮件更重要，例如客户回复、会议安排、审批请求或特定项目相关邮件。 不过该功能上线仅约 1 年时间，微软便决定将其撤下。根据官方公告，该功能将于 2026 年 10 月 26 日起开始退役，并逐步下线，预计到 2027 年 3 月底从所有 Outlook 客户端完全移除。 公司并未详细说明原因，只表示移除该功能有助于简化 Outlook Copilot 的整体体验。对于依赖 AI 自动整理邮箱的用户而言，未来仍可使用“重点收件箱”等传统方式管理邮件。",
-        "url": "https://www.ithome.com/1/017/362.htm",
+        "title": "电诈分子盯上医院潜入安装 GOIP 虚拟拨号设备，企图将境外电话转成本地医院号码诈骗",
+        "summary": "IT之家 10 月 25 日消息，据央视新闻今日报道，近日，辽宁锦州，两男子潜入医院安装 GOIP 设备。嫌疑人通过技术开锁进入医院弱电室， 企图将境外电话转成本地医院号码诈骗 。 民警迅速锁定嫌疑人并成功抓捕，目前犯罪嫌疑人已被公安机关依法处理。 IT之家注：GOIP 设备一种能将传统电话信号转化为网络信号的虚拟拨号设备， 是用于在 GSM（全球移动通讯系统）网络和 VoIP（基于 IP 的语音传输）之间建立直接连接的一系列 GSM 网关 。该设备能同时搭载大量 GSM 手机电话卡， 通过网络实现电话呼叫、短信群发、远程控制、人机分离等功能 。 警方提醒：正规单位不会通过电话要求转账、或者提供个人信息，接到本地号码不要放松警惕！",
+        "url": "https://www.ithome.com/1/017/584.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-10-24",
+        "date": "2026-10-25",
         "tag": "IT之家",
-        "title": "亿万富翁投资人马克 · 库班：抵御失控智能体就像防蟑螂，可以用 AI“喷药”",
-        "summary": "IT之家 10 月 24 日消息，对于 AI 时代的网络安全问题，亿万富翁、企业家兼投资人马克 · 库班提出了一套颇有意思的“灭虫”思路。 据《商业内幕》今天（24 日）报道，库班将大量 AI 智能体发动的网络攻击比作蟑螂入侵：即使房屋刚刚喷过杀虫剂，蟑螂仍能找到钻进去的办法。“我经常问网络安全专家，听到各种黑客攻击、技术突破和安全问题时，AI 究竟有没有发明什么新招数？答案是没有。 AI 并没有创造新的攻击手段，只是能够发动海量攻击，本质上还是暴力破解 。” 在库班看来，防范 AI 网络攻击与防止蟑螂入侵房屋有着相似之处。“ 道理和防蟑螂一样 。只要有人制造出足够多的 AI 智能体，总有办法找到系统的入口，再利用找到的漏洞。好消息是，我们同样可以 用大量 AI 给系统‘喷药’ 。我认为，会有更多人投入力量阻止恶意攻击。我对 AI 一点也不悲观。” 人工智能行业也开始组建自己的“灭虫队”，着手防范安全风险。过去一年，OpenAI 在领英发布的安全岗位招聘数量增长 91%，涵盖系统测试、技术研究和治理等领域。 IT之家获悉，部分风险已在测试中显现。Anthropic 披露，由于第三方测试环境配置错误，三个 Claude 模型未经授权访问了有关机构的实际运行系统。此后，Anthropic 引入实时分类模型，识别并阻止 AI 模型试图突破测试环境的行为。 库班认为，AI 虽然降低了实施恶意攻击的门槛，但防御者同样可以 利用 AI 增强网络安全防护能力 。“坏事当然会发生，但网络攻击从来就不是什么新鲜事。如果攻击者能靠大规模暴力破解发动攻击，防御者也能以同样的方式应对。”",
-        "url": "https://www.ithome.com/1/017/347.htm",
+        "title": "Apple TV 剧集《灵异女仆》被指抄袭案尘埃落定，苹果胜诉",
+        "summary": "IT之家 10 月 25 日消息，据路透社报道，苹果与 M· 奈特 · 沙马兰（M. Night Shyamalan）在 Apple TV 剧集《灵异女仆》（Servant）的版权诉讼上诉中胜诉，美国联邦第九巡回上诉法院维持了去年陪审团作出的有利于他们的裁决。 法院在 10 月 22 日出具裁定，驳回了导演弗朗西斯卡 · 格雷戈里尼（Francesca Gregorini）的主张。格雷戈里尼认为陪审团指引存在瑕疵、陪审团曾提出疑问却未得到解答，应当撤销原判。 格雷戈里尼在 2020 年 1 月提起诉讼，指控《灵异女仆》前三集抄袭她 2013 年的电影《伊曼纽尔的真相》（The Truth About Emanuel）。两部作品的核心设定相近：一名丧子的母亲把玩偶当成活着的婴儿，身边配有一名年轻看护者。根据最终判决书，2025 年 1 月 24 日，陪审团全体一致裁定苹果、沙马兰及其他被告不构成侵权。 据IT之家了解，本次上诉的争议焦点是：陪审团是否获得足够指引，来判断剧集主创有没有机会接触到格雷戈里尼的这部电影。上诉法院认定，法官给出的指引充分；即便陪审团当时还有待澄清的疑问，法官也有权直接采纳这份一致裁决。 这起案件一波三折：2020 年诉讼曾被驳回，2022 年上诉后案件发回重审，之后才进入陪审团庭审阶段。《灵异女仆》由劳伦 · 安布罗斯、托比 · 凯贝尔、内尔 · 泰格 · 弗里、鲁伯特 · 格林特主演，沙马兰担任执行制片人。",
+        "url": "https://www.ithome.com/1/017/583.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-10-24",
+        "date": "2026-10-25",
         "tag": "IT之家",
-        "title": "英国地方议会怒斥微软“敲诈”：软件授权费飙升 15% 引发反垄断争议",
-        "summary": "IT之家 10 月 24 日消息，科技媒体 NeoWin 昨日（10 月 23 日）发布博文，报道称英国德比郡议会（Derby City Council）近日公开指责微软公司，称其定价策略形同“敲诈”（Blackmail）， 主要争议在最新的拟定合约谈判中，微软将其软件授权费用大幅上调了 15%。 IT之家援引博文介绍，根据双方拟定的合同条款，微软将年度服务费上调 15%，达到 37.5 万英镑 （IT之家注：现汇率约合 335 万元人民币） ，让该议会每年的软件账单升至约 300 万英镑 （现汇率约合 2,679.9 万元人民币） ，授权将延续至 2030 年 5 月，覆盖该议会视为“业务关键”的办公协作、信息管理、安全与分析等核心数字服务。 尽管英国改革党与绿党议员均对涨价表达不满，甚至有议员直言微软的行为带有“敲诈”性质，但负责管理该议会的英国改革委员会（Reform UK）批准了此次采购流程。 关于续签的理由，该媒体解读认为现有授权将于 2027 年 5 月底到期，若在不到一年时间内全面更换数字系统，可能造成商业成果受损和基本公共服务中断。前首席议员罗布 · 霍华德表示，短期内没有足够时间搭建可替代微软方案的全新系统。 议会表示，此次决定仅意味着启动采购流程， 最终是否签署取决于报价是否仍在预算范围内。 议员们已讨论评估 Linux、LibreOffice 等开源替代方案，包括能否与微软工具并行运行、逐步迁移并最终替换。",
-        "url": "https://www.ithome.com/1/017/346.htm",
+        "title": "马斯克预告 X 平台新功能：长按点赞按钮，将通过 X Money 向对方转账 1 美元",
+        "summary": "IT之家 10 月 25 日消息，今天（25 日）上午，马斯克在 X 平台发文宣布：将为“长按点赞”操作加入转账 1 美元 （IT之家注：现汇率约合 6.7 元人民币） 功能，有关交易将会经由 X Money 完成。 不过，马斯克暂未透露这一功能的上线日期。 据悉，X Money 于 7 月下旬正式在美国上线，面向 Premium 和 Premium+ 订阅用户全量开放。X Money 将 账户存款、点对点转账以及 Visa 借记卡 功能整合在 X 应用内。用户可在 X 内即时向他人汇款、收款或请求收款，无手续费和限额。 随后在今年 9 月，X 平台宣布，美国地区创作者从“原创内容奖励计划”和创作者订阅获得的收益， 今后统一通过其支付服务 X Money 发放。 相关阅读： 《 无提现门槛：马斯克旗下 X 宣布美国创作者收益全面转由 X Money 发放 》 《 马斯克“超级应用”关键一步：X Money 正式在美国上线，支持苹果钱包绑卡返现 3%、年化收益最高 6% 》",
+        "url": "https://www.ithome.com/1/017/581.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-10-24",
-        "tag": "钛媒体",
-        "title": "数采会成为具身智能的“牺牲品”吗？",
-        "summary": "挤泡沫的时候到了？",
-        "url": "https://www.tmtpost.com/8180292.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-10-24",
-        "tag": "钛媒体",
-        "title": "全线扩产仍供不应求，光刻机被抢疯了",
-        "summary": "从晶圆制造到先进封装，新增投资正在覆盖更多光刻工序。",
-        "url": "https://www.tmtpost.com/8180287.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-10-24",
-        "tag": "钛媒体",
-        "title": "打工人，开始“表演”AI提效",
-        "summary": "不会用AI不要紧，别让老板觉得你不会。",
-        "url": "https://www.tmtpost.com/8180279.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-10-24",
-        "tag": "钛媒体",
-        "title": "寒武纪Q3：利润翻倍，市值降温",
-        "summary": "前三季度赚了37亿，但万亿市值已成往事。",
-        "url": "https://www.tmtpost.com/8180272.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-10-24",
+        "date": "2026-10-25",
         "tag": "爱范儿",
-        "title": "iPhone Duo 2 提前曝光：FaceID、操作按钮都要回来了？",
+        "title": "iPhone Duo 2 提前曝光：FaceID、操作按钮和长焦都要回来了？",
         "summary": "还没捂热呢 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
         "url": "https://www.ifanr.com/1685622?utm_source=rss&utm_medium=rss&utm_campaign=",
         "source": "爱范儿",
@@ -579,73 +539,113 @@
         "category": "科技"
       },
       {
-        "date": "2026-10-24",
-        "tag": "爱范儿",
-        "title": "突发！iPhone Duo 支持微信平板登录，可与手机、电脑同时在线",
-        "summary": "来了来了 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1685714?utm_source=rss&utm_medium=rss&utm_campaign=",
-        "source": "爱范儿",
+        "date": "2026-10-25",
+        "tag": "钛媒体",
+        "title": "单季净赚212亿，两天跌去近15%：AI行情到底在杀什么？",
+        "summary": "AI股连跌四周、业绩却集体爆表，股票型ETF同期净流入近700亿：这轮调整杀的是估值不是业绩。",
+        "url": "https://www.tmtpost.com/8179663.html",
+        "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-10-24",
-        "tag": "爱范儿",
-        "title": "实测 Kimi K3.1 Pro，国模终于继续卷旗舰",
-        "summary": "大而美的 Kimi 回来了 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1685684?utm_source=rss&utm_medium=rss&utm_campaign=",
-        "source": "爱范儿",
+        "date": "2026-10-25",
+        "tag": "钛媒体",
+        "title": "阿宽食品拟新三板摘牌，头号客户麻六记回应“欠款”传闻",
+        "summary": "此次拟终止在新三板挂牌之际，阿宽食品正面临着不小的业绩压力。",
+        "url": "https://www.tmtpost.com/8180790.html",
+        "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-10-24",
+        "date": "2026-10-25",
+        "tag": "钛媒体",
+        "title": "拉上英伟达硬刚苹果，微软的高端AI PC赌局",
+        "summary": "AI PC的竞争，早已不再停留在有没有NPU的浅层比拼。",
+        "url": "https://www.tmtpost.com/8180842.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-10-25",
+        "tag": "钛媒体",
+        "title": "电动化转型有了起色，沃尔沃却越来越难赚钱了",
+        "summary": "纯电销量增长难抵传统车型下滑，沃尔沃利润转亏，降本难解转型压力。",
+        "url": "https://www.tmtpost.com/8180823.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-10-25",
         "tag": "极客公园",
-        "title": "iPhone Duo正式交付；Kimi K3.1 Pro 、Seedance 2.5 4K正式发布；红果短剧上线防沉迷｜极客早知道",
-        "summary": "苹果首款折叠屏手机 iPhone Duo 正式交付用户 部分订单预计明年 1 月才能送达 苹果首款折叠屏手机 iPhone Duo 于 2026 年 10 月 23 日正式进入上市交付阶段，首批预购用户开始收到新机，苹果零售店也迎来首发日消费者。由于预购需求强劲，加上生产供应受到限制，上市初期的现货数量相当有限，部分消费者即使在首发日下单，也可能需要等待数月才能拿到设备。 苹果此前表示，iPhone Duo 的预购需求表现异常强劲，公司正在努力尽快将产品交付给消费者。苹果同时确认，全球 Apple Store 门店会提供少量供现场顾客购买的库存，但提醒消费者，这些现货可能很快售罄。对于希望不经预购、直接前往门店购买的用户来说，能否买到新机仍存在较大不确定性。 这次供应紧张，与 iPhone Duo 在预购阶段迅速售罄的情况相吻合。预购于 10 月 16 日开启后，部分配置的预计发货时间很快被推迟。此后，苹果官网显示的新订单交付日期进一步延后，部分订单的预计送达时间已经排到 2027 年 1 月 25 日左右。这意味着，首发需求与现有供应能力之间仍存在明显差距。（来源：cnBeta） 曝 DeepSeek 最快明年推进 IPO，联想系入局 DeepSeek 新一轮融资 据外媒援引知情人士消息，DeepSeek 新一轮融资引入多家产业及财务投资者，其中包括君联资本（Legend Capital）、专注半导体领域的石溪资本及吉利等。与此同时，DeepSeek 已聘请中信证券为其 IPO 提供顾问服务，并于今年 9 月引入新的首席财务官，DeepSeek 最快可能于 2027 年初推进 IPO。 君联资本与联想集团同属联想控股体系。联想集团是联想控股旗下核心产业公司，君联资本则是其重要投资平台。此次君联资本参与 DeepSeek 融资，也意味着联想系资本正式进入 DeepSeek 股东阵营。 从产业协同来看，此次投资进一步拉近了联想系与国内头部大模型厂商之间的关系。联想目前的 AI 业务已经覆盖 AI 终端、企业 AI 和 AI 基础设施多个领域，其中 AI PC、手机、平板等终端需要持续接入大模型能力，企业 AI 业务依赖模型、智能体与行业解决方案结合，服务器及数据中心业务则承接模型训练和推理带来的算力需求。 此前，联想已经围绕 DeepSeek 推进多项产品适配，包括在 AI PC、服务器及企业 AI 解决方案中接入 DeepSeek 模型。此次君联资本进一步参与 DeepSeek 融资，使双方关系从产品和技术适配进一步延伸至资本与生态层面，有望为联想 AI 终端、企业 AI 及 AI 基础设施业务带来更多协同空间。 （来源：新浪科技） 古尔曼爆料苹果第三代 iPhone Duo 折叠手机：配长焦镜头，8 英寸出头内屏 10 月 23 日消息，在第四期 Power On 播客节目中，彭博社的马克 · 古尔曼（Mark Gurman）透露， 苹果公司正在规划更大尺寸的 iPhone Duo ，并考虑在未来机型中加入长焦摄像头。 古尔曼在播客节目中表示，这些规划有望在第三代 iPhone Duo 上实现，该产品预估 2028 年推出，其内屏尺寸可能比现款（7.6 英寸）增加约 0.5 英寸， 达到「8 英寸出头」的水平。 古尔曼表示，苹果 iPhone Duo 屏幕尺寸的升级路线，不会推出 8.5 英寸或者 9 英寸的大型折叠屏幕，会采用类似 Pro 系列的渐进式扩屏策略。例如 iPhone 15 Pro Max 从 6.7 英寸增至 iPhone 16 Pro Max 的 6.9 英寸。 影像方面，古尔曼透露长焦「已在苹果的计划清单中」，但尚未确定具体落地时间。他表示，难点不在成本，主要在物理结构，由于折叠机身内部空间有限，长焦模组所需的镜头深度难以容纳。 此外，古尔曼还提到苹果正在测试 iPhone Duo 2 的外屏下 Face ID，并探索加入操作按钮（Action Button）的可能性。若上述升级成真，iPhone Duo 后续机型将同时向「更大内屏、更强影像、更完整交互」方向演进。（来源：IT 之家） 微软低调测试全新 AI 记忆工具 Pantheon 微软正在秘密测试一款面向 Windows 11 的新型人工智能应用，其内部代号为「Project Pantheon」。与此前曾引发广泛讨论的 Recall 功能不同，这款新工具不会自动记录用户屏幕上的所有活动，而是仅保存用户主动选择的内容，因此被外界视为一种更加注重隐私的新型「记忆系统」。 据测试信息显示，Project Pantheon 目前以「Context Vault」的名称出现，同时还涉及「Context IO」和「Projects」等多个内部命名。尽管微软尚未正式公布该项目，但相关应用已经通过未公开的微软商店页面进行测试，并被部分用户发现和体验。 从功能角度来看，Context Vault 更像是一个个人数字记忆库。用户可以主动保存网页、文件、截图、复制的文本内容以及音频和视频资料，并将这些内容整理到不同的收藏集之中。随后，用户能够通过 AI 对这些资料进行搜索、提问和总结，从而快速找回此前保存的信息。 应用主界面包含收藏集、资料库、聊天、时间线、令牌使用情况以及外部连接等多个板块。系统既支持用户手动创建分类，也能够利用人工智能自动生成内容集合。不过测试版本仍处于早期阶段，部分自动生成的分类名称甚至出现了「None」和「null」等明显未完善的情况。（来源：cnBeta） 国产 DRAM 重大突破！长江存储准备量产 9600MT/s 的 LPDDR5X 内存 10 月 23 日消息，据报道， 长江存储正在开发速率高达 9600MT/s 的 LPDDR5X 内存，并计划在武汉 Fab 3 工厂实现量产。这是这家 NAND 闪存巨头首次将自研 DRAM 推向高速移动内存赛道，直接对标三星、美光等国际巨头。 长江存储的 DRAM 路线并非临时起意。自 2025 年 10 月起，该公司已在 Fab 2 工厂开展第二代 16Gb LPDDR5 的研发与测试，速率 7500MT/s，月产量约 5000 片晶圆。而此次曝光的 9600MT/s 版本，速率大幅跃升，并首次引入了垂直通道晶体管（VCT）与 4F²单元架构，标志着长江存储正从成熟制程向先进 DRAM 架构快速切换。 4F²架构是这轮技术竞赛的焦点。与传统的 6F²架构相比，4F²能将单个存储单元的面积缩减至四倍特征尺寸的平方，理论上可在相同芯片面积内容纳更多单元，从而提升密度、降低成本。这一路线与长鑫存储此前宣布的 4F² DDR5 计划形成呼应，显示中国存储厂商正集体押注这一新架构。 从 NAND 到 DRAM，长江存储的跨界意味着中国存储产业正从单点突破走向全品类竞争。9600MT/s LPDDR5X 若能如期量产，不仅将补齐国产移动内存的高端空白，更可能在 AI 终端与旗舰手机市场，为国产供应链撕开一道新的口子。（来源：快科技） 华为全球采购认证管理部总裁彭博离职，已履职超 27 年 10 月 23 日下午消息，新浪科技从知情人士处获悉，华为公司董事、全球采购认证管理部总裁彭博已于近日离职。在华为官网的管理层信息一栏中，他的个人履历已被撤下。 据悉，彭博在朋友圈中也发文称，「9952 天，感恩，感激，感谢，继续前行！」证实了从华为离职一事。 彭博退出之后，华为董事会成员中新增了华为终端 BG CEO 何刚。何刚之外，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东也在董事会中，出现了终端 BG 两位高管同在董事会的局面。 资料显示，彭博 1976 年出生，于 1999 年加入华为，历任华为 Vodafone 系统部部长、欧洲片区副总裁、运营商 BG 全球销售部总裁及华为西欧地区部总裁等职，主导拓展欧洲市场并突破核心国家业务；2015 年任欧洲区域总裁期间实现手机业务收入增长 5 倍，并在意大利、西班牙等市场取得领先份额；2018 年任华为公司董事会成员，2021 年调任公共关系体系及供应体系工作。（来源：快科技） 短剧也要做防沉迷了！红果短剧上线休息提醒、睡眠提醒机制 近日，红果短剧上线防沉迷「休息提醒」和「睡眠提醒」两项机制。用户看剧超过一定时长，或在深夜时段打开红果短剧时，可能会在推荐页刷到一条特别的视频：熟悉的短剧角色对着镜头，提醒用户放下手机，休息一下。其中「休息提醒」在用户看剧超过一定时长后触发，「睡眠提醒」则面向深夜时段仍在看剧的用户。目前，提醒机制正逐步覆盖更多用户。据了解，红果短剧后续还将上线「时间管理」功能，由用户自行设定休息提醒的间隔和睡眠提醒的时间。 据第三方数据机构统计，2026 年 8 月，在中国月度使用时长排名前 50 的应用中，字节系产品总时长份额达到 41.8%。其中，红果短剧约 125 分钟/天，抖音约 112—120 分钟/天。中国网络视听协会数据显示，2026 年二季度，国内共上线微短剧 23.9 万部，其中 AI 剧 15.3 万部，占比 64%，二季度该占比超过 95%。 而进入 2026 年上半年，国内 AI 剧漫剧用户规模预计迅速突破 6 亿，较此前预估的 2.8 亿实现了超预期的翻倍增长。（来源：快科技） 字节跳动 Seedance 2.5 4K 发布：AI 生成视频跟真人没啥区别了 今天，火山引擎正式发布 Seedance 2.5 4K。通过专项训练，Seedance 2.5 4K 更充分地学习了人物表情、细微动作与画面细节，是 Seedance 2.5 这一代中最强的模型。 官方介绍称，Seedance 2.5 4K 让画面中的纹理、轮廓与细节得到更充分的呈现，整体画面更清晰。再加上 10-bit 色深带来的丰富色彩层次与平滑的渐变过渡，画面质感更能胜任大荧幕。 在影视客户的文戏测试中，4K 版本对人物细微反应的呈现更充分，使得观众更容易读到台词之外的情绪，人物的表演也更有层次、更生动。 而且 Seedance 2.5 4K 支持 Draft（样片）模式，终端用户可先用 480P 样片快速验证分镜、反复打磨镜头，确定满意的效果后再生成 4K 正片。 在该模式下，480P 以更优成本给足创意探索空间，4K 负责呈现极致的视觉效果。目前 4K 版本没有面向普通用户全面放开，采取定向邀请模式，优先给到全球 20 家影视工作室和导演，用来尝试电视剧、电影镜头的前期制作。（来源：快科技） 谷歌推出 Agent Compute Engine，为每个 AI Agent 提供独立计算环境 谷歌公布 Agent Compute Engine（ACE），一项专门为 AI Agent 设计的云计算服务。 与传统云服务器不同，ACE 可以为每个 Agent 分配独立的微型虚拟机，使其在隔离环境中运行代码、操作浏览器和调用外部工具。这套系统还针对 Agent 的运行方式进行了优化。 例如，当 Agent 正在等待模型推理结果或用户确认时，系统可以暂停其计算环境，释放部分资源；当任务需要继续执行时，再快速恢复此前的运行状态。 谷歌表示，在一项涉及 20 万个 Agent 的测试中，相关开源运行时实现了低于 500 毫秒的暂停与恢复延迟。 ACE 目前已经用于支持 Gemini 的部分内部任务。谷歌计划在未来几个月向外部开发者开放预览。（来源：谷歌） 月之暗面发布 Kimi K3.1 Pro：3 万亿级参数，新增 3D 创作能力 月之暗面正式发布 Kimi K3.1 系列首款模型 K3.1 Pro，同时推出高速版本 K3.1 Pro Highspeed。 这是 Kimi 目前能力最强的 3 万亿级参数模型，支持最高 100 万 Token 上下文。高速版在保持相同模型能力的前提下，输出速度提升约 2—3 倍。 新模型重点强化了编程、长程 Agent、3D 创作和金融研究能力。 K3.1 Pro 可以根据文字描述、草图或参考图片，推断物体形状和空间关系，并通过编写 Blender、CAD 等专业工具的脚本生成 3D 模型。 Kimi 网页端和 App 也同步上线了 3D Make 功能，用户可以在线预览、编辑生成的 3D 模型，并将其下载用于 3D 打印。 根据月之暗面公布的数据，K3.1 Pro 在 Terminal-Bench 4.0 上取得 65.7% 的成绩，高于 GPT-6 Astra 的 58.2%，接近 Claude Opus 5.5 的 66.4%。 模型已经上线 Kimi App、Kimi Work、Kimi Code 和 API，完整模型权重计划于 11 月 4 日前开放。 （来源：IT 之家） 复古游戏模拟器 Delta 2.0 上线：苹果 iPhone Duo 变身「掌上双屏游戏机」 科技媒体 9to5Mac 昨日（10 月 22 日）发布博文，报道称复古游戏模拟器 Delta 更新至 2.0 版本， 在适配苹果首款折叠 iPhone Duo 之外，在界面上融入了液态玻璃（Liquid Glass）设计。 在游戏体验方面，Delta 针对 iPhone Duo 的多种使用姿势，设计了专属虚拟手柄皮肤，其中最值得关注的是任天堂 DS 布局。应用可充分利用内屏尺寸，在竖向「书本模式」下跨越折叠铰链，把上半屏作为游戏画面、下半屏作为触控操作区，还原真实 DS 的双屏体验。IT 之家附上相关图片如下： 在横屏分屏场景中，Delta 也做了一个巧妙设计。通常 iPhone Duo 的分屏会将两个应用各限制在约一半屏幕内，但 Delta 把虚拟 DS 的下半屏以自定义键盘视图呈现，让操作区可横跨整个屏幕宽度，甚至覆盖分屏另一侧的视频应用。这意味着用户可以一边看视频，一边在下方完整操作游戏。 在适配 iPhone Duo 之外，Delta 2.0 还兼容支持 Sega Genesis ROM，改进了游戏库导航，并更新音频设置，允许游戏声音与正在播放的音乐或播客混合输出。高级版可通过 App Store 内购订阅解锁，现已面向全球推出。（来源：IT 之家）",
-        "url": "http://www.geekpark.net/news/372858",
+        "title": "苹果首批折叠屏遭集中投诉；英国宣布超过 6 亿英镑 AI 投资计划；刘慈欣监制《三体·大史》年内开机",
+        "summary": "​到手 6 小时、开合不到 20 次屏幕就裂：苹果首批折叠屏遭集中投诉 苹果首款折叠屏手机 iPhone Duo 刚开售就遇上了麻烦：据海外论坛和小红书多人反馈，不少用户开箱即遇到屏幕爆线、开裂问题，汇总照片显示故障位置高度集中——几乎全部出现在铰链正上方，多数表现为屏幕一侧浮现一条亮像素线。 一名澳洲用户称，设备到手约 6 小时、开合不到 20 次，向朋友展示展开时先感到内铰链下方异样，随后听到清晰的「咔嚓」声，屏幕随即沿铰链裂开，内屏表面与外部铰链均无磕碰或夹痕，他前往 Apple Store 后苹果直接为其更换了故障机。国内也有类似案例。 综合目前反馈，问题可能出在 iPhone Duo 的铰链上，但涉及规模不算大，更可能是装配公差导致，而非设计缺陷，具体情况还有待后续观察。截至发稿，苹果官方尚未就这一批次屏幕问题作出公开说明。 如果苹果售后检测确认非人为导致，将会为用户更换新机。但若被认定为磕碰所致，则需用户自费维修：按苹果官网公示，未购买 AppleCare+时，内屏损坏保外维修预估费用高达 7998 元；购买 AppleCare+后，内屏及意外损坏服务费为 628 元——两者相差超过十倍。 对于新机短期出现的屏幕问题，法律人士指出，消费者有权依据国家「三包」规定主张修理、更换或退货，商家若主张「人为损坏」，应承担相应的举证和说明义务。AppleCare+属于自愿购买的增值服务，不能替代经营者对商品质量的基本责任。建议用户保留购物凭证、沟通记录和设备照片等证据，必要时可向消保委投诉或走法律途径。(来源：TechWeb) 英伟达黄仁勋开炮：「AI 毁灭人类」纯属捏造，是博眼球的廉价炒作 法新社于 10 月 22 日发布博文，报道称在柏林举行的公司会议上，英伟达首席执行官黄仁勋再度抨击「AI 毁灭人类」言论，认为其是无稽之谈，更多是为了制造头条新闻而进行的「捏造」和「廉价」炒作。 IT 之家翻译黄仁勋相关言论内容如下： 当你听到说 AI 将会终结人类文明时，请不要相信这个言论。这些言论靠「捏造」和「廉价」炒作，博得「头条新闻」，但绝非事实。 针对某些科学专家认为「AI 会在 10 年内毁灭人类」观点，黄仁勋表示：「他们的所有预测都错了，所谓的 10% 概率既没有科学依据，也没有研究支持…… 这些预测只会伤人。」 黄仁勋呼吁外界以「负责任的乐观态度」看待 AI，表示如果人们关心人类之后的未来与可持续发展，现在正是「构建人工智能」的最佳时机。（来源：IT 之家） 月之暗面主动限制 Kimi K3.1 Pro 的网络攻击能力，为开放权重设置安全边界 10 月 24 日，路透社报道，月之暗面在新一代模型 Kimi K3.1 Pro 的训练过程中，主动采取措施限制其网络攻击能力。 月之暗面表示，团队从训练数据和强化学习环境中移除了部分网络攻击相关内容，希望在保持通用编程能力的同时，避免开放权重模型进一步提高前沿网络攻击能力。 根据月之暗面公布的内部测试，在受控环境中寻找并利用软件漏洞的评测里，经过安全调整的 K3.1 Pro 得分为 81.0%，而未采取相同限制措施的版本为 90.5%。 公司表示，调整后的模型仍然超过上一代产品的表现。 Kimi K3.1 Pro 已于 10 月 24 日凌晨发布，完整模型权重计划于 11 月 4 日前开放。（来源：路透社） Anthropic 亮出未发布 AI 模型：能力比 Mythos 5.1 更强，也更「守规矩」 Anthropic 10 月 23 日发布博文，联合英国人工智能安全研究所（AISI），发布了一起 AI 网络测试失控事件的调查报告，并提及旗下一款尚未发布的内部研究模型。 在这份调查报告中，Anthropic 称在测试 Claude Mythos 5 期间，该模型曾试图向真实 GitHub 项目提交恶意代码，并伪造身份向真实维护者施压，所幸代码未被合并、未造成实际损害。 报告同时透露，Anthropic 旗下一款尚未发布的内部研究模型，在能力上已超过已发布的 Claude Mythos 5.1，并在安全对齐测试中表现更好。在同类危险能力评估中，该内部模型从未主动发起攻击；当意识到可能造成真实伤害时，也更愿意停止行动。 Anthropic 将事故记录重新回放给 Mythos 5.1、Opus 5.5 及该内部研究模型。结果显示，三款较新模型从原始攻击起点继续发起攻击的比例仅为 0% 至 13%，而 Mythos 5 为 83%。 在攻击已经开始后，Mythos 5 从未自发停止；Mythos 5.1 自发停止率仅约 1%，Opus 5.5 为 10%，而内部研究模型达到 62% 至 67%。当获得「维护者是真实用户」等补充信息后，较新模型的停止率升至 95% 至 100%。 不过，Anthropic 也强调该评估存在局限：新模型是在由其他模型生成的既有对话记录中回放，未必完全反映其独立运行时的行为。（来源：IT 之家） AI 热潮遭遇电力瓶颈：亚马逊大量采购英伟达 GPU 到货后暂时闲置 据报道，亚马逊云计算部门 AWS 正在以前所未有的速度采购英伟达最新 AI 服务器系统。根据内部规划，AWS 一度预计接收价值约 50 亿美元的英伟达 GB300 服务器机架，未来还计划持续以每月约 30 亿美元的规模采购相关设备。然而，部分设备在交付后并未立即投入使用，而是被暂时存放在仓库或中转设施中。 造成这一现象的原因并非需求不足，而是部分数据中心虽然已经具备安装空间，却缺乏足够的供电能力来驱动这些高功耗 AI 系统。业内将这类已经采购但暂时无法运行的设备称为「暗 GPU（Dark GPU）」。这一概念既可以指因电力或基础设施限制而闲置的硬件，也可用于描述已部署但未被充分利用的 AI 计算资源。 分析人士指出，当前 AI 产业的发展重心正在发生变化。两年前行业关注的是谁能够获得更多英伟达 GPU，如今越来越多企业发现，真正稀缺的资源或许已不是芯片本身，而是支撑这些芯片运行所需的能源和电力网络。（来源：cnBeta） 瑞典政府办公厅出手，禁止办公电脑直接访问 ChatGPT、Claude 当地时间 23 日，据瑞典国家公共广播公司 Sveriges Radio 报道，瑞典政府办公厅将从下周一起禁止工作人员通过办公电脑直接访问 ChatGPT 和 Claude，要求员工改用微软 Copilot 等获得批准的 AI 服务。 内部资料显示，该国政府办公厅还对 Copilot 进行了审查，并进一步加强了安全防护。该机构数字化总监米卡埃尔 · 韦特克兰茨（Mikael Wettercrantz）在政府办公厅内网上指出，使用未签订协议的 AI 服务可能对信息安全造成影响。 调查发现，瑞典税务局和国家机构管理局（SiS）也已采取类似的封锁措施。瑞典强制执行局则尚未作出决定，仍在研究是否实施限制。 瑞典多家政府机构都注意到了未经规范管理的 AI 使用行为所带来的风险，并采取了其他应对措施。瑞典交通管理局就是其中之一。今年早些时候，该机构内部审计发现，员工普遍使用约 10 种 AI 服务，其中存在不少风险。 审计报告指出：「我们发现了多个使用开放式 AI 服务时出现问题的案例。问题既涉及输入信息的敏感程度，也涉及 AI 生成回答的处理方式。」 据悉，部分工作人员今后仍可通过内部自主开发的 AI 助手平台使用 ChatGPT 和 Claude。（来源：IT 之家） Google 隐私政策新增例外：连接 Gmail、照片等数据或影响个性化广告 Google 更新隐私政策，明确说明：Gmail、云端硬盘和 Google 相册中的内容默认不会用于个性化广告，但如果用户选择把这些服务中的数据开放给支持个性化广告的其他 Google 服务，这项排除规则就有例外。Google 举例称，搜索服务可能处理用户允许访问的部分资料，以个性化内容，其中也包括广告。 这项变化与 Google 推广的「个人智能」功能有关。用户连接 Gmail、相册等应用后，Gemini 或 Google 搜索可以结合邮件、照片中的信息回答问题，例如读取酒店预订邮件后推荐附近餐厅。 Google 称，连接应用由用户主动开启，可自行选择接入哪些服务并随时断开；不过，隐私政策现已说明，开放给某些支持广告个性化服务的数据，可能也会影响用户看到的广告。 这并不等于 Google 默认扫描所有邮件和照片来投放广告。政策中的例外针对用户选择开放给其他服务的数据，具体用途取决于连接的服务、权限和设置。Google 还表示，除非用户主动要求，否则不会向广告商透露姓名或电子邮箱等可直接识别个人身份的信息。（来源：cnBeta） 浏览量超 4000 万！影视飓风 Tim 入驻 X 平台：首条视频爆火 10 月 23 日消息，影视飓风创始人 Tim（潘天鸿）正式入驻 X 平台，同时发布的首条内容为一条聚焦苹果首款折叠屏 iPhone Duo 的全英文实测视频，帖文浏览量已突破 4000 万次。 借着视频走红的势头，Tim 宣布将在 X 平台送出 100 台 iPhone 18 Pro 回馈粉丝。 截至目前，Tim 的 X 平台账号关注者已达 12 万，累计发布 4 条内容。其中上述 iPhone Duo 测试视频帖文浏览量超过 4000 万，获得约 1.3 万次转发、3600 条留言。 这条全英文视频对 iPhone Duo 进行了完整实测，不仅完成一万次常温折叠耐久测试，还对机身与屏幕结构进行拆解，并围绕整机性能、续航、软件适配与日常使用体验逐项验证，测试流程严谨详实。 同时，精良的制作水准在海外收获大量好评，有国外网友留言称\"这可能是我多年来看过的最好的手机评测」。 视频受到关注后，Tim 发帖宣布将在 X 平台送出 100 台 iPhone 18 Pro。他表示，正是这条 iPhone Duo 评测视频的意外走红，促使自己决定发起此次赠机活动。据 X 平台相关帖文显示，该活动将在 72 小时后开奖。(来源：TechWeb) 字节 AI 应用再整合：小云雀并入即梦 据悉，近期剪映内部完成了一次业务整合，AI 短剧创作平台小云雀并入智能创作平台即梦，产品仍保留独立入口。 此次调整主要是资源整合，目前即梦已经接入了小云雀短剧相关能力。调整后，小云雀的运营由即梦运营和市场负责人陈欣然负责，产品团队没有变化。 这轮调整背后更重要的是一个背景：在大厂将力量重新集中到基础模型后，大家都对 AI 应用的优先级进行了重新评估。字节则是其中速度最快、调整最激进的一家大厂——在即梦和小云雀团队的合并之外，他们还在讨论其它的 AI 产品合并的可能性。（来源：36 氪） 英国宣布超过 6 亿英镑 AI 投资计划，OpenAI、Anthropic 参与建设生物安全实验室 10 月 24 日，英国政府宣布新一轮人工智能投资计划，覆盖 AI 生物安全、网络防御、芯片研发和本土 AI 企业发展。 其中，英国将投入 1 亿英镑，成立 AI Biosecurity Lab（人工智能生物安全实验室），利用前沿 AI 识别、监测和应对生物威胁，并加快疫苗、药物等医疗应对手段的研发。 OpenAI 和 Anthropic 将分别提供最高价值 1 亿英镑的模型使用额度、技术资源及相关支持。 Google DeepMind 和英国生命科学企业 Basecamp Research 也将参与研究合作。 此外，英国政府还将追加 1.2 亿英镑支持 AI Security Institute，并投入 6000 万英镑建立 National Cyber Shield，利用 Agent 技术提升网络安全防御能力。 英国还计划投入 7000 万英镑建设实时漏洞发现机构，使用 AI 检查关键基础设施和其他系统中的安全漏洞。（来源：IT 之家） 比亚迪方程豹钛 9 车型 11 月 15 日后上市，SHARK 鲨鱼皮卡紧随其后 10 月 22 日，比亚迪集团-方程豹事业部总经理熊甜波公布新车的进度。 据其透露，方程豹钛 9 车型会在 11 月 15 日后正式上市。团队会提前备好现车，让用户提车不用长时间等待。同时展车、试驾车会在 10 月底陆续到。此外，SHARK 鲨鱼皮卡，在钛 9 发布之后，计划 11 月底—12 月初上市同步交付。 据此前官方介绍，钛 9 是方程豹品牌旗下钛系列的第三款车型，定位科技新奢旗舰 SUV。采用 2+2+2 大六座布局，车身尺寸为 5270x1999x1880mm，达到全尺寸级别，依托 3130mm 超长轴距和方盒子造型带来的高空间利用率。 方程豹鲨鱼插电式混合动力皮卡的申报信息显示，该车定位插电式混合动力多用途皮卡，外形尺寸为长 5457 mm × 宽 1971 mm × 高 1925 mm，货箱栏板内尺寸长 1520 mm × 宽 1530 mm × 高 515 mm，轴距为 3260 mm，整备质量 2710 kg，总质量 3495 kg，额定载质量 460 kg。（来源：IT 之家） 刘慈欣监制《三体·大史》年内开机，导演杨磊称演员都已「众神归位」 2026 年是《三体》小说发表 20 周年，在 2026 年三体日活动现场，导演杨磊确认《三体 · 大史》已定档 2026 年第四季度开机，目前处于开机前的最后冲刺阶段，演员已全部「众神归位」。 本片将延续剧版《三体》第一部核心班底，刘慈欣继续担任监制，杨磊执导，陆贝珂出任视觉导演；演员方面，于和伟饰史强，张鲁一饰汪淼，林永健特别出演。 《三体 · 大史》的定位是《三体》首部真人衍生剧，全剧 12 集，时间线落在第一部「古筝行动」之后、第二部《黑暗森林》之前，填补两部正传之间约三年的剧情空白。 根据官方披露的剧情梗概，故事聚焦危机纪元初期：史强在 PDC 地球防务安全部任职期间身患绝症，在与汪淼告别之际，主流防御计划突遭重大打击，两人被迫再度联手调查，事件背后疑似涉及 ETO 的死灰复燃或隐秘势力的介入。 该剧采用原创故事，并非直接改编自原著中已有的段落，延续查案主线的同时铺开更广的群像叙事。活动现场还曝光了概念图，呈现了包含亚洲区、南极洲区等多个分区的生存实验空间，以及植物太空生存模拟实验的场景。（来源：IT 之家）",
+        "url": "http://www.geekpark.net/news/372860",
         "source": "极客公园",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-10-24",
+        "tag": "The Verge AI",
+        "title": "Blue Planet III is keeping the rough edges in the age of AI",
+        "summary": "BBC's Blue Planet III is looking to prove its authenticity by leaving in the less-than-perfect shots. Previous incarnations of the nature series were defined by their gorgeous, crystal-clear footage that seemed almost too good to be real. But one dead giveaway of AI is when things look too polished and seamless. To counter that, Blue […]",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1018205/blue-planet-iii-authentic-organic-ai",
+        "source": "The Verge AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "TechCrunch AI",
+        "title": "The AI graveyard: a running list of projects and startups that didn’t make it",
+        "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
+        "url": "https://techcrunch.com/2026/10/24/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "The Verge AI",
+        "title": "Pennsylvania will require labels on AI-generated ads",
+        "summary": "On Thursday, Pennsylvania Governor Josh Shapiro signed the Artificial Intelligence Deceptive Advertising Act into law, requiring disclosures on AI-generated ads. The law requires any ad - whether it's a still image, video, audio, or text - that \"has been significantly modified or generated by artificial intelligence\" to include a label in the same format as […]",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+        "source": "The Verge AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "TechCrunch AI",
+        "title": "Block’s new voice model sounds eerily human",
+        "summary": "Block said that the voice model can run locally on a MacBook M4 Max",
+        "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-10-24",
+        "tag": "TechCrunch AI",
+        "title": "Forced to pick, Grok’s AI model chooses Republicans. OpenAI’s picks Democrats.",
+        "summary": "A new study found Grok's AI overwhelmingly recommends Republican candidates while OpenAI's GPT favors Democrats, with the two AI models disagreeing in more than 90% of nearly 500 election races.",
+        "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-10-24",
         "tag": "爱范儿",
-        "title": "早报｜微信初步适配iPhone Duo，仍不能平板登录/全球PC出货下降21%/何刚出任华为董事",
-        "summary": "· 黄仁勋：对长鑫合作持开放态度，不认为 2029 年内存会过剩 · 沃尔沃汽车拟全球裁减约 2500 个岗位 · 华为 Pura90 Plus 开启预订 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1685660?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "title": "史上最快宾利！竟然是一辆 SUV？",
+        "summary": "不愧是精装版纯电卡宴。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+        "url": "https://www.ifanr.com/1685572?utm_source=rss&utm_medium=rss&utm_campaign=",
         "source": "爱范儿",
         "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "TechCrunch AI",
-        "title": "OpenAI says it will no longer train its AI models on the live internet, citing “significant risks”",
-        "summary": "OpenAI will cut frontier models off from the internet weeks after one of its engineers said that solution wouldn't work.",
-        "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
-        "source": "TechCrunch AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "Ars Technica",
-        "title": "NASA updates lander plans for Moon landings, finally solves long-festering Orion issue",
-        "summary": "\"We have the mandate, we have the resources, and the support from our stakeholders.\"",
-        "url": "https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/",
-        "source": "Ars Technica",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-10-23",
-        "tag": "TechCrunch AI",
-        "title": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-        "summary": "The robots, stomping their little feet and making tiny R2-D2 noises, sat, fell down dead for a \"nap,\" and summersaulted on voice command.",
-        "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-        "source": "TechCrunch AI",
-        "region": "en",
         "category": "科技"
       }
     ]
