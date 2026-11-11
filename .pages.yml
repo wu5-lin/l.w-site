@@ -70,6 +70,11 @@ content:
         description: 一句话，会出现在首页列表里。
         options:
           maxlength: 160
+      - name: draft
+        label: 草稿
+        type: boolean
+        default: false
+        description: 勾选后不会在网站上显示
       - name: body
         label: 正文
         type: rich-text

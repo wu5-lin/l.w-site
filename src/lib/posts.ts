@@ -1,8 +1,24 @@
 import { getCollection } from 'astro:content';
 
-export async function getPosts() {
+async function loadPosts() {
   const posts = await getCollection('blog');
   return posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+}
+
+/** 已发布的文章。草稿不进首页、列表、标签页和 RSS。 */
+export async function getPosts() {
+  const posts = await loadPosts();
+  return posts.filter((post) => !post.data.draft);
+}
+
+/**
+ * 生产构建只生成已发布文章的页面。
+ * 本地 `astro dev` 仍会生成草稿页面，方便自己打开链接预览，但列表里看不到。
+ */
+export async function getPostsForPaths() {
+  const posts = await loadPosts();
+  if (import.meta.env.PROD) return posts.filter((post) => !post.data.draft);
+  return posts;
 }
 
 export function formatDate(date: Date) {
