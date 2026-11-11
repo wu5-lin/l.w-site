@@ -1,6 +1,7 @@
 name: Deploy to GitHub Pages
 
 on:
+  # 推送到 main 就会发布。Pages CMS 保存文章也是一次普通提交，会走这里。
   push:
     branches: [main]
   workflow_dispatch:

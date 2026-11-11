@@ -2,9 +2,40 @@
 
 这是我的个人博客。文章是 Markdown，用 [Astro](https://astro.build) 生成静态网页，再由 GitHub Actions 发布到 GitHub Pages。线上地址是 [www.l-w.sryze.cc](https://www.l-w.sryze.cc)。
 
-## 写一篇新文章
+## 用编辑器写文章（推荐）
 
-只要新增一个 Markdown 文件。
+网站是静态的，没有后台账号密码。改内容用 [Pages CMS](https://pagescms.org)：用 GitHub 登录，只有这个仓库的协作者能保存。访客只能看页面。
+
+编辑器地址：<https://app.pagescms.org/wu5-lin/l.w-site/main>
+
+页脚最右边有一个很淡的「编辑」，也是这个地址。导航里没有入口。
+
+### 第一次要做的事
+
+1. 用你自己的 GitHub 账号打开上面的地址（仓库主人，或你加进来的协作者）。
+2. 点 **Sign in with GitHub** 登录。不要用下面的邮箱。邮箱登录写不进这个仓库。
+3. 安装并授权 **Pages CMS** 这个 GitHub App。仓库列表里只勾选 `wu5-lin/l.w-site` 就够了，不必开放全部仓库。
+4. 回到编辑器。左上角的分支选 **main**。选别的分支，保存不会更新线上网站。
+
+这一步只做一次。以后打开链接、登录，就能改。
+
+### 写一篇文章并发布
+
+1. 左侧点「文章」，再点新建。
+2. 填标题、日期、标签、摘要和正文。标签只能选 `科研×AI`、`新手编程`、`随笔`。
+3. 新建时会问文件名。改成英文短横线，例如 `lab-note`。网址会变成 `/blog/lab-note/`。不要用中文当文件名。
+4. 正文里要插图：用编辑器的插图按钮，图片会存到 `public/images/`，页面上的地址是 `/images/文件名`。
+5. 点保存。这会在 `main` 上提交一次。GitHub Actions 里的 “Deploy to GitHub Pages” 会自动开始，一两分钟后线上就有了。
+
+「现在在做什么」在编辑器左侧单独一项。最上面的「布局」保持 `../layouts/Page.astro`，不要改。
+
+### 还没合并这个改动时
+
+编辑器要等 `.pages.yml` 出现在 `main` 上才完整。合并之前如果打开 main，可能还看不到「文章」。可以先在这个分支上看配置，但保存到分支不会发布到线上。真正给访客看，是合并之后在 **main** 上保存。
+
+## 用文件写文章
+
+不想用编辑器时，也可以直接新增一个 Markdown 文件。
 
 1. 在 `src/content/blog/` 里新建文件。文件名用英文和短横线，例如 `my-note.md`。这个文件名会变成网址：`/blog/my-note/`。
 2. 开头照下面抄，改成自己的标题、日期、标签和摘要：
@@ -35,7 +66,7 @@ npm run dev
 
 ## 改「现在在做什么」
 
-打开 `src/pages/now.md`，改正文，保存，再推送到 `main`。
+编辑器左侧有「现在在做什么」。也可以打开 `src/pages/now.md` 改正文，再推送到 `main`。布局那一行保持 `../layouts/Page.astro`。
 
 ## 发布前要改的一项设置
 

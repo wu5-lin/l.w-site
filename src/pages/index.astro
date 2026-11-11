@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
-import { formatDate, getPosts, isoDate } from '../lib/posts';
+import PostList from '../components/PostList.astro';
+import { getPosts } from '../lib/posts';
 
 const posts = await getPosts();
 ---
@@ -12,17 +13,20 @@ const posts = await getPosts();
       <span class="blob blob-a"></span>
       <span class="blob blob-b"></span>
       <span class="blob blob-c"></span>
+      <span class="blob blob-d"></span>
     </div>
     <div class="stage-content">
       <div class="glass hero-card">
         <div class="rise">
-          <img
-            class="avatar"
-            src="/avatar.webp"
-            width="112"
-            height="112"
-            alt="像素画：一只小狗抱着太阳"
-          />
+          <div class="avatar-ring">
+            <img
+              class="avatar"
+              src="/avatar.webp"
+              width="128"
+              height="128"
+              alt="像素画：一只小狗抱着太阳"
+            />
+          </div>
           <h1>lw</h1>
           <p class="tagline">Stay hungry, stay foolish.</p>
           <div class="social">
@@ -43,16 +47,6 @@ const posts = await getPosts();
 
   <section class="posts" aria-labelledby="posts-heading">
     <h2 id="posts-heading" class="posts-label">最近</h2>
-    <ol class="post-list">
-      {posts.map((post, i) => (
-        <li>
-          <a class:list={['post', 'rise', i === 1 && 'd1', i === 2 && 'd2']} href={`/blog/${post.id}/`}>
-            <h3>{post.data.title}</h3>
-            <time datetime={isoDate(post.data.date)}>{formatDate(post.data.date)}</time>
-            <p>{post.data.summary}</p>
-          </a>
-        </li>
-      ))}
-    </ol>
+    <PostList posts={posts} animate />
   </section>
 </Base>

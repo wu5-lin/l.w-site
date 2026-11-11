@@ -1,0 +1,37 @@
+---
+import { formatDate, isoDate } from '../lib/posts';
+
+interface Post {
+  id: string;
+  data: {
+    title: string;
+    date: Date;
+    tags: string[];
+    summary: string;
+  };
+}
+
+interface Props {
+  posts: Post[];
+  animate?: boolean;
+}
+
+const { posts, animate = false } = Astro.props;
+---
+
+<ol class="post-list">
+  {posts.map((post, i) => (
+    <li>
+      <a class:list={['post', animate && 'rise', animate && i === 1 && 'd1', animate && i === 2 && 'd2']} href={`/blog/${post.id}/`}>
+        <div class="post-meta">
+          <time datetime={isoDate(post.data.date)}>{formatDate(post.data.date)}</time>
+          <span class="pills">
+            {post.data.tags.map((tag) => <span class="pill">{tag}</span>)}
+          </span>
+        </div>
+        <h3>{post.data.title}</h3>
+        <p>{post.data.summary}</p>
+      </a>
+    </li>
+  ))}
+</ol>

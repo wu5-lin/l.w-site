@@ -1,7 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { tags } from '../../lib/tags';
-import { formatDate, getPosts, isoDate } from '../../lib/posts';
+import PostList from '../../components/PostList.astro';
+import { getPosts } from '../../lib/posts';
 
 export async function getStaticPaths() {
   const posts = await getPosts();
@@ -24,17 +25,7 @@ const { tag, posts } = Astro.props;
     {posts.length === 0 ? (
       <p class="empty-note">这个标签下还没有文章。</p>
     ) : (
-      <ol class="post-list">
-        {posts.map((post) => (
-          <li>
-            <a class="post" href={`/blog/${post.id}/`}>
-              <h3>{post.data.title}</h3>
-              <time datetime={isoDate(post.data.date)}>{formatDate(post.data.date)}</time>
-              <p>{post.data.summary}</p>
-            </a>
-          </li>
-        ))}
-      </ol>
+      <PostList posts={posts} />
     )}
   </section>
 </Base>

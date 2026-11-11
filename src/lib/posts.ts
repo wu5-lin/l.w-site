@@ -15,3 +15,14 @@ export function formatDate(date: Date) {
 export function isoDate(date: Date) {
   return date.toISOString().slice(0, 10);
 }
+
+export function readingMinutes(text: string | undefined) {
+  const raw = text ?? '';
+  const cjk = (raw.match(/[\u4e00-\u9fff]/g) ?? []).length;
+  const words = raw
+    .replace(/[\u4e00-\u9fff]/g, ' ')
+    .trim()
+    .split(/\s+/)
+    .filter(Boolean).length;
+  return Math.max(1, Math.round(cjk / 400 + words / 220));
+}

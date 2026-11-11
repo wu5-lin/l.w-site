@@ -56,8 +56,8 @@ const year = 2026;
   </head>
   <body>
     <a class="skip" href="#main">跳到正文</a>
-    <header class="nav glass">
-      <div class="nav-inner">
+    <header class="nav">
+      <div class="nav-bar glass">
         <a class="brand" href="/" aria-current={path === '/' ? 'page' : undefined}>lw</a>
         <a class="nav-link" href="/now/" aria-current={path.startsWith('/now') ? 'page' : undefined}>现在</a>
         <a class="nav-link nav-tools" href="/tools/" aria-current={path.startsWith('/tools') ? 'page' : undefined}>工具</a>
@@ -71,6 +71,7 @@ const year = 2026;
       <nav aria-label="页脚">
         <a href="/tools/digest/">简报</a>
         <a href="/rss.xml">RSS</a>
+        <a class="footer-edit" href="https://app.pagescms.org/wu5-lin/l.w-site/main" rel="noreferrer">编辑</a>
       </nav>
     </footer>
   </body>
