@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>lw</title>
+    <link>https://www.l-w.sryze.cc/rss.xml</link>
+    <description>博客订阅已改到 https://www.l-w.sryze.cc/rss.xml 。这里不再更新每日简报。</description>
+    <item>
+      <title>订阅地址已更换</title>
+      <link>https://www.l-w.sryze.cc/rss.xml</link>
+      <guid>https://www.l-w.sryze.cc/rss.xml</guid>
+      <description>博客 RSS 现在在 /rss.xml。旧的简报不再使用这个地址。</description>
+    </item>
+  </channel>
+</rss>

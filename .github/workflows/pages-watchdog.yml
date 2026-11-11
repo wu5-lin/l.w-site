@@ -31,14 +31,14 @@ jobs:
 
           now = datetime.datetime.now(datetime.timezone.utc)
           try:
-              data = json.load(open("digest.json", encoding="utf-8"))
+              data = json.load(open("public/tools/digest/digest.json", encoding="utf-8"))
               ts = datetime.datetime.strptime(data["updated"], "%Y-%m-%d %H:%M UTC")
               ts = ts.replace(tzinfo=datetime.timezone.utc)
               age = (now - ts).total_seconds() / 3600
               print(f"digest age: {age:.1f}h", file=sys.stderr)
               print("run" if age > 36 else "skip")
           except Exception as exc:
-              print(f"无法读取 digest.json 时间（{exc}），触发一次抓取。", file=sys.stderr)
+              print(f"无法读取 public/tools/digest/digest.json 时间（{exc}），触发一次抓取。", file=sys.stderr)
               print("run")
           PY
           )
@@ -74,14 +74,27 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          data=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow pages-build-deployment --limit 1 --json databaseId,conclusion,status,createdAt)
-          echo "latest Pages run: $data"
-          id=$(echo "$data" | python3 -c "import sys,json;print(json.load(sys.stdin)[0]['databaseId'])")
-          concl=$(echo "$data" | python3 -c "import sys,json;print(json.load(sys.stdin)[0]['conclusion'])")
-          status=$(echo "$data" | python3 -c "import sys,json;print(json.load(sys.stdin)[0]['status'])")
-          if [ "$concl" = "failure" ]; then
-            echo "Pages 部署失败 (run #$id)，自动重跑…"
-            gh run rerun "$id" --repo "$GITHUB_REPOSITORY"
-          else
-            echo "Pages 部署状态正常 (status=$status, conclusion=$concl)，跳过。"
-          fi
+          rerun_if_failed() {
+            local workflow="$1"
+            local data
+            data=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow "$workflow" --limit 1 --json databaseId,conclusion,status,createdAt)
+            echo "latest $workflow run: $data"
+            if [ "$data" = "[]" ]; then
+              echo "$workflow 还没有运行记录。"
+              return 0
+            fi
+            local id concl status
+            id=$(echo "$data" | python3 -c "import sys,json; print(json.load(sys.stdin)[0]['databaseId'])")
+            concl=$(echo "$data" | python3 -c "import sys,json; print(json.load(sys.stdin)[0]['conclusion'])")
+            status=$(echo "$data" | python3 -c "import sys,json; print(json.load(sys.stdin)[0]['status'])")
+            if [ "$concl" = "failure" ]; then
+              echo "部署失败 ($workflow #$id)，自动重跑…"
+              gh run rerun "$id" --repo "$GITHUB_REPOSITORY"
+            else
+              echo "$workflow 状态正常 (status=$status, conclusion=$concl)。"
+            fi
+          }
+          # 改用 GitHub Actions 发布后，失败记录在 deploy.yml。
+          # pages-build-deployment 是 GitHub 自己的发布记录，一并看一眼。
+          rerun_if_failed deploy.yml
+          rerun_if_failed pages-build-deployment
