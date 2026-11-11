@@ -1,0 +1,37 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { formatDate, getPostsForPaths, isoDate, readingMinutes } from '../../lib/posts';
+
+export async function getStaticPaths() {
+  const posts = await getPostsForPaths();
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const minutes = readingMinutes(post.body ?? post.data.summary);
+---
+
+<Base title={post.data.title} description={post.data.summary} ogType="article">
+  <article class="article">
+    <a class="back" href="/">← 首页</a>
+    <h1>{post.data.title}</h1>
+    <div class="meta">
+      <time datetime={isoDate(post.data.date)}>{formatDate(post.data.date)}</time>
+      <span class="meta-dot" aria-hidden="true"></span>
+      <span>约 {minutes} 分钟</span>
+      <ul class="tags">
+        {post.data.tags.map((tag) => (
+          <li><a class="pill" href={`/tags/${encodeURIComponent(tag)}/`}>{tag}</a></li>
+        ))}
+      </ul>
+    </div>
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+</Base>

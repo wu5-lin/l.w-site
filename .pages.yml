@@ -1,0 +1,112 @@
+# 只有能写这个仓库的人（你自己，或你加为协作者的人）能在 Pages CMS 里保存。
+# 访客打不开编辑器。保存会在 GitHub 上产生一次提交；提交到 main 后，现有的
+# “Deploy to GitHub Pages” 工作流会自动构建并发布。
+# 编辑器：https://app.pagescms.org/wu5-lin/l.w-site/main
+
+media:
+  - name: images
+    label: 图片
+    input: public/images
+    output: /images
+    categories: [image]
+    rename: safe
+
+settings:
+  content:
+    # 保留配置里没列出的字段（例如现在页的 layout），避免一保存就把页面弄坏。
+    merge: true
+  commit:
+    identity: user
+    templates:
+      create: "内容：新增 {path}"
+      update: "内容：更新 {path}"
+      delete: "内容：删除 {path}"
+      rename: "内容：重命名 {oldPath} → {newPath}"
+
+content:
+  - name: blog
+    label: 文章
+    type: collection
+    path: src/content/blog
+    format: yaml-frontmatter
+    subfolders: false
+    filename:
+      template: "{primary}.md"
+      field: create
+    view:
+      primary: title
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        label: 标题
+        type: string
+        required: true
+        options:
+          maxlength: 80
+      - name: date
+        label: 日期
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: tags
+        label: 标签
+        type: select
+        required: true
+        description: 只能选这三项。可以多选。
+        options:
+          multiple: true
+          min: 1
+          max: 3
+          values:
+            - "科研×AI"
+            - "新手编程"
+            - "随笔"
+      - name: summary
+        label: 摘要
+        type: text
+        required: true
+        description: 一句话，会出现在首页列表里。
+        options:
+          maxlength: 160
+      - name: draft
+        label: 草稿
+        type: boolean
+        default: false
+        description: 勾选后不会在网站上显示
+      - name: body
+        label: 正文
+        type: rich-text
+        required: true
+        options:
+          format: markdown
+          media: images
+
+  - name: now
+    label: 现在在做什么
+    type: file
+    path: src/pages/now.md
+    format: yaml-frontmatter
+    fields:
+      - name: layout
+        label: 布局
+        type: string
+        readonly: true
+        default: ../layouts/Page.astro
+        description: 这一行保持原样，不要改。
+      - name: title
+        label: 标题
+        type: string
+        required: true
+      - name: description
+        label: 简介
+        type: text
+        description: 给搜索和分享用的一句话，页面上不单独显示。
+      - name: body
+        label: 正文
+        type: rich-text
+        required: true
+        options:
+          format: markdown
+          media: images

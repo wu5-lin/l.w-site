@@ -1,0 +1,31 @@
+---
+import Base from '../../layouts/Base.astro';
+import { tags } from '../../lib/tags';
+import PostList from '../../components/PostList.astro';
+import { getPosts } from '../../lib/posts';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return tags.map((tag) => ({
+    params: { tag },
+    props: {
+      tag,
+      posts: posts.filter((post) => post.data.tags.includes(tag)),
+    },
+  }));
+}
+
+const { tag, posts } = Astro.props;
+---
+
+<Base title={tag} description={`标签「${tag}」下的文章`}>
+  <section class="posts">
+    <a class="back" href="/tags/">← 标签</a>
+    <h1 class="page-title">{tag}</h1>
+    {posts.length === 0 ? (
+      <p class="empty-note">这个标签下还没有文章。</p>
+    ) : (
+      <PostList posts={posts} />
+    )}
+  </section>
+</Base>

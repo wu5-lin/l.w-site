@@ -1,0 +1,44 @@
+name: Deploy to GitHub Pages
+
+on:
+  # 推送到 main 就会发布。Pages CMS 保存文章也是一次普通提交，会走这里。
+  push:
+    branches: [main]
+  workflow_dispatch:
+  # digest.yml 用默认 token 推送时，不会再次触发上面的 push。
+  # workflow_run 可以接上这次推送，保证每日简报写完后网站会重新发布。
+  workflow_run:
+    workflows: ["Refresh Digest"]
+    types: [completed]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - name: Install, build, and upload your site output
+        uses: withastro/action@v6
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

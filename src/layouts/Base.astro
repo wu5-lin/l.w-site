@@ -1,0 +1,78 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogType?: 'website' | 'article';
+  noindex?: boolean;
+}
+
+const {
+  title = 'lw',
+  description = 'Stay hungry, stay foolish.',
+  ogType = 'website',
+  noindex = false,
+} = Astro.props;
+
+const fullTitle = title === 'lw' ? 'lw' : `${title} · lw`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const image = new URL('/og.png', Astro.site);
+const path = Astro.url.pathname;
+const year = 2026;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="lw" />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonical.href} />
+    <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)" />
+    <meta property="og:site_name" content="lw" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:image" content={image.href} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="lw，像素画小狗抱着太阳" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image.href} />
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-16.png" type="image/png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="alternate" type="application/rss+xml" title="lw" href="/rss.xml" />
+    <slot name="head" />
+  </head>
+  <body>
+    <a class="skip" href="#main">跳到正文</a>
+    <header class="nav">
+      <div class="nav-bar glass">
+        <a class="brand" href="/" aria-current={path === '/' ? 'page' : undefined}>lw</a>
+        <a class="nav-link" href="/now/" aria-current={path.startsWith('/now') ? 'page' : undefined}>现在</a>
+        <a class="nav-link nav-tools" href="/tools/" aria-current={path.startsWith('/tools') ? 'page' : undefined}>工具</a>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="footer">
+      <p>© {year} lw</p>
+      <nav aria-label="页脚">
+        <a href="/tools/digest/">简报</a>
+        <a href="/rss.xml">RSS</a>
+        <a class="footer-edit" href="https://app.pagescms.org/wu5-lin/l.w-site/main" rel="noreferrer">编辑</a>
+      </nav>
+    </footer>
+  </body>
+</html>
