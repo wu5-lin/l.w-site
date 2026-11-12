@@ -89,7 +89,7 @@ npm run dev
 
 `.github/workflows/digest.yml` 每天北京时间 09:00 抓取公开 RSS，只写入 `public/tools/digest/digest.json`，不再改 HTML。
 
-这次推送不会直接触发别的 Actions（GitHub 的默认令牌有这个限制），所以 `deploy.yml` 另外监听了简报工作流：简报成功写完并推送后，会再构建、发布一次。
+这次推送用的是 Actions 自带的令牌。GitHub 不会让这种推送再触发「推送到 main 就发布」，所以 `deploy.yml` 在简报工作流成功结束后，再按 `main` 上的最新提交构建并发布。它监听的名字必须和 `digest.yml` 第一行完全一样（`Refresh Digest (投资/科研/web3/科技)`），写短了就不会发布。
 
 简报页面在 `/tools/digest/`。首页不放入口，只有「工具」页和页脚的小链接。
 

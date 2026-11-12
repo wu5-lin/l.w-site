@@ -31,6 +31,8 @@ jobs:
         run: python fetch_digest.py
 
       - name: Commit & push if changed
+        # 这里的推送用默认令牌，不会触发 “Deploy to GitHub Pages” 的 push。
+        # 发布靠 deploy.yml 监听本工作流；那边的名字必须和本文件第一行完全一致。
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

@@ -5,11 +5,12 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  # digest.yml 用默认 token 推送时，不会再次触发上面的 push。
-  # workflow_run 可以接上这次推送，保证每日简报写完后网站会重新发布。
+  # 简报工作流用默认令牌提交。这种提交不会触发上面的 push，所以改在简报跑完后再发布。
+  # workflows 要和 digest.yml 的 name 完全一致。之前写成了缩短的 “Refresh Digest”，对不上，发布就不会开始。
   workflow_run:
-    workflows: ["Refresh Digest"]
+    workflows: ["Refresh Digest (投资/科研/web3/科技)"]
     types: [completed]
+    branches: [main]
 
 permissions:
   contents: read
@@ -28,7 +29,10 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v7
         with:
-          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+          # 普通推送和手动发布：用触发这次运行的提交。
+          # 简报跑完再发布时，head_sha 仍是简报开始前的旧提交，刚写入的 digest.json 不在里面。
+          # 这时按分支名取出最新的 main。
+          ref: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_branch || github.sha }}
       - name: Install, build, and upload your site output
         uses: withastro/action@v6
 
