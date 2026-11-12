@@ -32,6 +32,35 @@ export function isoDate(date: Date) {
   return date.toISOString().slice(0, 10);
 }
 
+/** 暂停页最多列出、并在构建时预先放进缓存的最近文章数。 */
+export const offlinePostLimit = 5;
+
+export interface OfflinePostCard {
+  title: string;
+  date: string;
+  datetime: string;
+  href: string;
+}
+
+export interface OfflineCatalog {
+  limit: number;
+  posts: OfflinePostCard[];
+}
+
+/** 已发布文章，新的在前。暂停页用它判断缓存里哪些还能读。 */
+export async function getOfflineCatalog(): Promise<OfflineCatalog> {
+  const posts = await getPosts();
+  return {
+    limit: offlinePostLimit,
+    posts: posts.map((post) => ({
+      title: post.data.title,
+      date: formatDate(post.data.date),
+      datetime: isoDate(post.data.date),
+      href: `/blog/${post.id}/`,
+    })),
+  };
+}
+
 export function readingMinutes(text: string | undefined) {
   const raw = text ?? '';
   const cjk = (raw.match(/[\u4e00-\u9fff]/g) ?? []).length;

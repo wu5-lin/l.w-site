@@ -790,6 +790,115 @@ a.pill:hover { background: rgba(194, 65, 12, 0.16); }
 
 .footer-edit:hover { opacity: 1; }
 
+/* 导航失败时的暂停页：同一张首页玻璃卡片，停在视口里略高于正中的位置。
+   margin-top 与首页相同，好让色块透出玻璃导航。
+   78px 上拉减去导航约 66px，再补 12px，铺满视口且不多出一条滚动条。 */
+body:has(.offline-stage) {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body:has(.offline-stage) main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stage.offline-stage {
+  flex: 1;
+  display: grid;
+  align-items: center;
+  align-items: safe center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: -78px;
+  min-height: calc(100vh + 12px);
+  min-height: calc(100svh + 12px);
+  padding: 104px 0 136px;
+}
+
+.offline-stage .stage-content { width: 100%; }
+
+.offline-stage .avatar-ring {
+  width: 112px;
+  height: 112px;
+  border-radius: 30px;
+}
+
+.offline-stage .avatar {
+  width: 104px;
+  height: 104px;
+  border-radius: 26px;
+}
+
+.offline-stage .hero-card h1 {
+  font-size: 30px;
+  font-weight: 640;
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+}
+
+.offline-lead {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.offline-stage .tagline { margin-top: 14px; }
+
+.offline-retry {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 0 0;
+  height: 40px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+
+.offline-retry:hover { transform: translateY(-1px); }
+
+.offline-retry:focus-visible { border-radius: 999px; }
+
+@media (prefers-color-scheme: dark) {
+  .offline-retry { color: #111; }
+}
+
+.offline-posts {
+  width: min(420px, calc(100% - 32px));
+  margin: 30px auto 0;
+  text-align: left;
+}
+
+.offline-posts .post {
+  margin-inline: 0;
+  padding: 9px 2px 11px;
+}
+
+.offline-posts .post h3 {
+  margin-top: 3px;
+  font-size: 16px;
+}
+
+@media (max-width: 380px) {
+  .hero-stage.offline-stage { padding: 96px 0 112px; }
+  .offline-stage .hero-card h1 { font-size: 28px; }
+}
+
 @keyframes fade-in-up {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: none; }
@@ -806,9 +915,11 @@ a.pill:hover { background: rgba(194, 65, 12, 0.16); }
   .post,
   .social a,
   .tool-card,
-  .nav-link { transition: none; }
+  .nav-link,
+  .offline-retry { transition: none; }
   .post:hover,
-  .social a:hover { transform: none; }
+  .social a:hover,
+  .offline-retry:hover { transform: none; }
 }
 
 @media (max-width: 380px) {

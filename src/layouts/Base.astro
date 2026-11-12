@@ -6,6 +6,7 @@ interface Props {
   description?: string;
   ogType?: 'website' | 'article';
   noindex?: boolean;
+  footer?: boolean;
 }
 
 const {
@@ -13,6 +14,7 @@ const {
   description = 'Stay hungry, stay foolish.',
   ogType = 'website',
   noindex = false,
+  footer = true,
 } = Astro.props;
 
 const fullTitle = title === 'lw' ? 'lw' : `${title} · lw`;
@@ -66,13 +68,22 @@ const year = 2026;
     <main id="main">
       <slot />
     </main>
-    <footer class="footer">
-      <p>© {year} lw</p>
-      <nav aria-label="页脚">
-        <a href="/tools/digest/">简报</a>
-        <a href="/rss.xml">RSS</a>
-        <a class="footer-edit" href="https://app.pagescms.org/wu5-lin/l.w-site/main" rel="noreferrer">编辑</a>
-      </nav>
-    </footer>
+    {footer && (
+      <footer class="footer">
+        <p>© {year} lw</p>
+        <nav aria-label="页脚">
+          <a href="/tools/digest/">简报</a>
+          <a href="/rss.xml">RSS</a>
+          <a class="footer-edit" href="https://app.pagescms.org/wu5-lin/l.w-site/main" rel="noreferrer">编辑</a>
+        </nav>
+      </footer>
+    )}
+    {import.meta.env.PROD && (
+      <script is:inline>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js', { scope: '/', updateViaCache: 'none' }).catch(function () {});
+        }
+      </script>
+    )}
   </body>
 </html>
