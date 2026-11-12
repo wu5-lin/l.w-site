@@ -790,6 +790,218 @@ a.pill:hover { background: rgba(194, 65, 12, 0.16); }
 
 .footer-edit:hover { opacity: 1; }
 
+/* 导航失败时的暂停页：同一张首页玻璃卡片，停在视口里略高于正中的位置。
+   margin-top 与首页相同，好让色块透出玻璃导航。
+   78px 上拉减去导航约 66px，再补 12px，铺满视口且不多出一条滚动条。 */
+body:has(.offline-stage) {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body:has(.offline-stage) main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-stage.offline-stage {
+  flex: 1;
+  display: grid;
+  align-items: center;
+  align-items: safe center;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: -78px;
+  min-height: calc(100vh + 12px);
+  min-height: calc(100svh + 12px);
+  padding: 104px 0 136px;
+}
+
+.offline-stage .stage-content { width: 100%; }
+
+.offline-stage .avatar-ring {
+  width: 112px;
+  height: 112px;
+  border-radius: 30px;
+}
+
+.offline-stage .avatar {
+  width: 104px;
+  height: 104px;
+  border-radius: 26px;
+}
+
+.avatar-pet {
+  appearance: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  line-height: 0;
+  color: var(--accent);
+  cursor: pointer;
+  position: relative;
+  border-radius: 30px;
+  vertical-align: top;
+  touch-action: manipulation;
+}
+
+.avatar-pet:focus-visible { border-radius: 30px; }
+
+.avatar-pet .avatar-ring { display: block; }
+
+.avatar-face {
+  position: relative;
+  display: block;
+  width: 104px;
+  height: 104px;
+}
+
+.avatar-lids {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.lid {
+  position: absolute;
+  height: 2px;
+  border-radius: 2px;
+  /* Matches the red-brown already drawn on the dog's eyes. */
+  background: #9a2a0e;
+}
+
+.lid-a {
+  left: 43%;
+  top: 33.8%;
+  width: 6%;
+  transform: rotate(-8deg);
+}
+
+.lid-b {
+  left: 51.2%;
+  top: 32.4%;
+  width: 6.5%;
+  transform: rotate(8deg);
+}
+
+.avatar-pet.is-blink .avatar-lids { animation: dog-blink 240ms ease; }
+
+@keyframes dog-blink {
+  0%, 100% { opacity: 0; }
+  32%, 68% { opacity: 1; }
+}
+
+.avatar-pet.is-pet { animation: pet-squish 520ms ease; }
+
+@keyframes pet-squish {
+  0% { transform: scale(1) rotate(0deg); }
+  28% { transform: scale(0.94, 1.05) rotate(-6deg); }
+  58% { transform: scale(1.05, 0.96) rotate(4deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.pet-heart {
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  width: var(--heart, 12px);
+  height: var(--heart, 12px);
+  margin-left: calc(var(--heart, 12px) / -2);
+  pointer-events: none;
+  z-index: 2;
+  animation: heart-float 880ms ease-out forwards;
+}
+
+.pet-heart.soft { color: color-mix(in srgb, var(--accent) 62%, #fff); }
+
+@keyframes heart-float {
+  0% { opacity: 0; transform: translate(var(--dx, 0px), 6px) scale(0.55); }
+  16% { opacity: 1; transform: translate(var(--dx, 0px), -2px) scale(1); }
+  48% { opacity: 1; }
+  100% { opacity: 0; transform: translate(var(--dx, 0px), var(--rise, -36px)) scale(1); }
+}
+
+@keyframes pet-ack {
+  50% { transform: scale(0.97); }
+}
+
+@keyframes heart-pop {
+  0% { opacity: 0; transform: translate(var(--dx, 0px), 0) scale(0.7); }
+  28% { opacity: 1; transform: translate(var(--dx, 0px), 0) scale(1); }
+  100% { opacity: 0; transform: translate(var(--dx, 0px), 0) scale(1); }
+}
+
+.offline-stage .hero-card h1 {
+  font-size: 30px;
+  font-weight: 640;
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+}
+
+.offline-lead {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.offline-stage .tagline { margin-top: 14px; }
+
+.offline-retry {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 0 0;
+  height: 40px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+
+.offline-retry:hover { transform: translateY(-1px); }
+
+.offline-retry:focus-visible { border-radius: 999px; }
+
+@media (prefers-color-scheme: dark) {
+  .offline-retry { color: #111; }
+}
+
+.offline-posts {
+  width: min(420px, calc(100% - 32px));
+  margin: 30px auto 0;
+  text-align: left;
+}
+
+.offline-posts .post {
+  margin-inline: 0;
+  padding: 9px 2px 11px;
+}
+
+.offline-posts .post h3 {
+  margin-top: 3px;
+  font-size: 16px;
+}
+
+@media (max-width: 380px) {
+  .hero-stage.offline-stage { padding: 96px 0 112px; }
+  .offline-stage .hero-card h1 { font-size: 28px; }
+}
+
 @keyframes fade-in-up {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: none; }
@@ -806,9 +1018,14 @@ a.pill:hover { background: rgba(194, 65, 12, 0.16); }
   .post,
   .social a,
   .tool-card,
-  .nav-link { transition: none; }
+  .nav-link,
+  .offline-retry { transition: none; }
   .post:hover,
-  .social a:hover { transform: none; }
+  .social a:hover,
+  .offline-retry:hover { transform: none; }
+  .avatar-pet.is-blink .avatar-lids { animation: none; opacity: 0; }
+  .avatar-pet.is-pet { animation: pet-ack 200ms ease; }
+  .pet-heart { animation: heart-pop 320ms ease forwards; }
 }
 
 @media (max-width: 380px) {

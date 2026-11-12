@@ -1,0 +1,271 @@
+---
+import Base from '../layouts/Base.astro';
+import { getOfflineCatalog } from '../lib/posts';
+
+const catalog = await getOfflineCatalog();
+const catalogJson = JSON.stringify(catalog).replace(/</g, '\\u003c');
+---
+
+<Base
+  title="这一会儿连不上"
+  description="网络先去别处了，过一会儿再试试看。"
+  noindex
+  footer={false}
+>
+  <link slot="head" rel="preload" as="image" href="/avatar.webp" type="image/webp" />
+  <section class="stage hero-stage offline-stage">
+    <div class="blobs" aria-hidden="true">
+      <span class="blob blob-a"></span>
+      <span class="blob blob-b"></span>
+      <span class="blob blob-c"></span>
+      <span class="blob blob-d"></span>
+    </div>
+    <div class="stage-content">
+      <div class="glass hero-card">
+        <div class="rise">
+          <button type="button" class="avatar-pet" id="avatar-pet" aria-label="摸摸小狗">
+            <span class="avatar-ring">
+              <span class="avatar-face">
+                <img
+                  class="avatar"
+                  src="/avatar.webp"
+                  width="104"
+                  height="104"
+                  alt=""
+                />
+                <span class="avatar-lids" aria-hidden="true">
+                  <span class="lid lid-a"></span>
+                  <span class="lid lid-b"></span>
+                </span>
+              </span>
+            </span>
+          </button>
+          <h1>这一会儿连不上</h1>
+          <p class="offline-lead" id="offline-lead">网络先去别处了，过一会儿再试试看。</p>
+          <p class="tagline">Stay hungry, stay foolish.</p>
+          <button class="offline-retry" id="offline-retry" type="button">再试一次</button>
+        </div>
+      </div>
+      <section class="offline-posts" id="offline-posts" aria-labelledby="offline-posts-heading" hidden>
+        <h2 class="posts-label" id="offline-posts-heading">可以先看这些</h2>
+        <ol class="post-list" id="offline-post-list"></ol>
+      </section>
+    </div>
+  </section>
+  <script id="offline-catalog" type="application/json" set:html={catalogJson}></script>
+  <script is:inline>
+    (function () {
+      const SHORT = '网络先去别处了，过一会儿再试试看。';
+      const LONG = '网络先去别处了。你可以再试一次，或者先读已经下载好的文章。';
+
+      const button = document.getElementById('offline-retry');
+      if (button) button.addEventListener('click', () => location.reload());
+
+      window.addEventListener('online', () => {
+        try {
+          const key = 'lw-offline-reload';
+          const now = Date.now();
+          const last = Number(sessionStorage.getItem(key) || 0);
+          if (now - last < 2000) return;
+          sessionStorage.setItem(key, String(now));
+        } catch {
+          /* storage unavailable; still reload */
+        }
+        location.reload();
+      });
+
+      const lead = document.getElementById('offline-lead');
+      const section = document.getElementById('offline-posts');
+      const list = document.getElementById('offline-post-list');
+
+      function readCatalog() {
+        const node = document.getElementById('offline-catalog');
+        const empty = { limit: 5, posts: [] };
+        if (!node) return empty;
+        try {
+          const data = JSON.parse(node.textContent || '');
+          if (Array.isArray(data)) return { limit: 5, posts: data };
+          return {
+            limit: typeof data.limit === 'number' && data.limit > 0 ? data.limit : 5,
+            posts: Array.isArray(data.posts) ? data.posts : [],
+          };
+        } catch {
+          return empty;
+        }
+      }
+
+      function isSafePost(post) {
+        return !!post
+          && typeof post.title === 'string'
+          && typeof post.date === 'string'
+          && typeof post.datetime === 'string'
+          && typeof post.href === 'string'
+          && post.href.startsWith('/blog/')
+          && !post.href.includes('..')
+          && !post.href.includes('\\')
+          && !post.href.includes('://')
+          && !post.href.includes(' ');
+      }
+
+      async function isReadable(href) {
+        if (!('caches' in window)) return false;
+        const urls = href.endsWith('/') ? [href, href.slice(0, -1)] : [href, href + '/'];
+        for (const url of urls) {
+          let response;
+          try {
+            response = await caches.match(url);
+          } catch {
+            continue;
+          }
+          if (!response || !response.ok) continue;
+          const type = response.headers.get('content-type') || '';
+          if (type && type.indexOf('text/html') === -1) continue;
+          try {
+            const text = await response.clone().text();
+            if (text.indexOf('<html') === -1) continue;
+            if (/<h1[^>]*>\s*这一会儿连不上\s*<\/h1>/.test(text)) continue;
+            return true;
+          } catch {
+            continue;
+          }
+        }
+        return false;
+      }
+
+      function fill(posts) {
+        if (!list || !section || !lead) return;
+        list.replaceChildren();
+        if (!posts.length) {
+          lead.textContent = SHORT;
+          section.hidden = true;
+          return;
+        }
+        for (const post of posts) {
+          const li = document.createElement('li');
+          const anchor = document.createElement('a');
+          anchor.className = 'post';
+          anchor.href = post.href;
+          const meta = document.createElement('div');
+          meta.className = 'post-meta';
+          const time = document.createElement('time');
+          time.dateTime = post.datetime;
+          time.textContent = post.date;
+          meta.append(time);
+          const title = document.createElement('h3');
+          title.textContent = post.title;
+          anchor.append(meta, title);
+          li.append(anchor);
+          list.append(li);
+        }
+        lead.textContent = LONG;
+        section.hidden = false;
+      }
+
+      async function render() {
+        const catalog = readCatalog();
+        const candidates = catalog.posts.filter(isSafePost);
+        const flags = await Promise.all(candidates.map((post) => isReadable(post.href)));
+        const found = [];
+        for (let i = 0; i < candidates.length && found.length < catalog.limit; i += 1) {
+          if (flags[i]) found.push(candidates[i]);
+        }
+        fill(found);
+      }
+
+      let pending = Promise.resolve();
+      function schedule() {
+        pending = pending.then(render).catch(() => {});
+      }
+
+      schedule();
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.ready.then(schedule).catch(() => {});
+      }
+    })();
+  </script>
+  <script is:inline>
+    (function () {
+      const pet = document.getElementById('avatar-pet');
+      if (!pet) return;
+
+      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const heartPath = 'M8 13.6C8 13.6 2.15 9.55 2.15 6.15 2.15 4.28 3.55 2.9 5.35 2.9c1.02 0 1.9.52 2.65 1.48C8.75 3.42 9.63 2.9 10.65 2.9c1.8 0 3.2 1.38 3.2 3.25C13.85 9.55 8 13.6 8 13.6z';
+      let blinkTimer = 0;
+      let petTimer = 0;
+      let blinks = 0;
+
+      function blink() {
+        if (reduced.matches) return;
+        pet.classList.remove('is-blink');
+        void pet.offsetWidth;
+        pet.classList.add('is-blink');
+      }
+
+      function scheduleBlink() {
+        window.clearTimeout(blinkTimer);
+        if (reduced.matches) return;
+        const wait = blinks === 0 ? 2200 + Math.random() * 1400 : 4600 + Math.random() * 3600;
+        blinks += 1;
+        blinkTimer = window.setTimeout(() => {
+          blink();
+          scheduleBlink();
+        }, wait);
+      }
+
+      function makeHeart(index) {
+        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('viewBox', '0 0 16 16');
+        svg.setAttribute('class', index % 2 ? 'pet-heart soft' : 'pet-heart');
+        svg.setAttribute('aria-hidden', 'true');
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('d', heartPath);
+        path.setAttribute('fill', 'currentColor');
+        svg.append(path);
+        return svg;
+      }
+
+      function releaseHearts() {
+        const spread = [-16, -5, 7, 15];
+        const rise = [32, 40, 28, 36];
+        const size = [12, 15, 11, 13];
+        const stale = pet.querySelectorAll('.pet-heart');
+        if (stale.length > 8) {
+          stale.forEach((node, index) => {
+            if (index < stale.length - 4) node.remove();
+          });
+        }
+        for (let i = 0; i < 4; i += 1) {
+          const heart = makeHeart(i);
+          heart.style.setProperty('--dx', spread[i] + 'px');
+          heart.style.setProperty('--rise', '-' + rise[i] + 'px');
+          heart.style.setProperty('--heart', size[i] + 'px');
+          heart.style.animationDelay = (i * 45) + 'ms';
+          heart.addEventListener('animationend', () => heart.remove());
+          pet.append(heart);
+        }
+      }
+
+      pet.addEventListener('click', () => {
+        pet.classList.remove('is-pet');
+        void pet.offsetWidth;
+        pet.classList.add('is-pet');
+        window.clearTimeout(petTimer);
+        petTimer = window.setTimeout(() => pet.classList.remove('is-pet'), reduced.matches ? 240 : 560);
+        blink();
+        releaseHearts();
+      });
+
+      function onMotionChange() {
+        if (reduced.matches) {
+          window.clearTimeout(blinkTimer);
+          pet.classList.remove('is-blink');
+          return;
+        }
+        scheduleBlink();
+      }
+
+      if (typeof reduced.addEventListener === 'function') reduced.addEventListener('change', onMotionChange);
+      scheduleBlink();
+    })();
+  </script>
+</Base>
