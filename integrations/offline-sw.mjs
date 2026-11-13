@@ -10,7 +10,9 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const OFFLINE_URL = '/offline/';
-const APP_PAGES = ['/', '/now/', '/tools/'];
+const APP_PAGES = ['/', '/now/', '/tools/', '/tools/digest/'];
+// Refreshed on a schedule. Fetched during install, never mixed into the hashed precache.
+const DIGEST_JSON = '/tools/digest/digest.json';
 
 export function offlineServiceWorker() {
   return {
@@ -64,6 +66,7 @@ export async function writeServiceWorker(root) {
   const hardPages = APP_PAGES.filter((url) => !shell.includes(url));
   const extra = unique([...postUrls, ...icons]).filter((url) => !shell.includes(url) && !hardPages.includes(url));
 
+  // digest.json is intentionally absent here. A scheduled refresh must not mint a new worker.
   const hash = createHash('sha256');
   hash.update(readFileSync(fileURLToPath(import.meta.url)));
   for (const url of [...shell, ...hardPages, ...extra]) {
@@ -79,6 +82,7 @@ export async function writeServiceWorker(root) {
     hardPages,
     extra,
     stylesheets: unique(stylesheets),
+    digestJson: DIGEST_JSON,
   });
 
   const swPath = join(root, 'sw.js');
@@ -86,7 +90,7 @@ export async function writeServiceWorker(root) {
   return swPath;
 }
 
-function renderServiceWorker({ cacheName, shell, hardPages, extra, stylesheets }) {
+function renderServiceWorker({ cacheName, shell, hardPages, extra, stylesheets, digestJson }) {
   return `/* Generated at build time. Navigation failures fall back to the pause page. */
 const CACHE = ${JSON.stringify(cacheName)};
 const SHELL = ${JSON.stringify(shell)};
@@ -94,6 +98,7 @@ const HARD_PAGES = ${JSON.stringify(hardPages)};
 const EXTRA = ${JSON.stringify(extra)};
 const STYLESHEETS = ${JSON.stringify(stylesheets)};
 const OFFLINE_URL = ${JSON.stringify(OFFLINE_URL)};
+const DIGEST_JSON = ${JSON.stringify(digestJson)};
 
 self.addEventListener('install', (event) => {
   event.waitUntil((async () => {
@@ -106,6 +111,16 @@ self.addEventListener('install', (event) => {
         console.warn('lw sw skipped', url, reason);
       }
     }));
+    /* Seed digest.json once while install still has a network. It is not a
+       hashed build asset: later requests stay network-first and replace this copy. */
+    try {
+      const digest = await fetch(new Request(DIGEST_JSON, { cache: 'no-store' }));
+      if (digest && digest.ok && digest.type === 'basic') {
+        await cache.put(DIGEST_JSON, digest);
+      }
+    } catch (reason) {
+      console.warn('lw sw skipped', DIGEST_JSON, reason);
+    }
     await self.skipWaiting();
   })());
 });

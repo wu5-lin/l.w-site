@@ -18,6 +18,7 @@ export async function getStaticPaths() {
 const { post, prevPost, nextPost } = Astro.props;
 const { Content, headings } = await render(post);
 const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
+const tocOpenLimit = 5;
 const minutes = readingMinutes(post.body ?? post.data.summary);
 ---
 
@@ -36,7 +37,7 @@ const minutes = readingMinutes(post.body ?? post.data.summary);
       </ul>
     </div>
     {toc.length >= 2 && (
-      <details class="toc" open>
+      <details class="toc" open={toc.length <= tocOpenLimit}>
         <summary>目录</summary>
         <ol>
           {toc.map((h) => (
@@ -67,6 +68,7 @@ const minutes = readingMinutes(post.body ?? post.data.summary);
       </nav>
     )}
   </article>
+  <div class="copy-live" id="copy-live" role="status"></div>
   <dialog class="lightbox" id="lightbox" aria-label="图片放大预览">
     <img id="lightbox-img" src="" alt="" />
     <div class="lightbox-bar">
@@ -92,11 +94,46 @@ const minutes = readingMinutes(post.body ?? post.data.summary);
         btn.addEventListener('click', function () {
           var code = pre.querySelector('code');
           var text = (code ? code.innerText : pre.innerText) || '';
-          if (!navigator.clipboard) return;
-          navigator.clipboard.writeText(text).then(function () {
-            btn.textContent = '已复制';
-            setTimeout(function () { btn.textContent = '复制'; }, 1600);
-          }).catch(function () {});
+          function finish(ok) {
+            btn.textContent = ok ? '已复制' : '复制失败';
+            btn.classList.toggle('is-error', !ok);
+            var live = document.getElementById('copy-live');
+            if (live) {
+              live.textContent = '';
+              setTimeout(function () { live.textContent = ok ? '已复制' : '复制失败'; }, 30);
+            }
+            clearTimeout(btn._reset);
+            btn._reset = setTimeout(function () {
+              btn.textContent = '复制';
+              btn.classList.remove('is-error');
+            }, ok ? 1600 : 2200);
+          }
+          function legacyCopy() {
+            var ta = document.createElement('textarea');
+            ta.value = text;
+            ta.setAttribute('readonly', '');
+            ta.style.position = 'fixed';
+            ta.style.top = '0';
+            ta.style.left = '0';
+            ta.style.width = '1px';
+            ta.style.height = '1px';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.focus();
+            ta.select();
+            var ok = false;
+            try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+            document.body.removeChild(ta);
+            btn.focus();
+            return ok;
+          }
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(function () { finish(true); }).catch(function () {
+              finish(legacyCopy());
+            });
+            return;
+          }
+          finish(legacyCopy());
         });
         wrap.appendChild(btn);
       });
@@ -106,17 +143,34 @@ const minutes = readingMinutes(post.body ?? post.data.summary);
       var capEl = document.getElementById('lightbox-cap');
       var closeBtn = document.getElementById('lightbox-close');
       if (dialog && imgEl && typeof dialog.showModal === 'function') {
+        var lastFocus = null;
+        function openFrom(img) {
+          lastFocus = img;
+          imgEl.src = img.currentSrc || img.src;
+          imgEl.alt = img.alt || '';
+          if (capEl) capEl.textContent = img.alt || '';
+          dialog.showModal();
+        }
         prose.querySelectorAll('img').forEach(function (img) {
-          img.addEventListener('click', function () {
-            imgEl.src = img.currentSrc || img.src;
-            imgEl.alt = img.alt || '';
-            if (capEl) capEl.textContent = img.alt || '';
-            dialog.showModal();
+          img.addEventListener('click', function () { openFrom(img); });
+          if (img.closest('a, button')) return;
+          img.tabIndex = 0;
+          img.setAttribute('role', 'button');
+          img.setAttribute('aria-haspopup', 'dialog');
+          img.setAttribute('aria-controls', 'lightbox');
+          img.setAttribute('aria-label', (img.getAttribute('alt') || '图片') + '，放大查看');
+          img.addEventListener('keydown', function (e) {
+            if (e.key !== 'Enter' && e.key !== ' ') return;
+            e.preventDefault();
+            openFrom(img);
           });
         });
         if (closeBtn) closeBtn.addEventListener('click', function () { dialog.close(); });
         dialog.addEventListener('click', function (e) {
           if (e.target === dialog) dialog.close();
+        });
+        dialog.addEventListener('close', function () {
+          if (lastFocus && lastFocus.focus) lastFocus.focus();
         });
       }
     })();

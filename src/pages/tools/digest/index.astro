@@ -1,25 +1,24 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self'; font-src 'self'; script-src 'self'; connect-src 'self'; form-action 'self'" />
-  <title>资讯简报 · lw</title>
-  <meta name="description" content="每天自动收一轮公开的投资、科研、web3 与科技来源，给自己看。" />
-  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#111111" media="(prefers-color-scheme: dark)" />
-  <link rel="canonical" href="https://www.l-w.sryze.cc/tools/digest/" />
-  <link rel="icon" type="image/png" href="/favicon-32.png" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <a class="skip" href="#main">跳到正文</a>
-  <header class="top">
-    <a class="brand" href="/">lw</a>
-    <a href="/tools/">工具</a>
-    <a class="spacer" href="/tools/particle/">粒径分析</a>
-  </header>
-  <main id="main" class="wrap">
+---
+import Base from '../../../layouts/Base.astro';
+import { inlineScriptCsp } from '../../../lib/theme-client';
+
+const csp = [
+  "default-src 'self'",
+  "base-uri 'self'",
+  "object-src 'none'",
+  "img-src 'self' data:",
+  "style-src 'self'",
+  "font-src 'self'",
+  `script-src 'self' ${inlineScriptCsp}`,
+  "connect-src 'self'",
+  "form-action 'self'",
+].join('; ');
+---
+
+<Base title="资讯简报" description="每天自动收一轮公开的投资、科研、web3 与科技来源，给自己看。">
+  <meta slot="head" http-equiv="Content-Security-Policy" content={csp} />
+  <link slot="head" rel="stylesheet" href="/tools/digest/styles.css" />
+  <div class="digest">
     <h1>资讯简报</h1>
     <p class="lead">每天把公开来源收成一页。投资、科研、web3、科技，可以按地区和关键词筛。</p>
     <div class="controls">
@@ -50,8 +49,6 @@
     <div class="empty" id="empty" hidden>
       暂无数据。<br />简报由 GitHub Actions 每天（北京时间 09:00）写入 digest.json，构建网站时带上。
     </div>
-  </main>
-  <p class="foot">© <span id="year"></span> lw · <a href="/">回首页</a></p>
-  <script src="app.js"></script>
-</body>
-</html>
+  </div>
+  <script is:inline src="/tools/digest/app.js"></script>
+</Base>
