@@ -136,6 +136,11 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
+  if (url.pathname === '/tools/digest/digest.json') {
+    event.respondWith(networkFirstData(request));
+    return;
+  }
+
   event.respondWith(cacheFirst(request));
 });
 
@@ -176,6 +181,26 @@ async function cacheFirst(request) {
   } catch {
     return Response.error();
   }
+}
+
+async function networkFirstData(request) {
+  try {
+    const response = await fetch(new Request(request.url, { cache: 'no-store' }));
+    if (response && response.ok && response.type === 'basic') {
+      const cache = await caches.open(CACHE);
+      try {
+        await cache.put(request, response.clone());
+      } catch {
+        /* Still return the fresh response if caching fails. */
+      }
+    }
+    if (response) return response;
+  } catch {
+    /* Offline: fall back to the last cached digest.json if available. */
+  }
+  const cached = await caches.match(request);
+  if (cached) return cached;
+  return Response.error();
 }
 
 async function matchNavigation(request) {

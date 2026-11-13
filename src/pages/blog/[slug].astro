@@ -5,14 +5,19 @@ import { formatDate, getPostsForPaths, isoDate, readingMinutes } from '../../lib
 
 export async function getStaticPaths() {
   const posts = await getPostsForPaths();
-  return posts.map((post) => ({
+  return posts.map((post, i) => ({
     params: { slug: post.id },
-    props: { post },
+    props: {
+      post,
+      prevPost: i > 0 ? posts[i - 1] : null,
+      nextPost: i < posts.length - 1 ? posts[i + 1] : null,
+    },
   }));
 }
 
-const { post } = Astro.props;
-const { Content } = await render(post);
+const { post, prevPost, nextPost } = Astro.props;
+const { Content, headings } = await render(post);
+const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
 const minutes = readingMinutes(post.body ?? post.data.summary);
 ---
 
@@ -30,8 +35,90 @@ const minutes = readingMinutes(post.body ?? post.data.summary);
         ))}
       </ul>
     </div>
+    {toc.length >= 2 && (
+      <details class="toc" open>
+        <summary>目录</summary>
+        <ol>
+          {toc.map((h) => (
+            <li class={h.depth === 3 ? 'toc-sub' : undefined}>
+              <a href={`#${h.slug}`}>{h.text}</a>
+            </li>
+          ))}
+        </ol>
+      </details>
+    )}
     <div class="prose">
       <Content />
     </div>
+    {(prevPost || nextPost) && (
+      <nav class="post-nav" aria-label="文章导航">
+        {prevPost && (
+          <a href={`/blog/${prevPost.id}/`}>
+            <span>← 较新一篇</span>
+            <strong>{prevPost.data.title}</strong>
+          </a>
+        )}
+        {nextPost && (
+          <a class="post-nav-next" href={`/blog/${nextPost.id}/`}>
+            <span>较早一篇 →</span>
+            <strong>{nextPost.data.title}</strong>
+          </a>
+        )}
+      </nav>
+    )}
   </article>
+  <dialog class="lightbox" id="lightbox" aria-label="图片放大预览">
+    <img id="lightbox-img" src="" alt="" />
+    <div class="lightbox-bar">
+      <span id="lightbox-cap"></span>
+      <button class="lightbox-close" id="lightbox-close" type="button">关闭</button>
+    </div>
+  </dialog>
+  <script is:inline>
+    (function () {
+      var prose = document.querySelector('.prose');
+      if (!prose) return;
+
+      prose.querySelectorAll('pre').forEach(function (pre) {
+        var wrap = document.createElement('div');
+        wrap.className = 'code-wrap';
+        pre.parentNode.insertBefore(wrap, pre);
+        wrap.appendChild(pre);
+
+        var btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'copy-btn';
+        btn.textContent = '复制';
+        btn.addEventListener('click', function () {
+          var code = pre.querySelector('code');
+          var text = (code ? code.innerText : pre.innerText) || '';
+          if (!navigator.clipboard) return;
+          navigator.clipboard.writeText(text).then(function () {
+            btn.textContent = '已复制';
+            setTimeout(function () { btn.textContent = '复制'; }, 1600);
+          }).catch(function () {});
+        });
+        wrap.appendChild(btn);
+      });
+
+      var dialog = document.getElementById('lightbox');
+      var imgEl = document.getElementById('lightbox-img');
+      var capEl = document.getElementById('lightbox-cap');
+      var closeBtn = document.getElementById('lightbox-close');
+      if (dialog && imgEl && typeof dialog.showModal === 'function') {
+        prose.querySelectorAll('img').forEach(function (img) {
+          img.addEventListener('click', function () {
+            imgEl.src = img.currentSrc || img.src;
+            imgEl.alt = img.alt || '';
+            if (capEl) capEl.textContent = img.alt || '';
+            dialog.showModal();
+          });
+        });
+        if (closeBtn) closeBtn.addEventListener('click', function () { dialog.close(); });
+        dialog.addEventListener('click', function (e) {
+          if (e.target === dialog) dialog.close();
+        });
+      }
+    })();
+  </script>
 </Base>
