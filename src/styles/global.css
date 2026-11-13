@@ -1034,7 +1034,12 @@ body:has(.offline-stage) main {
   .social a,
   .tool-card,
   .nav-link,
-  .offline-retry { transition: none; }
+  .offline-retry,
+  .copy-btn,
+  .lightbox,
+  .lightbox::backdrop { transition: none; }
+  .lightbox,
+  .lightbox::backdrop { animation: none; }
   .post:hover,
   .social a:hover,
   .offline-retry:hover { transform: none; }
@@ -1148,6 +1153,23 @@ body:has(.offline-stage) main {
 .copy-btn:hover {
   color: var(--ink);
   border-color: var(--faint);
+}
+
+.copy-btn.is-error {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.copy-live {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .prose img {
