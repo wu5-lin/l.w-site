@@ -26,8 +26,10 @@ import re
 import ssl
 import sys
 import html
+import urllib.parse
 import urllib.request
 import urllib.error
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 import xml.etree.ElementTree as ET
@@ -418,6 +420,90 @@ def fmt(it):
 
 
 DIGEST_REL = "public/tools/digest/digest.json"
+_CJK_RE = re.compile(r"[\u4e00-\u9fff]")
+_LATIN_RE = re.compile(r"[A-Za-z]")
+
+
+def needs_translation(title):
+    return bool(title) and not _CJK_RE.search(title) and bool(_LATIN_RE.search(title))
+
+
+def load_cached_titles(out_path):
+    cached = {}
+    if not os.path.exists(out_path):
+        return cached
+    try:
+        with open(out_path, encoding="utf-8") as f:
+            data = json.load(f)
+        for items in (data.get("categories") or {}).values():
+            for it in items or []:
+                u = (it.get("url") or "").strip()
+                t = (it.get("title") or "").strip()
+                if u and t and _CJK_RE.search(t):
+                    cached[u] = t
+    except Exception:
+        pass
+    return cached
+
+
+def _translate_google(text):
+    q = urllib.parse.quote(text)
+    url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=zh-CN&dt=t&q={q}"
+    data = json.loads(fetch(url, timeout=8))
+    parts = [seg[0] for seg in (data[0] or []) if seg and seg[0]]
+    return "".join(parts).strip() or None
+
+
+def _translate_mymemory(text):
+    q = urllib.parse.quote(text)
+    url = f"https://api.mymemory.translated.net/get?q={q}&langpair=en|zh-CN"
+    data = json.loads(fetch(url, timeout=8))
+    if data.get("responseStatus") != 200:
+        return None
+    translated = ((data.get("responseData") or {}).get("translatedText") or "").strip()
+    if not translated or "MYMEMORY WARNING" in translated.upper():
+        return None
+    return translated
+
+
+def translate_to_zh(text):
+    for fn in (_translate_google, _translate_mymemory):
+        try:
+            res = fn(text)
+            if res and _CJK_RE.search(res):
+                return re.sub(r"\s+", " ", res).strip()[:160]
+        except Exception:
+            continue
+    return text
+
+
+def translate_category_titles(cats, out_path):
+    if os.environ.get("DIGEST_NO_TRANSLATE", "").strip().lower() in ("1", "true", "yes"):
+        return
+    url_cache = load_cached_titles(out_path)
+    targets = []
+    for items in cats.values():
+        for it in items:
+            title = it.get("title", "")
+            if not needs_translation(title):
+                continue
+            cached = url_cache.get(it.get("url", ""))
+            if cached:
+                it["title"] = cached
+            else:
+                targets.append(it)
+    if not targets:
+        return
+    unique_texts = list(dict.fromkeys(it["title"] for it in targets))
+    with ThreadPoolExecutor(max_workers=4) as pool:
+        translated = dict(zip(unique_texts, pool.map(translate_to_zh, unique_texts)))
+    ok = 0
+    for it in targets:
+        zh = translated.get(it["title"], it["title"])
+        if zh != it["title"]:
+            it["title"] = zh
+            ok += 1
+    print(f"标题翻译完成：{ok}/{len(targets)} 条已转为中文。")
 
 
 def main():
@@ -429,6 +515,7 @@ def main():
     print(f"合计原始条目：{len(items)}")
 
     cats = build(items)
+    translate_category_titles(cats, out_path)
     payload = {
         "updated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
         "categories": {c: [fmt(m) for m in cats.get(c, [])] for c in CATEGORIES},
