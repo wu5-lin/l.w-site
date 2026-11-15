@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15 06:37 UTC",
+  "updated": "2026-11-15 07:38 UTC",
   "categories": {
     "投资": [
       {
@@ -187,6 +187,16 @@
       {
         "date": "2026-11-15",
         "tag": "Nature 材料",
+        "title": "使用 YOLO11 在显微 SEM 图像上对机械负载下失效的纤维增强聚合物复合材料样品进行检测和分类",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-78824-4",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
         "title": "AlphaDiffract：粉末 X 射线衍射数据的自动晶体学分析",
         "summary": "",
         "url": "https://www.nature.com/articles/s41524-026-02388-0",
@@ -305,16 +315,6 @@
         "category": "科研"
       },
       {
-        "date": "2026-11-14",
-        "tag": "Nature 材料",
-        "title": "从脆性到延性：EPS废料和聚丙烯纤维在降低密度混凝土中的协同效应与强度-密度优化",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-78574-3",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
         "date": "2026-11-13",
         "tag": "ScienceDaily 材料",
         "title": "AI 增强激光物理性能，速度提升惊人 250 倍",
@@ -329,9 +329,39 @@
       {
         "date": "2026-11-15",
         "tag": "PANews",
-        "title": "交易员Flood 20倍做多BTC浮亏超39万美元",
-        "summary": "PANews 11月15日消息，交易员 Flood 在 Hyperliquid 的持仓信息显示，目前持有 88.88 枚 BTC 20 倍杠杆多单，开仓均价为 68,866 美元，浮亏约 39.45 万美元，回报率为 -128.52%。该账户还持有约 8.329 万枚 PRL 空单，浮盈约 4.71 万美元，回报率为 81.24%。",
-        "url": "https://www.panewslab.com/zh/articles/01a1dde4-8659-76bc-9365-33925af91aad",
+        "title": "分析师：短期持有者正在抛售，但尚未出现大规模“投降式”抛售",
+        "summary": "PANews 11月15日消息，CryptoQuant 分析师 Axel Adler Jr. 发文分析称，平均短期持有者已实现盈亏比（STH-SOPR）已降至 0.993，表明短期持有者正在亏损抛售。但目前尚未出现大规模“投降式”抛售的迹象。在以往的市场承压时期，该指标曾跌至更低的水平。虽然亏损正在实现，但其规模目前看来尚不算极端。",
+        "url": "https://www.panewslab.com/zh/articles/01a1de13-d8af-76cd-abe5-f9c7e3d011e6",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "PANews",
+        "title": "加密做市商B2C2 Group持续分批抛售LINK，旗下地址已几乎清仓",
+        "summary": "PANews 11月15日消息，据Arkham监测数据显示，日本SBI Holdings控股90%的加密做市商B2C2 Group在最近一个月时间内持续分批卖出LINK，且近期抛售节奏有所加快，目前旗下地址几乎清仓，仅剩下约1445枚LINK，价值约1.3万美元。 此外，B2C2 Group在今日市场下跌期间向OKX、币安及Coinbase转入BNB、MORPHO、PEPE、ONDO等多种山寨币，疑似抛售。",
+        "url": "https://www.panewslab.com/zh/articles/01a1de10-4d76-72f2-941c-1ff2dc0c2b3a",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "PANews",
+        "title": "某巨鲸向币安存入1156万美元SOL，近5天累计存入约3296万美元SOL",
+        "summary": "PANews 11月15日消息，据 Onchain Lens 监测，某巨鲸解除质押后向币安存入 16.256 万枚 SOL，价值约 1156 万美元。过去 5 天，该巨鲸累计向币安存入约 43.5 万枚 SOL，价值约 3296 万美元；目前该钱包仍持有 18.095 万枚 SOL，价值约 1275 万美元。",
+        "url": "https://www.panewslab.com/zh/articles/01a1ddf5-ef89-7696-a715-2c6f3934b1f6",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "PANews",
+        "title": "泰国移民局逮捕两名涉加密货币诈骗的中国籍男子，涉案金额超6.3亿元",
+        "summary": "PANews 11月15日消息，据泰媒 FM91 报道，泰国移民局侦查队于 11 月 12 日在曼谷成功抓获两名中国籍男子，年龄分别为 52 岁和 28 岁。两人因涉嫌加密货币诈骗，被中国湖南省常德市公安局于 2025 年 12 月 18 日发布通缉令，案件总涉案金额超过 32 亿泰铢（约合人民币 6.3 亿元）。当局已依据《移民法》撤销其在泰国居留许可，并启动遣返程序，准备将两人移交中国接受审判。",
+        "url": "https://www.panewslab.com/zh/articles/01a1ddeb-cfad-7243-a43d-c01ede5224ed",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -344,36 +374,6 @@
         "url": "https://cointelegraph.com/news/rwa-protocol-stusdt-winds-down-three-years-after-23b-tvl-peak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
         "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "PANews",
-        "title": "江卓尔：已清仓DeFi小币种，近期暂停交易",
-        "summary": "PANews 11月15日消息，莱比特矿池创始人江卓尔发文表示，趁今日早盘反弹，已将持有的全部 DeFi 小币种清仓。当前仓位为对冲后的中性仓位。他指出，早盘跌势几乎触及其昨日文章中提到的证伪位置（约 61576 美元），有可能证伪“当前处于牛初”的判断。跌速超出预期，原本认为能支撑的 POC（最大成交量）63853 美元位置和斐波那契 78.6% 位置 6.41 万美元均被轻松跌破。 江卓尔称，若行情确认进入“熊末”并跌破 5.78 万美元，DeFi 小币种将面临更大跌幅，因此趁目前亏损尚可控全部了结。他承认本次中线判断错误较为严重，决定先休息一段时间，暂停交易。",
-        "url": "https://www.panewslab.com/zh/articles/01a1ddca-1078-7581-8358-6e96449a0ecc",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "PANews",
-        "title": "矿企MARA六周内售出13,597枚比特币，套现11亿美元，并计划进一步出售",
-        "summary": "PANews 11月15日消息，GSR 内容主管 Frank Chaparro 发文表示，矿企 MARA 在短短六周内售出了 13,597 枚比特币，套现 11 亿美元，并计划进一步出售。该公司曾表示会持有其比特币储备，但如今却选择将其变现，旨在偿还债务并为发展人工智能数据中心提供资金。",
-        "url": "https://www.panewslab.com/zh/articles/01a1ddb6-30b2-7257-a8c1-fba97092953a",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "PANews",
-        "title": "加密迎来“黑色周末”，谁按下了卖出键？",
-        "summary": "加密市场周末遭罕见抛售，比特币从6.9万美元跌至最低6.2万美元，以太坊跌破1800美元，恐慌指数低至10。这轮回调背后，美通胀超预期、ETF连续净流出、英伟达人事变动带崩科技股及中期选举变局等多重利空接连袭来，抛售压力不断加剧。",
-        "url": "https://www.panewslab.com/zh/articles/01a1ddb7-e659-769f-b5b0-1231ddef34e5",
-        "source": "PANews",
-        "region": "cn",
         "category": "web3"
       },
       {
@@ -491,10 +491,50 @@
       {
         "date": "2026-11-15",
         "tag": "IT之家",
-        "title": "R 星《GTA6: The Album》官方原声专辑完整歌曲列表意外曝光，原定 11 月 19 日才公开",
-        "summary": "IT之家 11 月 15 日消息，据 IGN 报道，一家“疑似为 Barnes & Noble”的经销商已经提前展示《Grand Theft Auto VI：The Album》双 LP 黑胶唱片的包装，导致专辑内全部歌曲及演唱者名单曝光，相应专辑原定于 11 月 19 日才会正式上架开放购买，定价为 50 美元 （IT之家注：现汇率约合 334.5 元人民币） 。 需要注意的是，此次曝光的《Grand Theft Auto VI：The Album》与 法国电子音乐组合 Justice 制作的《Grand Theft Auto VI：Original Score》 并非同一张专辑。后者由获得格莱美奖的 Justice 负责制作，同样计划推出实体版本，发行日期定于 2026 年 12 月 11 日。 目前，外媒 Rolling Stone 也通过消息人士确认了这份曲目列表真实性，IT之家整理如下： Side A Starting from Zero – Justice (feat. Michael McDonald) That's It – Yung Lean (feat. Future & Metro Boomin) Ahh Yea – Playboi Carti Rhyno – Travis Scott Sexy Magic – CA7RIEL & Paco Amoroso, PinkPantheress, Fred Again.. & Étienne de Crécy Flower in a Hurricane – Justice (feat. Tame Impala, SZA & King Gizzard & The Lizard Wizard) Go Easy – Dua Lipa Last Thing You Need – Morgan Wallen Side B X – Jhayco Suzuki – Fuerza Regida Macacoa 2000 – Rauw Alejandro Dance With Me – Boogie Wit Da Hoodie (feat. Elkan) Bigger – Burna Boy Count Up – Gunna Let's Rock – Kodak Black & Don Toliver Wakin Up Flex – Young Thug IKYFL – Tee Grizzly TF? – Don Toliver Side C Don't Chart – Cardi B GMA – JT Power Trip – Jennie Blood in Your Eyes – Tove Lo Fast Emotion – Zara Larsson Sweet Like Candy – Camila Cabello Only One – Fcukers Sanduneguea – Arca TRDWFE – Rina Sawayama Side D All Again – Rose Gray Crazy for You – Lana Del Rey Largate – Kali Uchis & Helado Negro No Me Busques – Omar Apollo Bright Lights, Big City – Keith Richards Stone Cold Krazy Luuv – Jesse Johnson & DāM-FunK Overtown Lights – Stanley Clarke, Yussef Dayes & Robert Glasper",
-        "url": "https://www.ithome.com/1/027/322.htm",
+        "title": "爱好者将索尼 PS5 独占的 TGA 2024 年度游戏《宇宙机器人》移植到 PC 平台",
+        "summary": "IT之家 11 月 15 日消息，据外媒 ComputerBase 报道，近期有爱好者 imnotsharingmyname 将索尼 PS5 独占的 TGA 2024 年度游戏 《宇宙机器人（Astro Bot）》移植到 PC 平台，同时为相应版本加入了英伟达 DLSS、帧生成和 Reflex 等技术。 与近期出现的部分主机游戏 PC 移植项目类似，该项目并未通过模拟器运行游戏，而是将主机代码重新编译为原生 PC 代码运行，其中图形处理部分采用了从 KytyPS5 项目移植而来的 GPU 组件，负责处理 AGC 命令数据、着色器和 VideoOut 等内容，并将图形指令转换为 Vulkan 指令。 此外，该爱好者还为移植版加入了英伟达专用适配层，可在运行时识别游戏原本采用的时域升频处理流程，并通过 Vulkan 将颜色、深度信息、运动矢量、抖动数据及摄像机矩阵等参数，经由 NVIDIA Streamline 2.14.16 传递给 DLSS 和多帧生成技术。 在硬件测试方面，开发者使用了 AMD Ryzen 5 5500 六核十二线程处理器、英伟达 RTX 5060 8GB 显卡以及 32GB 内存。在 1440p 分辨率下，游戏运行至 Sky Garden 等负载较高的场景时，帧率约为 32 至 34 FPS，其他区域则通常维持在 40 至 50 FPS。 外设支持方面，该移植版兼容索尼 DualSense、微软 XBOX 和任天堂 Switch Pro 手柄，游戏还能够根据 PC 硬件配置自动选择相应设置。 公开信息显示，索尼《宇宙机器人》由 Team Asobi 开发、索尼互动娱乐发行，是 2020 年《Astro’s Playroom》的续集，也是 Astro Bot 系列的第三款游戏。剧情主要围绕主角 ASTRO 和他的机器人船员，他们的母舰被摧毁后流落太空。玩家需要驾驶 ASTRO，探索超过 50 个充满乐趣与挑战的星球。IGN 给予本作 9 分评价，称其为“实验与乐趣的美妙混合物”。",
+        "url": "https://www.ithome.com/1/027/343.htm",
         "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "IT之家",
+        "title": "日媒：微软 Microsoft 365 服务宕机时，不少企业只能重新启用传真机",
+        "summary": "IT之家 11 月 15 日消息，据《日本时报》报道，当地时间 13 日上午，日本许多员工打完卡、准备开电脑工作时，屏幕上却弹出了 Microsoft 365 无法访问的提示。许多人不得不重新安排会议、日程，工作受到干扰。 一名用户在 X 平台发帖称：“我打不开 Outlook，当时一下子慌了…… 我联系了老板，结果被告知今天待在家里。”；另一名用户写道：“我们集团所有公司都深度依赖微软系统…… 现在唯一能做的就是去生产车间清理咖啡机。” IT之家从原报道获悉，日本许多企业都依赖微软提供的数字基础设施。Keyman's Net 去年的一项调查显示，超 78% 受访者所在的企业都在用微软产品。 日本内阁官房副长官尾崎正直已确认，日本政府信息系统受到此次故障影响。大型信用卡发行商 Credit Saison 发布通知称，由于外部服务发生系统故障，通过咨询表单收到的请求，回复时间将有所延迟。九州大学和早稻田大学等多所高校也报告称，此次服务中断影响了他们的 IT 服务。 日本一些打工族对无法工作感到欣喜，但也有人对由此造成的生产力损失表达愤怒，他们强调，传真机是可靠的商务通信方式。一名用户在 X 平台表示：“微软服务宕机，邮件发不出去，所以我们只能改用传真，发送平时以 PDF 格式发送的常规更新内容。模拟技术就是可靠。” 一名社交媒体用户调侃道：“我原以为这简直是天堂，因为一封邮件都收不到。结果这只是微软服务宕机，所以我实际上只是在地狱入口排队等候。” 颇具讽刺意味的是，日本政府早在 2021 年就曾试图逐步淘汰传真机，但遭到官僚强烈反对。当时一些人甚至认为，传真比电子邮件更加安全。",
+        "url": "https://www.ithome.com/1/027/342.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "IT之家",
+        "title": "Pura X“实锤”登陆 PC：华为何刚揭秘 MateBook Fold S 小折电脑 Live 小方屏玩法",
+        "summary": "IT之家 11 月 15 日消息，华为首款鸿蒙小折叠电脑 MateBook Fold S 已于昨日 10:08 正式开启预订。该机折叠态 10.2 英寸、展开态 14.7 英寸，会在 11 月 24 日 17:00~11 月 25 日 17:00 支付尾款，支持 12 期 0 分期利息购买。 华为董事、终端 BG CEO 何刚今日发布视频，介绍了这款电脑更多配置信息。他表示， 很多用户特别喜欢 Pura X 的外屏体验 ，所以华为一开始设计的时候就在思考能不能改变传统电脑的设计思路，给电脑开发一块外屏。 于是，华为 MateBook Fold S 在形态上做了创新，设计一块 Live 小方屏，不用展开电脑，支持随时看日程、看消息、刷社媒等操作，同时锁屏状态下还支持直接开启小艺慧记等功能。同时，电脑展开又拥有一块 14.7 英寸大屏，更适合写文档、看电影等场景使用。 据IT之家今日早些时候报道，华为首款鸿蒙小折叠电脑 MateBook Fold S 已现身官网，并公开了部分信息。 颜色 幻夜黑 天际白 云海蓝 配置 16GB/256GB（含键盘 + 内胆包） 16GB/512GB（含键盘 + 内胆包） 24GB/512GB（含键盘 + 内胆包） 32GB/1TB（含键盘 + 手写笔 + 内胆包）",
+        "url": "https://www.ithome.com/1/027/341.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "IT之家",
+        "title": "谋先飞 Motphys 发布物理仿真引擎 MotrixSim 1.0，核心采用 Rust 开发",
+        "summary": "IT之家 11 月 15 日消息，谋先飞（Motphys）新一代物理仿真引擎 MotrixSim 1.0 昨日正式发布。 据介绍，MotrixSim 是一个 高性能的物理仿真引擎 ，专为多体动力学和机器人仿真设计，支持广泛的应用场景，包括机器人控制、强化学习、工业仿真等。主要特性如下： 物理仿真：支持刚体动力学、碰撞检测等完整的物理仿真功能 广义坐标建模：采用广义坐标系统，支持复杂的多体系统建模 全新求解器：采用自研的约束模型和求解器，提供高效、稳定的多体动力学计算 高性能计算：CPU 版本基于 Rust 开发，提供出色的性能和内存安全性 Python API：简洁易用的 Python 接口，便于快速开发和原型制作 机器人支持：专门优化的机器人仿真功能，高度兼容 MJCF 模型格式 官方表示，MotrixSim 将真实世界的物理参数 1:1 复刻进仿真环境中，结合多模态传感器与高保真渲染，为机器打造了一个既能“看清”又能“摸准”的平行世界。 据介绍，通过其独创的 CPU / GPU 异构架构，利用高性能通信和统一内存的优势，以及突破百万级并发的统一约束链，在保证物理精度的同时，实现了训练规模和吞吐量的双重放大。 论文数据显示，在 4096 并发环境下跑出数百万物理步 / 秒， 让 G1 人形机器人的端到端训练完成仅需 10.2 分钟 （传统方案 130.8 分钟）。 通过融合视觉（看清颜色和纹理）、几何（测出形状、距离和深度）与触觉（感受压力、摩擦和软硬）感知，完成环境观测与行为反馈的闭环，解决“机器人认知盲区”的难题。 此外，别于传统极度依赖高端显卡的重资产路线， MotrixSim 核心采用 Rust 语言开发 ，兼顾高性能与内存安全。同时，引擎深度兼容鲲鹏、天数智芯、摩尔线程、英伟达、AMD、苹果等多元算力生态。 IT之家附官方文档如下： https://motrixsim.motphys.com/",
+        "url": "https://www.ithome.com/1/027/340.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "钛媒体",
+        "title": "国产芯片融资潮，来势凶猛",
+        "summary": "从新架构到新产线，资本加注整条产业链。",
+        "url": "https://www.tmtpost.com/8205694.html",
+        "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       },
@@ -505,36 +545,6 @@
         "summary": "（11月9日-14日） DeepSeek发布全家桶应用API；谷歌发布Gemini 4 Hydrogen；微软全球服务中断十小时致歉；美国人工智能建设遭遇电力瓶颈……",
         "url": "https://www.tmtpost.com/8205592.html",
         "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "IT之家",
-        "title": "中科曙光万伟：高速互连是破解算力集群规模瓶颈的关键",
-        "summary": "IT之家 11 月 15 日消息，据界面新闻报道，11 月 15 日，在第八届中国超级算力大会（ChinaSC 2026）暨中国智能计算产业联盟理事会年会上，中科曙光高速网络互联产品部总工程师万伟提出高速互连是算力基础设施实现规模扩展的关键，需要通过系统级创新，让更大规模的计算资源高效协作。 万伟表示，中科曙光自研的 scaleFabric 高速网络将组网架构与通信优化相结合，减少计算资源之间的通信等待，并通过故障快速恢复降低网络异常对任务执行的影响，保障超大规模智算集群高效运行。 据IT之家 2026 年 3 月报道，中科曙光 3 月 12 日发布首款全栈自研 400G 无损高速网络 scaleFabric，官方称其从底层 112G SerDes IP、交换与网卡芯片到整机、驱动及管理软件均实现自主研发。 据官方公布信息，scaleFabric400 网卡端口带宽达 400Gbps，端到端通信时延低至 0.9 微秒；交换机单端口带宽 800Gbps，整机交换容量双向 64Tbps，交换时延约 260 纳秒，链路故障恢复时间小于 1 毫秒。 官方称，该网络单子网互连规模可扩至 11.4 万卡 ，为传统 InfiniBand 的 2.33 倍，交换机端口密度提升 25%，组网总成本可降低约 30%。 据官方 10 月公布的信息，由中科曙光牵头起草的《智能计算集群高速网络管理技术规范》已获批立项，为国内首个立项的 RDMA 高速网络国家标准。 IT之家查询获悉，scaleFabric 已部署于国家超算互联网郑州核心节点，支撑三套万卡级 scaleX 智算集群上线运行，总规模达 3 万卡。",
-        "url": "https://www.ithome.com/1/027/320.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "IT之家",
-        "title": "彭博社澄清“《GTA6》在线模式明年末推出”传闻：视频脚本有误，消息不实",
-        "summary": "IT之家 11 月 15 日消息，彭博社于 11 月 13 日在 YouTube 上发布了一段视频，主要探讨了《GTA6》开发过程，然而视频在结尾时称“2026 年发售的游戏甚至还不是它的最终形态。真正的长期驱动力将在一年后随多人游戏模式到来”，对此，粉丝们认为相应视频暗示《GTA6》在线模式将于 2027 年年末推出。 目前， 彭博社记者 Jason Schreier 发文，称视频脚本有误，所谓“《GTA6》在线模式将于 2027 年年末推出”的消息不实 。 IT之家注意到，截至目前，R 星尚未正式确认《GTA 6》存在对应的多人在线模式。此前该工作室曾明确表示，《GTA 6》发售时将是一款“单人游戏”，未来 R 星可能延续《GTA 5》的做法，将游戏单人剧情模式和在线模式分开运营。 作为参考，《GTA 5》本身也并非首发即提供多人模式，本作于 2013 年 9 月 17 日发售，而《GTA Online（GTA 5 Online）》在数周后才上线。",
-        "url": "https://www.ithome.com/1/027/319.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "IT之家",
-        "title": "美国迈阿密国际机场发生客机与货机相撞事故，造成 2 人轻伤",
-        "summary": "IT之家 11 月 15 日消息，据 CNN 报道，当地时间 11 月 14 日晚，在迈阿密国际机场的停机坪上，两架飞机发生了相撞。而就在一天前，全美范围内的航班停飞导致了大量航班被取消，旅行秩序严重混乱。 IT之家从报道获悉，两架飞机是在滑行时相碰，一架巴拿马航空波音 737 的翼尖撞上一架 UPS 波音 767 的机头。据美国联邦航空管理局（FAA）通报，碰撞发生在两架飞机滑行过程中，塔台管制员此前已指示 UPS 机组避让巴拿马航空的航班，该局正在调查这起事故。 迈阿密国际机场传播总监 Greg Chin 向 CNN 表示，事故发生于当晚约 9:15， 2 名伤者伤势轻微 ，已由消防和救援人员在现场处理。 一名巴拿马航空乘客描述，飞机落地后以正常速度滑行，突然周围说话声变大，随后是一片惊呼，接着另一架飞机撞了上来；客舱内飞机猛地横向一顿，部分乘客一度慌乱，机组迅速让大家保持坐姿。 巴拿马航空在声明中称，该航班 166 名乘客和 6 名机组人员已全部下机，飞机被拖回航站楼，公司对事故给乘客带来的不便表示遗憾，并将配合有关部门调查。UPS 表示机组人员安全，将配合当局查明原因。 涉事巴拿马航空航班刚从巴拿马首都巴拿马城飞抵迈阿密，UPS 航班当时正准备飞往哥伦比亚首都波哥大。事故前一天，FAA 曾发布全国范围的地面停飞指令，大量航班取消，全美机场正陆续恢复正常运行。",
-        "url": "https://www.ithome.com/1/027/318.htm",
-        "source": "IT之家",
         "region": "cn",
         "category": "科技"
       },
@@ -560,11 +570,11 @@
       },
       {
         "date": "2026-11-15",
-        "tag": "钛媒体",
-        "title": "“柔性产能”：“中国制造”最硬的底牌和最贵的账单",
-        "summary": "柔性产能是中国制造最硬的底牌，危机来临时可快速转产、释放产能，构筑产业缓冲。但这份韧性并非免费，闲置产能带来的成本沿着产业链层层下沉，由企业、经营者与一线劳动者承担。宏大产业优势背后，藏着一笔持续滚动的昂贵账单。",
-        "url": "https://www.tmtpost.com/8205587.html",
-        "source": "钛媒体",
+        "tag": "爱范儿",
+        "title": "刚刚，马斯克再创历史，人类首次用「筷子」夹住星舰飞船",
+        "summary": "再创历史 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+        "url": "https://www.ifanr.com/1689501?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "source": "爱范儿",
         "region": "cn",
         "category": "科技"
       },
@@ -635,16 +645,6 @@
         "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
         "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
         "source": "TechCrunch AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "The Verge AI",
-        "title": "黄仁勋与富有远见的表演家创始人CEO的衰落",
-        "summary": "On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packed with influencers and fans, their faces awash in blue glow, as he made his entrance in a black leather jacket that […]",
-        "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
-        "source": "The Verge AI",
         "region": "en",
         "category": "科技"
       }
