@@ -1275,3 +1275,52 @@ body:has(.offline-stage) main {
   .post-nav { grid-template-columns: 1fr; }
   .post-nav .post-nav-next { grid-column: auto; text-align: left; }
 }
+
+.home-tools {
+  margin-top: 32px;
+}
+
+.home-tool-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.home-tool {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--glass);
+  text-decoration: none;
+  transition: background 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.home-tool:hover {
+  background: var(--row-hover);
+  border-color: var(--faint);
+  transform: translateY(-1px);
+}
+
+.home-tool strong {
+  font-size: 15px;
+  font-weight: 620;
+  color: var(--ink);
+}
+
+.home-tool:hover strong {
+  color: var(--accent);
+}
+
+.home-tool span {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 540px) {
+  .home-tool-row { grid-template-columns: 1fr; }
+}

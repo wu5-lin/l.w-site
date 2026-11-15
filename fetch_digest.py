@@ -57,12 +57,10 @@ SOURCES = [
     # ---------------- 投资 · 国内 ----------------
     {"name": "雪球·今日话题", "category": "投资", "region": "cn", "type": "xueqiu",
      "url": "https://xueqiu.com/statuses/hot/listV2.json?since_id=-1&size=20"},
+    {"name": "FT中文网", "category": "投资", "region": "cn", "type": "rss",
+     "url": "https://www.ftchinese.com/rss/feed"},
     {"name": "36氪", "category": "投资", "region": "cn", "type": "rss",
      "url": "https://36kr.com/feed"},
-    {"name": "华尔街见闻", "category": "投资", "region": "cn", "type": "rss",
-     "url": "https://www.wallstreetcn.com/rss"},
-    {"name": "新浪财经", "category": "投资", "region": "cn", "type": "rss",
-     "url": "https://finance.sina.com.cn/roll/index.d.html"},
 
     # ---------------- 投资 · 国际 ----------------
     {"name": "CNBC Markets", "category": "投资", "region": "en", "type": "rss",
@@ -99,10 +97,8 @@ SOURCES = [
      "url": "https://cointelegraph.com/rss"},
     {"name": "Decrypt", "category": "web3", "region": "en", "type": "rss",
      "url": "https://decrypt.co/feed"},
-    {"name": "巴比特", "category": "web3", "region": "cn", "type": "rss",
-     "url": "https://www.8btc.com/feed"},
     {"name": "PANews", "category": "web3", "region": "cn", "type": "rss",
-     "url": "https://www.panews.com/rss"},
+     "url": "https://www.panewslab.com/rss.xml"},
 
     # ---------------- 科技 / AI（沿用现有高质量源） ----------------
     {"name": "钛媒体", "category": "科技", "region": "cn", "type": "rss",
@@ -117,8 +113,8 @@ SOURCES = [
      "url": "https://www.ifanr.com/feed"},
     {"name": "IT之家", "category": "科技", "region": "cn", "type": "rss",
      "url": "https://www.ithome.com/rss/"},
-    {"name": "新智元", "category": "科技", "region": "cn", "type": "rss",
-     "url": "https://www.zdzn.com/feed"},
+    {"name": "Solidot", "category": "科技", "region": "cn", "type": "rss",
+     "url": "https://www.solidot.org/index.rss"},
     {"name": "虎嗅", "category": "科技", "region": "cn", "type": "rss",
      "url": "https://www.huxiu.com/rss/0.xml"},
     {"name": "MIT Tech Review", "category": "科技", "region": "en", "type": "rss",
@@ -214,7 +210,7 @@ def mk_item(title, link, summ, date, src):
     }
 
 
-def parse_feed(raw, src):
+def parse_feed(raw, src, max_items=30):
     out = []
     try:
         root = ET.fromstring(raw)
@@ -223,7 +219,7 @@ def parse_feed(raw, src):
 
     if root.tag.lower().endswith("feed"):  # Atom
         ns = "{http://www.w3.org/2005/Atom}"
-        for e in root.findall(ns + "entry"):
+        for e in root.findall(ns + "entry")[:max_items]:
             title = text_of(e.find(ns + "title"))
             link = atom_link(e, ns)
             summ = text_of(e.find(ns + "summary")) or text_of(e.find(ns + "content"))
@@ -234,7 +230,7 @@ def parse_feed(raw, src):
         ch = root.find("channel")
         items = ch.findall("item") if ch is not None else []
         dc = "{http://purl.org/dc/elements/1.1/}"
-        for it in items:
+        for it in items[:max_items]:
             title = text_of(it.find("title"))
             link = text_of(it.find("link"))
             summ = text_of(it.find("description"))

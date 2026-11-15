@@ -10,8 +10,8 @@ const csp = [
   "img-src 'self' data: blob:",
   "style-src 'self' 'unsafe-inline'",
   "font-src 'self'",
-  `script-src 'self' https://cdn.jsdelivr.net ${inlineScriptCsp} ${sourceHash(jsonLd)} 'unsafe-eval' 'wasm-unsafe-eval'`,
-  "connect-src 'self' https://cdn.jsdelivr.net blob: data:",
+  `script-src 'self' https://cdn.jsdelivr.net https://unpkg.com ${inlineScriptCsp} ${sourceHash(jsonLd)} 'unsafe-eval' 'wasm-unsafe-eval'`,
+  "connect-src 'self' https://cdn.jsdelivr.net https://unpkg.com blob: data:",
   "worker-src 'self' blob:",
   "form-action 'self'",
 ].join('; ');

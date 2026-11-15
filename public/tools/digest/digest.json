@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15 06:27 UTC",
+  "updated": "2026-11-15 06:37 UTC",
   "categories": {
     "投资": [
       {
@@ -328,6 +328,56 @@
     "web3": [
       {
         "date": "2026-11-15",
+        "tag": "PANews",
+        "title": "交易员Flood 20倍做多BTC浮亏超39万美元",
+        "summary": "PANews 11月15日消息，交易员 Flood 在 Hyperliquid 的持仓信息显示，目前持有 88.88 枚 BTC 20 倍杠杆多单，开仓均价为 68,866 美元，浮亏约 39.45 万美元，回报率为 -128.52%。该账户还持有约 8.329 万枚 PRL 空单，浮盈约 4.71 万美元，回报率为 81.24%。",
+        "url": "https://www.panewslab.com/zh/articles/01a1dde4-8659-76bc-9365-33925af91aad",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Cointelegraph",
+        "title": "RWA 协议 stUSDT 在 TVL 达到 $2.3B 峰值三年后逐渐退出",
+        "summary": "The stUSDT team did not disclose a reason for winding down the RWA protocol but assured holders that all underlying assets remain fully backed.",
+        "url": "https://cointelegraph.com/news/rwa-protocol-stusdt-winds-down-three-years-after-23b-tvl-peak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "PANews",
+        "title": "江卓尔：已清仓DeFi小币种，近期暂停交易",
+        "summary": "PANews 11月15日消息，莱比特矿池创始人江卓尔发文表示，趁今日早盘反弹，已将持有的全部 DeFi 小币种清仓。当前仓位为对冲后的中性仓位。他指出，早盘跌势几乎触及其昨日文章中提到的证伪位置（约 61576 美元），有可能证伪“当前处于牛初”的判断。跌速超出预期，原本认为能支撑的 POC（最大成交量）63853 美元位置和斐波那契 78.6% 位置 6.41 万美元均被轻松跌破。 江卓尔称，若行情确认进入“熊末”并跌破 5.78 万美元，DeFi 小币种将面临更大跌幅，因此趁目前亏损尚可控全部了结。他承认本次中线判断错误较为严重，决定先休息一段时间，暂停交易。",
+        "url": "https://www.panewslab.com/zh/articles/01a1ddca-1078-7581-8358-6e96449a0ecc",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "PANews",
+        "title": "矿企MARA六周内售出13,597枚比特币，套现11亿美元，并计划进一步出售",
+        "summary": "PANews 11月15日消息，GSR 内容主管 Frank Chaparro 发文表示，矿企 MARA 在短短六周内售出了 13,597 枚比特币，套现 11 亿美元，并计划进一步出售。该公司曾表示会持有其比特币储备，但如今却选择将其变现，旨在偿还债务并为发展人工智能数据中心提供资金。",
+        "url": "https://www.panewslab.com/zh/articles/01a1ddb6-30b2-7257-a8c1-fba97092953a",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "PANews",
+        "title": "加密迎来“黑色周末”，谁按下了卖出键？",
+        "summary": "加密市场周末遭罕见抛售，比特币从6.9万美元跌至最低6.2万美元，以太坊跌破1800美元，恐慌指数低至10。这轮回调背后，美通胀超预期、ETF连续净流出、英伟达人事变动带崩科技股及中期选举变局等多重利空接连袭来，抛售压力不断加剧。",
+        "url": "https://www.panewslab.com/zh/articles/01a1ddb7-e659-769f-b5b0-1231ddef34e5",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
         "tag": "CoinDesk",
         "title": "随着资金撤离加密货币，XRP 跌至 2024 年 11 月以来的最低水平",
         "summary": "XRP tanked to its lowest level since November 2024 as ETF outflows and shrinking stablecoin supply add to pressure on crypto markets.",
@@ -398,41 +448,11 @@
       },
       {
         "date": "2026-11-14",
-        "tag": "CoinDesk",
-        "title": "随着稳定币的普及，英国、新加坡和泰国央行测试跨境外汇结算",
-        "summary": "Project Meridian FX APAC said it demonstrated how transactions can be coordinated across conventional settlement systems and those built using blockchain technology.",
-        "url": "https://www.coindesk.com/policy/2026/11/14/uk-singapore-and-thailand-central-banks-test-cross-border-fx-settlement-as-stablecoins-gain-ground",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-14",
         "tag": "Decrypt",
         "title": "OpenAI 推出 ChatGPT 钱包，让人工智能代理无需加密即可购物",
         "summary": "OpenAI’s new wallet lets AI agents buy products using ordinary cards, challenging crypto payment tools from Coinbase and Circle as companies compete to control everyday online shopping by autonomous software.",
         "url": "https://decrypt.co/383278/openai-chatgpt-wallet-ai-agents-shop-without-crypto",
         "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "CoinDesk",
-        "title": "英国可以将浪费的苏格兰风能转化为比特币，以削减 13 亿美元的电网费用",
-        "summary": "Britain could use bitcoin mining to absorb surplus Scottish wind power and reduce payments to wind farms to halt generation, according to a Bitcoin Policy Institute report.",
-        "url": "https://www.coindesk.com/policy/2026/11/13/britain-could-turn-wasted-scottish-wind-power-into-bitcoin-to-cut-its-usd1-3-billion-grid-bill",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "CoinDesk",
-        "title": "幕后力量可能会放大比特币和以太坊价格波动",
-        "summary": "Both bitcoin and ether are trading in price ranges where market makers and dealers may add to market volatility.",
-        "url": "https://www.coindesk.com/markets/2026/11/14/a-behind-the-scenes-force-may-amplify-bitcoin-and-ether-price-volatility",
-        "source": "CoinDesk",
         "region": "en",
         "category": "web3"
       },
@@ -465,29 +485,19 @@
         "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Cointelegraph",
-        "title": "比特币ETF两周内下跌$2.35B 贝莱德连跌触及11",
-        "summary": "US spot Bitcoin ETFs recorded $185.4 million in net outflows Friday, with BlackRock’s IBIT accounting for $143.5 million and Fidelity’s FBTC shedding $41.9 million.",
-        "url": "https://cointelegraph.com/markets/bitcoin-etf-outflows-2-35-billion-blackrock-11-session-streak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "CoinDesk",
-        "title": "中本聪时代的钱包在一场价值 2600 亿美元的诉讼中转移了自 2011 年以来持有的 75 个比特币",
-        "summary": "The roughly $5 million transfer also spent the tiny payment used to deliver a court notice to the address in May.",
-        "url": "https://www.coindesk.com/markets/2026/11/13/satoshi-era-wallet-served-in-a-usd260-billion-lawsuit-moves-75-btc-it-held-since-2011",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
       }
     ],
     "科技": [
+      {
+        "date": "2026-11-15",
+        "tag": "IT之家",
+        "title": "R 星《GTA6: The Album》官方原声专辑完整歌曲列表意外曝光，原定 11 月 19 日才公开",
+        "summary": "IT之家 11 月 15 日消息，据 IGN 报道，一家“疑似为 Barnes & Noble”的经销商已经提前展示《Grand Theft Auto VI：The Album》双 LP 黑胶唱片的包装，导致专辑内全部歌曲及演唱者名单曝光，相应专辑原定于 11 月 19 日才会正式上架开放购买，定价为 50 美元 （IT之家注：现汇率约合 334.5 元人民币） 。 需要注意的是，此次曝光的《Grand Theft Auto VI：The Album》与 法国电子音乐组合 Justice 制作的《Grand Theft Auto VI：Original Score》 并非同一张专辑。后者由获得格莱美奖的 Justice 负责制作，同样计划推出实体版本，发行日期定于 2026 年 12 月 11 日。 目前，外媒 Rolling Stone 也通过消息人士确认了这份曲目列表真实性，IT之家整理如下： Side A Starting from Zero – Justice (feat. Michael McDonald) That's It – Yung Lean (feat. Future & Metro Boomin) Ahh Yea – Playboi Carti Rhyno – Travis Scott Sexy Magic – CA7RIEL & Paco Amoroso, PinkPantheress, Fred Again.. & Étienne de Crécy Flower in a Hurricane – Justice (feat. Tame Impala, SZA & King Gizzard & The Lizard Wizard) Go Easy – Dua Lipa Last Thing You Need – Morgan Wallen Side B X – Jhayco Suzuki – Fuerza Regida Macacoa 2000 – Rauw Alejandro Dance With Me – Boogie Wit Da Hoodie (feat. Elkan) Bigger – Burna Boy Count Up – Gunna Let's Rock – Kodak Black & Don Toliver Wakin Up Flex – Young Thug IKYFL – Tee Grizzly TF? – Don Toliver Side C Don't Chart – Cardi B GMA – JT Power Trip – Jennie Blood in Your Eyes – Tove Lo Fast Emotion – Zara Larsson Sweet Like Candy – Camila Cabello Only One – Fcukers Sanduneguea – Arca TRDWFE – Rina Sawayama Side D All Again – Rose Gray Crazy for You – Lana Del Rey Largate – Kali Uchis & Helado Negro No Me Busques – Omar Apollo Bright Lights, Big City – Keith Richards Stone Cold Krazy Luuv – Jesse Johnson & DāM-FunK Overtown Lights – Stanley Clarke, Yussef Dayes & Robert Glasper",
+        "url": "https://www.ithome.com/1/027/322.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
       {
         "date": "2026-11-15",
         "tag": "钛媒体",
@@ -524,16 +534,6 @@
         "title": "美国迈阿密国际机场发生客机与货机相撞事故，造成 2 人轻伤",
         "summary": "IT之家 11 月 15 日消息，据 CNN 报道，当地时间 11 月 14 日晚，在迈阿密国际机场的停机坪上，两架飞机发生了相撞。而就在一天前，全美范围内的航班停飞导致了大量航班被取消，旅行秩序严重混乱。 IT之家从报道获悉，两架飞机是在滑行时相碰，一架巴拿马航空波音 737 的翼尖撞上一架 UPS 波音 767 的机头。据美国联邦航空管理局（FAA）通报，碰撞发生在两架飞机滑行过程中，塔台管制员此前已指示 UPS 机组避让巴拿马航空的航班，该局正在调查这起事故。 迈阿密国际机场传播总监 Greg Chin 向 CNN 表示，事故发生于当晚约 9:15， 2 名伤者伤势轻微 ，已由消防和救援人员在现场处理。 一名巴拿马航空乘客描述，飞机落地后以正常速度滑行，突然周围说话声变大，随后是一片惊呼，接着另一架飞机撞了上来；客舱内飞机猛地横向一顿，部分乘客一度慌乱，机组迅速让大家保持坐姿。 巴拿马航空在声明中称，该航班 166 名乘客和 6 名机组人员已全部下机，飞机被拖回航站楼，公司对事故给乘客带来的不便表示遗憾，并将配合有关部门调查。UPS 表示机组人员安全，将配合当局查明原因。 涉事巴拿马航空航班刚从巴拿马首都巴拿马城飞抵迈阿密，UPS 航班当时正准备飞往哥伦比亚首都波哥大。事故前一天，FAA 曾发布全国范围的地面停飞指令，大量航班取消，全美机场正陆续恢复正常运行。",
         "url": "https://www.ithome.com/1/027/318.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "IT之家",
-        "title": "华为星芒 OSTA O1 Pro 新机包装盒曝光，新品牌 11 月 20 日首秀",
-        "summary": "IT之家 11 月 15 日消息，博主 @宁静的哲理 今日曝光了华为星芒 OSTA O1 Pro 新机的包装盒。 画面显示，包装盒印有 OSTA 的英文标识和华为图形 LOGO，并揭示新机预装了鸿蒙 HarmonyOS 系统。博主还透露，新机不支持无线充电和卫星通信，采用普通双卡设计。 据IT之家此前报道，华为旗下全新品牌“OSTA 星芒手机”官方微博账号 11 月 12 日发布了其第一条内容，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东不久后转发了这条微博。 余承东表示：“欢迎“星”朋友！看到大家对 OSTA 星芒#的关注和期待， 我们希望通过这个全新品牌，探索更多 AI 新可能 ！11 月 20 日发布会，我们接着聊！” 相关阅读： 《 关海涛欢迎华为推子品牌星芒：这件事最大的意义，就是让大家知道荣耀是荣耀 》 《 华为余承东：希望通过 OSTA 星芒全新品牌，探索更多 AI 新可能 》 《 华为 OSTA 星芒手机发布首个预热视频：slogan“自有光芒”，11 月 20 日首秀 》",
-        "url": "https://www.ithome.com/1/027/317.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -619,6 +619,16 @@
         "category": "科技"
       },
       {
+        "date": "2026-11-15",
+        "tag": "Solidot",
+        "title": "美国失去麻疹消除地位",
+        "summary": "受益于疫苗接种，美国自 2000 年起被认定“消灭”了麻疹。但最近几年疫苗接种率持续下降，麻疹卷土重来在美国多地再次流行。如果由同一毒株引起的感染在同一国家内持续发生人际传播，且时间至少达到一年，那么该感染即被视为“地方性流行”，即失去消除地位。犹他州的研究人员今年 8 月报告，麻疹同一毒株引起的感染在该州持续传播超过一年。今年美国已报告逾 5400 例麻疹病例，创下自 1991 年以来的最高纪录。今年报告的病例几乎所有患者此前都未接种过麻疹、腮腺炎和风疹（MMR）疫苗，或者其疫苗接种状况不明。根据美国各州的报告，至少 10 人在感染麻疹后死亡。",
+        "url": "https://www.solidot.org/story?sid=85889",
+        "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
         "date": "2026-11-14",
         "tag": "TechCrunch AI",
         "title": "亚洲各国政府对英伟达首席执行官黄仁勋的退出做出反应",
@@ -635,16 +645,6 @@
         "summary": "On January 6th, 2025, Nvidia CEO Jensen Huang got his rockstar moment at last. He strode triumphantly onstage, hand raised in the air, to the claps and cheers of a 14,000-person arena absolutely packed with influencers and fans, their faces awash in blue glow, as he made his entrance in a black leather jacket that […]",
         "url": "https://www.theverge.com/tech/1033781/nvidia-jensen-huang-last-visionary-showman-founder-ceo",
         "source": "The Verge AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Ars Technica",
-        "title": "詹姆斯·韦伯望远镜发现比其绕轨道运行的恒星更古老的冰",
-        "summary": "Radiation and collisions reshape the planetary building materials.",
-        "url": "https://arstechnica.com/science/2026/11/james-webb-telescope-finds-ice-older-than-the-star-it-orbits/",
-        "source": "Ars Technica",
         "region": "en",
         "category": "科技"
       }

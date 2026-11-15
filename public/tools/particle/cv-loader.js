@@ -2,7 +2,12 @@
 (function () {
   "use strict";
 
-  var CDN = "https://cdn.jsdelivr.net/npm/@techstark/opencv-js@4.11.0-release.1/dist/opencv.js";
+  var CDNS = [
+    "https://cdn.jsdelivr.net/npm/@techstark/opencv-js@4.11.0-release.1/dist/opencv.js",
+    "https://unpkg.com/@techstark/opencv-js@4.11.0-release.1/dist/opencv.js"
+  ];
+  var cdnIndex = 0;
+  var loadTimer = 0;
 
   function onReady() {
     window.__cvLoaded = true;
@@ -58,10 +63,34 @@
     })();
   }
 
-  var s = document.createElement("script");
-  s.src = CDN;
-  s.async = true;
-  s.addEventListener("load", whenReady);
-  s.addEventListener("error", onError);
-  document.head.appendChild(s);
+  function loadScript(index) {
+    if (index >= CDNS.length) { onError(); return; }
+    cdnIndex = index;
+    var s = document.createElement("script");
+    s.src = CDNS[index];
+    s.async = true;
+    var done = false;
+    function nextFallback() {
+      if (done || window.__cvLoaded) return;
+      done = true;
+      clearTimeout(loadTimer);
+      s.remove();
+      var b = document.getElementById("cvBanner");
+      if (b && index + 1 < CDNS.length) {
+        b.textContent = "主 CDN 较慢，正在切换备用源加载 OpenCV…";
+      }
+      loadScript(index + 1);
+    }
+    loadTimer = setTimeout(nextFallback, 25000);
+    s.addEventListener("load", function () {
+      if (done) return;
+      done = true;
+      clearTimeout(loadTimer);
+      whenReady();
+    });
+    s.addEventListener("error", nextFallback);
+    document.head.appendChild(s);
+  }
+
+  loadScript(0);
 })();

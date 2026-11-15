@@ -49,4 +49,18 @@ const posts = await getPosts();
     <h2 id="posts-heading" class="posts-label">最近</h2>
     <PostList posts={posts} animate />
   </section>
+
+  <section class="posts home-tools" aria-labelledby="home-tools-heading">
+    <h2 id="home-tools-heading" class="posts-label">小工具</h2>
+    <div class="home-tool-row">
+      <a class="home-tool" href="/tools/particle/">
+        <strong>SEM 粒径分析</strong>
+        <span>浏览器端电镜颗粒分割与 D10/D50/D90 统计</span>
+      </a>
+      <a class="home-tool" href="/tools/digest/">
+        <strong>资讯简报</strong>
+        <span>投资、科研、web3 与科技每日中文标题聚合</span>
+      </a>
+    </div>
+  </section>
 </Base>
