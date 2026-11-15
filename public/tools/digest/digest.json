@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-15 16:48 UTC",
+  "updated": "2026-11-15 22:39 UTC",
   "categories": {
     "投资": [
       {
         "date": "2026-11-15",
         "tag": "Seeking Alpha",
-        "title": "本周主要交易：三星、大浦、格陵兰能源、西门子等",
+        "title": "百度2026年第三季度财报预览",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4672791-key-deals-this-week-samsung-oura-greenland-energy-siemens-and-more?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4672582-baidu-q3-2026-earnings-preview?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -15,9 +15,29 @@
       {
         "date": "2026-11-15",
         "tag": "Seeking Alpha",
-        "title": "随着出口审查的加强，贝森特呼吁英伟达领导层进行改革",
+        "title": "百达提高日本配置，将目光投向人工智能股票之外",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4672792-bessent-calls-for-nvidia-leadership-overhaul-as-export-scrutiny-intensifies?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4672813-pictet-raises-japan-allocation-as-it-looks-beyond-ai-stocks?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "MarketWatch",
+        "title": "我的哥哥没有孩子，他把我们唯一的妹妹从他的遗嘱中剔除。我会得到一切。我告诉她吗？",
+        "summary": "“I’m torn between respecting my brother’s wishes and being fair to my sister.”",
+        "url": "https://www.marketwatch.com/story/she-has-a-history-of-financial-mismanagement-my-brother-cut-my-sister-out-of-his-will-im-getting-everything-do-i-tell-her-3e537851?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Seeking Alpha",
+        "title": "庞巴迪从沙特阿拉伯 THC 获得 12 架喷气式飞机订单",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4672812-bombardier-secures-12-jet-order-from-saudi-arabia-s-thc?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -25,29 +45,79 @@
       {
         "date": "2026-11-15",
         "tag": "Seeking Alpha",
-        "title": "法国兴业银行的阿尔伯特·爱德华兹警告流动性紧缩和通胀威胁人工智能股票上涨",
+        "title": "NASA 与 BAE Systems 作为太空望远镜供应商推进 PRIMA 任务",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4672790-socgens-albert-edwards-warns-liquidity-squeeze-inflation-threaten-ai-stock-rally?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4672811-nasa-advances-prima-mission-with-bae-systems-as-space-telescope-supplier?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-15",
-        "tag": "Seeking Alpha",
-        "title": "UPS 和 Copa 喷气式飞机在迈阿密机场滑行时相撞",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4672789-ups-copa-jets-collide-while-taxiing-at-miami-airport?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
+        "tag": "The Block",
+        "title": "CZ 否认币安在比特币从 62,000 美元附近的四个月低点反弹之际出售加密货币",
+        "summary": "The price moves across the market led to $2 billion in crypto liquidations in a single 24-hour period over the weekend.",
+        "url": "https://www.theblock.co/news/markets/2026-11-15-cz-denies-binance-sold-crypto-as-bitcoin-bounces-from-four-month-low-near-62000-440807",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "MarketWatch",
+        "title": "英伟达正在为华尔街多年来最受期待的财报电话会议之一做准备",
+        "summary": "Jensen Huang’s sudden departure has made Tuesday’s earnings call “the most important in the company’s history.”",
+        "url": "https://www.marketwatch.com/story/nvidia-is-gearing-up-for-one-of-wall-streets-most-anticipated-earnings-calls-in-years-91855b1e?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "MarketWatch",
+        "title": "廉价航空公司正在向高档化发展，提供头等舱座位和更快的无线网络",
+        "summary": "Forget no-frills: Frontier and JetBlue are chasing luxury flyers, and Wall Street is buying in.",
+        "url": "https://www.marketwatch.com/story/budget-airlines-are-going-upscale-with-first-class-seats-and-faster-wifi-999868ab?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "The Block",
+        "title": "交易员通过发现 BitGo 的公开拉取请求和领先的 memecoin 上市，获得了 600 万美元的利润",
+        "summary": "A public BitGo code change on July 27 added support for Cash Cat on Robinhood Chain ten days before Robinhood announced the listing.",
+        "url": "https://www.theblock.co/news/defi/2026-11-15-traders-claim-6-million-profit-by-spotting-bitgos-public-pull-request-and-frontrunning-memecoin-listing-440363",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "MarketWatch",
+        "title": "我从父亲那里继承了 140 万美元。我向结婚 25 年的丈夫要求一份婚后协议有错吗？",
+        "summary": "“He has always said he wants his daughter to inherit a chunk of his estate, and I’ve never objected to that.”",
+        "url": "https://www.marketwatch.com/story/i-inherited-1-4-million-from-my-father-am-i-wrong-to-ask-my-husband-of-25-years-for-a-postnuptial-agreement-b739c51d?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "CNBC Markets",
+        "title": "卢特尼克因英伟达间谍丑闻而面临质疑。他儿子的公司与芯片制造商有联系",
+        "summary": "Jensen Huang’s resignation as Nvidia CEO has brought renewed scrutiny to Commerce Secretary Howard Lutnick and his family's financial ties to the chipmaker.",
+        "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
+        "source": "CNBC Markets",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-15",
         "tag": "Financial Times",
-        "title": "共和党人将中期失败归咎于除特朗普之外的所有人",
-        "summary": "The party faithful avoid mentioning their leader as they lick their wounds at Heritage Foundation postmortem",
-        "url": "https://www.ft.com/content/d21caa78-65c1-4570-bec8-2ef71b5d65e7?syn-25a6b1a6=1",
+        "title": "黄仁勋与盟友讨论重新担任英伟达首席执行官",
+        "summary": "Tech supporters lobby chipmaker’s board to reinstate former CEO after he resigned following affair with alleged Chinese spy",
+        "url": "https://www.ft.com/content/45383d86-33c4-4d99-86e5-5e058d3567c1?syn-25a6b1a6=1",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
@@ -55,9 +125,9 @@
       {
         "date": "2026-11-15",
         "tag": "Financial Times",
-        "title": "Anthropic 的 IPO 是人工智能的下一个重大考验",
-        "summary": "Even the most powerful frontier labs must bend to the power of public equity",
-        "url": "https://www.ft.com/content/bc8ac781-9837-46de-b7ed-958886ba43af?syn-25a6b1a6=1",
+        "title": "维克托·欧尔班 (Viktor Orbán) 的政党因发现 2000 万美元的隐藏现金而陷入困境",
+        "summary": "Hungarian police said money was recovered in forests, barns and warehouses as part of investigation into former prime minister’s ally",
+        "url": "https://www.ft.com/content/f05cfe6d-758e-4b14-b150-acc9f3fc9321?syn-25a6b1a6=1",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
@@ -65,9 +135,9 @@
       {
         "date": "2026-11-15",
         "tag": "Financial Times",
-        "title": "英伟达丑闻曝光后，国会将通过更严格的人工智能芯片出口规则",
-        "summary": "Jensen Huang’s alleged affair with Chinese spy ‘increases momentum’ to crack down on US hardware reaching China",
-        "url": "https://www.ft.com/content/3062790a-553d-41b8-9c7d-bae17b9d2e29?syn-25a6b1a6=1",
+        "title": "贝森特表示英伟达需要与外部首席执行官进行“重组”",
+        "summary": "US Treasury secretary demands to know if chipmaker is complying with restrictions on exports to China",
+        "url": "https://www.ft.com/content/24edbb84-7520-4ef0-a57c-30359e12ccc5?syn-25a6b1a6=1",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
@@ -75,9 +145,9 @@
       {
         "date": "2026-11-15",
         "tag": "Financial Times",
-        "title": "从文化战争到阶级战争：美国民主党放弃觉醒政治",
-        "summary": "The newly emboldened party shifts gears after its sweeping midterm election victory",
-        "url": "https://www.ft.com/content/82e2d624-65aa-4a8c-86ec-f99c0ce785ac?syn-25a6b1a6=1",
+        "title": "Diamondback公司接近达成50亿美元协议，扩大在石油资源丰富的二叠纪盆地的钻探规模",
+        "summary": "Acquisition would be latest in the heartland of the US shale boom amid volatile energy prices caused by Iran war",
+        "url": "https://www.ft.com/content/a56fc76f-af32-45b2-8ae1-d5e211cb9643?syn-25a6b1a6=1",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
@@ -89,76 +159,6 @@
         "summary": "About 49.2 million KAVA was bridged to BNB Chain via LayerZero and sold for roughly $2.1 million in BNB and USDT.",
         "url": "https://www.theblock.co/news/defi/2026-11-14-kava-lend-loses-roughly-3-8-million-to-hack-sending-kava-token-down-nearly-40-440350",
         "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "The Block",
-        "title": "路易斯安那州股份公司在机构诉讼后称 CFTC 主席是预测市场的“谄媚的旗手”",
-        "summary": "The CFTC sued Louisiana Friday to block a state judge's order banning 31 prediction markets, including Kalshi and Polymarket, in the state.",
-        "url": "https://www.theblock.co/news/regulation/2026-11-14-louisiana-ag-calls-cftc-chair-an-obsequious-standard-bearer-for-prediction-markets-following-agency-lawsuit-440342",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "The Block",
-        "title": "比特币 ETF 连续第二周损失 10 亿美元，因为加密基金（除一只外）继续亏损",
-        "summary": "U.S. spot crypto ETFs lost about $1.55 billion combined, and Avalanche funds' $227,000 was the only weekly inflow among the 15 categories SoSoValue tracks.",
-        "url": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-continue-bleeding-440337",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "FT中文网",
-        "title": "一周世界舆论聚焦：黄仁勋的陨落与APEC峰会",
-        "summary": "曹辛：中美俄三国当前面临的问题不同，利益也有差异。三国元首会晤难以开成“第二次雅尔塔会议”，但这种会晤本身就代表一种强大的影响力。",
-        "url": "https://www.ftchinese.com/story/001111370",
-        "source": "FT中文网",
-        "region": "cn",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "FT中文网",
-        "title": "美股大跌，AI盛宴落幕？",
-        "summary": "黄凡：当前的宏观政治变量以及龙头公司高管丑闻与相关调查，对美股AI科技板块走势的影响更多的只是“短期情绪噪音”而非“长期基本面改变”。",
-        "url": "https://www.ftchinese.com/story/001111368",
-        "source": "FT中文网",
-        "region": "cn",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "FT中文网",
-        "title": "中国光伏行业裁员潮的背后",
-        "summary": "兰道夫：企业正加快整合，推进生产自动化，并将员工从生产一线转向销售和高端产品业务。",
-        "url": "https://www.ftchinese.com/story/001111359",
-        "source": "FT中文网",
-        "region": "cn",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "FT中文网",
-        "title": "黄仁勋们，为什么越来越难只做商人？",
-        "summary": "闫曼：随着AI成为国家战略的重要部分，硅谷企业家越来越难只做商人。技术成功扩大了他们的影响力，也让他们面临商业利益与公共责任的冲突。",
-        "url": "https://www.ftchinese.com/story/001111369",
-        "source": "FT中文网",
-        "region": "cn",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "CNBC Markets",
-        "title": "ETF 专家表示，英伟达的动荡和民主党国会将如何重塑人工智能行业",
-        "summary": "ETF experts say Nvidia’s leadership turmoil and Democratic control of Congress could shift AI demand to the benefit of other Big Tech stocks, rival chipmakers.",
-        "url": "https://www.cnbc.com/2026/11/14/nvidia-ai-trade-data-centers-congress.html",
-        "source": "CNBC Markets",
         "region": "en",
         "category": "投资"
       }
@@ -197,6 +197,26 @@
       {
         "date": "2026-11-15",
         "tag": "Nature 材料",
+        "title": "用于多重双模式 SERS/SEIRA 应用的石墨烯涂层纳米圆柱链中杂化等离子体共振的定量研究",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-78845-z",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
+        "title": "烃类类型对ZnFe2O4/硬脂酸涂层三聚氰胺海绵循环吸附和回收性能的影响",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-79176-9",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
         "title": "磷介导的反向氢溢出可实现速率匹配的硝酸盐-硫酸盐配对电解用于过硫酸铵合成",
         "summary": "",
         "url": "https://www.nature.com/articles/s41467-026-79620-4",
@@ -207,9 +227,29 @@
       {
         "date": "2026-11-15",
         "tag": "Nature 材料",
+        "title": "阐明用于纳米电子学应用的 PVA/PVP/CS-MWCNT/NiFe2O₄ 纳米复合材料的介电、磁性和光学特性",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-79772-9",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
         "title": "机器学习辅助预测和优化颗粒填充聚合物复合材料的拉伸强度",
         "summary": "",
         "url": "https://www.nature.com/articles/s41598-026-78358-9",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
+        "title": "不同暴露条件下当代树脂基复合材料的单体萃取和压缩响应",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-79584-x",
         "source": "Nature 材料",
         "region": "en",
         "category": "科研"
@@ -255,46 +295,6 @@
         "category": "科研"
       },
       {
-        "date": "2026-11-15",
-        "tag": "Nature 材料",
-        "title": "通过 P 掺杂 g-C3N5/WO3/B4C 的 2D/2D/2D 纳米复合材料解锁高光催化产氢和消除四环素",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-78567-2",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "Nature 材料",
-        "title": "初始无阳极锂金属​​电池中电解质-铜界面稳定性的面依赖性阴离子吸附",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41467-026-79429-1",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "Nature 材料",
-        "title": "岩溶地区抽水蓄能上部水库沥青混凝土防渗层相似材料研究",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-78944-x",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "Nature 材料",
-        "title": "使用 YOLO11 在显微 SEM 图像上对机械负载下失效的纤维增强聚合物复合材料样品进行检测和分类",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-78824-4",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
         "date": "2026-11-14",
         "tag": "ScienceDaily 材料",
         "title": "科学家发现了一种令人惊讶的简单方法，可以将咖啡废物转化为燃料",
@@ -329,9 +329,9 @@
       {
         "date": "2026-11-15",
         "tag": "PANews",
-        "title": "Kalshi个股永续合约上线以来名义交易额达50亿美元，交易员借此押注科技巨头",
-        "summary": "PANews 11月16日消息，据彭博社报道，AI板块前景不确定性上升推动对冲需求，越来越多交易员转向预测市场平台Kalshi的杠杆个股永续合约，押注英伟达、SpaceX等科技巨头。Kalshi于11月5日推出个股永续合约，首批覆盖50只大型股，合约无到期日。Kalshi官方披露，该产品上线以来名义交易额已达50亿美元，个股永续最高杠杆约为6.45倍。",
-        "url": "https://www.panewslab.com/zh/articles/01a1e003-13d7-711d-9cce-4cc97cd57914",
+        "title": "Luxor承认旗下Commander遭入侵致客户算力被劫持，承诺全额赔偿",
+        "summary": "PANews 11月16日消息， 据Luxor在X平台披露，其内部监控发现有人通过矿机管理工具Commander未经授权重定向客户算力，十余个客户账户受影响，相关矿机在有限时间内被指向其他矿池，系统数据未遭泄露。Luxor称已在两小时内修复，问题仅限于Commander，Luxor矿池及LuxOS未受影响，将按正常挖矿收益向受影响客户全额赔付。据Decrypt报道，其CEO称这是一场借助AI的复杂攻击。",
+        "url": "https://www.panewslab.com/zh/articles/01a1e12f-b6ed-732b-86af-a439774907ed",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -339,9 +339,9 @@
       {
         "date": "2026-11-15",
         "tag": "PANews",
-        "title": "CZ：币安没有抛售加密货币，个人过去几天已逢低买入",
-        "summary": "PANews 11月16日消息，CZ 发文分析近期加密货币市场下跌的潜在原因，并强调目前没有人能够确定真正的原因，相关性并不代表因果关系。",
-        "url": "https://www.panewslab.com/zh/articles/01a1e001-7cfe-764c-afc9-0de8120cb081",
+        "title": "BTC跌破65000美元，日内涨幅 0.36%",
+        "summary": "PANews 11月16日消息，欧易OKX行情显示，BTC刚刚跌破65000美元，现报64984.60美元/枚，日内涨幅 0.36%。",
+        "url": "https://www.panewslab.com/zh/articles/01a1e111-97d2-7484-a809-6a29f0dda2f8",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -349,11 +349,31 @@
       {
         "date": "2026-11-15",
         "tag": "PANews",
-        "title": "高盛、花旗等21家机构拟投约2.7亿美元，联合发行美元稳定币挑战Tether与Circle",
-        "summary": "PANews 11月16日消息，据Decrypt报道，高盛、花旗、桑坦德、德意志银行等21家机构组成的联盟承诺投入约2.7亿美元，用于代号“Project Faro”的美元稳定币项目未来五年的运营。发行方将在美国注册，目标于2027年上线。目前Tether与Circle合计占据约2900亿美元稳定币市场的85%。该项目尚无代币、CEO及最终名称。与此同时，SoFi将SoFiUSD扩展至Polygon，Anchorage Digital发行的代币已可通过Visa网络结算，万事达卡联合BVNK推出Global Money Platform。",
-        "url": "https://www.panewslab.com/zh/articles/01a1dff9-1212-7390-b479-43499460d8eb",
+        "title": "交易员称借BitGo公开代码变更抢跑Robinhood上币，获利超600万美元",
+        "summary": "PANews 11月16日消息，据The Block报道，X平台匿名交易员@3i称，其团队通过追踪BitGo公开代码库变更及Wintermute链上动向，提前买入Robinhood Chain上Meme币Cash Cat和PONS，在Robinhood上币后卖出，累计获利超600万美元。BitGo开发者于7月27日在公开的BitGoJS代码库中提交了添加Cash Cat的代码，而Robinhood直到8月6日才上线该代币。The Block称已核实相关公开记录及吻合的钱包活动，但无法核实其所称盈利金额。",
+        "url": "https://www.panewslab.com/zh/articles/01a1e103-7834-72ac-9890-cfb5e0e2e030",
         "source": "PANews",
         "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "PANews",
+        "title": "金融时报：黄仁勋正考虑回归英伟达CEO职位",
+        "summary": "PANews 11月16日消息，据路透社援引英国《金融时报》报道，知情人士称，已离任英伟达CEO的黄仁勋正考虑回归，并已与亲信讨论复职的可能性。其硅谷盟友正组建由科技高管组成的“工作组”向英伟达董事会施压，黄仁勋本人支持相关努力。报道称，复职尝试可能遭遇阻力，英伟达董事会仍在对其行为进行独立调查。",
+        "url": "https://www.panewslab.com/zh/articles/01a1e0e4-8727-77d4-88cb-af6955d2acfb",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "CoinDesk",
+        "title": "预测市场是否预测美国中期选举？：加密货币现状",
+        "summary": "Prediction markets and polls largely aligned by the end of the 2026 election cycle, and both had notable misses.",
+        "url": "https://www.coindesk.com/policy/2026/11/15/did-prediction-markets-call-the-u-s-midterm-election-state-of-crypto",
+        "source": "CoinDesk",
+        "region": "en",
         "category": "web3"
       },
       {
@@ -364,16 +384,6 @@
         "url": "https://decrypt.co/383284/how-wall-street-racing-onchain-dollar-stablecoins",
         "source": "Decrypt",
         "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "PANews",
-        "title": "超15万人联署公开信，要求英伟达董事会恢复黄仁勋CEO职务",
-        "summary": "PANews 11月15日消息，据公开信网站Stand with Jensen显示，一封要求英伟达董事会恢复黄仁勋CEO职务的公开信已获152,233个签名。英伟达于11月12日宣布黄仁勋辞任CEO，即刻生效。公开信要求让其在独立调查期间回归，并公开调查范围、时间表和决定依据。签名者中，自述为英伟达现任员工的有7,397人，约占其4.2万名员工的17.61%，股东有80,749人。马斯克、Tim Sweeney、Garry Tan等人在公开签名者之列。签名身份均为自述，未经核实，该活动暂未获英伟达认可。",
-        "url": "https://www.panewslab.com/zh/articles/01a1dfec-9d66-73bc-9f45-c4837164655a",
-        "source": "PANews",
-        "region": "cn",
         "category": "web3"
       },
       {
@@ -475,19 +485,69 @@
         "source": "CoinDesk",
         "region": "en",
         "category": "web3"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "CoinDesk",
-        "title": "以太坊扩容项目MegaETH因追求人工智能业务而裁员20%",
-        "summary": "Decentralized Finance total value locked on MegaETH dropped significantly from over $245 million to $8.8 million.",
-        "url": "https://www.coindesk.com/business/2026/11/14/ethereum-scaling-project-megaeth-slashes-staff-by-20-as-it-pursues-ai-business",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
       }
     ],
     "科技": [
+      {
+        "date": "2026-11-15",
+        "tag": "OpenAI",
+        "title": "在晶格上定义标准模型的一步",
+        "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+        "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+        "source": "OpenAI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "OpenAI",
+        "title": "我们的新科学博客",
+        "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery.",
+        "url": "https://openai.com/index/our-new-blog-for-science",
+        "source": "OpenAI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "TechCrunch AI",
+        "title": "黄仁勋的坏消息对人工智能行业来说也是坏消息吗？",
+        "summary": "\"Jensen is Nvidia, right? And so much of this economy is riding on Nvidia.\"",
+        "url": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "The Verge AI",
+        "title": "黄仁勋可能正在策划回归以及更多最新的 Nvidia 戏剧",
+        "summary": "The drama around Nvidia co-founder and former CEO Jensen Huang is evolving quickly. The latest edition of our Stepback newsletter should get you up to speed, but there have already been a number of new developments since this morning. That includes rumors that Jensen Huang might be trying to find a path back to CEO, […]",
+        "url": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed",
+        "source": "The Verge AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "TechCrunch AI",
+        "title": "SNL 聚集所有科技大亨，上一堂关于约会和间谍活动的课",
+        "summary": "While awkward, creepy tech executives have become a recurring theme on Saturday Night Live, this week’s episode gave the cast a chance to show off all their impressions at once.",
+        "url": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "The Verge AI",
+        "title": "英伟达间谍丑闻后，国会希望收紧人工智能芯片的出口规定",
+        "summary": "Unsurprisingly, following the scandal involving now-former Nvidia CEO Jensen Huang and a suspected Chinese spy, Congress is looking to further restrict exports of AI chips. Both Democrats and Republicans have voiced support for various measures and bills that would tighten rules and have demanded that Huang and other Nvidia leaders testify before Congress. Senate Minority […]",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china",
+        "source": "The Verge AI",
+        "region": "en",
+        "category": "科技"
+      },
       {
         "date": "2026-11-15",
         "tag": "IT之家",
@@ -585,66 +645,6 @@
         "summary": "企业的使命是让世界爱上中国味道，一定是要历经走出去、走进去、走上去的过程，“不止输出一道菜，更要输出中国餐饮出海范式”。",
         "url": "https://www.tmtpost.com/8205846.html",
         "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "钛媒体",
-        "title": "本田净利大涨66%，汽车业务却还在亏钱",
-        "summary": "净利大涨背后，本田汽车仍亏损，摩托车与北美混动撑起利润。",
-        "url": "https://www.tmtpost.com/8205754.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "爱范儿",
-        "title": "六年磨一「球」，好听、好看、好贵｜HomePod mini 2 体验",
-        "summary": "小身材，大嗓门 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1689473?utm_source=rss&utm_medium=rss&utm_campaign=",
-        "source": "爱范儿",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "钛媒体",
-        "title": "当Gemini被戏称为“美国豆包”，张一鸣也活成了“中国布林”",
-        "summary": "在太平洋两岸的科技版图上，一种奇妙的镜像正在发生。",
-        "url": "https://www.tmtpost.com/8205798.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "少数派",
-        "title": "Aerial Switcher：给 Mac 的航拍壁纸排个时间表",
-        "summary": "既然 Apple 已经把同一个地方的美景从早到晚拍了一遍并做成了壁纸，为什么不能让它们跟着时间自动切换？ 查看全文",
-        "url": "https://sspai.com/post/118392",
-        "source": "少数派",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "钛媒体",
-        "title": "T-EDGE 2026前瞻①｜AI如何重写影视业的成本、资本与权力",
-        "summary": "AI改写行业，谁先交卷？钛媒体《智能大迁移》将从十个问题出发，观察AI如何从模型之争落地到千行百业。接下来我们还会整理更多的话题，通过中美技术趋势和行业观察，看不同行业的智能迁移。",
-        "url": "https://www.tmtpost.com/8205257.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "爱范儿",
-        "title": "刚刚，马斯克再创历史，人类首次用「筷子」夹住星舰飞船",
-        "summary": "再创历史 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1689501?utm_source=rss&utm_medium=rss&utm_campaign=",
-        "source": "爱范儿",
         "region": "cn",
         "category": "科技"
       }
