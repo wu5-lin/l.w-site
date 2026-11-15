@@ -1,64 +1,84 @@
 {
-  "updated": "2026-11-15 07:38 UTC",
+  "updated": "2026-11-15 16:48 UTC",
   "categories": {
     "投资": [
       {
         "date": "2026-11-15",
-        "tag": "Financial Times",
-        "title": "英伟达的后黄氏时代会是什么样子？",
-        "summary": "The chip company has only itself to blame for a long list of adversaries",
-        "url": "https://www.ft.com/content/0e2720d7-ba0a-4469-a854-30931f907bd3",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "Financial Times",
-        "title": "因凡蒂诺斥资 60 亿美元发起国际足联魅力攻势",
-        "summary": "Footballing president tours the world to shore up support for re-election after backlash to stake sale plan",
-        "url": "https://www.ft.com/content/f8a58159-463f-4b28-b83d-14b79cbd413b?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "Financial Times",
-        "title": "“低火力、低雇佣”的就业市场损害了美国和英国的生产力",
-        "summary": "Sluggish rates of hiring, resignations and job-switching may lead to long-term damage, say economists",
-        "url": "https://www.ft.com/content/44c1fdc6-bc51-46e5-8a7c-c10096a25496?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "Financial Times",
-        "title": "欧盟银行监管机构放弃单一存款保险计划",
-        "summary": "Chair of European Banking Authority working on alternative ways to free up more cross-border lending",
-        "url": "https://www.ft.com/content/016ce22d-1e09-4f1d-a7e6-9acf183e757f?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
         "tag": "Seeking Alpha",
-        "title": "IEA表示，随着波斯湾出货量反弹，全球石油市场走向盈余",
+        "title": "本周主要交易：三星、大浦、格陵兰能源、西门子等",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4672722-global-oil-market-moves-to-surplus-as-persian-gulf-shipments-rebound-iea-says?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4672791-key-deals-this-week-samsung-oura-greenland-energy-siemens-and-more?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-15",
-        "tag": "MarketWatch",
-        "title": "SpaceX 成功捕获 Starship 火箭，这是航天工业的一个巨大里程碑",
-        "summary": "The historic first gets SpaceX closer to “rapid reusability” of rockets.",
-        "url": "https://www.marketwatch.com/story/spacex-successfully-catches-starship-rocket-in-huge-milestone-for-the-space-industry-f42c136c?mod=mw_rss_topstories",
-        "source": "MarketWatch",
+        "tag": "Seeking Alpha",
+        "title": "随着出口审查的加强，贝森特呼吁英伟达领导层进行改革",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4672792-bessent-calls-for-nvidia-leadership-overhaul-as-export-scrutiny-intensifies?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Seeking Alpha",
+        "title": "法国兴业银行的阿尔伯特·爱德华兹警告流动性紧缩和通胀威胁人工智能股票上涨",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4672790-socgens-albert-edwards-warns-liquidity-squeeze-inflation-threaten-ai-stock-rally?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Seeking Alpha",
+        "title": "UPS 和 Copa 喷气式飞机在迈阿密机场滑行时相撞",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4672789-ups-copa-jets-collide-while-taxiing-at-miami-airport?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Financial Times",
+        "title": "共和党人将中期失败归咎于除特朗普之外的所有人",
+        "summary": "The party faithful avoid mentioning their leader as they lick their wounds at Heritage Foundation postmortem",
+        "url": "https://www.ft.com/content/d21caa78-65c1-4570-bec8-2ef71b5d65e7?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Financial Times",
+        "title": "Anthropic 的 IPO 是人工智能的下一个重大考验",
+        "summary": "Even the most powerful frontier labs must bend to the power of public equity",
+        "url": "https://www.ft.com/content/bc8ac781-9837-46de-b7ed-958886ba43af?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Financial Times",
+        "title": "英伟达丑闻曝光后，国会将通过更严格的人工智能芯片出口规则",
+        "summary": "Jensen Huang’s alleged affair with Chinese spy ‘increases momentum’ to crack down on US hardware reaching China",
+        "url": "https://www.ft.com/content/3062790a-553d-41b8-9c7d-bae17b9d2e29?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Financial Times",
+        "title": "从文化战争到阶级战争：美国民主党放弃觉醒政治",
+        "summary": "The newly emboldened party shifts gears after its sweeping midterm election victory",
+        "url": "https://www.ft.com/content/82e2d624-65aa-4a8c-86ec-f99c0ce785ac?syn-25a6b1a6=1",
+        "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
@@ -69,66 +89,6 @@
         "summary": "About 49.2 million KAVA was bridged to BNB Chain via LayerZero and sold for roughly $2.1 million in BNB and USDT.",
         "url": "https://www.theblock.co/news/defi/2026-11-14-kava-lend-loses-roughly-3-8-million-to-hack-sending-kava-token-down-nearly-40-440350",
         "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Seeking Alpha",
-        "title": "以下是周一开盘前的主要财报",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4672778-here-are-the-major-earnings-before-the-open-monday?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Seeking Alpha",
-        "title": "美联储柯林斯表示“渐进式”加息对经济最有利",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4672777-feds-collins-says-gradual-path-rate-hikes-best-economy?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Seeking Alpha",
-        "title": "百度公布第三季度财报：有何期待？",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4672421-baidu-heads-into-q3-earnings-what-to-expect?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "MarketWatch",
-        "title": "我今年 63 岁，花了 95,000 美元为我价值 50 万美元的房子买了一个屋顶平台。这是一项好的投资吗？",
-        "summary": "“I have a net worth of $2.3 million and my only debt is a 15-year mortgage.”",
-        "url": "https://www.marketwatch.com/story/im-63-and-want-to-spend-95-000-on-a-roof-deck-for-my-500-000-home-is-that-a-good-investment-f1a59c27?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "MarketWatch",
-        "title": "我从父亲那里继承了 140 万美元。我向结婚 25 年的丈夫要求一份婚后协议有错吗？",
-        "summary": "“He has always said he wants his daughter to inherit a chunk of his estate, and I’ve never objected to that.”",
-        "url": "https://www.marketwatch.com/story/i-inherited-1-4-million-from-my-father-am-i-wrong-to-ask-my-husband-of-25-years-for-a-postnuptial-agreement-b739c51d?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "MarketWatch",
-        "title": "“这让我感到酸涩”：我年迈的母亲给了我们表弟 800 美元作为汽车修理费。我应该担心吗？",
-        "summary": "“I know older people can easily feel patronized, and I don’t want that to happen.”",
-        "url": "https://www.marketwatch.com/story/it-leaves-me-with-a-sour-taste-my-elderly-mother-gave-our-cousin-800-for-a-car-repair-should-i-be-worried-88dbd188?mod=mw_rss_topstories",
-        "source": "MarketWatch",
         "region": "en",
         "category": "投资"
       },
@@ -150,6 +110,46 @@
         "url": "https://www.theblock.co/news/markets/2026-11-14-bitcoin-etfs-lose-1-billion-for-the-second-week-in-a-row-as-crypto-funds-except-one-continue-bleeding-440337",
         "source": "The Block",
         "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-14",
+        "tag": "FT中文网",
+        "title": "一周世界舆论聚焦：黄仁勋的陨落与APEC峰会",
+        "summary": "曹辛：中美俄三国当前面临的问题不同，利益也有差异。三国元首会晤难以开成“第二次雅尔塔会议”，但这种会晤本身就代表一种强大的影响力。",
+        "url": "https://www.ftchinese.com/story/001111370",
+        "source": "FT中文网",
+        "region": "cn",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-14",
+        "tag": "FT中文网",
+        "title": "美股大跌，AI盛宴落幕？",
+        "summary": "黄凡：当前的宏观政治变量以及龙头公司高管丑闻与相关调查，对美股AI科技板块走势的影响更多的只是“短期情绪噪音”而非“长期基本面改变”。",
+        "url": "https://www.ftchinese.com/story/001111368",
+        "source": "FT中文网",
+        "region": "cn",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-14",
+        "tag": "FT中文网",
+        "title": "中国光伏行业裁员潮的背后",
+        "summary": "兰道夫：企业正加快整合，推进生产自动化，并将员工从生产一线转向销售和高端产品业务。",
+        "url": "https://www.ftchinese.com/story/001111359",
+        "source": "FT中文网",
+        "region": "cn",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-14",
+        "tag": "FT中文网",
+        "title": "黄仁勋们，为什么越来越难只做商人？",
+        "summary": "闫曼：随着AI成为国家战略的重要部分，硅谷企业家越来越难只做商人。技术成功扩大了他们的影响力，也让他们面临商业利益与公共责任的冲突。",
+        "url": "https://www.ftchinese.com/story/001111369",
+        "source": "FT中文网",
+        "region": "cn",
         "category": "投资"
       },
       {
@@ -177,6 +177,26 @@
       {
         "date": "2026-11-15",
         "tag": "Nature 材料",
+        "title": "通过贵金属纳米粒子装饰降低激光诱导石墨烯器件的低频噪声",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-80683-y",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
+        "title": "使用机器学习预测加速测试中的晶间腐蚀渗透深度",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41529-026-00912-7",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
         "title": "磷介导的反向氢溢出可实现速率匹配的硝酸盐-硫酸盐配对电解用于过硫酸铵合成",
         "summary": "",
         "url": "https://www.nature.com/articles/s41467-026-79620-4",
@@ -187,29 +207,89 @@
       {
         "date": "2026-11-15",
         "tag": "Nature 材料",
+        "title": "机器学习辅助预测和优化颗粒填充聚合物复合材料的拉伸强度",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-78358-9",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
+        "title": "开发含有甘蔗生物炭的亚麻/红麻混合环氧复合材料，具有增强的防火性能，可用于潜在的电气管道应用",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-80600-3",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
+        "title": "咖啡废物衍生碳的可调节表面功能可实现高容量抗生素吸附",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-80476-3",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
+        "title": "基于人工智能的无损食品筛查，用于检测经电石 (CaC2) 处理的香蕉",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-79484-0",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
+        "title": "负载异甘草素的多功能壳聚糖/海藻酸盐水凝胶，具有抗菌和抗纤维化潜力，适用于伤口敷料应用",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-78746-1",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
+        "title": "通过 P 掺杂 g-C3N5/WO3/B4C 的 2D/2D/2D 纳米复合材料解锁高光催化产氢和消除四环素",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-78567-2",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
+        "title": "初始无阳极锂金属​​电池中电解质-铜界面稳定性的面依赖性阴离子吸附",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41467-026-79429-1",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
+        "title": "岩溶地区抽水蓄能上部水库沥青混凝土防渗层相似材料研究",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-78944-x",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Nature 材料",
         "title": "使用 YOLO11 在显微 SEM 图像上对机械负载下失效的纤维增强聚合物复合材料样品进行检测和分类",
         "summary": "",
         "url": "https://www.nature.com/articles/s41598-026-78824-4",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "Nature 材料",
-        "title": "AlphaDiffract：粉末 X 射线衍射数据的自动晶体学分析",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41524-026-02388-0",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "Nature 材料",
-        "title": "拉曼光谱在从福岛第一核电站 2 号机组中回收的第一批实际燃料碎片中的应用",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-80786-6",
         "source": "Nature 材料",
         "region": "en",
         "category": "科研"
@@ -235,86 +315,6 @@
         "category": "科研"
       },
       {
-        "date": "2026-11-14",
-        "tag": "Nature 材料",
-        "title": "由单片异质层弹性体实现的电驱动多模式软机器人",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41467-026-79466-w",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Nature 材料",
-        "title": "通过精细纳米晶体驯服结晶以实现卓越的软磁性能",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41467-026-79233-x",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Nature 材料",
-        "title": "内置电场驱动 MXene/钙钛矿肖特基异质结，用于热致变色智能窗中的光电热能重新分配",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41467-026-79146-9",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Nature 材料",
-        "title": "电动人力车应用中阀控铅酸电池组容量衰减的问题",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-75154-3",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Nature 材料",
-        "title": "2 端子免刷新存储器，可在数据保留期间实现高密度和低功耗",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-79954-5",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Nature 材料",
-        "title": "纳米粘土增强剪切稀化明胶/藻酸盐水凝胶，具有可调节的理化性质，适用于细胞相容性支架",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-80120-0",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Nature 材料",
-        "title": "通过声发射监测对 GFRP 和 CFRP 复合材料铣削中的切削力和表面完整性进行有限元建模",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-78628-6",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Nature 材料",
-        "title": "使用 SCAPS-1D 的 Cu2O 透明背接触双面 CIGS 太阳能电池的数值设计和优化",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-71300-z",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
         "date": "2026-11-13",
         "tag": "ScienceDaily 材料",
         "title": "AI 增强激光物理性能，速度提升惊人 250 倍",
@@ -329,9 +329,9 @@
       {
         "date": "2026-11-15",
         "tag": "PANews",
-        "title": "分析师：短期持有者正在抛售，但尚未出现大规模“投降式”抛售",
-        "summary": "PANews 11月15日消息，CryptoQuant 分析师 Axel Adler Jr. 发文分析称，平均短期持有者已实现盈亏比（STH-SOPR）已降至 0.993，表明短期持有者正在亏损抛售。但目前尚未出现大规模“投降式”抛售的迹象。在以往的市场承压时期，该指标曾跌至更低的水平。虽然亏损正在实现，但其规模目前看来尚不算极端。",
-        "url": "https://www.panewslab.com/zh/articles/01a1de13-d8af-76cd-abe5-f9c7e3d011e6",
+        "title": "Kalshi个股永续合约上线以来名义交易额达50亿美元，交易员借此押注科技巨头",
+        "summary": "PANews 11月16日消息，据彭博社报道，AI板块前景不确定性上升推动对冲需求，越来越多交易员转向预测市场平台Kalshi的杠杆个股永续合约，押注英伟达、SpaceX等科技巨头。Kalshi于11月5日推出个股永续合约，首批覆盖50只大型股，合约无到期日。Kalshi官方披露，该产品上线以来名义交易额已达50亿美元，个股永续最高杠杆约为6.45倍。",
+        "url": "https://www.panewslab.com/zh/articles/01a1e003-13d7-711d-9cce-4cc97cd57914",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -339,9 +339,9 @@
       {
         "date": "2026-11-15",
         "tag": "PANews",
-        "title": "加密做市商B2C2 Group持续分批抛售LINK，旗下地址已几乎清仓",
-        "summary": "PANews 11月15日消息，据Arkham监测数据显示，日本SBI Holdings控股90%的加密做市商B2C2 Group在最近一个月时间内持续分批卖出LINK，且近期抛售节奏有所加快，目前旗下地址几乎清仓，仅剩下约1445枚LINK，价值约1.3万美元。 此外，B2C2 Group在今日市场下跌期间向OKX、币安及Coinbase转入BNB、MORPHO、PEPE、ONDO等多种山寨币，疑似抛售。",
-        "url": "https://www.panewslab.com/zh/articles/01a1de10-4d76-72f2-941c-1ff2dc0c2b3a",
+        "title": "CZ：币安没有抛售加密货币，个人过去几天已逢低买入",
+        "summary": "PANews 11月16日消息，CZ 发文分析近期加密货币市场下跌的潜在原因，并强调目前没有人能够确定真正的原因，相关性并不代表因果关系。",
+        "url": "https://www.panewslab.com/zh/articles/01a1e001-7cfe-764c-afc9-0de8120cb081",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -349,19 +349,29 @@
       {
         "date": "2026-11-15",
         "tag": "PANews",
-        "title": "某巨鲸向币安存入1156万美元SOL，近5天累计存入约3296万美元SOL",
-        "summary": "PANews 11月15日消息，据 Onchain Lens 监测，某巨鲸解除质押后向币安存入 16.256 万枚 SOL，价值约 1156 万美元。过去 5 天，该巨鲸累计向币安存入约 43.5 万枚 SOL，价值约 3296 万美元；目前该钱包仍持有 18.095 万枚 SOL，价值约 1275 万美元。",
-        "url": "https://www.panewslab.com/zh/articles/01a1ddf5-ef89-7696-a715-2c6f3934b1f6",
+        "title": "高盛、花旗等21家机构拟投约2.7亿美元，联合发行美元稳定币挑战Tether与Circle",
+        "summary": "PANews 11月16日消息，据Decrypt报道，高盛、花旗、桑坦德、德意志银行等21家机构组成的联盟承诺投入约2.7亿美元，用于代号“Project Faro”的美元稳定币项目未来五年的运营。发行方将在美国注册，目标于2027年上线。目前Tether与Circle合计占据约2900亿美元稳定币市场的85%。该项目尚无代币、CEO及最终名称。与此同时，SoFi将SoFiUSD扩展至Polygon，Anchorage Digital发行的代币已可通过Visa网络结算，万事达卡联合BVNK推出Global Money Platform。",
+        "url": "https://www.panewslab.com/zh/articles/01a1dff9-1212-7390-b479-43499460d8eb",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
       },
       {
         "date": "2026-11-15",
+        "tag": "Decrypt",
+        "title": "华尔街如何竞相争夺链上美元",
+        "summary": "From Goldman and Citi’s $270 million “Project Faro” to SoFi, Anchorage, Mastercard, Visa and Circle, traditional finance is racing to claim the onchain dollar once dominated by Tether and Circle.",
+        "url": "https://decrypt.co/383284/how-wall-street-racing-onchain-dollar-stablecoins",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
         "tag": "PANews",
-        "title": "泰国移民局逮捕两名涉加密货币诈骗的中国籍男子，涉案金额超6.3亿元",
-        "summary": "PANews 11月15日消息，据泰媒 FM91 报道，泰国移民局侦查队于 11 月 12 日在曼谷成功抓获两名中国籍男子，年龄分别为 52 岁和 28 岁。两人因涉嫌加密货币诈骗，被中国湖南省常德市公安局于 2025 年 12 月 18 日发布通缉令，案件总涉案金额超过 32 亿泰铢（约合人民币 6.3 亿元）。当局已依据《移民法》撤销其在泰国居留许可，并启动遣返程序，准备将两人移交中国接受审判。",
-        "url": "https://www.panewslab.com/zh/articles/01a1ddeb-cfad-7243-a43d-c01ede5224ed",
+        "title": "超15万人联署公开信，要求英伟达董事会恢复黄仁勋CEO职务",
+        "summary": "PANews 11月15日消息，据公开信网站Stand with Jensen显示，一封要求英伟达董事会恢复黄仁勋CEO职务的公开信已获152,233个签名。英伟达于11月12日宣布黄仁勋辞任CEO，即刻生效。公开信要求让其在独立调查期间回归，并公开调查范围、时间表和决定依据。签名者中，自述为英伟达现任员工的有7,397人，约占其4.2万名员工的17.61%，股东有80,749人。马斯克、Tim Sweeney、Garry Tan等人在公开签名者之列。签名身份均为自述，未经核实，该活动暂未获英伟达认可。",
+        "url": "https://www.panewslab.com/zh/articles/01a1dfec-9d66-73bc-9f45-c4837164655a",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -369,9 +379,59 @@
       {
         "date": "2026-11-15",
         "tag": "Cointelegraph",
-        "title": "RWA 协议 stUSDT 在 TVL 达到 $2.3B 峰值三年后逐渐退出",
-        "summary": "The stUSDT team did not disclose a reason for winding down the RWA protocol but assured holders that all underlying assets remain fully backed.",
-        "url": "https://cointelegraph.com/news/rwa-protocol-stusdt-winds-down-three-years-after-23b-tvl-peak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "企业区块链将起死回生",
+        "summary": "With scalability, privacy tools and onchain liquidity improving, businesses may finally have the infrastructure to make enterprise blockchain work.",
+        "url": "https://cointelegraph.com/opinion/enterprise-blockchain-come-back-from-dead?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Decrypt",
+        "title": "比特币 ETF 连续 7 天流出，11 月损失 21 亿美元",
+        "summary": "Spot Bitcoin ETFs shed $185.4 million on Friday, their seventh straight day of outflows, pushing November losses to about $2.1 billion as Bitcoin fell toward $64,000.",
+        "url": "https://decrypt.co/383282/bitcoin-etfs-lose-2-1-billion-november-outflow-streak-seven-days",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "CoinDesk",
+        "title": "加密货币内部人士并不指望国会“跛脚鸭”会议上的一线希望",
+        "summary": "With ascendent Democrats ready to pursue their own crypto and tech agendas next year, the final weeks of this session probably won't produce crypto surprises.",
+        "url": "https://www.coindesk.com/news-analysis/2026/11/13/crypto-insiders-aren-t-counting-on-silver-linings-in-congress-lame-duck-session",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Cointelegraph",
+        "title": "这是今天加密货币领域发生的事情",
+        "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Cointelegraph",
+        "title": "随着加密货币抛售加剧，比特币跌至近 6.2 万美元的四个月低点",
+        "summary": "The global cryptocurrency market capitalization fell 4% to $2.26 trillion over 24 hours, while Ether and Solana posted double-digit weekly losses.",
+        "url": "https://cointelegraph.com/markets/bitcoin-four-month-low-62k-crypto-market-selloff?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Cointelegraph",
+        "title": "Coinone 警告客户数据泄露后网络钓鱼和身份盗窃",
+        "summary": "The South Korean crypto exchange said potentially exposed information includes passwords, bank account numbers, national identification numbers and crypto wallet addresses.",
+        "url": "https://cointelegraph.com/news/coinone-data-breach-phishing-identity-theft-customer-information?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
@@ -425,75 +485,15 @@
         "source": "CoinDesk",
         "region": "en",
         "category": "web3"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Decrypt",
-        "title": "什么是广州网？为华尔街打造的隐私区块链",
-        "summary": "Canton Network is a privacy-enabled blockchain built for banks and tokenized assets. Here's how it works and what Canton Coin (CC) does.",
-        "url": "https://decrypt.co/resources/what-is-canton-network-the-privacy-blockchain-built-for-wall-street",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "CoinDesk",
-        "title": "哈萨克斯坦计划在第一季度发行 2200 万美元票据后代币化政府债券",
-        "summary": "The plan follows Kazakhstan's first sale of tokenized central bank notes as the country expands its crypto market.",
-        "url": "https://www.coindesk.com/business/2026/11/14/kazakhstan-plans-tokenized-government-bonds-in-first-quarter-after-usd22-million-note-sale",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Decrypt",
-        "title": "OpenAI 推出 ChatGPT 钱包，让人工智能代理无需加密即可购物",
-        "summary": "OpenAI’s new wallet lets AI agents buy products using ordinary cards, challenging crypto payment tools from Coinbase and Circle as companies compete to control everyday online shopping by autonomous software.",
-        "url": "https://decrypt.co/383278/openai-chatgpt-wallet-ai-agents-shop-without-crypto",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Cointelegraph",
-        "title": "这是今天加密货币领域发生的事情",
-        "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Cointelegraph",
-        "title": "微软确认全球停电已解决，排除网络攻击",
-        "summary": "Microsoft attributed the outage to a network capacity upgrade issue, confirming that the disruption was unrelated to cyberattacks or AI agents.",
-        "url": "https://cointelegraph.com/news/microsoft-365-outage-resolved-cyberattack-ruled-out?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "Cointelegraph",
-        "title": "MegaETH 母公司在重组和人工智能推动下裁员 20%",
-        "summary": "MegaETH co-founder Shuyao Kong said the restructuring affected employees who helped build the project’s blockchain, wallet and ecosystem.",
-        "url": "https://cointelegraph.com/news/megaeth-parent-cuts-20-percent-staff-ai-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
       }
     ],
     "科技": [
       {
         "date": "2026-11-15",
         "tag": "IT之家",
-        "title": "爱好者将索尼 PS5 独占的 TGA 2024 年度游戏《宇宙机器人》移植到 PC 平台",
-        "summary": "IT之家 11 月 15 日消息，据外媒 ComputerBase 报道，近期有爱好者 imnotsharingmyname 将索尼 PS5 独占的 TGA 2024 年度游戏 《宇宙机器人（Astro Bot）》移植到 PC 平台，同时为相应版本加入了英伟达 DLSS、帧生成和 Reflex 等技术。 与近期出现的部分主机游戏 PC 移植项目类似，该项目并未通过模拟器运行游戏，而是将主机代码重新编译为原生 PC 代码运行，其中图形处理部分采用了从 KytyPS5 项目移植而来的 GPU 组件，负责处理 AGC 命令数据、着色器和 VideoOut 等内容，并将图形指令转换为 Vulkan 指令。 此外，该爱好者还为移植版加入了英伟达专用适配层，可在运行时识别游戏原本采用的时域升频处理流程，并通过 Vulkan 将颜色、深度信息、运动矢量、抖动数据及摄像机矩阵等参数，经由 NVIDIA Streamline 2.14.16 传递给 DLSS 和多帧生成技术。 在硬件测试方面，开发者使用了 AMD Ryzen 5 5500 六核十二线程处理器、英伟达 RTX 5060 8GB 显卡以及 32GB 内存。在 1440p 分辨率下，游戏运行至 Sky Garden 等负载较高的场景时，帧率约为 32 至 34 FPS，其他区域则通常维持在 40 至 50 FPS。 外设支持方面，该移植版兼容索尼 DualSense、微软 XBOX 和任天堂 Switch Pro 手柄，游戏还能够根据 PC 硬件配置自动选择相应设置。 公开信息显示，索尼《宇宙机器人》由 Team Asobi 开发、索尼互动娱乐发行，是 2020 年《Astro’s Playroom》的续集，也是 Astro Bot 系列的第三款游戏。剧情主要围绕主角 ASTRO 和他的机器人船员，他们的母舰被摧毁后流落太空。玩家需要驾驶 ASTRO，探索超过 50 个充满乐趣与挑战的星球。IGN 给予本作 9 分评价，称其为“实验与乐趣的美妙混合物”。",
-        "url": "https://www.ithome.com/1/027/343.htm",
+        "title": "零刻 ME Pro 358H 四盘位 NAS 开售，32GB + 1TB 起价 11499 元",
+        "summary": "IT之家 11 月 16 日消息，零刻 (Beelink) 现已启动 ME Pro 358H 四盘位 NAS 的销售。其 基于英特尔酷睿 Ultra X7 处理器 358H ，包含 32GB LPDDR5X-9600 内存、1TB PCIe Gen4 TLC M.2 SSD。 ME Pro 358H 四盘位 分为日常款和联名款 ：前者含 Windows 11 操作系统，售价 11,499 元；联名款含飞牛 fnOS 操作系统（商业版）、腾讯 Marvis，售价 11,699 元。 零刻 ME Pro 358H 四盘位 提供 4 个 3.5\" / 2.5\" SATA 盘位、2 个 M.2 2280 (PCIe Gen5 ×2) 插槽 ；内置均热板 + 涡轮风扇散热系统，M.2 插槽配备导热硅胶垫。 其搭载联发科技 Wi-Fi 6 无线网卡 MT7920；正面提供 1 个 USB-A 10Gbps；反面提供 2 个雷电 4 、2 个 USB-A 10Gbps、1 个 HDMI 2.1 (TMDS)、 1 个 10GbE RJ-45 、1 个 2.5GbE RJ-45。 京东 零刻 ME Pro 358H 四盘位 NAS 11499 元起 直达链接",
+        "url": "https://www.ithome.com/1/027/461.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -501,9 +501,9 @@
       {
         "date": "2026-11-15",
         "tag": "IT之家",
-        "title": "日媒：微软 Microsoft 365 服务宕机时，不少企业只能重新启用传真机",
-        "summary": "IT之家 11 月 15 日消息，据《日本时报》报道，当地时间 13 日上午，日本许多员工打完卡、准备开电脑工作时，屏幕上却弹出了 Microsoft 365 无法访问的提示。许多人不得不重新安排会议、日程，工作受到干扰。 一名用户在 X 平台发帖称：“我打不开 Outlook，当时一下子慌了…… 我联系了老板，结果被告知今天待在家里。”；另一名用户写道：“我们集团所有公司都深度依赖微软系统…… 现在唯一能做的就是去生产车间清理咖啡机。” IT之家从原报道获悉，日本许多企业都依赖微软提供的数字基础设施。Keyman's Net 去年的一项调查显示，超 78% 受访者所在的企业都在用微软产品。 日本内阁官房副长官尾崎正直已确认，日本政府信息系统受到此次故障影响。大型信用卡发行商 Credit Saison 发布通知称，由于外部服务发生系统故障，通过咨询表单收到的请求，回复时间将有所延迟。九州大学和早稻田大学等多所高校也报告称，此次服务中断影响了他们的 IT 服务。 日本一些打工族对无法工作感到欣喜，但也有人对由此造成的生产力损失表达愤怒，他们强调，传真机是可靠的商务通信方式。一名用户在 X 平台表示：“微软服务宕机，邮件发不出去，所以我们只能改用传真，发送平时以 PDF 格式发送的常规更新内容。模拟技术就是可靠。” 一名社交媒体用户调侃道：“我原以为这简直是天堂，因为一封邮件都收不到。结果这只是微软服务宕机，所以我实际上只是在地狱入口排队等候。” 颇具讽刺意味的是，日本政府早在 2021 年就曾试图逐步淘汰传真机，但遭到官僚强烈反对。当时一些人甚至认为，传真比电子邮件更加安全。",
-        "url": "https://www.ithome.com/1/027/342.htm",
+        "title": "微星推出 PRO CORELIQUID R13 360 液冷，399 / 419 元",
+        "summary": "IT之家 11 月 15 日消息，微星 (MSI) 近期推出了处理器 AIO 液冷散热器 PRO CORELIQUID R13 360。这一型号兼容英特尔 FCLGA 1851 / 1700、AMD Socket AM5 / AM4 处理器， 享受 3 年质保 。 PRO CORELIQUID R13 360 基于预期寿命 50000hr 的微星定制 M6 水泵方案，配备可旋转的简洁 ARGB 顶盖，搭配尼龙编织 EPDM 水冷、27mm 20fpi 铝制冷排，吹排为 3 颗 12025 规格的串联风扇，配套 AMD 偏移式安装支架。 IT之家了解到，微星 PRO CORELIQUID R13 360 液冷散热器 黑色款售价 399 元 、 白色款售价 419 元 。 京东 微星 PRO CORELIQUID R13 360 液冷 399 元起 直达链接",
+        "url": "https://www.ithome.com/1/027/460.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -511,29 +511,79 @@
       {
         "date": "2026-11-15",
         "tag": "IT之家",
-        "title": "Pura X“实锤”登陆 PC：华为何刚揭秘 MateBook Fold S 小折电脑 Live 小方屏玩法",
-        "summary": "IT之家 11 月 15 日消息，华为首款鸿蒙小折叠电脑 MateBook Fold S 已于昨日 10:08 正式开启预订。该机折叠态 10.2 英寸、展开态 14.7 英寸，会在 11 月 24 日 17:00~11 月 25 日 17:00 支付尾款，支持 12 期 0 分期利息购买。 华为董事、终端 BG CEO 何刚今日发布视频，介绍了这款电脑更多配置信息。他表示， 很多用户特别喜欢 Pura X 的外屏体验 ，所以华为一开始设计的时候就在思考能不能改变传统电脑的设计思路，给电脑开发一块外屏。 于是，华为 MateBook Fold S 在形态上做了创新，设计一块 Live 小方屏，不用展开电脑，支持随时看日程、看消息、刷社媒等操作，同时锁屏状态下还支持直接开启小艺慧记等功能。同时，电脑展开又拥有一块 14.7 英寸大屏，更适合写文档、看电影等场景使用。 据IT之家今日早些时候报道，华为首款鸿蒙小折叠电脑 MateBook Fold S 已现身官网，并公开了部分信息。 颜色 幻夜黑 天际白 云海蓝 配置 16GB/256GB（含键盘 + 内胆包） 16GB/512GB（含键盘 + 内胆包） 24GB/512GB（含键盘 + 内胆包） 32GB/1TB（含键盘 + 手写笔 + 内胆包）",
-        "url": "https://www.ithome.com/1/027/341.htm",
+        "title": "《GTA 6》通关时长爆料：主线约 50 小时，白金全成就预计 200 小时",
+        "summary": "IT之家 11 月 15 日消息，《GTA 6》定于 2026 年 11 月 19 日正式发售，不少玩家已经开始关注游戏的奖杯和成就系统：想要拿到白金奖杯或完成全部成就，究竟需要投入多少时间？ 从目前披露的信息来看，《GTA 6》的主线剧情相当漫长，而想要完成全部成就，所需时间可能更加惊人。 要想准确预测《GTA 6》的通关时间并不容易，因为不同玩家的游戏水平和游玩方式各不相同。不过，根据 Insider Gaming 目前从实际体验过游戏的玩家那里收集到的信息，完整通关主线剧情预计需要约 50 小时。 游戏总共包含 5 个独立章节，主线任务接近 100 个。每项任务的长度有所不同，玩家的操作水平也会影响实际耗时，但 50 小时似乎是目前较为普遍的预估。 IT之家注意到，Rockstar Games 开发负责人兼联合工作室负责人罗布 · 纳尔逊（Rob Nelson）此前接受《纽约时报》采访时，透露了自己对游戏体验的看法。 “我希望玩家能够早上起床，喝杯咖啡、洗个澡、穿好衣服，然后出门稍微锻炼一下。”纳尔逊说。 今年 2 月，他曾花费 80 小时通关了这款游戏，不仅完成了主线剧情，还完成了一些会影响故事发展的支线任务。 他还补充道：“和一些人互动，四处探索，或许惹点麻烦，抢劫一些地方，赚点钱。” 《GTA 6》白金奖杯或全成就需要多长时间？ 相比主线通关时间，想要拿到《GTA 6》的白金奖杯或完成全部成就，所需时间更难预测，因为部分奖杯和成就可能涉及随机事件（RNG），玩家未必能够按照固定流程完成。 不过，根据目前掌握的信息，想要完成游戏的全部内容，玩家可能需要投入约 200 小时。这一时间超过《GTA 5》全成就挑战所需时间的两倍。 如果玩家熟悉《荒野大镖客：救赎 2》，那么《GTA 6》的全成就挑战可能与之时长相近。《荒野大镖客：救赎 2》的全成就耗时记录约为 196 小时。当然，最终时间仍取决于部分随机要素。 此外，别忘了《GTA 6》的游戏地图中还存在 170 多种不同的野生动物。玩家需要像在《荒野大镖客：救赎 2》中那样，对这些动物逐一进行扫描。",
+        "url": "https://www.ithome.com/1/027/459.htm",
         "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Solidot",
+        "title": "SpaceX 成功回收火箭上面级",
+        "summary": "SpaceX 再次创造了历史，首次成功回收 Starship 火箭的上面级，此前它已经成功回收了 Starship 的推进器。此次代号为 Flight 15/Starlink Group 31-2 的任务原计划同时回收火箭上面级和推进器，但推进器 Booster 22 在发射后不久启动了终止程序，在海面上受控爆炸。上面级 Ship 42 则绕地球飞行 14 圈历经 22.5 小时后于周六在 Starbase 被 2 号发射台的筷子臂成功捕获。此次任务发射了 22 颗 Starlink V3 卫星。",
+        "url": "https://www.solidot.org/story?sid=85893",
+        "source": "Solidot",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-15",
         "tag": "IT之家",
-        "title": "谋先飞 Motphys 发布物理仿真引擎 MotrixSim 1.0，核心采用 Rust 开发",
-        "summary": "IT之家 11 月 15 日消息，谋先飞（Motphys）新一代物理仿真引擎 MotrixSim 1.0 昨日正式发布。 据介绍，MotrixSim 是一个 高性能的物理仿真引擎 ，专为多体动力学和机器人仿真设计，支持广泛的应用场景，包括机器人控制、强化学习、工业仿真等。主要特性如下： 物理仿真：支持刚体动力学、碰撞检测等完整的物理仿真功能 广义坐标建模：采用广义坐标系统，支持复杂的多体系统建模 全新求解器：采用自研的约束模型和求解器，提供高效、稳定的多体动力学计算 高性能计算：CPU 版本基于 Rust 开发，提供出色的性能和内存安全性 Python API：简洁易用的 Python 接口，便于快速开发和原型制作 机器人支持：专门优化的机器人仿真功能，高度兼容 MJCF 模型格式 官方表示，MotrixSim 将真实世界的物理参数 1:1 复刻进仿真环境中，结合多模态传感器与高保真渲染，为机器打造了一个既能“看清”又能“摸准”的平行世界。 据介绍，通过其独创的 CPU / GPU 异构架构，利用高性能通信和统一内存的优势，以及突破百万级并发的统一约束链，在保证物理精度的同时，实现了训练规模和吞吐量的双重放大。 论文数据显示，在 4096 并发环境下跑出数百万物理步 / 秒， 让 G1 人形机器人的端到端训练完成仅需 10.2 分钟 （传统方案 130.8 分钟）。 通过融合视觉（看清颜色和纹理）、几何（测出形状、距离和深度）与触觉（感受压力、摩擦和软硬）感知，完成环境观测与行为反馈的闭环，解决“机器人认知盲区”的难题。 此外，别于传统极度依赖高端显卡的重资产路线， MotrixSim 核心采用 Rust 语言开发 ，兼顾高性能与内存安全。同时，引擎深度兼容鲲鹏、天数智芯、摩尔线程、英伟达、AMD、苹果等多元算力生态。 IT之家附官方文档如下： https://motrixsim.motphys.com/",
-        "url": "https://www.ithome.com/1/027/340.htm",
+        "title": "韦布望远镜发现迄今最古老类星体双星，现有黑洞成长理论难以解释",
+        "summary": "IT之家 11 月 15 日消息，利用詹姆斯 · 韦布空间望远镜（JWST），天文学家发现了迄今观测到的最古老的一对由超大质量黑洞驱动的类星体。不过，这项发现也带来了一个难题：按照现有理论，它们本不应该如此早就存在。 这对紧密相邻的类星体借助双子座北望远镜（Gemini North）得到确认，编号为 J1602+4228AB，昵称为 Nāpōwawāʻenakaulua。这个名称意为“在热量中重生、将能量注入宇宙的无尽强大黑暗中的两个天体”。 天文学家观测到的，是这对类星体在宇宙大爆炸后约 9 亿年时的模样。当时宇宙还处于极其早期的阶段，按照现有理论，超大质量黑洞本应没有足够时间增长到如此惊人的质量。 Nāpōwawāʻenakaulua 不仅是迄今发现的最古老、距离最遥远的类星体双星，两颗超大质量黑洞之间的距离也只有约 1.81 万光年，大约相当于银河系直径的五分之一。它们的质量分别约为太阳的 15 亿倍和 4 亿倍。 这使得 Nāpōwawāʻenakaulua 成为宇宙黎明时期发现的距离最近的一对类星体。宇宙黎明是宇宙诞生最初阶段，第一批恒星、星系和黑洞开始出现的时期。 研究团队负责人、美国国家科学基金会国家光学红外天文学研究实验室（NOIRLab）的西尔维娅 · 奥诺拉托（Silvia Onorato）在一份声明中表示：“目前还没有明确的理论能够解释，为什么宇宙诞生如此早期就已经存在一颗这样的巨型类星体，更不用说同时存在两颗了。” “我们观测到 Nāpōwawāʻenakaulua 时，宇宙的年龄还不到如今的十三分之一。令人惊讶的是，这两颗超大质量黑洞的质量竟然已经与今天观测到的黑洞相当。” 宇宙黎明时期的超大质量黑洞，如何获得如此多物质？ 据IT之家了解，类星体是宇宙中最明亮的天体之一。当大型星系中心的超大质量黑洞被一团扁平、不断旋转的气体和尘埃云包围时，就可能形成类星体。这团物质被称为“吸积盘”，黑洞通过吸积盘不断吞噬物质。 黑洞强大的引力会使吸积盘中的物质高速运动并产生摩擦，进而释放大量热量，使吸积盘发出极其明亮的光芒，其亮度甚至可能超过周围星系中所有恒星的总和。天文学家观测到的这种强烈光芒，就是类星体。 在宇宙诞生至今约 138 亿年的漫长历史中，发现类星体并不算特别令人意外。不过，发现两颗距离如此接近的类星体仍然极为罕见。 事实上，这类双星系统理论上应该并不少见。星系之间经常发生合并，两个星系中心的超大质量黑洞也会因此逐渐靠近。这一过程理应产生大量彼此距离小于典型星系尺寸的类星体双星。 但天文学家在寻找它们时面临三大困难。 首先，超大质量黑洞处于类星体活跃阶段的时间，在宇宙尺度上相对短暂。其次，即使两颗类星体距离比较近，只要它们位于极其遥远的宇宙深处，从地面观测也会显得十分暗淡，难以探测。最后，当两颗超大质量黑洞距离很近、同时又处于极远距离时，望远镜很难将它们分别分辨出来。 尽管如此，天文学家仍然陆续发现了类星体双星。有时，这些双星出现的时间和距离甚至会让研究人员感到棘手，因为它们可能挑战现有的黑洞成长理论。 问题在于宇宙诞生后不到 10 亿年的时期。根据当前模型，黑洞至少需要 10 亿年时间，通过不断吸积物质和相互合并，才能成长到太阳质量数百万倍乃至数十亿倍的规模。 然而，自 2022 年开始投入运行以来，韦布望远镜已经多次发现由超大质量黑洞驱动的类星体，其中一些出现于宇宙大爆炸后仅约 4 亿年。 如果说这些发现已经让现有理论面临挑战，那么 Nāpōwawāʻenakaulua 的出现可能会进一步冲击当前模型。这是天文学家在宇宙黎明时期发现的第三对类星体双星。 研究团队是在韦布望远镜的 Aether 巡天项目数据中发现这对天体的。该项目旨在对早期宇宙中的天体进行系统普查。 借助韦布望远镜搭载的近红外光谱仪（NIRSpec）积分视场单元，研究人员已经发现约 200 个类星体，数量略低于目前已知早期宇宙类星体总数的一半。 研究人员在浏览 Aether 项目的数据时发现，编号为 J1602+4228A 的类星体并非孤立存在，它还有一颗伴星，编号为 J1602+4228B。 从地面望远镜观测来看，要将这两颗类星体分别分辨出来几乎是不可能的。不过，双子座北望远镜最终成功完成了这一任务。关键在于观测时机恰到好处，同时夏威夷莫纳克亚山（Maunakea）上空的天气条件也十分理想。这座休眠火山正是望远镜的所在地。 尽管 Nāpōwawāʻenakaulua 的形成机制目前仍是一个谜，但它可能帮助科学家更深入地理解宇宙黎明时期星系如何逐渐聚集、合并，以及早期宇宙结构如何形成。这是宇宙演化过程中的关键阶段。 奥诺拉托表示：“Nāpōwawāʻenakaulua 是一个非常独特的环境。它为天文学家提供了一个天然实验室，让我们能够研究在宇宙早期，第一批大质量星系及其中心黑洞如何通过星系之间的直接相互作用逐渐组装起来。” 研究团队已于 11 月 10 日将相关成果发表于《天体物理学杂志快报》（The Astrophysical Journal Letters）。 参考资料： https://iopscience.iop.org/article/10.3847/2041-8213/aeb11f",
+        "url": "https://www.ithome.com/1/027/457.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-15",
+        "tag": "Solidot",
+        "title": "意大利因 Meta 侵犯用户隐私对其处以 8.05 亿欧元罚款",
+        "summary": "因 Meta 的 Android 版 Facebook 应用未经用户明确同意或充分披露的情况下访问用户的手机相册和视频，意大利监管机构对其处以 8.05 亿欧元罚款。调查人员发现，该功能默认开启，而 Facebook 在申请访问用户相册权限时，将该权限与多种不同用途的应用功能捆绑在一起，通过单一授权请求获取访问权。意大利要求 Meta 在 60 天内禁用该功能，对该功能的启用额外征求用户同意。意大利约有 2000 万 Android 用户，此次罚款是意大利对科技巨头开出的金额最高的罚单之一。意大利监管机构表示，在做出处罚决定时，考虑了受影响人数巨大以及 Meta 不配合等因素。对这一处罚，Meta 已经表态将会上诉。",
+        "url": "https://www.solidot.org/story?sid=85892",
+        "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Solidot",
+        "title": "香港迪士尼乐园 1.7 万张电子门票被盗",
+        "summary": "香港迪士尼乐园约 1.7 万张电子门票在票务系统中被盗，园方已报警并暂停网上售票及酒店预订服务。官网声明，旅客需要购票，欢迎到合作旅行社及平台或正门入口售票处。报道称，乐园门票由 Cityline 负责网上票务售卖，园方资讯科技部于 11 月 12 日晚侦测到公司电脑系统有异常活动，发现一万七千个二维码在网上票务系统被盗。香港资讯科技商会荣誉会长方保侨称：以往黑客是写程序或手动追漏洞，现在 AI 发展令黑客用 AI 寻找网络漏洞，从而攻击，近期这么多事件，我们相信只会愈来愈多。因为 AI 攻击太快，人手根本抵挡不到，开始提倡用 AI 防守，而市面上亦有这些方案。",
+        "url": "https://www.solidot.org/story?sid=85891",
+        "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Solidot",
+        "title": "亚洲象种群数量减少变得更孤立",
+        "summary": "对斯里兰卡野生亚洲象的一项为期 12 年的研究显示，种群数量的逐渐减少可令动物社群跨越一个社会临界点，从而使长期形成的关系破裂，群体变得更小且更孤立，并威胁物种的长期生存。研究人员分析了斯里兰卡 443 头野生雌性亚洲象为期 12 年的个体观察数据。M他们发现，种群个体的逐渐流失使这一亚洲象种群跨越了社会临界点，从根本上重塑了其社会网络。随着死亡和永久离群的个体日益超过新加入的个体，象群规模变小、群体数量增多且日益孤立；到2018 年时，在最初被追踪的雌象中，近 69% 已从研究种群中消失。研究结果显示，这种碎片化不仅由个体丧失驱动，也由留存大象之间较弱社会纽带的断裂所驱动，从而导致整个种群个体间的联系减少。",
+        "url": "https://www.solidot.org/story?sid=85890",
+        "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "Ars Technica",
+        "title": "当人类陷入停顿时，世界的火灾是如何变化的",
+        "summary": "COVID-19 lockdowns cut global fire activity by 12.3 percent.",
+        "url": "https://arstechnica.com/science/2026/11/how-the-worlds-fires-changed-while-humanity-hit-pause/",
+        "source": "Ars Technica",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
         "tag": "钛媒体",
-        "title": "国产芯片融资潮，来势凶猛",
-        "summary": "从新架构到新产线，资本加注整条产业链。",
-        "url": "https://www.tmtpost.com/8205694.html",
+        "title": "鱼你在一起落子海外百店，中餐出海开启“体系化时代”",
+        "summary": "企业的使命是让世界爱上中国味道，一定是要历经走出去、走进去、走上去的过程，“不止输出一道菜，更要输出中国餐饮出海范式”。",
+        "url": "https://www.tmtpost.com/8205846.html",
         "source": "钛媒体",
         "region": "cn",
         "category": "科技"
@@ -541,29 +591,49 @@
       {
         "date": "2026-11-15",
         "tag": "钛媒体",
-        "title": "【数智周报】黄仁勋辞任英伟达CEO ，CFO克雷斯任临时CEO；阿里拟分拆平头哥港股独立上市；Anthropic启动IPO路演，估值较峰值近腰斩……",
-        "summary": "（11月9日-14日） DeepSeek发布全家桶应用API；谷歌发布Gemini 4 Hydrogen；微软全球服务中断十小时致歉；美国人工智能建设遭遇电力瓶颈……",
-        "url": "https://www.tmtpost.com/8205592.html",
+        "title": "本田净利大涨66%，汽车业务却还在亏钱",
+        "summary": "净利大涨背后，本田汽车仍亏损，摩托车与北美混动撑起利润。",
+        "url": "https://www.tmtpost.com/8205754.html",
         "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-15",
-        "tag": "钛媒体",
-        "title": "全球芯片股较峰值回撤近四成，AI泡沫破了吗？",
-        "summary": "非AI板块却创了新高。",
-        "url": "https://www.tmtpost.com/8205717.html",
-        "source": "钛媒体",
+        "tag": "爱范儿",
+        "title": "六年磨一「球」，好听、好看、好贵｜HomePod mini 2 体验",
+        "summary": "小身材，大嗓门 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+        "url": "https://www.ifanr.com/1689473?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "source": "爱范儿",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-15",
         "tag": "钛媒体",
-        "title": "全球供应链“安全优先”的账单，最后寄给了谁？",
-        "summary": "全球供应链彻底从 “效率优先” 转向 “安全优先”。看似宏观的产业韧性升级，实则层层转嫁隐性成本。供应商牺牲利润换入场资格、客户抬升采购成本、财政兜底补贴，而最弱势的中小企业，最终成为供应链安全账单的最终承担者。",
-        "url": "https://www.tmtpost.com/8205652.html",
+        "title": "当Gemini被戏称为“美国豆包”，张一鸣也活成了“中国布林”",
+        "summary": "在太平洋两岸的科技版图上，一种奇妙的镜像正在发生。",
+        "url": "https://www.tmtpost.com/8205798.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "少数派",
+        "title": "Aerial Switcher：给 Mac 的航拍壁纸排个时间表",
+        "summary": "既然 Apple 已经把同一个地方的美景从早到晚拍了一遍并做成了壁纸，为什么不能让它们跟着时间自动切换？ 查看全文",
+        "url": "https://sspai.com/post/118392",
+        "source": "少数派",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-15",
+        "tag": "钛媒体",
+        "title": "T-EDGE 2026前瞻①｜AI如何重写影视业的成本、资本与权力",
+        "summary": "AI改写行业，谁先交卷？钛媒体《智能大迁移》将从十个问题出发，观察AI如何从模型之争落地到千行百业。接下来我们还会整理更多的话题，通过中美技术趋势和行业观察，看不同行业的智能迁移。",
+        "url": "https://www.tmtpost.com/8205257.html",
         "source": "钛媒体",
         "region": "cn",
         "category": "科技"
@@ -576,76 +646,6 @@
         "url": "https://www.ifanr.com/1689501?utm_source=rss&utm_medium=rss&utm_campaign=",
         "source": "爱范儿",
         "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "Ars Technica",
-        "title": "SpaceX 于周六返回了其 Starship 火箭，但有一个问题",
-        "summary": "It felt like stepping into the future.",
-        "url": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/",
-        "source": "Ars Technica",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "TechCrunch AI",
-        "title": "Nvidia 的安全团队在哪里？",
-        "summary": "Nvidia’s security chief quietly left in August, and now that CEO Jensen Huang has stepped down over his relationships, including one with an executive at a company suspected of funneling chips to China, a former intelligence officer says it’s the kind of leak that runs everyday conversations, which most corporate security teams are poorly equipped to catch.",
-        "url": "https://techcrunch.com/2026/11/14/where-was-nvidias-security-team/",
-        "source": "TechCrunch AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "极客公园",
-        "title": "传小米联手 AMG 之父，打造极致性能车；SpaceX 首次实现筷子夹飞船；「苹果最暗产品」诞生",
-        "summary": "曝小米与「AMG 之父」创办的 HWA 秘密合作，希望打造「载入史册」新车 当地时间 11 月 5 日，意媒 Quattroruote 援引不具名知情人士消息称，小米与 HWA 或在秘密合作开发一款超高性能汽车，部分知名零部件供应商也有望参与其中。 双方据称希望打造一款性能前所未有、足以载入汽车史册的车型。新车的具体形式仍未确定，既有可能是全新的旗舰车型，也有可能是小米现有两款车型（SU7/YU7）的极致性能版。 过去几周，多辆采用更激进设计的 SU7 Ultra 测试车现身纽博格林赛道。该媒体分析称，不排除小米已在开发更侧重赛道性能的 SU7 Ultra 升级版。 接近项目的技术人员此前透露，小米主要针对 SU7 Ultra 现有的薄弱环节进行改进。 新车的底盘经过重新调校，以更好地适应纽北赛道，车轮定位设定更加激进，尤其是外倾角；制动系统也进行了强化，不仅增大了规格，还改进了散热设计。 动力系统则将进一步提高输出功率和散热效率，空气动力学设计也有所优化，以增加下压力，并改善热气流的排出。 目前仍无法确定 HWA 是否参与了 SU7 Ultra 升级方案的研发，还是双方计划共同推出一款全新车型。 据该媒体分析，如果是全新车型，可能有两种方向。一种是采用先进技术和现代化设计、性能达到全新高度的顶级超跑，造型和车身比例或借鉴中置发动机跑车；另一种则是以 HWA 190 Evo（下图）为基础进一步开发，因此有可能改变其原本的特色。 HWA 去年推出了 190 Evo 项目，以现代化复刻的形式改装了经典奔驰 190 E 2.5-16 Evolution II。其采用碳纤维车身，造型极为方正。（来源：IT 之家） Intel 与 NVIDIA 继续合作开发超级芯片：耐心等双方官宣 11 月 14 日披露的信息显示，NVIDIA 曾宣布投资 50 亿美元入股 Intel，成为后者大股东之一，双方并非单纯开展财务投资，还涉及联合开发芯片的深度合作。 10 月 21 日 Intel CEO 陈立武在相关采访中表示，双方的联合开发将持续多年，暂未给出产品问世时间，产品准备就绪后将由双方共同对外宣布。 双方合作产品覆盖 AI 服务器与 PC 消费级市场，前者将在 NVIDIA AI GPU 上集成 Intel CPU，后者将由 Intel 处理器集成 NVIDIA GPU，相关产品代号为 Serpent Lake，暂无更多细节，2028 年问世是相对可能的时间点。（来源：快科技） 微软大规模宕机后，开源办公套件 LibreOffice 单日收到超 1000 笔捐款创历史新高 当地时间 11 月 14 日，开源办公套件 LibreOffice 背后的非营利组织文档基金会（The Document Foundation）发文宣布，昨天（13 日）文档基金会单日收到超过 1,000 笔捐款，创造历史纪录。 官方表示，虽然并不对其他组织所面临的运营问题感到幸灾乐祸，但这一时间节点表明，许多人正在重新审视自己在文档方面对单一云服务提供商的依赖。 使用 LibreOffice，您的文档均存储在本地，开放文档格式（ODF）文件也完全归作者本人所有，而非属于任何服务提供商。 向每一位捐款人致以衷心感谢。正是你们的支持，让这款软件以及这些开放标准得以始终保持独立。 受微软多项软件服务全球性故障影响，全球金融业务遭受重创，部分交易员被迫改用电话、社交软件，甚至重新启用传真机维持业务运转。(来源：IT 之家) Google 为 Gemini 推出个人财务分析功能，接入银行账户和信用卡，帮用户分析收支 当地时间 11 月 13 日，Google 宣布为 Gemini 推出全新的个人财务分析功能，通过整合 Google Wallet（Google 钱包）以及第三方金融数据服务 Plaid，允许用户将银行账户、信用卡等金融账户连接到 Gemini，让 AI 直接读取个人交易记录，分析消费习惯、追踪资金流向，并根据实际财务状况制定预算和储蓄计划。 用户启用该功能后，可以在 Gemini 对话中使用 @Google Wallet 调用个人财务数据。例如，用户可以要求 Gemini 分析上一季度的消费情况，并制定一项在未来三个月内节省 1000 美元的计划。另一个重要用途是识别长期存在却容易被忽视的重复性支出。Gemini 还能够利用历史消费数据辅助制定未来预算。 Google 特别强调，这项功能采用只读访问机制。即使用户授权 Gemini 读取银行账户和信用卡信息，AI 也不能直接转移资金、管理账户或者进行投资操作。 整个功能完全采用自愿授权机制，用户可以在 Gemini 的 Personal Intelligence 设置中的 Connected Apps 选项里开启或关闭 Google Wallet 连接。用户可以根据需要决定是否向 AI 开放金融数据，而不必永久保持账户连接。 这项功能目前正在美国市场推出，覆盖 Gemini 网页版以及 Android 和 iOS 应用。Google 尚未公布其他国家和地区的具体上线时间，因此目前不能确定欧洲及其他国际市场的用户何时能够使用。（来源：cnBeta） 马斯克再创历史！SpaceX 首次实现筷子夹飞船，星舰回收迎来重大突破 11 月 14 日早晨，SpaceX 在美国得克萨斯州星际基地执行星舰第 15 次试飞任务。编号为 Ship 42 的星舰飞船顺利进入地球轨道，升空约 1 小时 17 分钟后完成全部 26 颗第三代星链卫星部署，后续在轨完成 14 圈绕地飞行，刷新星舰任务持续时间纪录。 本次任务中，SpaceX 首次利用发射塔「筷子」机械臂成功捕获从地球轨道返回的星舰上面级飞船，实现星舰飞船发射塔捕获回收的重大突破。 本次任务中超重型助推器 Booster 22 未进入预定捕获位置，最终落向墨西哥湾备用落区，其偏离预定位置的原因仍在调查，该突破为降低航天发射成本、提升火箭复用率及后续月球、火星任务奠定技术基础。（来源：快科技） 智能体帮你联络商家或保险公司，Meta 旗下 Muse 上线代打电话功能 11 月 14 日消息，Meta 旗下 AI 智能体 Muse 推出代打电话功能，开通高级付费订阅后，用户就能让 Muse 代自己联系美国商家。Meta 称，Muse 可以帮助用户处理各种烦琐事务，完成待办事项。 13 日凌晨，Meta 首席 AI 官汪滔在 X 上发文宣布：「Muse 能帮你打完所有不想亲自打的电话。」 据悉，用户可以借助 Muse 联系保险公司或有线电视服务商、预约美国车管部门的业务办理时间，或是打电话向餐厅订位。 Muse 会使用 AI 合成语音与商家工作人员交谈，但这类功能并非总能顺利完成任务。部分商家的工作人员听出对方是 AI 后便直接挂断电话，有人是为了防范诈骗，也有人认为这类来电可能是恶作剧，只会浪费时间。 Meta 此前已面向早期体验用户测试了几个月，现向 Meta AI 最高级别的付费订阅用户开放。订阅价格为每月 19.99 美元（现汇率约合 133.6 元人民币）起。（来源：IT 之家） Windows 11 启动界面大翻新，首个被淘汰的是沿用多年的设备连接弹窗 微软已经开始向用户推送 Windows 11 新一轮界面现代化改造，而最先发生变化的并非开始菜单或任务栏，而是许多用户几乎每天都会遇到的 AutoPlay（自动播放）窗口。 微软此次推出的新版本 AutoPlay 采用 WinUI 现代界面框架重新打造，与 Windows 11 整体设计语言保持一致。新的界面不再像过去那样出现在屏幕右上角，而是改为居中显示，让用户更容易注意到相关提示，同时视觉风格也更加统一。 除了外观上的变化，新版 AutoPlay 还带来了更实用的功能。用户在选择某项操作时，可以明确指定「始终执行」或「仅此次执行」。如果选择始终执行，系统会记住该偏好，今后连接同类设备时自动采取相同操作，无需反复确认。 微软强调，AutoPlay 的重设计并非简单的视觉包装，而是在保留原有功能逻辑的同时进行全面升级，避免出现功能缩水或体验倒退的问题。新版设计既延续了用户熟悉的操作方式，又提供了更加现代化和一致性的使用体验。 不过，该功能目前采取分阶段推送策略。即使安装了最新的 2026 年 11 月 Windows 11 更新，部分用户短期内仍可能看到旧版 AutoPlay 窗口，需要等待微软进一步扩大推送范围后才能获得全新体验。（来源：cnBeta） 苹果重申对 visionOS 平台的长期投入，仍看好空间计算发展前景 据外媒 Road to VR 报道，苹果本周举办了一场特别的「Meet with Apple」开发者活动，重点围绕旗下空间计算平台 visionOS 展开。在外界数月来持续质疑苹果是否仍将投入 XR 领域的背景下，苹果公司再次强调「仍然看好空间计算平台的发展前景」。 苹果空间计算部门产品经理 Yuri Imoto 在活动中表示：「我们希望确保外界明确了解，苹果对这一平台的投入非常坚定。我们对此实际上感到非常兴奋。在相对较短的时间内，空间计算技术已经取得了相当迅速的进步」。 Imoto 还强调，空间计算平台正在医疗手术、医疗保健、教育、专业培训以及沉浸式电影等领域发挥越来越重要的作用，这些内容也是本次全天开发者活动重点讨论的方向。 不过，苹果在上述表态时始终强调的是对空间计算技术及 visionOS 平台的长期投入，而这并不意味着公司同样会继续大力推进 Vision Pro 硬件产品线。（来源：IT 之家） Facebook 擅自读取意大利用户相册，Meta 被处以 8.05 亿欧元重罚 11 月 14 日消息，因在未经意大利用户单独授权、也未充分告知用户的情况下，通过 Android 版 Facebook 应用读取手机中保存的照片、视频及附带的元数据，意大利数据保护局今天（14 日）对 Meta 开出 8.05 亿欧元（现汇率约合 59.36 亿元人民币）罚单。 意大利数据保护局声明指出，此次处罚针对的是 Facebook 于 2023 年开始提供的「浏览 Facebook 时获取相册推荐」功能。用户浏览 Facebook 期间，该功能会自动推荐手机相册中的照片和视频，作为发帖素材。（来源：IT 之家） Camp Snap 推出复古摄像机 CS-8 Micro：盲盒形式销售，可挂在钥匙链上随身携带，39.99 美元 据外媒 The Verge 报道，制造商 Camp Snap 宣布推出一款复古摄像机 CS-8 Micro，该产品将于 11 月 17 日发售，售价为 39.99 美元（现汇率约合 267.3 元人民币）。 该产品采用密封盲盒形式销售，提供亮粉色、丁香紫、青柠绿和橙色等常规版本以及相对稀有的「黑色复古经典款」及「夜光款」。其整体长度约为 3 英寸（约 7.6 厘米），重量仅 1.5 盎司（约 42.5 克），可以挂在钥匙链上随身携带。 CS-8 Micro 配备了一块 LCD 屏幕，但仅用于取景，无法直接在摄像机上查看、编辑或删除已拍摄的视频。用户需要通过 USB-C 数据线将视频传输至手机或电脑，也可以取出随机附赠的 4GB microSD 存储卡，通过读卡器读取文件。 CS-8 Micro 仅支持拍摄 720P 视频，支持 8 倍数码变焦功能，提供 5 种内置滤镜，其中部分滤镜可以通过添加闪烁和颗粒效果以模拟 8 毫米胶片的复古影像风格，机身随附的 4GB microSD 存储卡最多可保存约 45 至 60 分钟视频，电池充满后预计可连续拍摄 30 至 45 分钟。（来源：IT 之家） 「苹果最暗产品」：苹果首款智能家居中枢 HomeView 屏幕最低仅 0.3 尼特 苹果硬件工程副总裁 Matthew Costello 在 11 月 13 日在接受 TechRadar 采访时，表示，苹果首款智能家居中枢 HomeView 屏幕最低仅 0.3 尼特，高管笑称是「最暗的苹果产品」。 他还表示「我非常喜欢 HomeView，这是我们迄今为止设计的产品中最暗的产品，最低亮度降至 0.3 尼特。所以官方来说，我打造的是苹果公司有史以来最暗的产品。我不知道这是好事还是坏事，但我对此非常自豪。」 对于调暗屏幕亮度，Costello 表示由于 HomeView 需要摆在床边，在夜间点亮后如果太亮，可能会影响用户的睡眠，因此需要降低暗光环境中的存在感。（来源：IT 之家） 人类寿命延长一倍！Anthropic CEO 称 AI 要让癌症十年内成历史：美制药公司礼来 CEO 回应 11 月 14 日，AI 头部企业 Anthropic 首席执行官达里奥·阿莫代伊在 IPO 路演等多个公开场合表态，若 AI 得到妥善合规引导落地，与全球顶尖医学、生物领域科学家深度协作，医学科研进步速度有望提升至原有水平的 10 倍，原本需耗费整个 21 世纪的医学探索进程可压缩至 5 至 10 年内完成，不到 10 年有望攻克癌症、阿尔茨海默病、心脏病、重症精神疾病等各类重大顽疾，甚至将人类平均预期寿命延长一倍。 美国礼来董事长兼首席执行官戴夫·里克斯对此作出审慎回应，称该愿景落地可能性不大，当前人类对自身生物学运作机制认知仍有大量空白，临床验证是医药研发绕不开的关键瓶颈，AI 赋能下的医药行业进展更可能是稳步渐进而非跳崖式快速突破。（来源：快科技）",
-        "url": "http://www.geekpark.net/news/373993",
-        "source": "极客公园",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "TechCrunch AI",
-        "title": "埃隆·马斯克 (Elon Musk) 和其他科技高管签署请愿书，呼吁 Nvidia 恢复黄仁勋 (Jensen Huang) 的职位",
-        "summary": "The petition had attracted more than 115,000 signatures as of Saturday afternoon.",
-        "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/",
-        "source": "TechCrunch AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "TechCrunch AI",
-        "title": "人工智能墓地：未成功的项目和初创公司的清单",
-        "summary": "From Apple's repeatedly delayed Siri AI to OpenAI's messy \"super app\" launch, here's a look at the AI projects that shut down or missed expectations.",
-        "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/",
-        "source": "TechCrunch AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-15",
-        "tag": "Solidot",
-        "title": "美国失去麻疹消除地位",
-        "summary": "受益于疫苗接种，美国自 2000 年起被认定“消灭”了麻疹。但最近几年疫苗接种率持续下降，麻疹卷土重来在美国多地再次流行。如果由同一毒株引起的感染在同一国家内持续发生人际传播，且时间至少达到一年，那么该感染即被视为“地方性流行”，即失去消除地位。犹他州的研究人员今年 8 月报告，麻疹同一毒株引起的感染在该州持续传播超过一年。今年美国已报告逾 5400 例麻疹病例，创下自 1991 年以来的最高纪录。今年报告的病例几乎所有患者此前都未接种过麻疹、腮腺炎和风疹（MMR）疫苗，或者其疫苗接种状况不明。根据美国各州的报告，至少 10 人在感染麻疹后死亡。",
-        "url": "https://www.solidot.org/story?sid=85889",
-        "source": "Solidot",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-14",
-        "tag": "TechCrunch AI",
-        "title": "亚洲各国政府对英伟达首席执行官黄仁勋的退出做出反应",
-        "summary": "Some governments moved to confirm chip supply commitments, while others are monitoring the impact on local projects or addressing ongoing investigations.",
-        "url": "https://techcrunch.com/2026/11/14/asian-governments-react-to-nvidia-ceo-jensen-huangs-exit/",
-        "source": "TechCrunch AI",
-        "region": "en",
         "category": "科技"
       }
     ]
