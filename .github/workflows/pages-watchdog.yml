@@ -36,7 +36,7 @@ jobs:
               ts = ts.replace(tzinfo=datetime.timezone.utc)
               age = (now - ts).total_seconds() / 3600
               print(f"digest age: {age:.1f}h", file=sys.stderr)
-              print("run" if age > 36 else "skip")
+              print("run" if age > 6 else "skip")
           except Exception as exc:
               print(f"无法读取 public/tools/digest/digest.json 时间（{exc}），触发一次抓取。", file=sys.stderr)
               print("run")

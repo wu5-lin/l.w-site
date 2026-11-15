@@ -134,7 +134,7 @@ function dateAttrs(d) {
   }
 
   function load() {
-    fetch(DATA_URL, { cache: "default" })
+    fetch(DATA_URL, { cache: "no-store" })
       .then(function (r) {
         if (!r.ok) throw new Error("HTTP " + r.status);
         return r.json();
