@@ -1,13 +1,13 @@
 {
-  "updated": "2026-11-17 19:41 UTC",
+  "updated": "2026-11-17 20:41 UTC",
   "categories": {
     "投资": [
       {
         "date": "2026-11-17",
         "tag": "Seeking Alpha",
-        "title": "Lakeside Holding发布第一季度业绩报告",
+        "title": "Pivotree GAAP 每股收益为 -0.01 加元，营收为 1234 万加元",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4673859-lakeside-holding-reports-q1-results?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4673880-pivotree-gaap-eps-of-c001-revenue-of-c1234m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -15,9 +15,29 @@
       {
         "date": "2026-11-17",
         "tag": "Seeking Alpha",
-        "title": "ConnectM Technology Solutions 第三季度 GAAP 每股收益为 1.39 美元，营收为 890 万美元",
+        "title": "Fort Technology Inc. 的 GAAP 每股收益为 -0.03 美元，营收为 463 万美元",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4673858-connectm-technology-solutions-q3-gaap-eps-of-139-revenue-of-89m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4673879-fort-technology-inc-gaap-eps-of-0_03-revenue-of-4_63m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "Seeking Alpha",
+        "title": "由于Array合并存在不确定性，瑞银下调Shoals Technologies评级",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4673869-shoals-technologies-cut-at-ubs-on-uncertainty-around-array-merger?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "Seeking Alpha",
+        "title": "Smart Eye AB (publ) GAAP 每股收益为 -0.27 瑞典克朗",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4673878-smart-eye-ab-publ-gaap-eps-of-027-sek?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -25,40 +45,50 @@
       {
         "date": "2026-11-17",
         "tag": "MarketWatch",
-        "title": "想知道比特币的真正价值吗？请查看此图表。",
-        "summary": "A model for calculating bitcoin’s value has worked well to inform investors when the cryptocurrency is overbought or oversold. Now, the price is just right.",
-        "url": "https://www.marketwatch.com/story/want-to-know-what-bitcoin-is-really-worth-check-this-chart-daa3fce7?mod=mw_rss_topstories",
+        "title": "黄金正处于熊市——并且在这个日益数字化的世界中，黄金是防黑客攻击的。现在是买入的好时机吗？",
+        "summary": "After the world’s largest crypto hack and a spate of outages in the digital world, physical gold may be the ultimate “antidigital” asset.",
+        "url": "https://www.marketwatch.com/story/gold-is-in-a-bear-market-and-hackproof-in-an-increasingly-digital-world-is-this-a-good-time-to-buy-fabfd528?mod=mw_rss_topstories",
         "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-17",
-        "tag": "Seeking Alpha",
-        "title": "Accel 在芝加哥开设视频游戏场所",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4673755-accel-launches-video-gaming-locations-in-chicago?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-17",
-        "tag": "Seeking Alpha",
-        "title": "Dazed, Inc.发布第三季度业绩报告",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4673857-dazed-inc-reports-q3-results?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-17",
         "tag": "MarketWatch",
-        "title": "我丈夫64岁就愉快地退休了，他认为我应该继续工作。他这样做公平吗？",
-        "summary": "“I’m exhausted. My alarm goes off at 6 a.m., and I have a 50-minute commute.”",
-        "url": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
+        "title": "自2025年初以来，“七大科技巨头”中只有两只股票的表现优于标普500指数。",
+        "summary": "Alphabet and Apple have approached artificial intelligence in ways that have resonated on Wall Street.",
+        "url": "https://www.marketwatch.com/story/only-two-magnificent-seven-stocks-have-managed-to-beat-the-s-p-500-since-the-start-of-2025-a3daa0f8?mod=mw_rss_topstories",
         "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "MarketWatch",
+        "title": "我从父亲那里继承了140万美元。我和丈夫结婚25年了，要求他签订婚后协议，这样做不对吗？",
+        "summary": "“He has always said he wants his daughter to inherit a chunk of his estate, and I’ve never objected to that.”",
+        "url": "https://www.marketwatch.com/story/i-inherited-1-4-million-from-my-father-am-i-wrong-to-ask-my-husband-of-25-years-for-a-postnuptial-agreement-b739c51d?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "MarketWatch",
+        "title": "标普500指数正在考验一个关键的技术支撑位。是时候买入，还是为熊市做好准备？",
+        "summary": "The S&P 500 is joining other major U.S. equity indexes in trading below its 200-day moving average as the artificial-intelligence trade continues to struggle.",
+        "url": "https://www.marketwatch.com/story/the-s-p-500-is-testing-a-key-technical-floor-is-it-time-to-buy-or-brace-for-a-bear-market-c432b192?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "Financial Times",
+        "title": "英伟达财报即将发布，股市走低",
+        "summary": "Nasdaq 100 down 1.4% after volatile run of trading",
+        "url": "https://www.ft.com/content/4a3b9892-67c6-4177-8503-80c0a5eb3b60?syn-25a6b1a6=1",
+        "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
@@ -74,21 +104,11 @@
       },
       {
         "date": "2026-11-17",
-        "tag": "MarketWatch",
-        "title": "这些图表显示，投资者的恐惧比股市的下跌所暗示的还要深",
-        "summary": "The yen’s recent strengthening, particularly against the Australian dollar, suggests investors are unwinding risky bets.",
-        "url": "https://www.marketwatch.com/story/these-charts-show-investor-fears-run-even-deeper-than-the-stock-markets-decline-suggests-924e2647?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-17",
-        "tag": "MarketWatch",
-        "title": "“英伟达吓到我了”：我该卖掉股票还是熬过市场动荡？",
-        "summary": "“Real estate here in Florida seems to be presenting some interesting opportunities.”",
-        "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
-        "source": "MarketWatch",
+        "tag": "Financial Times",
+        "title": "玛丽娜·勒庞提出将法国退休年龄下调至60岁",
+        "summary": "Far-right presidential frontrunner faces criticism over the feasibility and cost of her pension plans",
+        "url": "https://www.ft.com/content/c7ef0eb8-c9c5-46ef-b65d-c0ceaf111717?syn-25a6b1a6=1",
+        "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
@@ -99,16 +119,6 @@
         "summary": "Coinbase has expanded its onchain crypto loan product to New York residents, with BTC, ETH and SOL as the supported collateral.",
         "url": "https://www.theblock.co/news/business/2026-11-17-coinbase-borrow-new-york-morpho-442842",
         "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-17",
-        "tag": "Financial Times",
-        "title": "英伟达财报即将发布，股市走低",
-        "summary": "Nasdaq 100 down 1.1% after volatile run of trading",
-        "url": "https://www.ft.com/content/4a3b9892-67c6-4177-8503-80c0a5eb3b60?syn-25a6b1a6=1",
-        "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
@@ -148,16 +158,6 @@
         "title": "黄仁勋表示他已准备好重返英伟达首席执行官的职位",
         "summary": "First public remarks since revelations over extramarital affairs forced co-founder to resign",
         "url": "https://www.ft.com/content/e265542c-25d9-4a82-8cb7-e4a4b641cdda?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-17",
-        "tag": "Financial Times",
-        "title": "乌克兰在激烈的交火中摧毁了通往克里米亚的桥梁的一部分",
-        "summary": "Part of key Russian road crossing collapses and parallel rail bridge damaged while Moscow hits infrastructure in Ukrainian capital",
-        "url": "https://www.ft.com/content/eb8031c0-a96a-4408-b762-b92ff0402f82?syn-25a6b1a6=1",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
@@ -267,6 +267,16 @@
       {
         "date": "2026-11-17",
         "tag": "Nature 材料",
+        "title": "3D Kane费米子中无狄克临界性的深度强光-物质耦合",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41467-026-79076-6",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "Nature 材料",
         "title": "二维场效应晶体管中的接触点局部化、应变工程化金属接触点：通过局部应力源实现低势垒注入",
         "summary": "",
         "url": "https://www.nature.com/articles/s41699-026-00753-7",
@@ -295,16 +305,6 @@
         "category": "科研"
       },
       {
-        "date": "2026-11-17",
-        "tag": "Nature 材料",
-        "title": "关于嵌入二氧化硅骨架纳米复合材料的石墨烯片层结构-活性相关性的研究，用于光催化废水处理",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-72158-x",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
         "date": "2026-11-15",
         "tag": "ScienceDaily 材料",
         "title": "建造月球基地的秘诀可能就藏在保暖毯中",
@@ -326,6 +326,76 @@
       }
     ],
     "web3": [
+      {
+        "date": "2026-11-17",
+        "tag": "Decrypt",
+        "title": "比特币投资者正在投降——这在历史上一直是一个见底的信号",
+        "summary": "Glassnode says Bitcoin’s realized losses have reached levels seen only near the 2018, 2020, 2022 and early 2023 lows, as buyers defend the $62,000 to $66,000 range.",
+        "url": "https://decrypt.co/383466/bitcoin-investors-capitulating-historical-bottom-signal",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "PANews",
+        "title": "分析：比特币周跌约14%，多数加密财库公司市值已低于所持币价",
+        "summary": "PANews 11月18日消息，据彭博社报道，比特币过去一周约下跌14%，Strategy、Strive等加密财库公司股价至少下跌15%，其“溢价增发再买入加密资产”的模式承压。Blockworks追踪的25家大型数字资产财库公司中，除一家外市值均已低于所持加密资产价值。前Citadel Securities交易员Tian Zeng旗下Third Eye基金自9月1日成立以来录得约35%总回报，大部分来自折价买入SkyAI股票和权证并推动改善回购条款。此前，PANews曾报道MSCI指数将剔除Strategy、Metaplanet等公司",
+        "url": "https://www.panewslab.com/zh/articles/01a1eb34-9db7-74ae-8f7e-029c9c418f91",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "PANews",
+        "title": "浑水宣布做空英伟达，质疑其前销售高管与超微电脑前高管存在关联",
+        "summary": "PANews 11月18日消息，浑水研究（Muddy Waters）11月17日在官网及X平台宣布做空英伟达，发布报告《MW is Short NVIDIA: More Questions About China》。报告质疑英伟达前全球销售执行副总裁Ajay K. Puri与超微电脑一名前首席增长官存在密切关联，而超微电脑此前有员工因涉嫌违规向中国客户销售搭载英伟达GPU的服务器遭起诉。浑水同时写明，相关人士未被政府指控刑事犯罪，诉讼主张尚未证实。Puri已于6月下旬卸任，目前仍任高级顾问。此前，PANews曾报道英伟达股价自历史高点下跌35%，空头已浮盈240亿美元",
+        "url": "https://www.panewslab.com/zh/articles/01a1eb32-3273-7506-b996-0c9419524dd8",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "PANews",
+        "title": "世界银行联手花旗、Circle探索用USDC拨付资金",
+        "summary": "PANews 11月18日消息，据世界银行集团官方公告，世界银行集团宣布将与花旗及Circle合作，探索以受监管的美元稳定币及区块链支付通道，配合或改进其现有基于代理行体系的资金拨付安排。其中，花旗提供现有银行通道连接，Circle负责以USDC铸造和结算资金。该计划基于世界银行的区块链平台FundsChain，目前已有96个国家的逾350个项目接入。此前，PANews曾报道Circle拟进军约40个新兴及发展中国家市场。",
+        "url": "https://www.panewslab.com/zh/articles/01a1eb2c-f4f6-747d-9ae0-6e2c02f746b5",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "Cointelegraph",
+        "title": "随着乌克兰吸纳120亿美元的稳定币，东欧加密货币资金流动下降7.9%",
+        "summary": "Chainalysis found that Eastern Europe recorded the steepest decline in crypto activity of any region, while cross-border stablecoin transfers to Ukraine continued amid the ongoing war.",
+        "url": "https://cointelegraph.com/news/eastern-europe-crypto-activity-decline-chainalysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "Decrypt",
+        "title": "凯茜·伍德的ARK基金出售了价值8500万美元的英伟达股票，并购买了价值4000万美元的加密货币股票",
+        "summary": "Cathie Wood's funds trimmed Nvidia ahead of earnings while buying Block, Circle and Coinbase during Monday's selloff.",
+        "url": "https://decrypt.co/383463/cathie-wood-ark-sells-85-million-nvidia-buys-crypto-stocks",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "CoinDesk",
+        "title": "Coinbase首席执行官表示，十年内AI代理将占交易的“99.9%”",
+        "summary": "Brian Armstrong says Coinbase is building payment tools for AI agents and believes bitcoin has hit bottom despite the selloff.",
+        "url": "https://www.coindesk.com/markets/2026/11/17/coinbase-ceo-says-ai-agents-will-account-for-99-9-of-transactions-within-a-decade",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
       {
         "date": "2026-11-17",
         "tag": "PANews",
@@ -358,42 +428,12 @@
       },
       {
         "date": "2026-11-17",
-        "tag": "PANews",
-        "title": "微软在Ignite发布七款自研AI模型，称以更低成本对标OpenAI和Anthropic",
-        "summary": "PANews 11月18日消息，微软11月17日在Ignite大会发布七款自研MAI模型，覆盖编程、网络安全、图像、实时语音等领域。官方称，MAI Code 2在多项企业编程基准上达到GPT-6.1 Sol约98%的表现、价格约为其40%，达到Claude Opus 5.5约96%的表现、价格约为其5%；MAI Cyber 2 Flash在CyberGymE2E基准上质量对标GPT-6 Astra，单任务成本不到其2%。部分比价按促销价计算。Code 2及Code 2 Flash已登陆GitHub Copilot，微软同时推出许可权重，供企业定制并在Azure运行。",
-        "url": "https://www.panewslab.com/zh/articles/01a1eadd-40a7-765f-bfbf-d8f5bf603eec",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-17",
-        "tag": "PANews",
-        "title": "OpenAI正式发布GPT-6.2 Astra与Sol，ChatGPT及API即日起可用",
-        "summary": "PANews 11月18日消息，OpenAI在官网及X平台宣布，推出新一代前沿模型GPT-6.2 Astra及面向日常工作的高效模型GPT-6.2 Sol。官方称，Astra主打高难度专业任务，在幻灯片、表格、文档及编程任务上表现提升，在测试多步骤专业工作的Agents’ Last Exam上较GPT-6 Astra高5.2分，单次任务成本不到其三分之一。即日起，两款模型向ChatGPT Plus、Pro、Enterprise和Edu用户开放，并上线Codex及API；Astra的API价格为每百万token输入8美元、输出40美元，较GPT-6 Astra低20%。",
-        "url": "https://www.panewslab.com/zh/articles/01a1eac4-8b4d-72bd-ab00-78c41904ba43",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-17",
         "tag": "Decrypt",
         "title": "尽管董事会持反对意见，Jensen Huang仍表示他将“荣幸”地重返Nvidia首席执行官的职位",
         "summary": "The ousted Nvidia founder apologized for his conduct, offered to return if directors ask, and addressed supporters as the chipmaker presses ahead with its search for new leadership this week.",
         "url": "https://decrypt.co/383454/jensen-huang-honored-return-nvidia-ceo-board-resistance",
         "source": "Decrypt",
         "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-17",
-        "tag": "PANews",
-        "title": "Coinbase加密抵押借贷登陆纽约州，覆盖全美50州",
-        "summary": "PANews 11月18日消息，Coinbase在X平台发帖称，纽约州用户现可在Coinbase以BTC、ETH或SOL作抵押借入USDC，获得即时流动性，至此该功能已覆盖美国全部50个州。据The Block报道，该链上借贷产品基于Morpho协议运行。此前，PANews曾报道Coinbase上线以PAXG为抵押借入USDC功能。",
-        "url": "https://www.panewslab.com/zh/articles/01a1eabe-d7cd-7079-9e62-2c9558b749ab",
-        "source": "PANews",
-        "region": "cn",
         "category": "web3"
       },
       {
@@ -428,31 +468,11 @@
       },
       {
         "date": "2026-11-17",
-        "tag": "Decrypt",
-        "title": "被盗的币安钱包在沉寂两周后转移了价值1.37亿美元的以太坊",
-        "summary": "A wallet linked to October’s record Binance theft moved $63 million in ether, before analysts flagged a larger wave of transfers and reported Bitcoin swaps amid ongoing U.S. recovery efforts.",
-        "url": "https://decrypt.co/383446/binance-hack-wallets-move-ethereum-after-two-weeks",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-17",
         "tag": "CoinDesk",
         "title": "美联储理事沃勒力主将央行置于代币化的核心地位",
         "summary": "Waller suggested the Federal Reserve could provide trusted rails for emerging innovation tied to tokenized assets and agentic AI.",
         "url": "https://www.coindesk.com/policy/2026/11/17/u-s-fed-governor-waller-pitches-keeping-central-bank-at-the-center-of-tokenization",
         "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-17",
-        "tag": "Decrypt",
-        "title": "前Robinhood工程师对加密货币内幕交易计划认罪",
-        "summary": "Huaisong Xiang admitted repeatedly trading perpetual futures on Hyperliquid using confidential Robinhood listing plans, pocketing $125,523.",
-        "url": "https://decrypt.co/383443/former-robinhood-engineer-pleads-guilty-crypto-insider-trading",
-        "source": "Decrypt",
         "region": "en",
         "category": "web3"
       },
@@ -465,34 +485,34 @@
         "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
-      },
-      {
-        "date": "2026-11-17",
-        "tag": "CoinDesk",
-        "title": "香港：Swift测试代币化存款，银行追逐稳定币式速度",
-        "summary": "Hong Kong and Swift expanded their efforts to connect tokenized bank deposits across currencies, building on earlier work involving digital central bank money.",
-        "url": "https://www.coindesk.com/business/2026/11/17/hong-kong-swift-test-tokenized-deposits-as-banks-chase-stablecoin-style-speed",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-17",
-        "tag": "Cointelegraph",
-        "title": "以下是今天加密货币领域发生的事情",
-        "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
       }
     ],
     "科技": [
       {
         "date": "2026-11-17",
+        "tag": "Ars Technica",
+        "title": "“特朗普与Jensen勾肩搭背”：批评人士对黄仁勋重返英伟达的愿望表示不满",
+        "summary": "“I love our country”: Jensen Huang’s apology comes amid escalating Nvidia probes.",
+        "url": "https://arstechnica.com/tech-policy/2026/11/trump-was-in-bed-with-jensen-critics-balk-at-huangs-wish-to-return-to-nvidia/",
+        "source": "Ars Technica",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "Ars Technica",
+        "title": "《文明》工作室Firaxis Games裁员三分之一",
+        "summary": "Studio head Heather Hazen is among those departing.",
+        "url": "https://arstechnica.com/gaming/2026/11/civilization-studio-firaxis-games-lays-off-a-third-of-staff/",
+        "source": "Ars Technica",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-17",
         "tag": "TechCrunch AI",
         "title": "Model ML 筹集 2.5 亿美元，用于自动化投资银行业务的繁琐工作",
-        "summary": "The three-year-old Model ML was valued at $1.5 billion in a new round co-led by General Atlantic and QED Investors.",
+        "summary": "The startup says its agents understand the full context of deals that bankers and consultants are working on and can automatically update financial models and presentations when new developments affect their analysis.",
         "url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/",
         "source": "TechCrunch AI",
         "region": "en",
@@ -560,16 +580,6 @@
       },
       {
         "date": "2026-11-17",
-        "tag": "Ars Technica",
-        "title": "数据非常初步，但Vulcan的故障可能并非由BE-4发动机引起。",
-        "summary": "Information about the Vulcan failure is being closely held by ULA and Blue Origin.",
-        "url": "https://arstechnica.com/features/2026/11/sources-vulcan-launch-anomaly-investigation-is-complex/",
-        "source": "Ars Technica",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-17",
         "tag": "IT之家",
         "title": "iPhone Duo 开售三周后，苹果 Apple Store 完成适配",
         "summary": "IT之家 11 月 18 日消息，苹果 Apple Store 在线商店昨晚发布了 6.10 版本升级，更新日志显示为“多种改进和性能增强”。 据用户反馈， 该版本的 Apple Store 终于完成了对 iPhone Duo 的适配 。值得一提的是，如今距离 iPhone Duo 开售已过去约三周时间。 据IT之家昨日报道，苹果全球营销高级副总裁格雷格 · 乔斯维亚克（Greg Joswiak）宣布， 目前已有超过 20 万款应用针对 iPhone Duo 完成优化 ，较本月早些时候公布的 10 万款增长一倍。 他表示，开发者对 iPhone Duo 的支持速度超出预期，优化应用数量在一周多时间内实现翻倍。他期待开发者围绕这款设备推出更多应用体验。 延伸阅读 iPhone Duo 是苹果首款折叠屏 iPhone，于 2026 年 10 月 23 日在全球 Apple Store 零售店正式开售，国行起售价为 RMB 15,999。这款被苹果称为“革命性”的新机可通过全球 Apple Store、 apple.com 官网及 Apple Store App 购买，消费者还可选择 Apple Trade In 以旧换新、Apple Upgrade 月租方案等。 该机内屏为 7.6 英寸可折叠超视网膜 XDR 显示屏，外屏为 5.4 英寸，内屏显示面积较 iPhone 18 Pro Max 大约 50%，搭载 A20 Pro 芯片。iPhone Duo 仅支持 eSIM 激活运营商网络，在中国大陆中国移动、中国电信和中国联通均可提供 eSIM 支持。 按照苹果的统计口径，只有使用 iOS 27.1 SDK 及更新版本构建的应用才会被纳入优化适配名单，开发者需借助 Xcode 27.1 重新编译应用，并可在设备预览工具中查看应用在 iPhone Duo 各种折叠姿态和方向下的表现。此外，苹果要求从 2027 年 4 月起，提交的应用和游戏都需包含 iPhone Duo 截图。",
@@ -626,16 +636,6 @@
         "url": "https://www.ithome.com/1/028/569.htm",
         "source": "IT之家",
         "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-17",
-        "tag": "Ars Technica",
-        "title": "Google 让您无需使用自己的数据训练 AI 即可更轻松地使用 Gemini",
-        "summary": "AI training and chat history will now have separate toggles in the Gemini activity settings.",
-        "url": "https://arstechnica.com/ai/2026/11/google-will-let-you-opt-out-of-ai-training-in-gemini-without-losing-your-history/",
-        "source": "Ars Technica",
-        "region": "en",
         "category": "科技"
       },
       {
