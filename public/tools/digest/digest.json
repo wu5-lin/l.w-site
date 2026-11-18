@@ -1,33 +1,13 @@
 {
-  "updated": "2026-11-18 19:00 UTC",
+  "updated": "2026-11-18 21:46 UTC",
   "categories": {
     "投资": [
       {
         "date": "2026-11-18",
         "tag": "Seeking Alpha",
-        "title": "索罗斯基金管理公司主要持仓的量化评级：INTC、AMZN、TSM、GOOGL",
+        "title": "Merchants Bancorp 7.625 PFD SE E宣布派发0.4765美元股息",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4674331-quant-rating-on-soros-fund-managements-top-holdings-intc-amzn-tsm-googl?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "The Block",
-        "title": "Ondo将在IPO当天推出Anthropic代币化股票",
-        "summary": "Ondo’s ANTon token will track Anthropic shares from the day the Claude maker starts trading on Nasdaq.",
-        "url": "https://www.theblock.co/news/markets/2026-11-18-ondo-to-launch-tokenized-anthropic-stock-on-ipo-day-443482",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Seeking Alpha",
-        "title": "谷歌扩展Project Genie项目，实现对AI生成世界的实时编辑",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4674355-google-expands-project-genie-with-real-time-editing-of-ai-generated-worlds?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4674437-merchants-bancorp-7_625-pfd-se-e-declares-0_4765-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -35,9 +15,9 @@
       {
         "date": "2026-11-18",
         "tag": "Seeking Alpha",
-        "title": "Starboard Value的最大持仓股被Seeking Alpha的量化评级评为“买入”",
+        "title": "尽管出售了200万股，Pershing Square仍对微软持乐观态度",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4674361-starboard-values-top-holding-assigned-buy-rating-by-seeking-alphas-quant-rating?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4674425-pershing-square-remains-bullish-on-microsoft-despite-selling-2m-shares?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -45,10 +25,90 @@
       {
         "date": "2026-11-18",
         "tag": "Seeking Alpha",
-        "title": "英伟达财报公布后，美国股市涨跌互现；黄金价格下跌",
+        "title": "Cyabra宣布自11月23日起实施30合1的股票反向拆分",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4674212-us-indexes-are-mixed-after-nvidia-earnings-gold-declines?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4674431-cyabra-announces-30-forminus-1-reverse-stock-split-effective-november-23?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "MarketWatch",
+        "title": "股市的调整是否已经见底？以下是这些反向指标所显示的信息。",
+        "summary": "Contrarian buy signals typically don’t come until sentiment has dropped further than they have so far",
+        "url": "https://www.marketwatch.com/story/has-the-stock-markets-correction-hit-bottom-yet-heres-what-these-contrarian-indicators-say-f9104879?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Seeking Alpha",
+        "title": "Copa Holdings 的 GAAP 每股收益为 4.29 美元，超出预期 0.39 美元；营收为 12 亿美元，超出预期 2000 万美元",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4674435-copa-holdings-gaap-eps-of-4_29-beats-by-0_39-revenue-of-1_2b-beats-by-20m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "MarketWatch",
+        "title": "“我一直是一名全职妈妈”：我今年50岁，患有慢性疾病。我丈夫失业了。他应该动用自己的401(k)退休金吗？",
+        "summary": "“Our financial and healthcare situation has become increasingly concerning.”",
+        "url": "https://www.marketwatch.com/story/ive-been-a-stay-at-home-mom-im-50-and-have-a-chronic-illness-my-husband-lost-his-job-should-he-raid-his-401-k-63e59123?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "MarketWatch",
+        "title": "在英伟达的亮眼业绩未获市场积极回应之后，人工智能板块接下来将走向何方？",
+        "summary": "Nvidia delivered a strong performance, but questions remain amid growing scrutiny of the company and macroeconomic factors",
+        "url": "https://www.marketwatch.com/story/whats-next-for-the-ai-trade-after-nvidias-blowout-results-are-met-with-a-shrug-853c7abe?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Financial Times",
+        "title": "美国和委内瑞拉将扩大军事合作，打击毒品贩运",
+        "summary": "In surprise trip to Caracas, Pete Hegseth says the two nations would ‘hunt’, ‘find’ and ‘kill’ ‘narcoterrorists’",
+        "url": "https://www.ft.com/content/5144ce59-b928-46ba-b6b6-d7e77eb79d5b?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Financial Times",
+        "title": "美国科技服务中断被归咎于匆忙修复人工智能发现的漏洞",
+        "summary": "Experts say race to patch software flaws probably created instability in computer systems at Microsoft, JPMorgan and others",
+        "url": "https://www.ft.com/content/96c565f1-f229-40b6-91e8-7a849ec4b208?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "MarketWatch",
+        "title": "谷歌转向火山和熔岩技术，以大胆新方式为人工智能提供动力",
+        "summary": "Google’s agreement with Quaise is “a bet on a first-of-a-kind technology,” according to a Bernstein analyst.",
+        "url": "https://www.marketwatch.com/story/google-turns-to-a-volcano-and-rock-melting-technology-in-a-wild-new-bid-to-power-ai-fbbe57ef?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Financial Times",
+        "title": "英伟达加快加薪步伐，临时首席执行官力求提振员工士气",
+        "summary": "Colette Kress addresses ‘all-hands’ meeting as departed founder Jensen Huang manoeuvres for a return",
+        "url": "https://www.ft.com/content/9ee78a67-fcab-4e43-bee7-09c9244e76b8?syn-25a6b1a6=1",
+        "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
@@ -56,68 +116,8 @@
         "date": "2026-11-18",
         "tag": "Financial Times",
         "title": "“态势感知2.0”：Leopold Aschenbrenner计划回归",
-        "summary": "25-year-old AI trader has held discussions about employing leverage again and raising funds after a historic wipeout nearly toppled his firm",
+        "summary": "The 25-year-old AI trader has held talks about employing leverage again and raising funds after wipeout nearly toppled firm",
         "url": "https://www.ft.com/content/1fcbc6ea-1be3-44d2-b564-8ebf91181639?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "The Block",
-        "title": "CryptoQuant表示，比特币已重回熊市阶段，但已进入“价值区间”",
-        "summary": "Bitcoin has dipped below its 200-day and 365-day moving averages of $72,900 and $75,900, respectively, CryptoQuant said.",
-        "url": "https://www.theblock.co/news/markets/2026-11-18-cryptoquant-bitcoin-bearish-value-zone-443471",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Financial Times",
-        "title": "民主党提名哈基姆·杰弗里斯为美国众议院议长",
-        "summary": "56-year-old on track to become first Black lawmaker to lead lower chamber of Congress",
-        "url": "https://www.ft.com/content/9d0998cf-ffb8-4fe4-9f85-0c403b1966f9?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "The Block",
-        "title": "Bullish第三季度调整后利润增长35%，数字资产销售额下降23%",
-        "summary": "Bullish shares rose about 10% after the crypto exchange reported earnings and authorized a buyback.",
-        "url": "https://www.theblock.co/news/business/2026-11-18-bullishs-q3-adjusted-profit-rises-35-digital-asset-sales-fall-23-443456",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "CNBC Markets",
-        "title": "技术中断正导致人们恐慌性抢购。瑞穗银行表示，Costco正从中受益",
-        "summary": "Shoppers are spending more at Costco as tech outages turn into a race to get emergency goods.",
-        "url": "https://www.cnbc.com/2026/11/18/tech-outage-costco-panic-buying.html",
-        "source": "CNBC Markets",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "The Block",
-        "title": "Visa Direct将跨境收款的稳定币预付服务扩展至亚太地区",
-        "summary": "Visa plans to let eligible Visa Direct clients in Asia-Pacific fund cross-border payouts with stablecoins.",
-        "url": "https://www.theblock.co/news/business/2026-11-18-visa-direct-extend-stablecoin-prefunding-cross-border-payouts-asia-pacific-443457",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Financial Times",
-        "title": "摩根大通寻求通过大幅降价重振停滞的软件债务销售",
-        "summary": "Banks turn to high-yield bond market to clear $2bn in ‘hung’ debt at double-digit yield",
-        "url": "https://www.ft.com/content/16a99ff4-6060-4c81-8c4f-7e43503e4a11?syn-25a6b1a6=1",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
@@ -135,30 +135,30 @@
       {
         "date": "2026-11-18",
         "tag": "CNBC Markets",
-        "title": "美联储的沃勒表示，央行可能需要通过加息半个百分点来“震撼人们”",
-        "summary": "Continued inflation above the Fed's 2% target is pushing central bank officials into a more aggressive stance.",
-        "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
+        "title": "会议纪要显示，美联储官员预计将进一步加息，并对人工智能对通胀的影响表示担忧",
+        "summary": "The Federal Reserve on Wednesday released minutes from its October policy meeting at which it voted to hold its benchmark interest rate in a range between 3.75%-4%.",
+        "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
         "source": "CNBC Markets",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-18",
-        "tag": "Financial Times",
-        "title": "摆脱民粹主义的唯一途径就是经历它",
-        "summary": "The lesson of Britain and America is that bad ideas have to be tested to destruction",
-        "url": "https://www.ft.com/content/e71273dd-2748-4396-bb62-e75307105596?syn-25a6b1a6=1",
-        "source": "Financial Times",
+        "tag": "The Block",
+        "title": "币安从阿布扎比法院获得65亿美元的冻结令，以追回被盗加密货币",
+        "summary": "Binance has obtained a $6.5 billion worldwide freezing order from the Abu Dhabi Global Market Courts as it seeks to recover crypto stolen in October hack.",
+        "url": "https://www.theblock.co/news/business/2026-11-18-binance-freezing-court-order-adgm-crypto-october-hack-443491",
+        "source": "The Block",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-18",
-        "tag": "CNBC Markets",
-        "title": "普京在与特朗普和习近平会晤前表示，欧盟正在失去工业，在竞争中落后",
-        "summary": "Putin used the speech to emphasize Russia's economic resilience despite U.S. sanctions, and played up opportunities for APEC members in the country.",
-        "url": "https://www.cnbc.com/2026/11/18/putin-apec-eu-trump-xi-meeting.html",
-        "source": "CNBC Markets",
+        "tag": "The Block",
+        "title": "Ondo将在IPO当天推出Anthropic代币化股票",
+        "summary": "Ondo’s ANTon token will track Anthropic shares from the day the Claude maker starts trading on Nasdaq.",
+        "url": "https://www.theblock.co/news/markets/2026-11-18-ondo-to-launch-tokenized-anthropic-stock-on-ipo-day-443482",
+        "source": "The Block",
         "region": "en",
         "category": "投资"
       }
@@ -328,22 +328,112 @@
     "web3": [
       {
         "date": "2026-11-18",
+        "tag": "PANews",
+        "title": "Ledger确认柏林出现遭篡改设备，东南亚发现一台受影响Nano Gen5",
+        "summary": "PANews 11月19日消息，Ledger在X平台发帖称，该公司对10月15日披露的硬件植入事件的调查仍在进行，并已发布进展更新。Ledger表示，其安全芯片和操作系统不存在漏洞，且没有已确认案例涉及从官网购买的设备。该公司称，已核实柏林出现遭篡改设备的报告，在东南亚发现一台受影响的Ledger Nano Gen5，并正在调查迪拜两台疑遭篡改设备的报告。Ledger提醒，若对从第三方购买的设备存有疑虑，可联系其支持团队，且该公司不会索要恢复短语。",
+        "url": "https://www.panewslab.com/zh/articles/01a1f097-a455-7210-a136-813010ea0443",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "PANews",
+        "title": "CNBC：Anthropic IPO发行价定为83美元，高于预期区间",
+        "summary": "PANews 11月19日消息，据CNBC报道，知情人士称，Anthropic已将IPO发行价定为每股83美元，高于此前预期区间。CNBC称，该公司上周更新招股文件，将预期发行价区间定为每股70至78美元，并预计于美国时间周四在纳斯达克以股票代码ANT开始交易。",
+        "url": "https://www.panewslab.com/zh/articles/01a1f092-88be-72de-86a0-c1ae22f61040",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
         "tag": "Decrypt",
-        "title": "比特币矿工正在出售其囤积的比特币，以资助人工智能的蓬勃发展",
-        "summary": "MARA sold 13,597 BTC after September and Riot sold 20,264 BTC through September to fund debt repayment and AI data center buildouts, as Glassnode flagged the pair as the main sellers among Bitcoin treasury firms.",
-        "url": "https://decrypt.co/383568/bitcoin-miners-selling-fund-ai-boom",
+        "title": "帕尔默·拉奇表示，他正在为工业和“非法”药物打造一个海上避风港",
+        "summary": "The Oculus founder says his decade-old SLAB project aims to escape state restrictions on manufacturing and medical treatment.",
+        "url": "https://decrypt.co/383576/palmer-luckey-offshore-haven-industry-illegal-medicine",
         "source": "Decrypt",
         "region": "en",
         "category": "web3"
       },
       {
         "date": "2026-11-18",
+        "tag": "Cointelegraph",
+        "title": "随着硬件钱包篡改调查的扩大，Ledger向柏林客户发出警告",
+        "summary": "Ledger advised customers who purchased devices in Berlin since January 2026 to contact support as it investigates suspected hardware implants in Germany and Dubai.",
+        "url": "https://cointelegraph.com/news/ledger-warns-berlin-customers-hardware-wallet-investigation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
         "tag": "PANews",
-        "title": "路透社：币安获阿布扎比法庭令追索被盗后冻结资产",
-        "summary": "PANews 11月19日消息，据路透社报道，币安表示，已获得阿布扎比全球市场（ADGM）法庭命令，以追索上月约63亿美元被盗事件后被冻结的资金。币安此前称，约28.5亿美元被盗代币已被第三方冻结或拦截。币安副总法律顾问Dugan Bliss表示，将继续依法追踪、冻结并追回被盗资产，协助合作方在可行情况下返还资金。",
-        "url": "https://www.panewslab.com/zh/articles/01a1efee-331f-752b-9b6f-c1f390b87267",
+        "title": "参议员Lummis等要求将稳定币安全港扩大至州发行方",
+        "summary": "PANews 11月19日消息，美国参议员Cynthia Lummis在X平台发帖称，她与Kirsten Gillibrand参议员牵头，联合Angela Alsobrooks、Kevin Cramer、Pete Ricketts和Mark Warner等议员致函美国财政部，要求将拟议中的安全港扩大至州发行方，以便在《GENIUS法案》生效时，稳定币发行方仍可在州牌照与联邦牌照之间作出选择。Lummis表示，国会制定该法案是为了让稳定币发行方能够选择州或联邦牌照。",
+        "url": "https://www.panewslab.com/zh/articles/01a1f078-300f-7242-90ab-c620f1351b12",
         "source": "PANews",
         "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "PANews",
+        "title": "美股收盘光模块/高速互联、加密概念股普涨，应用光电跌超9%",
+        "summary": "PANews 11月19日消息，据币安行情，美股收盘，三大指数涨跌不一，道指跌约1.17%，标普500跌约0.43%，纳指涨约0.09%。 美股七巨头中：亚马逊（AMZN）涨3.97%；英伟达（NVDA）跌3.09%；特斯拉（TSLA）涨0.92%。 加密概念股中：Strategy（MSTR）跌6.38%；SharpLink Gaming（SBET）跌3.71%；Coinbase（COIN）跌3.64%。 半导体与存储中：AMD（AMD）涨5.56%；高通（QCOM）跌4.10%；博通（AVGO）涨3.78%。 光模块/高速互联中：应用光电（AAOI）跌9.84%；Lumentum（L",
+        "url": "https://www.panewslab.com/zh/articles/01a1f076-837b-750c-805f-de9a0b92c68b",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Cointelegraph",
+        "title": "Bain Capital Crypto领投Variational 1.1亿美元融资轮，估值达15亿美元",
+        "summary": "Variational raised $110 million at a $1.5 billion valuation to expand Omni’s derivatives markets and increase trading limits.",
+        "url": "https://cointelegraph.com/news/variational-series-b-bain-capital-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Cointelegraph",
+        "title": "币安表示，在遭遇黑客攻击后，其获得了65亿美元的全球冻结令",
+        "summary": "The court orders allow legal notices to be served via blockchain and provide for a continuously updated list of 26,000 wallet addresses linked to stolen assets, Binance’s lawyers said.",
+        "url": "https://cointelegraph.com/news/binance-says-won-65b-worldwide-freezing-order-after-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Decrypt",
+        "title": "谷歌的Genie 4现已推出，让Ultra订阅用户能够实时构建AI世界",
+        "summary": "Google's Genie 4 lets Ultra subscribers reshape interactive scenes while exploring them, complete with sound and dialogue, as Project Genie adds longer sessions and new community creation and sharing tools.",
+        "url": "https://decrypt.co/383572/google-genie-4-ultra-subscribers-build-ai-worlds-real-time",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Decrypt",
+        "title": "为什么CoinShares刚刚卖掉了所有以太坊和一半的索拉纳？",
+        "summary": "The crypto asset manager sold $16.6 million in Ethereum and $2.7 million in Solana, freeing up $19.3 million. Here's why.",
+        "url": "https://decrypt.co/383570/why-coinshares-just-sold-all-ethereum-half-solana",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Decrypt",
+        "title": "比特币在Anthropic的IPO之前暴跌。我们真的应该怪罪人工智能吗？",
+        "summary": "Bitcoin slid toward $63,000 as Anthropic prepared its blockbuster debut. Analysts dispute whether the IPO is draining crypto liquidity, pointing instead to ETF outflows, forced selling and rising interest rates.",
+        "url": "https://decrypt.co/383551/bitcoin-tanks-ahead-anthropics-ipo-should-we-really-blame-ai",
+        "source": "Decrypt",
+        "region": "en",
         "category": "web3"
       },
       {
@@ -358,101 +448,11 @@
       },
       {
         "date": "2026-11-18",
-        "tag": "Decrypt",
-        "title": "美联储的沃勒呼吁加息50个基点，并表示代币化金融仍需要传统银行",
-        "summary": "Christopher Waller says stubborn inflation may warrant a bigger December rate hike, while a separate speech outlined why blockchain-based payments still need traditional settlement systems and stronger safeguards to scale.",
-        "url": "https://decrypt.co/383566/fed-waller-50-basis-point-rate-hike-tokenized-finance-banks",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "PANews",
-        "title": "Anchorage与FOMO Pay合作拓展亚洲及中东稳定币支付",
-        "summary": "PANews 11月19日消息，据Anchorage Digital官网公告，该机构与支付机构FOMO Pay达成合作。FOMO Pay将使用Anchorage Digital Bank的稳定币发行基础设施，将受监管美元稳定币的铸造与赎回接入亚洲及中东的持牌支付与结算网络。Anchorage Digital Bank持有美国货币监理署全国性信托银行牌照。",
-        "url": "https://www.panewslab.com/zh/articles/01a1efd0-6953-75ef-a5d4-e046f1687ac1",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "PANews",
-        "title": "花旗下调比特币目标价至99532美元、以太坊至2838美元",
-        "summary": "PANews 11月19日消息，据The Block报道，花旗将比特币和以太坊的基准情形目标价分别下调至99532美元和2838美元，因加密市场已跌破此前区间。策略师Alex Saunders将此次下调归因于ETF需求走弱、期货市场去杠杆及美元走强。花旗今年10月初给出的目标价分别为11.3万美元和3028美元。",
-        "url": "https://www.panewslab.com/zh/articles/01a1efcd-82d8-70b4-9d30-4807021384bb",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "PANews",
-        "title": "谷歌推出长程运行智能体Stitch Loop",
-        "summary": "PANews 11月19日消息，据谷歌官方博客，谷歌实验室推出实验产品Stitch Loop。该智能体可连接代码库与实时指标，在隔离沙箱中编写代码并提交GitHub拉取请求，经人工审批后才会合并。系统默认提供网络安全、延迟与可访问性循环，安全循环结合Gemini 4 Carbon与DeepMind的CodeMender。全球用户可加入等候名单，符合条件的Google AI Ultra用户可优先使用。",
-        "url": "https://www.panewslab.com/zh/articles/01a1efb8-80c2-708e-9667-03c7957df0a5",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Decrypt",
-        "title": "幸运的交易者因GTA 6迷因币代码混淆而赚取66,000%的利润",
-        "summary": "The trader turned $300 into over $200,000 as early footage of GTA 6 sent degens flocking between different token tickers.",
-        "url": "https://decrypt.co/383536/lucky-trader-banks-66000-profit-on-gta-6-meme-coin-ticker-confusion",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
         "tag": "CoinDesk",
         "title": "一家估值15亿美元的加密货币初创公司正以华尔街的策略挑战Hyperliquid",
         "summary": "Variational and its investors are betting that the future of onchain trading will look more like a traditional brokerage than a crypto exchange.",
         "url": "https://www.coindesk.com/business/2026/11/18/a-usd1-5-billion-crypto-startup-is-taking-on-hyperliquid-with-a-wall-street-playbook",
         "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Cointelegraph",
-        "title": "2500万美元以太坊MEV无罪判决考验刑事执法界限",
-        "summary": "BlackRock’s staked Ether ETF earns a cut of what traders pay for priority on Ethereum, the acquittal left the legal risk to that income unresolved.",
-        "url": "https://cointelegraph.com/news/25m-ethereum-mev-acquittal-tests-criminal-enforcement-limits?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Cointelegraph",
-        "title": "Polymarket US 将快速加密货币交易模式引入石油和天然气交易",
-        "summary": "Polymarket US said it attracted more than 300,000 traders to its short-duration crypto markets in six weeks and is now expanding the format to energy commodities.",
-        "url": "https://cointelegraph.com/news/polymarket-us-takes-rapid-fire-crypto-trading-format-oil-natural-gas?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Decrypt",
-        "title": "“它说的是只有6.2 Astra才懂的语言”：为什么早期测试者讨厌OpenAI的新模型",
-        "summary": "OpenAI's flagship AI model is dazzling developers with 3D creations, but early testers say it stalls during long projects, gives baffling explanations, and hides failures.",
-        "url": "https://decrypt.co/383539/speaks-tongues-only-6-2-astra-understands-why-early-testers-hate-openai-new-model",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Cointelegraph",
-        "title": "美联储的沃勒谈到“令人震惊”的50个基点加息，比特币和股市出现波动",
-        "summary": "Bitcoin price action dropped below $63,000 after fresh hawkish comments from the Fed as Nvidia earnings optimism faded.",
-        "url": "https://cointelegraph.com/markets/bitcoin-stocks-wobble-waller-talks-shock-50-point-rate-hike?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
       },
@@ -490,11 +490,111 @@
     "科技": [
       {
         "date": "2026-11-18",
+        "tag": "TechCrunch AI",
+        "title": "帕尔默·拉奇警告称，由人工智能驱动的网络攻击正在超越防御措施：“是时候开始行动了”",
+        "summary": "The Anduril co-founder says outdated technology is leaving systems vulnerable to a new wave of AI-enabled attacks.",
+        "url": "https://techcrunch.com/2026/11/18/palmer-luckey-warns-ai-powered-cyberattacks-are-outpacing-defenses-its-time-to-start-running/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "TechCrunch AI",
+        "title": "帕尔默·拉奇认为中国“对黄仁勋的下台感到兴奋”，因此他希望这位被罢免的英伟达首席执行官能够官复原职。",
+        "summary": "\"[China knows] it makes America weaker to knock him out,\" the Anduril CEO said about ousted Nvidia leader Jensen Huang.",
+        "url": "https://techcrunch.com/2026/11/18/palmer-luckey-thinks-china-is-thrilled-to-have-jensen-out-so-he-wants-the-ousted-nvidia-ceo-reinstated/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
         "tag": "Ars Technica",
-        "title": "特朗普政府下令Kalshi停止对特朗普将要说的话进行投注",
-        "summary": "CFTC: Kalshi bets may violate US ban on contracts that can be easily manipulated.",
-        "url": "https://arstechnica.com/tech-policy/2026/11/trump-admin-orders-kalshi-to-halt-wagers-on-what-words-trump-will-say/",
+        "title": "Netflix首席执行官承认，应用程序可能会将您想看的内容埋没在您不想看的内容之下",
+        "summary": "CEO Ted Sarandos discusses gaps in making hit shows that streamers can find.",
+        "url": "https://arstechnica.com/gadgets/2026/11/netflix-ceo-admits-app-may-bury-stuff-you-want-to-watch-under-stuff-you-dont/",
         "source": "Ars Technica",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Ars Technica",
+        "title": "Windows Server 2028 以兼容性换取开箱即用的安全性",
+        "summary": "Hardened defaults align with DoD standards, but there may be growing pains.",
+        "url": "https://arstechnica.com/gadgets/2026/11/windows-server-2028-public-preview-bets-on-a-security-first-approach/",
+        "source": "Ars Technica",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "TechCrunch AI",
+        "title": "Sam Altman表示，他的生活如此离奇，以至于他对安德鲁·加菲尔德在即将上映的电影中扮演他一事并不感到惊讶。",
+        "summary": "\"It doesn't feel like it's in like the top 10 weirdest things about my life,\" Altman said.",
+        "url": "https://techcrunch.com/2026/11/18/sam-altman-says-his-life-is-so-weird-that-hes-unfazed-by-andrew-garfield-portraying-him-in-upcoming-movie/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "TechCrunch AI",
+        "title": "Snapchat现已允许开发者使用Claude Code和Cursor等AI助手来构建AR滤镜",
+        "summary": "Lens creators can describe the Lens they want in plain language, and their AI assistant handles the process from start to finish, Snapchat says.",
+        "url": "https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "The Verge AI",
+        "title": "特朗普的最新土地掠夺是一处位于菲律宾的人工智能中心",
+        "summary": "President Donald Trump was greeted by no less than five beauty queens when he landed in the Philippines on Tuesday, according to local news outlet Rappler. As he stepped onto the tarmac, a child handed him small US and Philippine flags. A band played \"YMCA,\" a staple at Trump rallies, as more girls in traditional […]",
+        "url": "https://www.theverge.com/policy/1036749/trump-ai-chip-data-center-us-philippines-pax-silica",
+        "source": "The Verge AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Ars Technica",
+        "title": "百思买再次在线上和线下商店销售蓝光光盘",
+        "summary": "Popular titles like The Odyssey are being “sold & shipped by Best Buy.\"",
+        "url": "https://arstechnica.com/gadgets/2026/11/best-buy-sells-blu-rays-again-after-quitting-the-business-in-2024/",
+        "source": "Ars Technica",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "The Verge AI",
+        "title": "英伟达的下一步是什么？任何不会动摇这艘令人难以置信的盈利之船的事情",
+        "summary": "If someone handed you $8,300 every second, what would you do? That's how much pure profit Nvidia now makes. By the time you finish reading this paragraph, Nvidia will likely have cleared $45,000 and change. It's easy to look at Nvidia, a company that just lost its visionary founder CEO due to a series of […]",
+        "url": "https://www.theverge.com/tech/1035924/nvidia-visualized-revenue-profit-earnings-after-huang",
+        "source": "The Verge AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Ars Technica",
+        "title": "内部聊天记录显示，Muse的隐私侵犯行为让Meta员工感到恐慌",
+        "summary": "Erratic Muse outputs sharing random bank, bitcoin balances aren’t real, Meta says.",
+        "url": "https://arstechnica.com/tech-policy/2026/11/muse-privacy-invasions-are-freaking-out-meta-staffers-internal-chats-show/",
+        "source": "Ars Technica",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "The Verge AI",
+        "title": "科技诉讼主导了2026年——而立法者还想要更多",
+        "summary": "With just a few weeks remaining, lawmakers are trying to pass new protections for victims of online harm before the end of 2026, targeting deepfake creators and online platforms that block users from filing lawsuits. On Tuesday, members of a Senate Judiciary subcommittee hosted a hearing calling for the end of forced arbitration for online […]",
+        "url": "https://www.theverge.com/policy/1036935/congress-forced-arbitration-deepfakes-defiance-act",
+        "source": "The Verge AI",
         "region": "en",
         "category": "科技"
       },
@@ -505,66 +605,6 @@
         "summary": "If the glorious AI revolution rests entirely on the well-being of one man, AI is perhaps not as robust a technology as I had previously been led to believe. Nonetheless, chunks of Silicon Valley are now insisting he is indispensable. For instance, if Elon Musk is telling the truth, then Jensen Huang (the former CEO […]",
         "url": "https://www.theverge.com/ai-artificial-intelligence/1036776/nvidia-earnings-kress-jensen-huang-petition",
         "source": "The Verge AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Ars Technica",
-        "title": "让美国失去“已消灭麻疹”地位的“可耻”麻疹数据",
-        "summary": "Measles became endemic in the US months ago—and it's only accelerating.",
-        "url": "https://arstechnica.com/health/2026/11/the-shameful-measles-data-that-lost-the-us-its-elimination-status/",
-        "source": "Ars Technica",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Ars Technica",
-        "title": "威尔·莱特（Will Wright）的下一款模拟游戏将使用人工智能从您的记忆中挖掘内容",
-        "summary": "With MyMems , Wright says he wants to \"turn the simulation inward.\"",
-        "url": "https://arstechnica.com/gaming/2026/11/will-wrights-next-simulation-will-use-ai-to-mine-content-from-your-memories/",
-        "source": "Ars Technica",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "TechCrunch AI",
-        "title": "Google搜索中的人工智能功能将拥有自己的无痕模式",
-        "summary": "Google's new temporary threads let users have conversations in AI Mode without adding them to their search history or influencing future recommendations.",
-        "url": "https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/",
-        "source": "TechCrunch AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Ars Technica",
-        "title": "骑行速度达到25英里/小时不应该这么轻松：Specialized的Turbo Vado 3 Evo",
-        "summary": "This commuter bike will have you blazing through streets without any range anxiety.",
-        "url": "https://arstechnica.com/gadgets/2026/11/it-shouldnt-be-this-easy-to-pedal-25-mph-specializeds-turbo-vado-3-evo/",
-        "source": "Ars Technica",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "The Verge AI",
-        "title": "迪士尼的全新《星球大战》机器人通过人工智能与游客互动",
-        "summary": "As advanced and lifelike as the animatronic characters at Disney parks have become, they typically either stick to predefined movements and routines, or there's an out of sight puppeteer helping make their behavior appear more spontaneous. That could soon change as Walt Disney Imagineering R&D has revealed three new Audio-Animatronic prototypes that rely on Amazon's […]",
-        "url": "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai",
-        "source": "The Verge AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "TechCrunch AI",
-        "title": "更多银行表示，使用人工智能代理的客户需自行承担风险——即使他们遭到黑客攻击",
-        "summary": "Citi is the latest major financial institution to put the breaks on personal finance AI agents.",
-        "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
-        "source": "TechCrunch AI",
         "region": "en",
         "category": "科技"
       },
@@ -606,46 +646,6 @@
         "url": "https://www.ithome.com/1/029/126.htm",
         "source": "IT之家",
         "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "TechCrunch AI",
-        "title": "萨姆·阿尔特曼警告称，未来将由人工智能而非人类掌控大局",
-        "summary": "Sam Altman and Greg Brockman pushed back against Silicon Valley's growing debate over an AI takeover, while acknowledging the challenges of keeping advanced models under human control.",
-        "url": "https://techcrunch.com/2026/11/18/sam-altman-warns-against-a-future-where-ai-not-humans-calls-the-shots/",
-        "source": "TechCrunch AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "IT之家",
-        "title": "华为 Mate 90 系列手机推 HarmonyOS 7.0.0.115 升级，“悄悄”上线完全体 3D 空间壁纸功能",
-        "summary": "IT之家 11 月 19 日消息，华为 Mate 90 系列手机已率先开启鸿蒙 HarmonyOS 7.0.0.115 SP11 版本升级，系统包大小约 10.31GB，带来了 AI 快捷栏等功能。 据博主 @怪咖学徒_ 反馈，在升级 HarmonyOS 7.0.0.115 版本后，华为 Mate 90 系列手机“悄悄”上线了完全体 3D 空间壁纸功能， 支持重力感应特性 。从视频演示效果来看，该功能可将壁纸 3D 空间化，手机晃动，壁纸内容也会跟随晃动。 参考IT之家此前报道， 今年 9 月发布的 HarmonyOS 7 操作系统主打全新空间美学设计语言 ，锁屏界面新增 3D 空间壁纸、空间时钟功能，可将照片中的元素与 3D 时钟巧妙结合，带来更加立体的壁纸效果。新系统还将液态玻璃带到了通知中心、文件夹等地方。 相关阅读： 《 华为鸿蒙 HarmonyOS 7 操作系统正式发布：全新空间美学设计语言，搭载系统智能体小艺 》",
-        "url": "https://www.ithome.com/1/029/125.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "The Verge AI",
-        "title": "威尔·莱特（Will Wright）的下一款游戏将使用人工智能来映射您的记忆",
-        "summary": "Will Wright, the creator of legendary franchises like SimCity and The Sims, is working on a new game - and it's built around AI. The new title, focused on your memories, is called MyMems. Like Wright's other titles, it sounds extremely ambitious, giving players a new way to explore worlds they create on their own. […]",
-        "url": "https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview",
-        "source": "The Verge AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "The Verge AI",
-        "title": "还记得尖端人工智能暂停吗？芯片公司也不记得了",
-        "summary": "This summer, OpenAI paused its largest planned frontier training run after its AI agents accidentally hacked Hugging Face and early evidence suggested that its next model could independently find and exploit security flaws. In September, Anthropic CEO Dario Amodei called for slowing advances in the most powerful AI models, warning that they could be used […]",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1036549/nvidia-amd-earnings-fall-2026-chips-pause-frontier-models",
-        "source": "The Verge AI",
-        "region": "en",
         "category": "科技"
       }
     ]
