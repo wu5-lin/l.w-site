@@ -218,7 +218,7 @@ a { color: inherit; }
 
 .hero-stage {
   margin-top: -78px;
-  padding: 132px 0 8px;
+  padding: 108px 0 4px;
 }
 
 .blobs {
@@ -293,7 +293,7 @@ a { color: inherit; }
   position: relative;
   width: min(420px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 40px 32px 28px;
+  padding: 32px 28px 24px;
   border-radius: 32px;
   text-align: center;
   background: var(--sheen), var(--glass);
@@ -1120,8 +1120,41 @@ body:has(.offline-stage) main {
   color: var(--muted);
 }
 
-.toc a:hover {
+.toc a:hover,
+.toc a.is-active {
   color: var(--accent);
+}
+
+.toc a.is-active {
+  font-weight: 600;
+}
+
+.read-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2.5px;
+  width: 0%;
+  background: var(--accent);
+  z-index: 60;
+  pointer-events: none;
+  transition: width 60ms linear;
+}
+
+@media (min-width: 1180px) {
+  .toc {
+    position: fixed;
+    left: calc(50% + 368px);
+    top: 88px;
+    width: 220px;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    margin: 0;
+    background: var(--glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    scrollbar-width: thin;
+  }
 }
 
 .code-wrap {

@@ -96,6 +96,8 @@ function dateAttrs(d) {
     }
     empty.hidden = true;
 
+    var bjNow = new Date(Date.now() + 8 * 3600 * 1000);
+    var todayStr = bjNow.getUTCFullYear() + "-" + pad(bjNow.getUTCMonth() + 1) + "-" + pad(bjNow.getUTCDate());
     var html = "";
     for (var i = 0; i < items.length; i++) {
       var it = items[i];
@@ -104,11 +106,13 @@ function dateAttrs(d) {
       var rClass = it.region === "cn" ? "cn" : (it.region === "en" ? "en" : "");
       var url = safeUrl(it.url);
       var rel = (url === "#") ? "" : ' target="_blank" rel="noopener"';
+      var isNew = it.date === todayStr;
       html +=
         '<article class="dcard">' +
           '<div class="dcard-top">' +
             '<span class="tag ' + catClass + '">' + esc(it.source) + '</span>' +
             (rLabel ? '<span class="region-badge ' + rClass + '">' + rLabel + '</span>' : '') +
+            (isNew ? '<span class="badge-new">新</span>' : '') +
           '</div>' +
           '<h3><a href="' + esc(url) + '"' + rel + '>' + esc(it.title) + '</a></h3>' +
           (it.summary ? '<p class="sum">' + esc(it.summary) + '</p>' : '') +
@@ -170,7 +174,59 @@ function dateAttrs(d) {
   bindSeg("catSeg", "cat");
   bindSeg("regionSeg", "region");
   var q = $("q");
-  if (q) q.addEventListener("input", function () { state.q = q.value; render(); });
+  var qClear = $("qClear");
+  function syncClear() {
+    if (qClear && q) qClear.hidden = !q.value;
+  }
+  if (q) {
+    q.addEventListener("input", function () {
+      state.q = q.value;
+      syncClear();
+      render();
+    });
+  }
+  if (qClear && q) {
+    qClear.addEventListener("click", function () {
+      q.value = "";
+      state.q = "";
+      syncClear();
+      q.focus();
+      render();
+    });
+  }
+  document.addEventListener("keydown", function (e) {
+    if (!q) return;
+    if (e.key === "/" && document.activeElement !== q && !/INPUT|TEXTAREA/.test((document.activeElement || {}).tagName || "")) {
+      e.preventDefault();
+      q.focus();
+    } else if (e.key === "Escape" && document.activeElement === q) {
+      if (q.value) {
+        q.value = "";
+        state.q = "";
+        syncClear();
+        render();
+      } else {
+        q.blur();
+      }
+    }
+  });
+  var resetBtn = $("resetFilters");
+  if (resetBtn) {
+    resetBtn.addEventListener("click", function () {
+      state.cat = "全部";
+      state.region = "全部";
+      state.q = "";
+      if (q) q.value = "";
+      syncClear();
+      ["#catSeg", "#regionSeg"].forEach(function (sel) {
+        var btns = document.querySelectorAll(sel + " button");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].classList.toggle("active", i === 0);
+        }
+      });
+      render();
+    });
+  }
 
   var y = $("year"); if (y) y.textContent = new Date().getFullYear();
 

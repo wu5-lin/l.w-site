@@ -41,13 +41,17 @@ const csp = [
         </div>
       </div>
       <div class="search">
-        <input type="text" id="q" placeholder="搜索标题 / 摘要 / 来源" aria-label="搜索简报" />
+        <input type="text" id="q" placeholder="搜索标题 / 摘要 / 来源（按 / 聚焦）" aria-label="搜索简报" />
+        <button type="button" id="qClear" class="search-clear" aria-label="清空搜索" hidden>×</button>
       </div>
     </div>
     <p class="meta" id="meta">加载中…</p>
     <div class="news-grid" id="grid"></div>
     <div class="empty" id="empty" hidden>
-      暂无数据。<br />简报由 GitHub Actions 每 2 小时自动写入 digest.json，构建网站时带上。
+      暂无匹配内容。<br />简报由 GitHub Actions 每 2 小时自动写入 digest.json，构建网站时带上。
+      <div class="empty-actions">
+        <button type="button" id="resetFilters" class="reset-btn">重设筛选</button>
+      </div>
     </div>
   </div>
   <script is:inline src="/tools/digest/app.js"></script>

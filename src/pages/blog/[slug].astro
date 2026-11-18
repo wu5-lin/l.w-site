@@ -23,6 +23,7 @@ const minutes = readingMinutes(post.body ?? post.data.summary);
 ---
 
 <Base title={post.data.title} description={post.data.summary} ogType="article">
+  <div class="read-progress" id="read-progress" aria-hidden="true"></div>
   <article class="article">
     <a class="back" href="/">← 首页</a>
     <h1>{post.data.title}</h1>
@@ -172,6 +173,52 @@ const minutes = readingMinutes(post.body ?? post.data.summary);
         dialog.addEventListener('close', function () {
           if (lastFocus && lastFocus.focus) lastFocus.focus();
         });
+      }
+
+      var bar = document.getElementById('read-progress');
+      var article = document.querySelector('.article');
+      if (bar && article) {
+        var raf = 0;
+        function updateProgress() {
+          raf = 0;
+          var top = article.offsetTop;
+          var total = article.offsetHeight - window.innerHeight;
+          var pct = total > 0 ? Math.min(100, Math.max(0, ((window.scrollY - top) / total) * 100)) : 0;
+          bar.style.width = pct.toFixed(1) + '%';
+        }
+        window.addEventListener('scroll', function () {
+          if (!raf) raf = requestAnimationFrame(updateProgress);
+        }, { passive: true });
+        updateProgress();
+      }
+
+      var tocEl = document.querySelector('.toc');
+      if (tocEl) {
+        if (window.matchMedia('(min-width: 1180px)').matches) tocEl.open = true;
+        var links = Array.prototype.slice.call(tocEl.querySelectorAll('a[href^="#"]'));
+        var targets = links.map(function (a) {
+          return document.getElementById(decodeURIComponent(a.getAttribute('href').slice(1)));
+        });
+        if (links.length && 'IntersectionObserver' in window) {
+          var activeIdx = 0;
+          function setActive(idx) {
+            links.forEach(function (a, i) {
+              a.classList.toggle('is-active', i === idx);
+            });
+          }
+          setActive(0);
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+              if (!entry.isIntersecting) return;
+              var idx = targets.indexOf(entry.target);
+              if (idx !== -1) {
+                activeIdx = idx;
+                setActive(activeIdx);
+              }
+            });
+          }, { rootMargin: '-80px 0px -70% 0px', threshold: 0 });
+          targets.forEach(function (el) { if (el) io.observe(el); });
+        }
       }
     })();
   </script>

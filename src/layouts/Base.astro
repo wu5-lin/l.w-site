@@ -66,6 +66,7 @@ const year = new Date().getFullYear();
       <div class="nav-bar glass">
         <a class="brand" href="/" aria-current={path === '/' ? 'page' : undefined}>lw</a>
         <a class="nav-link" href="/now/" aria-current={path.startsWith('/now') ? 'page' : undefined}>现在</a>
+        <a class="nav-link" href="/tags/" aria-current={path.startsWith('/tags') ? 'page' : undefined}>标签</a>
         <a class="nav-link nav-tools" href="/tools/" aria-current={path.startsWith('/tools') ? 'page' : undefined}>工具</a>
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="切换深浅色主题" title="切换深浅色主题">
           <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>

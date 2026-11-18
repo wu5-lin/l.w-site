@@ -76,17 +76,39 @@
   border-color: var(--accent);
 }
 
-.search { flex: 1; min-width: 180px; }
+.search { position: relative; flex: 1; min-width: 180px; }
 
 .search input {
   width: 100%;
   font: inherit;
   font-size: 14px;
-  padding: 8px 10px;
+  padding: 8px 32px 8px 10px;
   border-radius: 10px;
   border: 1px solid var(--line);
   background: var(--bg);
   color: var(--ink);
+}
+
+.search-clear {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--faint);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.search-clear:hover {
+  color: var(--ink);
+  background: var(--code);
 }
 
 .digest .meta {
@@ -115,6 +137,23 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.dcard:hover {
+  border-color: var(--faint);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.badge-new {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--pill);
+  color: var(--accent);
 }
 
 .dcard-top { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
@@ -171,4 +210,24 @@
   padding: 48px 16px;
   border: 1px dashed var(--line);
   border-radius: 14px;
+}
+
+.empty-actions {
+  margin-top: 14px;
+}
+
+.reset-btn {
+  font: inherit;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
