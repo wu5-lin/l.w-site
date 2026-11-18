@@ -49,7 +49,7 @@
   table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 10px 0 6px; }
   th { background: var(--blue-bg); color: var(--blue-deep); text-align: left; font-weight: 600; }
   th, td { padding: 9px 12px; border: 1px solid var(--line); vertical-align: top; }
-  tr:nth-child(even) td { background: #FBFAF8; }
+  tr:nth-child(even) td { background: var(--soft); }
 
   .callout {
     border-left: 4px solid var(--amber-accent); background: var(--amber-bg);
@@ -60,11 +60,11 @@
   .callout b { font-weight: 700; }
 
   .timeline { list-style: none; margin: 12px 0; }
-  .timeline li { position: relative; padding: 0 0 18px 26px; border-left: 2px solid #D8E4F0; margin-left: 8px; }
+  .timeline li { position: relative; padding: 0 0 18px 26px; border-left: 2px solid var(--line); margin-left: 8px; }
   .timeline li:last-child { border-left-color: transparent; padding-bottom: 2px; }
   .timeline li::before {
     content: ""; position: absolute; left: -7px; top: 5px; width: 12px; height: 12px;
-    border-radius: 50%; background: var(--blue); border: 2px solid #fff; box-shadow: 0 0 0 1px var(--blue);
+    border-radius: 50%; background: var(--blue); border: 2px solid var(--card); box-shadow: 0 0 0 1px var(--blue);
   }
   .timeline li.key::before { background: var(--amber-accent); box-shadow: 0 0 0 1px var(--amber-accent); }
   .timeline .t-date { font-size: 12.5px; color: var(--muted); font-weight: 600; }
@@ -85,7 +85,7 @@
 
   .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   @media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } }
-  .mini { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; background: #FCFBF9; }
+  .mini { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; background: var(--soft); }
   .mini h4 { font-size: 14px; margin-bottom: 6px; }
   .mini p, .mini li { font-size: 13.5px; color: var(--muted); }
   .mini ul { padding-left: 18px; }

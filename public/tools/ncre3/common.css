@@ -1,79 +1,166 @@
+/* Shared theme layer for /tools/ncre3/.
+   Page <style> blocks define the light palette on :root; the dark palette
+   below uses higher specificity so it always wins regardless of load order. */
+
+:root {
+  --soft: #FCFBF9;
+  /* Solid fills that carry white text (buttons, badges, countdown cards). */
+  --fill-blue: #185FA5;
+  --fill-blue-2: #0C447C;
+  --fill-teal: #0F6E56;
+  --fill-teal-2: #0B4A38;
+  --fill-green: #3B6D11;
+  --fill-amber: #854F0B;
+  --fill-amber-2: #B36A0E;
+}
+
+/* ---------- dark palette ---------- */
 :root[data-theme="dark"] {
   color-scheme: dark;
   --page: #121316;
-  --card: #1a1c21;
+  --card: #1b1d22;
+  --soft: #23262d;
   --ink: #eceef2;
-  --muted: #a6acb8;
-  --line: #2b2e37;
-  --blue: #4c9aff;
-  --blue-bg: rgba(76, 154, 255, 0.14);
-  --blue-deep: #85b8ff;
-  --teal: #5eead4;
-  --teal-bg: rgba(45, 212, 191, 0.13);
-  --green: #7ee787;
-  --green-bg: rgba(63, 185, 80, 0.14);
-  --amber: #e3b341;
-  --amber-bg: rgba(210, 153, 34, 0.14);
-  --red: #ff7b72;
-  --red-bg: rgba(248, 81, 73, 0.14);
+  --muted: #b4bac6;
+  --line: #343843;
+  --blue: #6aa8ff;
+  --blue-bg: rgba(88, 150, 255, 0.16);
+  --blue-deep: #9cc4ff;
+  --teal: #5fd4bf;
+  --teal-bg: rgba(45, 212, 191, 0.14);
+  --green: #8ad48f;
+  --green-bg: rgba(63, 185, 80, 0.16);
+  --amber: #e8b858;
+  --amber-bg: rgba(210, 153, 34, 0.16);
+  --amber-accent: #e8b858;
+  --red: #ff8f87;
+  --red-bg: rgba(248, 81, 73, 0.16);
+  --fill-blue: #1f6feb;
+  --fill-blue-2: #1a4f9c;
+  --fill-teal: #0f766e;
+  --fill-teal-2: #0b4f47;
+  --fill-green: #2f7d32;
+  --fill-amber: #9a6700;
+  --fill-amber-2: #7a5200;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
     --page: #121316;
-    --card: #1a1c21;
+    --card: #1b1d22;
+    --soft: #23262d;
     --ink: #eceef2;
-    --muted: #a6acb8;
-    --line: #2b2e37;
-    --blue: #4c9aff;
-    --blue-bg: rgba(76, 154, 255, 0.14);
-    --blue-deep: #85b8ff;
-    --teal: #5eead4;
-    --teal-bg: rgba(45, 212, 191, 0.13);
-    --green: #7ee787;
-    --green-bg: rgba(63, 185, 80, 0.14);
-    --amber: #e3b341;
-    --amber-bg: rgba(210, 153, 34, 0.14);
-    --red: #ff7b72;
-    --red-bg: rgba(248, 81, 73, 0.14);
+    --muted: #b4bac6;
+    --line: #343843;
+    --blue: #6aa8ff;
+    --blue-bg: rgba(88, 150, 255, 0.16);
+    --blue-deep: #9cc4ff;
+    --teal: #5fd4bf;
+    --teal-bg: rgba(45, 212, 191, 0.14);
+    --green: #8ad48f;
+    --green-bg: rgba(63, 185, 80, 0.16);
+    --amber: #e8b858;
+    --amber-bg: rgba(210, 153, 34, 0.16);
+    --amber-accent: #e8b858;
+    --red: #ff8f87;
+    --red-bg: rgba(248, 81, 73, 0.16);
+    --fill-blue: #1f6feb;
+    --fill-blue-2: #1a4f9c;
+    --fill-teal: #0f766e;
+    --fill-teal-2: #0b4f47;
+    --fill-green: #2f7d32;
+    --fill-amber: #9a6700;
+    --fill-amber-2: #7a5200;
   }
 }
 
-:root[data-theme="dark"] .ch-btn,
-:root[data-theme="dark"] .opt,
-:root[data-theme="dark"] .blank-q,
-:root[data-theme="dark"] .blank-input,
-:root[data-theme="dark"] .ref-item,
-:root[data-theme="dark"] .ref-sum .card,
-:root[data-theme="dark"] .search-panel,
-:root[data-theme="dark"] .search-item,
-:root[data-theme="dark"] .search-bar input,
-:root[data-theme="dark"] .mini,
-:root[data-theme="dark"] .callout,
-:root[data-theme="dark"] code {
-  background: var(--page);
-  color: var(--ink);
+/* ---------- white-text fills: never use the light text accents as backgrounds ---------- */
+.tab-btn.on,
+.btn:not(.ghost),
+.submit-btn,
+.next-btn,
+.step .n,
+h2 .no,
+.score-bar .s1 {
+  background-color: var(--fill-blue) !important;
+  border-color: var(--fill-blue) !important;
+  color: #fff !important;
 }
+.daily button,
+.fbtn.on,
+.score-bar .s2 {
+  background-color: var(--fill-teal) !important;
+  border-color: var(--fill-teal) !important;
+  color: #fff !important;
+}
+.mk-btn.yes,
+.score-bar .s3 {
+  background-color: var(--fill-green) !important;
+  color: #fff !important;
+}
+.review button:not(:disabled) {
+  background-color: var(--fill-amber) !important;
+  color: #fff !important;
+}
+.review button:disabled {
+  background: #C9C6BB !important;
+  color: #4a4a48 !important;
+}
+.cd { background: linear-gradient(135deg, var(--fill-blue-2), var(--fill-blue)) !important; color: #fff !important; }
+.cd.exam { background: linear-gradient(135deg, var(--fill-teal-2), var(--fill-teal)) !important; }
+.cd.open { background: linear-gradient(135deg, var(--fill-amber-2), var(--fill-amber)) !important; }
+.cd.done { background: linear-gradient(135deg, #4A4A48, #6E6D68) !important; }
+/* 通关技巧 numbers are teal in the original design */
+.tips-page h2 .no { background-color: var(--fill-teal) !important; border-color: var(--fill-teal) !important; }
 
+:root[data-theme="dark"] .review button:disabled {
+  background: #2c2f36 !important;
+  color: #8b919c !important;
+}
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .ch-btn,
-  :root:not([data-theme="light"]) .opt,
-  :root:not([data-theme="light"]) .blank-q,
-  :root:not([data-theme="light"]) .blank-input,
-  :root:not([data-theme="light"]) .ref-item,
-  :root:not([data-theme="light"]) .ref-sum .card,
-  :root:not([data-theme="light"]) .search-panel,
-  :root:not([data-theme="light"]) .search-item,
-  :root:not([data-theme="light"]) .search-bar input,
-  :root:not([data-theme="light"]) .mini,
-  :root:not([data-theme="light"]) .callout,
-  :root:not([data-theme="light"]) code {
-    background: var(--page);
-    color: var(--ink);
+  :root:not([data-theme="light"]) .review button:disabled {
+    background: #2c2f36 !important;
+    color: #8b919c !important;
   }
 }
 
+/* Form controls follow the theme instead of the UA default white. */
+:root[data-theme="dark"] input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+:root[data-theme="dark"] textarea,
+:root[data-theme="dark"] select {
+  background-color: var(--card);
+  color: var(--ink);
+  border-color: var(--line);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+  :root:not([data-theme="light"]) textarea,
+  :root:not([data-theme="light"]) select {
+    background-color: var(--card);
+    color: var(--ink);
+    border-color: var(--line);
+  }
+}
+/* keep right/wrong feedback on inputs visible */
+:root[data-theme="dark"] input.right, :root[data-theme="dark"] .blank-input.right { background-color: var(--green-bg); border-color: var(--green); }
+:root[data-theme="dark"] input.wrong, :root[data-theme="dark"] .blank-input.wrong { background-color: var(--red-bg); border-color: var(--red); }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) input.right, :root:not([data-theme="light"]) .blank-input.right { background-color: var(--green-bg); border-color: var(--green); }
+  :root:not([data-theme="light"]) input.wrong, :root:not([data-theme="light"]) .blank-input.wrong { background-color: var(--red-bg); border-color: var(--red); }
+}
+
+/* Question images from the source bank are drawn on white; keep them legible. */
+:root[data-theme="dark"] .refimg,
+:root[data-theme="dark"] .q-text img,
+:root[data-theme="dark"] .ref-q img { background: #fff; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .refimg,
+  :root:not([data-theme="light"]) .q-text img,
+  :root:not([data-theme="light"]) .ref-q img { background: #fff; }
+}
+
+/* ---------- shared top bar ---------- */
 .ncre-bar {
   display: flex;
   align-items: center;
