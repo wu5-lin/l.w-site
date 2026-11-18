@@ -1,0 +1,113 @@
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #121316;
+  --card: #1a1c21;
+  --ink: #eceef2;
+  --muted: #a6acb8;
+  --line: #2b2e37;
+  --blue: #4c9aff;
+  --blue-bg: rgba(76, 154, 255, 0.14);
+  --blue-deep: #85b8ff;
+  --teal: #5eead4;
+  --teal-bg: rgba(45, 212, 191, 0.13);
+  --green: #7ee787;
+  --green-bg: rgba(63, 185, 80, 0.14);
+  --amber: #e3b341;
+  --amber-bg: rgba(210, 153, 34, 0.14);
+  --red: #ff7b72;
+  --red-bg: rgba(248, 81, 73, 0.14);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --page: #121316;
+    --card: #1a1c21;
+    --ink: #eceef2;
+    --muted: #a6acb8;
+    --line: #2b2e37;
+    --blue: #4c9aff;
+    --blue-bg: rgba(76, 154, 255, 0.14);
+    --blue-deep: #85b8ff;
+    --teal: #5eead4;
+    --teal-bg: rgba(45, 212, 191, 0.13);
+    --green: #7ee787;
+    --green-bg: rgba(63, 185, 80, 0.14);
+    --amber: #e3b341;
+    --amber-bg: rgba(210, 153, 34, 0.14);
+    --red: #ff7b72;
+    --red-bg: rgba(248, 81, 73, 0.14);
+  }
+}
+
+:root[data-theme="dark"] .ch-btn,
+:root[data-theme="dark"] .opt,
+:root[data-theme="dark"] .blank-q,
+:root[data-theme="dark"] .blank-input,
+:root[data-theme="dark"] .ref-item,
+:root[data-theme="dark"] .ref-sum .card,
+:root[data-theme="dark"] .search-panel,
+:root[data-theme="dark"] .search-item,
+:root[data-theme="dark"] .search-bar input,
+:root[data-theme="dark"] .mini,
+:root[data-theme="dark"] .callout,
+:root[data-theme="dark"] code {
+  background: var(--page);
+  color: var(--ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .ch-btn,
+  :root:not([data-theme="light"]) .opt,
+  :root:not([data-theme="light"]) .blank-q,
+  :root:not([data-theme="light"]) .blank-input,
+  :root:not([data-theme="light"]) .ref-item,
+  :root:not([data-theme="light"]) .ref-sum .card,
+  :root:not([data-theme="light"]) .search-panel,
+  :root:not([data-theme="light"]) .search-item,
+  :root:not([data-theme="light"]) .search-bar input,
+  :root:not([data-theme="light"]) .mini,
+  :root:not([data-theme="light"]) .callout,
+  :root:not([data-theme="light"]) code {
+    background: var(--page);
+    color: var(--ink);
+  }
+}
+
+.ncre-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+  font-size: 13px;
+}
+
+.ncre-bar-links {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.ncre-bar a,
+.ncre-theme-btn {
+  color: var(--blue-deep);
+  text-decoration: none;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 5px 11px;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.ncre-bar a:hover,
+.ncre-theme-btn:hover {
+  border-color: var(--blue);
+  background: var(--blue-bg);
+}

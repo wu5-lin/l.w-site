@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>IP 子网划分 & 路由聚合练习器 · 三级网络技术</title>
+<link rel="stylesheet" href="common.css" />
+<script src="common.js"></script>
+<style>
+  :root {
+    --blue: #185FA5; --blue-bg: #E6F1FB; --blue-deep: #0C447C;
+    --teal: #0F6E56; --teal-bg: #E1F5EE;
+    --green: #3B6D11; --green-bg: #EAF3DE;
+    --amber: #854F0B; --amber-bg: #FAEEDA;
+    --red: #A32D2D; --red-bg: #FCEBEB;
+    --ink: #26262A; --muted: #5F5E5A; --line: #E4E2DC;
+    --card: #FFFFFF; --page: #F7F6F2;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif; background: var(--page); color: var(--ink); line-height: 1.7; font-size: 15px; }
+  .wrap { max-width: 820px; margin: 0 auto; padding: 28px 16px 70px; }
+  header { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px 26px 20px; margin-bottom: 16px; }
+  header h1 { font-size: 21px; font-weight: 700; }
+  header .sub { color: var(--muted); font-size: 13px; margin-top: 4px; }
+  .stats { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+  .stat { flex: 1; min-width: 100px; background: var(--page); border: 1px solid var(--line); border-radius: 10px; padding: 8px 10px; text-align: center; }
+  .stat b { display: block; font-size: 18px; color: var(--blue-deep); }
+  .stat span { font-size: 12px; color: var(--muted); }
+  .tabs { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+  .tab-btn { flex: 1; min-width: 130px; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 11px 10px; font-size: 14px; font-weight: 700; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .tab-btn.on { background: var(--blue); border-color: var(--blue); color: #fff; }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px 24px; margin-bottom: 16px; }
+  .q-box { background: var(--page); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; margin-bottom: 16px; font-size: 15px; font-weight: 600; }
+  .q-box code { font-family: ui-monospace, Consolas, monospace; background: var(--blue-bg); color: var(--blue-deep); padding: 1px 6px; border-radius: 5px; }
+  .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 600px) { .form-grid { grid-template-columns: 1fr; } }
+  .field label { display: block; font-size: 12.5px; color: var(--muted); margin-bottom: 4px; font-weight: 600; }
+  .field input, .field textarea { width: 100%; border: 1.5px solid var(--line); border-radius: 9px; padding: 9px 12px; font-size: 14.5px; font-family: ui-monospace, Consolas, monospace; background: var(--card); color: var(--ink); outline: none; }
+  .field input:focus, .field textarea:focus { border-color: var(--blue); }
+  .field input.right { border-color: var(--green); background: var(--green-bg); }
+  .field input.wrong { border-color: var(--red); background: var(--red-bg); }
+  .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px; }
+  .btn { background: var(--blue); color: #fff; border: none; border-radius: 9px; padding: 9px 20px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit; }
+  .btn.ghost { background: none; border: 1px solid var(--line); color: var(--muted); }
+  .btn.ghost:hover { border-color: var(--blue); color: var(--blue-deep); }
+  .exp { margin-top: 16px; padding: 14px 16px; border-radius: 12px; background: var(--blue-bg); color: var(--blue-deep); font-size: 13.5px; white-space: pre-wrap; line-height: 1.75; font-family: ui-monospace, Consolas, "Microsoft YaHei", monospace; display: none; }
+  .exp.show { display: block; }
+  .hide { display: none; }
+  .calc-res { margin-top: 14px; padding: 14px 16px; border-radius: 12px; background: var(--page); border: 1px solid var(--line); font-size: 13.5px; font-family: ui-monospace, Consolas, "Microsoft YaHei", monospace; white-space: pre-wrap; line-height: 1.75; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>IP 子网划分 &amp; 路由聚合练习器</h1>
+    <div class="sub">针对三级网络技术综合题与地址规划应用题（占分约 30–40 分），无限随机出题 + 二进制分步解析。</div>
+    <div class="stats">
+      <div class="stat"><b id="st-total">0</b><span>本机已练</span></div>
+      <div class="stat"><b id="st-right">0</b><span>全对题数</span></div>
+      <div class="stat"><b id="st-acc">-</b><span>正确率</span></div>
+    </div>
+  </header>
+
+  <div class="tabs">
+    <button type="button" class="tab-btn on" data-mode="subnet">① 子网划分练习</button>
+    <button type="button" class="tab-btn" data-mode="agg">② 路由聚合练习</button>
+    <button type="button" class="tab-btn" data-mode="calc">③ 自由计算器</button>
+  </div>
+
+  <!-- 子网划分 -->
+  <section class="panel" id="pane-subnet">
+    <div class="q-box" id="sub-q">加载中…</div>
+    <div class="form-grid">
+      <div class="field">
+        <label for="in-mask">新子网掩码（点分十进制）</label>
+        <input type="text" id="in-mask" placeholder="例如 255.255.255.192" />
+      </div>
+      <div class="field">
+        <label for="in-prefix">新前缀长度（数字）</label>
+        <input type="text" id="in-prefix" placeholder="例如 26" />
+      </div>
+      <div class="field">
+        <label for="in-hosts">每子网可用主机数</label>
+        <input type="text" id="in-hosts" placeholder="例如 62" />
+      </div>
+      <div class="field">
+        <label for="in-net1">第 1 个子网网络地址</label>
+        <input type="text" id="in-net1" placeholder="例如 192.168.1.0" />
+      </div>
+      <div class="field">
+        <label for="in-bcast1">第 1 个子网广播地址</label>
+        <input type="text" id="in-bcast1" placeholder="例如 192.168.1.63" />
+      </div>
+    </div>
+    <div class="actions">
+      <button type="button" class="btn" id="sub-check">核对答案</button>
+      <button type="button" class="btn ghost" id="sub-next">换一题</button>
+    </div>
+    <div class="exp" id="sub-exp"></div>
+  </section>
+
+  <!-- 路由聚合 -->
+  <section class="panel hide" id="pane-agg">
+    <div class="q-box" id="agg-q">加载中…</div>
+    <div class="form-grid">
+      <div class="field">
+        <label for="in-agg-cidr">聚合后网段（CIDR 格式）</label>
+        <input type="text" id="in-agg-cidr" placeholder="例如 172.16.12.0/22" />
+      </div>
+      <div class="field">
+        <label for="in-agg-mask">聚合后子网掩码</label>
+        <input type="text" id="in-agg-mask" placeholder="例如 255.255.252.0" />
+      </div>
+    </div>
+    <div class="actions">
+      <button type="button" class="btn" id="agg-check">核对答案</button>
+      <button type="button" class="btn ghost" id="agg-next">换一题</button>
+    </div>
+    <div class="exp" id="agg-exp"></div>
+  </section>
+
+  <!-- 自由计算器 -->
+  <section class="panel hide" id="pane-calc">
+    <div class="field">
+      <label for="calc-input">输入单个 IP/前缀（如 <code>192.168.10.75/26</code>），或多行网段求路由聚合（每行一个）</label>
+      <textarea id="calc-input" rows="4" placeholder="172.16.12.0/24&#10;172.16.13.0/24&#10;172.16.14.0/24&#10;172.16.15.0/24"></textarea>
+    </div>
+    <div class="actions">
+      <button type="button" class="btn" id="calc-run">立即计算</button>
+    </div>
+    <div class="calc-res" id="calc-res">输入网段后点击「立即计算」。</div>
+  </section>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var $ = function (id) { return document.getElementById(id); };
+  var KEY = "ncre3_subnet_stats_v1";
+  var stats = { total: 0, right: 0 };
+  try {
+    var saved = JSON.parse(localStorage.getItem(KEY) || "null");
+    if (saved && typeof saved.total === "number") stats = saved;
+  } catch (e) {}
+
+  function saveStats() {
+    try { localStorage.setItem(KEY, JSON.stringify(stats)); } catch (e) {}
+    $("st-total").textContent = stats.total;
+    $("st-right").textContent = stats.right;
+    $("st-acc").textContent = stats.total ? Math.round((stats.right / stats.total) * 100) + "%" : "-";
+  }
+
+  function ipToInt(ip) {
+    var p = ip.trim().split(".");
+    if (p.length !== 4) return null;
+    var n = 0;
+    for (var i = 0; i < 4; i++) {
+      var v = Number(p[i]);
+      if (!Number.isInteger(v) || v < 0 || v > 255) return null;
+      n = (n * 256) + v;
+    }
+    return n >>> 0;
+  }
+
+  function intToIp(n) {
+    return [(n >>> 24) & 255, (n >>> 16) & 255, (n >>> 8) & 255, n & 255].join(".");
+  }
+
+  function prefixToMaskInt(p) {
+    return p === 0 ? 0 : ((0xFFFFFFFF << (32 - p)) >>> 0);
+  }
+
+  function toBin8(n) {
+    return n.toString(2).padStart(8, "0");
+  }
+
+  function ipToBin(n) {
+    return [
+      toBin8((n >>> 24) & 255),
+      toBin8((n >>> 16) & 255),
+      toBin8((n >>> 8) & 255),
+      toBin8(n & 255)
+    ].join(".");
+  }
+
+  function randInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  // ---- 子网划分 ----
+  var curSub = null;
+  function genSub() {
+    var bases = [
+      { prefix: 24, ip: [192, 168, randInt(1, 200), 0] },
+      { prefix: 16, ip: [172, randInt(16, 31), 0, 0] },
+      { prefix: 22, ip: [172, randInt(16, 31), randInt(0, 60) * 4, 0] },
+      { prefix: 25, ip: [202, 113, randInt(10, 99), randInt(0, 1) * 128] }
+    ];
+    var b = bases[randInt(0, bases.length - 1)];
+    var maxBorrow = Math.min(6, 30 - b.prefix);
+    var borrow = randInt(1, Math.max(1, maxBorrow));
+    var newPrefix = b.prefix + borrow;
+    var byHosts = Math.random() < 0.5 && newPrefix >= 24;
+    var reqSubnets = Math.pow(2, borrow - 1) + randInt(0, Math.pow(2, borrow - 1) - 1);
+    if (reqSubnets < 2) reqSubnets = 2;
+    var hostBits = 32 - newPrefix;
+    var usableHosts = Math.pow(2, hostBits) - 2;
+    var reqHosts = Math.max(2, Math.floor(usableHosts * (0.55 + Math.random() * 0.35)));
+
+    var baseInt = ipToInt(b.ip.join(".")) >>> 0;
+    var maskInt = prefixToMaskInt(newPrefix);
+    var blockSize = Math.pow(2, hostBits);
+    var net1 = baseInt;
+    var bcast1 = (baseInt + blockSize - 1) >>> 0;
+
+    curSub = {
+      baseIp: b.ip.join("."),
+      basePrefix: b.prefix,
+      newPrefix: newPrefix,
+      maskStr: intToIp(maskInt),
+      hosts: usableHosts,
+      net1: intToIp(net1),
+      bcast1: intToIp(bcast1),
+      borrow: borrow,
+      hostBits: hostBits,
+      byHosts: byHosts,
+      reqSubnets: reqSubnets,
+      reqHosts: reqHosts,
+      scored: false
+    };
+
+    var prompt = byHosts
+      ? "现有一段网络地址 <code>" + curSub.baseIp + "/" + curSub.basePrefix + "</code>，要求划分为若干等长子网，且每个子网至少容纳 <code>" + reqHosts + "</code> 台可用主机（尽可能节省地址）："
+      : "现有一段网络地址 <code>" + curSub.baseIp + "/" + curSub.basePrefix + "</code>，需要均匀划分为至少 <code>" + reqSubnets + "</code> 个子网（使用最少借位）：";
+
+    $("sub-q").innerHTML = prompt;
+    ["in-mask", "in-prefix", "in-hosts", "in-net1", "in-bcast1"].forEach(function (id) {
+      $(id).value = "";
+      $(id).className = "";
+    });
+    $("sub-exp").className = "exp";
+  }
+
+  $("sub-check").addEventListener("click", function () {
+    if (!curSub) return;
+    var checks = [
+      { id: "in-mask", ans: curSub.maskStr },
+      { id: "in-prefix", ans: String(curSub.newPrefix) },
+      { id: "in-hosts", ans: String(curSub.hosts) },
+      { id: "in-net1", ans: curSub.net1 },
+      { id: "in-bcast1", ans: curSub.bcast1 }
+    ];
+    var allOk = true;
+    checks.forEach(function (c) {
+      var val = $(c.id).value.trim().replace(/^\//, "");
+      var ok = val === c.ans;
+      $(c.id).className = ok ? "right" : "wrong";
+      if (!ok) allOk = false;
+    });
+    if (!curSub.scored) {
+      curSub.scored = true;
+      stats.total += 1;
+      if (allOk) stats.right += 1;
+      saveStats();
+    }
+    var stepText = curSub.byHosts
+      ? "1. 主机位需求：2^h - 2 >= " + curSub.reqHosts + " → h = " + curSub.hostBits + " 位\n2. 新前缀长度：32 - " + curSub.hostBits + " = /" + curSub.newPrefix + "（借位 " + curSub.borrow + " 位）"
+      : "1. 子网借位需求：2^s >= " + curSub.reqSubnets + " → s = " + curSub.borrow + " 位\n2. 新前缀长度：" + curSub.basePrefix + " + " + curSub.borrow + " = /" + curSub.newPrefix + "（主机位 " + curSub.hostBits + " 位）";
+    $("sub-exp").textContent =
+      stepText + "\n" +
+      "3. 子网掩码：" + curSub.maskStr + "\n   二进制：" + ipToBin(prefixToMaskInt(curSub.newPrefix)) + "\n" +
+      "4. 每子网可用主机数：2^" + curSub.hostBits + " - 2 = " + curSub.hosts + "\n" +
+      "5. 第 1 个子网：网络地址 " + curSub.net1 + "，广播地址 " + curSub.bcast1 +
+      "（可用 IP：" + intToIp(ipToInt(curSub.net1) + 1) + " ~ " + intToIp(ipToInt(curSub.bcast1) - 1) + "）";
+    $("sub-exp").className = "exp show";
+  });
+  $("sub-next").addEventListener("click", genSub);
+
+  // ---- 路由聚合 ----
+  var curAgg = null;
+  function genAgg() {
+    var aggPrefix = randInt(19, 23);
+    var subPrefix = randInt(aggPrefix + 1, Math.min(25, aggPrefix + 3));
+    var count = Math.pow(2, subPrefix - aggPrefix);
+    var netBase = ((172 << 24) | (randInt(16, 31) << 16) | ((randInt(0, 15) * 16) << 8)) >>> 0;
+    netBase = (netBase & prefixToMaskInt(aggPrefix)) >>> 0;
+    var step = Math.pow(2, 32 - subPrefix);
+    var nets = [];
+    for (var i = 0; i < count; i++) {
+      nets.push(intToIp((netBase + i * step) >>> 0) + "/" + subPrefix);
+    }
+    var pickCount = Math.min(nets.length, randInt(2, Math.min(4, nets.length)));
+    var picked = [nets[0], nets[nets.length - 1]];
+    while (picked.length < pickCount) {
+      var candidate = nets[randInt(1, nets.length - 2)];
+      if (picked.indexOf(candidate) === -1) picked.push(candidate);
+    }
+    picked.sort();
+
+    curAgg = {
+      nets: picked,
+      cidr: intToIp(netBase) + "/" + aggPrefix,
+      mask: intToIp(prefixToMaskInt(aggPrefix)),
+      aggPrefix: aggPrefix,
+      scored: false
+    };
+
+    $("agg-q").innerHTML = "请将以下网段进行最大程度路由聚合（CIDR 超网合并）：<br><code>" + picked.join("</code>、<code>") + "</code>";
+    $("in-agg-cidr").value = ""; $("in-agg-cidr").className = "";
+    $("in-agg-mask").value = ""; $("in-agg-mask").className = "";
+    $("agg-exp").className = "exp";
+  }
+
+  $("agg-check").addEventListener("click", function () {
+    if (!curAgg) return;
+    var ok1 = $("in-agg-cidr").value.trim() === curAgg.cidr;
+    var ok2 = $("in-agg-mask").value.trim() === curAgg.mask;
+    $("in-agg-cidr").className = ok1 ? "right" : "wrong";
+    $("in-agg-mask").className = ok2 ? "right" : "wrong";
+    if (!curAgg.scored) {
+      curAgg.scored = true;
+      stats.total += 1;
+      if (ok1 && ok2) stats.right += 1;
+      saveStats();
+    }
+    var lines = curAgg.nets.map(function (s) {
+      var ip = s.split("/")[0];
+      return s.padEnd(20, " ") + " → " + ipToBin(ipToInt(ip));
+    });
+    $("agg-exp").textContent =
+      "各网段二进制对齐：\n" + lines.join("\n") +
+      "\n\n从左向右连续相同前缀共 " + curAgg.aggPrefix + " 位：\n" +
+      "聚合网段：" + curAgg.cidr + "\n" +
+      "子网掩码：" + curAgg.mask;
+    $("agg-exp").className = "exp show";
+  });
+  $("agg-next").addEventListener("click", genAgg);
+
+  // ---- 自由计算器 ----
+  $("calc-run").addEventListener("click", function () {
+    var lines = $("calc-input").value.split(/[\r\n,;]+/).map(function (s) { return s.trim(); }).filter(Boolean);
+    if (!lines.length) { $("calc-res").textContent = "请输入至少一个 IP/前缀。"; return; }
+    var parsed = [];
+    for (var i = 0; i < lines.length; i++) {
+      var m = /^(\d+\.\d+\.\d+\.\d+)\s*\/\s*(\d+)$/.exec(lines[i]);
+      if (!m) { $("calc-res").textContent = "格式有误：" + lines[i] + "（请使用 IP/前缀，如 192.168.1.0/24）"; return; }
+      var ipInt = ipToInt(m[1]);
+      var p = Number(m[2]);
+      if (ipInt === null || p < 0 || p > 32) { $("calc-res").textContent = "无效 IP 或前缀：" + lines[i]; return; }
+      parsed.push({ ipInt: ipInt, p: p });
+    }
+    if (parsed.length === 1) {
+      var item = parsed[0];
+      var mask = prefixToMaskInt(item.p);
+      var net = (item.ipInt & mask) >>> 0;
+      var bcast = (net | (~mask >>> 0)) >>> 0;
+      var total = Math.pow(2, 32 - item.p);
+      var usable = item.p >= 31 ? total : total - 2;
+      $("calc-res").textContent =
+        "输入地址：" + intToIp(item.ipInt) + "/" + item.p + "\n" +
+        "子网掩码：" + intToIp(mask) + "\n" +
+        "网络地址：" + intToIp(net) + "\n" +
+        "广播地址：" + intToIp(bcast) + "\n" +
+        "可用范围：" + (item.p >= 31 ? "点对点/主机路由" : intToIp(net + 1) + " ~ " + intToIp(bcast - 1)) + "\n" +
+        "可用主机：" + usable + " 台\n" +
+        "IP 二进制：" + ipToBin(item.ipInt) + "\n" +
+        "掩码进制：" + ipToBin(mask);
+      return;
+    }
+    // 聚合多个网段
+    var minPrefix = 32;
+    parsed.forEach(function (x) { if (x.p < minPrefix) minPrefix = x.p; });
+    var common = minPrefix;
+    while (common > 0) {
+      var mInt = prefixToMaskInt(common);
+      var base = (parsed[0].ipInt & mInt) >>> 0;
+      var ok = parsed.every(function (x) { return ((x.ipInt & mInt) >>> 0) === base; });
+      if (ok) break;
+      common--;
+    }
+    var aggMask = prefixToMaskInt(common);
+    var aggNet = (parsed[0].ipInt & aggMask) >>> 0;
+    $("calc-res").textContent =
+      "参与聚合网段数：" + parsed.length + "\n" +
+      "聚合结果：" + intToIp(aggNet) + "/" + common + "\n" +
+      "聚合掩码：" + intToIp(aggMask) + "\n\n" +
+      parsed.map(function (x) { return intToIp(x.ipInt) + "/" + x.p + " → " + ipToBin(x.ipInt); }).join("\n");
+  });
+
+  // 切换模式
+  var btns = document.querySelectorAll(".tab-btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function () {
+      var m = this.getAttribute("data-mode");
+      for (var j = 0; j < btns.length; j++) btns[j].classList.toggle("on", btns[j] === this);
+      ["subnet", "agg", "calc"].forEach(function (k) {
+        $("pane-" + k).classList.toggle("hide", k !== m);
+      });
+    });
+  }
+
+  saveStats();
+  genSub();
+  genAgg();
+})();
+</script>
+</body>
+</html>
