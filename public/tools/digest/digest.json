@@ -1,13 +1,33 @@
 {
-  "updated": "2026-11-18 12:49 UTC",
+  "updated": "2026-11-18 19:00 UTC",
   "categories": {
     "投资": [
       {
         "date": "2026-11-18",
         "tag": "Seeking Alpha",
-        "title": "North Shore Uranium宣布最高110万美元的流量型私募配售",
+        "title": "索罗斯基金管理公司主要持仓的量化评级：INTC、AMZN、TSM、GOOGL",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4674114-north-shore-uranium-announces-up-to-1_1m-flow-through-private-placement?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4674331-quant-rating-on-soros-fund-managements-top-holdings-intc-amzn-tsm-googl?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "The Block",
+        "title": "Ondo将在IPO当天推出Anthropic代币化股票",
+        "summary": "Ondo’s ANTon token will track Anthropic shares from the day the Claude maker starts trading on Nasdaq.",
+        "url": "https://www.theblock.co/news/markets/2026-11-18-ondo-to-launch-tokenized-anthropic-stock-on-ipo-day-443482",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Seeking Alpha",
+        "title": "谷歌扩展Project Genie项目，实现对AI生成世界的实时编辑",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4674355-google-expands-project-genie-with-real-time-editing-of-ai-generated-worlds?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -15,9 +35,9 @@
       {
         "date": "2026-11-18",
         "tag": "Seeking Alpha",
-        "title": "UnitedHealthcare与社区药房合作，以拓展医疗服务",
+        "title": "Starboard Value的最大持仓股被Seeking Alpha的量化评级评为“买入”",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4674113-unitedhealth-joins-community-pharmacies-expand-care?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4674361-starboard-values-top-holding-assigned-buy-rating-by-seeking-alphas-quant-rating?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -25,99 +45,19 @@
       {
         "date": "2026-11-18",
         "tag": "Seeking Alpha",
-        "title": "贝莱德通过收购资产管理公司在巴西扩张业务",
+        "title": "英伟达财报公布后，美国股市涨跌互现；黄金价格下跌",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4674101-blackrock-expands-in-brazil-with-asset-management-acquisition?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4674212-us-indexes-are-mixed-after-nvidia-earnings-gold-declines?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-18",
-        "tag": "Seeking Alpha",
-        "title": "Premium Catering面临额外的纳斯达克退市风险",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4674107-premium-catering-faces-additional-nasdaq-delisting-risk?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "MarketWatch",
-        "title": "“这简直太卑鄙了”：我哥哥接管了我们病弱母亲的生活和财务。我能做什么？",
-        "summary": "“It is devastating when the people you should be able to trust become the very people you have to protect yourself from.”",
-        "url": "https://www.marketwatch.com/story/it-is-heartbreaking-exhausting-and-downright-dirty-my-brother-took-over-our-ailing-mothers-life-and-finances-what-can-i-do-b4d48817?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "MarketWatch",
-        "title": "随着对Anthropic IPO的需求激增，Nvidia的领导层传奇正在上演",
-        "summary": "Three takeaways from Colette Kress’s first earnings call as Nvidia’s interim CEO. Plus, what Medicare Part B will cost in 2027 and why one investor is eyeing Florida real estate as a stock-market alternative.",
-        "url": "https://www.marketwatch.com/story/nvidias-leadership-saga-unfolds-as-demand-is-surging-for-anthropics-ipo-a7a12d40?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "MarketWatch",
-        "title": "这位交易员认为，美联储正在收紧货币政策，经济正在放缓——这是买入债券的绝佳时机。",
-        "summary": "Having missed the rally in U.S. Treasurys that statrted in mid-October, Macro Tourist commentator Kevin Muir is taking advantage of a renewed weakness in bonds to buy.",
-        "url": "https://www.marketwatch.com/story/the-fed-is-tightening-the-economy-is-slowing-and-thats-the-perfect-setup-to-buy-bonds-this-trader-argues-b1c88b23?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
         "tag": "Financial Times",
-        "title": "英伟达业绩提振投资者信心，华尔街开盘将走高",
-        "summary": "Chip group raises forecast and new chief says ‘it’s business as usual’ after revelations of Huang’s affairs triggered sell-off",
-        "url": "https://www.ft.com/content/f085b811-fc20-425f-88d8-9f98e178636a?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "MarketWatch",
-        "title": "塔吉特正在复苏，但仍需在鞋类和女装方面下功夫",
-        "summary": "Some analysts have seen an overhaul of Target’s apparel and home segments as crucial to its turnaround.",
-        "url": "https://www.marketwatch.com/story/target-is-seeing-a-revival-but-it-still-needs-to-work-on-shoes-and-womens-clothing-afb16799?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "The Block",
-        "title": "TD Cowen下调以太坊前景预期，维持对Sharplink的“买入”评级",
-        "summary": "TD Cowen said staking rewards drove a modest increase in Sharplink’s ETH holdings as it took a more conservative view of ether’s price path.",
-        "url": "https://www.theblock.co/news/ecosystems/2026-11-18-td-cowen-maintains-buy-rating-sharplink-442987",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Financial Times",
-        "title": "特朗普在与普京和习近平举行峰会前抵达中国",
-        "summary": "US and Chinese leaders to meet Russian President Vladimir Putin to cap week of high-profile diplomacy",
-        "url": "https://www.ft.com/content/ae7d1b27-b892-48d6-ad47-41128a4b53a1?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Financial Times",
-        "title": "民主党人调查霍华德·劳特尼克是否帮助坎托避免了英伟达的损失",
-        "summary": "Lawmakers seek information on whether US commerce secretary’s decisions were influenced by family’s investment firm",
-        "url": "https://www.ft.com/content/71e39ecd-03ef-4078-a34e-34ea6b45f674?syn-25a6b1a6=1",
+        "title": "“态势感知2.0”：Leopold Aschenbrenner计划回归",
+        "summary": "25-year-old AI trader has held discussions about employing leverage again and raising funds after a historic wipeout nearly toppled his firm",
+        "url": "https://www.ft.com/content/1fcbc6ea-1be3-44d2-b564-8ebf91181639?syn-25a6b1a6=1",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
@@ -125,9 +65,9 @@
       {
         "date": "2026-11-18",
         "tag": "The Block",
-        "title": "星展银行允许亚洲符合条件的机构全天候铸造和赎回USDC",
-        "summary": "DBS and Circle are expanding institutional access to USDC with direct minting, redemption and 24/7 dollar settlement.",
-        "url": "https://www.theblock.co/news/business/2026-11-18-dbs-circle-usdc-asia-442970",
+        "title": "CryptoQuant表示，比特币已重回熊市阶段，但已进入“价值区间”",
+        "summary": "Bitcoin has dipped below its 200-day and 365-day moving averages of $72,900 and $75,900, respectively, CryptoQuant said.",
+        "url": "https://www.theblock.co/news/markets/2026-11-18-cryptoquant-bitcoin-bearish-value-zone-443471",
         "source": "The Block",
         "region": "en",
         "category": "投资"
@@ -135,9 +75,9 @@
       {
         "date": "2026-11-18",
         "tag": "Financial Times",
-        "title": "欧洲央行表示，人工智能借贷热潮与次贷泡沫有“历史相似之处”",
-        "summary": "Concerns raised that hyperscalers are building up trillions of dollars in off-balance sheet commitments through contracts with other tech groups",
-        "url": "https://www.ft.com/content/d16475ce-efce-4dc1-b5a3-2f7c79e9dea9?syn-25a6b1a6=1",
+        "title": "民主党提名哈基姆·杰弗里斯为美国众议院议长",
+        "summary": "56-year-old on track to become first Black lawmaker to lead lower chamber of Congress",
+        "url": "https://www.ft.com/content/9d0998cf-ffb8-4fe4-9f85-0c403b1966f9?syn-25a6b1a6=1",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
@@ -145,10 +85,70 @@
       {
         "date": "2026-11-18",
         "tag": "The Block",
-        "title": "香港央行探索使用自主人工智能来侦查与加密货币相关的金融犯罪",
-        "summary": "HKMA Executive Director Raymond Chan said AI could help analyze both onchain transfers and offchain customer transactions to flag anomalies.",
-        "url": "https://www.theblock.co/news/regulation/2026-11-18-hong-kong-agentic-ai-crypto-crime-442959",
+        "title": "Bullish第三季度调整后利润增长35%，数字资产销售额下降23%",
+        "summary": "Bullish shares rose about 10% after the crypto exchange reported earnings and authorized a buyback.",
+        "url": "https://www.theblock.co/news/business/2026-11-18-bullishs-q3-adjusted-profit-rises-35-digital-asset-sales-fall-23-443456",
         "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "CNBC Markets",
+        "title": "技术中断正导致人们恐慌性抢购。瑞穗银行表示，Costco正从中受益",
+        "summary": "Shoppers are spending more at Costco as tech outages turn into a race to get emergency goods.",
+        "url": "https://www.cnbc.com/2026/11/18/tech-outage-costco-panic-buying.html",
+        "source": "CNBC Markets",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "The Block",
+        "title": "Visa Direct将跨境收款的稳定币预付服务扩展至亚太地区",
+        "summary": "Visa plans to let eligible Visa Direct clients in Asia-Pacific fund cross-border payouts with stablecoins.",
+        "url": "https://www.theblock.co/news/business/2026-11-18-visa-direct-extend-stablecoin-prefunding-cross-border-payouts-asia-pacific-443457",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Financial Times",
+        "title": "摩根大通寻求通过大幅降价重振停滞的软件债务销售",
+        "summary": "Banks turn to high-yield bond market to clear $2bn in ‘hung’ debt at double-digit yield",
+        "url": "https://www.ft.com/content/16a99ff4-6060-4c81-8c4f-7e43503e4a11?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "CNBC Markets",
+        "title": "我观看了特朗普、习近平和普京在中国会晤。以下是我最重要的几点体会。",
+        "summary": "U.S. President Donald Trump, Chinese President Xi Jinping and Russian President Vladimir Putin are expected to hold a rare trilateral meeting on Thursday.",
+        "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
+        "source": "CNBC Markets",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "CNBC Markets",
+        "title": "美联储的沃勒表示，央行可能需要通过加息半个百分点来“震撼人们”",
+        "summary": "Continued inflation above the Fed's 2% target is pushing central bank officials into a more aggressive stance.",
+        "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
+        "source": "CNBC Markets",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Financial Times",
+        "title": "摆脱民粹主义的唯一途径就是经历它",
+        "summary": "The lesson of Britain and America is that bad ideas have to be tested to destruction",
+        "url": "https://www.ft.com/content/e71273dd-2748-4396-bb62-e75307105596?syn-25a6b1a6=1",
+        "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
@@ -329,89 +329,29 @@
       {
         "date": "2026-11-18",
         "tag": "Decrypt",
-        "title": "“从一开始就注定失败”：特朗普总统的迷因币在中期选举后创下新低",
-        "summary": "The TRUMP token has fallen almost 40% since election day, with analysts pointing to the Democrats’ subpoena plans, fading interest, and a heavy unlock schedule.",
-        "url": "https://decrypt.co/383524/doomed-from-the-start-president-trumps-meme-coin-hits-new-lows-after-midterms",
+        "title": "比特币矿工正在出售其囤积的比特币，以资助人工智能的蓬勃发展",
+        "summary": "MARA sold 13,597 BTC after September and Riot sold 20,264 BTC through September to fund debt repayment and AI data center buildouts, as Glassnode flagged the pair as the main sellers among Bitcoin treasury firms.",
+        "url": "https://decrypt.co/383568/bitcoin-miners-selling-fund-ai-boom",
         "source": "Decrypt",
         "region": "en",
         "category": "web3"
       },
       {
         "date": "2026-11-18",
-        "tag": "CoinDesk",
-        "title": "机构服务抵消了低迷的现货加密货币交易量，看涨情绪战胜了收入预期",
-        "summary": "The crypto platform reported a net loss of $576.3 million for the third quarter, compared with a gain of $18.5 million a year earlier.",
-        "url": "https://www.coindesk.com/markets/2026/11/18/bullish-beats-revenue-estimates-as-institutional-services-offset-sluggish-spot-crypto-volumes",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "CoinDesk",
-        "title": "随着各家银行在亚洲各地建立竞争性数字支付系统，Circle转向星展银行",
-        "summary": "The Singapore bank will let institutional clients buy and redeem USDC directly as banks across Asia develop their own blockchain payment systems.",
-        "url": "https://www.coindesk.com/business/2026/11/18/circle-turns-to-dbs-as-banks-build-rival-digital-payment-systems-across-asia",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "CoinDesk",
-        "title": "分析师表示，将比特币的下跌归咎于Anthropic的IPO“很容易让人相信”，但存在谬误。",
-        "summary": "Your day-ahead look for Nov. 18, 2026",
-        "url": "https://www.coindesk.com/daybook-us/2026/11/18/blaming-anthropic-s-ipo-for-bitcoin-s-slide-is-easy-to-believe-but-flawed-analysts-say",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Decrypt",
-        "title": "Anchorage高管：人工智能将使未来12个月成为加密货币安全的“屠宰场”",
-        "summary": "Security chiefs at Solana's Breakpoint said AI is lowering the bar for hackers, as North Korea steps up its attacks on crypto firms.",
-        "url": "https://decrypt.co/383526/ai-will-make-the-next-12-months-a-slaughterhouse-for-crypto-security-anchorage-exec",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "CoinDesk",
-        "title": "受英伟达财报推动股指期货上涨影响，比特币价格下跌",
-        "summary": "Bitcoin (BTC) is down 1.1% since midnight UTC at around $64,100, failing to keep pace with rising stock index futures after Nvidia beat earnings.",
-        "url": "https://www.coindesk.com/markets/2026/11/18/bitcoin-drops-as-nvidia-earnings-report-drives-stock-index-futures-higher",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "CoinDesk",
-        "title": "即使在美联储可能加息之前两种资产均出现暴跌的情况下，比特币的表现仍优于黄金",
-        "summary": "Bitcoin held near $64,000 as gold fell 2%, lifting the ratio between the two above its 200-day moving average and extending a series of higher lows since March.",
-        "url": "https://www.coindesk.com/markets/2026/11/18/bitcoin-outpaces-gold-even-as-both-assets-tumble-ahead-of-a-likely-fed-rate-hike",
-        "source": "CoinDesk",
-        "region": "en",
+        "tag": "PANews",
+        "title": "路透社：币安获阿布扎比法庭令追索被盗后冻结资产",
+        "summary": "PANews 11月19日消息，据路透社报道，币安表示，已获得阿布扎比全球市场（ADGM）法庭命令，以追索上月约63亿美元被盗事件后被冻结的资金。币安此前称，约28.5亿美元被盗代币已被第三方冻结或拦截。币安副总法律顾问Dugan Bliss表示，将继续依法追踪、冻结并追回被盗资产，协助合作方在可行情况下返还资金。",
+        "url": "https://www.panewslab.com/zh/articles/01a1efee-331f-752b-9b6f-c1f390b87267",
+        "source": "PANews",
+        "region": "cn",
         "category": "web3"
       },
       {
         "date": "2026-11-18",
         "tag": "Cointelegraph",
-        "title": "Bitwise寻求在德克萨斯州证券交易所上市Zcash ETF",
-        "summary": "Coinbase Custody would safeguard the fund’s ZEC holdings, while Bitwise Investment Advisers would serve as its manager and sponsor.",
-        "url": "https://cointelegraph.com/news/bitwise-zcash-etf-texas-stock-exchange-listing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Cointelegraph",
-        "title": "在英伟达业绩超预期后，比特币走稳，6万美元的买盘脱颖而出",
-        "summary": "Bitcoin halted downside as Nvidia confidence returned, with its stock gaining 3% premarket and South Korea’s tech-heavy KOSPI reclaiming 5,000 points.",
-        "url": "https://cointelegraph.com/markets/bitcoin-60k-liquidity-stocks-gain-nvidia-1158b-earnings-beat?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "MARA在出售11亿美元比特币后，将1.85亿美元的债券定价",
+        "summary": "The Bitcoin miner is taking on new debt to finance its AI infrastructure expansion, with the Long Ridge acquisition adding nearly $69 million in annual interest costs.",
+        "url": "https://cointelegraph.com/markets/mara-long-ridge-debt-offering-bitcoin-sales?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
@@ -419,70 +359,130 @@
       {
         "date": "2026-11-18",
         "tag": "Decrypt",
-        "title": "Scattered Spider黑客因盗窃价值1160万美元的加密货币而被判处6年有期徒刑",
-        "summary": "Scotland's Tyler Buchanan is the last of five defendants sentenced in a phishing and SIM-swapping scheme that targeted crypto holders.",
-        "url": "https://decrypt.co/383522/scattered-spider-hacker-sentenced-to-6-years-over-11-6m-in-stolen-crypto",
+        "title": "美联储的沃勒呼吁加息50个基点，并表示代币化金融仍需要传统银行",
+        "summary": "Christopher Waller says stubborn inflation may warrant a bigger December rate hike, while a separate speech outlined why blockchain-based payments still need traditional settlement systems and stronger safeguards to scale.",
+        "url": "https://decrypt.co/383566/fed-waller-50-basis-point-rate-hike-tokenized-finance-banks",
         "source": "Decrypt",
         "region": "en",
         "category": "web3"
       },
       {
         "date": "2026-11-18",
-        "tag": "CoinDesk",
-        "title": "图表分析师警告：Strategy 的股价可能暴跌 76% 至 23 美元",
-        "summary": "Aksel Kibar, who has tracked Bitcoin’s price action since at least 2018, made the bearish call, citing a still-active head-and-shoulders pattern on MicroStrategy’s (MSTR) daily chart.",
-        "url": "https://www.coindesk.com/markets/2026/11/18/strategy-stock-could-crash-76-to-usd23-chart-analyst-warns",
-        "source": "CoinDesk",
-        "region": "en",
+        "tag": "PANews",
+        "title": "Anchorage与FOMO Pay合作拓展亚洲及中东稳定币支付",
+        "summary": "PANews 11月19日消息，据Anchorage Digital官网公告，该机构与支付机构FOMO Pay达成合作。FOMO Pay将使用Anchorage Digital Bank的稳定币发行基础设施，将受监管美元稳定币的铸造与赎回接入亚洲及中东的持牌支付与结算网络。Anchorage Digital Bank持有美国货币监理署全国性信托银行牌照。",
+        "url": "https://www.panewslab.com/zh/articles/01a1efd0-6953-75ef-a5d4-e046f1687ac1",
+        "source": "PANews",
+        "region": "cn",
         "category": "web3"
       },
       {
         "date": "2026-11-18",
-        "tag": "Cointelegraph",
-        "title": "世界银行与Circle、花旗合作探索用于支付的稳定币",
-        "summary": "The initiative builds on the World Bank’s existing blockchain platform, which aims to create more fund traceability for investments in developing countries.",
-        "url": "https://cointelegraph.com/news/world-bank-circle-citi-explore-stablecoins-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
+        "tag": "PANews",
+        "title": "花旗下调比特币目标价至99532美元、以太坊至2838美元",
+        "summary": "PANews 11月19日消息，据The Block报道，花旗将比特币和以太坊的基准情形目标价分别下调至99532美元和2838美元，因加密市场已跌破此前区间。策略师Alex Saunders将此次下调归因于ETF需求走弱、期货市场去杠杆及美元走强。花旗今年10月初给出的目标价分别为11.3万美元和3028美元。",
+        "url": "https://www.panewslab.com/zh/articles/01a1efcd-82d8-70b4-9d30-4807021384bb",
+        "source": "PANews",
+        "region": "cn",
         "category": "web3"
       },
       {
         "date": "2026-11-18",
-        "tag": "CoinDesk",
-        "title": "现代汽车在摩根大通的Kinexys区块链上测试AI代理商贸",
-        "summary": "The exploration of AI agents with JPMorgan builds on Hyundai’s recent stablecoin-based cross-border remittance pilot.",
-        "url": "https://www.coindesk.com/business/2026/11/18/hyundai-tests-ai-agent-commerce-on-jpmorgan-s-kinexys-blockchain",
-        "source": "CoinDesk",
-        "region": "en",
+        "tag": "PANews",
+        "title": "谷歌推出长程运行智能体Stitch Loop",
+        "summary": "PANews 11月19日消息，据谷歌官方博客，谷歌实验室推出实验产品Stitch Loop。该智能体可连接代码库与实时指标，在隔离沙箱中编写代码并提交GitHub拉取请求，经人工审批后才会合并。系统默认提供网络安全、延迟与可访问性循环，安全循环结合Gemini 4 Carbon与DeepMind的CodeMender。全球用户可加入等候名单，符合条件的Google AI Ultra用户可优先使用。",
+        "url": "https://www.panewslab.com/zh/articles/01a1efb8-80c2-708e-9667-03c7957df0a5",
+        "source": "PANews",
+        "region": "cn",
         "category": "web3"
       },
       {
         "date": "2026-11-18",
-        "tag": "Cointelegraph",
-        "title": "随着Solana退出测试阶段，SOL价格从Breakpoint会议后上涨7%",
-        "summary": "Solana’s token reached $75.12 on Tuesday, outpacing Bitcoin and Ether after the network retired the beta label it had used since its 2020 launch.",
-        "url": "https://cointelegraph.com/markets/solana-sol-gains-7-percent-breakpoint-beta-tokenization?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Cointelegraph",
-        "title": "CryptoQuant发出市场看跌阶段的警告，比特币ETF损失2.4亿美元",
-        "summary": "Bitcoin ETF outflows returned after a one-day pause as CryptoQuant warned that Bitcoin had returned to a bearish market phase.",
-        "url": "https://cointelegraph.com/markets/bitcoin-etf-240-million-outflow-bearish-phase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-17",
         "tag": "Decrypt",
-        "title": "为什么微软认为更小、更便宜的AI可以胜过Claude和GPT",
-        "summary": "Microsoft's new coding, cybersecurity and image models challenge bigger rivals on performance and price. The company's bet is that doing one job exceptionally well matters more than doing absolutely everything.",
-        "url": "https://decrypt.co/383468/why-microsoft-thinks-smaller-cheaper-ai-beat-claude-gpt",
+        "title": "幸运的交易者因GTA 6迷因币代码混淆而赚取66,000%的利润",
+        "summary": "The trader turned $300 into over $200,000 as early footage of GTA 6 sent degens flocking between different token tickers.",
+        "url": "https://decrypt.co/383536/lucky-trader-banks-66000-profit-on-gta-6-meme-coin-ticker-confusion",
         "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "CoinDesk",
+        "title": "一家估值15亿美元的加密货币初创公司正以华尔街的策略挑战Hyperliquid",
+        "summary": "Variational and its investors are betting that the future of onchain trading will look more like a traditional brokerage than a crypto exchange.",
+        "url": "https://www.coindesk.com/business/2026/11/18/a-usd1-5-billion-crypto-startup-is-taking-on-hyperliquid-with-a-wall-street-playbook",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Cointelegraph",
+        "title": "2500万美元以太坊MEV无罪判决考验刑事执法界限",
+        "summary": "BlackRock’s staked Ether ETF earns a cut of what traders pay for priority on Ethereum, the acquittal left the legal risk to that income unresolved.",
+        "url": "https://cointelegraph.com/news/25m-ethereum-mev-acquittal-tests-criminal-enforcement-limits?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Cointelegraph",
+        "title": "Polymarket US 将快速加密货币交易模式引入石油和天然气交易",
+        "summary": "Polymarket US said it attracted more than 300,000 traders to its short-duration crypto markets in six weeks and is now expanding the format to energy commodities.",
+        "url": "https://cointelegraph.com/news/polymarket-us-takes-rapid-fire-crypto-trading-format-oil-natural-gas?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Decrypt",
+        "title": "“它说的是只有6.2 Astra才懂的语言”：为什么早期测试者讨厌OpenAI的新模型",
+        "summary": "OpenAI's flagship AI model is dazzling developers with 3D creations, but early testers say it stalls during long projects, gives baffling explanations, and hides failures.",
+        "url": "https://decrypt.co/383539/speaks-tongues-only-6-2-astra-understands-why-early-testers-hate-openai-new-model",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Cointelegraph",
+        "title": "美联储的沃勒谈到“令人震惊”的50个基点加息，比特币和股市出现波动",
+        "summary": "Bitcoin price action dropped below $63,000 after fresh hawkish comments from the Fed as Nvidia earnings optimism faded.",
+        "url": "https://cointelegraph.com/markets/bitcoin-stocks-wobble-waller-talks-shock-50-point-rate-hike?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "CoinDesk",
+        "title": "加密货币多空观点：加密货币交易所不应兼作保管库",
+        "summary": "A single breach moved billions out of Binance in minutes, exposing how much client money sits with the venue that trades it. Darren Jordan of Komainu argues institutions should keep trading and custody separate, as traditional markets have for decades, and sets out the questions to ask about where assets are held.",
+        "url": "https://www.coindesk.com/coindesk-indices/2026/11/18/crypto-long-and-short-crypto-exchanges-shouldn-t-double-as-the-vault",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "CoinDesk",
+        "title": "德国法官提议，如果运营商交出25.6亿美元的比特币，则撤销对Movie2k的起诉",
+        "summary": "Prosecutors estimate the defendant still holds 56,000 BTC, meaning the proposed deal would leave him with roughly $1 billion.",
+        "url": "https://www.coindesk.com/business/2026/11/18/german-judge-proposes-dropping-movie2k-case-if-operator-hands-over-usd2-56-billion-in-bitcoin",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "CoinDesk",
+        "title": "香港希望银行利用人工智能来侦破加密货币犯罪，以防资金流失",
+        "summary": "As Hong Kong pushes banks to use AI to combat crypto crime, experts say the technology must detect suspicious transfers without putting customer funds at risk.",
+        "url": "https://www.coindesk.com/business/2026/11/18/hong-kong-wants-banks-to-use-ai-to-catch-crypto-crime-before-money-disappears",
+        "source": "CoinDesk",
         "region": "en",
         "category": "web3"
       }
@@ -490,90 +490,20 @@
     "科技": [
       {
         "date": "2026-11-18",
-        "tag": "IT之家",
-        "title": "旅行者 1 号抵达距地球一光日位置，NASA 金唱片尘封细节被揭开",
-        "summary": "IT之家 11 月 18 日消息，从人类发射的最远航天器旅行者 1 号（Voyager 1）到达距地球一光日的位置来看，它已经在太空中飞行了漫长岁月。与此同时，关于这艘探测器如何诞生，以及它携带的物品背后的故事，也有了新的发现。 据IT之家了解，旅行者 1 号于 1977 年离开地球，最初的任务是飞越木星、土星及其卫星土卫六。2012 年，它进入星际空间。与姊妹探测器旅行者 2 号（Voyager 2）一样，旅行者 1 号携带了一张具有纪念意义的留声机唱片，也就是后来广为人知的“旅行者金唱片”。 这张唱片一方面是为了纪念留声机唱片诞生 100 周年，另一方面也承载着人类向外星文明传递信息的愿望，希望未来在浩瀚宇宙中遇到这艘探测器的某种生命或智慧存在，能够了解地球和人类。 关于这些逐渐被遗忘的细节，可以向格伦 · 斯旺森（Glen Swanson）了解。在研究旅行者金唱片的历史时，他发现了唱片此前被忽视的第二套操作说明，还找到了近 50 年前制作并分发的多张备用副本。 斯旺森曾担任美国国家航空航天局（NASA）休斯敦约翰逊航天中心首席历史学家，也是《探索：太空飞行史季刊》（Quest: The History of Spaceflight Quarterly）的创刊编辑。他在接受采访时表示：“关于唱片的内容，也就是所谓的‘瓶中信’，已经有大量文章进行了介绍。但我更感兴趣的是硬件本身，也就是装载信息的‘瓶子’，因为人们对这方面知之甚少。” 随着旅行者 1 号和旅行者 2 号发射 50 周年纪念日临近，斯旺森与旅行者金唱片设计总监乔恩 · 隆伯格（Jon Lomberg）最近开始合作撰写一本新书，名为《旅行者金唱片：永恒的回响》（Voyager’s Golden Record: An Enduring Reflection），计划于 2027 年 8 月由芝加哥大学出版社出版。 斯旺森表示：“现有的资料和出版物并不多，而且其中一些信息还存在矛盾。因此，回过头来重新梳理当年究竟发生了什么，确实令人耳目一新。” 与此同时，旅行者系列探测器仍在不断飞向宇宙深处，并继续与地球保持通信。11 月 18 日，旅行者 1 号与地球之间的距离达到一光日，也就是光在 24 小时内传播的距离。这也为斯旺森分享他与隆伯格即将出版的新书中的一些细节提供了契机。 保护外壳内部还藏着一套说明 从浩瀚宇宙的尺度来看，旅行者 2 号距离地球其实连一个街区都算不上。假如今天有某种智慧生命在距离地球约 160 亿英里（约 259 亿公里）的地方发现了它，对方或许根本不需要借助金唱片上的任何内容，就能追溯这艘探测器来自地球。 不过，金唱片设计者从来没有打算让它只服务于如此近距离的发现。他们希望这份信息档案能够保存足够长的时间，以应对更加遥远的未来相遇。 斯旺森表示，根据现有数据，设计人员对唱片能够长期保存相当有信心，其中也考虑了微流星体撞击等因素可能造成的影响。 在斯旺森看来，大多数人提起旅行者金唱片时，首先想到的往往不是唱片本身，而是它的保护外壳。 除了刻有标志性的脉冲星定位图之外，外壳上还通过象形图示说明了如何播放唱片，以及如何读取唱片中包含的数据，例如照片。这张脉冲星定位图此前也曾应用于先驱者 10 号和先驱者 11 号探测器。 保护外壳不仅能够防止唱片受到损坏，本身也是整套信息系统的重要组成部分。不过，外壳本身却没有其他东西可以保护。 斯旺森告诉 collectSPACE 网站：“设计人员意识到，保护外壳的外表面终究会逐渐磨损，这是不可避免的。即使是少量灰尘，经过漫长时间也可能磨损上面的刻痕，最终导致这些文字和图案无法辨认。” 这就形成了一个两难局面：操作说明必须刻在外壳外侧，这样未来发现旅行者探测器的生命才能第一时间知道应该如何操作。但如果这些象形图示遭到损坏或逐渐磨灭，里面的唱片可能就永远无法被播放。 解决办法看起来很简单，但设计人员当年是否想到这一点，此前并不明确。 斯旺森表示：“在保护外壳内侧重复刻录一套说明，其实非常合理。因为当某种生命或智慧存在发现旅行者探测器时，他们可能只能辨认出外侧说明的一小部分。” 事实上，在旅行者探测器发射前拍摄的外壳照片中，已经有一些迹象表明内部可能存在这套备用说明。但当时的照片要么不够清晰，要么被其他物品遮挡，例如照片中出现的袋子，导致无法确认内部究竟刻有什么内容。 直到斯旺森找到并查阅最初的设计蓝图，才最终确认操作说明同样刻在了保护外壳内侧。 斯旺森认为，设计人员当年决定重复刻录说明，可能还有另一个原因。 他说：“想要让人们真正认识到这些说明的重要性，最好的办法是什么？那就是重复它们。外侧有一套，内侧还有一套。” 限量制作的金唱片 最初，旅行者金唱片只计划制作三张：旅行者 1 号和旅行者 2 号各携带一张，另外一张作为飞行备用品。 斯旺森表示：“后来，也就是探测器发射后大约一个月左右的一些往来文件显示，NASA 批准再额外制作 10 张，其中包括备用唱片。” 至于当时为什么决定制作这个数量，他并不完全确定。他推测，可能是 NASA 根据当时能够获得的硬件条件和资金预算，尽可能多制作了一些副本。 多年来，不同报道对金唱片的总数量说法不一，有的认为只有 6 张，有的则认为最多达到 14 张，但这些数字差异始终没有得到明确解释。 不过，斯旺森已经核实了一件确定的事情：位于加利福尼亚州帕萨迪纳市的美国国家航空航天局喷气推进实验室（JPL）保留着那张飞行备用唱片，并且将其公开展示。 在研究过程中，斯旺森还确认了其他原始副本目前的保存地点，包括： 联合国总部（纽约）；美国国会图书馆、NASA 总部和史密森尼国家航空航天博物馆（华盛顿特区）；约翰逊航天中心（得克萨斯州）；肯尼迪航天中心（佛罗里达州）；兰利研究中心（弗吉尼亚州）；格伦研究中心（俄亥俄州）；戈达德太空飞行中心（马里兰州）。 斯旺森表示：“有意思的是，NASA 总部最初并没有获得一张金唱片，因此他们后来究竟如何得到这张副本，目前还不确定。” 他推测，美国前总统吉米 · 卡特（Jimmy Carter）可能曾将自己的那张唱片交给了 NASA 总部，因为相关记录显示，卡特当时确实拥有一张金唱片。 不过，卡特总统图书馆与博物馆的档案管理员确认，他们从未收到过旅行者金唱片。因此，卡特很可能在某个时候将唱片交还给了 NASA。 2024 年，SpaceX 创始人埃隆 · 马斯克（Elon Musk）曾回复一条社交媒体帖子，表示：“我有一张。”不过，他没有透露更多细节。外界普遍认为，他所说的应该是一张复制品，而不是 NASA 制作的原始副本之一。 由于版权问题以及制作材料方面的限制，至今还没有完整版本的旅行者金唱片正式对外销售。 唱片中的音轨曾被整理成黑胶唱片、CD 和在线播放列表，甚至还有人专门制作了用于展示视觉内容的 CD-ROM。金唱片保护外壳的全尺寸和缩小尺寸复制品也曾推出。 目前，斯旺森和隆伯格正在合作制作一张与原版尺寸相同的铜质唱片复制品，计划配合新书出版。不过，即使这张复制品按照目前的计划完成，也无法真正播放。 斯旺森表示：“我想，人类应该庆幸当年额外制作了 10 张备用唱片。如今，我们至少还能拿着这些副本进行研究和观察，而真正飞向太空的那两张唱片，早已远远超出了我们能够触及的范围。”",
-        "url": "https://www.ithome.com/1/029/062.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "IT之家",
-        "title": "Face ID 存疑：消息称苹果 iPhone Duo 2 工程机沿用侧边指纹设计",
-        "summary": "IT之家 11 月 18 日消息，博主 @数码闲聊站 今日超前曝光了 iPhone Duo 2 的部分配置信息。据称新机 7.6 英寸内屏 +5.4 英寸外屏不变， 工程机有侧边指纹 。 博主提到，Face ID 这一配置存疑，因为影响机身堆叠，而且交互逻辑很奇怪。 值得一提的是，苹果 iOS / iPadOS 27.3 开发者预览版 Beta 2 已于昨日发布。在新系统中， 苹果为 iPhone Duo 折叠屏手机新增「使用前置摄像头解锁」选项 。开启后用户可以在使用外屏的情况下，仅依靠 2D 面部识别、不依赖触控 ID 解锁设备。 参考IT之家昨日报道，苹果 2027 年可能推出至少 18 款新品，覆盖手机、平板、电脑、手表及智能家居设备， iPhone Duo 2 等 18 款在列，首款 AI 眼镜有望亮相 。",
-        "url": "https://www.ithome.com/1/029/061.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "IT之家",
-        "title": "苹果地图在印度全面升级：针对当地道路特点专门优化，新增超 300 处 3D 地标",
-        "summary": "IT之家 11 月 18 日消息，当地时间 18 日，苹果宣布在印度推出全面升级的苹果地图，首次将重新设计的地图服务带入印度市场。 新版地图不仅导航速度更快、准确性更高，还能展示更加详细的道路、建筑、公园和购物中心信息，并新增超过 300 处 3D 地标。 新版地图还针对印度的道路特点进行了专门优化。例如，自然语言引导功能可以用“在下一个红绿灯左转”等更口语化的方式提供导航。针对印度部分道路没有名称的情况，苹果还 加入了柱子等实际地标作为参照 ，让导航能够提示用户“经过加油站后右转”。 双语地名标注也是一项专门针对印度推出的功能。与当地路牌一样，苹果地图可以 同时显示英语和当地语言的地名 。除了英语和印地语，新版地图还支持孟加拉语、古吉拉特语、卡纳达语、马拉雅拉姆语、马拉地语、泰米尔语、泰卢固语、旁遮普语、奥里亚语和乌尔都语。 “四处看看”功能也首次登陆印度，全球用户都可以 通过高分辨率 3D 街景影像，身临其境地探索印度街道 。此外，新版地图还支持 AR 步行导航，只需举起 iPhone，就能在现实画面中看到逐步导航指引。 其他新增功能包括车道指引、最多可设置 15 个途经点的路线规划，以及将 Mac 和 iPad 上规划的路线同步到 iPhone。 用户还可以分享预计到达时间，使用显示海拔变化信息的骑行导航，或规划包含充电站的纯电汽车行驶路线。遇到交通事故、道路危险或测速检查时，用户也可以 直接通过 Siri AI 语音报告 ，无需手动操作。 公共交通方面，艾哈迈达巴德、班加罗尔、金奈、德里、海得拉巴、加尔各答、孟买和浦那的乘客，以及乘坐印度铁路列车的旅客，都可以使用苹果地图规划路线、查找附近车站，并在抵达目的地车站前收到下车提醒。 新版苹果地图即日起向印度用户开放。据IT之家了解，使用双语地名标注和增强的自然语言引导功能，需要将设备升级至 iOS 27.2、iPadOS 27.2、watchOS 27.2 或 macOS 27.2 及更新版本。",
-        "url": "https://www.ithome.com/1/029/059.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "IT之家",
-        "title": "DeepSeek API 定价调整：调用模型时触发服务端搜索、网页抓取不再计费，仅按模型 Token 用量计费",
-        "summary": "IT之家 11 月 18 日消息，DeepSeek 官网显示，自北京时间 2026 年 11 月 18 日 12:00 起， 调用模型时触发的服务端搜索、网页抓取不再计费，仅按模型 Token 用量计费 。 使用以下接口时会触发服务端搜索：联网工具、Anthropic API 的 web_search 工具、Responses API 的 web_search 工具。 据IT之家此前报道，10 月 17 日，DeepSeek 官方宣布 Search / Fetch API 正式上线，两项接口均使用 DeepSeek 自研搜索引擎，为 Agent 与 RAG 应用提供实时网页内容，按请求次数计费， 单价为每 1,000 次成功请求 5 元 。 Search 接口按 query 搜索网页并返回结构化结果，Fetch 接口则抓取单个网页，以 Markdown 文本返回标题与正文。 相关阅读： 《 DeepSeek 上线网页搜索与抓取 API 》",
-        "url": "https://www.ithome.com/1/029/058.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
         "tag": "Ars Technica",
-        "title": "旅行者1号距离地球一个光日：历史学家重温“黄金唱片”被遗忘的细节",
-        "summary": "\"They are pretty confident that it's going to last a long, long, long time...\"",
-        "url": "https://arstechnica.com/space/2026/11/voyager-1-at-one-light-day-historian-revisits-golden-records-forgotten-details/",
+        "title": "特朗普政府下令Kalshi停止对特朗普将要说的话进行投注",
+        "summary": "CFTC: Kalshi bets may violate US ban on contracts that can be easily manipulated.",
+        "url": "https://arstechnica.com/tech-policy/2026/11/trump-admin-orders-kalshi-to-halt-wagers-on-what-words-trump-will-say/",
         "source": "Ars Technica",
         "region": "en",
         "category": "科技"
       },
       {
         "date": "2026-11-18",
-        "tag": "钛媒体",
-        "title": "“未名·AI Park”正式揭牌，北大海淀共建AI创新转化高地",
-        "summary": "“未名·AI Park”核心启动区选址北大西门外，构建服务北大的“一公里转化圈”，立足北大顶尖AI学科资源与海淀科创沃土，打通“原始创新—技术攻关—成果落地—产业集聚”全链条，是百年京张AI创新带上的重要节点。",
-        "url": "https://www.tmtpost.com/8210345.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "TechCrunch AI",
-        "title": "Felicis 领投 750 万美元，押注于 Unsiloed AI，旨在使企业文档可供 AI 代理使用",
-        "summary": "With a team of just seven, Unsiloed AI plans to compete with tech giants and specialized startups in the crowded AI document-processing market.",
-        "url": "https://techcrunch.com/2026/11/18/felicis-leads-7-5m-bet-on-unsiloed-ai-to-make-enterprise-documents-usable-by-ai-agents/",
-        "source": "TechCrunch AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "TechCrunch AI",
-        "title": "印度的Humyn Labs筹集了4700万美元，为美国的机器人公司提供它们所需的数据",
-        "summary": "Founded in February, Humyn Labs competes with startups including Mecka AI and XDOF, with about 90% of its revenue coming from the U.S.",
-        "url": "https://techcrunch.com/2026/11/18/accel-backs-indias-humyn-labs-to-supply-training-data-needed-by-u-s-robotics-ai-developers/",
-        "source": "TechCrunch AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
         "tag": "The Verge AI",
-        "title": "Suno 现在可以让您为自己的 AI 音乐制作 AI 视频",
-        "summary": "Suno has introduced image and video generation in its latest effort to expand beyond being an AI music platform. The new feature, called \"Visuals,\" allows users to turn Suno songs into AI-generated video clips that automatically lipsync to lyrics, or make images via prompt descriptions that can be used as thumbnails and album artwork. Visuals […]",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature",
+        "title": "如果没有人工智能这个“金主”撑腰，Nvidia算什么？",
+        "summary": "If the glorious AI revolution rests entirely on the well-being of one man, AI is perhaps not as robust a technology as I had previously been led to believe. Nonetheless, chunks of Silicon Valley are now insisting he is indispensable. For instance, if Elon Musk is telling the truth, then Jensen Huang (the former CEO […]",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1036776/nvidia-earnings-kress-jensen-huang-petition",
         "source": "The Verge AI",
         "region": "en",
         "category": "科技"
@@ -581,71 +511,141 @@
       {
         "date": "2026-11-18",
         "tag": "Ars Technica",
-        "title": "《侠盗猎车手6》：Ars Technica评测",
-        "summary": "Jason and Lucia's crime-heavy love story fuels a wonder of digital urban simulation.",
-        "url": "https://arstechnica.com/gaming/2026/11/grand-theft-auto-vi-the-ars-technica-review/",
+        "title": "让美国失去“已消灭麻疹”地位的“可耻”麻疹数据",
+        "summary": "Measles became endemic in the US months ago—and it's only accelerating.",
+        "url": "https://arstechnica.com/health/2026/11/the-shameful-measles-data-that-lost-the-us-its-elimination-status/",
         "source": "Ars Technica",
         "region": "en",
         "category": "科技"
       },
       {
         "date": "2026-11-18",
-        "tag": "爱范儿",
-        "title": "这届高校学生，为何选择用鸿蒙创新？",
-        "summary": "有想法就是入场券。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1690168?utm_source=rss&utm_medium=rss&utm_campaign=",
-        "source": "爱范儿",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "钛媒体",
-        "title": "黄仁勋一直在权力游戏里裸奔",
-        "summary": "如果他在公司拥有控制权，也不至于在政治暗箭袭来时，这么快地出局。",
-        "url": "https://www.tmtpost.com/8209729.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "钛媒体",
-        "title": "中国人为什么有钱不爱花，我们可能一直理解错了",
-        "summary": "中国长期的高储蓄，与过去几十年最成功的那套增长方式有深刻联系。",
-        "url": "https://www.tmtpost.com/8209423.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "钛媒体",
-        "title": "腾讯音乐Q3财报：89.4亿营收背后的“结构转换期”",
-        "summary": "音乐服务接棒收入，但利润的接力棒还没完全交出去。",
-        "url": "https://www.tmtpost.com/8209332.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "MIT Tech Review",
-        "title": "这家嗅觉初创公司称其AI鼻子与人类的鼻子一样灵敏",
-        "summary": "In a lab near Newark Airport in New Jersey, a team of around 30 experienced human sniffers are slowly working their way through every odor on Earth. Their careful notes—“nutty,” “peachy,” “marine”—are cross-referenced with a chemical analysis to create a rich set of training data for what AI startup Osmo calls the world’s first foundation…",
-        "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/",
-        "source": "MIT Tech Review",
+        "tag": "Ars Technica",
+        "title": "威尔·莱特（Will Wright）的下一款模拟游戏将使用人工智能从您的记忆中挖掘内容",
+        "summary": "With MyMems , Wright says he wants to \"turn the simulation inward.\"",
+        "url": "https://arstechnica.com/gaming/2026/11/will-wrights-next-simulation-will-use-ai-to-mine-content-from-your-memories/",
+        "source": "Ars Technica",
         "region": "en",
         "category": "科技"
       },
       {
         "date": "2026-11-18",
+        "tag": "TechCrunch AI",
+        "title": "Google搜索中的人工智能功能将拥有自己的无痕模式",
+        "summary": "Google's new temporary threads let users have conversations in AI Mode without adding them to their search history or influencing future recommendations.",
+        "url": "https://techcrunch.com/2026/11/18/googles-ai-feature-in-search-gets-its-own-incognito-mode/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Ars Technica",
+        "title": "骑行速度达到25英里/小时不应该这么轻松：Specialized的Turbo Vado 3 Evo",
+        "summary": "This commuter bike will have you blazing through streets without any range anxiety.",
+        "url": "https://arstechnica.com/gadgets/2026/11/it-shouldnt-be-this-easy-to-pedal-25-mph-specializeds-turbo-vado-3-evo/",
+        "source": "Ars Technica",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "The Verge AI",
+        "title": "迪士尼的全新《星球大战》机器人通过人工智能与游客互动",
+        "summary": "As advanced and lifelike as the animatronic characters at Disney parks have become, they typically either stick to predefined movements and routines, or there's an out of sight puppeteer helping make their behavior appear more spontaneous. That could soon change as Walt Disney Imagineering R&D has revealed three new Audio-Animatronic prototypes that rely on Amazon's […]",
+        "url": "https://www.theverge.com/tech/1036729/disney-star-wars-anzellans-animatronic-amazon-aws-cloud-ai",
+        "source": "The Verge AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "TechCrunch AI",
+        "title": "更多银行表示，使用人工智能代理的客户需自行承担风险——即使他们遭到黑客攻击",
+        "summary": "Citi is the latest major financial institution to put the breaks on personal finance AI agents.",
+        "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "IT之家",
+        "title": "华为 WATCH 5 智能手表重启鸿蒙 HarmonyOS 7 花粉 Beta 版升级，新增地震预警消息等功能",
+        "summary": "IT之家 11 月 19 日消息，今年 10 月底，华为 WATCH 5 系列、ULTIMATE DESIGN 星钻绽放等手表开启 HarmonyOS 7 花粉 Beta 版招募。随后 7.0.0.107 SP18 版本开启推送。但据用户反馈，部分设备更新后出现 BUG，因此升级活动暂缓。 IT之家注意到，华为官方最新宣布， HarmonyOS 7.0.0.107SP41 版本开始分批推送给花粉 Beta 版升级尝鲜报名入选成功的 WATCH 5 系列用户。 适配机型 HUAWEI WATCH 5 42mm（含十周年款）（SOC-AL00） HUAWEI WATCH 5 46mm（含十周年款）（RTS-AL00） 版本更新日志 6.1.0.330SP18/6.1.0.330SP22/6.1.0.333/6.1.0.335 → 7.0.0.107SP41 更新点： 1. 系统界面全面焕新，表盘与多任务列表等融入灵动光影，为您呈现更精致、流畅的交互体验 2. 新增 HarmonyOS 7 光穹表盘，柔和流光漫过盘面，光影层次细腻通透，将静谧和灵动凝于腕间 3. 健康三叶草升级为健康生活应用，新增饮食维度，在华为运动健康应用配置相关打卡任务后，即可解锁四叶草模型，多维度助您养成健康生活好习惯 4. 增强录音机同步能力，支持录音文件同步至安卓、iOS 手机的华为运动健康应用，可在华为运动健康应用 > 设备 > 录音机查看 (请将华为运动健康应用更新至最新版本) 5. 负一屏小艺建议新增支持通知摘要、重要日、通勤概况等主题，为您提供更加场景化的智能服务 (配对 HarmonyOS 6 及以上版本的手机支持，且需前往手机应用市场将智慧分发服务更新至 6.0.8.400 及以上版本) 6. 支持 AI 通话降噪，蓝牙通话时，即使周边嘈杂，对方也能清晰听到您的声音 7. 支持同步 HarmonyOS 7 及以上版本手机的地震预警消息，及时通知提升安全保障 8. 设置中“常亮显示”更名为“熄屏显示” 参考IT之家此前报道，华为官方 11 月 11 日发布《HUAWEI WATCH 5 系列 HarmonyOS 7 花粉 Beta 版本升级进展通报》。其中提到，针对大家反馈的高端精致类、特性体验优化类、系统稳定性等问题，已收到，研发团队正在紧急攻关打磨质量。同时，花粉 Beta 待版本充分测试验证后，将尽快分批推送。 相关阅读： 《 华为 WATCH 5 系列、ULTIMATE DESIGN 星钻绽放等手表开启 HarmonyOS 7 花粉 Beta 版招募 》 《 华为 WATCH 5 系列开推 HarmonyOS 7 花粉 Beta 版，新增 AI 通话降噪、同步手机地震预警消息等 》 《 华为通报 WATCH 5 系列 HarmonyOS 7 花粉 Beta 版本升级进展：待充分测试验证后，将尽快分批推送 》",
+        "url": "https://www.ithome.com/1/029/128.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "IT之家",
+        "title": "华为 WATCH Air 真机曝光：方形设计、钛金属表体，消息称续航可达 5 天",
+        "summary": "IT之家 11 月 19 日消息，华为 WATCH Air 真机谍照已在各大平台曝光。画面显示，新表至少提供两种表带款式可选，包括运动硅胶表带和金属米兰尼斯表带。 据博主 @搞机王腾霄 透露，华为 WATCH Air 主打轻薄，采用方形设计，配备有钛金属表体。 新表还有望内置高硅叠片异形电池，续航可达 5 天 。 已曝光的海报显示，华为 WATCH Air 采用超轻薄设计，拥有圆润的弧面机身，侧边配有一枚旋转表冠按钮和一枚多功能按键。此外，这款手表还预装了鸿蒙 HarmonyOS 系统。 目前，华为官方暂未公布这款手表的具体配置信息，但爆料提到，这款手表将采用高亮钛一体化设计，提供黑、银、金三种配色。IT之家也将持续关注这款智能手表新品，并在第一时间带来最新情报。",
+        "url": "https://www.ithome.com/1/029/127.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
         "tag": "爱范儿",
-        "title": "深度实测 GPT-6.2：强是真强，难用也是真难用",
-        "summary": "希望国模也快快跟上啊 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1690130?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "title": "《GTA VI》首发体验：过去十年最好的游戏，也可能是未来十年最好的游戏",
+        "summary": "欢迎回到罪城 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+        "url": "https://www.ifanr.com/1690188?utm_source=rss&utm_medium=rss&utm_campaign=",
         "source": "爱范儿",
         "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "IT之家",
+        "title": "Touch ID 成功复活：“安卓版”iOS 系统实现指纹解锁功能",
+        "summary": "IT之家 11 月 19 日消息，近期 AI 逆向实现了很多有趣的项目，让很多不少设备有了新玩法。其中，让各式各样的设备刷入苹果 iOS 系统，是当下最受欢迎的探索方向之一。 参考IT之家此前报道，已有 小米 8 刷入 iOS 16.5 系统并伪装成 iPhone X 、 REDMI K20 Pro 刷入苹果 iOS 16 测试固件包 变身真“全面屏 iPhone”等先例。不过刷入 iOS 后的设备常常伴随着功能缺失和运行不稳定，最典型的就是 Wi-Fi 下线、Face ID / Touch ID 失效等。 博主 @BugOS技术组 昨晚分享的视频显示，已有刷入 iOS 系统的安卓设备成功“复活”Touch ID， 实现指纹解锁功能 ，同时录制指纹也是正常的。 从目前的进度来看，安卓手机刷入 iOS 系统已从最初的尝鲜逐步走向可日用的水平，虽然项目整体仍处于早期移植阶段，很多硬件驱动还需要继续适配，但后续发展值得期待。IT之家也将保持关注，并在第一时间带来最新情报。",
+        "url": "https://www.ithome.com/1/029/126.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "TechCrunch AI",
+        "title": "萨姆·阿尔特曼警告称，未来将由人工智能而非人类掌控大局",
+        "summary": "Sam Altman and Greg Brockman pushed back against Silicon Valley's growing debate over an AI takeover, while acknowledging the challenges of keeping advanced models under human control.",
+        "url": "https://techcrunch.com/2026/11/18/sam-altman-warns-against-a-future-where-ai-not-humans-calls-the-shots/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "IT之家",
+        "title": "华为 Mate 90 系列手机推 HarmonyOS 7.0.0.115 升级，“悄悄”上线完全体 3D 空间壁纸功能",
+        "summary": "IT之家 11 月 19 日消息，华为 Mate 90 系列手机已率先开启鸿蒙 HarmonyOS 7.0.0.115 SP11 版本升级，系统包大小约 10.31GB，带来了 AI 快捷栏等功能。 据博主 @怪咖学徒_ 反馈，在升级 HarmonyOS 7.0.0.115 版本后，华为 Mate 90 系列手机“悄悄”上线了完全体 3D 空间壁纸功能， 支持重力感应特性 。从视频演示效果来看，该功能可将壁纸 3D 空间化，手机晃动，壁纸内容也会跟随晃动。 参考IT之家此前报道， 今年 9 月发布的 HarmonyOS 7 操作系统主打全新空间美学设计语言 ，锁屏界面新增 3D 空间壁纸、空间时钟功能，可将照片中的元素与 3D 时钟巧妙结合，带来更加立体的壁纸效果。新系统还将液态玻璃带到了通知中心、文件夹等地方。 相关阅读： 《 华为鸿蒙 HarmonyOS 7 操作系统正式发布：全新空间美学设计语言，搭载系统智能体小艺 》",
+        "url": "https://www.ithome.com/1/029/125.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "The Verge AI",
+        "title": "威尔·莱特（Will Wright）的下一款游戏将使用人工智能来映射您的记忆",
+        "summary": "Will Wright, the creator of legendary franchises like SimCity and The Sims, is working on a new game - and it's built around AI. The new title, focused on your memories, is called MyMems. Like Wright's other titles, it sounds extremely ambitious, giving players a new way to explore worlds they create on their own. […]",
+        "url": "https://www.theverge.com/games/1036140/will-wright-mymems-ai-game-interview",
+        "source": "The Verge AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "The Verge AI",
+        "title": "还记得尖端人工智能暂停吗？芯片公司也不记得了",
+        "summary": "This summer, OpenAI paused its largest planned frontier training run after its AI agents accidentally hacked Hugging Face and early evidence suggested that its next model could independently find and exploit security flaws. In September, Anthropic CEO Dario Amodei called for slowing advances in the most powerful AI models, warning that they could be used […]",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/1036549/nvidia-amd-earnings-fall-2026-chips-pause-frontier-models",
+        "source": "The Verge AI",
+        "region": "en",
         "category": "科技"
       }
     ]
