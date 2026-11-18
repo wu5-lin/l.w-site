@@ -150,7 +150,6 @@ h3{font-size:14px;font-weight:700;margin:16px 0 8px}
     <button class="link-btn" onclick="exportState()">⬇ 导出进度备份</button>
     <button class="link-btn" onclick="pickBackup()">⬆ 导入进度备份</button>
     <input type="file" id="import-file" accept=".json,application/json" style="display:none" onchange="importState(this)">
-    <span class="backup-tip">换设备或清理浏览器缓存前先导出；导入可恢复全部学习记录（做题 / 错题 / 收藏 / 大题自评 / 模考 / 复习排期）</span>
   </div>
 </header>
 
@@ -184,7 +183,6 @@ h3{font-size:14px;font-weight:700;margin:16px 0 8px}
     </div>
     <div class="search-res" id="ext-search-res"><p class="hint">输入至少 2 个字符开始检索。</p></div>
   </details>
-  <p class="hint" id="nofig-note"></p>
   <p class="hint">答错自动进错题本，重做答对后自动移出 · 快捷键 1/2/3/4 作答，回车下一题</p>
   <p class="hint"><button class="link-btn" style="background:none;border:none;color:var(--blue);text-decoration:underline;cursor:pointer;font-family:inherit;font-size:12.5px" onclick="resetAll()">清空全部记录</button></p>
 </section>
@@ -354,7 +352,6 @@ function renderAll(){
   $("undone-count").textContent=undoneN===0?"1348 题已全部做过 ✓":"还剩 "+undoneN+" 道未做题";
   $("wrong-count").textContent=state.wrong.length===0?"错题本已清空":"消灭错题本（"+state.wrong.length+" 题）";
   $("fav-count").textContent=state.fav.length===0?"还没有收藏题":"重做标星题（"+state.fav.length+" 题）";
-  $("nofig-note").textContent="已从顺序 / 随机 / 模考中自动排除 "+(CHOICE.length-POOL.length)+" 道缺图选择题（题干依赖原图、源题库无图）；错题本与收藏不受影响，打开时会提示。";
   var dueN=reviewDueIds().length;
   $("rev-title").textContent=dueN?"今日待复习 "+dueN+" 题":"今天没有到期复习";
   $("rev-sub").textContent=dueN?"按 1 / 3 / 7 / 14 / 30 天排期 · 逾期的先复习（单次最多 30 题）":"错题会在 1 / 3 / 7 / 14 / 30 天后自动回到这里";
