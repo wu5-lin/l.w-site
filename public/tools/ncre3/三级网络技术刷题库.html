@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="pTytpjtUBZ77DO5iA9Q5YR">
+<head data-page-node-id="LWGEr3gZpJHVv1Z2Efhyi7">
+<meta charset="UTF-8" data-page-node-id="8qRHGK0E9AynWJHCJ77GOY">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="tzbJiAsp8Qta2Y1MQHxXM2">
+<title>三级网络技术 · 备考训练中心</title>
+<style>
+  :root {
+    --blue: #185FA5; --blue-bg: #E6F1FB; --blue-deep: #0C447C;
+    --teal: #0F6E56; --teal-bg: #E1F5EE;
+    --green: #3B6D11; --green-bg: #EAF3DE;
+    --amber: #854F0B; --amber-bg: #FAEEDA; --amber-accent: #EF9F27;
+    --red: #A32D2D; --red-bg: #FCEBEB;
+    --ink: #26262A; --muted: #5F5E5A; --line: #E4E2DC;
+    --card: #FFFFFF; --page: #F7F6F2;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif; background: var(--page); color: var(--ink); line-height: 1.7; font-size: 15px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 28px 16px 70px; }
+  header { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 26px 28px 20px; margin-bottom: 16px; }
+  header h1 { font-size: 22px; font-weight: 700; }
+  header .sub { color: var(--muted); font-size: 13px; margin-top: 4px; }
+  .stats { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+  .stat { flex: 1; min-width: 86px; background: var(--page); border: 1px solid var(--line); border-radius: 12px; padding: 10px 6px; text-align: center; }
+  .stat b { display: block; font-size: 18px; color: var(--blue-deep); }
+  .stat span { font-size: 12px; color: var(--muted); }
+  .tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+  .tab-btn { flex: 1; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 8px; font-size: 14.5px; font-weight: 700; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .tab-btn small { display: block; font-weight: 400; font-size: 12px; margin-top: 2px; }
+  .tab-btn.on { background: var(--blue); border-color: var(--blue); color: #fff; }
+  .tab-btn.on small { color: #D6E7F7; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px 26px; margin-bottom: 18px; }
+  h2 { font-size: 16px; font-weight: 700; margin-bottom: 12px; }
+  .modes { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  @media (max-width: 560px) { .modes { grid-template-columns: 1fr; } }
+  .mode-btn { text-align: left; background: var(--blue-bg); color: var(--blue-deep); border: 1px solid #B5D4F4; border-radius: 12px; padding: 13px 16px; font-size: 14.5px; font-weight: 600; cursor: pointer; font-family: inherit; }
+  .mode-btn small { display: block; font-weight: 400; font-size: 12.5px; color: var(--blue); margin-top: 2px; }
+  .mode-btn.warn { background: var(--amber-bg); border-color: #FAC775; color: var(--amber); }
+  .mode-btn.warn small { color: var(--amber); }
+  .mode-btn.teal { background: var(--teal-bg); border-color: #9FE1CB; color: var(--teal); }
+  .mode-btn.teal small { color: var(--teal); }
+  .mode-btn.green { background: var(--green-bg); border-color: #C0DD97; color: var(--green); }
+  .mode-btn.green small { color: var(--green); }
+  .chapters { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  @media (max-width: 560px) { .chapters { grid-template-columns: 1fr; } }
+  .ch-btn { display: flex; justify-content: space-between; align-items: center; gap: 8px; background: #FCFBF9; border: 1px solid var(--line); border-radius: 10px; padding: 9px 13px; font-size: 13.5px; cursor: pointer; font-family: inherit; color: var(--ink); text-align: left; }
+  .ch-btn:hover { border-color: var(--blue); }
+  .ch-btn .cnt { color: var(--muted); font-size: 12px; white-space: nowrap; }
+  .hint { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
+  .danger { background: none; border: none; color: var(--red); font-size: 12.5px; cursor: pointer; text-decoration: underline; font-family: inherit; }
+  .link-btn { background: none; border: none; color: var(--blue); font-size: 12.5px; cursor: pointer; text-decoration: underline; font-family: inherit; padding: 0; }
+  .backup-row { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 14px; margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--line); }
+  .backup-row .link-btn { font-size: 13px; font-weight: 600; }
+  .backup-tip { font-size: 12px; color: var(--muted); }
+  .quiz-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 12px; flex-wrap: wrap; }
+  .prog { font-size: 13px; color: var(--muted); font-weight: 600; }
+  .pill { font-size: 12.5px; font-weight: 600; border-radius: 20px; padding: 3px 12px; }
+  .pill.g { background: var(--green-bg); color: var(--green); }
+  .pill.r { background: var(--red-bg); color: var(--red); }
+  .bar { height: 6px; background: var(--page); border-radius: 3px; overflow: hidden; margin-bottom: 18px; }
+  .bar i { display: block; height: 100%; background: var(--blue); border-radius: 3px; transition: width .25s ease; }
+  .q-tag { display: inline-block; font-size: 12px; font-weight: 600; background: var(--blue-bg); color: var(--blue-deep); border-radius: 6px; padding: 2px 9px; margin-bottom: 10px; }
+  .q-tag.real { background: var(--amber-bg); color: var(--amber); }
+  .q-tag.blank { background: var(--green-bg); color: var(--green); }
+  .q-text { font-size: 16px; font-weight: 600; margin-bottom: 16px; }
+  .opt { display: block; width: 100%; text-align: left; background: #FCFBF9; border: 1px solid var(--line); border-radius: 12px; padding: 12px 15px; font-size: 14.5px; cursor: pointer; margin-bottom: 10px; font-family: inherit; color: var(--ink); line-height: 1.55; }
+  .opt:hover { border-color: var(--blue); }
+  .opt b { color: var(--blue-deep); margin-right: 8px; }
+  .opt.right { background: var(--green-bg); border-color: var(--green); }
+  .opt.right b { color: var(--green); }
+  .opt.wrong { background: var(--red-bg); border-color: var(--red); }
+  .opt.wrong b { color: var(--red); }
+  .opt:disabled { cursor: default; }
+  .blank-q { white-space: pre-wrap; background: #FCFBF9; border: 1px solid var(--line); border-radius: 10px; padding: 13px 15px; font-size: 14px; line-height: 1.75; margin-bottom: 14px; }
+  .blank-input { width: 100%; border: 1.5px solid var(--line); border-radius: 10px; padding: 12px 14px; font-size: 15px; font-family: inherit; outline: none; }
+  .blank-input:focus { border-color: var(--blue); }
+  .blank-input.right { border-color: var(--green); background: var(--green-bg); }
+  .blank-input.wrong { border-color: var(--red); background: var(--red-bg); }
+  .submit-btn { background: var(--blue); color: #fff; border: none; border-radius: 10px; padding: 10px 26px; font-size: 14.5px; font-weight: 600; cursor: pointer; font-family: inherit; margin-top: 10px; }
+  .exp { background: var(--blue-bg); border-radius: 12px; padding: 13px 16px; font-size: 13.5px; margin-top: 14px; display: none; }
+  .exp.show { display: block; }
+  .exp b { color: var(--blue-deep); }
+  .quiz-foot { display: flex; justify-content: space-between; align-items: center; margin-top: 16px; gap: 10px; }
+  .fav-btn { background: none; border: 1px solid var(--line); border-radius: 20px; padding: 6px 14px; font-size: 13px; cursor: pointer; color: var(--muted); font-family: inherit; }
+  .fav-btn.on { border-color: var(--amber-accent); color: var(--amber); background: var(--amber-bg); }
+  .skip-btn { background: none; border: 1px solid var(--line); border-radius: 10px; padding: 9px 16px; font-size: 13.5px; color: var(--muted); cursor: pointer; font-family: inherit; }
+  .next-btn { background: var(--blue); color: #fff; border: none; border-radius: 10px; padding: 10px 26px; font-size: 14.5px; font-weight: 600; cursor: pointer; visibility: hidden; font-family: inherit; }
+  .next-btn.show { visibility: visible; }
+  .quit { background: none; border: none; color: var(--muted); font-size: 13px; cursor: pointer; text-decoration: underline; font-family: inherit; }
+  .kbd-hint { font-size: 12px; color: var(--muted); margin-top: 14px; text-align: center; }
+  .flash-box { border: 2px solid var(--line); border-radius: 16px; min-height: 200px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 34px 26px; text-align: center; cursor: pointer; background: #FCFBF9; user-select: none; }
+  .flash-box .f-label { font-size: 12px; color: var(--muted); font-weight: 600; margin-bottom: 12px; letter-spacing: 1px; }
+  .flash-box .f-front { font-size: 17.5px; font-weight: 700; line-height: 1.7; }
+  .flash-box .f-back { font-size: 15px; line-height: 1.8; color: var(--blue-deep); }
+  .flash-box .f-tip { font-size: 12px; color: var(--muted); margin-top: 16px; }
+  .flash-actions { display: flex; gap: 12px; justify-content: center; margin-top: 18px; }
+  .mk-btn { border: none; border-radius: 10px; padding: 11px 30px; font-size: 14.5px; font-weight: 600; cursor: pointer; font-family: inherit; }
+  .mk-btn.no { background: var(--red-bg); color: var(--red); border: 1px solid #F09595; }
+  .mk-btn.yes { background: var(--green); color: #fff; }
+  .res-big { text-align: center; padding: 12px 0 4px; }
+  .res-big b { font-size: 40px; color: var(--blue-deep); }
+  .res-big p { color: var(--muted); font-size: 13.5px; margin-top: 4px; }
+  .res-line { display: flex; gap: 10px; justify-content: center; margin: 14px 0 18px; flex-wrap: wrap; }
+  .center { text-align: center; }
+  .btn { background: var(--blue); color: #fff; border: none; border-radius: 10px; padding: 10px 24px; font-size: 14px; font-weight: 600; cursor: pointer; font-family: inherit; margin: 0 5px 6px; }
+  .btn.ghost { background: #FCFBF9; color: var(--ink); border: 1px solid var(--line); }
+  .wrong-list { text-align: left; margin: 6px 0 16px; }
+  .wrong-list li { font-size: 13px; color: var(--muted); padding: 6px 0 6px 20px; border-bottom: 1px dashed var(--line); list-style: none; position: relative; }
+  .wrong-list li::before { content: "✕"; position: absolute; left: 2px; color: var(--red); font-weight: 700; }
+  .wrong-list details summary { cursor: pointer; color: var(--ink); font-weight: 600; }
+  .wrong-list .w-detail { margin-top: 6px; padding: 8px 10px; background: var(--page); border-radius: 8px; font-size: 12.5px; line-height: 1.65; color: var(--ink); white-space: pre-wrap; }
+  .wrong-list .w-ans { color: var(--green); font-weight: 700; margin: 4px 0; }
+  .search-panel { margin-top: 16px; border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; background: #FCFBF9; }
+  .search-panel summary { cursor: pointer; font-weight: 700; font-size: 14px; color: var(--blue-deep); }
+  .search-bar { display: flex; gap: 8px; margin-top: 10px; }
+  .search-bar input { flex: 1; border: 1px solid var(--line); border-radius: 8px; padding: 8px 11px; font-size: 13.5px; font-family: inherit; outline: none; }
+  .search-bar input:focus { border-color: var(--blue); }
+  .search-res { margin-top: 10px; max-height: 340px; overflow-y: auto; }
+  .search-item { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; background: #fff; margin-bottom: 8px; font-size: 13px; }
+  .search-item .s-ch { font-size: 11.5px; color: var(--blue-deep); font-weight: 700; margin-bottom: 4px; }
+  .search-item .s-ans { color: var(--green); font-weight: 700; margin-top: 5px; }
+  .search-item .s-exp { color: var(--muted); font-size: 12.5px; margin-top: 4px; line-height: 1.6; }
+  .hide { display: none; }
+  .decl { background: var(--amber-bg); border-radius: 10px; padding: 11px 14px; font-size: 12.5px; color: var(--amber); margin-top: 12px; }
+  /* ===== 模考 / 计时 / 报文表 / 诊断 ===== */
+  .pill.t { background: var(--amber-bg); color: var(--amber); }
+  .pill.t.urgent { background: var(--red-bg); color: var(--red); }
+  .pk-table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin: 12px 0 14px; font-family: Consolas, "Courier New", monospace; }
+  .pk-table th { background: var(--blue-bg); color: var(--blue-deep); font-weight: 700; padding: 6px 8px; border: 1px solid #B5D4F4; text-align: left; white-space: nowrap; }
+  .pk-table td { padding: 6px 8px; border: 1px solid var(--line); }
+  .pk-table tr:nth-child(even) td { background: #FCFBF9; }
+  .pk-table .hi { background: #FFF3CD; font-weight: 700; }
+  .diag { background: var(--blue-bg); border-radius: 12px; padding: 12px 16px; margin-top: 14px; font-size: 13px; color: var(--blue-deep); }
+  .diag b { font-weight: 700; }
+  .diag .weak { color: var(--red); font-weight: 700; }
+  .diag .ok { color: var(--green); font-weight: 700; }
+  .selfok { background: var(--green-bg); border: 1px solid #C0DD97; color: var(--green); border-radius: 8px; padding: 6px 14px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; margin-top: 10px; }
+  .sec-line { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin: 14px 0 4px; }
+  .sec-line span { font-size: 13px; font-weight: 600; background: var(--page); border: 1px solid var(--line); border-radius: 20px; padding: 4px 14px; }
+  .verdict { text-align: center; font-size: 15px; font-weight: 700; margin-top: 12px; }
+  .verdict.pass { color: var(--green); }
+  .verdict.fail { color: var(--red); }
+  .exam-note { background: var(--amber-bg); border-radius: 10px; padding: 11px 14px; font-size: 12.5px; color: var(--amber); margin-top: 12px; }
+  .rule-line { font-size: 12.5px; color: var(--muted); margin-top: 8px; line-height: 1.9; }
+  /* ===== 每日打卡 ===== */
+  .daily { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; background: var(--teal-bg); border: 1px solid #9FE1CB; border-radius: 12px; padding: 13px 17px; margin-bottom: 16px; }
+  .daily .ring { width: 54px; height: 54px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700; color: var(--teal); background: #fff; border: 3px solid var(--teal); flex-shrink: 0; }
+  .daily .info { flex: 1; min-width: 190px; }
+  .daily .info b { font-size: 14.5px; color: var(--teal); display: block; }
+  .daily .info span { font-size: 12.5px; color: var(--teal); }
+  .daily .streak { font-size: 12.5px; color: var(--teal); font-weight: 700; }
+  .daily input { width: 62px; padding: 5px 7px; border: 1px solid #9FE1CB; border-radius: 7px; font-family: inherit; font-size: 13px; text-align: center; }
+  .daily button { background: var(--teal); color: #fff; border: none; border-radius: 8px; padding: 7px 15px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+  /* ===== 今日复习（错题到期）===== */
+  .review { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; background: var(--amber-bg); border: 1px solid #FAC775; border-radius: 12px; padding: 12px 17px; margin-bottom: 16px; }
+  .review .info { flex: 1; min-width: 190px; }
+  .review .info b { font-size: 14.5px; color: var(--amber); display: block; }
+  .review .info span { font-size: 12.5px; color: var(--amber); }
+  .review button { background: var(--amber); color: #fff; border: none; border-radius: 8px; padding: 7px 15px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: inherit; }
+  .review button:disabled { background: #C9C6BB; cursor: default; }
+  .review.empty { background: var(--teal-bg); border-color: #9FE1CB; }
+  .review.empty .info b, .review.empty .info span { color: var(--teal); }
+  /* ===== 顶部导航 ===== */
+  .topnav { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; font-size: 13px; }
+  .topnav a { color: var(--blue-deep); text-decoration: none; background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 5px 11px; font-weight: 600; }
+  .topnav a:hover { border-color: var(--blue); background: var(--blue-bg); }
+  .topnav .nav-links { display: flex; gap: 6px; flex-wrap: wrap; }
+  /* ===== 打印：命令纸 ===== */
+  #print-sheet { display: none; }
+  @media print {
+    body { background: #fff; }
+    .wrap > *:not(#print-sheet) { display: none !important; }
+    #print-sheet { display: block !important; padding: 0; }
+    #print-sheet h2 { font-size: 15pt; margin: 0 0 4pt; }
+    #print-sheet h3 { font-size: 12pt; margin: 10pt 0 4pt; border-bottom: 1px solid #000; padding-bottom: 2pt; }
+    #print-sheet .ps { column-count: 2; column-gap: 18pt; font-size: 9.5pt; line-height: 1.55; font-family: Consolas, "Courier New", "Microsoft YaHei", monospace; }
+    #print-sheet .ps div { break-inside: avoid; margin-bottom: 1pt; }
+    #print-sheet .note { font-size: 8.5pt; color: #444; margin-bottom: 8pt; }
+  }
+</style>
+</head>
+<body data-page-node-id="DvbacJEJ0rHFQfVoFwmIbM">
+<div class="wrap" data-page-node-id="mcq1bRadpnNzdpBtmtFVIx">
+<nav class="topnav">
+  <a href="index.html">← 备考总入口</a>
+  <div class="nav-links">
+    <a href="计算机三级网络技术备考手册.html">备考手册</a>
+    <a href="三级网络技术扩展真题库.html">扩展真题库</a>
+    <a href="计算机三级网络技术通关技巧.html">通关技巧</a>
+  </div>
+</nav>
+
+<div id="print-sheet">
+  <h2>计算机三级网络技术 · 考场命令纸</h2>
+  <div class="note">打印设置：A4 纵向、页边距「窄」、勾选「背景图形」。建议考前一天打印，考前在候考区默写一遍。</div>
+  <h3>一、交换机（全局配置模式下）</h3>
+  <div class="ps">
+    <div>enable　← 进入特权模式</div>
+    <div>configure terminal　← 进入全局配置模式</div>
+    <div>hostname 名称</div>
+    <div>vlan 10　← 创建 VLAN 10</div>
+    <div>name 名称　← (config-vlan) 下命名</div>
+    <div>interface fastEthernet 0/1　← 接口模式</div>
+    <div>switchport mode access</div>
+    <div>switchport access vlan 10</div>
+    <div>switchport mode trunk</div>
+    <div>switchport trunk allowed vlan 10,20,30</div>
+    <div>interface vlan 1　← 管理地址</div>
+    <div>ip address 192.168.1.1 255.255.255.0</div>
+    <div>no shutdown</div>
+    <div>copy running-config startup-config</div>
+  </div>
+  <h3>二、查看命令</h3>
+  <div class="ps">
+    <div>show vlan　← VLAN 划分</div>
+    <div>show mac-address-table</div>
+    <div>show running-config</div>
+    <div>show ip route　← 路由表（C直连 S静态 R-RIP O-OSPF）</div>
+    <div>show ip nat translations</div>
+    <div>show access-lists</div>
+  </div>
+  <h3>三、路由器</h3>
+  <div class="ps">
+    <div>interface fastEthernet 0/0</div>
+    <div>ip address 192.168.1.1 255.255.255.0</div>
+    <div>no shutdown　← 激活接口</div>
+    <div>ip route 192.168.3.0 255.255.255.0 192.168.2.1</div>
+    <div>ip route 0.0.0.0 0.0.0.0 下一跳　← 默认路由</div>
+    <div>router rip → network 172.16.0.0</div>
+    <div>router ospf 1 → network 192.168.1.0 0.0.0.255 area 0</div>
+  </div>
+  <h3>四、ACL 与 NAT</h3>
+  <div class="ps">
+    <div>access-list 10 permit 192.168.1.0 0.0.0.255</div>
+    <div>access-list 120 deny tcp 192.168.1.0 0.0.0.255 host 202.113.10.10 eq 80</div>
+    <div>ip access-group 120 in</div>
+    <div>ip nat inside / ip nat outside</div>
+    <div>ip nat inside source list 1 pool 池名 overload</div>
+  </div>
+  <h3>五、IP 计算公式</h3>
+  <div class="ps">
+    <div>网络地址 = IP AND 子网掩码</div>
+    <div>广播地址 = 网络地址 + 主机位全 1</div>
+    <div>可用主机数 = 2^主机位 − 2</div>
+    <div>通配符掩码 = 255.255.255.255 − 子网掩码</div>
+    <div>私有地址：10.0.0.0/8、172.16.0.0/12、192.168.0.0/16</div>
+    <div>A 1–126　B 128–191　C 192–223　D 224–239</div>
+    <div>127.x = 回环　169.254 = APIPA</div>
+  </div>
+  <h3>六、必背端口号</h3>
+  <div class="ps">
+    <div>FTP 21/20　SSH 22　Telnet 23　SMTP 25</div>
+    <div>DNS 53　DHCP 67/68　TFTP 69　HTTP 80</div>
+    <div>POP3 110　IMAP 143　SNMP 161/162　HTTPS 443</div>
+    <div>RIP UDP 520　BGP TCP 179　OSPF IP 协议 89</div>
+  </div>
+  <h3>七、抓包与协议判断</h3>
+  <div class="ps">
+    <div>帧类型 0x0800=IP　0x0806=ARP　0x86DD=IPv6</div>
+    <div>IP 协议号 1=ICMP　6=TCP　17=UDP</div>
+    <div>IP 首字节 0x45 = IPv4 + 20 字节首部</div>
+    <div>TCP 标志 0x02=SYN　0x12=SYN+ACK　0x10=ACK</div>
+    <div>TTL 逐条递减 = tracert；仅 Echo 往返 = ping</div>
+    <div>DHCP：Discover→Offer→Request→Ack（67/68）</div>
+  </div>
+  <h3>八、协议与地址速查</h3>
+  <div class="ps">
+    <div>MAC = 48 位；以太网最小帧 64B；帧头 14B</div>
+    <div>802.1Q = VLAN（1–4094）；802.1d = STP</div>
+    <div>802.11b 11M/2.4G　a 54M/5G　g 54M/2.4G　n ≤600M</div>
+    <div>综合布线 6 子系统；水平子系统 ≤ 90 m</div>
+    <div>三层模型：核心（高速转发）汇聚（策略/ACL/路由聚合）接入（连终端）</div>
+  </div>
+</div>
+
+<header data-page-node-id="svJ4vtuvdJwRJaMyJVAg23">
+  <h1 data-page-node-id="6sbqTCk2DML8UVRKpBuPVm">三级网络技术 · 备考训练中心</h1>
+  <div class="sub" data-page-node-id="iNcHiWPy9GKVlQn8aYbBPT">选择题 106 + 真题 60 + 填空特训 55 + 应用题 12 + 背诵卡 80 · 题型结构：单选 40 分 / 综合填空 40 分 / 应用题 20 分</div>
+  <div class="stats" data-page-node-id="3SG9pIUxK9lOvDazkTyVbH">
+    <div class="stat" data-page-node-id="f9SkoFH5bI7ue5LsFOlMCZ"><b id="st-done" data-page-node-id="1bq7AOP87DHVkQrzkJ710t">0</b><span data-page-node-id="rgDHWl6YlgStgUHSZ4QEAT">刷题进度</span></div>
+    <div class="stat" data-page-node-id="jOW61lKDZisbKFQewv3PDe"><b id="st-acc" data-page-node-id="cWasgzVjjiDVJ5FKrhZdHm">–</b><span data-page-node-id="8XxCEIl6sWIlbzHlMYw6um">刷题正确率</span></div>
+    <div class="stat" data-page-node-id="tkUAgxBN12Q1vJSsvtrgpA"><b id="st-blank" data-page-node-id="28QRXg2wmDDLkm5ECBhx1A">0/55</b><span data-page-node-id="XCDnKMQTXUD27p6ZYkwr8n">填空特训</span></div>
+    <div class="stat" data-page-node-id="5GKeCMBFlhB0V19CiBgtgv"><b id="st-wrong" data-page-node-id="apt6iPE3JTqIx8mslhQjXd">0</b><span data-page-node-id="DucWaLxO1qXNBSs2xh5ZPl">待消灭错题</span></div>
+    <div class="stat" data-page-node-id="8qhkpwb1bFSZbwqNdXqYHw"><b id="st-real" data-page-node-id="gNdyuDbF5LDiEbkQn8Ggjj">0/60</b><span data-page-node-id="erzRS5Hs4BktTPlwI2elm0">真题进度</span></div>
+    <div class="stat" data-page-node-id="h8qMpPr3zQeg7vg4JAR8pr"><b id="st-card" data-page-node-id="yB35fD8ViewlRYaXJ4CgxY">0/80</b><span data-page-node-id="624DcUICwTNyscsx4F8JnP">背卡已掌握</span></div>
+  </div>
+  <div class="backup-row">
+    <button class="link-btn" onclick="exportState()">⬇ 导出进度备份</button>
+    <button class="link-btn" onclick="pickBackup()">⬆ 导入进度备份</button>
+    <input type="file" id="import-file" accept=".json,application/json" style="display:none" onchange="importState(this)">
+    <span class="backup-tip">换设备或清理浏览器缓存前先导出；导入可恢复全部学习记录（做题 / 错题 / 复习排期 / 收藏 / 背卡 / 模考 / 打卡）</span>
+  </div>
+</header>
+
+<div class="tabs" id="tabs" data-page-node-id="tdSre19k1vuGcxyqVUbD4j">
+  <button class="tab-btn on" data-tab="bank" onclick="showTab('bank')" data-page-node-id="jnv6vgfSLVExo8SHokkZGU">刷题库<small data-page-node-id="FCQfYlVYGanLROZvmjuTDo">选择 + 填空特训</small></button>
+  <button class="tab-btn" data-tab="real" onclick="showTab('real')" data-page-node-id="m3cGUNKz370iGt7hhzsaIO">真题库<small data-page-node-id="1uqzdW3kQGMNM0GsZ8W6zB">60 题 · 三套卷</small></button>
+  <button class="tab-btn" data-tab="card" onclick="showTab('card')" data-page-node-id="pgRYMuEiTNyInffVbAu9Dv">背题库<small data-page-node-id="FVFFzrDkxNRRl36Th49Gpb">80 张 · 记忆卡</small></button>
+  <button class="tab-btn" data-tab="exam" onclick="showTab('exam')" data-page-node-id="pgRYMuEiTNyInffVbAu9Dv2">全真模考<small data-page-node-id="FVFFzrDkxNRRl36Th49Gpb2">120 分钟 · 自动判分</small></button>
+</div>
+
+<section id="tab-bank" data-page-node-id="o8hFDvDag1gBycTOPIdEj6">
+  <div class="diag hide" id="diag-panel" data-page-node-id="DG0000000000000001"></div>
+  <div class="daily" id="daily-panel" data-page-node-id="DL0000000000000001">
+    <div class="ring" id="d-ring">0</div>
+    <div class="info" data-page-node-id="DL0000000000000002">
+      <b id="d-title">今日目标</b>
+      <span id="d-sub">加载中…</span>
+    </div>
+    <div data-page-node-id="DL0000000000000003">
+      <span class="streak" id="d-streak" data-page-node-id="DL0000000000000004"></span>
+    </div>
+    <div data-page-node-id="DL0000000000000005">
+      <span style="font-size:12.5px;color:var(--teal)">目标 </span><input type="number" id="d-goal" min="5" max="200" step="5" data-page-node-id="DL0000000000000006">
+      <button onclick="saveGoal()" data-page-node-id="DL0000000000000007">保存</button>
+    </div>
+  </div>
+  <div class="review empty" id="review-panel">
+    <div class="info">
+      <b id="rev-title">今天没有到期复习</b>
+      <span id="rev-sub">错题会在 1 / 3 / 7 / 14 / 30 天后自动回到这里</span>
+    </div>
+    <button id="rev-btn" onclick="startTodayReview()" disabled>开始复习</button>
+  </div>
+  <h2 data-page-node-id="XL9rcksuMTi5HmiVpLCEDQ">选择题刷题（针对单选 40 分）</h2>
+  <div class="modes" data-page-node-id="gARRr6WJ2TqvPFceBcKZHR">
+    <button class="mode-btn" id="btn-seq" onclick="startSeq()" data-page-node-id="HEdcSEtIoNjKJCeugK3Otx">顺序刷题<small id="seq-sub" data-page-node-id="s8daCmJl9ODulocVVVeUK2">从第 1 题开始</small></button>
+    <button class="mode-btn" onclick="startRandom(30)" data-page-node-id="zEYcGzxDlQhdr9Ey0grnuT">随机 30 题<small data-page-node-id="vvGIb6kpoc1iCFQ6kaRKRl">每次随机抽题，适合日常训练</small></button>
+    <button class="mode-btn green" onclick="startUndone(30)">未做题随机 30 题<small id="undone-count">只刷还没做过的题</small></button>
+    <button class="mode-btn warn" onclick="startWrong()" data-page-node-id="zaWfThkU6gYMM1aJNGB09r">错题重做<small id="wrong-count" data-page-node-id="15i3Lm9SECWcKEfVKYMqAg">消灭错题本</small></button>
+    <button class="mode-btn teal" onclick="startFav()" data-page-node-id="1TNHPjlFL54FvUkTDbizyk">收藏复习<small id="fav-count" data-page-node-id="A7vKrGyjZiq1FzZdJh2vMh">重做你标星的题</small></button>
+  </div>
+  <p class="hint" data-page-node-id="dt5TDgqNhxF3smnxDRppmh"><button class="link-btn" onclick="resetSeq()" data-page-node-id="3MAL1MSglwXhlwSCouw2Cp">重置顺序刷题进度</button></p>
+  <h2 style="margin-top:14px" data-page-node-id="INxJS5nhHccVBqBXI9PiFF">按章节专项刷</h2>
+  <div class="chapters" id="chapters" data-page-node-id="FHGQFxphx7FLukOaJdmVAz"></div>
+
+  <h2 style="margin-top:22px" data-page-node-id="78eSdb0sxfJJuAHZwxHJ3A">填空特训（针对综合题 4 大题 40 分）</h2>
+  <div class="modes" data-page-node-id="DbSmIHGys7YroA68p1LzPH">
+    <button class="mode-btn green" onclick="startBlankSeq()" data-page-node-id="P1X5qtqUoXIP9H3ai2kJMz">填空全部 55 题<small data-page-node-id="ulH90YOXHvT81KLNvQRrJd">IP 计算 + 配置命令 + 抓包分析</small></button>
+    <button class="mode-btn green" onclick="startBlankRandom(15)" data-page-node-id="zIxc6oSYYmU0xQgHpkUN0H">填空随机 15 题<small data-page-node-id="DOZRl027JBweMvYXDExUCQ">三类混合抽题</small></button>
+    <button class="mode-btn warn" onclick="startBlankWrong()" data-page-node-id="DF4J49frsCFY0if8FrSJp8">填空错题重做<small id="blank-wrong-count" data-page-node-id="tjLMPkTihqg6bBUJXBt2ig">消灭填空错题</small></button>
+    <button class="mode-btn" onclick="startBlankCh('抓包分析填空')" data-page-node-id="QFDdtv7jnkHtgiA7n1Wt5F">Sniffer 抓包专项<small data-page-node-id="UJZ2PGlS5kKaH2V0UtXxac">最难的题型，单独攻坚</small></button>
+    <button class="mode-btn" onclick="startBlankCh('DHCP报文分析填空')" data-page-node-id="DH0000000000000001">DHCP 报文专项<small data-page-node-id="DH0000000000000002">综合题第 3 题必考</small></button>
+    <button class="mode-btn" onclick="startBlankCh('IP逆向计算填空')" data-page-node-id="DH0000000000000003">逆向计算专项<small data-page-node-id="DH0000000000000004">给广播地址反推网络号</small></button>
+  </div>
+  <div class="chapters" id="blank-chapters" style="margin-top:10px" data-page-node-id="usK7cc2XljGnJtzRgWHHG6"></div>
+  <p class="hint" data-page-node-id="KkPi2t63ReVjOzi3EyrGWd">答错自动进错题本，重做答对后自动移除 · 键盘 1-4 作答选择、回车提交填空</p>
+
+  <h2 style="margin-top:22px" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ1">应用题专项（针对应用题 20 分）</h2>
+  <div class="modes" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ2">
+    <button class="mode-btn teal" onclick="startApplySeq()" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ3">应用题全部 12 题<small data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ4">路由聚合 + 子网划分 + 设备部署</small></button>
+    <button class="mode-btn teal" onclick="startApplyRandom(6)" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ5">应用题随机 6 题<small data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ6">场景化抽题</small></button>
+    <button class="mode-btn warn" onclick="startApplyWrong()" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ7">应用题错题重做<small id="apply-wrong-count" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ8">消灭应用题错题</small></button>
+    <button class="mode-btn" onclick="showTab('exam')" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ9">进入全真模考<small data-page-node-id="AP1h2xxkQ0aZzZzZzZzA">120 分钟整套卷</small></button>
+  </div>
+  <div class="chapters" id="apply-chapters" style="margin-top:10px" data-page-node-id="AP1h2xxkQ0aZzZzZzZzB"></div>
+  <details class="search-panel">
+    <summary>🔍 题库关键词搜题（覆盖单选 / 真题 / 填空 / 应用题）</summary>
+    <div class="search-bar">
+      <input type="text" id="bank-search-in" placeholder="输入关键词，如 OSPF、VLAN、tracert、255.192…" oninput="searchBank()">
+    </div>
+    <div class="search-res" id="bank-search-res"><p class="hint">输入至少 2 个字符开始检索。</p></div>
+  </details>
+  <p class="hint" data-page-node-id="AP1h2xxkQ0aZzZzZzZzC">应用题按考场套路作答：先算地址，再定设备，最后说理由。答错自动进错题本。</p>
+  <p style="margin-top:8px" data-page-node-id="1QyZNKOQIxuIAo6W6BiErA"><button class="danger" onclick="resetAll()" data-page-node-id="s3UlC19BKZnqENknZH3UNh">清空全部刷题记录</button></p>
+</section>
+
+<section id="tab-real" class="hide" data-page-node-id="KHoR7yEV9zQ4bjuHtOYHB5">
+  <h2 data-page-node-id="b0QMHQ04ZVojh2HgkiCnPn">历年真题套卷（每套 20 题）</h2>
+  <div class="modes" id="real-sets" data-page-node-id="CjwZAxf7wGwuli6Mryt99D"></div>
+  <h2 style="margin-top:18px" data-page-node-id="mIpEEQK9wvjJcWJXwqrMLV">自由模式</h2>
+  <div class="modes" data-page-node-id="6I8t2JO1A1uskOvV42WrQP">
+    <button class="mode-btn" onclick="startRealRandom(20)" data-page-node-id="FZnam4EeT0pl3wEHDXNaI2">真题随机 20 题<small data-page-node-id="QEJRmHsma30QdNx17Vl2b5">跨年份混合抽题</small></button>
+    <button class="mode-btn warn" onclick="startRealWrong()" data-page-node-id="EjeZPxnVVvXBwHrFH0aryI">真题错题重做<small id="real-wrong-count" data-page-node-id="H6yESLCA22RHSq4BvKX4pl">消灭真题错题</small></button>
+  </div>
+  <div class="decl" data-page-node-id="SwJURH5XfcbDsDykvQbEgo">说明：本真题库按 2023–2025 年考试实际考点与题型整理还原，用于熟悉真实考试的出题风格。正式冲刺请再配合未来教育无纸化真题软件（含完整套卷、填空大题与真实考试界面）。</div>
+</section>
+
+<section id="tab-card" class="hide" data-page-node-id="MyRhIMkBm92MwemWTFge8c">
+  <h2 data-page-node-id="J1VMfEIK4iBg8jWm5MhnYP">背诵模式</h2>
+  <div class="modes" data-page-node-id="FRoLjymXfFh4eP7xG9gWxC">
+    <button class="mode-btn green" onclick="startCards('seq')" data-page-node-id="rxcjX9ayucEM5tB8ImgbES">顺序背诵<small data-page-node-id="4AwV1Nc2yuaZmvBXtG4ZcJ">80 张卡从头过一遍</small></button>
+    <button class="mode-btn green" onclick="startCards('random')" data-page-node-id="BwG11uSf6iK1XTw1vARumw">随机背诵<small data-page-node-id="DroQQNj3CpbFZIxzFtF1Rs">打乱顺序抽卡</small></button>
+    <button class="mode-btn warn" onclick="startCards('unknown')" data-page-node-id="F3FycqgvjJJYQcoKnbMX9C">只背未掌握<small id="card-unknown-sub" data-page-node-id="BGQ9CKLyCm9zqnVicGrYPz">专攻记不住的卡</small></button>
+    <button class="mode-btn teal" onclick="resetCardsProgress()" data-page-node-id="nQOdGkJuLk4AjtDSXOGwAT">重置背诵进度<small data-page-node-id="TsbYYsKlOJAb29DkJ9qtBu">全部标记清零，重新来</small></button>
+  </div>
+  <h2 style="margin-top:18px" data-page-node-id="CUvFv5Eq28IE5pna0Dc60F">按类别背</h2>
+  <div class="chapters" id="card-chapters" data-page-node-id="eh5EFWIFo6madhKd4S29hi"></div>
+  <p class="hint" data-page-node-id="yCE2TGH7fbYwBiEnFOj9iI">点卡片翻面看答案 → 记住了 / 没记住 · 键盘：空格翻面、→ 记住、← 没记住</p>
+  <p class="hint" data-page-node-id="PR00000000000000001"><button class="link-btn" onclick="printSheet()" data-page-node-id="PR00000000000000002">🖨 打印考场命令纸（A4 一页速查）</button>　<span data-page-node-id="PR00000000000000003">含配置命令、端口号、IP 计算公式、抓包判断要点</span></p>
+</section>
+
+<section id="tab-exam" class="hide" data-page-node-id="EX1tab00000000000001">
+  <h2 data-page-node-id="EX1tab00000000000002">全真模考（120 分钟 · 满分 100）</h2>
+  <div class="rule-line" data-page-node-id="EX1tab00000000000003">
+    卷面构成：<b>单选 40 题（40 分）</b> + <b>综合填空 6 题（40 分：IP 计算 2 + 配置 2 + DHCP/抓包 2）</b> + <b>应用题 2 题（20 分）</b><br>
+    计时 120 分钟，到点自动交卷；60 分合格、90 分优秀。交卷后给出分板块得分。
+  </div>
+  <div class="modes" style="margin-top:16px" data-page-node-id="EX1tab00000000000004">
+    <button class="mode-btn green" onclick="startExam()" data-page-node-id="EX1tab00000000000005">开始全真模考<small data-page-node-id="EX1tab00000000000006">120 分钟整套卷 · 随机抽题</small></button>
+    <button class="mode-btn teal" onclick="startExamShort()" data-page-node-id="EX1tab00000000000007">半卷速测（60 分钟）<small data-page-node-id="EX1tab00000000000008">20 选择 + 3 填空 + 1 应用</small></button>
+    <button class="mode-btn" onclick="startExamConfig()" data-page-node-id="EX1tab00000000000009">只模考综合题（40 分）<small data-page-node-id="EX1tab0000000000000A">4 填空 + 1 应用 · 30 分钟</small></button>
+    <button class="mode-btn warn" onclick="showTab('bank')" data-page-node-id="EX1tab0000000000000B">先刷题再模考<small data-page-node-id="EX1tab0000000000000C">回刷题库</small></button>
+  </div>
+  <div class="exam-note" data-page-node-id="EX1tab0000000000000D">
+    <b>模考纪律：</b>中途不要暂停去查资料，答不出来就跳过——这才能暴露真实的薄弱章节。交卷后到「刷题库」顶部的<b>薄弱章节诊断</b>看该重点补哪里。
+  </div>
+  <h2 style="margin-top:20px" data-page-node-id="EX1tab0000000000000E">历史模考成绩</h2>
+  <div id="exam-history" data-page-node-id="EX1tab0000000000000F"></div>
+  <p class="hint" data-page-node-id="EX1tab00000000000010">成绩仅保存在本机浏览器，最多保留最近 10 次。</p>
+</section>
+
+<section id="quiz" class="hide" data-page-node-id="4UzTgqRtu5TFYLIsMcs4X6">
+  <div class="quiz-top" data-page-node-id="w7yZRW2BDkPUKiqush28pE">
+    <span class="prog" id="prog" data-page-node-id="vTUitbC5PwZUb7B2d49CTF"></span>
+    <span class="pill t hide" id="timer" data-page-node-id="TM0000000000000001">120:00</span>
+    <span data-page-node-id="gCDjW9DOjOe3440NCcswJY"><span class="pill g" id="p-right" data-page-node-id="k6Dm0fGhRIsGchWC4qRyEw">对 0</span> <span class="pill r" id="p-wrong" data-page-node-id="A4A23scy5K4WehvJDAqjKW">错 0</span></span>
+  </div>
+  <div class="bar" data-page-node-id="oAHmHADzINTDA8r0NbCNJZ"><i id="bar-fill" style="width:0%" data-page-node-id="Ilb38DZj6eXAEbpfDAbrOu"></i></div>
+  <div data-page-node-id="EQLsNtYEY1XV3m3pBdSctm">
+    <span class="q-tag" id="q-ch" data-page-node-id="i2zAD5Vo6pswoOQsPFvfcH"></span>
+    <div class="q-text" id="q-text" data-page-node-id="34UVAvVswQoGWOOPw9ZaQe"></div>
+    <div id="opt-area" data-page-node-id="ndoJtumNA8zESVyexuHNH8"></div>
+    <div class="exp" id="exp" data-page-node-id="fF34Dd5n3CjED1aZmOAbXw"></div>
+    <div class="quiz-foot" data-page-node-id="7uPuMbBuS4QsDRaIrs8o0e">
+      <button class="fav-btn" id="fav" onclick="toggleFav()" data-page-node-id="70abhc0D9wnzV3aK9mmPtl">☆ 收藏</button>
+      <span data-page-node-id="uIioWi7QbDOBCBfyD2o8eE">
+        <button class="skip-btn" id="skip" onclick="skipQ()" data-page-node-id="sgAa8BaNOHhy6BXrbNwwvy">跳过</button>
+        <button class="next-btn" id="next" onclick="nextQ()" data-page-node-id="fCK2TS6rNeSFpqSdXgUzBp">下一题</button>
+      </span>
+    </div>
+  </div>
+  <div class="center" style="margin-top:14px" data-page-node-id="Pscno2fQNYzCpqWUkgUxrk"><button class="quit" onclick="endSession(true)" data-page-node-id="jCdEM6vU5bxtRf22BxNObr">提前结束</button></div>
+  <p class="kbd-hint" data-page-node-id="es5xsdN0zcTcxOpypSdKG4">快捷键：1 / 2 / 3 / 4 选择答案 · 回车提交填空 / 进入下一题 · 选项顺序每场随机，避免按位置记忆 · 填空题判错时可点「我这题答对了」自评纠正</p>
+</section>
+
+<section id="flash" class="hide" data-page-node-id="ByCHFWWj38ua8kUc2cNVLG">
+  <div class="quiz-top" data-page-node-id="HGlj7PQvyiHTG9MFboHhBk">
+    <span class="prog" id="f-prog" data-page-node-id="Pwra5o2svUpu7RBbHISjnY"></span>
+    <span data-page-node-id="FCAMAVjqlszWJ1qkUOBstb"><span class="pill g" id="f-known" data-page-node-id="GU2eeQa1yDuiF3A0W9HaG2">已记住 0</span></span>
+  </div>
+  <div class="bar" data-page-node-id="gimZMuUcNE7y3RklAsWASn"><i id="f-bar" style="width:0%" data-page-node-id="QBsLKpudtt7qpakWPuYSuj"></i></div>
+  <div class="flash-box" id="flash-box" onclick="flipCard()" data-page-node-id="1FdoaC5qTx5Be2ByPykDn4">
+    <div class="f-label" id="f-ch" data-page-node-id="Ju7P2wqnVOzAOYF9GFtwEu"></div>
+    <div class="f-front" id="f-text" data-page-node-id="BXNxWSPWbkLOzg19qgZwEP"></div>
+    <div class="f-tip" id="f-tip" data-page-node-id="CXPqmljX1Lh1yzYUxdpJdF">点击卡片查看答案</div>
+  </div>
+  <div class="flash-actions hide" id="flash-actions" data-page-node-id="oUZW97sXsRnilt9YciUKCG">
+    <button class="mk-btn no" onclick="markCard(false)" data-page-node-id="FUCaECtvEx02w36cIysx8B">没记住</button>
+    <button class="mk-btn yes" onclick="markCard(true)" data-page-node-id="7SbDfTt869z8rRBp97J7Vb">记住了</button>
+  </div>
+  <div class="center" style="margin-top:14px" data-page-node-id="sS9nPom9dxOzfkz0SkxSgr"><button class="quit" onclick="endCards()" data-page-node-id="wYQlzCDh8FJzhbFShZWtuL">结束本轮</button></div>
+  <p class="kbd-hint" data-page-node-id="vZf2JICEOUxDPhH4dYrRBZ">快捷键：空格 翻面 · → 记住了 · ← 没记住</p>
+</section>
+
+<section id="result" class="hide" data-page-node-id="0SOKyvmZukzCTwF9SfNtfx">
+  <div class="res-big" data-page-node-id="rNefCgahnEnXpDQ6uEQwH1">
+    <b id="res-score" data-page-node-id="0IqJub2k93NGSzpdCO0D3m">0%</b>
+    <p id="res-detail" data-page-node-id="A6YIlRvDr6QQmlKeqyWQuM"></p>
+  </div>
+  <div class="res-line" data-page-node-id="rZGKUEiX4LqqscOSKaGpom">
+    <span class="pill g" id="res-right" data-page-node-id="n4uTehCJ5wj5FTcURMA8nF">答对 0 题</span>
+    <span class="pill r" id="res-wrong" data-page-node-id="XAiikzhS5VD87GYcB6CAJH">答错 0 题</span>
+  </div>
+  <ul class="wrong-list" id="res-wronglist" data-page-node-id="cgKBwh1z4G8FKt4zughPEE"></ul>
+  <div class="sec-line hide" id="res-sec" data-page-node-id="RS0000000000000001"></div>
+  <div class="verdict hide" id="res-verdict" data-page-node-id="RV0000000000000001"></div>
+  <div class="center" data-page-node-id="YPCwYKPprg5FODPhq3psVV">
+    <button class="btn hide" id="res-redo" onclick="redoSessionWrong()" data-page-node-id="iEh2vtALZfQFpDRmRWvV5U">重练本轮错题</button>
+    <button class="btn ghost" onclick="goHome()" data-page-node-id="qKyVrkprs6nz1VsT8XFFPA">返回</button>
+  </div>
+  <p class="hint center" id="res-tip" data-page-node-id="uPaqf8IVOwnDG3FFGGFlIE"></p>
+</section>
+
+</div>
+
+<script>
+var BANK = [
+{id:"Q001",ch:"网络结构与设计基础",q:"计算机网络按覆盖范围分类，不包括以下哪一类？",o:["局域网 LAN","城域网 MAN","广域网 WAN","星形网 STAR"],a:3,e:"按覆盖范围分为局域网、城域网、广域网（以及个人区域网）。星形是拓扑结构，不是覆盖范围分类。"},
+{id:"Q002",ch:"网络结构与设计基础",q:"以下技术中，属于广域网（WAN）技术的是？",o:["以太网","令牌环网","帧中继 Frame Relay","FDDI"],a:2,e:"帧中继、ATM、X.25、DDN 是典型广域网技术；以太网、令牌环、FDDI 属于局域网技术。"},
+{id:"Q003",ch:"网络结构与设计基础",q:"宽带城域网的网络结构通常分为三个层次，自上而下依次是？",o:["核心交换层、汇聚层、接入层","接入层、汇聚层、核心层","核心层、分布层、边缘层","骨干层、支干层、用户层"],a:0,e:"宽带城域网三层结构：核心交换层（核心层）→ 汇聚层 → 接入层。这是三级考试的高频考点。"},
+{id:"Q004",ch:"网络结构与设计基础",q:"关于 ADSL 技术，下列说法错误的是？",o:["上行和下行速率不对称","利用现有电话铜线传输","下行速率通常高于上行速率","用户上网时不能同时打电话"],a:3,e:"ADSL 用频分复用把语音和数据分开，上网打电话互不干扰。其特点是非对称：下行最高约 8Mbps，上行最高约 1Mbps。"},
+{id:"Q005",ch:"网络结构与设计基础",q:"HFC（光纤同轴混合网）接入方式中，用户端需要的设备是？",o:["ADSL Modem","Cable Modem","ONU","ISDN 终端适配器"],a:1,e:"HFC 利用有线电视同轴电缆入户，用户端使用 Cable Modem。其特点是共享介质，用户多时速率下降。"},
+{id:"Q006",ch:"网络结构与设计基础",q:"光纤接入网中，FTTH 指的是？",o:["光纤到路边","光纤到楼","光纤到户","光纤到办公室"],a:2,e:"FTTH = Fiber To The Home 光纤到户。FTTC 到路边、FTTB 到楼、FTTO 到办公室。"},
+{id:"Q007",ch:"网络结构与设计基础",q:"IEEE 802.16 标准对应的无线城域网技术是？",o:["Wi-Fi","蓝牙","WiMAX","ZigBee"],a:2,e:"IEEE 802.16 是宽带无线城域网标准，商用名称为 WiMAX；Wi-Fi 对应 802.11，蓝牙对应 802.15.1。"},
+{id:"Q008",ch:"网络结构与设计基础",q:"城域网 MAN 的典型覆盖范围是？",o:["一间办公室","一栋楼到一个校园","一座城市（几十公里范围）","跨国界范围"],a:2,e:"LAN 一般在几公里内（楼宇/校园），MAN 覆盖一座城市（几到几十公里），WAN 可达数千公里。"},
+{id:"Q009",ch:"网络结构与设计基础",q:"宽带城域网核心交换层的主要作用是？",o:["连接用户终端","实现高速数据转发与骨干互联","提供宽带拨号认证","进行地址转换"],a:1,e:"核心交换层负责高速分组转发、与广域骨干网互联；汇聚层做流量汇聚与策略控制；接入层负责用户接入。"},
+{id:"Q010",ch:"网络结构与设计基础",q:"下列关于计算机网络的描述，正确的是？",o:["局域网只能采用总线型拓扑","广域网一般由电信运营商建设运营","城域网必须使用光纤","无线网络不属于局域网"],a:1,e:"广域网跨越地域广，一般由电信运营商建设运营。局域网可用多种拓扑；城域网不强制用光纤；WLAN 属于局域网。"},
+{id:"Q011",ch:"网络总体规划",q:"进行网络规划时，首先要做的工作是？",o:["选购设备","需求分析","综合布线","IP 地址分配"],a:1,e:"网络系统建设的基本流程：需求分析 → 方案设计 → 实施 → 测试验收。需求分析是第一步，决定后续所有设计。"},
+{id:"Q012",ch:"网络总体规划",q:"大中型局域网分层设计模型中，负责高速转发、连接各汇聚设备的是？",o:["接入层","汇聚层","核心层","工作组层"],a:2,e:"三层模型：核心层负责高速转发和骨干互联；汇聚层做路由聚合与策略；接入层连接终端用户。"},
+{id:"Q013",ch:"网络总体规划",q:"综合布线系统（结构化布线）标准划分为几个子系统？",o:["4 个","5 个","6 个","7 个"],a:2,e:"六个子系统：工作区、水平（配线）、垂直干线、设备间、管理间、建筑群子系统。必考数字。"},
+{id:"Q014",ch:"网络总体规划",q:"综合布线系统中，连接不同建筑物之间线缆的子系统是？",o:["水平子系统","垂直干线子系统","建筑群子系统","设备间子系统"],a:2,e:"建筑群子系统连接楼与楼之间；垂直干线连接楼内各楼层；水平子系统连接楼层配线间到工作区信息插座。"},
+{id:"Q015",ch:"网络总体规划",q:"水平子系统双绞线布线长度一般不应超过？",o:["50 m","90 m","100 m","500 m"],a:1,e:"水平子系统线缆（配线架到信息插座）不超过 90 m；加上两端跳线后信道总长不超过 100 m。90 是考点数字。"},
+{id:"Q016",ch:"网络总体规划",q:"选择核心层交换机时，最关键的指标之一是？",o:["端口数量","背板带宽","外观尺寸","风扇噪音"],a:1,e:"核心层承担全网流量转发，背板带宽（交换容量）和包转发率是关键指标，要求无阻塞线速转发。"},
+{id:"Q017",ch:"网络总体规划",q:"网络汇聚层的主要功能不包括？",o:["流量汇聚","实施访问控制策略","路由聚合","直接连接用户 PC"],a:3,e:"直接连接用户终端是接入层的职责。汇聚层负责流量汇聚、策略实施（ACL/QoS）和路由聚合。"},
+{id:"Q018",ch:"网络总体规划",q:"在中小型网络设计中，接入层交换机通常部署在？",o:["机房核心机柜","楼层配线间","建筑物之间的管道","运营商机房"],a:1,e:"接入层交换机一般放在各楼层配线间，就近连接本楼层用户终端，通过垂直干线上联汇聚层。"},
+{id:"Q019",ch:"IP地址规划",q:"IP 地址 191.22.168.30 属于哪一类地址？",o:["A 类","B 类","C 类","D 类"],a:1,e:"B 类地址第一个字节范围 128–191。191 属于 B 类。A 类 1–126，C 类 192–223，D 类 224–239。"},
+{id:"Q020",ch:"IP地址规划",q:"下列 IP 地址中，属于私有地址的是？",o:["172.32.5.6","10.18.30.44","192.167.1.1","8.8.8.8"],a:1,e:"私有地址三段：10.0.0.0–10.255.255.255；172.16.0.0–172.31.255.255；192.168.0.0–192.168.255.255。注意 172.32 和 192.167 都不是私有地址。"},
+{id:"Q021",ch:"IP地址规划",q:"地址 127.0.0.1 的用途是？",o:["受限广播","回环测试（loopback）","网络地址","默认网关"],a:1,e:"127.0.0.0/8 整段保留作回环地址，用于本机 TCP/IP 协议栈测试，最常用 127.0.0.1。"},
+{id:"Q022",ch:"IP地址规划",q:"受限广播地址 255.255.255.255 的特点是？",o:["会被路由器转发到全网","只在本网段（本地网络）内广播","用于组播","用于回环测试"],a:1,e:"受限广播只在本网段传播，路由器不转发。与之相对的是直接广播地址（主机号全 1），可由路由器定向转发到目标网段。"},
+{id:"Q023",ch:"IP地址规划",q:"某主机自动获得了 169.254.10.20 的地址，说明？",o:["配置了静态地址","DHCP 获取地址失败，启用了 APIPA 自动私有寻址","该地址是组播地址","该地址是 C 类公网地址"],a:1,e:"169.254.0.0/16 是 APIPA 链路本地地址段，Windows 主机 DHCP 失败时自动配置该段地址。"},
+{id:"Q024",ch:"IP地址规划",q:"IP 地址 192.168.10.130/26 的网络地址是？",o:["192.168.10.0","192.168.10.64","192.168.10.128","192.168.10.192"],a:2,e:"/26 掩码 255.255.255.192，块大小 64。130 落在 128–191 区间，网络地址 = 192.168.10.128。"},
+{id:"Q025",ch:"IP地址规划",q:"IP 地址 192.168.10.130/26 的直接广播地址是？",o:["192.168.10.191","192.168.10.255","192.168.10.129","255.255.255.255"],a:0,e:"同一子网 128–191，主机号全 1 即广播地址 = 192.168.10.191。下一个子网从 192 开始。"},
+{id:"Q026",ch:"IP地址规划",q:"子网掩码 255.255.255.240 对应的前缀长度和每子网可用主机数分别是？",o:["/27，30 台","/28，14 台","/29，6 台","/26，62 台"],a:1,e:"240 = 11110000，前缀 /28，主机位 4 位，可用主机 2⁴−2 = 14 台。"},
+{id:"Q027",ch:"IP地址规划",q:"一个 C 类网络要划分出至少 6 个子网，每个子网主机尽可能多，应选用的子网掩码是？",o:["255.255.255.192","255.255.255.224","255.255.255.240","255.255.255.248"],a:1,e:"借 3 位可划分 2³=8 个子网（≥6），剩 5 位主机位每子网 30 台主机，掩码 255.255.255.224。借 4 位虽可分 16 个子网但主机数变少。"},
+{id:"Q028",ch:"IP地址规划",q:"某部门有 600 台主机，分配的最短前缀长度应为？",o:["/21","/22","/23","/24"],a:1,e:"2¹⁰−2 = 1022 ≥ 600，需 10 位主机位，前缀 = 32−10 = /22。/23 只有 510 台可用，不够。"},
+{id:"Q029",ch:"IP地址规划",q:"主机地址 172.16.5.99/27 所在子网的可用主机地址范围是？",o:["172.16.5.97 – 172.16.5.126","172.16.5.65 – 172.16.5.94","172.16.5.96 – 172.16.5.127","172.16.5.1 – 172.16.5.30"],a:0,e:"/27 块大小 32，99 落在 96–127，网络地址 .96，广播地址 .127，可用主机 .97–.126。"},
+{id:"Q030",ch:"IP地址规划",q:"将 202.113.16.0/24、202.113.17.0/24、202.113.18.0/24、202.113.19.0/24 聚合为一个 CIDR 块，结果是？",o:["202.113.16.0/22","202.113.16.0/21","202.113.0.0/16","202.113.16.0/23"],a:0,e:"16–19 第三字节二进制 00010000–00010011，前 6 位相同，即第三字节剩 2 位主机位。前缀 = 8+8+6 = /22。"},
+{id:"Q031",ch:"IP地址规划",q:"子网掩码 255.255.248.0 对应的通配符掩码（wildcard mask）是？",o:["0.0.7.255","0.0.3.255","0.0.15.255","255.255.0.0"],a:0,e:"通配符掩码 = 255.255.255.255 − 子网掩码。255−248 = 7，所以是 0.0.7.255。ACL 和 OSPF 配置必考。"},
+{id:"Q032",ch:"IP地址规划",q:"把 172.16.0.0/16 划分为 /23 的子网，可划分出的子网数量是？",o:["64","128","256","512"],a:1,e:"借位 23−16 = 7 位，子网数 = 2⁷ = 128 个。每个子网可用主机 2⁹−2 = 510 台。"},
+{id:"Q033",ch:"IP地址规划",q:"关于 NAT（网络地址转换），下列说法正确的是？",o:["NAT 只能一对一转换","NAT 可以让多台私有地址主机共享一个公网地址上网","NAT 工作在物理层","使用 NAT 后私有地址可在公网路由"],a:1,e:"NAT（尤其 PAT/NAPT 复用端口方式）让多台内网主机共享一个公网 IP 访问 Internet，私有地址本身不能在公网被路由。"},
+{id:"Q034",ch:"IP地址规划",q:"IPv6 地址的长度是多少位？",o:["32 位","64 位","128 位","256 位"],a:2,e:"IPv6 地址 128 位，用冒号分隔的 8 组十六进制表示，连续全 0 组可用 :: 压缩（只能用一次）。"},
+{id:"Q035",ch:"Internet基本协议",q:"TCP/IP 参考模型分为四个层次，自上而下依次是？",o:["应用层、传输层、网络互连层、网络接口层","应用层、表示层、传输层、网络层","传输层、网络层、数据链路层、物理层","应用层、会话层、传输层、网络层"],a:0,e:"TCP/IP 四层：应用层 → 传输层（TCP/UDP）→ 网络互连层（IP）→ 网络接口层。注意与 OSI 七层区分。"},
+{id:"Q036",ch:"Internet基本协议",q:"TCP 建立连接采用的机制是？",o:["两次握手","三次握手","四次握手","滑动窗口"],a:1,e:"三次握手：SYN → SYN+ACK → ACK。释放连接是四次挥手。滑动窗口用于流量控制。"},
+{id:"Q037",ch:"Internet基本协议",q:"关于 UDP 的特点，下列说法错误的是？",o:["无连接","不保证可靠交付","开销小、首部只有 8 字节","传输前需要建立连接"],a:3,e:"UDP 无连接、不可靠、首部仅 8 字节、开销小，适合实时性要求高的场景（DNS 查询、视频流、RIP 等）。需要建立连接的是 TCP。"},
+{id:"Q038",ch:"Internet基本协议",q:"把 IP 地址解析为 MAC 地址的协议是？",o:["RARP","ARP","DNS","DHCP"],a:1,e:"ARP 完成 IP → MAC 的解析；RARP 是反向解析（MAC → IP）。考试常把两者放在一起辨析。"},
+{id:"Q039",ch:"Internet基本协议",q:"ping 命令基于哪个协议实现？",o:["TCP","UDP","ICMP","SNMP"],a:2,e:"ping 使用 ICMP 回送请求（Echo Request）与回送应答（Echo Reply）报文。ICMP 是网络层差错与控制报文协议。"},
+{id:"Q040",ch:"Internet基本协议",q:"RIP 路由协议的特点，下列说法正确的是？",o:["属于链路状态协议","度量值是跳数，最大允许 15 跳","基于 TCP 179 端口","收敛速度快"],a:1,e:"RIP 是距离向量协议，以跳数为度量，最大 15 跳（16 表示不可达），使用 UDP 520 端口，每 30 秒周期更新，收敛慢。"},
+{id:"Q041",ch:"Internet基本协议",q:"OSPF 路由协议使用的核心算法是？",o:["距离向量算法","Dijkstra 最短路径优先算法","Bellman-Ford 周期广播","洪泛转发"],a:1,e:"OSPF 是链路状态协议，每台路由器用 Dijkstra（SPF）算法计算最短路径树。RIP 才用距离向量（Bellman-Ford）。"},
+{id:"Q042",ch:"Internet基本协议",q:"关于 OSPF 区域划分，下列说法正确的是？",o:["骨干区域编号是 1","骨干区域是 Area 0，所有区域必须与之相连","OSPF 不支持区域划分","区域划分对路由表无影响"],a:1,e:"OSPF 采用层次化区域设计，骨干区域为 Area 0，其他所有非骨干区域必须与 Area 0 直接相连。"},
+{id:"Q043",ch:"Internet基本协议",q:"BGP-4 协议的特点，下列说法错误的是？",o:["用于自治系统之间交换路由信息","属于路径向量协议","基于 TCP 179 端口建立连接","以跳数作为路由度量"],a:3,e:"BGP-4 是外部网关协议（EGP），自治系统间使用，属路径向量，基于 TCP 179 端口。以跳数为度量的是 RIP。BGP 有 OPEN、UPDATE、KEEPALIVE、NOTIFICATION 四种报文。"},
+{id:"Q044",ch:"Internet基本协议",q:"将域名解析为 IP 地址时，DNS 资源记录中使用的记录类型是？",o:["MX","PTR","A","CNAME"],a:2,e:"A 记录：域名 → IPv4；PTR：IP → 域名（反向）；MX：邮件交换；CNAME：别名；AAAA：域名 → IPv6。"},
+{id:"Q045",ch:"Internet基本协议",q:"FTP 服务使用的端口号是？",o:["TCP 20 和 21","TCP 22 和 23","UDP 53","TCP 80"],a:0,e:"FTP 使用两条连接：TCP 21 为控制连接，TCP 20 为数据连接（主动模式）。常考。"},
+{id:"Q046",ch:"Internet基本协议",q:"发送电子邮件使用的协议和端口是？",o:["POP3，TCP 110","SMTP，TCP 25","IMAP，TCP 143","HTTP，TCP 80"],a:1,e:"发送邮件用 SMTP（TCP 25）；接收邮件用 POP3（TCP 110）或 IMAP4（TCP 143）。发收协议要分清。"},
+{id:"Q047",ch:"局域网技术基础",q:"以太网采用的介质访问控制方法是？",o:["令牌传递","CSMA/CD","CSMA/CA","轮询"],a:1,e:"传统共享式以太网用 CSMA/CD（载波侦听多路访问/冲突检测）。CSMA/CA 用于无线局域网（802.11）。"},
+{id:"Q048",ch:"局域网技术基础",q:"以太网 MAC 地址的长度是？",o:["16 位","32 位","48 位","64 位"],a:2,e:"MAC 地址 48 位（6 字节），通常用 12 个十六进制数表示，如 00-1A-2B-3C-4D-5E。"},
+{id:"Q049",ch:"局域网技术基础",q:"以太网帧的最小长度是 64 字节，规定最小帧长的目的是？",o:["提高传输效率","保证冲突检测能够正常工作","便于硬件处理","兼容 IPv6"],a:1,e:"CSMA/CD 要求发送站发出最短帧的时间不小于信号往返传播时间，否则冲突发生时已发完无法检测，故规定最小帧 64 字节。"},
+{id:"Q050",ch:"局域网技术基础",q:"以太网帧结构中，紧随 7 字节前导码之后的字段是？",o:["目的 MAC 地址","帧前定界符（SFD）","类型/长度字段","FCS 校验"],a:1,e:"帧结构顺序：前导码 7B → 帧前定界符 1B（10101011）→ 目的 MAC 6B → 源 MAC 6B → 类型/长度 2B → 数据 46–1500B → FCS 4B。"},
+{id:"Q051",ch:"局域网技术基础",q:"100BASE-TX 快速以太网的传输速率和介质是？",o:["10 Mbps，同轴电缆","100 Mbps，双绞线","1000 Mbps，光纤","100 Mbps，同轴电缆"],a:1,e:"100BASE-TX：100 Mbps，使用两对 5 类双绞线。BASE 表示基带传输，T 表示双绞线。"},
+{id:"Q052",ch:"局域网技术基础",q:"关于万兆以太网（10 Gigabit Ethernet），下列说法正确的是？",o:["仍支持半双工和 CSMA/CD","只支持全双工模式，传输介质为光纤","帧格式与百兆以太网不同","使用 5 类双绞线"],a:1,e:"10GbE（802.3ae）只工作在全双工模式，不再使用 CSMA/CD，介质为光纤，帧格式与传统以太网保持一致。"},
+{id:"Q053",ch:"局域网技术基础",q:"交换机转发数据帧的依据是？",o:["IP 地址表","MAC 地址表","路由表","ARP 表"],a:1,e:"交换机是自学习设备：记录源 MAC 与端口的对应关系形成 MAC 地址表，转发时按目的 MAC 查表；查不到则向除入端口外所有端口泛洪。"},
+{id:"Q054",ch:"局域网技术基础",q:"划分 VLAN 的主要目的是？",o:["提高物理传输速率","隔离广播域，抑制广播风暴","扩大冲突域","减少交换机数量"],a:1,e:"VLAN 把一个物理局域网划分成多个逻辑广播域，不同 VLAN 间通信必须经过三层设备（路由）。"},
+{id:"Q055",ch:"局域网技术基础",q:"VLAN 标记遵循的标准是？VLAN ID 的有效范围是？",o:["802.1d，1–1005","802.1Q，1–4094","802.3，1–1024","802.11，1–255"],a:1,e:"VLAN 帧标记标准是 IEEE 802.1Q（在帧中插入 4 字节 Tag），VLAN ID 占 12 位，范围 1–4094。"},
+{id:"Q056",ch:"局域网技术基础",q:"无线局域网采用的介质访问控制方法是？",o:["CSMA/CD","CSMA/CA","令牌环","TDMA"],a:1,e:"无线环境无法有效检测冲突，802.11 使用 CSMA/CA（冲突避免），并可配合 RTS/CTS 机制。"},
+{id:"Q057",ch:"交换机及其配置",q:"Cisco 交换机配置时，从用户模式进入特权模式的命令是？",o:["enable","configure terminal","login","admin"],a:0,e:"模式层级：用户模式（提示符 >）→ enable → 特权模式（#）→ configure terminal → 全局配置模式（(config)#）。"},
+{id:"Q058",ch:"交换机及其配置",q:"在全局配置模式下，把交换机主机名设为 SW1 的命令是？",o:["set name SW1","hostname SW1","name SW1","sysname SW1"],a:1,e:"Cisco IOS 用 hostname 命令修改设备名称；sysname 是华为/H3C 的命令。三级教材以 Cisco 命令为准。"},
+{id:"Q059",ch:"交换机及其配置",q:"创建 VLAN 10 并命名为 jsjx 的配置命令序列是？",o:["vlan 10 → name jsjx","vlan database → 10 jsjx","interface vlan 10 → name jsjx","switchport vlan 10 name jsjx"],a:0,e:"全局配置模式下：vlan 10 回车进入 VLAN 配置子模式，再用 name jsjx 命名。"},
+{id:"Q060",ch:"交换机及其配置",q:"把端口 FastEthernet 0/5 划入 VLAN 20，正确的接口配置命令是？",o:["switchport mode trunk","switchport access vlan 20","vlan-membership 20","ip access-group 20"],a:1,e:"接口模式下执行 switchport access vlan 20 将端口划入 VLAN 20，通常先配 switchport mode access 固定接入模式。"},
+{id:"Q061",ch:"交换机及其配置",q:"配置交换机之间传递多个 VLAN 流量的端口，应使用的命令是？",o:["switchport mode access","switchport mode trunk","switchport mode dynamic","no switchport"],a:1,e:"交换机互联端口配置 switchport mode trunk 成为干道端口，承载多个 VLAN 的标记帧。"},
+{id:"Q062",ch:"交换机及其配置",q:"在 Trunk 端口上只允许 VLAN 10、20、30 通过的命令是？",o:["switchport trunk allowed vlan 10,20,30","switchport access vlan 10-30","vlan permit 10 20 30","trunk vlan 10,20,30"],a:0,e:"接口模式下：switchport trunk allowed vlan 10,20,30。可用 add/remove 增减。填空题高频。"},
+{id:"Q063",ch:"交换机及其配置",q:"查看交换机 VLAN 划分情况的命令是？",o:["show vlan","show interface","show running-config","show mac-address-table"],a:0,e:"show vlan（或 show vlan brief）显示所有 VLAN 及成员端口；show mac-address-table 查看 MAC 地址表。"},
+{id:"Q064",ch:"交换机及其配置",q:"查看交换机 MAC 地址表的命令是？",o:["show arp","show vlan","show mac-address-table","show ip route"],a:2,e:"show mac-address-table 显示交换机学习到的 MAC 地址与端口对应关系。show arp 是三层设备的 IP-MAC 映射表。"},
+{id:"Q065",ch:"交换机及其配置",q:"生成树协议 STP 遵循的标准及其作用是？",o:["802.1Q，划分 VLAN","802.1d，防止交换网络产生环路","802.3，定义以太网帧","802.11，无线接入"],a:1,e:"STP（IEEE 802.1d）通过阻塞冗余端口消除二层环路，链路故障时再启用备份路径。802.1Q 是 VLAN 标记。"},
+{id:"Q066",ch:"交换机及其配置",q:"为交换机 VLAN 1 配置管理 IP 192.168.1.1/24，正确的命令组合是？",o:["interface vlan 1 → ip address 192.168.1.1 255.255.255.0 → no shutdown","interface f0/1 → ip address 192.168.1.1","ip route 192.168.1.1","line vty 0 4 → ip address"],a:0,e:"二层交换机管理地址配在 VLAN 接口（SVI）上：进入 interface vlan 1，配 ip address，最后 no shutdown 激活。"},
+{id:"Q067",ch:"交换机及其配置",q:"把当前运行配置保存到 NVRAM（启动配置）的命令是？",o:["copy running-config startup-config","save all","write flash startup","backup config"],a:0,e:"特权模式下 copy running-config startup-config（或 write memory）保存配置，否则重启后配置丢失。"},
+{id:"Q068",ch:"交换机及其配置",q:"端口安全（Port Security）的主要作用是？",o:["防止广播风暴","限制端口接入的 MAC 地址数量/绑定 MAC","加快端口收敛","配置端口速率"],a:1,e:"Port Security 可限制一个端口允许学习的 MAC 数量或绑定固定 MAC，违规时可 shutdown 端口，常用于接入层安全。"},
+{id:"Q069",ch:"路由器及其配置",q:"路由器接口配置 IP 后，接口默认处于关闭状态，激活接口的命令是？",o:["enable interface","no shutdown","interface up","start interface"],a:1,e:"路由器接口默认 shutdown，必须在接口模式下执行 no shutdown 才能启用。交换机端口则默认开启。"},
+{id:"Q070",ch:"路由器及其配置",q:"配置到达 192.168.3.0/24 网段、下一跳为 192.168.2.1 的静态路由，正确命令是？",o:["ip route 192.168.3.0 255.255.255.0 192.168.2.1","route add 192.168.3.0 mask 255.255.255.0 192.168.2.1","ip route 192.168.2.1 255.255.255.0 192.168.3.0","static route 192.168.3.0/24 via 192.168.2.1"],a:0,e:"Cisco 静态路由格式：ip route 目的网络 子网掩码 下一跳地址。填空题必考命令格式。"},
+{id:"Q071",ch:"路由器及其配置",q:"配置默认路由（缺省路由）指向下一跳 202.112.10.1 的命令是？",o:["ip route 0.0.0.0 0.0.0.0 202.112.10.1","ip route 255.255.255.255 202.112.10.1","default route 202.112.10.1","ip default-gateway 202.112.10.1"],a:0,e:"默认路由用 0.0.0.0 0.0.0.0 表示匹配所有未知目的。ip default-gateway 用于二层交换机指定网关，别混淆。"},
+{id:"Q072",ch:"路由器及其配置",q:"路由表中，条目前面的字母 C、S、R、O 分别代表？",o:["直连、静态、RIP、OSPF","静态、直连、OSPF、RIP","直连、RIP、静态、OSPF","OSPF、静态、RIP、直连"],a:0,e:"C=Connected 直连，S=Static 静态，R=RIP 学到，O=OSPF 学到。show ip route 输出分析常考。"},
+{id:"Q073",ch:"路由器及其配置",q:"在路由器上启用 RIP 协议并宣告直连网段 172.16.1.0/24，正确的命令组合是？",o:["router rip → network 172.16.0.0","router rip → network 172.16.1.0 0.0.0.255","router ospf 1 → network 172.16.1.0","ip rip enable 172.16.1.0"],a:0,e:"RIP 配置：router rip 进入路由进程，network 后跟主类网络号（172.16.0.0，B 类主类）。RIP 不按子网宣告。"},
+{id:"Q074",ch:"路由器及其配置",q:"OSPF 配置命令 network 192.168.1.0 0.0.0.255 area 0 中，0.0.0.255 是？",o:["子网掩码","通配符掩码（反掩码）","默认网关","区域掩码"],a:1,e:"OSPF network 语句使用通配符掩码：0 表示必须匹配，255 表示任意。0.0.0.255 对应子网掩码 255.255.255.0。"},
+{id:"Q075",ch:"路由器及其配置",q:"标准 IP 访问控制列表（ACL）的编号范围是？",o:["1–99","100–199","200–299","1000–1099"],a:0,e:"标准 ACL 编号 1–99（只匹配源地址），扩展 ACL 编号 100–199（可匹配源/目的、协议、端口）。"},
+{id:"Q076",ch:"路由器及其配置",q:"与标准 ACL 相比，扩展 ACL 能够匹配的额外信息不包括？",o:["目的 IP 地址","协议类型（TCP/UDP/ICMP）","端口号","MAC 地址"],a:3,e:"扩展 ACL 可匹配源/目的 IP、协议、端口号，但不能匹配 MAC 地址（二层信息）。"},
+{id:"Q077",ch:"路由器及其配置",q:"ACL 语句 access-list 10 permit 192.168.1.0 0.0.0.255 中，末尾的 0.0.0.255 是？",o:["子网掩码","通配符掩码","广播地址","默认路由"],a:1,e:"ACL 使用通配符掩码，0.0.0.255 表示前三字节必须匹配 192.168.1，最后一字节任意。"},
+{id:"Q078",ch:"路由器及其配置",q:"配置 NAT 时，指定连接内网接口的命令是？",o:["ip nat inside","ip nat outside","nat enable","ip nat pool"],a:0,e:"接口模式下：内网接口配 ip nat inside，外网接口配 ip nat outside，再定义地址池与转换规则。"},
+{id:"Q079",ch:"路由器及其配置",q:"在 NAT 配置中，overload 关键字的作用是？",o:["关闭 NAT","端口复用（PAT），多个内网地址共用一个公网地址","加快转换速度","静态一对一映射"],a:1,e:"加 overload 即启用 PAT（端口地址转换/NAPT），通过端口号区分会话，多台内网主机共享一个公网 IP。三级高频考点。"},
+{id:"Q080",ch:"路由器及其配置",q:"查看路由器路由表的命令是？",o:["show running-config","show ip route","show interface brief","show ip nat translations"],a:1,e:"show ip route 显示路由表（含 C/S/R/O 等条目来源）；show running-config 看当前配置；show ip nat translations 看 NAT 转换表。"},
+{id:"Q081",ch:"无线局域网设备",q:"IEEE 802.11b 标准的工作频段和最高速率是？",o:["2.4 GHz，11 Mbps","5 GHz，54 Mbps","2.4 GHz，54 Mbps","5 GHz，11 Mbps"],a:0,e:"802.11b：2.4 GHz、11 Mbps；802.11a：5 GHz、54 Mbps；802.11g：2.4 GHz、54 Mbps 且向下兼容 802.11b。三个标准对比必考。"},
+{id:"Q082",ch:"无线局域网设备",q:"IEEE 802.11g 与 802.11b 的关系是？",o:["完全不兼容","工作在同一频段且向下兼容 802.11b","速率相同","都采用 5 GHz 频段"],a:1,e:"802.11g 工作在 2.4 GHz，最高 54 Mbps，向下兼容 802.11b 设备；802.11a 用 5 GHz，与 b/g 不兼容。"},
+{id:"Q083",ch:"无线局域网设备",q:"标识一个无线局域网服务区的名称（网络名）称为？",o:["MAC","SSID","BSSID 密钥","DNS 名"],a:1,e:"SSID（服务集标识符）就是无线网络的名称，AP 广播 SSID，客户端凭它接入。"},
+{id:"Q084",ch:"无线局域网设备",q:"802.11n 相比 802.11g 的关键技术改进是？",o:["采用 MIMO 多天线技术，速率可达 300–600 Mbps","改用 5 GHz 单频段","取消 CSMA/CA","只支持点对点"],a:0,e:"802.11n 引入 MIMO 和信道绑定，理论速率最高 600 Mbps，同时支持 2.4/5 GHz。"},
+{id:"Q085",ch:"无线局域网设备",q:"目前无线局域网最常用的安全加密方式是？",o:["WEP","WPA2（AES-CCMP）","不加密","SSL"],a:1,e:"WEP 已被证明不安全；WPA2 采用 AES-CCMP 加密，是目前主流；更新的还有 WPA3。SSL 是传输层安全协议。"},
+{id:"Q086",ch:"无线局域网设备",q:"无线接入点 AP 的主要作用是？",o:["替代路由器拨号","连接无线终端与有线网络，相当于无线网桥","放大手机信号","分配 IP 地址"],a:1,e:"AP 是无线与有线网络之间的桥接设备，为无线终端提供接入。分配 IP 是 DHCP 的职责。"},
+{id:"Q087",ch:"网络安全技术",q:"包过滤防火墙工作在哪个层次？依据什么过滤？",o:["应用层，依据内容","网络层/传输层，依据数据包头部的地址、协议、端口","物理层，依据信号","数据链路层，依据 MAC"],a:1,e:"包过滤防火墙检查每个数据包的首部（源/目的 IP、协议、端口），按规则表决定放行或丢弃，速度快但不检查内容。"},
+{id:"Q088",ch:"网络安全技术",q:"应用级网关（代理服务器型防火墙）的特点是？",o:["工作在网络层，效率最高","在应用层代理转发，可检查内容但速度相对慢","只能过滤 UDP","不需要配置规则"],a:1,e:"应用级网关在应用层充当代理，能对内容做细粒度检查，安全性高，但每种应用需单独代理、性能较低。"},
+{id:"Q089",ch:"网络安全技术",q:"DES 加密算法的密钥长度是？",o:["56 位","64 位","128 位","256 位"],a:0,e:"DES 有效密钥 56 位（输入 64 位含 8 位校验）。因密钥过短已被 AES 取代。常考数字。"},
+{id:"Q090",ch:"网络安全技术",q:"下列算法中，属于非对称（公钥）加密算法的是？",o:["DES","AES","RSA","3DES"],a:2,e:"RSA 是典型非对称算法（公钥加密、私钥解密），还可用于数字签名。DES/3DES/AES 都是对称算法。"},
+{id:"Q091",ch:"网络安全技术",q:"MD5 算法输出的消息摘要长度是？",o:["64 位","128 位","160 位","256 位"],a:1,e:"MD5 输出 128 位摘要；SHA-1 输出 160 位。摘要算法用于完整性校验，不可逆向还原。"},
+{id:"Q092",ch:"网络安全技术",q:"数字签名的主要作用是？",o:["加密邮件内容","验证发送者身份和报文完整性、防止抵赖","提高传输速度","压缩数据"],a:1,e:"数字签名用发送方私钥对摘要加密，接收方用公钥验证，实现身份认证、完整性保护和抗抵赖。"},
+{id:"Q093",ch:"网络安全技术",q:"关于计算机病毒，下列说法正确的是？",o:["病毒必须依附宿主程序，木马常伪装成正常程序","所有病毒都会立即破坏硬件","安装杀毒软件后系统绝对安全","病毒只通过 U 盘传播"],a:0,e:"病毒具有传染性、依附宿主；木马（特洛伊）伪装成有用程序窃取信息。杀毒软件不能保证绝对安全。"},
+{id:"Q094",ch:"网络安全技术",q:"入侵检测系统（IDS）的主要功能是？",o:["主动阻断所有可疑连接","监视网络/主机活动，发现并报告入侵行为","加密网络流量","分配 IP 地址"],a:1,e:"IDS 负责监测和告警（被动）；能主动阻断的是 IPS（入侵防御系统）。注意 IDS 与 IPS 的区别。"},
+{id:"Q095",ch:"网络安全技术",q:"对称加密与非对称加密相比，对称加密的特点是？",o:["加解密用不同密钥","加解密速度快，适合大量数据加密，但密钥分发困难","不需要密钥","安全性一定更高"],a:1,e:"对称加密（DES/AES）速度快、适合大数据量，但通信双方需安全地共享同一密钥；非对称解决密钥分发但速度慢。实际系统常混合使用。"},
+{id:"Q096",ch:"网络安全技术",q:"为防范网络攻击，下列做法不恰当的是？",o:["及时更新系统补丁","使用复杂口令并定期更换","打开所有来历不明的邮件附件","关闭不必要的服务和端口"],a:2,e:"来历不明的附件是病毒/木马主要传播途径之一。其余三项都是基本安全加固措施。"},
+{id:"Q097",ch:"网络管理与服务器",q:"SNMP 网络管理模型的三个关键组成部分是？",o:["管理者、代理、管理信息库 MIB","客户端、服务器、数据库","发送方、接收方、中继","用户、口令、权限"],a:0,e:"SNMP 模型：管理站（Manager）+ 被管设备上的代理（Agent）+ 管理信息库（MIB）。必考概念。"},
+{id:"Q098",ch:"网络管理与服务器",q:"SNMP 中，管理站读取代理设备参数使用的操作是？",o:["get / get-next","trap","set","notify"],a:0,e:"管理站用 get/get-next 读取、set 修改代理的 MIB 变量；代理主动向管理站报告异常用 trap（自陷）。"},
+{id:"Q099",ch:"网络管理与服务器",q:"SNMP 报文使用的传输层协议和默认端口是？",o:["TCP 161","UDP 161（管理操作）/ UDP 162（trap）","TCP 25","UDP 53"],a:1,e:"SNMP 基于 UDP：管理站 get/set 发往代理的 161 端口；代理 trap 告警发往管理站的 162 端口。"},
+{id:"Q100",ch:"网络管理与服务器",q:"SNMP 中用于身份验证（类似口令）的机制是？",o:["数字证书","团体名 community","Kerberos 票据","MAC 绑定"],a:1,e:"SNMPv1/v2c 用团体名（community string）做简单认证，典型的读团体名是 public，写团体名是 private。"},
+{id:"Q101",ch:"网络管理与服务器",q:"DNS 服务器中，把 IP 地址反向解析为域名使用的记录是？",o:["A 记录","PTR 记录","MX 记录","NS 记录"],a:1,e:"PTR 指针记录用于反向解析。A 正向解析、MX 邮件交换、NS 指定域名服务器、CNAME 别名。"},
+{id:"Q102",ch:"网络管理与服务器",q:"DHCP 客户端首次获取地址时的四个交互报文顺序是？",o:["Discover → Offer → Request → Ack","Offer → Discover → Ack → Request","Request → Offer → Discover → Ack","Discover → Request → Offer → Ack"],a:0,e:"DORA 四步：客户端广播 Discover → 服务器回应 Offer → 客户端 Request 请求 → 服务器 Ack 确认。全广播过程。"},
+{id:"Q103",ch:"网络管理与服务器",q:"Windows 中释放当前 DHCP 地址并重新获取的命令组合是？",o:["ipconfig /release 与 ipconfig /renew","ping 与 tracert","netstat -a 与 nslookup","arp -d 与 route print"],a:0,e:"ipconfig /release 释放、/renew 重新申请、/all 查看完整配置、/flushdns 清 DNS 缓存。"},
+{id:"Q104",ch:"网络管理与服务器",q:"DHCP 服务器为客户机分配的内容不包括？",o:["IP 地址和子网掩码","默认网关","DNS 服务器地址","MAC 地址"],a:3,e:"MAC 地址是网卡固化的物理地址，不是 DHCP 分配的。DHCP 可下发 IP/掩码、网关、DNS、租约等参数。"},
+{id:"Q105",ch:"网络管理与服务器",q:"在一台服务器上通过同一 IP 提供多个网站的访问，Web 服务器通常采用的技术是？",o:["虚拟主机（基于域名/端口区分站点）","NAT","负载均衡","地址聚合"],a:0,e:"IIS/Apache 的虚拟主机可基于不同主机头（域名）、端口或 IP 在一台服务器上架设多个 Web 站点。"},
+{id:"Q106",ch:"网络管理与服务器",q:"架设 FTP 服务器时，用于隔离用户、使其只能访问指定目录的措施是？",o:["启用匿名访问","设置用户主目录并锁定（隔离）","关闭日志","使用 80 端口"],a:1,e:"FTP 用户隔离（如 IIS 的 FTP 用户隔离模式）让每个用户登录后只能进入自己的主目录，防止越权访问。"}
+];
+var BLANK = [
+{id:"F01",type:"f",ch:"IP子网计算填空",q:"主机地址 192.168.1.130/26，其所在子网的网络地址是？",ans:"192.168.1.128",e:"/26 掩码 255.255.255.192，块大小 64，130 落在 128–191，网络地址 = 192.168.1.128。"},
+{id:"F02",type:"f",ch:"IP子网计算填空",q:"主机地址 192.168.1.130/26，其所在子网的直接广播地址是？",ans:"192.168.1.191",e:"子网范围 128–191，主机号全 1 即 192.168.1.191。"},
+{id:"F03",type:"f",ch:"IP子网计算填空",q:"前缀 /26 的子网，每个子网可用的主机地址数量是？（填数字）",ans:"62",e:"主机位 32−26 = 6 位，2⁶−2 = 62（减去网络地址和广播地址）。"},
+{id:"F04",type:"f",ch:"IP子网计算填空",q:"主机地址 172.16.5.99/27，其所在子网的网络地址是？",ans:"172.16.5.96",e:"/27 块大小 32，99 落在 96–127，网络地址 = 172.16.5.96。"},
+{id:"F05",type:"f",ch:"IP子网计算填空",q:"主机地址 10.1.4.13/20，其所在子网的直接广播地址是？",ans:"10.1.15.255",e:"/20 第三字节块大小 16，4 落在 0–15 子网，广播地址第三字节全 1 段尾 = 15，即 10.1.15.255。"},
+{id:"F06",type:"f",ch:"IP子网计算填空",q:"前缀 /29 的子网，可用的主机地址数量是？（填数字）",ans:"6",e:"主机位 3 位，2³−2 = 6。常用于路由器点对点链路。"},
+{id:"F07",type:"f",ch:"IP子网计算填空",q:"某部门有 600 台主机，要容纳全部主机，应分配的最短前缀长度是？（填 /XX 格式）",ans:"/22",alt:["22"],e:"2¹⁰−2 = 1022 ≥ 600，需 10 位主机位，前缀 = 32−10 = /22。"},
+{id:"F08",type:"f",ch:"IP子网计算填空",q:"将 202.113.16.0/24、202.113.17.0/24、202.113.18.0/24、202.113.19.0/24 四个网段聚合成一个 CIDR 地址块，结果是？（填 地址/前缀 格式）",ans:"202.113.16.0/22",e:"第三字节 16–19 二进制前 6 位相同（000100xx），共同前缀 8+8+6 = /22，聚合地址 202.113.16.0/22。"},
+{id:"F09",type:"f",ch:"IP子网计算填空",q:"子网掩码 255.255.255.240 对应的前缀长度是？（填 /XX 格式）",ans:"/28",alt:["28"],e:"240 = 11110000，前缀 = 8+8+8+4 = /28。"},
+{id:"F10",type:"f",ch:"IP子网计算填空",q:"把一个 C 类网络划分为至少 6 个子网，且每个子网主机数尽可能多，应使用的子网掩码是？",ans:"255.255.255.224",e:"借 3 位得 2³ = 8 个子网（满足 ≥6），剩余 5 位主机位可容 30 台主机，掩码 255.255.255.224。"},
+{id:"F11",type:"f",ch:"IP子网计算填空",q:"子网掩码 255.255.248.0 对应的通配符掩码（反掩码）是？",ans:"0.0.7.255",e:"通配符掩码 = 255.255.255.255 逐字节减子网掩码：255−248 = 7，得 0.0.7.255。"},
+{id:"F12",type:"f",ch:"IP子网计算填空",q:"主机地址 172.16.5.99/27，其所在子网的第一个可用主机地址是？",ans:"172.16.5.97",e:"子网 96–127，网络地址 .96，第一个可用 = 网络地址 + 1 = 172.16.5.97。"},
+{id:"F13",type:"f",ch:"路由器配置填空",q:"Cisco 设备上，从用户模式（提示符 >）进入特权模式（提示符 #）的命令是？",ans:"enable",e:"enable 进特权模式，disable 退回用户模式。"},
+{id:"F14",type:"f",ch:"路由器配置填空",q:"从特权模式进入全局配置模式（提示符 (config)#）的命令是？",ans:"configure terminal",alt:["conf t"],e:"完整命令 configure terminal，可简写 conf t。填空写完整形式最保险。"},
+{id:"F15",type:"f",ch:"路由器配置填空",q:"已进入 interface fastEthernet 0/0 接口模式，为该接口配置 IP 192.168.1.1、掩码 255.255.255.0 的命令是？",ans:"ip address 192.168.1.1 255.255.255.0",e:"接口下命令格式：ip address 地址 掩码。注意必须写掩码，不能写 /24。"},
+{id:"F16",type:"f",ch:"路由器配置填空",q:"路由器接口配好 IP 后仍处于关闭状态，在接口模式下激活该接口的命令是？",ans:"no shutdown",e:"路由器接口默认 shutdown，必须 no shutdown 启用，这是配置填空最常见的空。"},
+{id:"F17",type:"f",ch:"路由器配置填空",q:"在全局配置模式下，配置到达网段 192.168.3.0/24、下一跳为 192.168.2.1 的静态路由，命令是？",ans:"ip route 192.168.3.0 255.255.255.0 192.168.2.1",e:"格式：ip route 目的网络 子网掩码 下一跳。三个要素缺一不可。"},
+{id:"F18",type:"f",ch:"路由器配置填空",q:"配置默认路由，下一跳为 202.112.10.1，命令是？",ans:"ip route 0.0.0.0 0.0.0.0 202.112.10.1",e:"默认路由用 0.0.0.0 0.0.0.0 匹配所有目的网络，俗称缺省路由/网关 of last resort。"},
+{id:"F19",type:"f",ch:"路由器配置填空",q:"已进入 router rip 进程配置模式，宣告直连主类网络 172.16.0.0 的命令是？",ans:"network 172.16.0.0",e:"RIP 的 network 后跟主类网络号（A/B/C 类自然掩码），不写子网掩码。"},
+{id:"F20",type:"f",ch:"路由器配置填空",q:"已进入 router ospf 1 进程，把 192.168.1.0/24 宣告进骨干区域，命令是？",ans:"network 192.168.1.0 0.0.0.255 area 0",e:"OSPF network 语句 = 网络号 + 通配符掩码 + area 区域号。/24 对应通配符 0.0.0.255，骨干区域 area 0。"},
+{id:"F21",type:"f",ch:"交换机配置填空",q:"全局配置模式下，创建 VLAN 10 的命令是？",ans:"vlan 10",e:"vlan 10 回车后进入 (config-vlan)# 子模式，可继续命名。"},
+{id:"F22",type:"f",ch:"交换机配置填空",q:"在 (config-vlan)# 模式下，把当前 VLAN 命名为 jsjx 的命令是？",ans:"name jsjx",e:"name 后跟 VLAN 名称。考试常让填这一空。"},
+{id:"F23",type:"f",ch:"交换机配置填空",q:"已进入 interface fastEthernet 0/5，把该端口划入 VLAN 20 的命令是？",ans:"switchport access vlan 20",e:"接入端口先 switchport mode access，再 switchport access vlan 编号。"},
+{id:"F24",type:"f",ch:"交换机配置填空",q:"接口模式下，把端口配置为干道（Trunk）模式的命令是？",ans:"switchport mode trunk",e:"Trunk 端口承载多个 VLAN 流量，用于交换机之间或交换机与路由器互联。"},
+{id:"F25",type:"f",ch:"交换机配置填空",q:"Trunk 端口上，只允许 VLAN 10、20、30 的流量通过的命令是？",ans:"switchport trunk allowed vlan 10,20,30",alt:["switchport trunk allowed vlan 10，20，30","switchport trunk allowed vlan 10 20 30"],e:"allowed vlan 后跟编号列表，逗号分隔，也可写范围如 10-30。"},
+{id:"F26",type:"f",ch:"交换机配置填空",q:"特权模式下，查看交换机所有 VLAN 及端口归属的命令是？",ans:"show vlan",alt:["show vlan brief"],e:"show vlan 或 show vlan brief 均可显示 VLAN 划分情况。"},
+{id:"F27",type:"f",ch:"抓包分析填空",q:"Sniffer 捕获的以太网帧中，类型字段（第 13–14 字节）值为 0x0800，说明数据部分封装的是什么协议？",ans:"IP",alt:["ipv4","ip 协议","ip报文"],e:"类型字段 0x0800 = IPv4，0x0806 = ARP，0x86DD = IPv6。必背。"},
+{id:"F28",type:"f",ch:"抓包分析填空",q:"以太网帧类型字段值为 0x0806，说明封装的是什么协议？",ans:"ARP",alt:["arp协议","arp 协议"],e:"0x0806 = ARP 地址解析协议。"},
+{id:"F29",type:"f",ch:"抓包分析填空",q:"IP 数据报首部第一个字节为 0x45，其首部长度是多少字节？（填数字）",ans:"20",alt:["20字节"],e:"高 4 位 4 是版本号，低 4 位 5 是首部长度（单位 4 字节），5×4 = 20 字节，即无选项的固定首部。"},
+{id:"F30",type:"f",ch:"抓包分析填空",q:"IP 首部协议字段值为 6，说明数据部分承载的是什么协议？",ans:"TCP",alt:["tcp协议"],e:"协议字段：1 = ICMP，6 = TCP，17 = UDP。三个数字必背。"},
+{id:"F31",type:"f",ch:"抓包分析填空",q:"IP 首部协议字段值为 17（0x11），说明数据部分承载的是什么协议？",ans:"UDP",alt:["udp协议"],e:"17 = UDP。RIP、DNS 查询、DHCP、SNMP 都走 UDP。"},
+{id:"F32",type:"f",ch:"抓包分析填空",q:"IP 首部协议字段值为 1，说明承载的是什么协议？",ans:"ICMP",alt:["icmp协议"],e:"1 = ICMP，ping 就是 ICMP 回送请求/应答。"},
+{id:"F33",type:"f",ch:"抓包分析填空",q:"下表是 Sniffer 抓到的 TCP 三次握手过程（部分字段已给出），第 2 行报文处于三次握手的第几步？（填数字）",tbl:{h:["序号","源 IP:端口","目的 IP:端口","标志位","方向"],r:[["1","192.168.1.5:1025","202.113.10.8:80","SYN (0x02)","C→S"],["2","202.113.10.8:80","192.168.1.5:1025","0x12","S→C"],["3","192.168.1.5:1025","202.113.10.8:80","ACK (0x10)","C→S"]],hi:[1]},ans:"2",alt:["二","第二步","第2步"],e:"标志位 0x12 = SYN + ACK，是服务器对客户端 SYN 的应答，即三次握手的第二步。第一步 SYN（0x02），第三步 ACK（0x10）。"},
+{id:"F34",type:"f",ch:"抓包分析填空",q:"下表是 Sniffer 捕获的一个 TCP 报文，其目的端口字段为 0x0050。请把它换算成十进制端口号并填入（填数字）。",tbl:{h:["字段","十六进制值","字段","十六进制值"],r:[["源端口","0x0401","目的端口","0x0050"],["序号","0x3A5C1180","确认号","0x00000000"],["首部长度","0x5 (20 字节)","标志位","0x02 (SYN)"]],hi:[0]},ans:"80",alt:["http","80 http"],e:"0x0050 = 5×16¹ + 0 = 80，对应 HTTP 服务。抓包题几乎必考十六进制端口换算：0x0015=21(FTP)、0x0019=25(SMTP)、0x0035=53(DNS)、0x0050=80(HTTP)。"},
+{id:"F35",type:"f",ch:"抓包分析填空",q:"Sniffer 捕获的以太网帧中，源 MAC 地址字段占多少字节？（填数字）",ans:"6",alt:["6字节","六"],e:"帧头 14 字节 = 目的 MAC 6B + 源 MAC 6B + 类型 2B。"},
+{id:"F36",type:"f",ch:"DHCP报文分析填空",q:"DHCP 协议中，客户机第一次获取 IP 地址时发送的第一个报文名称是？",ans:"Discover",alt:["DHCPDISCOVER","DHCP Discover","discover"],e:"DHCP 四步 DORA：Discover 发现 → Offer 提供 → Request 请求 → Ack 确认。第一步由客户机广播发出。"},
+{id:"F37",type:"f",ch:"DHCP报文分析填空",q:"DHCP 获取地址的四个报文按时间先后顺序是？（用英文逗号分隔四个报文名）",ans:"Discover,Offer,Request,Ack",alt:["Discover,Offer,Request,ACK","Discover, Offer, Request, Ack","DORA","discover,offer,request,ack"],e:"口诀 DORA。Offer 是服务器回应，Request 是客户机确认选择，服务器最后回 Ack 确认租约生效。"},
+{id:"F38",type:"f",ch:"DHCP报文分析填空",q:"客户机发送 Discover 报文时，其目的 IP 地址是什么？",ans:"255.255.255.255",alt:["受限广播地址","广播地址","255.255.255.255广播"],e:"此时客户机还没有 IP，只能用受限广播地址 255.255.255.255（MAC 目的也是 FF:FF:FF:FF:FF:FF）。Request 阶段若已分配到 IP 则可单播续租。"},
+{id:"F39",type:"f",ch:"DHCP报文分析填空",q:"DHCP 协议中，服务器端使用的传输层端口号是？（填数字）",ans:"67",alt:["67端口","UDP 67","67"],e:"服务器端 UDP 67，客户机端 UDP 68。看到目的端口 67 的 UDP 报文即服务器发出。"},
+{id:"F40",type:"f",ch:"DHCP报文分析填空",q:"DHCP 协议中，客户机（客户端）使用的传输层端口号是？（填数字）",ans:"68",alt:["68端口","UDP 68","68"],e:"客户端固定使用 UDP 68，与服务器 UDP 67 配对。"},
+{id:"F41",type:"f",ch:"DHCP报文分析填空",q:"下表是 Sniffer 捕获的 DHCP 交互报文序列，第 2 行报文由服务器发给客户机，其名称是？",tbl:{h:["序号","源","目的","UDP 端口","方向"],r:[["1","0.0.0.0:68","255.255.255.255:67","67→68","C→S"],["2","202.113.64.1:67","255.255.255.255:68","67→68","S→C"],["3","0.0.0.0:68","255.255.255.255:67","67→68","C→S"],["4","202.113.64.1:67","192.168.1.10:68","67→68","S→C"]],hi:[1]},ans:"Offer",alt:["offer","DHCPOffer"],e:"第 1 行 Discover（客户机广播找服务器）→ 第 2 行 Offer（服务器提供 IP）→ 第 3 行 Request（客户机请求使用）→ 第 4 行 Ack（服务器确认）。服务器回 Offer 时因尚不知客户机 IP，仍用广播。"},
+{id:"F42",type:"f",ch:"DHCP报文分析填空",q:"DHCP 交互中，服务器最终确认分配、租约生效的报文名称是？",ans:"Ack",alt:["ACK","ack","DHCPAck"],e:"Ack 报文携带最终分配结果（IP、掩码、网关、DNS、租约时间），客户机收到后即可配置网卡。"},
+{id:"F43",type:"f",ch:"DHCP报文分析填空",q:"DHCP 属于 TCP/IP 参考模型中的哪一层协议？",ans:"应用层",alt:["应用层协议"],e:"DHCP 是应用层协议，虽然封装在 UDP 之上（67/68），但它是给主机自动配置网络参数的应用层服务，与 DNS 同层。"},
+{id:"F44",type:"f",ch:"DHCP报文分析填空",q:"客户机获得的 DHCP 租约时间过去一半时，会向原 DHCP 服务器发送什么报文续租？",ans:"Request",alt:["request","DHCPRequest","续租请求"],e:"租约 T1（50%）时单播 Request 给原服务器续租；若到 T2（87.5%）仍未成功，则广播 Request 寻找任意可用服务器。"},
+{id:"F45",type:"f",ch:"DHCP报文分析填空",q:"客户机通过 DHCP 获得配置后，需要自行在网卡上设置的项目不包括以下哪一项？",ans:"MAC地址",alt:["mac","MAC 地址","物理地址"],e:"MAC 地址是网卡出厂固化的物理地址；DHCP 下发的是 IP 地址、子网掩码、默认网关、DNS 服务器、租约时间等参数。"},
+{id:"F46",type:"f",ch:"DHCP报文分析填空",q:"某主机抓包发现目的端口为 UDP 67 的报文，该报文的发送方是？",ans:"DHCP服务器",alt:["服务器","server","dhcp服务器"],e:"目的端口 67 = 服务器侧；目的端口 68 = 客户机侧。判断方向时以此为准。"},
+{id:"F47",type:"f",ch:"DHCP报文分析填空",q:"若要使内网主机在 DHCP 分配过程中能收到广播，路由器或交换机的 DHCP 服务所在网段属于？",ans:"同一广播域",alt:["同一个广播域","同一网段","同一广播域内"],e:"Discover 使用受限广播地址，不能穿越路由器，所以客户机与 DHCP 服务器必须在同一广播域（同网段），否则需在网段内另配 DHCP 服务器或使用中继。"},
+{id:"F48",type:"f",ch:"IP逆向计算填空",q:"已知某主机所在子网的直接广播地址是 192.168.7.191，该子网前缀为 /26。求该子网的网络地址。",ans:"192.168.7.128",e:"反向推导：/26 块大小 64，广播地址 191 落在 128–191 区间，网络地址即该区间起始 192.168.7.128。可用主机范围 .129–.190。"},
+{id:"F49",type:"f",ch:"IP逆向计算填空",q:"已知某子网的最后一个可用主机地址是 10.1.15.254，掩码为 255.255.255.0。求该子网的网络地址。",ans:"10.1.15.0",e:"/24 块大小 256，最后可用地址 .254 落在 .0–.255，网络地址 = 10.1.15.0，广播地址 = 10.1.15.255。"},
+{id:"F50",type:"f",ch:"IP逆向计算填空",q:"已知某子网可用的主机地址数为 126，反推该子网的子网掩码。",ans:"255.255.255.128",alt:["/25","25"],e:"2⁷−2 = 126，主机位 7 位，前缀 25，掩码 255.255.255.128。"},
+{id:"F51",type:"f",ch:"IP逆向计算填空",q:"已知某网络地址为 172.16.8.0/22。求该地址块的直接广播地址。",ans:"172.16.15.255",e:"/22 = 第三字节块大小 8，8 是 8 的整数倍，地址块范围 172.16.8.0–172.16.15.255，广播地址为块内最大地址。可用主机 2¹⁰−2 = 1022。"},
+{id:"F52",type:"f",ch:"IP逆向计算填空",q:"主机 192.168.10.200 的前缀为 /25。求该主机所在子网的可用主机地址范围（用短横线连接起止地址）。",ans:"192.168.10.129-192.168.10.254",alt:["192.168.10.129—192.168.10.254","192.168.10.129~192.168.10.254"],e:"/25 块大小 128，200 落在 128–255，网络地址 .128，广播 .255，可用 .129–.254。"},
+{id:"F53",type:"f",ch:"IP逆向计算填空",q:"某单位要把 C 类网段 192.168.5.0/24 平均分给 5 个部门（每个部门一个子网），反推应使用的子网掩码。",ans:"255.255.255.248",alt:["/29","29"],e:"需划分 ≥5 个子网：借 3 位得 8 个子网（2³=8），主机位剩 5 位，掩码 255.255.255.248。每子网可用 30 台。"},
+{id:"F54",type:"f",ch:"IP逆向计算填空",q:"已知某子网网络地址为 192.168.3.64，前缀为 /26。求该子网的可用主机地址范围（用短横线连接起止地址）。",ans:"192.168.3.65-192.168.3.126",alt:["192.168.3.65—192.168.3.126","192.168.3.65~192.168.3.126"],e:"/26 块大小 64，64–127 为该子网，网络地址 .64，第一个可用 .65，最后可用 .126，广播 .127。"},
+{id:"F55",type:"f",ch:"IP逆向计算填空",q:"已知某网段掩码为 255.255.255.0，现需将其等分为 4 个子网且尽量多留给主机，反推新子网掩码。",ans:"255.255.255.192",alt:["/26","26"],e:"划分 4 个子网需借 2 位，前缀 24+2 = /26，掩码 255.255.255.192，每子网可用 62 台主机。"}
+];
+var REAL = [
+{id:"R2501",year:"2025",ch:"网络结构与设计基础",q:"宽带城域网中，负责连接用户终端、提供多种接入方式的是哪一层？",o:["核心交换层","汇聚层","接入层","骨干层"],a:2,e:"接入层直接面向用户，提供 LAN、xDSL、HFC、无线等多种接入手段。"},
+{id:"R2502",year:"2025",ch:"网络结构与设计基础",q:"下列接入技术中，属于非对称数字用户线的是？",o:["ADSL","SDSL","HDSL","VDSL 对称模式"],a:0,e:"ADSL 的 A 即 Asymmetric 非对称，下行速率远高于上行。SDSL/HDSL 为对称。"},
+{id:"R2503",year:"2025",ch:"网络总体规划",q:"综合布线系统中，连接楼层配线间到工作区信息插座的子系统是？",o:["水平子系统","垂直干线子系统","管理间子系统","建筑群子系统"],a:0,e:"水平子系统（配线子系统）负责楼层配线架到信息插座，长度不超过 90 m。"},
+{id:"R2504",year:"2025",ch:"IP地址规划",q:"下列地址中，不能分配给主机使用的是？",o:["202.113.25.0","192.168.1.255","10.10.10.10","172.20.30.40"],a:1,e:"192.168.1.255 是 C 类网段 192.168.1.0/24 的广播地址，不能分配给主机。"},
+{id:"R2505",year:"2025",ch:"IP地址规划",q:"主机地址 10.0.0.55/13 所在子网的网络地址是？",o:["10.0.0.0","10.0.0.32","10.0.0.48","10.0.0.8"],a:0,e:"/13 掩码 255.248.0.0，第二字节块大小 8，0 落在 0–7，网络地址 = 10.0.0.0。"},
+{id:"R2506",year:"2025",ch:"IP地址规划",q:"某公司获得 211.70.64.0/20 地址块，其中可包含的 C 类网络数量是？",o:["8","16","32","64"],a:1,e:"/20 比 /24 多 4 位，包含 2⁴ = 16 个 C 类网络。"},
+{id:"R2507",year:"2025",ch:"Internet基本协议",q:"在 TCP/IP 模型中，负责端到端可靠传输的是哪一层？",o:["网络接口层","网络互连层","传输层","应用层"],a:2,e:"传输层的 TCP 提供面向连接的可靠端到端传输；网络互连层的 IP 是无连接不可靠的。"},
+{id:"R2508",year:"2025",ch:"Internet基本协议",q:"RIP 协议的路由更新报文使用的传输层协议和端口是？",o:["TCP 520","UDP 520","UDP 179","TCP 179"],a:1,e:"RIP 基于 UDP 520 端口；BGP 才基于 TCP 179 端口。二者常对比考查。"},
+{id:"R2509",year:"2025",ch:"Internet基本协议",q:"下列关于 OSPF 的说法中，错误的是？",o:["属于内部网关协议","采用链路状态算法","使用跳数作为度量值","支持区域划分"],a:2,e:"OSPF 的度量值是代价（cost，与带宽相关），不是跳数。以跳数为度量的是 RIP。"},
+{id:"R2510",year:"2025",ch:"局域网技术基础",q:"以太网帧中，用于差错校验的字段是？",o:["前导码","类型字段","FCS 帧校验序列","长度字段"],a:2,e:"FCS（Frame Check Sequence）4 字节，采用 CRC-32 循环冗余校验，位于帧尾。"},
+{id:"R2511",year:"2025",ch:"局域网技术基础",q:"一台主机刚启动时要知道默认网关的 MAC 地址，它发送的报文是？",o:["ARP 请求广播","DNS 查询","DHCP Offer","ICMP 重定向"],a:0,e:"主机广播 ARP Request 询问网关 IP 对应的 MAC，网关单播回复 ARP Reply。"},
+{id:"R2512",year:"2025",ch:"交换机及其配置",q:"在交换机上配置端口速率自适应的命令是？",o:["speed auto","speed 100","duplex auto","no speed"],a:0,e:"接口模式下 speed auto 速率自适应；duplex auto 双工自适应。两者常一起出现。"},
+{id:"R2513",year:"2025",ch:"交换机及其配置",q:"交换机某个端口同时属于 VLAN 10 和 VLAN 20，该端口的工作模式是？",o:["access","trunk","dynamic auto","routed"],a:1,e:"只有 trunk 端口可以同时承载多个 VLAN；access 端口只属于一个 VLAN。"},
+{id:"R2514",year:"2025",ch:"路由器及其配置",q:"静态路由配置中，管理距离（AD）的默认值是？",o:["0","1","90","120"],a:1,e:"静态路由 AD = 1，直连路由 AD = 0，RIP = 120，OSPF = 110，EIGRP = 90。AD 越小越可信。"},
+{id:"R2515",year:"2025",ch:"路由器及其配置",q:"配置只允许主机 192.168.1.10 访问某服务的标准 ACL 语句是？",o:["access-list 10 permit 192.168.1.10 0.0.0.0","access-list 10 permit any","access-list 100 permit 192.168.1.10","access-list 10 deny 192.168.1.10"],a:0,e:"通配符 0.0.0.0 表示精确匹配单台主机（等价于 host 关键字）。10 是标准 ACL 编号。"},
+{id:"R2516",year:"2025",ch:"无线局域网设备",q:"下列无线标准中，工作在 5 GHz 频段的是？",o:["802.11b","802.11g","802.11a","蓝牙"],a:2,e:"802.11a 工作在 5 GHz，速率 54 Mbps；b/g 工作在 2.4 GHz。"},
+{id:"R2517",year:"2025",ch:"网络安全技术",q:"下列防火墙类型中，安全性最高但效率相对较低的是？",o:["包过滤防火墙","应用级网关","状态检测防火墙","个人防火墙软件"],a:1,e:"应用级网关（代理型）在应用层检查报文内容，安全性最高，但需为每种应用单独代理，速度较慢。"},
+{id:"R2518",year:"2025",ch:"网络安全技术",q:"AES 加密算法不支持的密钥长度是？",o:["128 位","192 位","256 位","56 位"],a:3,e:"AES 支持 128/192/256 位密钥。56 位是 DES 的密钥长度。"},
+{id:"R2519",year:"2025",ch:"网络管理与服务器",q:"SNMP 代理发现设备异常时，主动向管理站发送的报文是？",o:["get-request","set-request","trap","get-response"],a:2,e:"trap（自陷）是代理主动上报告警的报文，发往管理站 UDP 162 端口。"},
+{id:"R2520",year:"2025",ch:"网络管理与服务器",q:"测试域名解析是否正常，最常用的命令行工具是？",o:["nslookup","netstat","ipconfig","arp"],a:0,e:"nslookup 直接向 DNS 服务器发起查询，是诊断域名解析的专用工具。"},
+{id:"R2401",year:"2024",ch:"网络结构与设计基础",q:"HFC 网络中，连接用户家中同轴电缆与小区光纤节点的是？",o:["光收发器","电缆调制解调器头端 CMTS 与用户 Cable Modem","OLT","DSLAM"],a:1,e:"HFC 头端是 CMTS，用户端是 Cable Modem。DSLAM 用于 xDSL，OLT 用于 FTTx。"},
+{id:"R2402",year:"2024",ch:"网络总体规划",q:"三层网络设计模型中，实施访问控制列表、QoS 策略最合适的位置是？",o:["核心层","汇聚层","接入层","物理层"],a:1,e:"汇聚层是策略控制点，适合做 ACL、QoS、路由聚合；核心层应专注于高速转发。"},
+{id:"R2403",year:"2024",ch:"IP地址规划",q:"地址 202.113.79.32/28 所在子网的广播地址是？",o:["202.113.79.47","202.113.79.63","202.113.79.255","202.113.79.31"],a:0,e:"/28 块大小 16，32 落在 32–47，广播地址 = 202.113.79.47。"},
+{id:"R2404",year:"2024",ch:"IP地址规划",q:"下列关于 IPv6 地址表示，正确的是？",o:["每组十六进制最多 4 位，共 8 组","共 6 组十六进制数","用点分十进制表示","长度为 64 位"],a:0,e:"IPv6 共 8 组、每组 4 位十六进制，冒号分隔，全 0 连续组可用 :: 压缩一次。"},
+{id:"R2405",year:"2024",ch:"IP地址规划",q:"专用（私有）地址块 172.16.0.0–172.31.255.255 对应的 CIDR 前缀是？",o:["172.16.0.0/12","172.16.0.0/16","172.16.0.0/8","172.16.0.0/10"],a:0,e:"第二字节 16–31，高 4 位固定为 0001，故前缀 = 8+4 = /12。"},
+{id:"R2406",year:"2024",ch:"Internet基本协议",q:"TCP 报文段首部中，用于实现可靠传输序号机制的字段长度是？",o:["16 位","32 位","8 位","64 位"],a:1,e:"序号（Sequence Number）字段 32 位，确认号也是 32 位。"},
+{id:"R2407",year:"2024",ch:"Internet基本协议",q:"路由器收到 TTL 减为 0 的 IP 数据报时，将？",o:["继续转发","丢弃并向源站发送 ICMP 超时报文","回送给上一跳","将 TTL 重置为 64"],a:1,e:"TTL 归零即丢弃，并向源站发送 ICMP Time Exceeded 报文。tracert 正是利用这一机制。"},
+{id:"R2408",year:"2024",ch:"Internet基本协议",q:"BGP-4 中，用来撤销路由或通告新路由的报文类型是？",o:["OPEN","UPDATE","KEEPALIVE","NOTIFICATION"],a:1,e:"UPDATE 报文携带可达/不可达路由信息；OPEN 建立邻居；KEEPALIVE 保活；NOTIFICATION 报错并断开。"},
+{id:"R2409",year:"2024",ch:"局域网技术基础",q:"千兆以太网 1000BASE-T 使用的传输介质是？",o:["两对 3 类双绞线","四对 5 类及以上双绞线","多模光纤","同轴电缆"],a:1,e:"1000BASE-T 用四对 5 类（或更好）双绞线，最长 100 m。"},
+{id:"R2410",year:"2024",ch:"局域网技术基础",q:"交换机在 MAC 地址表中查不到目的 MAC 时，采取的动作是？",o:["丢弃该帧","向除入端口外的所有端口泛洪","回送给源主机","缓存等待"],a:1,e:"未知单播帧执行泛洪（flooding），与广播处理方式相同，这是自学习网桥的标准行为。"},
+{id:"R2411",year:"2024",ch:"交换机及其配置",q:"将交换机端口双工模式设为全双工的命令是？",o:["duplex full","full-duplex","duplex auto","set duplex full"],a:0,e:"接口模式下 duplex full 设置全双工，duplex half 半双工，duplex auto 自适应。"},
+{id:"R2412",year:"2024",ch:"交换机及其配置",q:"在交换机上查看当前生效的全部配置，应使用的命令是？",o:["show startup-config","show running-config","show vlan","show version"],a:1,e:"show running-config 显示当前运行配置；show startup-config 显示 NVRAM 中保存的启动配置。"},
+{id:"R2413",year:"2024",ch:"路由器及其配置",q:"路由器选择最佳路由时，首先比较的是？",o:["度量值 metric","管理距离 AD","跳数","端口速率"],a:1,e:"不同来源的路由先比管理距离（AD 小者优先，如直连 0 < 静态 1 < OSPF 110 < RIP 120），同一来源再比度量值。"},
+{id:"R2414",year:"2024",ch:"路由器及其配置",q:"扩展 ACL 编号 120 中，要禁止 192.168.1.0/24 网段访问 Web 服务器 202.113.10.10，正确的语句是？",o:["access-list 120 deny tcp 192.168.1.0 0.0.0.255 host 202.113.10.10 eq 80","access-list 120 deny ip any any","access-list 20 deny tcp 192.168.1.0","access-list 120 permit tcp 192.168.1.0 0.0.0.255 any eq 80"],a:0,e:"扩展 ACL 格式：deny/permit + 协议 + 源网段通配符 + 目的（host 表单机）+ eq 端口。"},
+{id:"R2415",year:"2024",ch:"路由器及其配置",q:"配置 PAT 复用转换时，地址池配置后，关联 ACL 与地址池的语句中必须包含的关键字是？",o:["inside","overload","static","pool"],a:1,e:"ip nat inside source list 1 pool mypool overload，overload 表示端口复用。"},
+{id:"R2416",year:"2024",ch:"无线局域网设备",q:"无线局域网中，用于避免隐藏节点问题的机制是？",o:["RTS/CTS 握手","CSMA/CD","生成树","链路聚合"],a:0,e:"隐藏节点导致侦听不到彼此，802.11 用 RTS/CTS 预约信道来减少冲突。"},
+{id:"R2417",year:"2024",ch:"网络安全技术",q:"数字信封技术结合了哪两种密码体制？",o:["对称加密与非对称加密","MD5 与 SHA-1","DES 与 RSA 之外无组合","只使用对称加密"],a:0,e:"数字信封：用对称密钥加密数据，再用接收方公钥加密对称密钥，兼顾效率与密钥分发安全。"},
+{id:"R2418",year:"2024",ch:"网络安全技术",q:"下列攻击中，通过大量伪造请求耗尽目标资源使其无法提供服务的是？",o:["拒绝服务攻击 DoS","缓冲区溢出","口令猜测","ARP 欺骗"],a:0,e:"DoS/DDoS 通过海量请求耗尽带宽或主机资源。三级常考概念辨析。"},
+{id:"R2419",year:"2024",ch:"网络管理与服务器",q:"MIB 中管理对象的组织形式是？",o:["树形结构","线性表","哈希表","网状结构"],a:0,e:"MIB 管理信息库以树形层次结构组织对象，每个对象有唯一 OID（对象标识符）。"},
+{id:"R2420",year:"2024",ch:"网络管理与服务器",q:"在 Windows Server 上架设 DNS 服务器时，实现域名到 IP 正向解析应创建的区域是？",o:["正向查找区域","反向查找区域","存根区域","缓存区域"],a:0,e:"正向查找区域存放 A 记录实现域名→IP；反向查找区域存放 PTR 记录实现 IP→域名。"},
+{id:"R2301",year:"2023",ch:"网络结构与设计基础",q:"下列关于无线接入技术的描述，错误的是？",o:["802.11 是无线局域网标准","802.16 是无线城域网标准","蓝牙属于无线广域网技术","Ad hoc 网络不需要固定的基础设施"],a:2,e:"蓝牙（802.15.1）是无线个域网 WPAN 技术，覆盖约 10 m，不是广域网。"},
+{id:"R2302",year:"2023",ch:"网络总体规划",q:"网络需求分析中，描述网络应达到的性能指标（带宽、时延等）属于？",o:["功能需求","性能需求","安全需求","管理需求"],a:1,e:"性能需求规定带宽、吞吐量、时延、可用性等量化指标，是设备选型依据。"},
+{id:"R2303",year:"2023",ch:"IP地址规划",q:"把 192.168.0.0/24 划分为 4 个大小相同的子网，每个子网可用主机数是？",o:["62","64","126","30"],a:0,e:"借 2 位分 4 个子网，主机位 6 位，2⁶−2 = 62。"},
+{id:"R2304",year:"2023",ch:"IP地址规划",q:"某主机 IP 为 191.168.4.121，采用默认子网掩码时，其网络地址是？",o:["191.168.0.0","191.168.4.0","191.0.0.0","191.168.4.120"],a:0,e:"191 属 B 类地址，默认掩码 255.255.0.0（/16），网络地址 = 前两字节保留、主机部分清 0，即 191.168.0.0。考查默认掩码。"},
+{id:"R2305",year:"2023",ch:"IP地址规划",q:"地址 172.18.129.0/24 与 172.18.130.0/24 聚合后的 CIDR 块是？",o:["无法聚合成一个块","172.18.128.0/22","172.18.129.0/23","172.18.128.0/21"],a:1,e:"129 = 10000001、130 = 10000010，第三位开始不同，需与 128/131 一起对齐到 /22 块（128–131）才能聚合为单个块：172.18.128.0/22。聚合必须按块大小对齐边界。"},
+{id:"R2306",year:"2023",ch:"Internet基本协议",q:"下列协议中，工作在应用层的是？",o:["IP","TCP","DNS","ICMP"],a:2,e:"DNS 是应用层协议（基于 UDP 53）；IP、ICMP 在网络互连层；TCP 在传输层。"},
+{id:"R2307",year:"2023",ch:"Internet基本协议",q:"在 TCP 连接释放过程中，正确的是？",o:["采用三次握手","采用四次挥手，双向各关闭一次","只需一方发送 FIN 即可","由服务器单方面决定"],a:1,e:"TCP 全双工，每个方向需独立关闭：FIN→ACK、FIN→ACK 共四次挥手。"},
+{id:"R2308",year:"2023",ch:"Internet基本协议",q:"OSPF 协议报文直接封装在哪个协议之上？",o:["TCP","UDP","IP","以太网帧"],a:2,e:"OSPF 报文直接封装在 IP 上（IP 协议号 89），不像 RIP 用 UDP、BGP 用 TCP。这是三协议对比的经典考点。"},
+{id:"R2309",year:"2023",ch:"局域网技术基础",q:"传统以太网争用期（冲突窗口）为 51.2 μs，对应的最短帧长是？",o:["46 字节","64 字节","128 字节","512 字节"],a:1,e:"10Mbps 以太网 51.2 μs 内可发送 512 比特 = 64 字节，即最小帧长。数据部分最短 46 字节。"},
+{id:"R2310",year:"2023",ch:"局域网技术基础",q:"关于交换式以太网与共享式以太网，下列说法正确的是？",o:["交换式以太网各端口处于同一冲突域","交换式以太网每个端口是独立冲突域","共享式以太网各节点可独占带宽","两者都不需要 MAC 地址"],a:1,e:"交换机隔离冲突域（每端口一个），节点可独占端口带宽并全双工工作；集线器才是共享带宽、单一冲突域。"},
+{id:"R2311",year:"2023",ch:"交换机及其配置",q:"配置 VLAN 间路由（单臂路由）时，路由器物理接口需要？",o:["划分多个子接口并分别封装 802.1Q","配置多个 IP 于同一接口","关闭路由功能","启用端口安全"],a:0,e:"单臂路由：路由器一个物理口划多个子接口，各子接口封装 dot1Q 对应一个 VLAN，充当各 VLAN 网关。"},
+{id:"R2312",year:"2023",ch:"交换机及其配置",q:"在交换机上配置端口进入接口配置模式的命令示例是？",o:["interface fastEthernet 0/1","port f0/1","int vlan f0/1","switchport f0/1"],a:0,e:"全局配置模式下 interface fastEthernet 0/1（可简写 int f0/1）进入接口模式。"},
+{id:"R2313",year:"2023",ch:"路由器及其配置",q:"查看 NAT 转换表项的命令是？",o:["show ip nat translations","show ip route","show nat table","show access-lists"],a:0,e:"show ip nat translations 显示内外地址端口映射；show access-lists 查看 ACL 内容及匹配计数。"},
+{id:"R2314",year:"2023",ch:"路由器及其配置",q:"ACL 应用到接口时，in 方向的含义是？",o:["进入路由器接口的数据包","离开路由器接口的数据包","进入交换机端口的帧","仅指管理流量"],a:0,e:"in = 进入接口的包先经 ACL 检查再路由；out = 路由后离开接口前检查。方向判断是配置题常考点。"},
+{id:"R2315",year:"2023",ch:"路由器及其配置",q:"路由器串口互联时需要配置时钟速率（clock rate）的一端是？",o:["DTE 端","DCE 端","两端都要","都不需要"],a:1,e:"串行链路中 DCE 端提供时钟，需在 DCE 侧配 clock rate（如 64000）。"},
+{id:"R2316",year:"2023",ch:"无线局域网设备",q:"校园无线覆盖中，多个 AP 组网时为减少干扰，相邻 AP 应？",o:["使用相同信道","使用互不重叠的信道（如 1、6、11）","关闭 SSID","使用 5 GHz 强制模式"],a:1,e:"2.4 GHz 只有 1、6、11 三个互不重叠信道，蜂窝式部署时相邻 AP 用不同信道。"},
+{id:"R2317",year:"2023",ch:"网络安全技术",q:"能根据连接状态跟踪会话、动态放行的防火墙技术是？",o:["静态包过滤","状态检测（状态包检查）","应用代理","MAC 过滤"],a:1,e:"状态检测防火墙维护连接状态表，只允许属于已建立连接的返回流量通过，兼顾安全与效率。"},
+{id:"R2318",year:"2023",ch:"网络安全技术",q:"保护电子邮件内容机密性，最直接的手段是？",o:["对邮件内容加密","频繁更换口令","使用大附件","群发邮件"],a:0,e:"端到端加密（如 PGP/S/MIME）可保证邮件内容在传输和存储中的机密性。"},
+{id:"R2319",year:"2023",ch:"网络管理与服务器",q:"DHCP 地址租约到期一半时，客户端将？",o:["立即释放地址","向服务器发起续租（renew）请求","改用静态地址","发送 ARP 请求"],a:1,e:"租约过半（50%）客户端向原服务器单播请求续租；87.5% 时再广播寻找任意服务器续租。"},
+{id:"R2320",year:"2023",ch:"网络管理与服务器",q:"在同一台服务器上用不同端口发布多个 Web 站点，访问第二个站点时浏览器地址应写为？",o:["http://域名:端口号","ftp://域名","https://域名","域名/端口号"],a:0,e:"非默认端口需在 URL 中显式写出：http://域名:端口。默认 80 可省略。"}
+];
+var APPLY = [
+{id:"A01",type:"f",ch:"应用题·地址聚合",q:"【校园网改造】某高校有 4 个连续的学生宿舍网段：172.16.8.0/24、172.16.9.0/24、172.16.10.0/24、172.16.11.0/24。为减少出口路由表条目，需将它们聚合成一个 CIDR 地址块，聚合结果是？（填 地址/前缀 格式）",ans:"172.16.8.0/22",alt:["172.16.8.0 255.255.252.0"],e:"第三字节 8–11，二进制 00001000–00001011，前 6 位相同（000010），共同前缀 8+8+6 = /22，且 8 是 4 的整数倍（块大小 4 对齐），故聚合为 172.16.8.0/22。子网掩码 255.255.252.0。"},
+{id:"A02",type:"f",ch:"应用题·地址聚合",q:"【企业分支互联】某企业 4 个分支机构的网段为 202.113.64.0/24、202.113.65.0/24、202.113.66.0/24、202.113.67.0/24。在总部路由器上做路由聚合，聚合后的地址块是？（填 地址/前缀 格式）",ans:"202.113.64.0/22",alt:["202.113.64.0 255.255.252.0"],e:"第三字节 64–67，二进制 01000000–01000011，前 6 位相同，前缀 = 8+8+6 = /22。这是最经典的三级网络应用题聚合考点。"},
+{id:"A03",type:"f",ch:"应用题·地址聚合",q:"【园区网优化】某园区网有 8 个连续网段 10.1.0.0/24 至 10.1.7.0/24，聚合后的超网地址是？（填 地址/前缀 格式）",ans:"10.1.0.0/21",alt:["10.1.0.0 255.255.248.0"],e:"8 个 /24 网段需 3 位子网位（2³=8），前缀 = 24−3 = /21。起始地址 10.1.0.0 是块大小 8 的整数倍，边界对齐，可聚合。"},
+{id:"A04",type:"f",ch:"应用题·地址聚合",q:"【地址规划】某公司分配到的地址块中，200.100.32.0/24 至 200.100.39.0/24 共 8 个网段连续可用。若要向 ISP 只宣告一条聚合路由，应宣告的地址块是？（填 地址/前缀 格式）",ans:"200.100.32.0/21",alt:["200.100.32.0 255.255.248.0"],e:"32–39 共 8 个连续 C 类，32 二进制 00100000、39 为 00100111，前 5 位相同 → 前缀 8+8+5 = /21。起始 32 是 8 的整数倍，边界对齐。"},
+{id:"A05",type:"f",ch:"应用题·子网划分",q:"【部门划分】某公司拿到 C 类地址块 192.168.5.0/24，要平均分给 4 个部门，每个部门单独一个子网。每个部门最多可用的主机地址数是？（填数字）",ans:"62",e:"划分 4 个子网需借 2 位（2²=4），剩余主机位 8−2 = 6 位，可用主机 = 2⁶−2 = 62。子网掩码 255.255.255.192。"},
+{id:"A06",type:"f",ch:"应用题·子网划分",q:"【主机数反推】某部门计划部署 200 台主机，要求全部主机在同一子网内，且尽量节省地址。应分配的最短前缀长度是？（填 /XX 格式）",ans:"/24",alt:["24"],e:"2⁸−2 = 254 ≥ 200，需 8 位主机位，前缀 = 32−8 = /24。/25 只有 126 台不够，所以 /24 是最省的可行前缀。"},
+{id:"A07",type:"f",ch:"应用题·子网划分",q:"【路由器互联】两台路由器用一条串行链路点对点互联，为最节省 IP 地址，应使用的子网掩码是？",ans:"255.255.255.252",alt:["/30","30"],e:"点对点只需 2 个可用地址，2²−2 = 2，主机位 2 位，前缀 /30，掩码 255.255.255.252。"},
+{id:"A08",type:"f",ch:"应用题·子网划分",q:"【容量计算】某公司从 ISP 获得地址块 172.16.0.0/22，该地址块最多可容纳的主机地址总数是多少？（填数字）",ans:"1022",e:"/22 主机位 = 32−22 = 10 位，可用主机 = 2¹⁰−2 = 1024−2 = 1022。"},
+{id:"A09",type:"f",ch:"应用题·设备部署",q:"【流量监听】管理员需要监听（镜像）两台路由器之间的全部通信流量以做协议分析。在不影响链路正常转发的前提下，应接入的设备是？",ans:"TAP",alt:["分路器","tap分路器","网络分路器","TAP分路器"],e:"TAP（分路器）串接在链路中，把流量复制一份给分析设备，且不中断链路。三级网络应用题的经典考点。"},
+{id:"A10",type:"f",ch:"应用题·设备部署",q:"【分层设计】在校园网三层结构设计中，负责实施访问控制策略（ACL）、QoS 和路由聚合的设备应部署在哪一层？",ans:"汇聚层",alt:["汇聚层","分布层","convergence"],e:"核心层专注高速转发；汇聚层是策略层，做 ACL、QoS、路由聚合；接入层连接用户终端。三层职能必背。"},
+{id:"A11",type:"f",ch:"应用题·设备部署",q:"【VLAN 互通】某局域网划分了 VLAN 10、20、30，现在要求这三个 VLAN 之间能够互相通信，网络中使用什么设备实现？",ans:"路由器",alt:["三层交换机","三层交换机或路由器","layer3switch"],e:"VLAN 隔离广播域，不同 VLAN 间通信属于三层转发，需路由器（单臂路由）或三层交换机（SVI）实现。"},
+{id:"A12",type:"f",ch:"应用题·设备部署",q:"【安全部署】在校园网出口处，需要检查进出报文的首部信息并按规则放行或阻断，同时还要能对已发现的入侵行为主动切断连接。应部署的设备是？",ans:"IPS",alt:["入侵防御系统","ips入侵防御系统"],e:"按规则过滤是防火墙的职责；能主动阻断入侵的在线设备是 IPS（入侵防御系统）。只需监测告警的是 IDS。"}
+];
+var CARDS = [
+{id:"C01",ch:"数字速记",f:"FTP 使用的端口号",b:"TCP 21（控制连接）+ TCP 20（数据连接）"},
+{id:"C02",ch:"数字速记",f:"SSH / Telnet 端口号",b:"SSH = TCP 22；Telnet = TCP 23"},
+{id:"C03",ch:"数字速记",f:"SMTP / POP3 / IMAP4 端口号",b:"SMTP 发信 = TCP 25；POP3 收信 = TCP 110；IMAP4 收信 = TCP 143"},
+{id:"C04",ch:"数字速记",f:"DNS 端口号及协议",b:"53，查询用 UDP 53，区域传送用 TCP 53"},
+{id:"C05",ch:"数字速记",f:"HTTP / HTTPS 端口号",b:"HTTP = TCP 80；HTTPS = TCP 443"},
+{id:"C06",ch:"数字速记",f:"DHCP 使用的端口",b:"服务器 UDP 67，客户端 UDP 68"},
+{id:"C07",ch:"数字速记",f:"SNMP 使用的端口",b:"管理操作 UDP 161；trap 告警 UDP 162"},
+{id:"C08",ch:"数字速记",f:"RIP / BGP 使用的端口",b:"RIP = UDP 520；BGP = TCP 179"},
+{id:"C09",ch:"数字速记",f:"IPv4 / IPv6 地址长度",b:"IPv4 = 32 位；IPv6 = 128 位"},
+{id:"C10",ch:"数字速记",f:"MAC 地址长度",b:"48 位（6 字节）"},
+{id:"C11",ch:"数字速记",f:"以太网最小帧长 / 最大帧长",b:"最小 64 字节（数据部分 ≥46）；最大 1518 字节（数据 ≤1500）"},
+{id:"C12",ch:"数字速记",f:"RIP 最大跳数",b:"15 跳（16 表示不可达），更新周期 30 秒"},
+{id:"C13",ch:"数字速记",f:"DES / AES 密钥长度",b:"DES = 56 位；AES = 128 / 192 / 256 位"},
+{id:"C14",ch:"数字速记",f:"MD5 / SHA-1 摘要长度",b:"MD5 = 128 位；SHA-1 = 160 位"},
+{id:"C15",ch:"数字速记",f:"802.11b / a / g / n 速率",b:"b：11M（2.4G）；a：54M（5G）；g：54M（2.4G）；n：最高 600M"},
+{id:"C16",ch:"数字速记",f:"标准 ACL / 扩展 ACL 编号",b:"标准 1–99（只匹配源）；扩展 100–199（源/目的/协议/端口）"},
+{id:"C17",ch:"IP与子网",f:"A / B / C 类地址首字节范围",b:"A：1–126；B：128–191；C：192–223（D 组播 224–239）"},
+{id:"C18",ch:"IP与子网",f:"三段私有地址",b:"10.0.0.0/8；172.16.0.0–172.31.255.255（/12）；192.168.0.0/16"},
+{id:"C19",ch:"IP与子网",f:"可用主机数公式",b:"2ⁿ − 2（n = 主机位数），减去网络地址与广播地址"},
+{id:"C20",ch:"IP与子网",f:"求网络地址的方法",b:"IP 与子网掩码做按位 AND 运算"},
+{id:"C21",ch:"IP与子网",f:"求广播地址的方法",b:"网络地址的主机位全部置 1"},
+{id:"C22",ch:"IP与子网",f:"通配符掩码怎么算",b:"255.255.255.255 − 子网掩码（如 /24 → 0.0.0.255）"},
+{id:"C23",ch:"IP与子网",f:"CIDR 聚合方法",b:"找各网段相同的最高位前缀，聚合后网络号必须按块大小边界对齐"},
+{id:"C24",ch:"IP与子网",f:"特殊地址 127.x.x.x / 169.254.x.x",b:"127 段 = 回环测试；169.254 段 = APIPA，DHCP 失败时自动配置"},
+{id:"C25",ch:"IP与子网",f:"受限广播 vs 直接广播",b:"受限广播 255.255.255.255 只在本网段、路由器不转发；直接广播 = 网络号 + 主机位全 1，可定向到指定网段"},
+{id:"C26",ch:"IP与子网",f:"/24 → /30 每子网可用主机数",b:"/24=254；/25=126；/26=62；/27=30；/28=14；/29=6；/30=2"},
+{id:"C27",ch:"IP与子网",f:"NAT 与 PAT 的区别",b:"NAT 一对一/多对多地址转换；PAT（overload）多对一，靠端口号区分会话"},
+{id:"C28",ch:"IP与子网",f:"IPv6 地址表示与压缩规则",b:"8 组十六进制冒号分隔；连续全 0 组用 :: 压缩，只能用一次"},
+{id:"C29",ch:"IP与子网",f:"路由器子网掩码 /20 对应点分十进制",b:"255.255.240.0（第三字节 11110000 = 240）"},
+{id:"C30",ch:"IP与子网",f:"已知主机数 n，求前缀",b:"找最小 h 使 2ʰ−2 ≥ n，前缀 = 32 − h（如 600 台 → h=10 → /22）"},
+{id:"C31",ch:"配置命令",f:"进入特权模式 / 全局配置模式",b:"enable → configure terminal（conf t）"},
+{id:"C32",ch:"配置命令",f:"修改设备主机名",b:"全局模式：hostname 名称"},
+{id:"C33",ch:"配置命令",f:"接口配置 IP 地址",b:"接口模式：ip address 地址 掩码，然后 no shutdown 激活"},
+{id:"C34",ch:"配置命令",f:"静态路由命令格式",b:"ip route 目的网络 掩码 下一跳（全局模式）"},
+{id:"C35",ch:"配置命令",f:"默认路由命令",b:"ip route 0.0.0.0 0.0.0.0 下一跳"},
+{id:"C36",ch:"配置命令",f:"RIP 配置两条命令",b:"router rip → network 主类网络号"},
+{id:"C37",ch:"配置命令",f:"OSPF 配置命令",b:"router ospf 进程号 → network 网段 通配符 area 0"},
+{id:"C38",ch:"配置命令",f:"创建并命名 VLAN",b:"vlan 10 → name 名称（config-vlan 模式）"},
+{id:"C39",ch:"配置命令",f:"端口划入 VLAN（access）",b:"接口模式：switchport mode access → switchport access vlan 编号"},
+{id:"C40",ch:"配置命令",f:"配置 Trunk 端口",b:"switchport mode trunk；限流：switchport trunk allowed vlan 10,20,30"},
+{id:"C41",ch:"配置命令",f:"查看 VLAN / MAC 地址表",b:"show vlan（brief）；show mac-address-table"},
+{id:"C42",ch:"配置命令",f:"查看路由表 / 运行配置",b:"show ip route；show running-config"},
+{id:"C43",ch:"配置命令",f:"保存配置",b:"copy running-config startup-config（或 write memory）"},
+{id:"C44",ch:"配置命令",f:"交换机管理 IP 配置",b:"interface vlan 1 → ip address 地址 掩码 → no shutdown"},
+{id:"C45",ch:"配置命令",f:"标准 ACL 语句格式",b:"access-list 1-99 permit/deny 源地址 通配符"},
+{id:"C46",ch:"配置命令",f:"扩展 ACL 语句格式",b:"access-list 100-199 permit/deny 协议 源 通配符 目的 通配符 eq 端口"},
+{id:"C47",ch:"配置命令",f:"ACL 应用到接口",b:"接口模式：ip access-group 编号 in/out"},
+{id:"C48",ch:"配置命令",f:"NAT 内外接口指定",b:"内网口 ip nat inside；外网口 ip nat outside"},
+{id:"C49",ch:"配置命令",f:"PAT 复用转换命令",b:"ip nat inside source list 1 pool 池名 overload"},
+{id:"C50",ch:"配置命令",f:"端口速率 / 双工配置",b:"speed 100/auto；duplex full/half/auto"},
+{id:"C51",ch:"配置命令",f:"查看 NAT 转换 / ACL",b:"show ip nat translations；show access-lists"},
+{id:"C52",ch:"配置命令",f:"Windows 常用网络命令",b:"ipconfig /all、ping、tracert、nslookup、netstat -an、arp -a"},
+{id:"C53",ch:"概念辨析",f:"TCP vs UDP",b:"TCP 面向连接可靠（三次握手、序号确认、流量控制）；UDP 无连接不可靠、首部 8 字节、开销小"},
+{id:"C54",ch:"概念辨析",f:"TCP 三次握手标志位",b:"SYN（0x02）→ SYN+ACK（0x12）→ ACK（0x10）；释放四次挥手"},
+{id:"C55",ch:"概念辨析",f:"ARP vs RARP",b:"ARP：IP → MAC；RARP：MAC → IP"},
+{id:"C56",ch:"概念辨析",f:"RIP vs OSPF vs BGP",b:"RIP 距离向量 UDP520 跳数≤15；OSPF 链路状态 Dijkstra 直接封装 IP（89）；BGP-4 路径向量 TCP179 用于 AS 之间"},
+{id:"C57",ch:"概念辨析",f:"集线器 vs 交换机",b:"集线器共享带宽、单一冲突域、半双工；交换机每端口独立冲突域、独占带宽、可全双工"},
+{id:"C58",ch:"概念辨析",f:"冲突域 vs 广播域",b:"交换机隔离冲突域不隔离广播域；VLAN/路由器隔离广播域"},
+{id:"C59",ch:"概念辨析",f:"VLAN 的作用",b:"逻辑划分广播域、抑制广播风暴；不同 VLAN 通信需三层设备"},
+{id:"C60",ch:"概念辨析",f:"access 口 vs trunk 口",b:"access 只属于一个 VLAN 接终端；trunk 承载多 VLAN 走 802.1Q 标记帧，用于设备互联"},
+{id:"C61",ch:"概念辨析",f:"静态路由 vs 动态路由",b:"静态手工配置、适合小网；动态由 RIP/OSPF 等协议自动学习、适应拓扑变化"},
+{id:"C62",ch:"概念辨析",f:"管理距离 AD 排序",b:"直连 0 < 静态 1 < EIGRP 90 < OSPF 110 < RIP 120，越小越可信"},
+{id:"C63",ch:"概念辨析",f:"通配符掩码中 0 和 255 的含义",b:"0 = 对应位必须匹配；255 = 对应位任意"},
+{id:"C64",ch:"概念辨析",f:"标准 ACL vs 扩展 ACL",b:"标准只查源地址（靠近目的端应用）；扩展查源/目的/协议/端口（靠近源端应用）"},
+{id:"C65",ch:"概念辨析",f:"防火墙三种基本类型",b:"包过滤（网络层，快）；应用级网关/代理（应用层，安全但慢）；状态检测（跟踪会话）"},
+{id:"C66",ch:"概念辨析",f:"对称 vs 非对称加密",b:"对称（DES/AES）同一把密钥、快、分发难；非对称（RSA）公私钥对、慢、解决分发与签名"},
+{id:"C67",ch:"概念辨析",f:"数字签名 vs 数字信封",b:"签名 = 私钥加密摘要，认证+完整+抗抵赖；信封 = 对称加密数据 + 公钥加密对称密钥，保机密"},
+{id:"C68",ch:"概念辨析",f:"病毒 vs 木马",b:"病毒依附宿主、自我复制传染；木马伪装正常程序、窃取信息、不自我复制"},
+{id:"C69",ch:"概念辨析",f:"IDS vs IPS",b:"IDS 只监测告警；IPS 在线部署可主动阻断"},
+{id:"C70",ch:"概念辨析",f:"SNMP 三类角色与操作",b:"管理者 get/get-next 读、set 写；代理存 MIB；trap 代理主动告警"},
+{id:"C71",ch:"概念辨析",f:"DNS 记录类型",b:"A 域名→IPv4；AAAA →IPv6；PTR IP→域名；MX 邮件交换；CNAME 别名；NS 域名服务器"},
+{id:"C72",ch:"概念辨析",f:"DHCP DORA 四步",b:"Discover 发现 → Offer 提供 → Request 请求 → Ack 确认（全程广播）"},
+{id:"C73",ch:"概念辨析",f:"SMTP vs POP3/IMAP",b:"SMTP 负责发送/中继邮件；POP3、IMAP4 负责接收读取邮件"},
+{id:"C74",ch:"概念辨析",f:"CSMA/CD vs CSMA/CA",b:"CD 冲突检测用于有线以太网；CA 冲突避免用于无线（可配 RTS/CTS 防隐藏节点）"},
+{id:"C75",ch:"概念辨析",f:"STP 生成树（802.1d）",b:"阻塞冗余端口防二层环路，故障时自动启用备份链路"},
+{id:"C76",ch:"概念辨析",f:"核心层 vs 汇聚层 vs 接入层",b:"核心高速转发；汇聚做策略/ACL/路由聚合；接入连接终端"},
+{id:"C77",ch:"概念辨析",f:"综合布线六个子系统",b:"工作区、水平、垂直干线、设备间、管理间、建筑群"},
+{id:"C78",ch:"概念辨析",f:"以太网帧结构顺序",b:"前导码 7B → SFD 1B → 目的 MAC 6B → 源 MAC 6B → 类型 2B → 数据 46–1500B → FCS 4B"},
+{id:"C79",ch:"概念辨析",f:"抓包常用十六进制",b:"类型 0x0800=IP、0x0806=ARP；IP 协议号 1=ICMP、6=TCP、17=UDP；首字节 0x45 = IPv4+20 字节首部"},
+{id:"C80",ch:"概念辨析",f:"ping / tracert 原理",b:"ping = ICMP 回送请求/应答；tracert = 逐步加大 TTL，利用 ICMP 超时报文逐跳探测"}
+];
+
+var KEY = "ncre3-quiz-v2";
+var state = { done: {}, wrong: [], fav: [], seqBank: 0, cards: {}, exams: [], daily: { goal: 20, log: {} }, rev: {} };
+(function load() {
+  try {
+    var raw = localStorage.getItem(KEY);
+    if (raw) { var p = JSON.parse(raw); state.done = p.done || {}; state.wrong = p.wrong || []; state.fav = p.fav || []; state.seqBank = p.seqBank || 0; state.cards = p.cards || {}; state.exams = p.exams || []; state.daily = p.daily || { goal: 20, log: {} }; state.rev = p.rev || {}; if (!state.daily.log) state.daily.log = {}; return; }
+    var old = localStorage.getItem("ncre3-quiz-state");
+    if (old) { var o = JSON.parse(old); state.done = o.done || {}; state.wrong = o.wrong || []; state.fav = o.fav || []; state.rev = o.rev || {}; }
+  } catch (e) {}
+})();
+/* 旧数据没有复习排期：把现有错题视为今天到期 */
+if (!state.rev) state.rev = {};
+state.wrong.forEach(function (id) { if (!state.rev[id]) state.rev[id] = { s: 0, due: dayKey(), last: "" }; });
+function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+
+/* ===== 进度导出 / 导入（换设备、清缓存前备份）===== */
+function exportState() {
+  var payload = { app: "ncre3-quiz", ver: 2, exportedAt: new Date().toISOString(), state: state };
+  var blob = new Blob([JSON.stringify(payload)], { type: "application/json" });
+  var a = document.createElement("a");
+  var d = new Date();
+  a.href = URL.createObjectURL(blob);
+  a.download = "三级刷题进度-" + d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate() + ".json";
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 800);
+}
+function pickBackup() { var el = $("import-file"); if (el) el.click(); }
+function importState(input) {
+  var f = input.files && input.files[0];
+  if (!f) return;
+  var r = new FileReader();
+  r.onload = function () {
+    try {
+      var p = JSON.parse(r.result);
+      var st = p && p.state ? p.state : p;
+      if (!st || typeof st !== "object" || !st.done) throw new Error("不是有效的进度备份文件");
+      if (!confirm("导入会把备份文件里的学习记录合并到当前进度（做题记录、错题本、复习排期、收藏、背诵进度、模考成绩、打卡记录）。确定继续？")) { input.value = ""; return; }
+      var n = 0;
+      for (var k in st.done) { if (state.done[k] === undefined || st.done[k] === 1) { state.done[k] = st.done[k]; n++; } }
+      (st.wrong || []).forEach(function (id) { if (state.wrong.indexOf(id) < 0) state.wrong.push(id); });
+      (st.fav || []).forEach(function (id) { if (state.fav.indexOf(id) < 0) state.fav.push(id); });
+      if (st.rev) for (var rid in st.rev) {
+        var a = state.rev[rid], b = st.rev[rid];
+        if (!a || ((b && b.s || 0) > (a && a.s || 0))) state.rev[rid] = b;
+      }
+      if (st.cards) for (var c in st.cards) if (state.cards[c] === undefined) state.cards[c] = st.cards[c];
+      if (st.exams) state.exams = state.exams.concat(st.exams);
+      if (typeof st.seqBank === "number") state.seqBank = Math.max(state.seqBank, st.seqBank);
+      if (st.daily && st.daily.log) { for (var day in st.daily.log) if (state.daily.log[day] === undefined) state.daily.log[day] = st.daily.log[day]; }
+      save(); renderAll();
+      alert("导入完成，已合并 " + n + " 条做题记录。");
+    } catch (e) {
+      alert("导入失败：" + e.message);
+    }
+    input.value = "";
+  };
+  r.readAsText(f);
+}
+
+var session = null, cardSession = null, flipped = false, seqBase = 0;
+var lastBlank = null, examTimer = null, examMode = null;
+var currentTab = "bank";
+
+function $(id) { return document.getElementById(id); }
+function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+/* 报文表格渲染：模拟真实考题里的 Sniffer / Wireshark 截图表格 */
+function tblHTML(t) {
+  if (!t) return "";
+  var h = "<table class='pk-table'><tr>";
+  t.h.forEach(function (x) { h += "<th>" + esc(x) + "</th>"; });
+  h += "</tr>";
+  t.r.forEach(function (row, ri) {
+    var isHi = t.hi && t.hi.indexOf(ri) >= 0;
+    h += "<tr>";
+    row.forEach(function (cell) { h += "<td" + (isHi ? " class='hi'" : "") + ">" + esc(cell) + "</td>"; });
+    h += "</tr>";
+  });
+  return h + "</table>";
+}
+function isReal(id) { return String(id).charAt(0) === "R"; }
+function isBlank(id) { return String(id).charAt(0) === "F"; }
+function isApply(id) { return String(id).charAt(0) === "A"; }
+function fmtPct(n, d) { return d === 0 ? "–" : Math.round(n / d * 100) + "%"; }
+function shuffle(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+function normAns(s) {
+  return String(s).toLowerCase()
+    .replace(/[\s　]/g, "")
+    .replace(/[（(][^）)]*[）)]/g, "")
+    .replace(/[。．]/g, ".")
+    .replace(/^(答案|答|是)[:：]?/, "")
+    .replace(/^0x/, "")
+    .replace(/(字节|比特|位|个|台|条|秒|次|号|端口|台主机|个主机|个字节)$/g, "")
+    .replace(/[;,；，]/g, ",")
+    .trim();
+}
+function matchAns(input, q) {
+  var inp = normAns(input);
+  if (!inp) return false;
+  var cands = [q.ans].concat(q.alt || []);
+  for (var i = 0; i < cands.length; i++) {
+    var c = normAns(cands[i]);
+    if (c === inp) return true;
+    /* 命令类答案：允许省略掩码写法的常见变体，如 /24 与 255.255.255.0 互认 */
+    if (c.length > 6 && (inp.indexOf(c) >= 0 || c.indexOf(inp) >= 0) && Math.abs(c.length - inp.length) <= 2) return true;
+  }
+  return false;
+}
+/* 判分容错说明：去空格/全角、忽略括号注释与单位（字节/位/个…）、
+   0x 前缀可省、半角全角逗号等价；命令类允许 ±2 字符的包含关系。
+   若仍判错但你确信答对，点「这题我判对了」自评纠正。 */
+
+var CHS = [];
+BANK.forEach(function (q) { if (CHS.indexOf(q.ch) < 0) CHS.push(q.ch); });
+var BLANK_CHS = [];
+BLANK.forEach(function (q) { if (BLANK_CHS.indexOf(q.ch) < 0) BLANK_CHS.push(q.ch); });
+var CARD_CHS = [];
+CARDS.forEach(function (c) { if (CARD_CHS.indexOf(c.ch) < 0) CARD_CHS.push(c.ch); });
+var REAL_YEARS = ["2025", "2024", "2023"];
+
+function showTab(name) {
+  if (["bank", "real", "card", "exam"].indexOf(name) < 0) name = "bank";
+  currentTab = name;
+  ["bank", "real", "card", "exam"].forEach(function (t) { $("tab-" + t).classList.toggle("hide", t !== name); });
+  var btns = document.querySelectorAll(".tab-btn");
+  for (var i = 0; i < btns.length; i++) btns[i].classList.toggle("on", btns[i].getAttribute("data-tab") === name);
+  if (location.hash !== "#" + name && history.replaceState) {
+    try { history.replaceState(null, "", "#" + name); } catch (e) {}
+  }
+  renderAll();
+}
+function showView(v) {
+  ["tab-bank", "tab-real", "tab-card", "tab-exam", "quiz", "flash", "result"].forEach(function (id) { $(id).classList.add("hide"); });
+  $("tabs").classList.toggle("hide", v !== "home");
+  if (v === "home") { showTab(currentTab); } else { $(v).classList.remove("hide"); }
+}
+
+function renderAll() {
+  var bDone = 0, bRight = 0, rDone = 0, fDone = 0, aDone = 0, wBank = 0, wReal = 0, wBlank = 0, wApply = 0;
+  for (var k in state.done) {
+    if (isReal(k)) { rDone++; }
+    else if (isBlank(k)) { fDone++; }
+    else if (isApply(k)) { aDone++; }
+    else { bDone++; if (state.done[k] === 1) bRight++; }
+  }
+  state.wrong.forEach(function (id) { if (isReal(id)) wReal++; else if (isBlank(id)) wBlank++; else if (isApply(id)) wApply++; else wBank++; });
+  var known = 0;
+  CARDS.forEach(function (c) { if (state.cards[c.id] === "known") known++; });
+  $("st-done").textContent = bDone + "/" + BANK.length;
+  $("st-acc").textContent = fmtPct(bRight, bDone);
+  $("st-blank").textContent = fDone + "/" + BLANK.length;
+  $("st-wrong").textContent = wBank + wReal + wBlank + wApply;
+  $("st-real").textContent = rDone + "/" + REAL.length;
+  $("st-card").textContent = known + "/" + CARDS.length;
+
+  var dueN = reviewDueIds().length;
+  $("rev-title").textContent = dueN ? "今日待复习 " + dueN + " 题" : "今天没有到期复习";
+  $("rev-sub").textContent = dueN ? "按 1 / 3 / 7 / 14 / 30 天排期 · 逾期的先复习（单次最多 30 题）" : "错题会在 1 / 3 / 7 / 14 / 30 天后自动回到这里";
+  $("rev-btn").disabled = dueN === 0;
+  $("review-panel").classList.toggle("empty", dueN === 0);
+
+  var nextN = Math.min(state.seqBank + 1, BANK.length);
+  $("seq-sub").textContent = state.seqBank >= BANK.length ? "已完成一轮，点击重新开始" : "从第 " + nextN + " 题继续";
+  var undoneN = BANK.filter(function (q) { return state.done[q.id] === undefined; }).length;
+  $("undone-count").textContent = undoneN === 0 ? "106 题已全部做过 ✓" : "还剩 " + undoneN + " 道未做题";
+  $("wrong-count").textContent = wBank === 0 ? "错题本已清空" : "消灭错题本（" + wBank + " 题）";
+  $("fav-count").textContent = state.fav.length === 0 ? "还没有收藏题" : "重做你标星的题（" + state.fav.length + " 题）";
+  $("blank-wrong-count").textContent = wBlank === 0 ? "填空错题已清空" : "消灭填空错题（" + wBlank + " 题）";
+  $("real-wrong-count").textContent = wReal === 0 ? "真题错题已清空" : "消灭真题错题（" + wReal + " 题）";
+  $("card-unknown-sub").textContent = "还剩 " + (CARDS.length - known) + " 张待掌握";
+
+  var html = "";
+  CHS.forEach(function (ch) {
+    var total = 0, right = 0;
+    BANK.forEach(function (q) { if (q.ch === ch) { total++; if (state.done[q.id] === 1) right++; } });
+    html += '<button class="ch-btn" onclick="startChapter(\'' + ch + '\')"><span>' + ch + '</span><span class="cnt">' + right + "/" + total + ' 对</span></button>';
+  });
+  $("chapters").innerHTML = html;
+
+  var bhtml = "";
+  BLANK_CHS.forEach(function (ch) {
+    var total = 0, right = 0;
+    BLANK.forEach(function (q) { if (q.ch === ch) { total++; if (state.done[q.id] === 1) right++; } });
+    bhtml += '<button class="ch-btn" onclick="startBlankCh(\'' + ch + '\')"><span>' + ch + '</span><span class="cnt">' + right + "/" + total + ' 对</span></button>';
+  });
+  $("blank-chapters").innerHTML = bhtml;
+
+  var rhtml = "";
+  REAL_YEARS.forEach(function (y) {
+    var total = 0, done = 0;
+    REAL.forEach(function (q) { if (q.year === y) { total++; if (state.done[q.id] !== undefined) done++; } });
+    rhtml += '<button class="mode-btn" onclick="startRealSet(\'' + y + '\')">' + y + ' 年真题卷<small>' + done + "/" + total + ' 已完成</small></button>';
+  });
+  $("real-sets").innerHTML = rhtml;
+
+  var chtml = "";
+  CARD_CHS.forEach(function (ch) {
+    var total = 0, kn = 0;
+    CARDS.forEach(function (c) { if (c.ch === ch) { total++; if (state.cards[c.id] === "known") kn++; } });
+    chtml += '<button class="ch-btn" onclick="startCardsCh(\'' + ch + '\')"><span>' + ch + '</span><span class="cnt">' + kn + "/" + total + ' 掌握</span></button>';
+  });
+  $("card-chapters").innerHTML = chtml;
+
+  /* ===== 应用题章节与错题 ===== */
+  $("apply-wrong-count").textContent = wApply === 0 ? "应用题错题已清空" : "消灭应用题错题（" + wApply + " 题）";
+  var APPLY_CHS = [];
+  APPLY.forEach(function (q) { if (APPLY_CHS.indexOf(q.ch) < 0) APPLY_CHS.push(q.ch); });
+  var apHtml = "";
+  APPLY_CHS.forEach(function (ch) {
+    var total = 0, right = 0;
+    APPLY.forEach(function (q) { if (q.ch === ch) { total++; if (state.done[q.id] === 1) right++; } });
+    apHtml += '<button class="ch-btn" onclick="startApplyCh(\'' + ch + '\')"><span>' + ch + '</span><span class="cnt">' + right + "/" + total + ' 对</span></button>';
+  });
+  $("apply-chapters").innerHTML = apHtml;
+
+  /* ===== 薄弱章节诊断 ===== */
+  var diag = $("diag-panel");
+  var rows = [];
+  CHS.forEach(function (ch) {
+    var t = 0, r = 0;
+    BANK.forEach(function (q) { if (q.ch === ch && state.done[q.id] !== undefined) { t++; if (state.done[q.id] === 1) r++; } });
+    if (t) rows.push({ ch: ch, t: t, r: r, acc: r / t });
+  });
+  BLANK_CHS.forEach(function (ch) {
+    var t = 0, r = 0;
+    BLANK.forEach(function (q) { if (q.ch === ch && state.done[q.id] !== undefined) { t++; if (state.done[q.id] === 1) r++; } });
+    if (t) rows.push({ ch: ch, t: t, r: r, acc: r / t });
+  });
+  if (!rows.length) {
+    diag.classList.add("hide");
+  } else {
+    rows.sort(function (a, b) { return a.acc - b.acc; });
+    var weak = rows.slice(0, 3), strong = rows[rows.length - 1];
+    var dh = "<b>📊 薄弱章节诊断</b>（按已做题正确率排序，已有 " + rows.length + " 个板块的数据）<br>最该补的 3 块：";
+    weak.forEach(function (x, i) {
+      dh += "<span class=\"" + (x.acc < 0.6 ? "weak" : "") + "\">" + (i + 1) + ". " + x.ch + "（" + Math.round(x.acc * 100) + "%，" + x.r + "/" + x.t + "）</span>" + (i < weak.length - 1 ? " · " : "");
+    });
+    if (rows.length > 3) dh += "<br>最稳的一块：<span class=\"ok\">" + strong.ch + "（" + Math.round(strong.acc * 100) + "%）</span>";
+    dh += "<br>建议：正确率 &lt; 60% 的板块回手册对应章节精读再做专项；60–80% 只需重练错题。";
+    diag.innerHTML = dh;
+    diag.classList.remove("hide");
+  }
+
+  /* ===== 模考成绩历史 ===== */
+  var eh = $("exam-history");
+  if (!state.exams.length) {
+    eh.innerHTML = "<p class='hint'>还没有模考记录。建议刷完一遍题库后先做一次全真模考摸底，之后每两周考一次看趋势。</p>";
+  } else {
+    var last = state.exams[state.exams.length - 1];
+    var ehtml = "<div class='rule-line'>最近一次：<b>" + last.s + " 分</b>（" + last.d + "）";
+    if (state.exams.length > 1) {
+      var prev = state.exams[state.exams.length - 2];
+      ehtml += "　较上次：" + (last.s >= prev.s ? "↑ +" + (last.s - prev.s) : "↓ −" + (prev.s - last.s)) + " 分";
+    }
+    ehtml += "</div>";
+    state.exams.slice().reverse().forEach(function (e) {
+      ehtml += "<span class='pill " + (e.s >= 60 ? "g" : "r") + "' style='margin:6px 6px 0 0;display:inline-block'>" + e.d + " · " + e.s + " 分</span>";
+    });
+    eh.innerHTML = ehtml;
+  }
+  renderDaily();
+}
+
+function begin(list, label, pool, examMin) {
+  if (!list.length) { alert("没有可用题目"); return; }
+  if (label === "顺序刷题") seqBase = BANK.length - list.length;
+  if (examTimer) { clearInterval(examTimer); examTimer = null; }
+  session = {
+    list: list, i: 0, right: 0, wrong: 0, label: label, pool: pool,
+    sessionWrong: [], answered: false, isSeq: (label === "顺序刷题"), redoList: null,
+    isExam: !!examMin, examMin: examMin || 0,
+    sec: { sel: { r: 0, t: 0 }, blank: { r: 0, t: 0 }, apply: { r: 0, t: 0 } }
+  };
+  showView("quiz");
+  if (session.isExam) startTimer(examMin); else $("timer").classList.add("hide");
+  renderQ();
+}
+
+function startSeq() {
+  if (state.seqBank >= BANK.length) state.seqBank = 0;
+  begin(BANK.slice(state.seqBank), "顺序刷题", "bank");
+}
+function startRandom(n) { begin(shuffle(BANK.slice()).slice(0, Math.min(n, BANK.length)), "随机 " + n + " 题", "bank"); }
+function startUndone(n) {
+  var list = BANK.filter(function (q) { return state.done[q.id] === undefined; });
+  if (!list.length) { alert("选择题 106 题已全部做过啦！可以刷随机巩固或攻克错题本。"); return; }
+  begin(shuffle(list).slice(0, Math.min(n, list.length)), "未做题随机", "bank");
+}
+function startChapter(ch) { begin(BANK.filter(function (q) { return q.ch === ch; }), ch + " 专项", "bank"); }
+function startWrong() { begin(BANK.filter(function (q) { return state.wrong.indexOf(q.id) >= 0; }), "错题重做", "bank"); }
+function startFav() {
+  var all = BANK.concat(REAL).concat(BLANK).concat(APPLY);
+  begin(all.filter(function (q) { return state.fav.indexOf(q.id) >= 0; }), "收藏复习", "bank");
+}
+function startBlankSeq() { begin(BLANK.slice(), "填空特训·全部", "blank"); }
+function startBlankRandom(n) { begin(shuffle(BLANK.slice()).slice(0, Math.min(n, BLANK.length)), "填空随机 " + n + " 题", "blank"); }
+function startBlankCh(ch) { begin(BLANK.filter(function (q) { return q.ch === ch; }), ch + " 专项", "blank"); }
+function startBlankWrong() { begin(BLANK.filter(function (q) { return state.wrong.indexOf(q.id) >= 0; }), "填空错题重做", "blank"); }
+function startRealSet(y) { begin(REAL.filter(function (q) { return q.year === y; }), y + " 年真题卷", "real"); }
+function startRealRandom(n) { begin(shuffle(REAL.slice()).slice(0, Math.min(n, REAL.length)), "真题随机 " + n + " 题", "real"); }
+function startRealWrong() { begin(REAL.filter(function (q) { return state.wrong.indexOf(q.id) >= 0; }), "真题错题重做", "real"); }
+
+/* ===== 应用题专项 ===== */
+function startApplySeq() { begin(APPLY.slice(), "应用题·全部", "apply"); }
+function startApplyRandom(n) { begin(shuffle(APPLY.slice()).slice(0, Math.min(n, APPLY.length)), "应用题随机 " + n + " 题", "apply"); }
+function startApplyWrong() { begin(APPLY.filter(function (q) { return state.wrong.indexOf(q.id) >= 0; }), "应用题错题重做", "apply"); }
+function startApplyCh(ch) { begin(APPLY.filter(function (q) { return q.ch === ch; }), ch + " 专项", "apply"); }
+
+/* ===== 全真模考引擎 ===== */
+function secOf(id) {
+  var c = String(id).charAt(0);
+  if (c === "A") return "apply";
+  if (c === "F") return "blank";
+  return "sel";
+}
+function pickCh(arr, ch, n) {
+  return shuffle(arr.filter(function (q) { return q.ch === ch; })).slice(0, n);
+}
+function startExam() {
+  /* 组卷对齐真实卷面：40 单选 + 综合题 4 道（IP计算 / 配置 / DHCP报文 / 抓包）+ 应用题 1 道 */
+  var list = shuffle(BANK.slice()).slice(0, 40)
+    .concat(pickCh(BLANK, "IP子网计算填空", 1))
+    .concat(pickCh(BLANK, "路由器配置填空", 1))
+    .concat(pickCh(BLANK, "DHCP报文分析填空", 1))
+    .concat(pickCh(BLANK, "抓包分析填空", 1))
+    .concat(shuffle(APPLY.slice()).slice(0, 1));
+  begin(list, "全真模考（满分 100）", "exam", 120);
+}
+function startExamShort() {
+  var list = shuffle(BANK.slice()).slice(0, 20)
+    .concat(pickCh(BLANK, "IP子网计算填空", 1))
+    .concat(pickCh(BLANK, "抓包分析填空", 1))
+    .concat(shuffle(APPLY.slice()).slice(0, 1));
+  begin(list, "半卷速测（60 分钟）", "exam", 60);
+}
+function startExamConfig() {
+  var list = pickCh(BLANK, "IP子网计算填空", 2)
+    .concat(pickCh(BLANK, "路由器配置填空", 1))
+    .concat(pickCh(BLANK, "抓包分析填空", 1))
+    .concat(shuffle(APPLY.slice()).slice(0, 1));
+  begin(list, "综合题专测（40 分）", "exam", 30);
+}
+function startTimer(minutes) {
+  var remain = minutes * 60;
+  var el = $("timer");
+  el.classList.remove("hide");
+  function paint() {
+    var m = Math.floor(remain / 60), s = remain % 60;
+    el.textContent = "⏱ " + (m < 10 ? "0" : "") + m + ":" + (s < 10 ? "0" : "") + s;
+    el.className = "pill t" + (remain <= 300 ? " urgent" : "");
+    if (session) session.examLeft = remain;
+  }
+  paint();
+  examTimer = setInterval(function () {
+    remain--;
+    paint();
+    if (remain <= 0) { clearInterval(examTimer); examTimer = null; alert("考试时间到，自动交卷。"); endSession(true); }
+  }, 1000);
+}
+function examScore() {
+  var w = { sel: 40, blank: 40, apply: 20 };
+  var tot = { sel: 0, blank: 0, apply: 0 };
+  /* 分母取该板块在本卷中的题目总数（含跳过未答的题），避免"少答反而分高" */
+  session.list.forEach(function (q) { tot[secOf(q.id)]++; });
+  var total = 0, avail = 0, parts = [];
+  ["sel", "blank", "apply"].forEach(function (k) {
+    if (!tot[k]) return;
+    avail += w[k];
+    var r = session.sec[k].r;
+    var got = w[k] * (r / tot[k]);
+    total += got;
+    parts.push({ k: k, got: got, r: r, t: tot[k] });
+  });
+  /* 未包含全部板块时（如综合题专测），按满分 100 折算，保证 60 分线可比 */
+  var score = avail ? Math.round(100 * total / avail) : 0;
+  return { score: score, raw: Math.round(total), parts: parts, avail: avail };
+}
+function saveExamRecord(score, mins) {
+  state.exams.push({ d: new Date().toLocaleDateString("zh-CN"), s: score });
+  if (state.exams.length > 10) state.exams = state.exams.slice(-10);
+  save();
+}
+
+/* 选项乱序：解析不引用字母，打乱可消除答案位置偏斜；含字母引用的选项保持原序 */
+function optOrder(q) {
+  var n = q.o ? q.o.length : 0, idx = [];
+  for (var i = 0; i < n; i++) idx.push(i);
+  if (n < 2 || q.o.some(function (o) { return /(以上|选项\s*[A-D]|[A-D]\s*[和与及]\s*[A-D])/.test(o); })) return idx;
+  for (var j = n - 1; j > 0; j--) { var k = Math.floor(Math.random() * (j + 1)), t = idx[j]; idx[j] = idx[k]; idx[k] = t; }
+  return idx;
+}
+
+function renderQ() {
+  var q = session.list[session.i];
+  session.answered = false;
+  $("prog").textContent = "第 " + (session.i + 1) + " / " + session.list.length + " 题 · " + session.label;
+  $("bar-fill").style.width = (session.i / session.list.length * 100) + "%";
+  $("p-right").textContent = "对 " + session.right;
+  $("p-wrong").textContent = "错 " + session.wrong;
+  var tag = $("q-ch");
+  if (isReal(q.id)) { tag.textContent = q.year + " 年真题 · " + q.ch; tag.className = "q-tag real"; }
+  else if (isBlank(q.id)) { tag.textContent = "填空 · " + q.ch; tag.className = "q-tag blank"; }
+  else { tag.textContent = q.ch; tag.className = "q-tag"; }
+  var ex = $("exp");
+  ex.className = "exp";
+  ex.innerHTML = "";
+  $("next").classList.remove("show");
+  $("skip").style.visibility = "visible";
+
+  if (q.type === "f") {
+    session.order = null;
+    session.orderQid = null;
+    $("q-text").textContent = "";
+    var html = '<div class="blank-q">' + esc(q.q) + '</div>';
+    if (q.tbl) html += tblHTML(q.tbl);
+    html += '<input class="blank-input" id="blank-in" placeholder="在此输入答案，回车提交" autocomplete="off">';
+    html += '<button class="submit-btn" id="blank-submit" onclick="submitBlank()">提交答案</button>';
+    $("opt-area").innerHTML = html;
+    setTimeout(function () { var el = $("blank-in"); if (el) el.focus(); }, 50);
+  } else {
+    $("q-text").textContent = q.q;
+    var letters = ["A", "B", "C", "D"], html2 = "";
+    session.order = optOrder(q);
+    session.orderQid = q.id;
+    session.order.forEach(function (oi, i) {
+      html2 += '<button class="opt" onclick="pick(' + i + ')"><b>' + letters[i] + '.</b> ' + esc(q.o[oi]) + '</button>';
+    });
+    $("opt-area").innerHTML = html2;
+  }
+  updateFavBtn(q.id);
+}
+
+function grade(ok, q) {
+  if (ok) session.right++; else { session.wrong++; session.sessionWrong.push(q); }
+  state.done[q.id] = ok ? 1 : 0;
+  var wi = state.wrong.indexOf(q.id);
+  if (ok && wi >= 0) state.wrong.splice(wi, 1);
+  if (!ok && wi < 0) state.wrong.push(q.id);
+  bumpReview(q.id, ok);
+  if (session.isSeq) state.seqBank = Math.min(seqBase + session.i + 1, BANK.length);
+  if (session.isExam) { var sk = secOf(q.id); session.sec[sk].t++; if (ok) session.sec[sk].r++; }
+  bumpDaily();
+  save();
+  $("p-right").textContent = "对 " + session.right;
+  $("p-wrong").textContent = "错 " + session.wrong;
+  $("next").textContent = session.i === session.list.length - 1 ? "查看成绩" : "下一题";
+  $("next").classList.add("show");
+  $("skip").style.visibility = "hidden";
+}
+
+function pick(i) {
+  if (session.answered) return;
+  var q = session.list[session.i];
+  if (q.type === "f") return;
+  session.answered = true;
+  var opts = $("opt-area").children;
+  for (var j = 0; j < opts.length; j++) opts[j].disabled = true;
+  var ord = (session.orderQid === q.id && session.order) ? session.order : null;
+  var picked = ord ? ord[i] : i;
+  var rightPos = ord ? ord.indexOf(q.a) : q.a;
+  var ok = (picked === q.a);
+  opts[rightPos].classList.add("right");
+  if (!ok) opts[i].classList.add("wrong");
+  grade(ok, q);
+  var ex = $("exp");
+  ex.innerHTML = "<b>解析：</b>" + esc(q.e);
+  ex.classList.add("show");
+}
+
+function submitBlank() {
+  if (session.answered) return;
+  var q = session.list[session.i];
+  if (q.type !== "f") return;
+  var inp = $("blank-in");
+  var v = inp.value;
+  if (!v.trim()) { inp.focus(); return; }
+  session.answered = true;
+  var ok = matchAns(v, q);
+  lastBlank = { q: q, ok: ok, judged: false };
+  inp.disabled = true;
+  inp.classList.add(ok ? "right" : "wrong");
+  $("blank-submit").disabled = true;
+  grade(ok, q);
+  var ex = $("exp");
+  ex.innerHTML = (ok ? "" : "<b>正确答案：" + esc(q.ans) + "</b><br>")
+    + "<b>解析：</b>" + esc(q.e)
+    + (ok ? "" : '<br><button class="selfok" id="selfok" onclick="selfJudge()">我这题答对了，判我正确</button>');
+  ex.classList.add("show");
+}
+/* 判分容错兜底：机器判错但你自己确认答对时，手动纠正（同时把该题移出错题本） */
+function selfJudge() {
+  if (!lastBlank || lastBlank.judged || lastBlank.ok) return;
+  var q = lastBlank.q;
+  lastBlank.judged = true;
+  session.wrong = Math.max(0, session.wrong - 1);
+  session.right++;
+  for (var i = session.sessionWrong.length - 1; i >= 0; i--) {
+    if (session.sessionWrong[i].id === q.id) session.sessionWrong.splice(i, 1);
+  }
+  state.done[q.id] = 1;
+  var wi = state.wrong.indexOf(q.id);
+  if (wi >= 0) state.wrong.splice(wi, 1);
+  if (session.isExam) { var sk = secOf(q.id); session.sec[sk].r++; }
+  bumpReview(q.id, true);
+  save();
+  $("p-right").textContent = "对 " + session.right;
+  $("p-wrong").textContent = "错 " + session.wrong;
+  var b = $("selfok");
+  if (b) { b.textContent = "√ 已按答对计入"; b.disabled = true; }
+}
+
+function skipQ() {
+  if (session.answered) return;
+  if (session.i < session.list.length - 1) { session.i++; renderQ(); }
+  else endSession(false);
+}
+function nextQ() {
+  if (!session.answered) return;
+  if (session.i < session.list.length - 1) { session.i++; renderQ(); }
+  else endSession(false);
+}
+function toggleFav() {
+  var q = session.list[session.i];
+  var fi = state.fav.indexOf(q.id);
+  if (fi >= 0) state.fav.splice(fi, 1); else state.fav.push(q.id);
+  save(); updateFavBtn(q.id);
+}
+function updateFavBtn(id) {
+  var on = state.fav.indexOf(id) >= 0;
+  var b = $("fav");
+  b.className = "fav-btn" + (on ? " on" : "");
+  b.textContent = on ? "★ 已收藏" : "☆ 收藏";
+}
+
+function endSession(aborted) {
+  if (aborted && session && session.isExam && !confirm("模考尚未完成，确定提前交卷并按当前已答题评分吗？")) return;
+  if (examTimer) { clearInterval(examTimer); examTimer = null; }
+  if (!session) { showView("home"); return; }
+  var answered = session.right + session.wrong;
+  var lastWrong = session.sessionWrong.slice();
+  showView("result");
+
+  /* 模考：按卷面权重折算得分并给出分板块明细 */
+  var secEl = $("res-sec"), vEl = $("res-verdict");
+  if (session.isExam) {
+    var res = examScore();
+    var used = session.examMin * 60 - (session.examLeft !== undefined ? session.examLeft : 0);
+    var um = Math.floor(used / 60), us = used % 60;
+    $("res-score").textContent = res.score + " 分";
+    $("res-detail").textContent = session.label + " · 已答 " + answered + "/" + session.list.length
+      + " 题 · 用时 " + um + " 分 " + us + " 秒";
+    var names = { sel: "单选 40 分", blank: "综合填空 40 分", apply: "应用题 20 分" };
+    var sh = "";
+    res.parts.forEach(function (p) {
+      sh += "<span>" + names[p.k] + "：" + p.r + "/" + p.t + " 题 · 折合 <b>" + Math.round(p.got) + " 分</b></span>";
+    });
+    if (res.avail < 100) sh += "<span style='background:var(--amber-bg);border-color:#FAC775;color:var(--amber)'>本卷未含全部板块（原始满分 " + res.avail + "），总分已按 100 分制折算</span>";
+    secEl.innerHTML = sh;
+    secEl.classList.remove("hide");
+    var pass = res.score >= 60;
+    vEl.textContent = res.score >= 90 ? "🏅 " + res.score + " 分 · 优秀！这个状态上考场稳了"
+      : pass ? "✅ " + res.score + " 分 · 已过合格线（60），继续保持手感"
+      : "❌ " + res.score + " 分 · 还差 " + (60 - res.score) + " 分，按下面错题清单回补对应章节";
+    vEl.className = "verdict " + (pass ? "pass" : "fail");
+    vEl.classList.remove("hide");
+    saveExamRecord(res.score, used);
+  } else {
+    secEl.classList.add("hide");
+    vEl.classList.add("hide");
+    if (answered === 0) {
+      $("res-score").textContent = "–";
+      $("res-detail").textContent = "本轮未作答";
+      $("res-right").textContent = "答对 0 题";
+      $("res-wrong").textContent = "答错 0 题";
+      $("res-tip").textContent = "";
+    } else {
+      $("res-score").textContent = fmtPct(session.right, answered);
+      $("res-detail").textContent = session.label + " · 已答 " + answered + " 题";
+      $("res-right").textContent = "答对 " + session.right + " 题";
+      $("res-wrong").textContent = "答错 " + session.wrong + " 题";
+      var acc = session.right / answered;
+      $("res-tip").textContent = acc >= 0.85 ? "很稳！保持手感，可以开始攻综合题了。" : acc >= 0.65 ? "不错，把本轮错题重练一遍就稳了。" : "别灰心，错题已进错题本——先重练，再回手册看对应章节。";
+    }
+  }
+
+  if (session.isExam) {
+    $("res-right").textContent = "答对 " + session.right + " 题";
+    $("res-wrong").textContent = "答错 " + session.wrong + " 题";
+    $("res-tip").textContent = "建议：错题重练一遍 → 回刷题库看薄弱章节诊断 → 隔 2 天再模考一次。";
+  }
+
+  var wl = $("res-wronglist");
+  if (lastWrong.length) {
+    var h = "", L = ["A", "B", "C", "D"];
+    lastWrong.forEach(function (q) {
+      var text = q.type === "f" ? q.q.split("\n")[0] : q.q;
+      var ansStr = q.type === "f" ? q.ans : (L[q.a] + ". " + (q.o && q.o[q.a] ? q.o[q.a] : ""));
+      h += "<li><details><summary>" + esc(text.length > 44 ? text.slice(0, 44) + "…" : text) + "</summary>"
+        + "<div class='w-detail'>" + esc(q.q)
+        + "<div class='w-ans'>正确答案：" + esc(ansStr) + "</div>"
+        + "解析：" + esc(q.e) + "</div></details></li>";
+    });
+    wl.innerHTML = h;
+    $("res-redo").classList.remove("hide");
+    session.redoList = lastWrong;
+  } else {
+    wl.innerHTML = "";
+    $("res-redo").classList.add("hide");
+    session.redoList = null;
+  }
+  renderAll();
+}
+function redoSessionWrong() {
+  if (session && session.redoList && session.redoList.length) begin(session.redoList.slice(), "重练本轮错题", session.pool);
+}
+function goHome() { showView("home"); renderAll(); }
+function resetSeq() {
+  if (!confirm("确定重置顺序刷题进度？将回到第 1 题。")) return;
+  state.seqBank = 0; save(); renderAll();
+}
+function resetAll() {
+  if (!confirm("确定清空全部刷题记录？（做题记录、错题本、复习排期、收藏、背诵进度、打卡记录全部清零，不可恢复）")) return;
+  state = { done: {}, wrong: [], fav: [], seqBank: 0, cards: {}, exams: [], daily: { goal: 20, log: {} }, rev: {} };
+  save(); renderAll();
+}
+
+/* ===== 背题（记忆卡）引擎 ===== */
+function startCards(mode) {
+  var list;
+  if (mode === "random") list = shuffle(CARDS.slice());
+  else if (mode === "unknown") list = CARDS.filter(function (c) { return state.cards[c.id] !== "known"; });
+  else list = CARDS.slice();
+  if (!list.length) { alert("没有待背诵的卡片，全部已掌握！"); return; }
+  cardSession = { list: list, i: 0, label: mode === "unknown" ? "未掌握专项" : mode === "random" ? "随机背诵" : "顺序背诵" };
+  flipped = false;
+  showView("flash");
+  renderCard();
+}
+function startCardsCh(ch) {
+  var list = CARDS.filter(function (c) { return c.ch === ch; });
+  cardSession = { list: list, i: 0, label: ch };
+  flipped = false;
+  showView("flash");
+  renderCard();
+}
+function renderCard() {
+  var c = cardSession.list[cardSession.i];
+  flipped = false;
+  $("f-prog").textContent = "第 " + (cardSession.i + 1) + " / " + cardSession.list.length + " 张 · " + cardSession.label;
+  $("f-bar").style.width = (cardSession.i / cardSession.list.length * 100) + "%";
+  var knownCnt = 0;
+  cardSession.list.forEach(function (x) { if (state.cards[x.id] === "known") knownCnt++; });
+  $("f-known").textContent = "本轮已掌握 " + knownCnt;
+  $("f-ch").textContent = c.ch;
+  $("f-text").textContent = c.f;
+  $("f-tip").textContent = "点击卡片查看答案";
+  $("flash-actions").classList.add("hide");
+}
+function flipCard() {
+  if (!cardSession) return;
+  var c = cardSession.list[cardSession.i];
+  flipped = !flipped;
+  $("f-text").textContent = flipped ? c.b : c.f;
+  $("f-tip").textContent = flipped ? "记住了吗？选择下方按钮" : "点击卡片查看答案";
+  $("flash-actions").classList.toggle("hide", !flipped);
+}
+function markCard(known) {
+  if (!flipped) return;
+  var c = cardSession.list[cardSession.i];
+  state.cards[c.id] = known ? "known" : "unknown";
+  save();
+  if (cardSession.i < cardSession.list.length - 1) { cardSession.i++; renderCard(); }
+  else { endCards(); }
+}
+function endCards() {
+  cardSession = null;
+  showView("home");
+  renderAll();
+}
+function resetCardsProgress() {
+  if (!confirm("确定重置背诵进度？所有卡片将恢复为未掌握。")) return;
+  state.cards = {}; save(); renderAll();
+}
+
+/* ===== 键盘快捷键 ===== */
+document.addEventListener("keydown", function (e) {
+  if (e.ctrlKey || e.metaKey || e.altKey) return;
+  if (!$("quiz").classList.contains("hide")) {
+    var q = session && session.list[session.i];
+    if (!q) return;
+    if (q.type === "f") {
+      if (e.key === "Enter") {
+        if (!session.answered) submitBlank(); else nextQ();
+        e.preventDefault();
+      }
+      return;
+    }
+    if (!session.answered) {
+      var map = { "1": 0, "2": 1, "3": 2, "4": 3, "a": 0, "b": 1, "c": 2, "d": 3 };
+      var k = e.key.toLowerCase();
+      if (map[k] !== undefined && q.o && map[k] < q.o.length) { pick(map[k]); e.preventDefault(); }
+    } else if (e.key === "Enter") { nextQ(); e.preventDefault(); }
+  } else if (!$("flash").classList.contains("hide")) {
+    if (e.key === " ") { flipCard(); e.preventDefault(); }
+    else if (e.key === "ArrowRight") { markCard(true); e.preventDefault(); }
+    else if (e.key === "ArrowLeft") { markCard(false); e.preventDefault(); }
+  }
+});
+
+/* ===== 每日目标与打卡 ===== */
+function dayKey(d) {
+  d = d || new Date();
+  return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
+}
+function bumpDaily() {
+  var k = dayKey();
+  if (!state.daily) state.daily = { goal: 20, log: {} };
+  if (!state.daily.log) state.daily.log = {};
+  state.daily.log[k] = (state.daily.log[k] || 0) + 1;
+  /* 只保留最近 120 天，避免存储无限增长 */
+  var keys = Object.keys(state.daily.log).sort();
+  while (keys.length > 120) delete state.daily.log[keys.shift()];
+}
+/* ===== 错题复习排期（1/3/7/14/30 天）===== */
+var REV_GAP = [1, 3, 7, 14, 30];
+function addDaysKey(n) {
+  var d = new Date();
+  d.setHours(0, 0, 0, 0);
+  d.setDate(d.getDate() + n);
+  return dayKey(d);
+}
+function bumpReview(id, ok) {
+  if (!state.rev) state.rev = {};
+  if (!ok) { state.rev[id] = { s: 0, due: addDaysKey(1), last: dayKey() }; return; }
+  var rec = state.rev[id];
+  if (!rec) return;
+  var s = (rec.s || 0) + 1;
+  if (s >= REV_GAP.length) { delete state.rev[id]; return; }
+  state.rev[id] = { s: s, due: addDaysKey(REV_GAP[s]), last: dayKey() };
+}
+function reviewDueIds() {
+  var today = dayKey(), ids = [];
+  for (var id in state.rev) if (state.rev[id] && state.rev[id].due <= today) ids.push(id);
+  return ids;
+}
+function startTodayReview() {
+  var ids = reviewDueIds();
+  if (!ids.length) { alert("今天没有到期复习，继续做新题或背卡吧。"); return; }
+  var all = BANK.concat(REAL).concat(BLANK).concat(APPLY), map = {};
+  all.forEach(function (q) { map[q.id] = q; });
+  var list = ids.map(function (id) { return map[id]; }).filter(Boolean);
+  var stale = ids.filter(function (id) { return !map[id]; });
+  if (stale.length) stale.forEach(function (id) { delete state.rev[id]; });
+  if (!list.length) { save(); renderAll(); alert("到期题目已失效，排期已清理。"); return; }
+  list.sort(function (a, b) { return String(state.rev[a.id].due).localeCompare(String(state.rev[b.id].due)); });
+  var total = list.length;
+  if (list.length > 30) list = list.slice(0, 30);
+  begin(list, "今日复习（" + list.length + (total > 30 ? "/" + total : "") + " 题）", "review");
+}
+function saveGoal() {
+  var v = parseInt($("d-goal").value, 10);
+  if (!v || v < 5) v = 5;
+  if (v > 200) v = 200;
+  state.daily.goal = v;
+  $("d-goal").value = v;
+  save();
+  renderDaily();
+}
+function renderDaily() {
+  var k = dayKey(), log = (state.daily && state.daily.log) || {}, goal = (state.daily && state.daily.goal) || 20;
+  var today = log[k] || 0;
+  var pct = Math.min(100, Math.round(today / goal * 100));
+  /* 连续天数：从今天（或昨天）往前数 */
+  var streak = 0, d = new Date(), first = true;
+  for (var i = 0; i < 400; i++) {
+    var kk = dayKey(d);
+    if (log[kk] > 0) { streak++; }
+    else if (first) { d.setDate(d.getDate() - 1); first = false; continue; }
+    else break;
+    d.setDate(d.getDate() - 1);
+  }
+  var total = Object.keys(log).length;
+  $("d-ring").textContent = pct + "%";
+  $("d-ring").style.borderColor = pct >= 100 ? "var(--green)" : "var(--teal)";
+  $("d-title").textContent = today >= goal ? "今日目标已完成 🎉" : "今日还差 " + (goal - today) + " 题";
+  $("d-sub").textContent = "今日已做 " + today + " / " + goal + " 题 · 累计打卡 " + total + " 天";
+  $("d-streak").textContent = streak > 0 ? "🔥 连续 " + streak + " 天" : "今天还没开始做题";
+  var gi = $("d-goal");
+  if (document.activeElement !== gi) gi.value = goal;
+}
+function printSheet() { window.print(); }
+function searchBank() {
+  var kw = ($("bank-search-in").value || "").trim().toLowerCase();
+  var out = $("bank-search-res");
+  if (kw.length < 2) { out.innerHTML = '<p class="hint">输入至少 2 个字符开始检索。</p>'; return; }
+  var all = BANK.concat(REAL, BLANK, APPLY), hits = [], L = ["A", "B", "C", "D"];
+  for (var i = 0; i < all.length; i++) {
+    var q = all[i];
+    var hay = (q.ch + " " + q.q + " " + (q.e || "") + " " + (q.o ? q.o.join(" ") : q.ans || "")).toLowerCase();
+    if (hay.indexOf(kw) >= 0) { hits.push(q); if (hits.length >= 30) break; }
+  }
+  if (!hits.length) { out.innerHTML = '<p class="hint">没有找到包含「' + esc(kw) + '」的题目。</p>'; return; }
+  var h = "";
+  hits.forEach(function (q) {
+    var ansStr = q.type === "f" ? q.ans : (L[q.a] + ". " + (q.o && q.o[q.a] ? q.o[q.a] : ""));
+    h += '<div class="search-item"><div class="s-ch">' + esc(q.ch || "") + '</div>'
+      + '<div>' + esc(q.q) + '</div>'
+      + '<div class="s-ans">答案：' + esc(ansStr) + '</div>'
+      + '<div class="s-exp">解析：' + esc(q.e) + '</div></div>';
+  });
+  out.innerHTML = h;
+}
+
+/* ===== 初始化 ===== */
+function syncTabFromHash() {
+  var h = (location.hash || "").replace(/^#/, "");
+  if (["bank", "real", "card", "exam"].indexOf(h) >= 0) showTab(h);
+}
+window.addEventListener("hashchange", syncTabFromHash);
+syncTabFromHash();
+renderAll();
+renderDaily();
+</script>
+</body>
+</html>

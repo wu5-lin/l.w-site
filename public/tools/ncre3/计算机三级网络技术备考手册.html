@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="ygc41e0V1d4DnDVCpYN3FK">
+<head data-page-node-id="uIviuiz3HGDHUI7TKDGjo9">
+<meta charset="UTF-8" data-page-node-id="Ks3euWigbVK0nJu2WM5B2v">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="ug2wsGZ4wQPsRUbBj8JU1e">
+<title>计算机三级网络技术 · 备考手册</title>
+<style>
+  :root {
+    --blue: #185FA5; --blue-bg: #E6F1FB; --blue-deep: #0C447C;
+    --teal: #0F6E56; --teal-bg: #E1F5EE;
+    --amber: #854F0B; --amber-bg: #FAEEDA; --amber-accent: #EF9F27;
+    --green: #3B6D11; --green-bg: #EAF3DE;
+    --red: #A32D2D; --red-bg: #FCEBEB;
+    --ink: #26262A; --muted: #5F5E5A; --line: #E4E2DC;
+    --card: #FFFFFF; --page: #F7F6F2;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: var(--page); color: var(--ink);
+    line-height: 1.75; font-size: 15px;
+  }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 32px 20px 80px; }
+
+  header.hero {
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    padding: 36px 36px 28px; margin-bottom: 28px;
+  }
+  .hero h1 { font-size: 26px; font-weight: 700; letter-spacing: .5px; }
+  .hero .sub { color: var(--muted); margin-top: 6px; font-size: 14px; }
+  .badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+  .badge {
+    background: var(--blue-bg); color: var(--blue-deep); border-radius: 8px;
+    padding: 8px 14px; font-size: 13px; font-weight: 600;
+  }
+  .badge.warn { background: var(--amber-bg); color: var(--amber); }
+
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 30px 36px; margin-bottom: 24px; }
+  h2 { font-size: 19px; font-weight: 700; margin-bottom: 4px; display: flex; align-items: center; gap: 10px; }
+  h2 .no {
+    background: var(--blue); color: #fff; width: 26px; height: 26px; border-radius: 8px;
+    display: inline-flex; align-items: center; justify-content: center; font-size: 14px; flex: none;
+  }
+  .sec-sub { color: var(--muted); font-size: 13px; margin-bottom: 18px; }
+  h3 { font-size: 15px; font-weight: 700; margin: 18px 0 8px; color: var(--blue-deep); }
+
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 10px 0 6px; }
+  th { background: var(--blue-bg); color: var(--blue-deep); text-align: left; font-weight: 600; }
+  th, td { padding: 9px 12px; border: 1px solid var(--line); vertical-align: top; }
+  tr:nth-child(even) td { background: #FBFAF8; }
+
+  .callout {
+    border-left: 4px solid var(--amber-accent); background: var(--amber-bg);
+    border-radius: 0 10px 10px 0; padding: 12px 16px; font-size: 14px; margin: 14px 0;
+  }
+  .callout.blue { border-color: var(--blue); background: var(--blue-bg); }
+  .callout.red { border-color: var(--red); background: var(--red-bg); }
+  .callout b { font-weight: 700; }
+
+  .timeline { list-style: none; margin: 12px 0; }
+  .timeline li { position: relative; padding: 0 0 18px 26px; border-left: 2px solid #D8E4F0; margin-left: 8px; }
+  .timeline li:last-child { border-left-color: transparent; padding-bottom: 2px; }
+  .timeline li::before {
+    content: ""; position: absolute; left: -7px; top: 5px; width: 12px; height: 12px;
+    border-radius: 50%; background: var(--blue); border: 2px solid #fff; box-shadow: 0 0 0 1px var(--blue);
+  }
+  .timeline li.key::before { background: var(--amber-accent); box-shadow: 0 0 0 1px var(--amber-accent); }
+  .timeline .t-date { font-size: 12.5px; color: var(--muted); font-weight: 600; }
+  .timeline .t-title { font-weight: 700; font-size: 14.5px; }
+  .timeline .t-desc { font-size: 13.5px; color: var(--muted); }
+
+  .check { list-style: none; }
+  .check li { padding: 8px 0 8px 2px; border-bottom: 1px dashed var(--line); font-size: 14.5px; display: flex; gap: 10px; align-items: flex-start; }
+  .check li:last-child { border-bottom: none; }
+  .check input { width: 17px; height: 17px; margin-top: 5px; accent-color: var(--blue); flex: none; cursor: pointer; }
+  .check .tip { color: var(--muted); font-size: 13px; display: block; }
+
+  .stars { color: var(--amber-accent); letter-spacing: 1px; font-size: 13px; white-space: nowrap; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 600; border-radius: 6px; padding: 1px 8px; margin-right: 6px; }
+  .tag.b { background: var(--blue-bg); color: var(--blue-deep); }
+  .tag.g { background: var(--green-bg); color: var(--green); }
+  .tag.a { background: var(--amber-bg); color: var(--amber); }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } }
+  .mini { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; background: #FCFBF9; }
+  .mini h4 { font-size: 14px; margin-bottom: 6px; }
+  .mini p, .mini li { font-size: 13.5px; color: var(--muted); }
+  .mini ul { padding-left: 18px; }
+
+  .score-bar { display: flex; border-radius: 10px; overflow: hidden; margin: 14px 0 6px; height: 46px; font-size: 13px; color: #fff; font-weight: 600; }
+  .score-bar div { display: flex; align-items: center; justify-content: center; flex-direction: column; line-height: 1.3; }
+  .score-bar .s1 { width: 40%; background: var(--blue); }
+  .score-bar .s2 { width: 40%; background: var(--teal); }
+  .score-bar .s3 { width: 20%; background: var(--green); }
+  .pass-line { text-align: center; font-size: 13px; color: var(--muted); margin-bottom: 4px; }
+
+  footer { text-align: center; color: var(--muted); font-size: 12.5px; margin-top: 10px; }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .cd-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; }
+  .cd { flex: 1; min-width: 210px; background: linear-gradient(135deg, var(--blue-deep), var(--blue)); color: #fff; border-radius: 14px; padding: 16px 20px; }
+  .cd.exam { background: linear-gradient(135deg, #0B4A38, var(--teal)); }
+  .cd .lbl { font-size: 12.5px; opacity: .85; font-weight: 600; }
+  .cd .num { font-size: 32px; font-weight: 800; line-height: 1.2; }
+  .cd .num small { font-size: 14px; font-weight: 600; }
+  .cd .dt { font-size: 12px; opacity: .8; margin-top: 3px; }
+  .cd.open { background: linear-gradient(135deg, #854F0B, var(--amber-accent)); }
+  .cd.done { background: linear-gradient(135deg, #4A4A48, #6E6D68); }
+  .plan-now td { background: var(--amber-bg) !important; box-shadow: inset 3px 0 0 var(--amber-accent); }
+  .plan-now td:first-child::after { content: " ◀ 当前阶段"; color: var(--amber); font-weight: 700; font-size: 12px; }
+  .topnav { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; font-size: 13px; }
+  .topnav a { color: var(--blue-deep); text-decoration: none; background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 5px 11px; font-weight: 600; }
+  .topnav a:hover { border-color: var(--blue); background: var(--blue-bg); text-decoration: none; }
+  .topnav .nav-links { display: flex; gap: 6px; flex-wrap: wrap; }
+  .toc { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; padding-top: 14px; border-top: 1px dashed var(--line); }
+  .toc a { font-size: 12.5px; font-weight: 600; color: var(--blue-deep); background: var(--page); border: 1px solid var(--line); border-radius: 20px; padding: 4px 12px; text-decoration: none; }
+  .toc a:hover { background: var(--blue-bg); border-color: var(--blue); text-decoration: none; }
+  @media print {
+    body { background: #fff; }
+    .topnav, .toc { display: none !important; }
+    section, header.hero { border: none; padding: 10px 0; }
+  }
+</style>
+</head>
+<body data-page-node-id="le2K9ISnTYlbvqnKsCtqjy">
+<div class="wrap" data-page-node-id="plf39eNLODRLBtMUdWjCgj">
+<nav class="topnav">
+  <a href="index.html">← 备考总入口</a>
+  <div class="nav-links">
+    <a href="三级网络技术刷题库.html">刷题库（含模考）</a>
+    <a href="三级网络技术扩展真题库.html">扩展真题库</a>
+    <a href="计算机三级网络技术通关技巧.html">通关技巧</a>
+  </div>
+</nav>
+
+<header class="hero" data-page-node-id="GBGnM3fVkcnPYNN6B2e34k">
+  <h1 data-page-node-id="C3X5FYU4jYIjfogROfagTM">计算机三级「网络技术」备考手册</h1>
+  <div class="sub" data-page-node-id="0gCaz0lz7bSqYB4bOVsuEf">太原科技大学 · 目标 2027 年 3 月考试 · 制定于 2026 年 9 月 · 更新于 2026 年 10 月</div>
+  <div class="badges" data-page-node-id="zJTv88unPU0xnRcUiuLfRL">
+    <span class="badge" data-page-node-id="QShh4nNxYWdY7jr9iiaNyb">科目代码 35</span>
+    <span class="badge" data-page-node-id="DRHy0ZH66aR2Tlt3yEFrtv">上机 120 分钟</span>
+    <span class="badge" data-page-node-id="L2pfdPrfJvnu4W8PdizFAp">60 分合格 / 90 分优秀</span>
+    <span class="badge" data-page-node-id="NT7HBLDlVMTdsVL0Gosguy">报名费 90 元</span>
+    <span class="badge warn" data-page-node-id="hVBcIMDwEVitvSMega1W1C">考点 140011 太原科技大学</span>
+  </div>
+  <div class="cd-row">
+    <div class="cd" id="cd-signup">
+      <div class="lbl">报名开放（预计）</div>
+      <div class="num" id="cd-signup-num">计算中…</div>
+      <div class="dt">预计 2026-12-26 前后开放 · 窗口约 10 天 · 以山西公告为准</div>
+    </div>
+    <div class="cd exam" id="cd-exam">
+      <div class="lbl">正式考试（预计）</div>
+      <div class="num" id="cd-exam-num">计算中…</div>
+      <div class="dt">预计 2027-03-28 前后 · 以准考证为准</div>
+    </div>
+  </div>
+  <div class="toc">
+    <a href="#sec-1">① 考试速览</a>
+    <a href="#sec-2">② 报名清单</a>
+    <a href="#sec-3">③ 卷面拆解</a>
+    <a href="#sec-4">④ 逐月计划</a>
+    <a href="#sec-5">⑤ 十章考点</a>
+    <a href="#sec-6">⑥ 备考资料</a>
+    <a href="#sec-7">⑦ 考场备忘</a>
+  </div>
+</header>
+
+<section id="sec-1" data-page-node-id="FXETPdLrkJzhfl1F5jWA2P">
+  <h2 data-page-node-id="gczD3kZ4SF7rEzxTbeCMLg"><span class="no" data-page-node-id="k2LGGCuFDVgFGNqwxoHLWS">1</span>考试速览与关键日期</h2>
+  <div class="sec-sub" data-page-node-id="ikwDrtK7nB71kthEVWe2If">山西一年两次考试（3 月、9 月），你的目标是 2027 年 3 月批次。以下日期以官方公告为准。</div>
+  <ul class="timeline" data-page-node-id="NdayTKvt0D3GXgRCnxs0fX">
+    <li data-page-node-id="em0X01wa3ug254RYWmzk8z"><span class="t-date" data-page-node-id="gO5WQKOA3ofH9DQlmrJtFw">2026 年 9 月 – 12 月中</span><div class="t-title" data-page-node-id="GyTYpPPTFUnEEA9uqZ3V52">基础 + 刷题阶段</div><div class="t-desc" data-page-node-id="AF8aKa3m0p8llEfOerYXZV">教材过一遍，选择题题库刷一轮（详见第 4 节计划）</div></li>
+    <li class="key" data-page-node-id="PZshCjAY29YtSZm1e9H4jx"><span class="t-date" data-page-node-id="n0hlSyoYAuhfSUGuATfFUj">2026 年 12 月底（预计 12.26 – 1.4，以公告为准）</span><div class="t-title" data-page-node-id="sjc7GqedUIzRJT0eVFkZvH">网上报名 —— 全程最关键的一步，机位先报先得！</div><div class="t-desc" data-page-node-id="EzwtiHFFt4sUP5Zhv3IxNJ">盯紧山西招生考试网 sxkszx.cn 和学校教务处通知，开放当天就完成报名缴费</div></li>
+    <li data-page-node-id="S5erUkDiXpXyFO9enFkIDh"><span class="t-date" data-page-node-id="CtTCaVhLYwHaLeyqqVzlB8">2027 年 1 月 – 3 月中</span><div class="t-title" data-page-node-id="Ea5YcvRfxgRBpHBifXYKry">综合题专项 + 全真模拟</div><div class="t-desc" data-page-node-id="1yFLRWCcngFo4TCuW2nt2q">子网划分、交换机/路由器配置命令、整套计时模拟</div></li>
+    <li data-page-node-id="Vg6UivQDiXYFHG7EGWCkY5"><span class="t-date" data-page-node-id="6xJnhl4Bl8dqWaVg1V7xSX">2027 年 3 月 23 日 9:00 起（预计）</span><div class="t-title" data-page-node-id="oFNRocxMaSMuVkuMpEUFDE">打印准考证</div><div class="t-desc" data-page-node-id="xVYkVNOmFoCGftCh6SA8gQ">登录报名网站自行打印，考试时间以准考证为准</div></li>
+    <li class="key" data-page-node-id="zt3E2WmQdOAz6XLCicyffx"><span class="t-date" data-page-node-id="qN9LRN6UX9mAfRGwWpPhsP">2027 年 3 月 28 – 30 日（预计）</span><div class="t-title" data-page-node-id="5xcRnZFHdAgJHTpq0AeepC">上机考试（太原科技大学考点）</div><div class="t-desc" data-page-node-id="fwlmviHyFFoQD4vXp3PhWt">带身份证原件 + 准考证，考场安排见准考证</div></li>
+    <li data-page-node-id="0SlXxmwoTV6sfSbm6XZ0Wo"><span class="t-date" data-page-node-id="fmcv3TuE2bznRrkxpkLe1q">约 2027 年 5 月</span><div class="t-title" data-page-node-id="NKqTpuySCHgUMH87nRMXn8">出成绩、拿证书</div><div class="t-desc" data-page-node-id="8JHtKWRkp3CWtk4wcSjXUF">考后约 30 个工作日在中国教育考试网查询，电子证书可直接下载</div></li>
+  </ul>
+</section>
+
+<section id="sec-2" data-page-node-id="8g5e1vZmWzcWWo1EDflVq2">
+  <h2 data-page-node-id="pChMr7dd0Uah5v06Y7L0Cf"><span class="no" data-page-node-id="zPV02BjnF1GDqr7YlAkYvh">2</span>报名操作清单（12 月底开放时逐项打勾）</h2>
+  <div class="sec-sub" data-page-node-id="rNyKcUDHdo9S7RfZpMRie0">现在就可以提前做的：注册账号 + 准备照片。其余等报名开放后完成。勾选状态自动保存在本地。</div>
+  <ul class="check" id="signup" data-page-node-id="PVnWMGDaPEKKm9zklf0lP7">
+    <li data-page-node-id="NjRhKKNKUGmV8erCZr0AEf"><input type="checkbox" id="c1" data-page-node-id="CX3CUFlkNHRxxcq3oUr5vQ"><label for="c1" data-page-node-id="xCuiFFN45UXxXDArTQldBo">提前注册 ETEST 通行证（passport.neea.cn，用手机号或邮箱注册）<span class="tip" data-page-node-id="QeMEAKIm1eu5tjKTElVSrz">现在就可以做，账号在教育部各类考试系统通用</span></label></li>
+    <li data-page-node-id="CfsdANgXhL2bF2rwuN2ozB"><input type="checkbox" id="c2" data-page-node-id="M0a7e3MHz7dcnC41wLCVKU"><label for="c2" data-page-node-id="LGnvrnVQfuNg96TqnvrKJG">准备证件照：白/浅色背景免冠彩照，JPEG 格式，20–200KB，最小 192×144 像素<span class="tip" data-page-node-id="nWjgEMCV3M1llzfknbGjpN">不得用生活照、美颜照；照片用于准考证和证书</span></label></li>
+    <li data-page-node-id="v5PtnI0cEYcYMbGhWVYmAG"><input type="checkbox" id="c3" data-page-node-id="hOtxhpQQlAKvYBVtmI6F2v"><label for="c3" data-page-node-id="lWChRGOItGDWiDX1URlyt2">报名开放当天：登录 ncre-bm.neea.edu.cn，选择「山西省」考生入口<span class="tip" data-page-node-id="TYCZUkF0GxWHlkJhmcF8sH">入口在中国教育考试网 neea.edu.cn → 全国计算机等级考试 → 在线报名</span></label></li>
+    <li data-page-node-id="AEAEUkHCBqbhNqBInD65A7"><input type="checkbox" id="c4" data-page-node-id="JY40SpGz8gfskrJXqnhTMc"><label for="c4" data-page-node-id="NCJggD1ohEI6qMn2KHx7Tm">考点选择「140011 太原科技大学」（本校在校生在本校报名考试）<span class="tip" data-page-node-id="lK5n9bxig5lS4WBmRzY6MX">考点电话 0351-6998068；机位报满即止</span></label></li>
+    <li data-page-node-id="QujGSC7YTkqb8vXoepmWwQ"><input type="checkbox" id="c5" data-page-node-id="KDneTfzpKDt36A4e5HIt56"><label for="c5" data-page-node-id="pwKQPJgYsg48c8vbXBO9Xd">报考科目选「35 网络技术」，逐项核对姓名、身份证号、照片<span class="tip" data-page-node-id="O554262R4Od96HpqPKRgZg">同次考试最多报 3 科；只能在山西的一个考点报名</span></label></li>
+    <li data-page-node-id="1lCd3YVHGZ3JckUvEFaAr8"><input type="checkbox" id="c6" data-page-node-id="vEhddCCMTFiL9u36d9DVqH"><label for="c6" data-page-node-id="FF8QPwqRCcVWGfxJSDMM4s">网上缴费 90 元，返回系统确认支付状态为「已支付」<span class="tip" data-page-node-id="QtJx0PIXdxP3ZTxYBXG2u4">⚠️ 缴费成功即报名完成，之后不能改信息、不能退费</span></label></li>
+    <li data-page-node-id="lr60JPdImajuBH8zK6IG7W"><input type="checkbox" id="c7" data-page-node-id="RVJprb73kcuhj6RvgHSw2y"><label for="c7" data-page-node-id="NCgqw56xPnxhfdcmpQlCbD">2027 年 3 月下旬登录报名网站打印准考证<span class="tip" data-page-node-id="A9v5lrDQYuNoJxYKMP2etc">多打印一份备用，保存 PDF 到手机</span></label></li>
+  </ul>
+  <div class="callout red" data-page-node-id="Cc0gsf6ZHrLQr2AhIm6jMR"><b data-page-node-id="I5fjRCWkOtAPD6WqW1D55E">三个高频翻车点：</b>① 报名窗口只有约 10 天且机位先报先得，拖到最后一两天可能报不上；② 照片规格不符会上传失败；③ 缴费后信息不可修改，提交前务必逐字核对身份证号。</div>
+</section>
+
+<section id="sec-3" data-page-node-id="OqHnYYvHb5DD21Qqu9RYbD">
+  <h2 data-page-node-id="4Lpv0r1hp7xVdC2h2ICRDT"><span class="no" data-page-node-id="OQuMeLPKmxIsQPFyBzwafK">3</span>考什么、怎么凑够 60 分</h2>
+  <div class="sec-sub" data-page-node-id="LX85hAbUKXTRqRCjhUEkE3">题型固定、真题重复率高，是三级网络技术通过率高的根本原因。目标：冲刺 70+，保底 60。</div>
+  <div class="score-bar" data-page-node-id="usgEmhnJp9ZQAz4ziSt9XJ">
+    <div class="s1" data-page-node-id="yviOuoC0IApivGNFRAgmxX">单选题<br data-page-node-id="k5luDymOYwAZogg0ZHN4VR">40 题 × 1 分 = 40 分</div>
+    <div class="s2" data-page-node-id="w3L73cLrJOZ1fyzVsVTCNt">综合题（填空）<br data-page-node-id="sTRODVE82e3Pq79cn8sv11">4 大题 × 10 分 = 40 分</div>
+    <div class="s3" data-page-node-id="P7368qGZPL9hSG1hOvnXnJ">应用题<br data-page-node-id="FwgB4GHWJwoHNpUYVDjLVu">1 题 = 20 分</div>
+  </div>
+  <div class="pass-line" data-page-node-id="wglqKjTSn7P2vFa7iVr8wK">▲ 卷面结构（总分 100 = 40 + 40 + 20，上机 120 分钟，60 分合格）</div>
+  <table data-page-node-id="jIRgGFXXr5OYlNns1IkjOA">
+    <tr data-page-node-id="uRmkVuEDBN44M4Tptr3zXD"><th style="width:22%" data-page-node-id="BG4b7c9SC0wNjNCusp8Q0z">板块</th><th style="width:38%" data-page-node-id="MGOEy6miBMmcUgbyBu9fMK">考什么</th><th data-page-node-id="7eyqtF3aRHc5XDn9Kj6yVy">拿分策略</th></tr>
+    <tr data-page-node-id="HNt5GPhzxWdUA5zT0omoY9"><td data-page-node-id="3RhA37vGuu4JvZDRWfLj9C"><b data-page-node-id="uFet1LEpMXzHTKxW3euecZ">选择题 40 分</b><br data-page-node-id="F2StPh47zuhtFyOuYsGkfy">40 题 × 1 分</td><td data-page-node-id="EYj3RA6iugdEX52k136ynP">覆盖全部章节：网络体系结构、IP、路由、交换、无线、安全、管理、服务器</td><td data-page-node-id="YBRlGeWLQuTGF3kol5Kmcf"><b data-page-node-id="jD0kmhzaur8R2a42cBVyjP">纯刷题库</b>。原题/换皮题重现率极高，刷完 400–500 题选择题拿 28–32 分很正常</td></tr>
+    <tr data-page-node-id="4c8aO6UMFB00Oc4c9UBtUf"><td data-page-node-id="yJC9TQMRHxHKAAb6TvDrE8"><b data-page-node-id="2JT0MCTiyMmQuF6mLPieDD">综合题 40 分</b><br data-page-node-id="DIuGG2xlIz1lAyG6vgz5Lo">4 大题 × 10 分（每题 5 空 × 2 分）</td><td data-page-node-id="ftyJKr80TDuSV9aRZnAlvD">① IP 地址转换（子网计算）；② 路由器/交换机配置命令填空；③ 报文分析填空；④ Sniffer 抓包分析填空</td><td data-page-node-id="ESfSKNEjsH45gwtcfzzbHh">①是<b data-page-node-id="GfM4zqEbORBbViafCVBgSQ">公式化送分题</b>，必须拿满；②背命令模板拿 8 分；③④学报文规律，各拿 4–6 分，合计目标 22+</td></tr>
+    <tr data-page-node-id="TfK8hQZ1AQVlcRjt66mJd4"><td data-page-node-id="LzDFTDd16uSFgfPPySaLDm"><b data-page-node-id="Qg5e2tLHCJL0Ewi5zHqJ2X">应用题 20 分</b><br data-page-node-id="XbOOx1uHJkUI95lnnAJB51">1 大题</td><td data-page-node-id="fY6BMVoLetaOrnrSyb8hA6">给网络结构图：填写路由表项（10 分）+ 填空与 IP 地址聚合（10 分）</td><td data-page-node-id="qcclj32dnRAlG9vrJt6zky">路由表项照图分析可拿 8 分；聚合掌握方法后可秒杀，目标合计 10–14 分</td></tr>
+  </table>
+  <div class="callout blue" data-page-node-id="FFjapc4E956kjj2ADoq6DD"><b data-page-node-id="AAFvvzWBTSCPhBpFfG0myt">及格拆解：</b>单选 30 + 综合填空 22 + 应用题 10 = <b data-page-node-id="llBXkNoPCPyvPTHLO0mE87">62 分</b>。每个板块都达不到满分也没关系，按这个"最低配"练习，通过是稳的。本科目<b data-page-node-id="DXat946DnBZxUgNeED8WEV">不考编程</b>，你的 C 语言基础完全够用。</div>
+</section>
+
+<section id="sec-4" data-page-node-id="fh0VsSuCejoMlLPu2gghjF">
+  <h2 data-page-node-id="hzwpe4PP0qxTs8QC8IZfGh"><span class="no" data-page-node-id="wTLO7Uk91rLsn3eqZVOLBP">4</span>逐月学习计划（已按你的基础定制）</h2>
+  <div class="sec-sub" data-page-node-id="ygVnN6ZpX5N1TinF1VRU5V">你的情况：学过 C 语言 ✓，计算机网络未系统学过 → 第一轮先补网络概念，节奏放平缓，每天 1–1.5 小时即可。</div>
+  <table data-page-node-id="ekbAQ6wTOchIuYHCifzh0s" id="plan-table">
+    <tr data-page-node-id="BUtorUIyIdchvELD2DBV0Q"><th style="width:20%" data-page-node-id="GRQ8g1TKoq26jJHS9UkBTf">阶段</th><th style="width:44%" data-page-node-id="Bzddef0Egb2hRLTymHMT03">任务</th><th data-page-node-id="n8gTpVP0QndZxGs9IHBLdE">目标 / 验收标准</th></tr>
+    <tr data-page-node-id="NDAqg8OBabKssBpnBrb9No" data-months="9,10"><td data-page-node-id="Ni5aC5YD316AjQBGBkKXGr"><b data-page-node-id="0SMBDWq5q0WprZXalAjlba">9 月下 – 10 月</b><br data-page-node-id="li0c5NKlltqLy5N4BcEDnz">第一轮·概念打底</td><td data-page-node-id="vMzj4Tjb0ICJwuN3UZlzgx">教材第 1–5 章过一遍（网络体系结构、中小型网络规划设计、IP 地址、TCP/IP 与路由协议、局域网），配套 B 站三级网络技术精讲课食用；每周整理一页笔记</td><td data-page-node-id="Fzns7GoaNfoUYDaCRvPCIU">能说清楚：OSI/TCP-IP 分层、IP 地址分类、子网掩码是什么</td></tr>
+    <tr data-page-node-id="P6J7zUZitJyGABUAy4caV5" data-months="11"><td data-page-node-id="AA3uTZjE74PvNcDlXL3qwP"><b data-page-node-id="kBODrJMGXH8JpARGre7lui">11 月</b><br data-page-node-id="pbcrziUVcOw3uMwKwZkGA7">第一轮收尾 + 启动刷题</td><td data-page-node-id="09ms8BIPBFHGXvlpRvc2gl">教材第 6–10 章（交换机配置、路由器配置、无线、网络安全、网络管理与服务）；同时选择题题库开刷，每天 30 题</td><td data-page-node-id="ibTfXmoJTY7rnCO8TFLwQZ">选择题完成题库一轮，正确率 ≥ 65%</td></tr>
+    <tr data-page-node-id="W4UxvdpsDFTiYdmAUXvdj6" data-months="12"><td data-page-node-id="6qRVHBEQTEq3Zi2shR4vG3"><b data-page-node-id="jrllwQgGkq9IbV614IVwvD">12 月</b><br data-page-node-id="EavmyJBo4zMFZa2YznFjkZ">刷题攻坚 + 报名</td><td data-page-node-id="STade5KxGSmxak4Q1AVJuH">选择题题库二轮（只刷错题）；<b data-page-node-id="xiHBxt4HO3xOjTyAMEQ1To">12 月底完成报名（见第 2 节清单）</b></td><td data-page-node-id="05O3RFU9HJDYnoUTdG2xpr">选择题正确率 ≥ 80%；报名缴费完成 ✓</td></tr>
+    <tr data-page-node-id="zXqf6XpyuoKS62vUioU2ZA" data-months="1"><td data-page-node-id="C4VSAwdeJ1SxQT3v8U5vKd"><b data-page-node-id="hcBJuCPdmAnHmTxYOtq31o">1 月</b><br data-page-node-id="PmGaWTwBScwL4HOb7DoH6e">综合题专项</td><td data-page-node-id="wuqEATJJiWAwsMCETAZRtZ">① IP 地址转换专项：子网划分、CIDR 聚合每天 2 题练手感（送分题必须拿满）；② 背交换机/路由器高频配置命令模板（背题库命令卡）；③ 报文分析与 Sniffer 抓包分析专项（填空特训板块）；④ 模拟软件开始整套模拟，每周 2 套</td><td data-page-node-id="ACsTAhCSGkWNx2FnYI6CyF">综合题 4 道大题合计稳定拿到 22 分以上</td></tr>
+    <tr data-page-node-id="Hc2Vyt0WRCrMh24e681GB3" data-months="2"><td data-page-node-id="3OHEvqovhC9qRA9tnLKWmT"><b data-page-node-id="ikfp8svbUdHuCgtoPcXPLm">2 月</b><br data-page-node-id="ThvJWdSXnBas2LjjuWAOIT">全真模拟</td><td data-page-node-id="V0oCKzJsHIBoZh0O9USz10">未来教育模拟软件完整套题刷完近 5–8 套，全部计时；错题回炉；应用题总结出个人答题模板</td><td data-page-node-id="4b7sSHRZZLKoLL9n04ap4z">整卷模拟稳定 65 分以上</td></tr>
+    <tr data-page-node-id="hSVOKuzYJU0dPEaE4gitQV" data-months="3"><td data-page-node-id="dlawxHHxz73dD7kOWn6aIU"><b data-page-node-id="5CGUuL5vPWisGfluFYKwY8">3 月</b><br data-page-node-id="qGI4ufGb9PJB4hfDf9lC5G">冲刺 + 应考</td><td data-page-node-id="h2xW76BlmKcLvTwLxZGFdp">高频考点清单每天过一遍；每 2 天 1 套模拟保持手感；考前一周只看错题和笔记；3.23 打印准考证</td><td data-page-node-id="v35B1boyipZB3jeCScAmr4">上考场</td></tr>
+  </table>
+</section>
+
+<section id="sec-5" data-page-node-id="ybrIBSKFy4y7JBp4umx6zc">
+  <h2 data-page-node-id="TQtOm5IO61Mfv0dxDnc5F7"><span class="no" data-page-node-id="WMYXvTaKTGdKIDWK000oER">5</span>高频考点清单（按题型组织）</h2>
+  <div class="sec-sub" data-page-node-id="JZMYrc1KihrhJpPVABMdfS">前 5 行为综合题与应用题的固定套路（卷面 60 分的主体，优先拿下）；后 10 行为单选题章节考点（靠刷题库覆盖）。</div>
+  <table data-page-node-id="4XYjhJ3YxuvtC2Xp366CjW">
+    <tr data-page-node-id="a1ETO9phbQ9bfWAEJunQBt"><th style="width:42%" data-page-node-id="HLVCKkq2JSRyo6NV5ZZwXg">板块</th><th style="width:12%" data-page-node-id="7NB4Jwvgcygoc7OnW0DCtB">重要度</th><th data-page-node-id="OfFAEqnfmG97sUMVjq7SOY">必抓考点与套路</th></tr>
+    <tr><td><b>综合题① IP 地址转换（10 分）</b></td><td class="stars">★★★ 送分</td><td>子网划分四件套：网络地址（IP AND 掩码）、广播地址（网络地址+块大小−1）、可用主机数（2ⁿ−2）、掩码与前缀互算；块大小=256−掩码末字节；VLSM 按需借位</td></tr>
+    <tr><td><b>综合题② 配置命令填空（10 分）</b></td><td class="stars">★★★</td><td>命令模板：ip route 静态/默认路由、OSPF network 反掩码 area、RIP network 主类网络、ACL 编号与 ip access-group、NAT inside/outside 与 overload、switchport access / mode trunk</td></tr>
+    <tr><td><b>综合题③ 报文分析（10 分）</b></td><td class="stars">★★★</td><td>IP 报文头字段（TTL、Protocol：6=TCP、17=UDP、1=ICMP）、TCP 三次握手标志位（SYN / SYN+ACK / ACK）、端口归属判断：&gt;1023 为客户端临时端口</td></tr>
+    <tr><td><b>综合题④ Sniffer 抓包分析（10 分）</b></td><td class="stars">★★★ 最难</td><td>读懂报文解码：源/目的 MAC 与 IP、由端口定服务（21=FTP、80=HTTP、53=DNS）、握手序号判断、广播地址 FF-FF-FF-FF-FF-FF；至少拿下简单的 2–3 空</td></tr>
+    <tr><td><b>应用题（20 分）</b></td><td class="stars">★★★</td><td>看网络拓扑图填路由表项（直连 C、静态 S、默认 0.0.0.0/0）；CIDR 地址聚合（n 个连续 /24 → 借 log₂n 位）；子网规划填空</td></tr>
+    <tr data-page-node-id="TGKWIQktqwXNnpZuPDB7yC"><td data-page-node-id="gu6qfbHwt4iAzZ8FxgtJZt">1. 网络系统结构与设计基础</td><td class="stars" data-page-node-id="k6zKYyvVoEb5lYCpuw2SMg">★★</td><td data-page-node-id="cbJ8y8NEulHc9M4rsUsdmm">广域网/城域网/局域网技术对比、宽带接入技术（选择题高频）</td></tr>
+    <tr data-page-node-id="used9D6eyrrDGpiJ0GWNzS"><td data-page-node-id="4Uzt9qq4YSEelr4S80ec2H">2. 中小型网络系统总体规划</td><td class="stars" data-page-node-id="LpN5lTbujGas2zcWFiVayE">★★</td><td data-page-node-id="LSygLGgzZoTOhPLY6b33zl">需求分析、结构化布线、设备选型（应用题背景知识）</td></tr>
+    <tr data-page-node-id="H65Xl7Fjd7KgjNMoX22ow1"><td data-page-node-id="slut1YHsT6rBHElyHmooSD">3. IP 地址规划设计技术</td><td class="stars" data-page-node-id="GwbsIbm2SBCC8cWXsQXq81">★★★</td><td data-page-node-id="L9e1spIhg9a20JFQeXyrGH"><b data-page-node-id="RX1QBeLV3DaSVSzCXQ994M">综合题必考</b>：标准分类地址、VLSM 子网划分、CIDR 路由聚合、NAT、IPv6 基础</td></tr>
+    <tr data-page-node-id="lJJs1z2ZngPnMzSyzdFdkd"><td data-page-node-id="Pjnlml7AnGp5afOwYny89e">4. Internet 基本网络协议</td><td class="stars" data-page-node-id="7kS0if6Fg0grDZBUggFKM7">★★★</td><td data-page-node-id="03OEvCpOR3q3KyZ19FzbcR">TCP/IP 体系、RIP/OSPF/BGP 原理与区别、Internet 服务（DNS/WWW/FTP/E-mail）</td></tr>
+    <tr data-page-node-id="MdRPOIQ7Dj9jkaQe754w23"><td data-page-node-id="bn8bjOcBfmpp1ZHm0l9sed">5. 局域网技术基础</td><td class="stars" data-page-node-id="UH5dpIhs81XEDlcZKqhc6U">★★</td><td data-page-node-id="1JZgv5DbBbfwPYBiQenoze">以太网帧结构、10GbE、VLAN 概念、无线局域网（WLAN）</td></tr>
+    <tr data-page-node-id="88wFCHEYWWv6osDh4Xm8Iu"><td data-page-node-id="baVzGWhQYKUtMLDdF5YpZ0">6. 交换机及其配置</td><td class="stars" data-page-node-id="M57nVIDcUVrIpxWZDD5Tqm">★★★</td><td data-page-node-id="5Q4rZjHjGVQ3PDh9d8oh88"><b data-page-node-id="ADQvbI9rq9Zu8rkT0NzcuQ">综合题必考</b>：VLAN 配置、Trunk、STP、端口配置命令（背命令模板）</td></tr>
+    <tr data-page-node-id="kQ8onurB1rEyZ4EnvtZvLG"><td data-page-node-id="UaXsEfdashqQ9k6c2gBRHS">7. 路由器及其配置</td><td class="stars" data-page-node-id="td0PwTRUWyNBVG6ealwDM2">★★★</td><td data-page-node-id="EBSK4TDbTXf4eu8R7kREXV">静态路由、RIP/OSPF 配置、ACL 访问控制列表、NAT 配置命令</td></tr>
+    <tr data-page-node-id="tXV0ZhzKtcIgtrxjRdkCcD"><td data-page-node-id="EcQCH7sIsgbaj5frAv327J">8. 无线局域网设备</td><td class="stars" data-page-node-id="NAvv3efvfTrOpcpvTHStzd">★</td><td data-page-node-id="BYJdbAv6lBIhQ7jQ49MazC">AP、SSID、无线安全设置（选择题为主，性价比高）</td></tr>
+    <tr data-page-node-id="JXWpvSFwv7bPsXl1tBTkin"><td data-page-node-id="k2WwrGLOBV0E2zAWWiPCwv">9. 网络安全技术</td><td class="stars" data-page-node-id="0RPUCxFFOcMwnyBKAFHx1H">★★</td><td data-page-node-id="LEiXglQpANHXRjKiLPkswI">防火墙分类与原理、数据加密（对称/非对称）、病毒与入侵检测</td></tr>
+    <tr data-page-node-id="WI4KqTHCK3rtAPPQTYIS2G"><td data-page-node-id="ZgWiHtMZUSKYO3XumistPC">10. 网络管理与服务器</td><td class="stars" data-page-node-id="khnFGS3X4n8DKCGQ8mU2gQ">★★</td><td data-page-node-id="3tUNA3WtalhHp5Hx6shP72">SNMP 模型、Windows/Linux 下 DNS、DHCP、WWW、FTP 服务器配置要点</td></tr>
+  </table>
+</section>
+
+<section id="sec-6" data-page-node-id="L6TJPpomr59pN226OW1g41">
+  <h2 data-page-node-id="1K0KIy81oMNAhlu43er2c7"><span class="no" data-page-node-id="vZM9ry2oHGIaHnE56BkB0w">6</span>资料清单（够用就好，别囤）</h2>
+  <div class="grid2" data-page-node-id="PlvDhiRYQ9gFz8e2LZmHRz">
+    <div class="mini" data-page-node-id="vEkuaRvBXMAJm3UAnZaqFT">
+      <h4 data-page-node-id="UvmAuFeF4LnSp8ATcXcgLL"><span class="tag b" data-page-node-id="05LHxaresi18HBB72cumTO">必备</span>官方教材</h4>
+      <p data-page-node-id="E0Wje4RFNCuyVGBthazXxt">《全国计算机等级考试三级教程——网络技术》，高等教育出版社（2021 年版大纲，现行有效）。二手/电子版均可，考点全在里面。</p>
+    </div>
+    <div class="mini" data-page-node-id="CM6uj6joCfAW2I7fwdYMc2">
+      <h4 data-page-node-id="VYd5zUQhZNI9nG1EcQK8eC"><span class="tag b" data-page-node-id="HBxd95X5FtmGhraLXmrGcV">必备</span>未来教育题库</h4>
+      <p data-page-node-id="Fhd0lStrtuF0wduK6oWLFy">《三级网络技术上机考试题库》或"未来教育"模拟软件（PC 版）。核心价值：真实考试界面 + 海量历年真题，刷它就是刷原题。</p>
+    </div>
+    <div class="mini" data-page-node-id="umgkWyNE2mGJALDqovFcrN">
+      <h4 data-page-node-id="Zqwc64sxZJbx4JbJO7glRq"><span class="tag a" data-page-node-id="DGwZtRZCy0r2VA1vCLCq97">推荐</span>视频课程</h4>
+      <p data-page-node-id="UomImmezI6Nf2Jy28e5GoD">B 站搜「三级网络技术」有大量免费精讲课，第一轮跟课过教材效率翻倍，尤其 IP 地址规划和路由器配置两章。</p>
+    </div>
+    <div class="mini" data-page-node-id="BG66uqqJVjEfoONrmnVhr3">
+      <h4 data-page-node-id="F5ByD6faHlHQ2OLN93qAYl"><span class="tag g" data-page-node-id="ak08QLR5epJDcyYK0NoZws">官方</span>信息渠道</h4>
+      <ul data-page-node-id="o9o0j8l6VXSTanAD9EuCnz">
+        <li data-page-node-id="u7DwPUDrlqGji1bgLici99">中国教育考试网：ncre.neea.edu.cn（大纲、样题）</li>
+        <li data-page-node-id="qXGtlwGGGzGUYestDGMndc">山西招生考试网：sxkszx.cn（报名公告）</li>
+        <li data-page-node-id="J6A9qAv1tSOtWEyupVYAK1">学校教务处 / 辅导员通知</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="sec-7" data-page-node-id="0K8J7hd7xDk7950B7XfPyG">
+  <h2 data-page-node-id="L90exZuK1d9mDqbMKsDCjO"><span class="no" data-page-node-id="UGvhy7KKGl5O3c0SfIgUrG">7</span>考试当天备忘</h2>
+  <div class="check" data-page-node-id="926vCRUxvwAi6xRdACIHBr">
+    <div class="mini" style="margin-bottom:12px" data-page-node-id="NeVfqyDyf3aW9kcaHeaZ66"><p data-page-node-id="ji8KAorIi1561l1I80msdF">考前 20 分钟到考场（太原科技大学 万柏林区窊流路 66 号，具体机房以准考证为准）；带 <b data-page-node-id="r5UBdBaammVct0UDG47K9O">身份证原件 + 准考证</b>（人脸识别核验）；上机考试全程 120 分钟，先做选择题，综合题和应用题做完记得<b data-page-node-id="2T7NqyuRHTnybv8uPCF5CJ">保存并交卷确认</b>；遇到机器故障举手示意，不要自行重启。</p></div>
+  </div>
+  <div class="callout" data-page-node-id="SS5bUoFJLglJliYqx5Gc7Q"><b data-page-node-id="7jpbRL4v6Q7FqHtnLHgqhD">成绩复查：</b>成绩公布后 5 个工作日内，如对成绩有疑问可向所在考点提出复查申请。60 分以上即通过，90 分以上证书注明"优秀"。</div>
+</section>
+
+<footer data-page-node-id="Si5PopP4ly3IyKEi32bHGx">备考手册 · 更新于 2026-10-16 · 报名与考试时间以山西省招生考试管理中心当次公告为准</footer>
+</div>
+
+<script>
+(function () {
+  var KEY = "ncre3-signup-checklist";
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) {}
+  var boxes = document.querySelectorAll("#signup input[type=checkbox]");
+  boxes.forEach(function (b) {
+    if (saved[b.id]) { b.checked = true; }
+    b.addEventListener("change", function () {
+      saved[b.id] = b.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch (e) {}
+    });
+  });
+})();
+</script>
+<script>
+(function () {
+  /* ===== 倒计时（报名 / 考试）===== */
+  function dayDiff(target) {
+    var t = new Date(target); var n = new Date();
+    t.setHours(0, 0, 0, 0); n.setHours(0, 0, 0, 0);
+    return Math.round((t - n) / 86400000);
+  }
+  function $(id) { return document.getElementById(id); }
+  var dSign = dayDiff("2026-12-26"), dEnd = dayDiff("2027-01-04");
+  var box = $("cd-signup"), num = $("cd-signup-num");
+  if (dSign > 0) {
+    num.innerHTML = "还有 <b>" + dSign + "</b> 天 <small>开放报名</small>";
+  } else if (dEnd >= 0) {
+    box.classList.add("open");
+    num.innerHTML = "<b>报名进行中</b> <small>窗口约剩 " + (dEnd + 1) + " 天</small>";
+  } else {
+    box.classList.add("done");
+    num.innerHTML = "<b>报名已截止</b> <small>以官方公告为准</small>";
+  }
+  var dExam = dayDiff("2027-03-28");
+  var ebox = $("cd-exam"), enum_ = $("cd-exam-num");
+  if (dExam > 0) {
+    enum_.innerHTML = "还有 <b>" + dExam + "</b> 天 <small>上考场</small>";
+  } else {
+    ebox.classList.add("done");
+    enum_.innerHTML = "<b>已考完</b> <small>坐等出成绩</small>";
+  }
+
+  /* ===== 逐月计划：按当前真实月份高亮所在阶段 ===== */
+  var nowM = new Date().getMonth() + 1; // 1-12
+  var rows = document.querySelectorAll("#plan-table tr[data-months]");
+  for (var i = 0; i < rows.length; i++) {
+    var ms = rows[i].getAttribute("data-months").split(",");
+    if (ms.indexOf(String(nowM)) >= 0) { rows[i].classList.add("plan-now"); break; }
+  }
+})();
+</script>
+</body>
+</html>

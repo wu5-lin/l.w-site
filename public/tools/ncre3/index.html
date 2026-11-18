@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>三级网络技术 · 备考总入口</title>
+<style>
+  :root {
+    --blue: #185FA5; --blue-bg: #E6F1FB; --blue-deep: #0C447C;
+    --teal: #0F6E56; --teal-bg: #E1F5EE;
+    --green: #3B6D11; --green-bg: #EAF3DE;
+    --amber: #854F0B; --amber-bg: #FAEEDA;
+    --red: #A32D2D; --red-bg: #FCEBEB;
+    --ink: #26262A; --muted: #5F5E5A; --line: #E4E2DC;
+    --card: #FFFFFF; --page: #F7F6F2;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif; background: var(--page); color: var(--ink); line-height: 1.75; font-size: 15px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 34px 16px 80px; }
+  header { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 28px 30px 24px; margin-bottom: 18px; }
+  header h1 { font-size: 24px; font-weight: 700; letter-spacing: .5px; }
+  header .sub { color: var(--muted); font-size: 13.5px; margin-top: 6px; }
+  .facts { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+  .fact { flex: 1; min-width: 110px; background: var(--page); border: 1px solid var(--line); border-radius: 12px; padding: 11px 10px; text-align: center; }
+  .fact b { display: block; font-size: 17px; color: var(--blue-deep); }
+  .fact span { font-size: 12px; color: var(--muted); }
+  h2 { font-size: 17px; font-weight: 700; margin: 26px 0 12px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+  a.card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; text-decoration: none; color: var(--ink); transition: border-color .15s; }
+  a.card:hover { border-color: var(--blue); }
+  a.card .tag { display: inline-block; font-size: 11.5px; font-weight: 700; border-radius: 6px; padding: 2px 8px; margin-bottom: 8px; }
+  a.card h3 { font-size: 16px; font-weight: 700; margin-bottom: 5px; }
+  a.card p { font-size: 13px; color: var(--muted); line-height: 1.6; }
+  .t-blue { background: var(--blue-bg); color: var(--blue-deep); }
+  .t-green { background: var(--green-bg); color: var(--green); }
+  .t-teal { background: var(--teal-bg); color: var(--teal); }
+  .t-amber { background: var(--amber-bg); color: var(--amber); }
+  .panel { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 24px; }
+  .step { display: flex; gap: 14px; padding: 11px 0; border-bottom: 1px dashed var(--line); }
+  .step:last-child { border-bottom: none; }
+  .step .n { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--blue); color: #fff; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  .step .t b { display: block; font-size: 14.5px; }
+  .step .t span { font-size: 13px; color: var(--muted); }
+  .warn { background: var(--amber-bg); border-radius: 12px; padding: 14px 18px; font-size: 13px; color: var(--amber); margin-top: 14px; }
+  .warn b { font-weight: 700; }
+  .kbd { font-size: 12.5px; color: var(--muted); margin-top: 10px; }
+  .cd-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  .cd { flex: 1; min-width: 200px; background: linear-gradient(135deg, var(--blue-deep), var(--blue)); color: #fff; border-radius: 14px; padding: 16px 18px; }
+  .cd.exam { background: linear-gradient(135deg, #0B4A38, var(--teal)); }
+  .cd .lbl { font-size: 12.5px; opacity: .85; }
+  .cd .num { font-size: 34px; font-weight: 800; line-height: 1.15; letter-spacing: .5px; }
+  .cd .num small { font-size: 14px; font-weight: 600; }
+  .cd .dt { font-size: 12px; opacity: .8; margin-top: 2px; }
+  .cd.open { background: linear-gradient(135deg, #854F0B, var(--amber)); }
+  .cd.done { background: linear-gradient(135deg, #4A4A48, #6E6D68); }
+  /* ===== 报名准备卡 ===== */
+  .prep { margin-bottom: 18px; }
+  .prep h2 { margin: 0 0 4px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .prep .deadline { font-size: 11.5px; font-weight: 700; background: var(--amber-bg); color: var(--amber); border-radius: 20px; padding: 2px 10px; }
+  .prep-sub { font-size: 13px; color: var(--muted); }
+  .prep-progress { height: 7px; background: var(--page); border-radius: 4px; overflow: hidden; margin: 14px 0 6px; }
+  .prep-progress i { display: block; height: 100%; width: 0; background: var(--green); border-radius: 4px; transition: width .25s; }
+  .prep-count { font-size: 12.5px; color: var(--muted); margin-bottom: 8px; }
+  .prep-count.ready { color: var(--green); font-weight: 700; }
+  .prep-item { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; border-bottom: 1px dashed var(--line); cursor: pointer; }
+  .prep-item:last-of-type { border-bottom: none; }
+  .prep-item input { margin-top: 5px; width: 16px; height: 16px; accent-color: var(--green); flex-shrink: 0; }
+  .prep-item b { display: block; font-size: 14px; }
+  .prep-item small { display: block; font-size: 12.5px; color: var(--muted); line-height: 1.55; }
+  .prep-item.done b { color: var(--muted); text-decoration: line-through; }
+  .prep-links { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+  .prep-links a { font-size: 12.5px; font-weight: 600; color: var(--blue-deep); background: var(--blue-bg); border-radius: 8px; padding: 6px 11px; text-decoration: none; }
+  .prep-links a:hover { background: #D6E8F8; }
+  .prep-note { background: var(--blue-bg); color: var(--blue-deep); border-radius: 10px; padding: 10px 14px; font-size: 12.5px; margin-top: 12px; line-height: 1.65; }
+  .prep details { margin-top: 12px; }
+  .prep summary { cursor: pointer; font-weight: 600; color: var(--blue-deep); font-size: 13px; }
+  .prep ol { margin: 8px 0 0 20px; color: var(--muted); font-size: 12.5px; line-height: 1.8; }
+  /* ===== 学习进度总览 ===== */
+  .dash { margin-bottom: 18px; padding: 16px 22px; }
+  .dash-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .dash-head h2 { margin: 0; font-size: 15.5px; }
+  .dash-streak { font-size: 12.5px; font-weight: 700; color: var(--teal); background: var(--teal-bg); border-radius: 20px; padding: 2px 10px; }
+  .dash-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  @media (max-width: 640px) { .dash-grid { grid-template-columns: repeat(2, 1fr); } }
+  .dash-cell { background: var(--page); border: 1px solid var(--line); border-radius: 10px; padding: 9px 10px; text-align: center; }
+  .dash-cell b { display: block; font-size: 17px; color: var(--blue-deep); }
+  .dash-cell span { font-size: 11.5px; color: var(--muted); }
+  .dash-cell.warn b { color: var(--amber); }
+  .dash-cell.ok b { color: var(--green); }
+  .dash-tip { font-size: 12.5px; color: var(--muted); margin-top: 10px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; }
+  .dash-tip a { color: var(--blue-deep); font-weight: 600; text-decoration: none; }
+  .dash-tip a:hover { text-decoration: underline; }
+  footer { text-align: center; color: var(--muted); font-size: 12.5px; margin-top: 30px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div style="margin-bottom:10px;font-size:13px;"><a href="/tools/" style="color:var(--blue-deep);text-decoration:none;font-weight:600;">← 返回工具箱</a> · <a href="/" style="color:var(--muted);text-decoration:none;">首页</a></div>
+  <h1>计算机三级网络技术 · 备考总入口</h1>
+  <div class="sub">NCRE 三级网络技术（科目代码 35）· 太原科技大学考点（140011）· 目标 2027 年 3 月批次</div>
+  <div class="facts">
+    <div class="fact"><b>40 + 40 + 20</b><span>单选 / 综合填空 / 应用题</span></div>
+    <div class="fact"><b>120 分钟</b><span>考试时长</span></div>
+    <div class="fact"><b>60 分</b><span>合格线 · 90 分优秀</span></div>
+    <div class="fact"><b>90 元</b><span>报名费 / 科</span></div>
+  </div>
+  <div class="cd-row">
+    <div class="cd" id="cd-signup">
+      <div class="lbl">报名开放（预计）</div>
+      <div class="num" id="cd-signup-num">计算中…</div>
+      <div class="dt">预计 2026-12-26 前后开放 · 窗口约 10 天 · 以山西公告为准</div>
+    </div>
+    <div class="cd exam" id="cd-exam">
+      <div class="lbl">正式考试（预计）</div>
+      <div class="num" id="cd-exam-num">计算中…</div>
+      <div class="dt">预计 2027-03-28 前后 · 以准考证为准</div>
+    </div>
+  </div>
+</header>
+
+<div class="panel dash" id="study-dash">
+  <div class="dash-head">
+    <h2>本机备考进度总览</h2>
+    <span class="dash-streak" id="dash-streak">读取中…</span>
+  </div>
+  <div class="dash-grid">
+    <div class="dash-cell"><b id="dash-today">0 / 20</b><span>今日刷题（主库）</span></div>
+    <div class="dash-cell" id="dash-due-cell"><b id="dash-due">0</b><span>今日到期复习</span></div>
+    <div class="dash-cell"><b id="dash-done">0</b><span>累计已刷（主+扩）</span></div>
+    <div class="dash-cell"><b id="dash-exam">–</b><span>最近模考</span></div>
+  </div>
+  <div class="dash-tip">
+    <span id="dash-sub">刷题进度保存在当前浏览器，换设备请使用各题库的「导出备份」。</span>
+    <span id="dash-act"></span>
+  </div>
+</div>
+
+<div class="panel prep" id="signup-prep">
+  <h2>报名准备 · 现在就能做 <span class="deadline" id="prep-deadline">计算中…</span></h2>
+  <div class="prep-sub">报名窗口只有约 10 天、机位先报先得。账号和照片是唯一能提前消除的失败点，别等到开放当天才发现。</div>
+  <div class="prep-progress"><i id="prep-bar"></i></div>
+  <div class="prep-count" id="prep-count">0 / 4 已就绪</div>
+  <label class="prep-item"><input type="checkbox" data-prep="etest"><span><b>① 注册 ETEST 通行证，并确认能登录</b><small>passport.neea.cn，用手机号或邮箱注册；该账号在教育部各类考试系统通用。</small></span></label>
+  <label class="prep-item"><input type="checkbox" data-prep="photo"><span><b>② 备好证件照（最常翻车的一项）</b><small>近期正面免冠彩色照，白/浅色背景，JPEG，20–200KB，最小 192×144（高×宽）。不要生活照、美颜照；照片会用于准考证和证书。</small></span></label>
+  <label class="prep-item"><input type="checkbox" data-prep="info"><span><b>③ 核对报名信息</b><small>姓名、身份证号、手机号、邮箱；考点 140011 太原科技大学；科目 35 网络技术。缴费后不可修改。</small></span></label>
+  <label class="prep-item"><input type="checkbox" data-prep="pay"><span><b>④ 确认网上支付方式可用</b><small>报名费 90 元/科；缴费成功即报名完成，之后不能改信息、不能退费。</small></span></label>
+  <div class="prep-links">
+    <a href="https://passport.neea.cn" target="_blank" rel="noopener">打开 ETEST 注册</a>
+    <a href="https://ncre-bm.neea.edu.cn" target="_blank" rel="noopener">打开报名入口</a>
+    <a href="https://www.sxkszx.cn" target="_blank" rel="noopener">山西招生考试网</a>
+    <a href="报名与考试日程.ics" download>导入手机日历（.ics）</a>
+  </div>
+  <div class="prep-note"><b>时间校准：</b>2026 年 3 月批次山西官方窗口为 <b>2025-12-26 9:00 – 2026-01-04 24:00</b>；2027 年 3 月公告截至 2026-10-24 尚未发布，倒计时按 12 月下旬预计，最终以山西省公告为准。日历文件含 5 个提醒节点，日期同样为预计值，导入后请按官方公告调整。</div>
+  <details>
+    <summary>报名当天 6 步操作卡（点开）</summary>
+    <ol>
+      <li>9:00 前登录 ncre-bm.neea.edu.cn，选择「山西省」考生入口。</li>
+      <li>考点选「140011 太原科技大学」——机位先报先得。</li>
+      <li>科目选「35 网络技术」。</li>
+      <li>逐字核对姓名、身份证号、照片。</li>
+      <li>网上缴费 90 元，返回系统确认支付状态为「已支付」。</li>
+      <li>截图保存报名号/订单，并在 3 月下旬打印准考证。</li>
+    </ol>
+  </details>
+</div>
+
+<h2>五个工具，按顺序用</h2>
+<div class="grid">
+  <a class="card" href="计算机三级网络技术备考手册.html">
+    <span class="tag t-blue">作战地图</span>
+    <h3>① 备考手册</h3>
+    <p>考试信息、报名清单、卷面结构与拿分拆解、逐月计划、十章高频考点、资料清单。备考期全程对照使用。</p>
+  </a>
+  <a class="card" href="三级网络技术刷题库.html">
+    <span class="tag t-green">主战场</span>
+    <h3>② 刷题库（含模考）</h3>
+    <p>选择题 106 + 真题 60 + 填空特训 55 + 应用题 12 + 背卡 80。<b>全真模考</b>：120 分钟计时、自动判分、薄弱章节诊断、每日打卡、考场命令纸打印。</p>
+  </a>
+  <a class="card" href="三级网络技术扩展真题库.html">
+    <span class="tag t-amber">题量担当</span>
+    <h3>③ 扩展真题库 1666 题</h3>
+    <p><b>1471 道选择题</b>（1348 道可练，123 道依赖原图已自动排除）+ <b>195 道综合题与应用题原题</b>（12 道含原图、132 道缺图已标注，全部含详解，不判分）。题量扩充 8 倍，按章节专项或随机刷。</p>
+  </a>
+  <a class="card" href="计算机三级网络技术通关技巧.html">
+    <span class="tag t-teal">技巧汇总</span>
+    <h3>④ 通关技巧</h3>
+    <p>网上的高分经验帖提炼：综合题四大题型解法模板、刷题软件对比、30 天计划、考场技巧与易混点速查。</p>
+  </a>
+  <a class="card" href="三级网络技术刷题库.html#exam">
+    <span class="tag t-amber">考前必做</span>
+    <h3>⑤ 全真模考</h3>
+    <p>刷完一遍题库后开始模考。建议每两周一次，把「待消灭错题」和「未掌握卡片」两个数字都压到 0。</p>
+  </a>
+</div>
+
+<h2>备考路线（从现在到拿证）</h2>
+<div class="panel">
+  <div class="step">
+    <div class="n">1</div>
+    <div class="t"><b>现在 – 11 月 · 打基础</b><span>手册过一遍教材重点（IP 子网、交换机/路由器配置），刷题库顺序刷 + 每天随机 30 题。错题本保持清空。</span></div>
+  </div>
+  <div class="step">
+    <div class="n">2</div>
+    <div class="t"><b>12 月 · 报名（最关键的一步）</b><span><b>12/20 前</b>把上方准备卡的 4 项做完；预计 12 月 26 日前后开放、只开约 10 天、机位先报先得。开放当天 9:00 前登录，别拖到最后两天。</span></div>
+  </div>
+  <div class="step">
+    <div class="n">3</div>
+    <div class="t"><b>12 月 – 1 月 · 攻综合题</b><span>每天 5 道填空特训：IP 子网计算 + 配置命令必须能手写。抓包题用「Sniffer 抓包专项」单独攻。</span></div>
+  </div>
+  <div class="step">
+    <div class="n">4</div>
+    <div class="t"><b>1 月 – 2 月 · 真题 + 模考</b><span>真题三套卷轮刷，加应用题专项。每两周做一次全真模考，看趋势是否稳定在 70 分以上。</span></div>
+  </div>
+  <div class="step">
+    <div class="n">5</div>
+    <div class="t"><b>考前一周 · 收口</b><span>只刷「错题本」和「未掌握卡片」，配置命令打印一页纸反复默写。考前 3 天做最后一次模考找手感。</span></div>
+  </div>
+  <div class="step">
+    <div class="n">6</div>
+    <div class="t"><b>考后 · 查分</b><span>约考后 1 个月出成绩（预计 2027 年 5 月），到 ncre-bm.neea.edu.cn 查询并下载电子证书。</span></div>
+  </div>
+</div>
+
+<div class="warn">
+  <b>三个诚实提醒：</b><br>
+  1. 扩展真题库的 1666 道题整理自 GitHub 公开仓库 <b>MSTAT-Lseng/jisuanji-sanji</b>，该仓库<b>未声明开源许可证</b>、题库源自第三方网站「无忧考吧」。仅供你个人本地备考，请勿对外分发或商用。<br>
+  2. 扩展真题库里的 195 道综合题/应用题原题<b>没有标准答案</b>（原库如此），只提供题干与详解：其中 12 道含原图、132 道缺图并已标注、其余无需图。缺图题请对照纸质原卷或原题库软件作答。<br>
+  3. 报名窗口短、机位先报先得，<b>这是最容易掉链子的一环</b>——建议现在就注册好 ETEST 账号。
+</div>
+
+<p class="kbd">提示：这些页面都是本地 HTML，可直接在手机浏览器打开碎片时间刷；进度保存在本机浏览器里，两个题库都支持<b>导出备份 / 导入恢复</b>，换设备也不丢记录。</p>
+
+<footer>备考材料 · 更新于 2026-10-24 · 数据来源：考试大纲与历年考点整理 · 报名时间以山西省招生考试管理中心公告为准</footer>
+
+</div>
+<script>
+(function () {
+  function dayDiff(target) {
+    var t = new Date(target); var n = new Date();
+    t.setHours(0, 0, 0, 0); n.setHours(0, 0, 0, 0);
+    return Math.round((t - n) / 86400000);
+  }
+  function $(id) { return document.getElementById(id); }
+  // 报名：2026-12-26 开放，窗口约 10 天（至 2027-01-04）
+  var dSign = dayDiff("2026-12-26");
+  var dEnd = dayDiff("2027-01-04");
+  var box = $("cd-signup"), num = $("cd-signup-num");
+  if (dSign > 0) {
+    num.innerHTML = "还有 <b>" + dSign + "</b> 天 <small>开放报名</small>";
+  } else if (dEnd >= 0) {
+    box.classList.add("open");
+    num.innerHTML = "<b>报名进行中</b> <small>窗口约剩 " + (dEnd + 1) + " 天</small>";
+  } else {
+    box.classList.add("done");
+    num.innerHTML = "<b>报名已截止</b> <small>以官方公告为准</small>";
+  }
+  // 考试：2027-03-28（预计第 79 次，3 月 28–30 日）
+  var dExam = dayDiff("2027-03-28");
+  var ebox = $("cd-exam"), enum_ = $("cd-exam-num");
+  if (dExam > 0) {
+    enum_.innerHTML = "还有 <b>" + dExam + "</b> 天 <small>上考场</small>";
+  } else {
+    ebox.classList.add("done");
+    enum_.innerHTML = "<b>已考完</b> <small>坐等出成绩</small>";
+  }
+
+  /* ===== 报名准备卡：勾选状态本地保存 ===== */
+  var PREP_KEY = "ncre3-signup-prep-v1";
+  var boxes = [].slice.call(document.querySelectorAll("[data-prep]"));
+  var pstate = {};
+  try { pstate = JSON.parse(localStorage.getItem(PREP_KEY) || "{}") || {}; } catch (e) { pstate = {}; }
+  function renderPrep() {
+    var n = 0;
+    boxes.forEach(function (b) {
+      var on = !!pstate[b.getAttribute("data-prep")];
+      b.checked = on;
+      var row = b.parentNode;
+      if (row && row.classList) row.classList.toggle("done", on);
+      if (on) n++;
+    });
+    var bar = $("prep-bar"), cnt = $("prep-count");
+    if (bar) bar.style.width = Math.round(n / boxes.length * 100) + "%";
+    if (cnt) {
+      cnt.textContent = n + " / " + boxes.length + " 已就绪" + (n === boxes.length ? " · 可以等报名了 ✓" : "");
+      cnt.classList.toggle("ready", n === boxes.length);
+    }
+  }
+  boxes.forEach(function (b) {
+    b.addEventListener("change", function () {
+      pstate[b.getAttribute("data-prep")] = b.checked;
+      try { localStorage.setItem(PREP_KEY, JSON.stringify(pstate)); } catch (e) {}
+      renderPrep();
+    });
+  });
+  renderPrep();
+
+  /* 建议完成日：2026-12-20 */
+  var dl = $("prep-deadline");
+  if (dl) {
+    var dDl = dayDiff("2026-12-20");
+    if (dDl > 0) dl.textContent = "距 12/20 还有 " + dDl + " 天";
+    else if (dDl === 0) { dl.textContent = "今天到期：把 4 项过一遍"; dl.style.background = "var(--red-bg)"; dl.style.color = "var(--red)"; }
+    else { dl.textContent = "已过建议完成日，尽快补齐"; dl.style.background = "var(--red-bg)"; dl.style.color = "var(--red)"; }
+  }
+
+  /* ===== 本机备考进度总览（读取主库与扩展库 localStorage）===== */
+  function dayKey(d) {
+    d = d || new Date();
+    return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2);
+  }
+  function countDue(rev, today) {
+    if (!rev) return 0;
+    var n = 0;
+    for (var id in rev) if (rev[id] && rev[id].due && rev[id].due <= today) n++;
+    return n;
+  }
+  var qState = {}, eState = {};
+  try { qState = JSON.parse(localStorage.getItem("ncre3-quiz-v2") || "{}") || {}; } catch (e) {}
+  try { eState = JSON.parse(localStorage.getItem("ncre3-ext-v1") || "{}") || {}; } catch (e) {}
+  var today = dayKey();
+  var dLog = (qState.daily && qState.daily.log) || {};
+  var dGoal = (qState.daily && qState.daily.goal) || 20;
+  var dToday = dLog[today] || 0;
+  var streak = 0, sd = new Date(), first = true;
+  for (var i = 0; i < 400; i++) {
+    var kk = dayKey(sd);
+    if (dLog[kk] > 0) streak++;
+    else if (first) { sd.setDate(sd.getDate() - 1); first = false; continue; }
+    else break;
+    sd.setDate(sd.getDate() - 1);
+  }
+  var dueMain = countDue(qState.rev, today), dueExt = countDue(eState.rev, today);
+  var dueAll = dueMain + dueExt;
+  var qDone = Object.keys(qState.done || {}).length;
+  var eDone = Object.keys(eState.done || {}).length;
+  var allExams = [].concat(qState.exams || [], eState.exams || []);
+  var lastExam = allExams.length ? allExams[allExams.length - 1] : null;
+
+  $("dash-today").textContent = dToday + " / " + dGoal;
+  $("dash-due").textContent = dueAll;
+  $("dash-done").textContent = (qDone + eDone) + " 题";
+  $("dash-exam").textContent = lastExam ? (lastExam.s + " 分") : "暂无";
+  $("dash-streak").textContent = streak > 0 ? ("🔥 连续打卡 " + streak + " 天") : "今日未打卡";
+  var dueCell = $("dash-due-cell");
+  if (dueCell) dueCell.classList.toggle("warn", dueAll > 0);
+  if (dueAll > 0) {
+    $("dash-sub").textContent = "主库到期 " + dueMain + " 题 · 扩展库到期 " + dueExt + " 题，建议优先清掉到期复习。";
+    $("dash-act").innerHTML = dueMain > 0
+      ? '<a href="三级网络技术刷题库.html">去主库复习 →</a>'
+      : '<a href="三级网络技术扩展真题库.html">去扩展库复习 →</a>';
+  } else if (qDone + eDone > 0) {
+    var wrongAll = (qState.wrong ? qState.wrong.length : 0) + (eState.wrong ? eState.wrong.length : 0);
+    $("dash-sub").textContent = "当前错题本待消灭：" + wrongAll + " 题 · 今日无到期复习。";
+  }
+})();
+</script>
+</body>
+</html>
