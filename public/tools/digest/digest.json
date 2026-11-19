@@ -1,13 +1,53 @@
 {
-  "updated": "2026-11-19 03:02 UTC",
+  "updated": "2026-11-19 09:08 UTC",
   "categories": {
     "投资": [
       {
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "tag": "Seeking Alpha",
-        "title": "Beam Global 计划通过扩大 BeamHeat 的推广，实现约 1150 万美元的季度收入，并实现正向现金流",
+        "title": "德国、法国领涨欧洲股市，英国市场交易接近六周低点",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4674495-beam-global-targets-positive-cash-flow-around-11_5m-quarterly-revenue-while-expanding?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4674580-germany-france-lead-european-gains-as-uk-market-trades-near-six-week-low?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "CNBC Markets",
+        "title": "乌克兰战争成为焦点，特朗普在会面后称赞与普京的“良好关系”",
+        "summary": "U.S. President Donald Trump met individually on Thursday with Russian President Vladimir Putin, as well as Chinese President Xi Jinping.",
+        "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-china-apec-.html",
+        "source": "CNBC Markets",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Seeking Alpha",
+        "title": "Anthropic 将 IPO 定价为每股 83 美元，目标是创纪录的 81B 美元",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4674583-anthropic-prices-ipo-at-83-per-share-targeting-81b-in-record-breaking-offering?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Seeking Alpha",
+        "title": "快手科技公布第三季度业绩",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4674581-kuaishou-technology-reports-q3-results?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Seeking Alpha",
+        "title": "“我们必须让詹森回来”——Uber 联合创始人卡兰尼克谈英伟达传奇",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4674534-uber-co-founder-kalanick-weighs-in-on-nvidia-huang-saga?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -15,30 +55,20 @@
       {
         "date": "2026-11-19",
         "tag": "The Block",
-        "title": "渣打银行、StraitsX、华侨银行完成代币化存款互操作性试验",
-        "summary": "The companies said that unlocking the full potential of 'always-on' tokenized deposits requires interoperability across platforms.",
-        "url": "https://www.theblock.co/news/web3/2026-11-18-standard-chartered-straitsx-ocbc-tokenized-deposit-poc-442964",
+        "title": "新加坡 MAS 发行 7700 万美元通过 CBDC 结算的代币化票据",
+        "summary": "The central bank said the bills were issued natively on its Singapore Dollar Test Network and settled in wholesale CBDC.",
+        "url": "https://www.theblock.co/news/web3/2026-11-19-singapores-mas-tokenized-bills-443562",
         "source": "The Block",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-19",
-        "tag": "Financial Times",
-        "title": "马斯克表示，他为向共和党捐赠近5亿美元而感到“愚蠢”",
-        "summary": "SpaceX CEO backs away from Maga after monetary support for Donald Trump’s party in midterm elections fails to sway voters",
-        "url": "https://www.ft.com/content/1af0d736-d5e5-4601-989d-638c9cea74b2?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Seeking Alpha",
-        "title": "Everpure 预计第四季度收入为 15.05 亿美元至 15.15 亿美元，并将 2027 财年收入展望上调至 52.00 亿美元至 52.10 亿美元",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4674494-everpure-anticipates-q4-revenue-of-1_505b-to-1_515b-as-it-raises-fy27-revenue-outlook-to?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
+        "tag": "MarketWatch",
+        "title": "这位备受关注的大师刚刚卖掉了所有东西",
+        "summary": "Panmure Liberum strategist and widely-followed stock-market commentator Joachim Klement has effectively had his personal retirement portfolio 100% invested in stocks for many years.",
+        "url": "https://www.marketwatch.com/story/this-closely-watched-guru-just-sold-everything-474b4389?mod=mw_rss_topstories",
+        "source": "MarketWatch",
         "region": "en",
         "category": "投资"
       },
@@ -46,119 +76,89 @@
         "date": "2026-11-19",
         "tag": "Financial Times",
         "title": "特朗普、习近平和普京将举行高风险三方峰会",
-        "summary": "Historic event in southern Chinese city of Shenzhen is culmination of a week of high-stakes diplomacy",
+        "summary": "Summit with three leaders begins in southern Chinese city of Shenzhen during week of high-stakes diplomacy",
         "url": "https://www.ft.com/content/fcf6d27b-a04c-4cef-8b03-ce2423566f1f",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
       {
-        "date": "2026-11-18",
-        "tag": "Seeking Alpha",
-        "title": "Cintas董事长与特朗普会面，以挽救价值55亿美元的UniFirst收购案 - Semafor",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4674492-cintas-chairman-met-with-trump-in-effort-to-save-5_5b-unifirst-deal-semafor?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Seeking Alpha",
-        "title": "Uti 预计 2027 财年收入为 9.25 亿至 9.45 亿美元，目标是开工 3.4 万至 3.55 万套住房",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4674493-uti-expects-925m-945m-fiscal-2027-revenue-while-targeting-34000minus-35500-starts?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "MarketWatch",
-        "title": "Palo Alto Networks的股价因财报而获得由人工智能驱动的新一轮提振",
-        "summary": "The company boosts its outlook in the face of the “current threat environment and demand we see ahead of us.”",
-        "url": "https://www.marketwatch.com/story/palo-alto-networks-stock-soars-as-earnings-show-ai-has-upped-the-stakes-for-cybersecurity-308e34b8?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "MarketWatch",
-        "title": "“我一直是一名全职妈妈”：我今年50岁，患有慢性疾病。我丈夫失业了。他应该动用自己的401(k)退休金吗？",
-        "summary": "“Our financial and healthcare situation has become increasingly concerning.”",
-        "url": "https://www.marketwatch.com/story/ive-been-a-stay-at-home-mom-im-50-and-have-a-chronic-illness-my-husband-lost-his-job-should-he-raid-his-401-k-63e59123?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "MarketWatch",
-        "title": "“英伟达的动荡让我感到害怕”：我应该卖掉我的股票去买房产，还是熬过这场风暴？",
-        "summary": "Tempted to ditch stocks for property or CDs? Take a deep breath before making any sudden moves.",
-        "url": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
         "date": "2026-11-19",
         "tag": "Financial Times",
-        "title": "美国科技服务中断被归咎于匆忙修复人工智能发现的漏洞",
-        "summary": "Experts say race to patch software flaws probably created instability in computer systems at Microsoft, JPMorgan and others",
-        "url": "https://www.ft.com/content/96c565f1-f229-40b6-91e8-7a849ec4b208?syn-25a6b1a6=1",
+        "title": "Anthropic 创纪录 IPO 融资 810 亿美元",
+        "summary": "Shares in AI giant set to begin trading on Thursday after company sells shares at $1.5tn valuation in blockbuster listing",
+        "url": "https://www.ft.com/content/62c0510b-ca65-441e-9baf-675b93903b9e?syn-25a6b1a6=1",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-19",
-        "tag": "Financial Times",
-        "title": "随着人工智能暴露漏洞，伦敦金融城企业被要求加强网络防御",
-        "summary": "Regulators publish new directions after surge in hacking attempts and $6bn theft from crypto exchange Binance",
-        "url": "https://www.ft.com/content/7cd81085-95d0-4511-b640-300a2c8791ff?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "MarketWatch",
-        "title": "小盘股的“死亡交叉”对市场其他部分有何影响",
-        "summary": "The negative chart pattern confirms weakness in the Russell 2000 and in overall market breadth.",
-        "url": "https://www.marketwatch.com/story/what-the-death-cross-in-small-cap-stocks-means-for-the-rest-of-the-stock-market-edd8e86e?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-18",
         "tag": "The Block",
-        "title": "参议员：财政部必须在实施《GENIUS法案》时确保稳定币发行方“平等地位”",
-        "summary": "Senators are pressing Treasury Secretary Bessent to grant a safe harbor for stablecoin issuers operating under state regulatory frameworks.",
-        "url": "https://www.theblock.co/news/regulation/2026-11-18-senators-treasury-must-ensure-equal-footing-for-stablecoin-issuers-in-genius-act-implementation-443501",
+        "title": "Sygnum 预计随着资金恢复，2027 年比特币套利交易将超过国库券",
+        "summary": "Bitcoin funding stayed negative for 67 consecutive days into May before recovering to about 8% annualized by the end of October.",
+        "url": "https://www.theblock.co/news/markets/2026-11-19-sygnum-bitcoin-carry-trades-beating-treasury-bills-2027-443547",
         "source": "The Block",
         "region": "en",
         "category": "投资"
       },
       {
-        "date": "2026-11-18",
-        "tag": "CNBC Markets",
-        "title": "我观看了特朗普、习近平和普京在中国会晤。以下是我最重要的几点体会。",
-        "summary": "U.S. President Donald Trump, Chinese President Xi Jinping and Russian President Vladimir Putin are expected to hold a rare trilateral meeting on Thursday.",
-        "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
-        "source": "CNBC Markets",
+        "date": "2026-11-19",
+        "tag": "The Block",
+        "title": "Binance 获得 65 亿美元冻结令，CryptoQuant 称比特币处于“价值区”等等",
+        "summary": "In today's newsletter, Binance obtains $6.5 billion freezing order from Abu Dhabi court; CryptoQuant says bitcoin is back in a bearish phase but has entered a 'value zone'; and more.",
+        "url": "https://www.theblock.co/newsletters/the-daily/2026-11-19-binance-gets-6-5-billion-freezing-order-cryptoquant-says-bitcoin-is-in-a-value-zone-and-more-443511",
+        "source": "The Block",
         "region": "en",
         "category": "投资"
       },
       {
-        "date": "2026-11-18",
-        "tag": "CNBC Markets",
-        "title": "会议纪要显示，美联储官员预计将进一步加息，并对人工智能对通胀的影响表示担忧",
-        "summary": "The Federal Reserve on Wednesday released minutes from its October policy meeting at which it voted to hold its benchmark interest rate in a range between 3.75%-4%.",
-        "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
-        "source": "CNBC Markets",
+        "date": "2026-11-19",
+        "tag": "Financial Times",
+        "title": "Anthropic 的人工智能进步在 IPO 前夕引发新的安全担忧",
+        "summary": "Group disclosed it had activated part of ‘responsible scaling policy’ it set up to ensure AI did not develop so quickly that it caused ‘catastrophic risks’",
+        "url": "https://www.ft.com/content/d8be4655-211c-49a8-bfe4-18a00b8e8619?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Financial Times",
+        "title": "散户投资者面临重磅炸弹 Anthropic IPO 的挤压",
+        "summary": "Frenzy for AI stocks is testing how far Wall Street will go to accommodate a new army of individual investors",
+        "url": "https://www.ft.com/content/38c122d6-b533-4595-9554-3852c52e580f?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "The Block",
+        "title": "随着新案件的出现，Ledger 将硬件黑客调查扩大到德国和阿联酋",
+        "summary": "The company confirmed that the new cases share the same kind of physical modification as tampered devices found across Southeast Asia.",
+        "url": "https://www.theblock.co/news/web3/2026-11-18-ledger-new-hardware-incidents-germany-uae-443530",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "MarketWatch",
+        "title": "我丈夫 64 岁高龄退休，很高兴，他认为我应该继续工作。他公平吗？",
+        "summary": "“I’m exhausted. My alarm goes off at 6 a.m., and I have a 50-minute commute.”",
+        "url": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "MarketWatch",
+        "title": "“这真是太肮脏了”：我哥哥接管了我们生病的母亲的生活和经济。我能做些什么？",
+        "summary": "“It is devastating when the people you should be able to trust become the very people you have to protect yourself from.”",
+        "url": "https://www.marketwatch.com/story/it-is-heartbreaking-exhausting-and-downright-dirty-my-brother-took-over-our-ailing-mothers-life-and-finances-what-can-i-do-b4d48817?mod=mw_rss_topstories",
+        "source": "MarketWatch",
         "region": "en",
         "category": "投资"
       }
@@ -166,56 +166,6 @@
     "科研": [
       {
         "date": "2026-11-19",
-        "tag": "Nature 材料",
-        "title": "具有无序纳米级孔隙的超表面模板化金网络中通过集体热点不对称实现的手性SERS和光化学",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41467-026-78158-9",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "Nature 材料",
-        "title": "采用活性炭和硅灰优化的混凝土的力学性能和多辐射屏蔽性能",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-74527-y",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "Nature 材料",
-        "title": "MOF中的动态微环境是多相催化的关键",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41570-026-00886-9",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "ScienceDaily 材料",
-        "title": "科学家们使用维生素B12制造出一种非凡的新型可充电电池",
-        "summary": "Scientists have found a surprising new use for vitamin B12, developing a rechargeable battery that uses the essential nutrient to help generate and store electricity. The prototype survived up to 250 charging cycles and could open the door to safer, cheaper, and more environmentally friendly alternatives to lithium-ion batteries.",
-        "url": "https://www.sciencedaily.com/releases/2026/11/261117033909.htm",
-        "source": "ScienceDaily 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "ScienceDaily 材料",
-        "title": "一项新发现揭示了阻碍室温超导体的可能原因",
-        "summary": "A major breakthrough in superconductivity research has revealed that one of the essential ingredients for electricity to flow without resistance can exist at room temperature. Scientists discovered that electrons can form stable pairs at much higher temperatures than previously understood, suggesting that a different obstacle may be preventing room-temperature superconductivity.",
-        "url": "https://www.sciencedaily.com/releases/2026/11/261116023358.htm",
-        "source": "ScienceDaily 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-18",
         "tag": "arXiv cs.AI",
         "title": "NEBench R1：用于评估大型语言模型核领域能力的推理基准",
         "summary": "arXiv:2611.21682v1 Announce Type: new Abstract: Large language models (LLMs) are increasingly being explored for knowledge-intensive and safety-critical applications in nuclear engineering. However, existing nuclear-domain benchmarks provide limited content coverage or focus primarily on answer accuracy without systematically evaluating the quality of the underlying reasoning. This study introduces NEBench R1, a reasoning-oriented benchmark comprising 7,546 unique multiple-choice questions extracted from U.S. Nuclear Regulatory Commission (NRC) reactor operator licensing examinations covering 18 nuclear facilities. Each question is classified according to the NRC Knowledge and Abilities catalogs and accompanied by an official explanation serving as a reference for reasoning evaluation. Six LLMs were evaluated, with overall accuracy ranging from 34.0% to 73.9% across three distinct performance tiers. To assess reasoning quality, an LLM-based judge evaluated correctly answered responses using a multidimensional rubric. Although responses generally demonstrated strong problem comprehension, they scored lower in factual and procedural accuracy and distractor analysis, indicating that correct answers were not necessarily supported by technically sound justifications. Response clarity was also weakly indicative of technical quality. Furthermore, longer reasoning traces were associated with lower accuracy in both frontier reasoning models, suggesting that reasoning length may reflect question difficulty rather than improved problem-solving performance. Reasoning-token consumption may therefore provide an additional signal for identifying potentially unreliable responses. NEBench R1 establishes a benchmark for evaluating both answer accuracy and reasoning quality, providing a foundation for assessing the domain competence and reliability of LLMs in nuclear engineering.",
@@ -225,7 +175,7 @@
         "category": "科研"
       },
       {
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "tag": "arXiv cs.AI",
         "title": "“连锁思维”的可控性可以降低“连锁思维”的可监测性",
         "summary": "arXiv:2611.21799v1 Announce Type: new Abstract: Chain-of-thought (CoT) monitoring is a promising tool for detecting hidden goals, off-task behavior, and other failures in AI agents. One risk is that models could deliberately shape their reasoning to make it opaque to monitors. We stress-test this risk through persona-control training: supervised fine-tuning on mathematical reasoning traces rewritten in the voices of diverse personas. This induces a broader ability to control CoT, even though training contains no monitor-evasion examples. In covert side-task evaluations, traces in which a gpt-oss-20b model organism completes the hidden side task contain less monitorable evidence than the base model's. Averaged across evaluations and CoT lengths, weighted by side-task-success counts, the CoT monitorability metric g-mean$^2$ falls from 0.94 for the base model to 0.68 for the model organism without a hiding instruction, and to 0.22 when explicitly instructed to hide. In intervention evaluations, explicit hiding often drives monitorability near zero. The effect extends to a Kimi-K2.6 model organism in agentic environments, though hidden objectives requiring extended reasoning or longer trajectories remain more monitorable than simple single-step side tasks. We further discover that targeted transparency prompts can substantially recover monitorability, sometimes surpassing the base model. These model organisms provide a testbed for studying monitorability failures and potential mitigations. Our code can be found on https://github.com/yongzx/cot-control-model-organism.",
@@ -235,7 +185,7 @@
         "category": "科研"
       },
       {
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "tag": "arXiv cs.AI",
         "title": "在SAR车辆识别中，车辆的占比是多少？MSTAR 和 ATRNet-STAR 上的背景捷径、角度缺口和部分库",
         "summary": "arXiv:2611.21827v1 Announce Type: new Abstract: Deep networks score near 99% on the MSTAR vehicle benchmark, and the newer ATRNet-STAR benchmark was built to be harder. We ask how much of these scores comes from the vehicle itself. With a modern network (ConvNeXt-Small, 3 seeds) we first reproduce the known MSTAR result: with the central 96x96 pixels zeroed out, accuracy is still 73.3% (chance 10%). The same shortcut is present in ATRNet-STAR, which was collected across several scenes: with the vehicle removed, accuracy is 63.3% on the 40-class SOC split (chance 2.5%). Under the official scene-change split, the background stops helping and starts hurting. Accuracy is 22.8% on full chips and 30.8% when only the vehicle is shown. A SAR foundation model, SARATR-X, leans on the background more than ConvNeXt does (+4 to +6 points with the vehicle removed, in every seed) and does not solve the scene change. We then hold the amount of training data fixed and vary the depression angles used for training. Accuracy is set mainly by the gap to the nearest training angle: 57% at 15 degrees, 39% at 30 degrees and 26% at 45 degrees. Adding more training angles does not help. Finally, when most classes have training images at the test angle and a few do not, the missing classes do worse than when no class has them: 9.0% instead of 22.4% at a 45-degree gap. Most of their images are assigned to known classes. We recommend reporting background-only and target-only controls, and the angle gap, next to any accuracy figure. Code is public.",
@@ -245,7 +195,7 @@
         "category": "科研"
       },
       {
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "tag": "arXiv cs.AI",
         "title": "审计员在人工智能安全研究的端到端转录中难以发现蓄意破坏行为",
         "summary": "arXiv:2611.21832v1 Announce Type: new Abstract: As AI systems are increasingly used to automate AI R&D, misaligned systems could sabotage research intended to improve model safety and alignment. To stress-test defenses against such sabotage, we use a human expert as a proxy saboteur on AI safety research. We conduct a red-team/blue-team game where a human researcher runs AI safety experiments from scratch and auditors try to tell which were sabotaged and how. Given access to the full research transcript and the ability to run experiments, human auditors mostly fail to distinguish sabotaged from benign research: they achieve an AUROC of 0.59, not significantly better than chance, and fully identify the specific sabotage in only 17% of cases. Despite not being allowed to run experiments, the best frontier models outperform human auditors (Fable 5.1: AUROC 0.73, 32% full identification) within noise and weaker models perform comparably. When the saboteur chooses which experiments are attacked, rather than being required to sabotage every question given, sabotage identification drops further. Our results suggest that research sabotage by expert-level agents is difficult to detect with current auditing methods and provide a new setting for studying research sabotage.",
@@ -255,72 +205,122 @@
         "category": "科研"
       },
       {
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "tag": "arXiv cs.LG",
-        "title": "DeltaHarness：用于资源自适应工具执行的自进化线束",
-        "summary": "arXiv:2611.21688v1 Announce Type: new Abstract: Tool-using agents rely on execution harnesses to organize and schedule tool operations. The same task and resource description can conceal runtime conditions that reverse the latency ordering of valid execution plans. Resolving this uncertainty requires firsthand execution in the target setting. We introduce DeltaHarness, an execution-guided policy-search method that adapts agent harnesses from cold-start measurements. Its QHI loop uses the observed response to update runtime dispatch, revise physical plans, and select experiments for later proposals. An independent confirmation panel controls policy replacement. With fixed dispatch, a revised materialization policy reduces complete-delivery latency by 30.0% on one video-editing task across three fresh pairs. On held-out tasks, the evolved policies reduce latency by 8.2% relative to the best fixed plan in one seed and by 4.6% relative to the initial proposal in another.",
-        "url": "https://arxiv.org/abs/2611.21688",
+        "title": "基于神经网络的迟滞系统建模：从 Prandtl 和 Preisach 神经网络到神经马德隆和神经可塑性连续模型",
+        "summary": "arXiv:2611.23240v1 Announce Type: new Abstract: Hysteresis is a complex nonlinear phenomenon characterized by memory dependence, path dependence, and, in many physical systems, degradation, non-congruency, asymmetry, and rate dependence. This review examines the development and capabilities of Prandtl neural networks (PNNs), Preisach neural networks (PreisachNNs), generalized Prandtl neural networks (GPNNs), the neuro-Madelung model (NMM), extended Preisach neural networks (EPNNs), and dynamic plastic continuous neural networks (DPCNNs). Particular attention is given to their mechanisms for representing memory, network architectures, activation functions, training algorithms, treatment of deterioration and rate dependence, and applications to nonlinear structural and material systems. The PNN introduced hysteretic memory directly into neural activation through stop operators and demonstrated accurate nonlinear dynamic analysis of structures. Preisach-NNs subsequently extended this concept through an additional nonlinear hidden layer to represent non-Masing hysteresis. GPNNs introduced deteriorating-stop neurons to capture stiffness and strength degradation and non-congruent hysteresis. A different generalization was provided by the NMM, which combined Madelung's hysteresis rules with multilayer feedforward neural networks to represent diverse rate-independent and rate-dependent behaviors. These developments culminated in the EPNN, which combines deteriorating hysteretic operators, nonlinear neural mappings, and input-rate information to accommodate Masing and nonMasing, symmetric and asymmetric, congruent and noncongruent, and rate-independent and rate-dependent hysteresis.",
+        "url": "https://arxiv.org/abs/2611.23240",
         "source": "arXiv cs.LG",
         "region": "en",
         "category": "科研"
       },
       {
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "tag": "arXiv cs.LG",
-        "title": "AdaFlowLite：对异步移动数据的可扩展、非阻塞推理",
-        "summary": "arXiv:2611.21691v1 Announce Type: new Abstract: The rise of mobile devices equipped with numerous sensors, such as LiDAR and cameras, has driven the adoption of multi-modal deep intelligence for distributed sensing tasks, such as smart cabins and driving assistance. However, the arrival time of mobile sensory data vary due to modality size and network dynamics, which can lead to delays (if waiting for slow data) or accuracy decline (if inference proceeds without waiting). Moreover, the diversity and dynamic nature of mobile systems exacerbate this challenge. In response, we present a shift to \\textit{opportunistic} inference for asynchronous distributed multi-modal data, enabling inference as soon as partial data arrives. While existing methods focus on optimizing modality consistency and complementarity, known as modal affinity, they lack a \\textit{computational} approach to control this affinity in open-world mobile environments. % \\sysname pioneers the formulation of structured cross-modality affinity in mobile contexts using a hierarchical analysis-based normalized matrix. This approach accommodates the diversity and dynamics of modalities, generalizing across different types and numbers of inputs. Employing an multi-modal lightweight Swin Transformer (MMLST), \\sysname facilitates real-time and flexible data imputation, adapting to various modalities and downstream tasks without retraining. Experiments show that \\sysname significantly reduces inference latency by up to 80.4\\% and enhances accuracy by up to 62.1\\%, while achieving nearly a 50\\% reduction in energy consumption, outperforming status quo approaches. Also, this method can enhance LLM performance to preprocess asynchronous data.",
-        "url": "https://arxiv.org/abs/2611.21691",
+        "title": "GridForge：适用于英国 11 kV 地下配电电缆的开放式物理信息数字孪生和基准套件",
+        "summary": "arXiv:2611.23241v1 Announce Type: new Abstract: The UK distribution-cable monitoring sector is data-rich but framework-poor: each Distribution Network Operator (DNO) collects megabytes of telemetry per asset per day, but there is no public benchmark dataset, no shared reference model, and no commonly agreed evaluation protocol for benchmarking sectoral, data-intensive models for operational decision support; notably for maintenance planning and prioritisation. We address this gap with GridForge, an open-source physics-informed digital twin and benchmark suite for fault diagnosis and prediction, integrating four building blocks: (i) a verified steady state and transient thermal model based on IEC 60287 and IEC 60853; (ii) a calibrated synthetic dataset of 64 cables (covering 320 cable-years) representing four canonical UK 11 kV thermal archetypes and four condition modes; (iii) a Physics-Informed Neural Network (PINN) surrogate that satisfies the algebraic balance defined by IEC 60287 during training and reaches an RMSE of 0.148 {\\deg}C on an independent held out set against the reference analytical oracle; and (iv) a five-task benchmark suite that includes three reference baseline models (pure physics, gradient-boosted trees, and the PINN). All numerical parameters are sourced from public standards, the code is licensed under the MIT licence, and the trained PINN converges in only two minutes (as run on the computing platform in Section 10.1), enabling independent verification by DNO engineering and research practitioners. At present only the virtual-sensor task (T4) discriminates between the reference baselines; the other tasks tie or are undefined on this test split, so extending the baselines with task-specific logic is a priority future enhancement. For open validation, the dataset, test sets and models are made available at https://github.com/mlily2024/Gridforge",
+        "url": "https://arxiv.org/abs/2611.23241",
         "source": "arXiv cs.LG",
         "region": "en",
         "category": "科研"
       },
       {
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "tag": "arXiv cs.LG",
-        "title": "TIBECG：用于ECG波形发布中导联特异性人口统计隐私的时间信息瓶颈",
-        "summary": "arXiv:2611.21694v1 Announce Type: new Abstract: Transmitting an electrocardiogram (ECG) waveform can expose demographic information beyond an intended diagnostic task. We evaluate TIBECG, an architectural temporal information bottleneck, on individual leads extracted from hospital twelve-lead recordings. A 2,302,337-parameter processor varies its latent length while retaining the same nine-score consistency objective, without age or sex labels in protector fitting. Across 6,386 recordings, ten folds, 12 leads and 21 lengths, retrospective selections retained at least 95% of each lead's clean macro-F1. Their weaker age/sex interval gain exceeded the best eligible conventional transformation on all leads, by a median 22.08 percentage points. The implemented sampling-rate comparison shows that direct downsampling usually suppresses demographic inference more strongly but at a larger loss of diagnostic utility, whereas TIBECG favors utility preservation. Selection stability also varies by lead. Lower latent Kullback-Leibler (KL) divergence does not reliably rank residual sex leakage at a fixed length. These findings support lead-specific evaluation of waveform processing, not validated consumer deployment or expert-readable reconstruction. When the waveform-input diagnostic classifier is hosted as part of a proprietary cloud service rather than deployed on the device, waveform transmission is required to obtain its scores.",
-        "url": "https://arxiv.org/abs/2611.21694",
+        "title": "尖峰神经网络的仿生尖峰编码和优化",
+        "summary": "arXiv:2611.23242v1 Announce Type: new Abstract: Spiking Neural Networks (SNNs) offer theoretical energy-efficiency advantages over conventional deep networks, but realizing these advantages on vision tasks requires sparse spike representations that naive rate-coding methods fail to provide. We combine biologically motivated spike-encoding schemes with two training improvements: Rouser adaptive-threshold surrogate gradients and Kronecker-Factored Approximate Curvature (K-FAC) second-order optimization. The spike encoding schemes experimented with are rate coding, latency coding, DVS-style delta modulation, and Difference-of-Gaussians (DoG) filtering. Experiments on MNIST and Fashion-MNIST demonstrate that biologically inspired encoders yield the largest accuracy gains in capacity-constrained regimes and serve as an effective parameter-efficiency lever. DoG and delta modulation encoders produce significantly sparser spike trains than rate coding. K-FAC yields modest but consistent accuracy improvements over Adam-trained baselines, and Rouser's learnable per-neuron thresholds improve Fashion-MNIST accuracy from 87.37% to 88.13% by enabling homeostatic firing-rate regulation. Biologically grounded pre-processing methods can help close the accuracy gap between SNNs and non-spiking baselines without increasing model size.",
+        "url": "https://arxiv.org/abs/2611.23242",
         "source": "arXiv cs.LG",
         "region": "en",
         "category": "科研"
       },
       {
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "tag": "arXiv cs.LG",
-        "title": "视觉网络中的逐层学习率缩放：有效率识别、幂平均聚合和预算依赖性",
-        "summary": "arXiv:2611.21696v1 Announce Type: new Abstract: Layerwise learning-rate scaling assigns different learning rates to different parts of a network. Although established in fine-tuning pretrained models, its effects in vision networks trained from scratch are commonly assessed by training each candidate recipe. We show that, in this setting, the rate-related component of a layerwise strategy is well summarized by an effective learning rate computable directly from its multiplier profile. Across matched-control comparisons, changes in test accuracy closely track changes in training loss (r = -0.996), which supports an optimization-progress explanation of the short-budget rate effect. Increasing the untuned base learning rate tenfold shifts the rate-matched contrast upward in all six tested architectures (p = 0.016) and increases the number of architectures in which a published discriminative schedule, excluded from model fitting, outperforms the uniform control from two to five of six (p = 0.031). Within the evaluated strategy space, a parameter-weighted power mean with exponent 0.35 (95% confidence interval [0.20, 0.50]) accounts for 42.6% of within-architecture variance, compared with 36.4% for the arithmetic mean. Ranking candidates by this scalar without training improves the selected candidate's mean percentile rank from the 26th to the 10th and reduces its mean accuracy shortfall relative to the best candidate from 3.70 to 1.12 points. The rate-related effect decays as the training budget increases; relative to tuned baselines, the overall strategy effect falls within the prespecified practical-equivalence margin in two of three architectures. A separate grouping-related contrast can persist at long budgets, although its direction and magnitude depend on the architecture.",
-        "url": "https://arxiv.org/abs/2611.21696",
+        "title": "戈曼斯的不可分流猜想：人工智能辅助反例发现的剖析",
+        "summary": "arXiv:2611.23244v1 Announce Type: new Abstract: Goemans conjectured that any fractional single-source flow could be converted into an unsplittable flow without increasing total cost and while increasing any arc load by at most the largest demand. Recently, Dmitry Rybin announced a seven-vertex counterexample found through an interaction with ChatGPT, which disproved this long-standing conjecture. However, the interaction did not reveal why this particular topology and its demand, fractional-flow, and cost choices work together, whether the example belongs to a broader family, or which structural features determine where counterexamples can occur. It also left unclear why the AI-assisted search succeeded where earlier human efforts had not. In this paper, we develop a forward counterexample construction pipeline. It starts from an arborescence on which failure is impossible and adds terminal-entering shortcut arcs. The resulting load constraints define a finite set of admissible route choices; their convex hull, the conflict polytope, yields exact conditions for demands, fractional flows, and costs. Starting from a simple arborescence, the pipeline selects Rybin's topology and characterizes all counterexamples it supports. Experiments further demonstrate the pipeline's transferability: when instructed to follow it while varying the initial arborescence and shortcut placement, ChatGPT produced counterexamples on topologies genuinely different from Rybin's and found valid constructions starting from 93 other rooted arborescence shapes. The theory also explains why the original example was difficult to discover through blind enumeration and suggests that Rybin's interaction lies between blind enumeration and a complete theory-guided construction.",
+        "url": "https://arxiv.org/abs/2611.23244",
         "source": "arXiv cs.LG",
         "region": "en",
         "category": "科研"
       },
       {
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "tag": "arXiv 材料",
-        "title": "使用经典和机器学习的原子间势能研究LiF的动力学和输运",
-        "summary": "arXiv:2611.21900v1 Announce Type: new Abstract: We perform molecular dynamics simulations of molten Lithium Fluoride, comparing the classical Buckingham and Born-Huggins-Mayer potentials with machine-learnt interatomic potentials - the MACE-MP-0b3 (small) foundation model potential, and a fine-tuned version thereof. We find that the MACE-MP-0b3, out-of-the-box, is able to accurately reproduce the experimental shear viscosity across the liquid state comparable with polarisable potentials despite not itself being polarisable. Previous viscosities computed using classical potentials are under-predicted, which has previously been attributed to a suppressed melting temperature. Prompted by this we compare the melting points of these potentials. We find that the machine-learnt potentials address the significant underestimation of the melting point of the classical potentials, though the refined potential and the foundation model differ significantly between themselves. We probe the microscopic structure and dynamics of each model to further elucidate the considerable change in viscosity between classical and machine-learnt potentials. We find that, despite their lower melting temperature, classical potentials produce considerably stiffer, higher frequency, single-particle and collective charge-transport dynamics on account of their fixed charges. However, in the long-wavelength limit, the many-body machine-learnt potentials feature more elastic collective motion that governs the diffusion of momentum and is therefore responsible for the enhanced shear viscosity.",
-        "url": "https://arxiv.org/abs/2611.21900",
+        "title": "交叉探测范德华多铁性",
+        "summary": "arXiv:2611.23337v1 Announce Type: new Abstract: Multiferroic materials, with coupled electric and magnetic orders, hold the potential to enable low-power memory and logic devices by replacing electrical currents with electric fields for magnetic switching. Reducing the dimensionality of multiferroics, from 3D to 2D, has opened new frontiers in this already burgeoning field by enabling unprecedented control over magnetoelectric coupling that is beyond the reach of bulk counterparts, owing to reduced electrostatic screening and enhanced quantum fluctuations at the atomically thin limit. A notable example is a few-layer NiI2 multiferroic, which exhibits coexisting chiral spin textures and (anti)ferroelectricity, accompanied by strong magnetoelectric coupling; by simultaneously breaking time-reversal and spatial-inversion symmetry, NiI2 shows new physical properties such as unique mutual control of chiral magnetism and polarization with giant magnetoelectric coupling, ultrafast electromagnon excitations and odd-parity p-wave magnetism. However, there are experimental challenges in unambiguously identifying intrinsic multiferroicity. This Review critically examines the current landscape of 2D multiferroic materials, with an emphasis on experimental methodologies rather than material taxonomy. We assess different conventional probes for magnetism and ferroelectricity and identify key limitations in single-technique approaches. We emphasize the importance of magneto-opto-electric cross-correlative measurements in establishing intrinsic multiferroic behaviour and outline future research directions for both fundamental studies and device applications.",
+        "url": "https://arxiv.org/abs/2611.23337",
         "source": "arXiv 材料",
         "region": "en",
         "category": "科研"
       },
       {
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "tag": "arXiv 材料",
-        "title": "quantEM：从可微物理到神经先验的定量电子显微镜分析",
-        "summary": "arXiv:2611.21903v1 Announce Type: new Abstract: Quantitative electron microscopy includes imaging, diffraction, spectroscopy, and tomography measurements, and the analysis of these measurements increasingly requires solving inverse problems with physical forward models. Open-source software has made many of these analyses widely available, but most packages are organized around a single modality, so that multimodal analyses require moving data between packages, and new methods cannot easily reuse the physical models and optimizers of existing ones. Here we present quantEM, an open-source Python package for quantitative electron microscopy that uses PyTorch tensors for computation and automatic differentiation, and Zarr for storage. We implement each analysis method by writing a differentiable forward model and choosing a representation, loss function, constraints, and optimizer from a library of components, so that every method runs on CPUs and GPUs, can be saved and resumed, and uses the same calibrated data structures and visualization tools. We describe the current modules, including orientation and strain mapping, direct and iterative ptychography, tomography with neural representations, and X-ray and electron energy-loss spectroscopy, and show how we assemble combined methods such as ptychographic tomography from existing components. quantEM is available under the MIT license, together with documentation, tutorials, and curated example datasets.",
-        "url": "https://arxiv.org/abs/2611.21903",
+        "title": "迈向低温 AI 硬件：使用 3 位铁电 Hf0.5Zr0.5O2 电容器在 4 K 下实现超过 99% 的精度内存计算",
+        "summary": "arXiv:2611.23489v1 Announce Type: new Abstract: High-accuracy cryogenic hyperdimensional computing (HDC) is demonstrated using Hf0.5Zr0.5O2 (HZO) ferroelectric capacitors (FeCAPs) as multilevel analog memories for capacitive compute in-memory (CIM) architectures. On the ISOLET spoken-word dataset, FeCAP-stored vectors achieve up to 92% classification accuracy at 4 K, while charge-domain matrix-vector multiplication (MVM) exhibits near-ideal behaviour with linearity of 1 and error probability below 1% for 4x4 and 4x8 configurations, operating below 3 V. Unlike the performance at 300 K, HDC and CIM at 4 K remains resilient to electric-field-cycling-induced fatigue, thanks to enhanced cryogenic device characteristics, including reduced state variability, strongly suppressed leakage current and stable retention, as well as 78% faster switching. Furthermore, these multibit FeCAPs exhibit endurance beyond 1E9 cycles with polarization degradation below 8%, preserving multilevel integrity. Benefits can also be observed at 300 K, following cooldown and wake-up pulsing at 4 K and subsequent warming up. These results establish multibit FeCAPs as a highly reliable, ultra-low-energy, and accurate analog CIM platform for future cryogenic AI-computing hardware.",
+        "url": "https://arxiv.org/abs/2611.23489",
         "source": "arXiv 材料",
         "region": "en",
         "category": "科研"
       },
       {
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "tag": "arXiv 材料",
-        "title": "材料科学的权重空间编程",
-        "summary": "arXiv:2611.22013v1 Announce Type: new Abstract: A materials discovery campaign often begins with almost no measurements of the property it is searching for, and the models that rank candidates or screen the output of a generator then have to be built from those first few labels. Following recent work on weight-space programming, in which a language model writes the weights of a small network directly as text, we show that a general-purpose model, given the task in words, the names of the inputs and a network of 16 hidden units with every weight set to zero, can provide this starting point by filling in all of the weights from what it has learned about materials. With no labels, the networks of the strongest model rank experimental alloys at Spearman co-efficient = 0.64 to 0.79, where the best of five simple descriptors reaches 0.47 to 0.62. They rank the bulk modulus of crystals added during generative discovery loops at 0.95, where the inverse volume per atom reaches 0.89, and 35 phase-equilibrium targets computed with Thermo-Calc at a mean of 0.67, close to the 0.70 of an extrapolation from calculated binary and ternary data. As the prior mean of a Gaussian process they raise the ranking at five labels from 0.35 to 0.69 on alloys and from 0.15 to 0.95 on crystals, and they lower the regret of Bayesian optimization significantly on 4 of 5 experimental tasks and on 13 to 16 of 33 computed targets, depending on how multiple tests are corrected, without raising it significantly on any. The same networks also serve as the mean of a Bayesian neural network and as a screen for the samples of two crystal generators, where they do as well as standard models trained on 400 labeled structures. The gain is confined to the first tens of labels and to targets that no rule or sub-system extrapolation already ranks.",
-        "url": "https://arxiv.org/abs/2611.22013",
+        "title": "通过高通量成对合成预测固态反应起始温度",
+        "summary": "arXiv:2611.23527v1 Announce Type: new Abstract: Solid-state synthesis still relies on heuristics to choose reaction temperatures. The most widely used, Tammann's rule, places reaction onset at two-thirds of the lowest precursor melting point, but has never been systematically tested. Using an automated laboratory, we heated 1,035 pairwise combinations of 46 common precursors at their Tammann temperatures and identified the products by x-ray diffraction. Only 25% of pairs formed products containing both precursors. Combining these outcomes with text-mined literature syntheses, we trained log-normal accelerated failure time models that treat each fixed-temperature experiment as a bound on the unknown onset temperature. On 26 reactions with onset temperatures measured by in situ x-ray diffraction, a three-descriptor model reduced the mean absolute error from 131{\\deg}C (Tammann's rule) to 88{\\deg}C; adding 29 further physicochemical descriptors did not improve the model. Reaction onset can therefore be predicted from routine pass/fail synthesis outcomes, and predictions will improve as such data accumulates.",
+        "url": "https://arxiv.org/abs/2611.23527",
         "source": "arXiv 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "arXiv 材料",
+        "title": "预训练通用机器学习力场在 ZrO2 相变预测中的应用",
+        "summary": "arXiv:2611.23535v1 Announce Type: new Abstract: Pretrained universal machine-learning force fields can reduce the cost of finite-temperature molecular dynamics relative to density functional theory. However, most benchmarks test only static properties and do not assess whether these models reproduce the correct phase-transition sequence. Here, we benchmark ten open-source universal machine-learning force fields for zirconia (ZrO$_2$) using phonon dispersion calculations and variable-cell isothermal-isobaric molecular dynamics. Zirconia is a useful test because it has three thermodynamically stable crystalline phases prior to melting, following the sequence monoclinic-tetragonal-cubic. Four models reproduce this sequence: 7net-l3i5, MatterSim-v1.0.0-1M, MACE-mpa, and MACE-D3. Models with orthorhombic-tetragonal energy errors above about 10 meV/atom (7net-0, CHGNet, and MACE) instead produce an orthorhombic intermediate and predict monoclinic-orthorhombic-tetragonal-cubic-liquid upon heating. ORB-based models fail to sustain stable variable-cell dynamics because their phonon frequencies are compressed by 30-60% relative to the density functional theory reference. Across all ten models, two ground-state diagnostics predict finite-temperature behavior. Relative polymorph energetics should agree with the matched density functional theory reference within about 6 meV/atom, and the phonon spectrum should not show systematic softening. These diagnostics are practical screening metrics for assessing pretrained force fields for phase-transition predictions.",
+        "url": "https://arxiv.org/abs/2611.23535",
+        "source": "arXiv 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "arXiv 应用物理",
+        "title": "热载流子和热吸收体太阳能电池中的非理想吸收体：损耗和热回收",
+        "summary": "arXiv:2611.24194v1 Announce Type: new Abstract: The hot carrier solar cell exhibits a photovoltaic conversion efficiency limit of 85.4%. Among the idealizations necessary to achieve this efficiency, it has traditionally been considered essential that the electrons absorbing sunlight do not end up transferring the captured energy to the crystal lattice. In this work, we argue that such a requirement is not necessary if the absorber is thermally insulated. In our analysis, we also consider the possibility of ohmic losses in the absorber due to finite electrical conductivity. We also demonstrate that such losses, delivered as heat, can be partially recycled into electrical work with an efficiency that is given by the Carnot factor. The high efficiencies reported here are thermodynamic limits obtained with ideal energy-selective contacts and negligible parasitic contact conductance, not projections of practical device efficiency. Our work includes a sensitivity analysis for finite contact-mediated heat leakage, and the results are presented as design targets.",
+        "url": "https://arxiv.org/abs/2611.24194",
+        "source": "arXiv 应用物理",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "arXiv 应用物理",
+        "title": "适用于高频应用的渐变基极 III 族氮化物 HBT 的设计和建模",
+        "summary": "arXiv:2611.24790v1 Announce Type: new Abstract: This work analyzes the high-frequency performance constraints of AlGaN/GaN heterojunction bipolar transistors (HBTs) and proposes a novel band-engineered graded base N-polar AlGaN/GaN HBT and evaluates the RF performances. Unlike conventional p-GaN base designs, we propose a graded base in the N-polar orientation which offers polarization-induced hole accumulation with quasi-electric field-assisted minority carrier transport. The proposed design simultaneously mitigates the longstanding current crowding, Webster effect, and conventional base resistance limitations. Using well-calibrated two-dimensional TCAD simulations, the proposed compositionally graded base HBT projects peak f_T/f_{max} of 190/200 GHz with a power density (V_{br}I_{max}/8 > 20 W/mm), offering a promising pathway toward simultaneous high-frequency and high-power GaN millimeter-wave electronics.",
+        "url": "https://arxiv.org/abs/2611.24790",
+        "source": "arXiv 应用物理",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "arXiv 应用物理",
+        "title": "光神经网络应该通过功能来评估，而不仅仅是物理",
+        "summary": "arXiv:2611.23610v1 Announce Type: cross Abstract: Optical neural networks (ONNs) are attracting significant attention as alternative platforms for machine learning (ML). In an ONN, an optical module often takes over part of the computation inside a digital ML pipeline. How much of the task does the optical module itself perform, and how much does it contribute to any claimed system-level advantages, such as throughput or energy? This paper offers a simple, function-oriented evaluation methodology. Whatever its internal physics, the optical module appears to the surrounding digital pipeline as a mapping between real-valued tensors. We therefore evaluate it in three steps: (i) define its boundary in the pipeline, as real-valued tensors in and out; (ii) replace it with standard digital modules to identify those that match the optical system's performance on the same task and metric; and (iii) state system-level claims, such as speed or energy, per inference against the performance-matched digital module. We summarize steps (i) and (ii) in an Expressivity Card and demonstrate its use on published ONN systems. This helps isolate the optical module's contribution and provides a concrete digital reference for assessing its claimed system-level advantages, without the need to understand the physics. While we focus on optical systems as the most prominent example, the same approach applies to any physical analog computing platform used in ML, wherever a physical module takes over part of a digital pipeline.",
+        "url": "https://arxiv.org/abs/2611.23610",
+        "source": "arXiv 应用物理",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "arXiv 应用物理",
+        "title": "GaAs/AlGaAs 中红外集成声光相位调制",
+        "summary": "arXiv:2611.24530v1 Announce Type: cross Abstract: We demonstrate a mid-infrared (7.5-10 um) integrated acousto-optic phase modulator operating at 460MHz based on a GaAs/AlGaAs heterostructure. The combination of broad mid-infrared transparency and piezoelectric properties of GaAs based structures allows monolithic integration of all the device functions (electro-acoustic transduction and acousto-optic interaction) on a single material platform. Addressing the challenge presented by comparable mid-infrared and acoustic wavelengths, simultaneous propagation and confinement of surface acoustic waves and guided light is achieved using a deep-etched sub-wavelength grating. We develop a comprehensive and quantitative simulation framework to design the modulator devices, characterize their acoustic properties in a heterodyne vibrometer and perform a full, quantitative analysis of the device performance by inserting them in an integrated Mach-Zehnder interferometer. Remarkable agreement with simulations validates the proposed design flow, and opens the way to improved integrated acousto-optic devices operating in the longer end of the mid-infrared.",
+        "url": "https://arxiv.org/abs/2611.24530",
+        "source": "arXiv 应用物理",
         "region": "en",
         "category": "科研"
       }
@@ -329,39 +329,9 @@
       {
         "date": "2026-11-19",
         "tag": "PANews",
-        "title": "Bithumb将在韩元市场上线KNTQ代币",
-        "summary": "PANews 11月19日消息，据官方公告，韩国加密交易所Bithumb将在韩元市场上线KNTQ代币，具体交易开放时间以官方公告为准。",
-        "url": "https://www.panewslab.com/zh/articles/01a1f1bf-3117-77b6-a0df-c1acd5d4dd53",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "PANews",
-        "title": "Web3Auth：社交登录创建的部分旧版钱包受影响，资产追回仍在进行",
-        "summary": "PANews 11月19日消息，Web3Auth发布安全事件调查更新称，称11月6日确认其基础设施存在安全问题，影响部分嵌入式钱包，导致部分账户遭未经授权访问，受影响的主要是通过社交登录并使用旧版Web3Auth基础设施创建的钱包，包括Keplr、Torus Wallet及少数其他应用。Web3Auth已停用受影响服务并移除旧功能，12日恢复现有用户访问前增加身份验证检查和安全控制，并正与Keplr及安全专家追踪和追回受影响用户资产。旧版SDK已停止支持，使用相关版本的应用需升级。旧网络新用户登录和所有网络的Facebook登录仍暂停，预计11月23日恢复旧网络注册功能。",
-        "url": "https://www.panewslab.com/zh/articles/01a1f1bd-00bd-72e4-9eea-54cad0acf025",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "PANews",
-        "title": "StraitsX、华侨银行与渣打完成代币化存款互操作性概念验证",
-        "summary": "PANews 11月19日消息，据The Block报道，StraitsX、华侨银行（OCBC）和渣打银行已完成一项概念验证，检验不同银行发行的代币化存款网络之间的互操作性。该验证在新加坡金融管理局BLOOM计划下进行，测试由StraitsX结算基础设施协调OCBC与渣打银行各自代币化存款生态之间的支付。验证覆盖支付发起、合规筛查、流动性检查、结算和确认等环节，相比传统模式减少了对双边预融资的需求。在受控测试中，各方在标准银行营业时间之外完成美元支付流程，显示互操作基础设施可在几分钟内实现跨生态的“全天候”价值转移。各方表示，进一步开发和商业实施需评估法律、监管、运营和商业安排。",
-        "url": "https://www.panewslab.com/zh/articles/01a1f1b6-7d40-7148-a595-90f8b4dc2b2e",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "PANews",
-        "title": "Anthropic 定价 83 美元，史上最大 IPO 今晚登场，谁将一夜暴富？",
-        "summary": "Anthropic 以每股 83 美元定价，募资约 813 亿美元，成为史上最大 IPO。七位联创每人身价约 200 亿美元，亚马逊 130 亿投入现值约 1600 亿，约 4250 名员工身家过百万；上市前夜 Hugging Face、xAI 联创等联署称其\"不是一家安全的 AI 公司\"。",
-        "url": "https://www.panewslab.com/zh/articles/01a1f1b1-0587-74bf-8602-c209f2607b75",
+        "title": "币安完成VELODROME代币合并至AERO及AERO合约置换",
+        "summary": "PANews 11月19日消息，据官方公告，币安现已完成Velodrome Finance（VELODROME）代币合并至Aerodrome（AERO）及AERO合约置换，并开放新AERO代币的充值、提现业务。AERO的合约置换已按1:1的比例进行。",
+        "url": "https://www.panewslab.com/zh/articles/01a1f30e-43d4-7728-b1d2-6bc4ac835a6e",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -369,9 +339,59 @@
       {
         "date": "2026-11-19",
         "tag": "Cointelegraph",
-        "title": "特朗普政府宣布设立新中心，以遏制诈骗款项",
-        "summary": "Americans reported more than $17.7 billion in online fraud losses in 2025.",
-        "url": "https://cointelegraph.com/news/trump-administration-unveils-new-center-choke-off-scam-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "新加坡与批发 CBDC 达成 7750 万美元代币化票据销售协议",
+        "summary": "MAS issued the bills directly on its test network, which it plans to rename SG Digital Ledger and use for settlement beyond the trials.",
+        "url": "https://cointelegraph.com/news/mas-issues-77m-tokenized-bills-singapore-dollar-test-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "PANews",
+        "title": "1inch团队投资资金沉睡一年后转移8977枚ETH，约合1619万美元",
+        "summary": "PANews 11月19日消息，据链上分析师Ai姨监测，1inch Team Investment Fund（团队投资资金）沉睡一年后，20分钟前向多签地址0x9ee…BE185转移8,977.52枚ETH，价值1,618.7万美元，用途未知。2025年2月至3月，其以均价2,589.78美元买入11,198枚ETH，价值2,900万美元，目前浮亏888万美元。",
+        "url": "https://www.panewslab.com/zh/articles/01a1f300-af09-73da-b874-8e07ba49bf47",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "PANews",
+        "title": "某新地址三小时前从Binance提出1953枚ETH，价值351万美元",
+        "summary": "PANews 11月19日消息，据链上分析师Ai姨监测，新地址0x61b…543D0三小时前从Binance提出1,953枚ETH，价值351万美元，提出价格1,797.41美元。",
+        "url": "https://www.panewslab.com/zh/articles/01a1f2fb-1975-7606-b427-eda19a048da6",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Cointelegraph",
+        "title": "2026 年净流出额突破 $2.5B 比特币 ETF 资产跌至三个月低点",
+        "summary": "US spot Bitcoin ETFs lost $306.4 million Wednesday, pushing their combined assets to $77.7 billion as Bitcoin briefly traded below $63,000.",
+        "url": "https://cointelegraph.com/markets/bitcoin-etf-assets-three-month-low-78-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "PANews",
+        "title": "币安Alpha将于今天18:00开放空投领取并交易，门槛为250个积分",
+        "summary": "PANews 11月19日消息，币安在X平台发文称，请大家准备今天18:00（UTC+8）领取币安Alpha空投并交易。持有至少250个币安Alpha积分的用户可申领代币空投。先到先得，直至空投池领取完毕或活动结束。具体空投币种敬请关注币安官方渠道。",
+        "url": "https://www.panewslab.com/zh/articles/01a1f2dd-f451-7655-96a8-14b5a60f28a4",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Cointelegraph",
+        "title": "BTCPay服务器针对5个安全漏洞发布紧急更新",
+        "summary": "The EU’s cybersecurity service said the flaws could let attackers to run malicious code remotely on vulnerable servers without logging in.",
+        "url": "https://cointelegraph.com/news/btcpay-server-emergency-update-nginx-security-flaws?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
@@ -379,9 +399,9 @@
       {
         "date": "2026-11-19",
         "tag": "Cointelegraph",
-        "title": "会议纪要显示，美联储官员认为10月份的利率维持是“侥幸”。",
-        "summary": "The latest FOMC minutes suggest greater appetite for higher rates than the Fed’s 10–2 vote indicated, with markets now pricing in a December hike.",
-        "url": "https://cointelegraph.com/markets/fed-officials-saw-october-rate-hold-as-close-call-minutes-show?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "纳斯达克期货在 Anthropic 首次亮相之前上涨，比特币重新测试 6.2 万美元",
+        "summary": "Bitcoin climbed back above $63,500 after its second dip to $62,000 this week, while Anthropic priced its record $81.3 billion IPO at $83 a share.",
+        "url": "https://cointelegraph.com/markets/bitcoin-retests-62k-nasdaq-futures-anthropic-debut?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
@@ -389,19 +409,39 @@
       {
         "date": "2026-11-19",
         "tag": "CoinDesk",
-        "title": "另一家美国上诉法院驳回了Kalshi的诉求，为该行业带来了法律阻力",
-        "summary": "Despite a Commodity Futures Trading Commission demand that prediction markets return to operating in all 50 states, federal courts continue to get in the way.",
-        "url": "https://www.coindesk.com/policy/2026/11/18/another-u-s-appellate-court-goes-against-kalshi-building-the-industry-s-legal-headwinds",
+        "title": "美联储加息可能是一个错误。这就是为什么",
+        "summary": "Experts argue that the Fed is looking at the wrong data as it pushes for more interest-rate hikes, with falling gasoline and energy prices suggesting inflation pressures are already easing.",
+        "url": "https://www.coindesk.com/markets/2026/11/19/fed-s-push-for-more-rate-hikes-leans-on-backward-looking-data-as-gas-prices-slide-analysts-argue",
         "source": "CoinDesk",
         "region": "en",
         "category": "web3"
       },
       {
-        "date": "2026-11-18",
+        "date": "2026-11-19",
         "tag": "CoinDesk",
-        "title": "加密货币交易所Kraken的所有者Payward正在收购其首席执行官的风险投资公司Tribe",
-        "summary": "Sethi, who was appointed co-CEO of Kraken in October 2024, is also the chairman of Tribe Capital.",
-        "url": "https://www.coindesk.com/business/2026/11/18/payward-the-owner-of-crypto-exchange-kraken-is-buying-its-ceo-s-venture-capital-business-tribe",
+        "title": "数据显示，以太坊区块建设者在 340 万美元的金库黑客攻击中获得最大收益",
+        "summary": "An automated trading bot copied the attack on K3 Capital's sBOLD vault, taking more than half the funds and paying most of its proceeds to get its transactions processed first.",
+        "url": "https://www.coindesk.com/tech/2026/11/19/ethereum-block-builders-received-the-most-in-a-usd3-4-million-vault-hack-data-shows",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "CoinDesk",
+        "title": "出售最后一枚比特币的比特币矿商警告称，其 12 亿美元人工智能交易可能出现现金短缺",
+        "summary": "Hyperscale Data needs another $74.8 million to complete its Michigan data center project, even after selling its remaining bitcoin and raising fresh debt.",
+        "url": "https://www.coindesk.com/markets/2026/11/19/bitcoin-miner-that-sold-its-last-btc-warns-it-may-run-short-of-cash-for-usd1-2-billion-ai-deal",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "CoinDesk",
+        "title": "CZ 表示代币化的 Anthropic 将在 IPO 当天登陆 BNB Chain",
+        "summary": "Changpeng Zhao says Anthropic-linked tokens from bStocks, Ondo and xStocks will hit BNB Chain on day one of the AI giant’s Nasdaq debut. This follows a $500 million pre-IPO rush that comes with notable fine print.",
+        "url": "https://www.coindesk.com/markets/2026/11/19/cz-says-tokenized-anthropic-is-coming-to-bnb-chain-on-ipo-day",
         "source": "CoinDesk",
         "region": "en",
         "category": "web3"
@@ -413,26 +453,6 @@
         "summary": "Ledger says its hardware implant investigation has confirmed tampered devices in Berlin and is examining two suspected units in Dubai, as the incident spreads beyond Southeast Asia.",
         "url": "https://decrypt.co/383586/ledger-confirms-tampered-bitcoin-wallets-berlin-spreads-beyond-asia",
         "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Cointelegraph",
-        "title": "以下是今天加密货币领域发生的事情",
-        "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Cointelegraph",
-        "title": "Tether引用《大空头》来抨击标普对USDT储备金风险的看法",
-        "summary": "S&P Global made no downward adjustment in its latest Stablecoin Stability Assessment, as 5 is the lowest available score.",
-        "url": "https://cointelegraph.com/news/tether-usdt-sp-stability-assessment-reserve-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
       },
@@ -465,55 +485,15 @@
         "source": "Decrypt",
         "region": "en",
         "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "CoinDesk",
-        "title": "一家估值15亿美元的加密货币初创公司正以华尔街的策略挑战Hyperliquid",
-        "summary": "Variational and its investors are betting that the future of onchain trading will look more like a traditional brokerage than a crypto exchange.",
-        "url": "https://www.coindesk.com/business/2026/11/18/a-usd1-5-billion-crypto-startup-is-taking-on-hyperliquid-with-a-wall-street-playbook",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "CoinDesk",
-        "title": "加密货币多空观点：加密货币交易所不应兼作保管库",
-        "summary": "A single breach moved billions out of Binance in minutes, exposing how much client money sits with the venue that trades it. Darren Jordan of Komainu argues institutions should keep trading and custody separate, as traditional markets have for decades, and sets out the questions to ask about where assets are held.",
-        "url": "https://www.coindesk.com/coindesk-indices/2026/11/18/crypto-long-and-short-crypto-exchanges-shouldn-t-double-as-the-vault",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
       }
     ],
     "科技": [
       {
         "date": "2026-11-19",
         "tag": "IT之家",
-        "title": "2027 款极氪 7X 将于 11 月 27 日广州车展上市，预售 22.98 万元起",
-        "summary": "IT之家 11 月 19 日消息，极氪汽车今日宣布，2027 款极氪 7X 将于 11 月 27 日广州车展上市。该车已经于 11 月 5 日开启预售，价格为 22.98 万元起。 IT之家汇总主要参数如下（同配置省略）： 后驱 Max 版：75kWh 神盾金砖电池、5.5C 快充、（SoC 10%-80%）充电时间 10.5min、CLTC 续航里程 620km、900V 电机 / 电控 / 热管理、CCD 电磁减振、千里浩瀚 H7、370kW 电机、百公里加速 5.4 秒。 后驱 Max+ 版：85kWh 神盾金砖电池、5.5C 快充、充电时间 10.5min、680km 续航；可选 103kWh 麒麟电池、6C 快充、10min 充电时间、802km 续航，电机不变的情况下百公里加速从 5.4 秒提升到 5.1 秒。 四驱 UItra 版：全栈 900V 高压架构、103kWh 麒麟电池、6C 快充、10min 充电时间、715km 续航、585kW 电机、百公里加速 2.98 秒、闭式空气悬架系统。 申报信息显示，该车长宽高为 4825mm×1930mm×1666mm/1656mm，轴距 2925mm。此外，2027 款极氪 7X 外观风格没有改变，将带来新的外观内饰颜色，新增 85kWh 金砖电池版本车型。",
-        "url": "https://www.ithome.com/1/029/195.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "爱范儿",
-        "title": "刚拒绝黄仁勋回归，英伟达官宣全员加薪，热门接班人曝光",
-        "summary": "英伟达何去何从 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1690288?utm_source=rss&utm_medium=rss&utm_campaign=",
-        "source": "爱范儿",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "IT之家",
-        "title": "谷歌出手：Play 应用商店 2027 年 4 月起安卓应用必须适配折叠屏手机",
-        "summary": "IT之家 11 月 19 日消息，谷歌昨日（11 月 18 日）发布公告，宣布 Google Play 全新“自适应应用质量标准”，将折叠屏和大屏体验从“加分项”变成“准入门槛”， 并计划从 2027 年 4 月开始，开发者必须满足折叠屏和大屏设备的最低适配要求，否则应用将无法在 Google Play 发布或更新。 IT之家援引博文介绍，谷歌将应用适配划分为三个层级： 第 3 层级：自适应就绪（Tier 3：Adaptive ready）： 应用必须填满可用的显示区域，不采用信箱模式或兼容模式。应用必须在旋转、折叠 / 展开和调整大小期间保留状态（滚动位置、文本输入、媒体播放），同时支持多窗口模式。 全屏应用内容。 第 2 层级：自适应优化（Tier 2: Adaptive optimized）： 评估自适应多窗格布局，避免界面元素拉伸，并针对可折叠设备、平板电脑和其他大屏设备上的外部键盘、鼠标、触控板和触控笔输入提供基本支持。 多窗格布局。 第 1 层级：自适应差异化（Tier 1: Adaptive differentiated） ：评估媒体、视频、阅读和多任务处理应用的桌面模式和书本模式、相机连续性、互动式画中画和多实例支持。 感知可折叠设备的折叠状态。 新规重点解决折叠屏上应用显示不完整、切换屏幕后使用中断等问题。按照最低的 Tier 3 标准，应用必须充分利用可用显示区域，不能依赖黑边或兼容模式运行；在旋转、折叠、展开及调整窗口大小时，需要保留阅读位置、已输入文字和媒体播放状态，同时支持多窗口使用。 在约束措施方面，自 2027 年 4 月起，开发者除提供原有的两张手机截图外，还需提交三张折叠屏截图，覆盖规定比例的展开内屏和折叠外屏。这些截图可通过真机或安卓模拟器获取，目前已开放上传。 谷歌表示，用户手中的安卓生态大屏设备已超过 5.8 亿台。后续质量框架将逐步纳入更高等级要求，涉及多栏布局、外接输入设备及折叠姿态专属体验，并扩展至平板等设备。 到了 2027 年 8 月，新应用和更新还需要面向 Android 17 的 API 37，进一步配合大屏窗口和方向适配规则。 相关阅读： 《 谷歌主动推动安卓折叠屏应用适配，Google Play 商店明年将引入评估机制 》",
-        "url": "https://www.ithome.com/1/029/194.htm",
+        "title": "本体到手价 9899 元：GPD 公布 WIN Mini Ultra 掌机国行预售计划",
+        "summary": "IT之家 11 月 19 日消息，GPD（中软赢科）今日正式公布了 WIN Mini Ultra 掌机的国行预售计划。该产品 基于英特尔锐炫 G3 Extreme 处理器 ， 预售版本配备 32GB 内存、1TB 存储 ，本体 到手价 9,899 元 。 GPD 计划 2026 年 12 月中旬启动 WIN Mini Ultra 的量产，预售时间表和价格情况如下： 定金支付时间：2026 年 12 月 1 日 10:00 ~ 2027 年 1 月 4 日 10:00 尾款支付时间：2027 年 1 月 4 日 10:30 ~ 2027 年 1 月 7 日 10:30 最晚发货时间：2027 年 1 月 30 日 挡位 预售价 零售价 本体 9,899 元 12,999 元 本体 + GPD G2 显卡坞（有电源无卡） 11,699 元 15,199 元 GPD WIN Mini Ultra 三维 182.5×133×30 (mm)，配备 8\" 屏幕，搭载 2 风扇 4 热管散热系统，内置 56Whr 电池， 质量 845g 。 其采用 LTPS IPS LCD 十点触控 防眩镜面屏幕 ，显示规格为 WUXGA 48~120Hz，峰值 575nits，高色域；拥有电容摇杆、霍尔效应扳机、精准触控板、L4/R4 宏键、双线性马达、六轴体感、双 1W 扬声器。 该机型搭载英特尔 AX211 无线网卡； 支持 microSD Express 存储卡 ，提供 2 个全功能 USB4 v2.0 (80Gbps)、1 个 USB-A 10Gbps、1 个 3.5mm 音频插孔。 天猫 GPD WIN Mini Ultra 掌机 9899 元起 直达链接",
+        "url": "https://www.ithome.com/1/029/541.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -521,9 +501,9 @@
       {
         "date": "2026-11-19",
         "tag": "IT之家",
-        "title": "英伟达披露 GPU 租赁价格上涨：Hopper 最高翻倍，B300 涨超 60%",
-        "summary": "IT之家 11 月 19 日消息，英伟达在最新财报电话会议上披露，随着 AI 推理需求持续增长，公司旗下不同代际 GPU 的租赁价格均出现上涨。 其中，Hopper 架构 GPU 的多年期续约租赁价格最高达原价 2 倍，Blackwell 架构 B300 GPU 的租赁价格较推出时上涨超过 60%。 据 Wccftech 报道，英伟达临时 CEO、首席财务官科莱特 · 克雷斯（Colette Kress）在财报电话会议上表示，自今年 5 月以来，AI 词元价格下降近 60%，进一步刺激了 AI 使用量和算力需求增长，推动不同代际 GPU 的租赁价格上涨。她还表示，英伟达提供给超大规模云服务商和新兴云服务商的计算资源目前均处于满负荷使用状态。 英伟达此前披露的数据显示，B300 GPU 的租赁价格较推出时上涨超过 60%。这表明算力租赁市场的价格上涨并不局限于新一代产品，上一代 Hopper 架构产品同样受到需求增长的影响。 消费级显卡市场也出现涨价消息。据博板堂爆料，技嘉显卡工厂及华硕显卡工厂现已执行 11 月份最新成本价格调整政策，针对大部分型号成本价格全面涨价。其中，RTX 5080 系列上涨 1000 元，RTX 5060 系列上涨 150 元。 中国 AI 企业还面临海外算力租赁渠道收紧的问题。据《金融时报》报道，英伟达已要求全球数据中心及云服务合作伙伴，将至少 51% 的服务提供给非中国客户。这项要求通过英伟达销售团队口头传达，适用于未来签订的合同，不涉及现有租赁协议。 《金融时报》报道称，一套国际市场售价约 60 万美元 （IT之家注：现汇率约合 400.8 万元人民币） 的 B300 机架系统，上个月在中国市场的售价据称达到 1850 万元人民币。报道指出，英伟达收紧海外云服务客户限制，可能进一步影响中国企业获取先进 AI GPU 算力的渠道。 相关阅读： 《 轻信短视频“英伟达 RTX 5080 显卡降价近万元”虚假消息，杭州一居民被骗 1.58 万元 》 《 消息称黄仁勋曾力推 RTX 5080 24GB 显卡安抚游戏玩家，如今英伟达或将其取消 》 《 24Gb GDDR7 价格过高，传 16GB 版本 GeForce RTX 5080 显卡回归市场 》 《 消息称华硕 / 技嘉显卡工厂已执行最新成本价格调整政策：RTX5080 系列涨 1000 元、5060 涨 150 元 》",
-        "url": "https://www.ithome.com/1/029/193.htm",
+        "title": "AI 是移动网络未来十年最大战略机遇：华为发布下一代核心网演进白皮书，提出 AgenticCore 解决方案",
+        "summary": "IT之家 11 月 19 日消息，今日，由 Informa Tech 主办的第十一届全球核心网峰会上，华为云核心网产品线总裁高治国发表主题演讲。同时，华为发布《 下一代核心网演进白皮书 》， 提出下一代核心网目标架构与演进路径 。 ▲ 华为云核心网产品线总裁高治国发表主题演讲 高治国指出，未来 5 至 10 年，Agentic AI 将跨越式演进，向全终端、全业务、全场景深度渗透。 移动网络联接对象从人和物拓展至智能体，推动网络服务从基础联接走向智能联接、超越联接 。核心网向下联接终端、向上使能业务，打造先进的下一代核心网，是移动网络把握智能体时代机遇的关键抓手。 华为提出 NGC（Next-Gen Core）目标架构，驱动移动网络从云原生向 AI 原生跃迁，以满足智能体新联接、新业务的长期发展需求。IT之家附 NGC AI 原生架构具备的三大关键特征如下： 意图接口： 从刚性的信令到灵活的意图表达。智能体终端通过半结构化的意图传递面向任务的差异需求（体验 / 组网 / 算力等），提升智能体使用网络服务的便捷性。 数据与智能面（DAP）： 网络从传输比特到分发智能。通过引入智能网元、数据网元和算力网元，实现智能在终端、网络和云之间的高效分发。 低时延用户面： 支持从比特时延到低任务时延。通过带内端网协同实现毫秒级 AI 任务时延保障。 华为《下一代核心网演进白皮书》提到， AI 是移动网络未来十年最大的战略机遇 。移动通信产业正加速迈入智能体时代。面向海量终端的低时延算力服务成为移动网络的全新增长机会。随着端侧智能体规模化普及，低时延端云协同场景持续增加， 预计到 2030 年该类请求将占端侧发起协同任务的 20% 以上 ，覆盖 AI 实时交互、具身智能、工业控制等典型场景。",
+        "url": "https://www.ithome.com/1/029/540.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -531,9 +511,19 @@
       {
         "date": "2026-11-19",
         "tag": "IT之家",
-        "title": "腾讯大幅削减元宝投入：没有我们预期的那样成功",
-        "summary": "IT之家 11 月 19 日消息，腾讯控股 11 月 18 日发布 2026 年第三季度业绩。当季收入 2073.36 亿元，同比增长 8％；非国际财务报告准则（Non-IFRS）经营盈利 680.73 亿元，同比下降 6％。不过， 剔除新 AI 产品贡献后，同口径经营盈利为 833 亿元，同比增长 8％ 。 据长安街知事今日报道，在稍晚举行的业绩会上，腾讯披露了微信 AI 助手小微的运营数据。腾讯总裁刘炽平也坦言， 另一款 AI 助手元宝并未达到预期 。 “大家也能看到，元宝没有我们预期的那样成功。”刘炽平表示，元宝现在不再只把用户规模当作目标，重心回到提升模型能力，进展不错。同时， 腾讯大幅削减了在元宝上的投入 。 刘炽平还在业绩会上表示， 腾讯正持续扩大微信“小微”的用户测试池 ，目前日活用户已达 3000 万。同时，小微全面上线后的季度成本，将低于今年早些时候元宝的季度成本。 腾讯元宝于 2024 年 5 月正式发布，是一款面向消费者端的 AI 助手。为了推广元宝， 腾讯去年甚至在微信限时推出了元宝的下载入口 。 IT之家注意到，今年春节，腾讯元宝曾推出“分 10 亿现金红包”活动，2 月 18 日活动结束后， 腾讯宣布元宝日活跃用户超 5000 万 ，月活跃用户达 1.14 亿。",
-        "url": "https://www.ithome.com/1/029/192.htm",
+        "title": "遏制 AI 作弊：韩国安防企业竞相开发智能眼镜探测仪",
+        "summary": "IT之家 11 月 19 日消息，据韩媒 Etnews 今天报道，随着 AI 智能眼镜作弊逐渐成为社会问题，韩国安防企业开始研发相关探测设备。 据业内消息，韩国两家安防领域企业 K&Us、Gison 正在开发用于查处智能眼镜作弊行为的无线电探测设备。其中，K&Us 计划明年年初完成原型机开发。该设备能够分析蓝牙和 Wi-Fi 信号，识别疑似佩戴智能眼镜的人员。当监考人员打开探测仪并捕捉到可疑信号时，设备便会发出警报。 Gison 则计划在现有无线电检测仪的基础上，开发出分析蓝牙、Wi-Fi 和移动数据的软件。该软件将通过增强现实（AR）技术对可疑无线电信号的位置进行可视化处理，帮助监考人员更轻松地找到相关设备。明年上半年，该公司还计划推出一款价格较低、可长期固定安装在考场内的专用设备。 另一方面，韩国广播通信电波振兴院（IT之家注：KCA）已于本月 2 日发布一项委托开发项目，计划研发「AI 智能眼镜无线电探测设备」，以阻止利用 AI 智能眼镜进行考试作弊。据了解，K&Us 和 Gison 均已参与该项目的招标。",
+        "url": "https://www.ithome.com/1/029/539.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "IT之家",
+        "title": "红魔 12 Pro+ 手机成功启动《影之刃零》，全低画质叠智能插帧等游戏帧数来到 50-60 帧",
+        "summary": "IT之家 11 月 19 日消息，红魔游戏手机官方今日宣布，旗下红魔 12 Pro+ 手机通过内置的全新 PC 模拟器，成功启动了当下热门 PC 游戏《影之刃零》。 据介绍，红魔 PC 模拟器支持 Steam 游戏库直连、云存档多端同步，可以随时随地畅玩 PC 游戏。IT之家附红魔 12 Pro+ 模拟器启动《影之刃零》的参数如下： 分辨率：1280×720 性能档位：觉醒 智能插帧：2 倍 游戏画质：低 红魔游戏手机官方表示，红魔 12 Pro+ 最终成功启动《影之刃零》， 游戏内帧数来到了 50-60 帧 。 红魔官方表示，目前画质“还差点意思”，但毕竟是模拟器，能启动这类 3A 大作已经很不容易了，不过该机玩一玩配置要求不高的独立游戏压力不大。 ▲ IT之家开箱：红魔 12 Pro+ 氘锋透明冰蓝 延伸阅读 红魔 12 Pro+ 于 2026 年 10 月 16 日正式发布，提供 12GB+256GB、16GB+512GB、16GB+1TB 三个存储版本，售价分别为 6999 元、7999 元和 8999 元。 该机搭载第六代骁龙 8 超级至尊版移动平台，采用台积电 2nm 工艺、最高主频 5GHz，配备 LPDDR5T 内存与 UFS4.1 Pro 闪存，另搭载红魔红芯 R5 电竞芯片，支持全场景光线追踪以及超分、超帧等功能。文中提到的“觉醒”即为该机游戏空间中的一档性能模式。 红魔 PC 模拟器通过自研 X86 转译引擎，将 PC 端的 x86 指令转换为 ARM 架构可执行指令，替代了传统需要安装虚拟机、调试显存与驱动的方案，可一键开启。该模拟器支持扫码登录 Steam，游戏库与云存档可多端同步，并支持手柄即插即用、键鼠直连和显示器投屏。 文中的《影之刃零》由 S-GAME Studio（北京灵游坊）自主研发与发行，采用虚幻 5 引擎打造，是一款“功夫朋克”风格的暗黑武侠动作角色扮演游戏，于 2026 年 10 月 28 日登陆 Steam 平台，标准版售价 268 元，数字豪华版售价 328 元。官方数据显示，该作发售 72 小时销量突破 400 万份。 官方公布的《影之刃零》PC 配置需求为：最低需 Intel Core i7-8700K 或 AMD Ryzen 5 3600 处理器、16GB 内存、NVIDIA GeForce GTX 1660 6GB 或 AMD Radeon RX 5500 XT 8GB 显卡、DirectX 12，并需 145GB 固态硬盘空间，对应 1080p/30 FPS（开启超分辨率重建）；推荐配置为 i5-10600K 或 Ryzen 5 5600X 处理器、RTX 3060 Ti 8GB 或 RX 6700 XT 12GB 显卡，对应 1440p/60 FPS。",
+        "url": "https://www.ithome.com/1/029/537.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -541,111 +531,121 @@
       {
         "date": "2026-11-19",
         "tag": "钛媒体",
-        "title": "小马智行三季报：Robotaxi撑起四成营收，商业化进程提速",
-        "summary": "小马智行三季度营收创新高，Robotaxi领涨，车队扩张带动经营效率持续改善。",
-        "url": "https://www.tmtpost.com/8210512.html",
+        "title": "国内首款Gen6 SSD量产，AI存储重算经济帐",
+        "summary": "PCIe 6.0 SSD量产的真正价值，不是让存储设备跑出一个更漂亮的速度数字，而是让AI基础设施有机会重新算一笔账。",
+        "url": "https://www.tmtpost.com/8210529.html",
         "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-19",
-        "tag": "钛媒体",
-        "title": "名创优品三季报把TOP TOY底裤扒光了",
-        "summary": "专门做潮玩的熄了火，没被当成正经潮玩做的，反而烧了起来。",
-        "url": "https://www.tmtpost.com/8210308.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "钛媒体",
-        "title": "曾妍的新论文，就是字节“10万亿”路线图",
-        "summary": "周畅离职，曾妍上位：字节这场路线之争，嫡系赢了空降兵",
-        "url": "https://www.tmtpost.com/8210148.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "钛媒体",
-        "title": "浙能迈领：一边大额分红一边拟募资引争议，第一大客户收入占比逼近70%",
-        "summary": "公司持续实施大额现金分红，报告期累计分红11.53亿元，分红占净利润比例达43.66%。",
-        "url": "https://www.tmtpost.com/8209770.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "TechCrunch AI",
-        "title": "微软首席执行官萨蒂亚·纳德拉解释了他为何要求6万名员工离职",
-        "summary": "Microsoft CEO Satya Nadella explained why he offered buyouts to 60,000 of his employees in October, essentially urging them to voluntarily quit, rather than reducing the workforce via another massive layoff. The short answer is AI, but not in the way you might expect.",
-        "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/",
-        "source": "TechCrunch AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "爱范儿",
-        "title": "早报｜GTA6开售，评分破纪录/大疆多款相机涨价/豆包工作三个月日活破800万",
-        "summary": "· Google 发布 Gemini 4 Neon，主打复杂任务与更低单次成本 · 英伟达员工大会：董事会不让黄仁勋回归，临时 CEO 承诺涨薪 · 英特尔再裁全球 IT 员工，继续推进组织精简 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1690255?utm_source=rss&utm_medium=rss&utm_campaign=",
-        "source": "爱范儿",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "少数派",
-        "title": "派早报：Apple 年度应用、TGA 2026 分别公布入围名单等",
-        "summary": "AMD 更新虚幻引擎 FSR 插件、Google Wallet 登陆 iOS 等。 查看全文",
-        "url": "https://sspai.com/post/119239",
-        "source": "少数派",
+        "tag": "Solidot",
+        "title": "微软官方 agent-framework 软件包被黑客劫持安装恶意程序",
+        "summary": "微软托管在 PyPI 上的 agent-framework 软件包被黑客劫持安装窃取信息的恶意程序。agent-framework 每月下载量近 20 万次，主要用于构建和部署 AI 智能体。受影响的版本是 v1.26.1 和 1.26.2，会窃取开发者在 Azure、Git、Docker、Hugging Face 等服务上的环境变量、凭据文件以及其它敏感信息。更糟糕的是软件包无需被导入，只要安装该软件包的 Python 解释器启动，恶意代码便会运行。微软发言人在一份声明中表示在调查期间它将部分软件包项目设为私有。",
+        "url": "https://www.solidot.org/story?sid=85931",
+        "source": "Solidot",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-19",
         "tag": "量子位",
-        "title": "初中毕业烘焙师，1 人搓出单集千万播放科幻剧，中国AI长片杀疯了！",
-        "summary": "国产AI工具实现「一个人就是一个剧组」",
-        "url": "https://www.qbitai.com/2026/11/510947.html",
+        "title": "GTA6刷屏！零AI纯手搓的3A大作玩一个少一个了",
+        "summary": "媒体均分登顶历史第一，细节多到爆炸",
+        "url": "https://www.qbitai.com/2026/11/511180.html",
         "source": "量子位",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-11-18",
-        "tag": "爱范儿",
-        "title": "刚刚，Gemini 4 Neon 突袭发布，性价比一夜斩杀 Opus 5.5",
-        "summary": "性能更强，还更便宜 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1690235?utm_source=rss&utm_medium=rss&utm_campaign=",
-        "source": "爱范儿",
+        "date": "2026-11-19",
+        "tag": "量子位",
+        "title": "SenseNova U1 Pro获Design Arena双榜中国第一、全球第六",
+        "summary": "商汤科技日日新 SenseNova U1 Pro 在图片生成与图片编辑两大榜单中均登顶中国第一",
+        "url": "https://www.qbitai.com/2026/11/511179.html",
+        "source": "量子位",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-11-18",
-        "tag": "TechCrunch AI",
-        "title": "在人们对人工智能网络攻击的担忧中，萨蒂亚·纳德拉表示，许多关键基础设施“无法修补”",
-        "summary": "The Microsoft CEO downplayed the recent Outlook outage while noting that AI was causing both opportunities and new challenges for securing much of the connected world.",
-        "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/",
-        "source": "TechCrunch AI",
-        "region": "en",
+        "date": "2026-11-19",
+        "tag": "少数派",
+        "title": "给 Apple 的 2026 年打分，请你一起参与",
+        "summary": "2026年以来，Apple在硬件领域明显加快了产品线的拓展。定价亲民、采用A系列芯片的MacBookNeo让Mac触及更广泛的消费群体，也引发了对性能妥协与长期使用价值的讨论。M6芯片继续推进Appl ... 查看全文",
+        "url": "https://sspai.com/post/119191",
+        "source": "少数派",
+        "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-11-18",
-        "tag": "TechCrunch AI",
-        "title": "埃隆·马斯克表示，罢免黄仁勋就像“把迈克尔·乔丹踢出你的球队”",
-        "summary": "“I don’t think [Huang is] disloyal to the United States,\" Musk said.",
-        "url": "https://techcrunch.com/2026/11/18/elon-musk-says-ousting-jensen-huang-is-like-kicking-michael-jordan-off-your-team/",
-        "source": "TechCrunch AI",
-        "region": "en",
+        "date": "2026-11-19",
+        "tag": "Solidot",
+        "title": "蚊子在喜马拉雅冰川地区日益常见",
+        "summary": "随着全球暖化冰川消退，蚊子在喜马拉雅冰川地区日益常见，将一些流行病带给了当地居民。克什米尔 Ladakh 一个名叫 Sakti 的村庄海拔 3900 米，居住着约四百户村民，大多属于 Boto 族。65 岁的村民 Phunchok Gyalpo 一生都居住在 Sakti，他说小时候每逢下雪，通常要等好几天才能清理出路。但过去二三十年这种情况再也没发生过。他提到现在的冬天也暖和多了。Ladakh 是一个高海拔寒冷沙漠地区，位于喜马拉雅山的雨影区，当地居民的饮用水和农业灌溉都依赖冰川。他们唯一的水源是融化的冰雪。很少有地方能像 Ladakh 展现全球暖化的影响，蚊子的出现就是证据。2022 年 Ladakh 报告了首批两例登革热病例。2024 年出现了两例疟疾病例，2025 年又新增三例。2026 年至今它尚未报告登革热病例，而克什米尔则报告了 17 例。Ladakh 历史上首次出现了在屋内安装吊扇的情况。市场上充斥着驱蚊产品，人们也能亲眼见到蚊子。夏季变暖、冬季更温和以及无霜期的出现，使得蚊子的活动范围向高海拔地区扩张。",
+        "url": "https://www.solidot.org/story?sid=85930",
+        "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "少数派",
+        "title": "有必要但欠平衡：浅评 macOS 27.3 新版权限控制机制",
+        "summary": "[......] 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+        "url": "https://sspai.com/prime/story/system-app-protection-override-macos-27-3",
+        "source": "少数派",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Solidot",
+        "title": "中国发现新直立人化石",
+        "summary": "直立人是存在时间最长的人族物种之一，他们生存的年代从 190 万年前到 10.8 万年前。根据发表在《自然》期刊上的研究，中科院研究人员对采集自广西崇左岜仙洞、那线洞两处洞穴堆积化石地点的 9 枚古人类牙齿开展形态学和古蛋白质组学研究，发现其中 8 枚牙齿属于一个新识别出的直立人群体，该群体有别于北京周口店、安徽和县等地已知的直立人。研究结果显示，这种新直立人在 32.4 万年至 18.4 万年前曾活跃于中国南方，而该地区此前发现的最晚直立人化石生活在约 40 万年前。传统观点认为，直立人偏好开阔的疏林或稀树草原环境，很难在雨林环境中生存，本次在广西崇左的新发现则颠覆了这一认识，直立人完全可以在崇左地区雨水充沛、林冠郁闭的热带雨林中生存，且能在该环境中长距离迁移，生态适应能力较强。",
+        "url": "https://www.solidot.org/story?sid=85929",
+        "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "量子位",
+        "title": "好清晰！最新国产AI画的8K图，放这么大大大大也不糊！",
+        "summary": "Kling Image 4.0",
+        "url": "https://www.qbitai.com/2026/11/511092.html",
+        "source": "量子位",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "钛媒体",
+        "title": "拒绝黄仁勋回归还不够，英伟达开始围剿他女儿了",
+        "summary": "要是真想完全“去黄化”，只靠舆论也是有些难度的。",
+        "url": "https://www.tmtpost.com/8210307.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "钛媒体",
+        "title": "AI公司烧Token，烧出了一门“贷款生意”",
+        "summary": "一张Token账单，换来500万",
+        "url": "https://www.tmtpost.com/8210309.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "钛媒体",
+        "title": "刚刚！从黄仁勋走后首份财报发布及说明会，我们看到了什么",
+        "summary": "英伟达进入“后黄仁勋时代”。",
+        "url": "https://www.tmtpost.com/8210397.html",
+        "source": "钛媒体",
+        "region": "cn",
         "category": "科技"
       }
     ]
