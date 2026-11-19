@@ -1,14 +1,154 @@
 {
-  "updated": "2026-11-19 09:08 UTC",
+  "updated": "2026-11-19 12:40 UTC",
   "categories": {
     "投资": [
       {
         "date": "2026-11-19",
         "tag": "Seeking Alpha",
-        "title": "德国、法国领涨欧洲股市，英国市场交易接近六周低点",
+        "title": "人工智能代理介入，沃尔玛提高销售前景",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4674580-germany-france-lead-european-gains-as-uk-market-trades-near-six-week-low?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4674653-walmart-raises-its-sales-outlook-as-ai-agents-pitch-in?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "MarketWatch",
+        "title": "Palo Alto Networks 的股价因盈利而受到人工智能推动的新提振",
+        "summary": "The company boosts its outlook in the face of the “current threat environment and demand we see ahead of us.”",
+        "url": "https://www.marketwatch.com/story/palo-alto-networks-stock-soars-as-earnings-show-ai-has-upped-the-stakes-for-cybersecurity-308e34b8?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Seeking Alpha",
+        "title": "UGI 将全球液化石油气业务分拆为上市公司",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4674649-ugi-to-spin-off-global-lpg-business-into-public-company?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Seeking Alpha",
+        "title": "Appaloosa、Altimeter 第三季度增持美光股份；索罗斯资本减仓",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4674605-appaloosa-altimeter-raise-micron-stakes-in-q3-soros-capital-cuts-position?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Seeking Alpha",
+        "title": "华纳音乐非 GAAP 每股收益为 0.55 美元，超出 0.12 美元，收入为 20 亿美元，超出 9000 万美元",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4674657-warner-music-non-gaap-eps-of-0_55-beats-by-0_12-revenue-of-2b-beats-by-90m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "MarketWatch",
+        "title": "这是网络攻击开始呈指数级增长的确切时刻",
+        "summary": "One of the world’s top hedge funds is linking the surge to the release of one AI large language model.",
+        "url": "https://www.marketwatch.com/story/heres-the-precise-moment-when-cyberattacks-started-increasing-exponentially-244a4294?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "MarketWatch",
+        "title": "Sandisk 的股票分割即将到来。这是投资者需要了解的。",
+        "summary": "Sandisk is due to split its stock after Thursday’s close, and while the move has gotten some buzz, it won’t alter the fundamental picture for shareholders of the memory-chip company.",
+        "url": "https://www.marketwatch.com/story/sandisks-stock-split-is-almost-here-this-is-what-investors-need-to-know-e0a18461?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "MarketWatch",
+        "title": "Anthropic 的 IPO 能否为股市带来英伟达盈利无法做到的效果？",
+        "summary": "Here’s the case for energy stocks in your 401(k) and why Target’s comeback runs through the shoe aisle. Plus, what “GTA VI” means for Take-Two investors.",
+        "url": "https://www.marketwatch.com/story/can-anthropics-ipo-do-for-the-stock-market-what-nvidias-earnings-couldnt-be67a434?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Financial Times",
+        "title": "联合国法院在具有里程碑意义的裁决中裁定缅甸犯有种族灭绝罪",
+        "summary": "ICJ in The Hague hands down first-ever such verdict against a state over persecution of Rohingya",
+        "url": "https://www.ft.com/content/411d28f3-5adf-4a2f-9390-bc3372b4b3a9?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "The Block",
+        "title": "美国与 TRM Labs 合作成立网络犯罪中心，帮助追踪与诈骗相关的加密货币",
+        "summary": "The Threat Disruption Center will help investigators trace victims’ funds and identify crypto wallets used by scammers.",
+        "url": "https://www.theblock.co/news/regulation/2026-11-19-us-launches-cybercrime-center-with-trm-labs-to-help-trace-crypto-tied-to-scams-443599",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Financial Times",
+        "title": "Anthropic是“必须拥有的”",
+        "summary": "Is that good?",
+        "url": "https://www.ft.com/content/4224e2ed-116c-466b-97f4-54a5ef43a54e",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "The Block",
+        "title": "1inch 将 Hyperliquid 的永续期货合约集成到其 dApp 和钱包平台中",
+        "summary": "Users can fund a position with a token they already hold on 1inch, which will be routed to USDC and deposited to a balance on Hyperliquid.",
+        "url": "https://www.theblock.co/news/web3/2026-11-19-1inch-integrates-hyperliquid-perpetual-futures-443574",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Financial Times",
+        "title": "Anthropic 创纪录 IPO 后将首次亮相华尔街",
+        "summary": "First trades in Claude maker will provide a key signal of investors’ continued appetite for AI",
+        "url": "https://www.ft.com/content/7a6b211d-c73b-4953-97ee-ed92dab8ee07?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "The Block",
+        "title": "蚂蚁国际推出代币化存款与货币市场基金之间实时结算协议",
+        "summary": "Ant launched the Whale Orchestration Protocol to enable settlement between tokenized deposits and tokenized money market funds.",
+        "url": "https://www.theblock.co/news/business/2026-11-19-ant-international-protocol-tokenized-assets-443586",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Financial Times",
+        "title": "沙特主权财富基金总部遭空袭",
+        "summary": "Attack on powerful Public Investment Fund follows near-daily barrages on the kingdom by Houthi rebels",
+        "url": "https://www.ft.com/content/05ed47a5-7cc1-402f-ad0d-826ba09a05c8?syn-25a6b1a6=1",
+        "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
@@ -21,149 +161,19 @@
         "source": "CNBC Markets",
         "region": "en",
         "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "Seeking Alpha",
-        "title": "Anthropic 将 IPO 定价为每股 83 美元，目标是创纪录的 81B 美元",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4674583-anthropic-prices-ipo-at-83-per-share-targeting-81b-in-record-breaking-offering?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "Seeking Alpha",
-        "title": "快手科技公布第三季度业绩",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4674581-kuaishou-technology-reports-q3-results?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "Seeking Alpha",
-        "title": "“我们必须让詹森回来”——Uber 联合创始人卡兰尼克谈英伟达传奇",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4674534-uber-co-founder-kalanick-weighs-in-on-nvidia-huang-saga?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "The Block",
-        "title": "新加坡 MAS 发行 7700 万美元通过 CBDC 结算的代币化票据",
-        "summary": "The central bank said the bills were issued natively on its Singapore Dollar Test Network and settled in wholesale CBDC.",
-        "url": "https://www.theblock.co/news/web3/2026-11-19-singapores-mas-tokenized-bills-443562",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "MarketWatch",
-        "title": "这位备受关注的大师刚刚卖掉了所有东西",
-        "summary": "Panmure Liberum strategist and widely-followed stock-market commentator Joachim Klement has effectively had his personal retirement portfolio 100% invested in stocks for many years.",
-        "url": "https://www.marketwatch.com/story/this-closely-watched-guru-just-sold-everything-474b4389?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "Financial Times",
-        "title": "特朗普、习近平和普京将举行高风险三方峰会",
-        "summary": "Summit with three leaders begins in southern Chinese city of Shenzhen during week of high-stakes diplomacy",
-        "url": "https://www.ft.com/content/fcf6d27b-a04c-4cef-8b03-ce2423566f1f",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "Financial Times",
-        "title": "Anthropic 创纪录 IPO 融资 810 亿美元",
-        "summary": "Shares in AI giant set to begin trading on Thursday after company sells shares at $1.5tn valuation in blockbuster listing",
-        "url": "https://www.ft.com/content/62c0510b-ca65-441e-9baf-675b93903b9e?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "The Block",
-        "title": "Sygnum 预计随着资金恢复，2027 年比特币套利交易将超过国库券",
-        "summary": "Bitcoin funding stayed negative for 67 consecutive days into May before recovering to about 8% annualized by the end of October.",
-        "url": "https://www.theblock.co/news/markets/2026-11-19-sygnum-bitcoin-carry-trades-beating-treasury-bills-2027-443547",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "The Block",
-        "title": "Binance 获得 65 亿美元冻结令，CryptoQuant 称比特币处于“价值区”等等",
-        "summary": "In today's newsletter, Binance obtains $6.5 billion freezing order from Abu Dhabi court; CryptoQuant says bitcoin is back in a bearish phase but has entered a 'value zone'; and more.",
-        "url": "https://www.theblock.co/newsletters/the-daily/2026-11-19-binance-gets-6-5-billion-freezing-order-cryptoquant-says-bitcoin-is-in-a-value-zone-and-more-443511",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "Financial Times",
-        "title": "Anthropic 的人工智能进步在 IPO 前夕引发新的安全担忧",
-        "summary": "Group disclosed it had activated part of ‘responsible scaling policy’ it set up to ensure AI did not develop so quickly that it caused ‘catastrophic risks’",
-        "url": "https://www.ft.com/content/d8be4655-211c-49a8-bfe4-18a00b8e8619?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "Financial Times",
-        "title": "散户投资者面临重磅炸弹 Anthropic IPO 的挤压",
-        "summary": "Frenzy for AI stocks is testing how far Wall Street will go to accommodate a new army of individual investors",
-        "url": "https://www.ft.com/content/38c122d6-b533-4595-9554-3852c52e580f?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "The Block",
-        "title": "随着新案件的出现，Ledger 将硬件黑客调查扩大到德国和阿联酋",
-        "summary": "The company confirmed that the new cases share the same kind of physical modification as tampered devices found across Southeast Asia.",
-        "url": "https://www.theblock.co/news/web3/2026-11-18-ledger-new-hardware-incidents-germany-uae-443530",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "MarketWatch",
-        "title": "我丈夫 64 岁高龄退休，很高兴，他认为我应该继续工作。他公平吗？",
-        "summary": "“I’m exhausted. My alarm goes off at 6 a.m., and I have a 50-minute commute.”",
-        "url": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "MarketWatch",
-        "title": "“这真是太肮脏了”：我哥哥接管了我们生病的母亲的生活和经济。我能做些什么？",
-        "summary": "“It is devastating when the people you should be able to trust become the very people you have to protect yourself from.”",
-        "url": "https://www.marketwatch.com/story/it-is-heartbreaking-exhausting-and-downright-dirty-my-brother-took-over-our-ailing-mothers-life-and-finances-what-can-i-do-b4d48817?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
       }
     ],
     "科研": [
+      {
+        "date": "2026-11-19",
+        "tag": "ScienceDaily 材料",
+        "title": "为什么氢火焰会发出橙色光，然后几乎看不见",
+        "summary": "Hydrogen flames can shift from bright orange to nearly invisible depending on something unexpected: tiny amounts of sodium floating in the air. Scientists say this discovery could help make future hydrogen-powered stoves and ovens safer by replacing visual flame detection with specialized sensors.",
+        "url": "https://www.sciencedaily.com/releases/2026/11/261118065509.htm",
+        "source": "ScienceDaily 材料",
+        "region": "en",
+        "category": "科研"
+      },
       {
         "date": "2026-11-19",
         "tag": "arXiv cs.AI",
@@ -313,27 +323,127 @@
         "source": "arXiv 应用物理",
         "region": "en",
         "category": "科研"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "arXiv 应用物理",
-        "title": "GaAs/AlGaAs 中红外集成声光相位调制",
-        "summary": "arXiv:2611.24530v1 Announce Type: cross Abstract: We demonstrate a mid-infrared (7.5-10 um) integrated acousto-optic phase modulator operating at 460MHz based on a GaAs/AlGaAs heterostructure. The combination of broad mid-infrared transparency and piezoelectric properties of GaAs based structures allows monolithic integration of all the device functions (electro-acoustic transduction and acousto-optic interaction) on a single material platform. Addressing the challenge presented by comparable mid-infrared and acoustic wavelengths, simultaneous propagation and confinement of surface acoustic waves and guided light is achieved using a deep-etched sub-wavelength grating. We develop a comprehensive and quantitative simulation framework to design the modulator devices, characterize their acoustic properties in a heterodyne vibrometer and perform a full, quantitative analysis of the device performance by inserting them in an integrated Mach-Zehnder interferometer. Remarkable agreement with simulations validates the proposed design flow, and opens the way to improved integrated acousto-optic devices operating in the longer end of the mid-infrared.",
-        "url": "https://arxiv.org/abs/2611.24530",
-        "source": "arXiv 应用物理",
-        "region": "en",
-        "category": "科研"
       }
     ],
     "web3": [
       {
         "date": "2026-11-19",
-        "tag": "PANews",
-        "title": "币安完成VELODROME代币合并至AERO及AERO合约置换",
-        "summary": "PANews 11月19日消息，据官方公告，币安现已完成Velodrome Finance（VELODROME）代币合并至Aerodrome（AERO）及AERO合约置换，并开放新AERO代币的充值、提现业务。AERO的合约置换已按1:1的比例进行。",
-        "url": "https://www.panewslab.com/zh/articles/01a1f30e-43d4-7728-b1d2-6bc4ac835a6e",
-        "source": "PANews",
-        "region": "cn",
+        "tag": "CoinDesk",
+        "title": "比特币 ETF 资金流出显示 Anthropic 纳斯达克上市前加密货币需求减弱",
+        "summary": "Your day-ahead look for Nov. 19, 2026",
+        "url": "https://www.coindesk.com/daybook-us/2026/11/19/bitcoin-etf-outflows-show-waning-crypto-appetite-ahead-of-anthropic-s-nasdaq-debut",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "CoinDesk",
+        "title": "比特币维持在 63,750 美元上方，但美联储加息威胁迫在眉睫",
+        "summary": "Bitcoin ETFs saw more than $300 million in outflows Wednesday, with attention now turning to Anthrophic's $100 billion IPO.",
+        "url": "https://www.coindesk.com/markets/2026/11/19/bitcoin-holds-above-usd63-750-but-fed-rate-hike-threats-loom-large",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "CoinDesk",
+        "title": "朝鲜黑客使用 Sky 的稳定币系统，导致数十亿美元面临冻结风险",
+        "summary": "Blockchain investigation traced $518 million in illicit-linked activity, including the 2025 Bybit hack, through a key reserve backing DAI and USDS tokens, putting Sky's institutional finance ambitions and open design on collision course.",
+        "url": "https://www.coindesk.com/business/2026/11/19/north-korean-hackers-used-sky-s-stablecoin-system-putting-billions-at-freeze-risk",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Cointelegraph",
+        "title": "瑞典 H100 可以利用比特币交易池为股票回购提供资金",
+        "summary": "Shareholders will vote Dec. 7 on whether H100 can buy back up to 10% of its shares, potentially using a Bitcoin pool that lost about 30 BTC in Q3.",
+        "url": "https://cointelegraph.com/news/swedens-h100-13m-q3-loss-share-buyback-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Decrypt",
+        "title": "GameStop首席执行官表示GTA 6跳过光盘，纯数字游戏“伤害了消费者”",
+        "summary": "Ryan Cohen said publishers are cutting out trade-ins, as he backs a U.S. bill that would guarantee gamers keep access to games they buy.",
+        "url": "https://decrypt.co/383600/gamestop-ceo-says-digital-only-games-have-hurt-consumers-as-gta-6-skips-discs",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "CoinDesk",
+        "title": "随着代币化股票受到关注，Anthropic 的 1070 亿美元销售额将超过 SpaceX 的 IPO",
+        "summary": "The maker of Claude priced its Nasdaq debut at $83 a share for a $1.5 trillion fully diluted valuation, with the Nasdaq 100 down 14% from record highs.",
+        "url": "https://www.coindesk.com/markets/2026/11/19/anthropic-s-usd107-billion-raise-set-to-surpass-spacex-s-ipo-haul",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "CoinDesk",
+        "title": "国际证监会组织警告说，随着量子计算机变得“高度先进”，金融公司必须立即采取行动",
+        "summary": "No quantum computer can yet break widely used cryptography, but the securities watchdog says banks and blockchains face a yearslong security overhaul that many have barely begun.",
+        "url": "https://www.coindesk.com/tech/2026/11/19/banks-and-blockchains-lag-on-quantum-defense-as-encryption-risks-loom-watchdog-warns",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "CoinDesk",
+        "title": "实时更新：随着 Anthropic 创纪录的 IPO 提振科技，比特币接近 64,000 美元",
+        "summary": "Nasdaq futures jumped nearly 2% with Anthropic shares indicated as much as 24% higher, and one analyst said IPO money could flow back into crypto.",
+        "url": "https://www.coindesk.com/markets/2026/11/19/live-updates-bitcoin-nears-usd64-000-as-anthropic-s-record-ipo-lifts-tech",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "CoinDesk",
+        "title": "新加坡在当地 CBDC 完成 7750 万美元的代币化票据销售",
+        "summary": "The central bank aims to expand this digital settlement network and test wider collateral use in 2027.",
+        "url": "https://www.coindesk.com/business/2026/11/19/singapore-settles-usd77-5-million-tokenized-bill-sale-in-local-cbdc",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Cointelegraph",
+        "title": "国际证监会组织警告量子升级可能会减慢区块链速度并留下安全漏洞",
+        "summary": "A Solana test network ran about 90% slower with quantum-resistant signatures, and wallets that keep using older keys could remain vulnerable.",
+        "url": "https://cointelegraph.com/news/iosco-quantum-blockchain-upgrades-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Decrypt",
+        "title": "11 月份 ETF 流出量达到 $2.9B，比特币难以守住 $64,000",
+        "summary": "Bitcoin is down 13% in a week as investors pull money from spot ETFs and brace for another Federal Reserve rate hike.",
+        "url": "https://decrypt.co/383597/bitcoin-struggles-to-hold-64000-as-etf-outflows-hit-2-9b-in-november",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "CoinDesk",
+        "title": "由于竞争对手基金表明需求低迷，Roundhill 废弃了 Solana 和 XRP 收入 ETF",
+        "summary": "Roundhill withdrew plans for two funds designed to generate income from SOL and XRP, highlighting the gap between billions invested in spot crypto ETFs and limited demand for more specialized strategies.",
+        "url": "https://www.coindesk.com/markets/2026/11/19/roundhill-scraps-solana-and-xrp-income-etfs-as-rival-funds-attract-just-usd12-million",
+        "source": "CoinDesk",
+        "region": "en",
         "category": "web3"
       },
       {
@@ -348,101 +458,11 @@
       },
       {
         "date": "2026-11-19",
-        "tag": "PANews",
-        "title": "1inch团队投资资金沉睡一年后转移8977枚ETH，约合1619万美元",
-        "summary": "PANews 11月19日消息，据链上分析师Ai姨监测，1inch Team Investment Fund（团队投资资金）沉睡一年后，20分钟前向多签地址0x9ee…BE185转移8,977.52枚ETH，价值1,618.7万美元，用途未知。2025年2月至3月，其以均价2,589.78美元买入11,198枚ETH，价值2,900万美元，目前浮亏888万美元。",
-        "url": "https://www.panewslab.com/zh/articles/01a1f300-af09-73da-b874-8e07ba49bf47",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "PANews",
-        "title": "某新地址三小时前从Binance提出1953枚ETH，价值351万美元",
-        "summary": "PANews 11月19日消息，据链上分析师Ai姨监测，新地址0x61b…543D0三小时前从Binance提出1,953枚ETH，价值351万美元，提出价格1,797.41美元。",
-        "url": "https://www.panewslab.com/zh/articles/01a1f2fb-1975-7606-b427-eda19a048da6",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-19",
         "tag": "Cointelegraph",
         "title": "2026 年净流出额突破 $2.5B 比特币 ETF 资产跌至三个月低点",
         "summary": "US spot Bitcoin ETFs lost $306.4 million Wednesday, pushing their combined assets to $77.7 billion as Bitcoin briefly traded below $63,000.",
         "url": "https://cointelegraph.com/markets/bitcoin-etf-assets-three-month-low-78-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "PANews",
-        "title": "币安Alpha将于今天18:00开放空投领取并交易，门槛为250个积分",
-        "summary": "PANews 11月19日消息，币安在X平台发文称，请大家准备今天18:00（UTC+8）领取币安Alpha空投并交易。持有至少250个币安Alpha积分的用户可申领代币空投。先到先得，直至空投池领取完毕或活动结束。具体空投币种敬请关注币安官方渠道。",
-        "url": "https://www.panewslab.com/zh/articles/01a1f2dd-f451-7655-96a8-14b5a60f28a4",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "Cointelegraph",
-        "title": "BTCPay服务器针对5个安全漏洞发布紧急更新",
-        "summary": "The EU’s cybersecurity service said the flaws could let attackers to run malicious code remotely on vulnerable servers without logging in.",
-        "url": "https://cointelegraph.com/news/btcpay-server-emergency-update-nginx-security-flaws?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "Cointelegraph",
-        "title": "纳斯达克期货在 Anthropic 首次亮相之前上涨，比特币重新测试 6.2 万美元",
-        "summary": "Bitcoin climbed back above $63,500 after its second dip to $62,000 this week, while Anthropic priced its record $81.3 billion IPO at $83 a share.",
-        "url": "https://cointelegraph.com/markets/bitcoin-retests-62k-nasdaq-futures-anthropic-debut?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "CoinDesk",
-        "title": "美联储加息可能是一个错误。这就是为什么",
-        "summary": "Experts argue that the Fed is looking at the wrong data as it pushes for more interest-rate hikes, with falling gasoline and energy prices suggesting inflation pressures are already easing.",
-        "url": "https://www.coindesk.com/markets/2026/11/19/fed-s-push-for-more-rate-hikes-leans-on-backward-looking-data-as-gas-prices-slide-analysts-argue",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "CoinDesk",
-        "title": "数据显示，以太坊区块建设者在 340 万美元的金库黑客攻击中获得最大收益",
-        "summary": "An automated trading bot copied the attack on K3 Capital's sBOLD vault, taking more than half the funds and paying most of its proceeds to get its transactions processed first.",
-        "url": "https://www.coindesk.com/tech/2026/11/19/ethereum-block-builders-received-the-most-in-a-usd3-4-million-vault-hack-data-shows",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "CoinDesk",
-        "title": "出售最后一枚比特币的比特币矿商警告称，其 12 亿美元人工智能交易可能出现现金短缺",
-        "summary": "Hyperscale Data needs another $74.8 million to complete its Michigan data center project, even after selling its remaining bitcoin and raising fresh debt.",
-        "url": "https://www.coindesk.com/markets/2026/11/19/bitcoin-miner-that-sold-its-last-btc-warns-it-may-run-short-of-cash-for-usd1-2-billion-ai-deal",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "CoinDesk",
-        "title": "CZ 表示代币化的 Anthropic 将在 IPO 当天登陆 BNB Chain",
-        "summary": "Changpeng Zhao says Anthropic-linked tokens from bStocks, Ondo and xStocks will hit BNB Chain on day one of the AI giant’s Nasdaq debut. This follows a $500 million pre-IPO rush that comes with notable fine print.",
-        "url": "https://www.coindesk.com/markets/2026/11/19/cz-says-tokenized-anthropic-is-coming-to-bnb-chain-on-ipo-day",
-        "source": "CoinDesk",
         "region": "en",
         "category": "web3"
       },
@@ -465,35 +485,15 @@
         "source": "Decrypt",
         "region": "en",
         "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Decrypt",
-        "title": "帕尔默·拉奇表示，他正在为工业和“非法”药物打造一个海上避风港",
-        "summary": "The Oculus founder says his decade-old SLAB project aims to escape state restrictions on manufacturing and medical treatment.",
-        "url": "https://decrypt.co/383576/palmer-luckey-offshore-haven-industry-illegal-medicine",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-18",
-        "tag": "Decrypt",
-        "title": "谷歌的Genie 4现已推出，让Ultra订阅用户能够实时构建AI世界",
-        "summary": "Google's Genie 4 lets Ultra subscribers reshape interactive scenes while exploring them, complete with sound and dialogue, as Project Genie adds longer sessions and new community creation and sharing tools.",
-        "url": "https://decrypt.co/383572/google-genie-4-ultra-subscribers-build-ai-worlds-real-time",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
       }
     ],
     "科技": [
       {
         "date": "2026-11-19",
         "tag": "IT之家",
-        "title": "本体到手价 9899 元：GPD 公布 WIN Mini Ultra 掌机国行预售计划",
-        "summary": "IT之家 11 月 19 日消息，GPD（中软赢科）今日正式公布了 WIN Mini Ultra 掌机的国行预售计划。该产品 基于英特尔锐炫 G3 Extreme 处理器 ， 预售版本配备 32GB 内存、1TB 存储 ，本体 到手价 9,899 元 。 GPD 计划 2026 年 12 月中旬启动 WIN Mini Ultra 的量产，预售时间表和价格情况如下： 定金支付时间：2026 年 12 月 1 日 10:00 ~ 2027 年 1 月 4 日 10:00 尾款支付时间：2027 年 1 月 4 日 10:30 ~ 2027 年 1 月 7 日 10:30 最晚发货时间：2027 年 1 月 30 日 挡位 预售价 零售价 本体 9,899 元 12,999 元 本体 + GPD G2 显卡坞（有电源无卡） 11,699 元 15,199 元 GPD WIN Mini Ultra 三维 182.5×133×30 (mm)，配备 8\" 屏幕，搭载 2 风扇 4 热管散热系统，内置 56Whr 电池， 质量 845g 。 其采用 LTPS IPS LCD 十点触控 防眩镜面屏幕 ，显示规格为 WUXGA 48~120Hz，峰值 575nits，高色域；拥有电容摇杆、霍尔效应扳机、精准触控板、L4/R4 宏键、双线性马达、六轴体感、双 1W 扬声器。 该机型搭载英特尔 AX211 无线网卡； 支持 microSD Express 存储卡 ，提供 2 个全功能 USB4 v2.0 (80Gbps)、1 个 USB-A 10Gbps、1 个 3.5mm 音频插孔。 天猫 GPD WIN Mini Ultra 掌机 9899 元起 直达链接",
-        "url": "https://www.ithome.com/1/029/541.htm",
+        "title": "《GTA 6》Xbox Series S 版是首款采用 AMD FSR 4.1 超分技术的游戏",
+        "summary": "IT之家 11 月 19 日消息，《侠盗猎车手 6》（GTA 6）Xbox Series S 版似乎是首款使用 AMD FSR 4.1 超分辨率技术的主机游戏。 上个月，微软宣布，Xbox Series X/S 游戏主机以及 Xbox ROG Ally X 掌机将在后续更新中获得 AMD 最新的超分辨率技术支持。 FSR 4.1 是 AMD 对标英伟达（Nvidia）DLSS 的技术，利用机器学习提升游戏画面分辨率、生成额外帧数，并改善光线追踪效果。 与 DLSS 类似，FSR 4.1 的主要优势在于，开发者可以先以较低分辨率渲染游戏，再通过 FSR 将画面提升至 4K，同时尽可能接近原生 4K 渲染效果。这样既能提升游戏性能，也有助于在不明显牺牲画质的情况下实现更高帧率。 如今，Rockstar 已确认，《GTA 6》Xbox Series S 版采用了 FSR 技术，以便在保留光线追踪、发丝渲染等处理器密集型特效的同时，达到目标分辨率和帧率。 Rockstar 技术高级副总裁乔纳森 · 阿什克罗夫特（Jonathon Ashcroft）、技术总监克里斯 · 奥特（Chris Oat）以及技术制作总监马克 · 钱伯斯（Marc Chambers）在向 Wccftech 提供的一份联合声明中，介绍了游戏在不同主机平台上的技术方案。 声明称：“开发初期我们就意识到，考虑到团队的宏大目标，本世代主机的目标帧率将设定为 30fps。我们投入了大量精力，在画面表现、游戏模拟和玩法之间取得平衡，同时确保游戏输入延迟相比《GTA 5》和《荒野大镖客：救赎 2》有显著改善。” “这一过程中，我们还需要确定基础渲染分辨率和超分辨率方案。我们针对每款主机评估了多种技术路线，最终选择了能够满足画面效果和性能要求的组合方案。” “在 PlayStation 5 和 Xbox Series X 上，我们采用自研的 TAA（时间抗锯齿）方案，将 1440p 基础分辨率提升至 4K。Xbox Series S 则以 720p 为基础分辨率，通过 AMD FSR Upscaling 4 将画面提升至 1080p。至于 PlayStation 5 Pro，我们利用 PSSR2 技术，将 1440p 基础分辨率提升至 4K。” Rockstar 确认 Xbox Series S 版使用 AMD FSR 技术，这也意味着《GTA 6》可能是首款支持近期新增超分技术的 Xbox Series S 游戏。 IT之家注意到，这也能解释 Digital Foundry 近期对 Xbox Series S 版《GTA 6》的分析结果。此前，该媒体对游戏中出现光线追踪等处理器密集型技术感到意外，同时认为其整体画面表现“确实与 Series X 版相当接近”。 Digital Foundry 在视频中表示：“Series S 版仍然有着非常鲜明的《GTA 6》风格。与我们在其他 3A 游戏的 Series S 版本中经常看到的画质妥协相比，这里的取舍其实并不算大。” 该媒体还称，Rockstar 在 Xbox Series S 版上的工作值得肯定，因为“他们将一款规模庞大、表现令人印象深刻、能够在 PS5 和 Series X 上以 30fps 运行的游戏，移植到了性能弱得多的硬件上。即便是那些游戏规模远小于《GTA 6》的开发项目，也曾难以驾驭这款主机”。 不过，Xbox Series S 版仍然难以稳定维持 30fps。Digital Foundry 最后总结称：“Rockstar 打造了一个相当忠于原版设计理念的 Series S 版本，核心技术也都以合理的形式得到了保留。但目前 Series S 版的帧率表现并不理想，我建议玩家暂时选择其他主机平台体验这款游戏。”",
+        "url": "https://www.ithome.com/1/029/669.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -501,9 +501,9 @@
       {
         "date": "2026-11-19",
         "tag": "IT之家",
-        "title": "AI 是移动网络未来十年最大战略机遇：华为发布下一代核心网演进白皮书，提出 AgenticCore 解决方案",
-        "summary": "IT之家 11 月 19 日消息，今日，由 Informa Tech 主办的第十一届全球核心网峰会上，华为云核心网产品线总裁高治国发表主题演讲。同时，华为发布《 下一代核心网演进白皮书 》， 提出下一代核心网目标架构与演进路径 。 ▲ 华为云核心网产品线总裁高治国发表主题演讲 高治国指出，未来 5 至 10 年，Agentic AI 将跨越式演进，向全终端、全业务、全场景深度渗透。 移动网络联接对象从人和物拓展至智能体，推动网络服务从基础联接走向智能联接、超越联接 。核心网向下联接终端、向上使能业务，打造先进的下一代核心网，是移动网络把握智能体时代机遇的关键抓手。 华为提出 NGC（Next-Gen Core）目标架构，驱动移动网络从云原生向 AI 原生跃迁，以满足智能体新联接、新业务的长期发展需求。IT之家附 NGC AI 原生架构具备的三大关键特征如下： 意图接口： 从刚性的信令到灵活的意图表达。智能体终端通过半结构化的意图传递面向任务的差异需求（体验 / 组网 / 算力等），提升智能体使用网络服务的便捷性。 数据与智能面（DAP）： 网络从传输比特到分发智能。通过引入智能网元、数据网元和算力网元，实现智能在终端、网络和云之间的高效分发。 低时延用户面： 支持从比特时延到低任务时延。通过带内端网协同实现毫秒级 AI 任务时延保障。 华为《下一代核心网演进白皮书》提到， AI 是移动网络未来十年最大的战略机遇 。移动通信产业正加速迈入智能体时代。面向海量终端的低时延算力服务成为移动网络的全新增长机会。随着端侧智能体规模化普及，低时延端云协同场景持续增加， 预计到 2030 年该类请求将占端侧发起协同任务的 20% 以上 ，覆盖 AI 实时交互、具身智能、工业控制等典型场景。",
-        "url": "https://www.ithome.com/1/029/540.htm",
+        "title": "比亚迪发布 DMS 超级混动：DM-i 的能耗、DM-p 的性能、DMO 的越野",
+        "summary": "IT之家 11 月 19 日消息，在今天（19 日）晚间的方程豹钛 9 上市发布会上，比亚迪正式发布 DMS 超级混动全能平台。其整合 DM-i（节能）、DM-p（性能）、DMO（越野）三大技术路线，号称“为全能而生”。 IT之家从发布会内容获悉，DMS 平台首创后驱矢量控制技术，融合 差速器、差速锁、电子限滑、轮端解耦 ，实现“大而强、大而灵、大而稳、大而省”。 技术层面，后电机全速域解耦支持在 高速巡航时直接断开后电机 ，从而减少拖拽阻力，实现节省能耗的效果。后桥的左右输出功率支持 0-100% 调节，实现真正的“后轮独立控制”，保障不同工况下车辆的稳定性和通过性。 这项技术将在方程豹钛 9 上首发，以该车为例，其搭载的 1.5T+400kW 双电机动力系统，系统总功率号称媲美 3.0T 发动机，百公里加速 仅需 4.8 秒 ，百公里亏电油耗 6.4 升。 同时，该车还支持后轮转向、蟹行模式、豹式掉头。",
+        "url": "https://www.ithome.com/1/029/668.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -511,9 +511,9 @@
       {
         "date": "2026-11-19",
         "tag": "IT之家",
-        "title": "遏制 AI 作弊：韩国安防企业竞相开发智能眼镜探测仪",
-        "summary": "IT之家 11 月 19 日消息，据韩媒 Etnews 今天报道，随着 AI 智能眼镜作弊逐渐成为社会问题，韩国安防企业开始研发相关探测设备。 据业内消息，韩国两家安防领域企业 K&Us、Gison 正在开发用于查处智能眼镜作弊行为的无线电探测设备。其中，K&Us 计划明年年初完成原型机开发。该设备能够分析蓝牙和 Wi-Fi 信号，识别疑似佩戴智能眼镜的人员。当监考人员打开探测仪并捕捉到可疑信号时，设备便会发出警报。 Gison 则计划在现有无线电检测仪的基础上，开发出分析蓝牙、Wi-Fi 和移动数据的软件。该软件将通过增强现实（AR）技术对可疑无线电信号的位置进行可视化处理，帮助监考人员更轻松地找到相关设备。明年上半年，该公司还计划推出一款价格较低、可长期固定安装在考场内的专用设备。 另一方面，韩国广播通信电波振兴院（IT之家注：KCA）已于本月 2 日发布一项委托开发项目，计划研发「AI 智能眼镜无线电探测设备」，以阻止利用 AI 智能眼镜进行考试作弊。据了解，K&Us 和 Gison 均已参与该项目的招标。",
-        "url": "https://www.ithome.com/1/029/539.htm",
+        "title": "网传格力电器因 150 元成被执行人？朱磊回应称系诉讼费缴款，属正常司法公示",
+        "summary": "IT之家 11 月 19 日消息，一则关于“格力电器被列为被执行人”的消息在网络上传开。中国执行信息公开网信息显示，格力电器新增一则小额被执行人信息，立案时间为 11 月 17 日， 执行标的为 150 元 ，执行法院为义乌市人民法院，案件号为（2026）浙 0782 执 32271 号。 珠海格力电器股份有限公司市场总监朱磊就此事作出回应，IT之家附原文如下： 关于近期网传“格力电器被列为被执行人”一事，我给大家说明一下情况： 此事源于格力起诉义乌商家在网上违规售卖格力售后工作服的商标侵权案件 。格力售后工作服为内部统一配发，严控外流，目的是防范不法人员冒充格力售后上门，保护消费者人身与财产安全。 该案经法院调解，对方需停止侵权、赔偿损失，诉讼费由我方承担。 11 月 19 日收到缴费通知后，我们已及时完成缴费 。司法公示是公开流程，请大家理性看待。一些媒体拿一个正常的司法公示做文章令人不解。格力将持续打击商标侵权，守护消费者权益。",
+        "url": "https://www.ithome.com/1/029/667.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -521,20 +521,90 @@
       {
         "date": "2026-11-19",
         "tag": "IT之家",
-        "title": "红魔 12 Pro+ 手机成功启动《影之刃零》，全低画质叠智能插帧等游戏帧数来到 50-60 帧",
-        "summary": "IT之家 11 月 19 日消息，红魔游戏手机官方今日宣布，旗下红魔 12 Pro+ 手机通过内置的全新 PC 模拟器，成功启动了当下热门 PC 游戏《影之刃零》。 据介绍，红魔 PC 模拟器支持 Steam 游戏库直连、云存档多端同步，可以随时随地畅玩 PC 游戏。IT之家附红魔 12 Pro+ 模拟器启动《影之刃零》的参数如下： 分辨率：1280×720 性能档位：觉醒 智能插帧：2 倍 游戏画质：低 红魔游戏手机官方表示，红魔 12 Pro+ 最终成功启动《影之刃零》， 游戏内帧数来到了 50-60 帧 。 红魔官方表示，目前画质“还差点意思”，但毕竟是模拟器，能启动这类 3A 大作已经很不容易了，不过该机玩一玩配置要求不高的独立游戏压力不大。 ▲ IT之家开箱：红魔 12 Pro+ 氘锋透明冰蓝 延伸阅读 红魔 12 Pro+ 于 2026 年 10 月 16 日正式发布，提供 12GB+256GB、16GB+512GB、16GB+1TB 三个存储版本，售价分别为 6999 元、7999 元和 8999 元。 该机搭载第六代骁龙 8 超级至尊版移动平台，采用台积电 2nm 工艺、最高主频 5GHz，配备 LPDDR5T 内存与 UFS4.1 Pro 闪存，另搭载红魔红芯 R5 电竞芯片，支持全场景光线追踪以及超分、超帧等功能。文中提到的“觉醒”即为该机游戏空间中的一档性能模式。 红魔 PC 模拟器通过自研 X86 转译引擎，将 PC 端的 x86 指令转换为 ARM 架构可执行指令，替代了传统需要安装虚拟机、调试显存与驱动的方案，可一键开启。该模拟器支持扫码登录 Steam，游戏库与云存档可多端同步，并支持手柄即插即用、键鼠直连和显示器投屏。 文中的《影之刃零》由 S-GAME Studio（北京灵游坊）自主研发与发行，采用虚幻 5 引擎打造，是一款“功夫朋克”风格的暗黑武侠动作角色扮演游戏，于 2026 年 10 月 28 日登陆 Steam 平台，标准版售价 268 元，数字豪华版售价 328 元。官方数据显示，该作发售 72 小时销量突破 400 万份。 官方公布的《影之刃零》PC 配置需求为：最低需 Intel Core i7-8700K 或 AMD Ryzen 5 3600 处理器、16GB 内存、NVIDIA GeForce GTX 1660 6GB 或 AMD Radeon RX 5500 XT 8GB 显卡、DirectX 12，并需 145GB 固态硬盘空间，对应 1080p/30 FPS（开启超分辨率重建）；推荐配置为 i5-10600K 或 Ryzen 5 5600X 处理器、RTX 3060 Ti 8GB 或 RX 6700 XT 12GB 显卡，对应 1440p/60 FPS。",
-        "url": "https://www.ithome.com/1/029/537.htm",
+        "title": "R 星回应《GTA 6》为何没有飞镖、保龄球小游戏：宁缺毋滥，做不到高标准就不做",
+        "summary": "IT之家 11 月 19 日消息，Rockstar Games 解释了为什么《侠盗猎车手 6》（GTA 6）没有加入部分玩家期待的小游戏，例如飞镖和保龄球。Rockstar 联合工作室负责人罗布 · 尼尔森（Rob Nelson）表示，开发团队改变了小游戏的设计思路，不愿意加入任何达不到自身质量标准的内容。 IT之家注意到，飞镖曾出现在此前两款《GTA》系列作品以及《GTA Online》中，而保龄球则曾在《GTA 4》及其资料片中登场。 不过，Rockstar North 联合工作室负责人、同时也是《GTA 6》制作人的尼尔森在接受 VGC 采访时表示，开发团队如今对小游戏有了不同的理解，因此并没有将这些经典项目全部带入新作。 尼尔森坦言：“飞镖这个项目确实有些争议。即使外界认为我们有无限的资金和时间，但事实并非如此。有时候，我们只能承认，自己无法把某个项目做到理想中的水准。” 他解释称，这种设计理念可以追溯到工作室上一款作品《荒野大镖客：救赎 2》（Red Dead Redemption 2）。 “我认为这种变化始于《荒野大镖客：救赎 2》。从那时起，我们就开始把小游戏当作真正的活动来设计。” 尼尔森表示，《GTA 6》中的小游戏必须成为游戏机制的自然延伸，而不是简单地添加几个供玩家消磨时间的互动选项。他还透露，尽管《荒野大镖客：救赎 2》中有一副戏份颇多的达奇棋盘，但开发团队当时在加入国际象棋玩法时也遇到了不少困难。 谈到《GTA 6》中的台球玩法时，他表示：“这就是我们对台球的处理方式。它拥有真正的物理模拟，本身就是一款完整的游戏。” 尼尔森补充说，开发团队更倾向于加入那些能够真实还原现实体验的互动内容。举重就是一个典型例子。 “玩家并不是简单地按下一个按钮，游戏会模拟真实的举重动作。” 他表示，要让这些互动内容达到理想效果，需要投入大量时间进行调试。至于飞镖，团队最终没能完成这项内容。 尼尔森告诉 VGC，如果 Rockstar 决定加入飞镖玩法，就必须确保它的表现足够真实、完整。《GTA 6》中的篮球互动则是一个很好的例子。虽然玩家无法进行完整的篮球比赛，但可以自由跑动、流畅投篮，整个操作过程也保持了良好的一致性。 这位联合工作室负责人坦言，开发团队当时没有足够的资源完成所有想做的内容，而资源限制也是工作室开发其他游戏时经常面临的问题。 他最后总结道：“与其把某个功能做出来，却达不到足够好的水准，不如干脆不做。” 经过 13 年的漫长等待，《GTA 6》终于于本周正式发售。VGC 在评测中将其称为“本世代最佳游戏”。 评测写道：“《侠盗猎车手 6》是一部现代杰作。Rockstar 的开发人员打造了一个非凡的开放世界，在叙事、玩法、画面、音乐和技术等方面都表现出色，创造了真正难以匹敌的体验。虽然存在一些轻微的性能问题，但丝毫没有掩盖这款游戏的光彩。它绝对值得一玩，漫长的等待也完全没有白费。”",
+        "url": "https://www.ithome.com/1/029/666.htm",
         "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Ars Technica",
+        "title": "如何区分网络攻击和普通的旧中断",
+        "summary": "When everything goes down, don’t assume it’s a cyberattack.",
+        "url": "https://arstechnica.com/security/2026/11/how-to-tell-a-cyberattack-from-a-plain-old-outage/",
+        "source": "Ars Technica",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "钛媒体",
+        "title": "大衣只卖499元，中产在山姆捡漏MaxMara平替",
+        "summary": "继续改变品类认知。",
+        "url": "https://www.tmtpost.com/8211170.html",
+        "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-19",
         "tag": "钛媒体",
-        "title": "国内首款Gen6 SSD量产，AI存储重算经济帐",
-        "summary": "PCIe 6.0 SSD量产的真正价值，不是让存储设备跑出一个更漂亮的速度数字，而是让AI基础设施有机会重新算一笔账。",
-        "url": "https://www.tmtpost.com/8210529.html",
+        "title": "国产GPU，风浪越大鱼越贵",
+        "summary": "黄仁勋卸任英伟达CEO，全球AI算力格局发生转变，中国AI产业面临供给风险挑战。",
+        "url": "https://www.tmtpost.com/8210657.html",
         "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "钛媒体",
+        "title": "谁吃掉了名创优品的利润？",
+        "summary": "持续增收不增利。",
+        "url": "https://www.tmtpost.com/8210698.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "钛媒体",
+        "title": "哈尔滨买了“迪士尼”",
+        "summary": "哈尔滨第一次向别人借冬天。",
+        "url": "https://www.tmtpost.com/8210987.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "少数派",
+        "title": "给 Apple 的 2026 年打分，请你一起参与",
+        "summary": "2026年以来，Apple在硬件领域明显加快了产品线的拓展。定价亲民、采用A系列芯片的MacBookNeo让Mac触及更广泛的消费群体，也引发了对性能妥协与长期使用价值的讨论。M6芯片继续推进Appl ... 查看全文",
+        "url": "https://sspai.com/post/119191",
+        "source": "少数派",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "少数派",
+        "title": "新玩意 256｜少数派的编辑们最近买了啥？",
+        "summary": "编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ... 查看全文",
+        "url": "https://sspai.com/post/119287",
+        "source": "少数派",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Solidot",
+        "title": "黄仁勋的下台可能削弱开放权重模型让闭源模型受益",
+        "summary": "黄仁勋的下台可能削弱开放权重模型生态，让 OpenAI 和 Anthropic 等闭源模型开发商受益。黄仁勋此前曾利用英伟达的资金打造一个广泛的 AI 生态系统。他通过投资和收购初创企业，支持开发开源和开放权重模型。黄仁勋是此类模型推广的坚定倡导者，曾游说反对华盛顿限制使用中国的开放权重模型，积极推动美国本土开放权重模型的开发。一位风险投资人表示，失去黄仁勋以及英伟达在投资上不再那么慷慨，我们可能最终会面对一个模型提供商高度集中的世界。一位业内人士表示不认为开放权重模型会就此消失，但失去黄仁勋这位最强大的财务支持者和拥护者，无疑会拖慢它们的发展进程。",
+        "url": "https://www.solidot.org/story?sid=85932",
+        "source": "Solidot",
         "region": "cn",
         "category": "科技"
       },
@@ -570,81 +640,11 @@
       },
       {
         "date": "2026-11-19",
-        "tag": "少数派",
-        "title": "给 Apple 的 2026 年打分，请你一起参与",
-        "summary": "2026年以来，Apple在硬件领域明显加快了产品线的拓展。定价亲民、采用A系列芯片的MacBookNeo让Mac触及更广泛的消费群体，也引发了对性能妥协与长期使用价值的讨论。M6芯片继续推进Appl ... 查看全文",
-        "url": "https://sspai.com/post/119191",
-        "source": "少数派",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
         "tag": "Solidot",
         "title": "蚊子在喜马拉雅冰川地区日益常见",
         "summary": "随着全球暖化冰川消退，蚊子在喜马拉雅冰川地区日益常见，将一些流行病带给了当地居民。克什米尔 Ladakh 一个名叫 Sakti 的村庄海拔 3900 米，居住着约四百户村民，大多属于 Boto 族。65 岁的村民 Phunchok Gyalpo 一生都居住在 Sakti，他说小时候每逢下雪，通常要等好几天才能清理出路。但过去二三十年这种情况再也没发生过。他提到现在的冬天也暖和多了。Ladakh 是一个高海拔寒冷沙漠地区，位于喜马拉雅山的雨影区，当地居民的饮用水和农业灌溉都依赖冰川。他们唯一的水源是融化的冰雪。很少有地方能像 Ladakh 展现全球暖化的影响，蚊子的出现就是证据。2022 年 Ladakh 报告了首批两例登革热病例。2024 年出现了两例疟疾病例，2025 年又新增三例。2026 年至今它尚未报告登革热病例，而克什米尔则报告了 17 例。Ladakh 历史上首次出现了在屋内安装吊扇的情况。市场上充斥着驱蚊产品，人们也能亲眼见到蚊子。夏季变暖、冬季更温和以及无霜期的出现，使得蚊子的活动范围向高海拔地区扩张。",
         "url": "https://www.solidot.org/story?sid=85930",
         "source": "Solidot",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "少数派",
-        "title": "有必要但欠平衡：浅评 macOS 27.3 新版权限控制机制",
-        "summary": "[......] 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
-        "url": "https://sspai.com/prime/story/system-app-protection-override-macos-27-3",
-        "source": "少数派",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "Solidot",
-        "title": "中国发现新直立人化石",
-        "summary": "直立人是存在时间最长的人族物种之一，他们生存的年代从 190 万年前到 10.8 万年前。根据发表在《自然》期刊上的研究，中科院研究人员对采集自广西崇左岜仙洞、那线洞两处洞穴堆积化石地点的 9 枚古人类牙齿开展形态学和古蛋白质组学研究，发现其中 8 枚牙齿属于一个新识别出的直立人群体，该群体有别于北京周口店、安徽和县等地已知的直立人。研究结果显示，这种新直立人在 32.4 万年至 18.4 万年前曾活跃于中国南方，而该地区此前发现的最晚直立人化石生活在约 40 万年前。传统观点认为，直立人偏好开阔的疏林或稀树草原环境，很难在雨林环境中生存，本次在广西崇左的新发现则颠覆了这一认识，直立人完全可以在崇左地区雨水充沛、林冠郁闭的热带雨林中生存，且能在该环境中长距离迁移，生态适应能力较强。",
-        "url": "https://www.solidot.org/story?sid=85929",
-        "source": "Solidot",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "量子位",
-        "title": "好清晰！最新国产AI画的8K图，放这么大大大大也不糊！",
-        "summary": "Kling Image 4.0",
-        "url": "https://www.qbitai.com/2026/11/511092.html",
-        "source": "量子位",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "钛媒体",
-        "title": "拒绝黄仁勋回归还不够，英伟达开始围剿他女儿了",
-        "summary": "要是真想完全“去黄化”，只靠舆论也是有些难度的。",
-        "url": "https://www.tmtpost.com/8210307.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "钛媒体",
-        "title": "AI公司烧Token，烧出了一门“贷款生意”",
-        "summary": "一张Token账单，换来500万",
-        "url": "https://www.tmtpost.com/8210309.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-19",
-        "tag": "钛媒体",
-        "title": "刚刚！从黄仁勋走后首份财报发布及说明会，我们看到了什么",
-        "summary": "英伟达进入“后黄仁勋时代”。",
-        "url": "https://www.tmtpost.com/8210397.html",
-        "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       }
