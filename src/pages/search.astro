@@ -1,0 +1,105 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="搜索" description="站内全文搜索文章与工具。" noindex searchable={false}>
+  <section class="page search-page">
+    <a class="back" href="/">← 首页</a>
+    <h1>搜索</h1>
+    <div class="search-box">
+      <input
+        type="search"
+        id="site-search-input"
+        placeholder="输入关键词搜索文章与工具…"
+        aria-label="站内全文搜索"
+        autocomplete="off"
+        autofocus
+      />
+    </div>
+    <p class="search-status" id="site-search-status">输入关键词即可检索全站内容。</p>
+    <ol class="search-results" id="site-search-results"></ol>
+  </section>
+  <script is:inline>
+    (function () {
+      var input = document.getElementById('site-search-input');
+      var status = document.getElementById('site-search-status');
+      var list = document.getElementById('site-search-results');
+      if (!input || !status || !list) return;
+
+      var pf = null;
+      var loading = null;
+      var timer = 0;
+
+      function ensurePagefind() {
+        if (pf) return Promise.resolve(pf);
+        if (!loading) {
+          loading = import('/pagefind/pagefind.js')
+            .then(function (mod) {
+              pf = mod;
+              if (pf.init) return pf.init().then(function () { return pf; });
+              return pf;
+            });
+        }
+        return loading;
+      }
+
+      function renderResults(items, query) {
+        list.replaceChildren();
+        if (!query) {
+          status.textContent = '输入关键词即可检索全站内容。';
+          return;
+        }
+        if (!items.length) {
+          status.textContent = '没有找到与「' + query + '」相关的内容。';
+          return;
+        }
+        status.textContent = '找到 ' + items.length + ' 条结果：';
+        items.forEach(function (item) {
+          var li = document.createElement('li');
+          var a = document.createElement('a');
+          a.className = 'search-result-card';
+          a.href = item.url;
+          var h3 = document.createElement('h3');
+          h3.textContent = (item.meta && item.meta.title) || item.url;
+          var p = document.createElement('p');
+          p.innerHTML = item.excerpt || '';
+          a.append(h3, p);
+          li.append(a);
+          list.append(li);
+        });
+      }
+
+      function runSearch() {
+        var q = input.value.trim();
+        if (!q) {
+          renderResults([], '');
+          return;
+        }
+        status.textContent = '正在搜索…';
+        ensurePagefind()
+          .then(function (mod) { return mod.search(q); })
+          .then(function (res) {
+            return Promise.all((res.results || []).slice(0, 12).map(function (r) { return r.data(); }));
+          })
+          .then(function (items) {
+            renderResults(items, q);
+          })
+          .catch(function () {
+            status.textContent = '搜索索引仅在生产构建（npm run build）后生成。';
+          });
+      }
+
+      input.addEventListener('input', function () {
+        clearTimeout(timer);
+        timer = setTimeout(runSearch, 160);
+      });
+
+      var params = new URLSearchParams(location.search);
+      var initQ = params.get('q');
+      if (initQ) {
+        input.value = initQ;
+        runSearch();
+      }
+    })();
+  </script>
+</Base>

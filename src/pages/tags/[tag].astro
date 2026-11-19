@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 const { tag, posts } = Astro.props;
 ---
 
-<Base title={tag} description={`标签「${tag}」下的文章`}>
+<Base title={tag} description={`标签「${tag}」下的文章`} searchable={false}>
   <section class="posts">
     <a class="back" href="/tags/">← 标签</a>
     <h1 class="page-title">{tag}</h1>

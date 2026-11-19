@@ -15,6 +15,7 @@ export default defineConfig({
         const path = new URL(page).pathname;
         if (path.includes('/404')) return false;
         if (path === '/offline' || path.startsWith('/offline/')) return false;
+        if (path === '/search' || path.startsWith('/search/')) return false;
         if (path.startsWith('/ai-particle-size-analyzer')) return false;
         if (path === '/digest' || path === '/digest/') return false;
         if (path.startsWith('/research-charts')) return false;

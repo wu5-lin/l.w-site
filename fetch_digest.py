@@ -524,10 +524,30 @@ def main():
     if not total:
         print("本次未抓到条目，保留已有的 digest.json，避免把简报清空。")
     else:
-        os.makedirs(os.path.dirname(out_path), exist_ok=True)
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(payload, f, ensure_ascii=False, indent=2)
-        print(f"已写入 {out_path}（共 {total} 条）。下次构建网站时会带上这份数据。")
+        changed = True
+        if os.path.exists(out_path):
+            try:
+                with open(out_path, encoding="utf-8") as f:
+                    prev = json.load(f)
+                prev_sig = {
+                    c: [(it.get("url"), it.get("title")) for it in (prev.get("categories") or {}).get(c, [])]
+                    for c in CATEGORIES
+                }
+                curr_sig = {
+                    c: [(it.get("url"), it.get("title")) for it in payload["categories"].get(c, [])]
+                    for c in CATEGORIES
+                }
+                if prev_sig == curr_sig:
+                    changed = False
+            except Exception:
+                pass
+        if not changed:
+            print("简报内容无变化，跳过写入（避免空提交）。")
+        else:
+            os.makedirs(os.path.dirname(out_path), exist_ok=True)
+            with open(out_path, "w", encoding="utf-8") as f:
+                json.dump(payload, f, ensure_ascii=False, indent=2)
+            print(f"已写入 {out_path}（共 {total} 条）。下次构建网站时会带上这份数据。")
 
     if "--push" in sys.argv and total:
         try:

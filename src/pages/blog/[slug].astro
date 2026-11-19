@@ -20,9 +20,23 @@ const { Content, headings } = await render(post);
 const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
 const tocOpenLimit = 5;
 const minutes = readingMinutes(post.body ?? post.data.summary);
+const postUrl = new URL(`/blog/${post.id}/`, Astro.site).href;
+const ogImage = new URL('/og.png', Astro.site).href;
+const jsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.summary,
+  datePublished: isoDate(post.data.date),
+  author: { '@type': 'Person', name: 'lw', url: Astro.site?.href },
+  url: postUrl,
+  image: ogImage,
+  keywords: post.data.tags.join(', '),
+}).replace(/</g, '\\u003c');
 ---
 
 <Base title={post.data.title} description={post.data.summary} ogType="article">
+  <script slot="head" type="application/ld+json" set:html={jsonLd} />
   <div class="read-progress" id="read-progress" aria-hidden="true"></div>
   <article class="article">
     <a class="back" href="/">← 首页</a>

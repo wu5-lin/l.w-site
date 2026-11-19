@@ -641,7 +641,7 @@ a.pill:hover { background: var(--pill-hover); }
 .tools-stage { padding: 36px 0 20px; }
 
 .tools-head {
-  width: min(var(--measure), calc(100% - 40px));
+  width: min(920px, calc(100% - 40px));
   margin: 0 auto 18px;
 }
 
@@ -659,11 +659,15 @@ a.pill:hover { background: var(--pill-hover); }
 }
 
 .tool-grid {
-  width: min(var(--measure), calc(100% - 40px));
+  width: min(920px, calc(100% - 40px));
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+}
+
+@media (max-width: 860px) {
+  .tool-grid { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 640px) {
@@ -1356,4 +1360,95 @@ body:has(.offline-stage) main {
 
 @media (max-width: 540px) {
   .home-tool-row { grid-template-columns: 1fr; }
+}
+
+.nav-icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  color: var(--faint);
+  text-decoration: none;
+  transition: color 200ms ease, background 200ms ease;
+}
+
+.nav-icon:hover {
+  color: var(--ink);
+  background: var(--row-hover);
+}
+
+.search-box {
+  margin-top: 16px;
+}
+
+.search-box input {
+  width: 100%;
+  font: inherit;
+  font-size: 15px;
+  padding: 11px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--glass);
+  color: var(--ink);
+  outline: none;
+  transition: border-color 180ms ease;
+}
+
+.search-box input:focus {
+  border-color: var(--accent);
+}
+
+.search-status {
+  margin: 12px 0 16px;
+  font-size: 13px;
+  color: var(--faint);
+}
+
+.search-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.search-result-card {
+  display: block;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--glass);
+  text-decoration: none;
+  transition: background 180ms ease, border-color 180ms ease;
+}
+
+.search-result-card:hover {
+  background: var(--row-hover);
+  border-color: var(--faint);
+}
+
+.search-result-card h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 620;
+  color: var(--ink);
+}
+
+.search-result-card:hover h3 {
+  color: var(--accent);
+}
+
+.search-result-card p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.search-result-card mark {
+  background: var(--pill);
+  color: var(--accent);
+  padding: 0 2px;
+  border-radius: 4px;
 }
