@@ -1,7 +1,17 @@
 {
-  "updated": "2026-11-20 23:16 UTC",
+  "updated": "2026-11-20 23:50 UTC",
   "categories": {
     "投资": [
+      {
+        "date": "2026-11-20",
+        "tag": "Seeking Alpha",
+        "title": "ANPG表示，埃克森美孚凭借新发现批准了安哥拉4B美元油田开发",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4675382-exxon-greenlights-4b-angola-oilfield-development-with-new-discovery-anpg-says?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
       {
         "date": "2026-11-20",
         "tag": "Seeking Alpha",
@@ -58,16 +68,6 @@
         "title": "United Fire 宣布派息 0.20 美元",
         "summary": "",
         "url": "https://seekingalpha.com/news/4675379-united-fire-declares-0_20-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "Seeking Alpha",
-        "title": "Bentley 软件公司将股息提高 14.3% 至 0.08 美元",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4675378-bentley-systems-raises-dividend-by-143-to-008?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -338,26 +338,6 @@
       },
       {
         "date": "2026-11-20",
-        "tag": "PANews",
-        "title": "列日大学实验：比特币机器人数秒内抢夺漏洞地址资金",
-        "summary": "PANews 11月20日消息，据CoinDesk报道，比利时列日大学（University of Liège）研究人员开展了一项比特币实验。研究人员向故意设置漏洞的比特币地址存入了数美元。随后，相互竞争的机器人在数秒内争抢这些资金。",
-        "url": "https://www.panewslab.com/zh/articles/01a1fb22-c86e-74ae-9c38-9c6db91c708a",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "PANews",
-        "title": "Coinbase Institutional转出4.44万枚ETH",
-        "summary": "PANews 11月21日消息，一则链上转账提醒称，Coinbase Institutional转出4.44万枚ETH。这批ETH价值约7143.35万美元，转入一个未知的新钱包。Coinbase Institutional提供托管、交易平台和主经纪服务。",
-        "url": "https://www.panewslab.com/zh/articles/01a1fb16-e6b4-7739-b67b-6669734afe60",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-20",
         "tag": "CoinDesk",
         "title": "Fairmint 计划根据 SEC 实验在 Canton 和以太坊上进行代币化股票交易",
         "summary": "The firm is the latest to join in building blockchain-based stock markets under the agency’s five-year \"innovation exemption\" for tokenized trading.",
@@ -368,32 +348,12 @@
       },
       {
         "date": "2026-11-20",
-        "tag": "PANews",
-        "title": "USDC Treasury销毁1.11亿枚USDC",
-        "summary": "PANews 11月21日消息，USDC Treasury销毁111,312,419枚USDC，约合1.11亿美元。 此前，据Whale Alert数据，USDC Treasury于11月19日在以太坊主网增发约1.46亿枚USDC。",
-        "url": "https://www.panewslab.com/zh/articles/01a1faf9-5249-7119-8ee3-bfdef9fe9fea",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-20",
         "tag": "Decrypt",
         "title": "克劳德 (Claude) 声称人类在首次公开募股一天后取得了历史性的数学突破",
         "summary": "Levent Alpöge claims Claude helped prove a 167-year-old math conjecture, but independent checks remain pending, and the release just after Anthropic’s IPO has prompted questions about its unusual publication timing.",
         "url": "https://decrypt.co/383747/claude-historic-math-breakthrough-anthropic-ipo",
         "source": "Decrypt",
         "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "PANews",
-        "title": "美股收盘Neocloud、光模块/高速互联集体重挫，MARA Holdings跌超18%",
-        "summary": "PANews 11月21日消息，据币安行情，美股收盘，三大指数集体收跌，道指跌约1.66%，标普500跌约3.22%，纳指跌约4.87%。 美股七巨头中：英伟达（NVDA）跌12.69%；特斯拉（TSLA）跌7.42%；Meta（META）跌5.94%。 加密概念股中：SharpLink Gaming（SBET）跌9.91%；Robinhood（HOOD）跌9.84%；Strategy（MSTR）跌9.71%。 半导体与存储中：闪迪（SNDK）跌16.15%；AMD（AMD）跌13.96%；美光（MU）跌13.89%。 光模块/高速互联中：应用光电（AAOI）跌16.96%；Lumen",
-        "url": "https://www.panewslab.com/zh/articles/01a1fac3-3a2b-71c5-a347-8ed908ef8798",
-        "source": "PANews",
-        "region": "cn",
         "category": "web3"
       },
       {
@@ -448,11 +408,31 @@
       },
       {
         "date": "2026-11-20",
+        "tag": "Decrypt",
+        "title": "谷歌让 Gemini 控制 Mac 应用程序，但其新的 AI 代理也存在风险",
+        "summary": "Gemini's new Mac computer-use feature navigates apps, files, and websites in a separate window, but Google's own documentation warns about prompt injection.",
+        "url": "https://decrypt.co/383733/google-gives-gemini-control-mac-apps-ai-agent",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-20",
         "tag": "CoinDesk",
         "title": "比特币暴跌至 59,000 美元以下，因为人们纷纷涌入现金，熊市新低再次出现",
         "summary": "Bitcoin is closing in on its $57,700 summer low as Delphi Digital strategist warns the Fed could make matters worse and STS Digital sees cash as the place to hide.",
         "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play",
         "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "Decrypt",
+        "title": "价值 1300 万美元的黑客攻击归咎于 Web Host，打包后的 Monero 代币暴跌 99%",
+        "summary": "Wagyu’s XMR1 token fell more than 99% after an attacker moved 5.2 million tokens out of its deployer account and sold a fraction of them for $13.5 million.",
+        "url": "https://decrypt.co/383732/wrapped-monero-token-collapses-99-after-13-million-hack-blamed-on-web-host",
+        "source": "Decrypt",
         "region": "en",
         "category": "web3"
       },
@@ -468,10 +448,30 @@
       },
       {
         "date": "2026-11-20",
+        "tag": "Decrypt",
+        "title": "加密恐惧指数触及 2 月份以来的最低水平，比特币跌破 6 万美元",
+        "summary": "Bitcoin broke below $60,000 Friday as crypto sentiment collapsed and AI-linked stocks sank after Anthropic’s IPO.",
+        "url": "https://decrypt.co/383702/bitcoin-breaks-below-60k-crypto-fear-greed-index-lowest",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-20",
         "tag": "Cointelegraph",
         "title": "美国参议院通过《死亡赌注法案》推进预测市场限制",
         "summary": "The Senate-approved bill would ban prediction market contracts tied to war, assassination and death amid concerns over potential insider trading on military events.",
         "url": "https://cointelegraph.com/news/us-senate-advances-prediction-market-restrictions-with-death-bets-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "Cointelegraph",
+        "title": "由于科技股抛售，Anthropic 跌至 87 美元，比特币价格跌至 6 万美元",
+        "summary": "Bitcoin price strength felt pressure from falling US equities as traders reassessed AI prospects after Anthropic’s IPO.",
+        "url": "https://cointelegraph.com/markets/bitcoin-hits-new-20-week-low-anthropic-drops-87-tech-sell-off?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
@@ -491,9 +491,9 @@
       {
         "date": "2026-11-20",
         "tag": "IT之家",
-        "title": "T2 宣布《GTA 6》首发收入 37.9 亿美元创娱乐行业新纪录，远超漫威《复仇者联盟 4》总票房",
-        "summary": "IT之家 11 月 21 日消息，Rockstar Games 母公司 Take-Two Interactive 今日宣布，《侠盗猎车手 6》（GTA 6）首发当日零售销售额达到 37.9 亿美元 （IT之家注：现汇率约合 253.63 亿元人民币） ，创下跨娱乐行业的首发收入新纪录（该数据基于公司截至当地时间 11 月 19 日结束时的全球销售估算）。 Take-Two 表示，《GTA 6》的首发成绩刷新了电子游戏乃至整个娱乐行业的首发纪录，其首发收入已经超过电影《复仇者联盟 4：终局之战》约 29 亿美元 （现汇率约合 194.07 亿元人民币） 的全球累计票房。 除商业成绩外，《GTA 6》上线还带动了全球互联网流量和游戏直播观看量大幅增长。据互联网交换中心运营商 DE-CIX 数据，当地时间 11 月 18 日 20:20，其全球互联网交换节点的数据吞吐量达到 33.03 Tbps，刷新纪录。《GTA 6》上线期间的数据传输量较年初常规周均水平高出 25%。 直播数据方面，Streams Charts 统计显示，《GTA 6》上线首个 24 小时内，全平台同时在线观众峰值达到 791 万人次，创下游戏首发直播观看人数新纪录。其中，Twitch 平台峰值约为 331 万人，YouTube 平台约为 322 万人，Kick 平台约为 150 万人。 Take-Two 同时披露，《GTA 6》在正式发售前已售出 3250 万份，创下全平台预售销量纪录。Rockstar Games 总裁兼创始人 Sam Houser 表示，公司对全球玩家的热烈反响深表感谢，并期待与玩家共同开启 Rockstar Games 的新篇章。",
-        "url": "https://www.ithome.com/1/030/289.htm",
+        "title": "黎曼猜想真被 Claude 证明了？Anthropic 数学家仅发布 Lean 代码，陶哲轩称验证仍需时间",
+        "summary": "IT之家 11 月 21 日消息，当地时间 11 月 20 日，Anthropic 数学家莱文特 · 阿尔珀格（Levent Alpöge）宣称他与 Claude 合作，发现了黎曼猜想及其推广形式广义黎曼猜想（GRH）的证明。 阿尔珀格拥有哈佛大学本科学位和普林斯顿大学数学博士学位，目前在 Anthropic 从事研究工作。他在声明中称，Claude 在证明接近完成时“远远超过了我”，“在终点附近飞翔、跳舞、闪耀”。他还表示，自己为 Claude 指明了关键研究方向，随后 Claude 提出了一系列令他意外的数学思路。 据阿尔珀格透露，他与 Claude 生成的文字证明超过 25 万页，因篇幅过长未予公开。公开材料仅包括一份 4 页说明，以及分为 14 个压缩包、总计约 1700 万行的 Lean 形式化代码。 2006 年菲尔兹奖得主陶哲轩后续在个人博客中对此作了初步盘点。他表示，从非常初步的分析看，该证明似乎动用了朗兰兹纲领和算术几何领域的现代研究成果，数学界梳理核心思路并验证正确性的过程还需要一段时间。 罗格斯大学数学教授 Alex Kontorovich 则在 X 上称，黎曼猜想的证明需要“运用一切”，这反而让他对成功的可能性更有信心。 IT之家注：Lean 是一种交互式定理证明器，用于将数学证明翻译为计算机可机械验证的代码。Lean 通过小型可信内核逐步检查逻辑推导，但无法自动保证形式化代码所证明的命题与原始数学猜想在语义上完全一致。 数学家 Elliot Glazer 在初步检查后表示，阿尔珀格发布的 Lean 文件中形式化的数学命题“确实是广义黎曼猜想”。但他同时指出，理论上不排除 Lean 自身存在可靠性漏洞的可能，不过他估计这一概率远低于 1%。此前已有研究记录显示，Lean 4 的部分历史版本曾出现过允许无效证明通过的内核缺陷。 《科学》杂志 2026 年 10 月的一篇报道也指出，AI 生成的 Lean 代码曾在 OpenAI 高调的 Navier-Stokes 问题证明中弱化原始英文命题的表述；Lean 验证的仅是代码所指向的形式化目标，而非自然语言层面的数学问题本身。 另外还有网上流传的一张疑似 2026 年菲尔兹奖得主邓煜评价此事的聊天截图显示，面对相关提问，其回复称“至少拿出 500 页版本前看都不看”。 即使 Lean 代码通过编译、形式化目标与原始猜想的一致性也得到确认，距离克雷数学研究所的认可仍有漫长距离。 按照该机构规则，千禧年难题的解答必须在同行评审期刊正式发表，并经过至少两年的验证期和数学界普遍接受，才有可能进入奖金评审程序。个人网站声明和代码压缩包不符合提交资格，克雷数学研究所也不接受直接投稿。黎曼猜想于 2000 年被列入七大千禧年难题，奖金为 100 万美元 （现汇率约合 669.2 万元人民币） 。 值得一提的是，Anthropic 于 11 月 19 日刚在纳斯达克挂牌交易，阿尔珀格称他在 11 月 15 日深夜至 16 日凌晨完成关键工作后联系了 Anthropic CEO 达里奥 · 阿莫代伊，询问公布时机。他承认“时间点非常糟糕”，但表示“实在无法再等下去了”。 今年 8 月，Anthropic 曾公布 Claude 在黎曼猜想相关问题上将关键线上零点比例下界从 41.6% 提高至 67.2% 的成果，当时距离完整证明仍有明显差距。 相关阅读： 《 AI 攻克黎曼猜想？Anthropic 数学家宣称已与 Claude 合作完成证明 》 《 未公开的新模型“立功”，Anthropic 宣布 Claude 攻克黎曼猜想取得重大突破 》 《 继 Claude 尝试攻克黎曼猜想后：OpenAI 宣布用 10000 个 AI 智能体 88 小时攻克千禧年大奖难题，陶哲轩既点赞又担忧 》 《 悬赏百万美元求证明，这道数学题为啥这么值钱？ 》 《 英国“数学教父”阿蒂亚去世，曾宣称证明黎曼猜想 》",
+        "url": "https://www.ithome.com/1/030/297.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -501,9 +501,9 @@
       {
         "date": "2026-11-20",
         "tag": "IT之家",
-        "title": "OpenAI 宣布向 ChatGPT Plus 用户开放 Spaces 协作空间，支持多人共同编辑",
-        "summary": "IT之家 11 月 21 日消息，OpenAI 今日宣布向 ChatGPT Plus 订阅用户开放 Spaces 协作空间功能。 该功能此前仅面向 Pro、Business 和 Enterprise 等付费方案用户提供，现在每月支付 20 美元 （IT之家注：现汇率约合 133.8 元人民币） 的 Plus 用户也可以创建自己的空间，与其他用户共同整理资料、协作处理文档和文件。 ChatGPT Spaces 最早于 2026 年 9 月的 OpenAI Dev Day 活动上推出，定位为多人协作工作空间。用户可以邀请同事或朋友加入，共享信息、文档及其他文件，并结合 ChatGPT 的相关功能开展写作、研究和项目管理工作。 用户可在 ChatGPT 左侧导航栏选择“Space”入口创建空间。该入口取代了原来的 Library（资料库）位置。点击或轻触加号后，可以选择现有模板，也可以上传 Pages 页面、Slides 幻灯片、电子表格、图片及网站链接。 OpenAI 介绍称，Pages 是专门为智能体协作设计的新型文档，适用于写作、可视化、研究和编程等工作。用户还可以将页面与已连接的工具关联，使内容根据外部工具中的信息自动更新。 Space 还支持多人协作，用户可以邀请其他人共同编辑项目，并与 ChatGPT 的 Scheduled Tasks（定时任务）功能配合使用。据 OpenAI 官方更新说明，用户还可以创建交互式页面和演示文稿，并邀请拥有 Space 使用权限的其他用户共同完善内容。 在使用场景方面，OpenAI 提到，用户可以为即将到访的朋友创建城市指南，后续不断添加新的地点，由 ChatGPT 负责整理；学生则可以利用 Space 制作包含 3D 可视化内容和自测题目的学习资料。 此次功能正在面向全球年满 18 周岁的 Plus 用户分批开放，并非所有账号都会立即获得入口。根据 OpenAI 官方帮助文档，共享页面和演示文稿需要获得相应访问权限，且使用者必须登录拥有 Space 权限的 Plus、Pro、Business 或 Enterprise 账号，免费用户无法打开共享内容，目前也不支持公开链接分享。 此外，Dot 智能体的使用权限仍存在套餐限制。OpenAI 已于 11 月 19 日开始向部分 Plus 用户测试 Dot 功能，但尚未全面开放。Engadget 报道称，Plus 用户目前尚不能普遍在 Space 中使用 Dot 智能体。 相关阅读： 《 OpenAI 邀部分 Plus 用户体验 dots AI 智能体，移动版 ChatGPT 将为其设独立标签页 》",
-        "url": "https://www.ithome.com/1/030/288.htm",
+        "title": "440 亿美元！阿波罗与高盛完成迄今规模最大 GPU 融资定价，SpaceX 要买英伟达芯片",
+        "summary": "IT之家 11 月 21 日消息，当地时间 11 月 20 日，阿波罗全球管理公司与高盛宣布，已完成约 440 亿美元 （IT之家注：现汇率约合 2,944.47 亿元人民币） 优先及次级票据融资定价， 资金将用于为 SpaceX 购买 GPU 及相关设备 。该交易因投资者需求强劲而获得超额认购并扩大规模，成为迄今规模最大的 GPU 融资交易。 阿波罗与高盛共同牵头此次融资，参与方还包括贝莱德、高盛资产管理及 KKR。融资将用于采购下一代英伟达 Vera Rubin 芯片，以支持 SpaceX 在地面建设计算基础设施。 相关 GPU 及设备预计于 2027 年上半年交付 ，届时租赁安排将开始生效。 阿波罗合伙人 Jamshid Ehsani 表示， SpaceX 是全球最具雄心的算力建设者之一 ，“很高兴与高盛一同牵头这笔融资”。 他表示，这笔交易体现了阿波罗一体化平台的能力，即发起、结构设计、分销与本金投资协同运作，以规模化提供灵活资本；也体现了公司对“下行保护、以资产为基础的结构”的关注。 IT 之家此前报道，10 月 26 日，SpaceX 宣布与阿波罗达成一份价值约 400 亿美元 （现汇率约合 2,676.79 亿元人民币） 的 GPU 及相关设备主融资租赁协议，签署时间预计落在 2026 年内。当时该协议即被称为迄今规模最大的 GPU 融资协议。 截至 2026 年 9 月 30 日，阿波罗管理资产规模约 1.07 万亿美元 （现汇率约合 7.16 万亿元人民币） 。 相关阅读： 《 SpaceX 达成史上最大规模 GPU 融资安排，协议总额约 400 亿美元 》",
+        "url": "https://www.ithome.com/1/030/296.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -511,9 +511,9 @@
       {
         "date": "2026-11-20",
         "tag": "IT之家",
-        "title": "谷歌搜索首页新增 AI 侧边栏，让你“接着聊”此前提问话题",
-        "summary": "IT之家 11 月 21 日消息，谷歌搜索产品副总裁罗比 · 斯坦（Robby Stein）昨日（11 月 20 日）在 X 平台发布推文，宣布 Google Search 首页将迎来新一轮调整， 面向全球桌面端逐步推出可折叠侧边栏，让用户直接从首页查找和继续此前的 AI 搜索对话。 根据演示，用户点击页面左侧的灰色条，即可展开侧边栏，查看通过“AI 模式”（AI Mode）进行的搜索记录。面板还提供新建对话、搜索历史对话以及连接 Gemini 笔记本等入口。选择已有记录后，用户可以回到相应话题继续提问，不必重新从头搜索。 斯坦指出本次改进的重点是让搜索具备更强的连续性，根据内部调查数据显示，用户在搜索页面带来了越来越多无法通过一次查询解决的问题，而侧边栏有助于他们继续推进任务、深入探索网络信息。 推进部署方面，AI 入口前置并不意味着传统搜索被取代。据报道，输入关键词后直接按回车，仍会显示常规搜索结果；用户需主动选择 AI 模式，才会进入相应体验。目前更新正分批上线，不同用户看到的新界面可能存在时间差。 IT之家目前尝试访问谷歌搜索页面，暂未发现相关 AI 侧边栏，“AI 模式”按钮存在于搜索框内。",
-        "url": "https://www.ithome.com/1/030/287.htm",
+        "title": "国际版三星 Galaxy S27 Pro 手机跑分曝光：Exynos 2700 芯片、12GB 内存",
+        "summary": "IT之家 11 月 21 日消息，型号“SM-S957B”的三星手机昨日（11 月 20 日）现身 GeekBench 跑分库， 7.1.0 版本单核成绩为 3,061 分，多核成绩为 10,967 分，相关线索表明该机上市后为三星 Galaxy S27 Pro。 IT之家注：根据 GSMA IMEI 数据库此前公示的信息，SM-S957B 对应三星 Galaxy S27 Pro，且后缀“B”代表国际市场版本，覆盖欧洲、印度等市场。 根据跑分页面显示，国际版 Galaxy S27 Pro 手机芯片代号为 S5E9975，对应三星自家的 Exynos 2700 芯片。目前掌握的信息来看，Exynos 2700 采用三星第二代 2nm GAA 工艺 SF2P，采用 10 核四集群设计，布局为 1＋4＋1＋4，其中 GPU 部分为 Xclipse 970。此外测试设备搭载 12GB 内存，运行安卓 17。",
+        "url": "https://www.ithome.com/1/030/295.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -521,9 +521,9 @@
       {
         "date": "2026-11-20",
         "tag": "IT之家",
-        "title": "日本政府核心网络系统遭入侵：持续非法访问超 3 个月，部分内部文件可能泄露",
-        "summary": "IT之家 11 月 21 日消息，据央视新闻及新华社报道，日本数字厅于当地时间 11 月 20 日发布公告称，日本政府共用的文件共享系统“政府解决方案服务”（GSS）发生非授权访问事件，政府部门通过该系统共享的部分文件可能已经外泄，其中不排除包含个人信息。 调查确认，至少在 2026 年 7 月 30 日至 11 月 12 日期间，存在非授权访问行为，相关文件可能已经泄露。 IT之家注：GSS 是面向日本政府机关等机构提供的共用业务环境，其中的文件共享服务用于政府部门之间，以及政府部门与外部企业等相关人员之间传输会议资料、大容量文件等。此次事件涉及该服务中此前上传的部分文件。 发现问题后，日本数字厅于 11 月 12 日立即切断了该文件共享服务与外部网络之间的通信，并暂停服务，以阻止进一步的外部访问。目前，相关部门仍在调查实际发生非授权访问的具体时间、泄露文件数量及内容，以及是否涉及涉密资料。 日本数字厅表示，由于无法排除相关文件包含个人信息的可能性，已向日本个人信息保护委员会报告此事。目前尚未发现由本次事件引发的个人信息滥用等二次损害。该机构正与警方等部门合作，并在外部专业机构协助下继续调查。 值得注意的是，这并非 GSS 首次发生信息安全事件。日本数字厅此前于 9 月 11 日公布，GSS 曾遭到利用 VPN 设备漏洞实施的非法入侵，约 24.6 万条政府机关工作人员及相关业务人员的个人信息可能泄露，涉及姓名、电子邮箱、电话号码和地址等信息。数字厅当时表示，相关事件涉及的个人信息不包括普通民众的信息。 不过日本数字厅此次 11 月 20 日公布的文件泄露事件与此前披露的事件是否存在关联，目前尚无官方确认。该机构尚未公布本次事件的具体影响范围及攻击原因，调查仍在进行中。",
-        "url": "https://www.ithome.com/1/030/286.htm",
+        "title": "IT早报 1121：5499 元起华为 OSTA O1 Pro 发布；腾讯因仙逆盗版起诉百度索赔 1 亿元；官方回应零跑 A10 被几箱啤酒压塌后备箱...",
+        "summary": "“IT早报”时间，大家好，现在是 2026 年 11 月 21 日星期六，今天的重要科技资讯有： 1. 5499 元起，“首款为 AI 而生的鸿蒙手机”华为星芒 OSTA O1 Pro 阔直板正式发布 新机采用 6.39 英寸 1.5K 阔直板屏，搭载麒麟 9030S 处理器与 7000mAh 电池，首发 HarmonyOS 7 AI 先锋版，起售价 5499 元。>> 查看详情 2. 腾讯向百度索赔 1 亿元，后者未拦截《仙逆》盗版视频网站链接 福建省福州市中级人民法院 11 月 10 日在人民法院公告网刊登了一份起诉状副本及开庭传票，显示因《仙逆》动画盗版纠纷，腾讯向百度索赔 1 亿元。>> 查看详情 3. 网传零跑 A10 后备箱被几箱啤酒压穿？官方回应系下层独立储物盒受损，非底板或整车承载结构损坏 近日，有零跑 A10 的车主反馈，自己的后备箱装了几箱啤酒就被压穿底了。随后该情况引发了网友热议。针对网传情况，零跑汽车官方在 11 月 20 日晚 23:05 发布情况说明，称本次受损部件为后备厢盖板下方的独立储物盒，系装载物品超过其设计承重上限所致，并非后备厢底板或整车承载结构受损。我们已与用户充分沟通并获得了用户的理解。>> 查看详情 4. DeepSeek 新一轮千亿级融资落地，梁文锋保留绝对控制权 最新工商信息显示，DeepSeek 运营主体杭州深度求索人工智能基础技术研究有限公司近日完成工商变更。>> 查看详情 5. 苹果 20 周年款 iPhone 渲染图曝光：整机如一块玻璃，四曲面带来“无边框”观感 YouTube 频道 AppleTrack 11 月 19 日更新视频，分享了苹果 20 周年款 iPhone（该信源称其为 iPhone XX）的渲染图。>> 查看详情 6. 三年销售目标 700 亿，京东与华为 OSTA 星芒达成战略合作 近日，京东与华为 OSTA 星芒签署战略合作协议，明确未来三年华为 OSTA 星芒在京东实现全品类销售额 700 亿的目标。>> 查看详情 7. 华为余承东：享界 V8 具备 L3 硬件能力但未开放，当下 L2 时代开车不能睡觉 华为常务董事、产品投资委员会主任、终端 BG 董事长 @余承东 11 月 20 日在微博发文称：“大家用辅助驾驶要专心开车、按要求握好方向盘。现在还是 L2 时代，大家一定要注意安全，开车不能睡觉。”>> 查看详情 8. 独占特性确认：华为 Mate 系列旗舰机“无缘”OSTA 小星芒、AI 屏等功能 华为星芒 OSTA O1 Pro 已于 11 月 19 日发布，品牌总经理刘赫在自己微博评论区解答了不少消费者的疑惑。针对星芒首发的新功能 Mate 系列能否 OTA 支持相关问题，刘赫透露 Mate 旗舰也“无缘”OSTA 小星芒、AI 屏等功能。>> 查看详情 9. 比亚迪腾势汽车李慧：易三方 Evo 是全球独一无二的硬核技术平台，友商追赶了易三方超过三年也没追上 腾势汽车总经理李慧表示，易三方 Evo 是全球独一无二的硬核技术平台，目前任何一个汽车品牌都没有。>> 查看详情 10. T2 宣布《GTA 6》首日收入 37.9 亿美元创娱乐行业新纪录，远超漫威《复仇者联盟 4》总票房 刷新游戏及娱乐行业首发纪录，预售销量达 3250 万份；还带动全球互联网流量、游戏直播观看量大幅增长，创下多项相关领域新纪录。>> 查看详情 11. 鸿蒙智行享界 V8 MPV 正式上市，31.98 万-42.98 万元起 四种版本可选增程或纯电动力，搭载华为乾崑智驾与四激光雷达，全系标配后轮转向和零重力座椅，增程版 CLTC 综合续航超 1400km。>> 查看详情 12. 比亚迪张卓宣布海洋网重磅旗舰 MPV 即将亮相，市场“独一无二”的存在 比亚迪汽车海洋网销售事业部总经理张卓 11 月 20 日发布预热海报，宣布海洋网重磅旗舰 MPV 即将亮相，口号“时代新作为家而生”。>> 查看详情 13. 特斯拉副总裁陶琳：马斯克 24 小时中国行专门从深圳飞到上海，对上海超级工厂赞赏有加 马斯克 24 小时中国行专程从深圳飞赴上海，感谢亚太及中国团队付出，盛赞上海超级工厂制造实力与中国团队执行力，鼓励摒弃短期投机思维。>> 查看详情 14. 铁路 12306 App 信息通知服务 11 月 20 日起优化：新增候补兑现情况和列车运行调整等 11 月 20 日起，12306App 新增候补兑现、列车停运折返等通知服务，并支持微信、支付宝、邮箱多渠道推送。旅客需在设置中开启通知权限并留存真实手机号。>> 查看详情 15. 鸿蒙全新版本来袭！华为星芒 OSTA O1 Pro 官宣首搭 HarmonyOS 7 AI 先锋版系统 在 11 月 20 日下午的鸿蒙智行享界 V8 及星芒品牌发布会上，华为官方宣布，星芒开山之作 —— OSTA O1 Pro 是首款为 AI 而生的鸿蒙手机。IT之家从发布会现场了解到，华为星芒 OSTA O1 Pro 还官宣首搭 HarmonyOS 7 AI 先锋版系统，支持全新 AI 交互、系统主动智能和长期陪伴成长。>> 查看详情 16. 华为星芒刘赫：得麒麟芯者得天下，OSTA O1 Pro 搭载麒麟 9030S 旗舰 τ 芯片 11 月 20 日下午的鸿蒙智行享界 V8 及星芒品牌发布会上，华为 OSTA 星芒品牌总经理刘赫登台，介绍了华为星芒开山之作 —— OSTA O1 Pro 的详细信息。刘赫表示，江湖上有句古话，得麒麟芯者得天下。OSTA O1 Pro 搭载麒麟 9030S 旗舰 τ 芯片，支持软硬芯云垂直整合、深度协同，可实现秒启秒开秒加载等特性。>> 查看详情 17. 华为全新子品牌星芒 OSTA 正式登场，余承东称目标成为 AI 时代消费者喜爱的先锋科技品牌 在 11 月 20 日下午的鸿蒙智行享界 V8 及星芒品牌发布会上，大家期待已久的华为全新子品牌星芒 OSTA 正式登场。华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东表示，华为星芒将主打原创、智能、科技和触手可及等特性。>> 查看详情 18. 华为余承东：L3 自动驾驶来了以后开车是可以睡觉的，别睡死过去就行 在 11 月 20 日的鸿蒙智行享界 V8 及星芒品牌发布会上，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东介绍，享界 V8 率先开启全国首个 120km/h L3 自动驾驶跨城高速路测。>> 查看详情 19. 目前算力性能最强中国自研 AI 芯片，阿里真武 V900 明年一季度将量产售卖 阿里云官方宣布，明年一季度，新一代 AI 芯片真武 V900 将量产售卖，是目前算力性能最强的中国自研 AI 芯片。>> 查看详情 20. 华为余承东晒鸿蒙智行“五界”品牌矩阵，重回“问智享尊尚”序列 鸿蒙智行享界 V8 及星芒品牌发布会正在进行中。发布会上，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东做了开场演讲，并晒出鸿蒙智行“五界”品牌矩阵。值得一提的是，五大品牌重回了“问智享尊尚”序列。>> 查看详情 21. 余承东重申：鸿蒙智行是华为终端主导的智能汽车技术生态联盟，六大独有核心技术推动国内产业升级 在 11 月 20 日下午的鸿蒙智行享界 V8 及星芒品牌发布会上，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东登台，再次介绍了鸿蒙智行的定义，称是华为终端主导的智能汽车技术生态联盟，以六大独有核心技术推动中国智能汽车产业升级。>> 查看详情 22. “这是 AMD 的巨大机遇”：苏姿丰首谈黄仁勋离任英伟达 CEO，他是杰出领袖 科技媒体 Business Insider 11 月 19 日发布博文，报道称在美国奥斯汀（Austin）举行的 TomorrowX 峰会上，AMD 首席执行官苏姿丰（Lisa Su）首次公开谈及其表舅、英伟达前首席执行官黄仁勋（Jensen Huang）离任一事。>> 查看详情 23. 能让 iPhone 跑安卓 App 的虚拟机 Andarium 被苹果 App Store 火速下架 一款名为“Andarium”软件日前上架苹果 App Store 平台，这是一款安卓虚拟机软件，支持在 iPhone 和 iPad 上运行 Android 应用，引发网络热议。>> 查看详情 24. 爆料者 Cyberleek 公布疑似《GTA 6》Xbox 版文件，一周内有望实现 PC 模拟运行 目前文件缺少主程序暂无法启动，爆料者称若代币市值达标或倒计时结束将放出缺失文件，一周内有望实现 Xbox 版 PC 模拟运行。>> 查看详情 25. 摩根大通：计划购买 苹果 iPhone 18 Pro /iPhone Duo 等的受访群体中，97% 年底前购买 摩根大通（ J.P . Morgan）的 2026 年度消费者调查报告显示，73% 的全球受访者在 2026 年计划或者已经购买新 iPhone，为近年最高水平。2025 年和 2024 年这一比例分别为 71% 和 68%。>> 查看详情 今天就先聊到这里，IT早报，咱们明天见。",
+        "url": "https://www.ithome.com/1/030/294.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
