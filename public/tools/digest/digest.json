@@ -1,23 +1,33 @@
 {
-  "updated": "2026-11-21 12:54 UTC",
+  "updated": "2026-11-21 15:59 UTC",
   "categories": {
     "投资": [
       {
         "date": "2026-11-21",
-        "tag": "MarketWatch",
-        "title": "拉里·麦克唐纳在雷曼兄弟倒闭中幸存下来。现在他警告说，信贷市场正在向股市发出增长冲击的信号。",
-        "summary": "Bear Traps Report founder explains why he sees stagflation coming, how much artificial-intelligence risk sits in S&P 500 index funds and why he favors hard assets",
-        "url": "https://www.marketwatch.com/story/larry-mcdonald-survived-lehmans-collapse-now-he-warns-the-credit-market-is-signaling-a-growth-shock-for-stocks-5c3a62ef?mod=mw_rss_topstories",
-        "source": "MarketWatch",
+        "tag": "Seeking Alpha",
+        "title": "CNN：联邦调查局犯罪数据库被黑",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4675393-fbi-crime-database-hacked?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "The Block",
+        "title": "攻击者因疑似密钥泄露从金库中盗取 486 万美元后，Chainflip 的 FLIP 下跌 34%",
+        "summary": "Chainflip's FLIP token dropped 34% in price in the wake of the apparently automated attack, per The Block's price data.",
+        "url": "https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804",
+        "source": "The Block",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-21",
         "tag": "Seeking Alpha",
-        "title": "FDA 拒绝细胞疗法后，Capricor 正在审查运营情况",
+        "title": "SA 问：Nvidia 应该带回黄仁勋吗？",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4675389-capricor-stock-down-fda-rejects-cell-therapy?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4675366-sa-asks-should-nvidia-bring-back-jensen-huang?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -25,9 +35,19 @@
       {
         "date": "2026-11-21",
         "tag": "Seeking Alpha",
-        "title": "从 ChatGPT 到 Claude 交易：沃尔玛看起来像是人工智能的赢家",
+        "title": "大银行、加密股票、新云等输家：本周财务数据总结",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4675280-from-chatgpt-to-claude-deals-walmart-looks-like-an-agentic-ai-winner?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4675265-big-banks-crypto-stocks-neoclouds-among-losers-weeks-financials-wrap?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Seeking Alpha",
+        "title": "特朗普威胁对在海外建设数据中心的美国公司征收“巨额税”",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4675392-trump-threatens-us-firms-building-overseas-data-centers?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -49,16 +69,6 @@
         "summary": "Acute Chinese shortage and high local premium create lucrative arbitrage",
         "url": "https://www.ft.com/content/b84dbcb1-f216-422e-89c7-f203e0ab2757?syn-25a6b1a6=1",
         "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-21",
-        "tag": "MarketWatch",
-        "title": "股市残酷的一周几乎抹去了全年涨幅",
-        "summary": "Investors are now more focused on protecting their portfolios than looking for bargains",
-        "url": "https://www.marketwatch.com/story/how-a-brutal-week-for-stocks-almost-wiped-out-their-gains-for-the-entire-year-ae6773c3?mod=mw_rss_topstories",
-        "source": "MarketWatch",
         "region": "en",
         "category": "投资"
       },
@@ -103,46 +113,6 @@
         "category": "投资"
       },
       {
-        "date": "2026-11-21",
-        "tag": "MarketWatch",
-        "title": "科技中断让美国人感到非常不安，以至于他们正在囤积现金和物资",
-        "summary": "A lack of clarity from world leaders is prompting some people to prepare for the worst.",
-        "url": "https://www.marketwatch.com/story/why-are-these-tech-outages-rattling-americans-so-much-that-theyre-stockpiling-cash-and-supplies-07516bdd?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "Seeking Alpha",
-        "title": "由于中东供应前景强劲，油价连续第三周下跌",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4675383-oil-prices-wrap-up-third-straight-weekly-decline-on-strong-middle-east-supply-outlook?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "Seeking Alpha",
-        "title": "ANPG表示，埃克森美孚凭借新发现批准了安哥拉4B美元油田开发",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4675382-exxon-greenlights-4b-angola-oilfield-development-with-new-discovery-anpg-says?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "MarketWatch",
-        "title": "道琼斯指数和标准普尔 500 指数进入回调，纳斯达克指数遭遇 2020 年以来最糟糕的一周",
-        "summary": "All 11 S&P 500 sectors finished more than 1% lower this week for the first time since April 2025.",
-        "url": "https://www.marketwatch.com/story/dow-s-p-500-enter-correction-as-nasdaq-suffers-worst-week-since-2020-bd74dadf?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
         "date": "2026-11-20",
         "tag": "The Block",
         "title": "ZEC 从历史高位回落，DCG 旗下 Zcash 矿商 Fortitude 顺利通过纳斯达克上市投票",
@@ -161,6 +131,36 @@
         "source": "CNBC Markets",
         "region": "en",
         "category": "投资"
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "CNBC Markets",
+        "title": "由于人工智能抛售，市场预测 2026 年股票前景黯淡",
+        "summary": "Odds that the S&P 500 will cross 8,000, which were once north of 70%, are extremely low on platform Kalshi.",
+        "url": "https://www.cnbc.com/2026/11/20/sp-500-8000-kalshi-odds-ai-selloff.html",
+        "source": "CNBC Markets",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "The Block",
+        "title": "众议员卡斯滕寻求通过司法部举报计划遏制预测市场内幕交易",
+        "summary": "Rep. Sean Casten, who could have a top spot in Congress next year, is clamping down on insider trading in prediction markets.",
+        "url": "https://www.theblock.co/news/regulation/2026-11-20-rep-casten-seeks-curb-prediction-market-insider-trading-doj-whistleblower-program-444779",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "CNBC Markets",
+        "title": "牛市又出现了新问题。 “聪明钱”正在抛售",
+        "summary": "Companies are shifting from share buybacks to stock issuance, adding new supply. Anthropic’s $81 billion IPO puts that demand to the test.",
+        "url": "https://www.cnbc.com/2026/11/20/equity-issuance-bull-market-problem.html",
+        "source": "CNBC Markets",
+        "region": "en",
+        "category": "投资"
       }
     ],
     "科研": [
@@ -171,6 +171,16 @@
         "summary": "A promising material for ultra-fast optical communications has held a secret for decades, but scientists may have finally cracked it. Researchers at KAIST and Caltech have precisely measured how barium titanate controls and absorbs light, resolving longstanding uncertainties that have slowed its development. Their findings could make it easier to build optical devices that transmit information faster while wasting less light.",
         "url": "https://www.sciencedaily.com/releases/2026/11/261119194544.htm",
         "source": "ScienceDaily 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Nature 材料",
+        "title": "形状一致的 Janus 水凝胶可防止吻合口漏",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41467-026-79644-w",
+        "source": "Nature 材料",
         "region": "en",
         "category": "科研"
       },
@@ -245,6 +255,16 @@
         "category": "科研"
       },
       {
+        "date": "2026-11-21",
+        "tag": "Nature 材料",
+        "title": "使用视觉基础模型对电子显微照片中的碳纳米管进行量化和分类",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-79572-1",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
         "date": "2026-11-20",
         "tag": "ScienceDaily 材料",
         "title": "CERN 科学家终于找到了粒子衰变的证据，这种衰变非常罕见，以至于花了 40 年才发现",
@@ -285,26 +305,6 @@
         "category": "科研"
       },
       {
-        "date": "2026-11-20",
-        "tag": "Nature 材料",
-        "title": "具有高拉伸断裂应变的高弹性陶瓷纤维",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41467-026-79542-1",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "Nature 材料",
-        "title": "通过界面工程实现晶圆级可转移六方氮化硼膜用于多级存储",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41467-026-79354-3",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
         "date": "2026-11-19",
         "tag": "ScienceDaily 材料",
         "title": "为什么氢火焰会发出橙色光，然后几乎看不见",
@@ -329,9 +329,9 @@
       {
         "date": "2026-11-21",
         "tag": "PANews",
-        "title": "分析：加密市场遭遇“完美风暴”，特朗普时期的上涨行情已结束",
-        "summary": "PANews 11月21日消息，据Crypto In America报道，加密与科技股本周大幅下跌，比特币周五晚间跌破5.6万美元，为2024年9月以来首次，抹去自特朗普赢得大选以来的全部涨幅；加密市场较历史高点蒸发约2.3万亿美元。纳斯达克周五下跌5.3%，抹去全年涨幅；标普500较10月高点下跌超10%，进入回调区间。 市场研究通讯The Kobeissi Letter称，抛售早于民主党赢得参众两院，主要由大型科技公司巨额AI支出担忧驱动。但该机构认为，民主党胜选终结了所谓“特朗普看跌期权”，即市场认为特朗普会在压力时期出手稳定市场。",
-        "url": "https://www.panewslab.com/zh/articles/01a1fe27-3cbd-72dc-8b46-b179bedeb073",
+        "title": "Chainflip的FLIP代币暴跌34%，此前其金库被盗损失486万美元",
+        "summary": "PANews 11月21日消息，行情显示，Chainflip的FLIP代币在攻击事件发生后暴跌34%。此前，Chainflip以太坊金库被盗取约486万美元ETH和稳定币，协议已暂停。安全公司认为其签名密钥遭攻破，资金在10分钟内转入Tornado Cash。",
+        "url": "https://www.panewslab.com/zh/articles/01a1febe-4ef4-7135-b580-bfd626115d34",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -339,9 +339,9 @@
       {
         "date": "2026-11-21",
         "tag": "PANews",
-        "title": "某巨鲸抵押18.2万枚ETH借款2.14亿美元，若ETH跌至1401美元将面临清算",
-        "summary": "PANews 11月21日消息，据链上分析师余烬监测，若ETH跌至1,401美元，一个在Aave上抵押182,277枚ETH（3.01亿美元）、借款2.14亿美元USDT的巨鲸将被清算。其仓位清算线原本没有这么近，但其今日在ETH下跌后又借了2,200万美元USDT，以1,605美元的价格买入13,709枚ETH，使其仓位被清算风险进一步升高。",
-        "url": "https://www.panewslab.com/zh/articles/01a1fe1f-bb43-701c-92cc-e287c485109c",
+        "title": "过去24小时全网合约爆仓23.15亿美元，主爆多单",
+        "summary": "PANews 11月21日消息，CoinGlass数据显示，过去24小时加密货币市场全网合约爆仓23.15亿美元，其中多单爆仓18.56亿美元，空单爆仓4.59亿美元。BTC爆仓总金额11.69亿美元，ETH爆仓总金额5.31亿美元。最大单笔爆仓单发生在Binance-BTCUSDT，价值5170.80万美元。",
+        "url": "https://www.panewslab.com/zh/articles/01a1feba-8a0f-742e-ab9c-9968b97e7c8b",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -349,9 +349,9 @@
       {
         "date": "2026-11-21",
         "tag": "PANews",
-        "title": "以太坊财库公司BTCS向SEC披露其5400万美元Aave贷款可能被清算",
-        "summary": "PANews 11月21日消息，据CoinDesk报道，以以太坊为主要资产的纳斯达克上市公司BTCS向美国SEC表示，其在Aave上的一笔以太坊抵押贷款可能面临清算。该贷款借出美元稳定币，若ETH价格跌得足够多，贷款将可被清算，外部交易者可偿还部分债务并以折价取得BTCS的ETH，无需追加保证金。 BTCS在文件中称，截至11月19日债务约5400万美元，另有约1800万美元可转换为股票的高级担保可转债，以及按ETH价格1775美元计约1.11亿美元的加密资产。公司表示，无法保证未来借款金额、抵押品价值，也无法保证不会发生清算。该债务约两周前为6400万美元。",
-        "url": "https://www.panewslab.com/zh/articles/01a1fe1b-bb07-7081-acb6-5a1fda10d49d",
+        "title": "分析师：比特币已持续下跌411天，若遵循历史明年一季度或开始上行",
+        "summary": "PANews 11月21日消息，加密分析师Killa发文称，其很久没见过如此糟糕的市场情绪，这基本解释了原因。比特币已持续下跌411天，而以往周期在400天左右通常开始出现高时间框架上的显著转变，真正的推动往往在450至500天左右出现，对应明年第一季度。从历史看，底部形成后一年内BTC通常较底部翻倍，因此无论今年在哪里见底，未来一年内都有可能较底部翻倍。 Killa称，他此前违背历史规律，认为因见顶更早、在减半前创下历史新高，底部会更早到来，但市场如今在第四季度创下更低低点，与此前周期类似。若这次遵循数据，明年应开始上行。",
+        "url": "https://www.panewslab.com/zh/articles/01a1feb1-b21d-7411-b5fc-a8e838b2d3ff",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -359,11 +359,21 @@
       {
         "date": "2026-11-21",
         "tag": "PANews",
-        "title": "BTC突破59000美元，日内下跌 0.75%",
-        "summary": "PANews 11月21日消息，欧易OKX行情显示，BTC刚刚突破59000美元，现报59026.40美元/枚，日内下跌 0.75%。",
-        "url": "https://www.panewslab.com/zh/articles/01a1fe1a-c882-76f7-86ba-bfe41bd739a1",
+        "title": "Chainalysis：疑似中国用户通过加密货币支付绕过美国对AI模型的出口管制",
+        "summary": "PANews 11月21日消息，Chainalysis发文称，链上数据表明，疑似中国用户正通过加密货币支付绕过美国对前沿AI模型的出口管制。代理服务商向被禁用户出售受限模型的访问权限，且往往打折。用户进入后，可低成本利用先进模型改进自身模型。Chainalysis调查的代理服务中，40%接受加密货币，主要是稳定币。进一步研究显示，在美国新AI模型发布后的数日内，疑似与中国关联的钱包付款量会高于正常水平，且高于所有使用这些服务的钱包的整体水平，这一模式符合试图快速获取新模型能力的行为。",
+        "url": "https://www.panewslab.com/zh/articles/01a1fe9a-a449-71b4-ae59-3af1b2f54659",
         "source": "PANews",
         "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Decrypt",
+        "title": "人工智能泡沫终于破灭了吗？华尔街专家敲响警钟 Nvidia 暴跌 48%",
+        "summary": "Tech stocks are buckling after Anthropic’s historic IPO and Nvidia’s leadership crisis, while Bitcoin has slipped below $60,000. Experts disagree on whether AI faces a correction or a dot-com-style bust.",
+        "url": "https://decrypt.co/383754/ai-bubble-finally-popping-nvidia-crashes-48-wall-street-alarm",
+        "source": "Decrypt",
+        "region": "en",
         "category": "web3"
       },
       {
@@ -475,25 +485,15 @@
         "source": "Decrypt",
         "region": "en",
         "category": "web3"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "Decrypt",
-        "title": "Cathie Wood 在 Anthropic IPO 上押注 9100 万美元，同时减少加密货币风险",
-        "summary": "The firm bought 934,968 Anthropic shares across six ETFs on the Claude maker’s Nasdaq debut while trimming a combined $4.1 million from its Ethereum and Solana staking ETFs.",
-        "url": "https://decrypt.co/383737/cathie-wood-bets-91m-anthropic-ipo-paring-crypto-exposure",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
       }
     ],
     "科技": [
       {
         "date": "2026-11-21",
         "tag": "IT之家",
-        "title": "曝三星未来三年大部分存储芯片产能已被锁定，有客户希望供货保障至 2031 年",
-        "summary": "IT之家 11 月 21 日消息，韩媒 Economy Tribune 今天（21 日）下午爆料称，三星电子 2027 年至 2029 年的大部分存储芯片产能 都已被合同预订 。随着 AI 数据中心投资持续扩大，存储芯片供应短缺长期难以缓解，部分客户开始要求签订长期供货协议（LTA）， 希望将供货保障期限延长至 2031 年 。 供应紧张的局面不仅出现在高带宽内存（HBM）领域，通用 DRAM 和企业级 NAND 闪存同样面临短缺。主要存储芯片制造商的议价能力预计将因此进一步增强。 据知情人士 21 日透露，三星电子 2027 年至 2029 年的大部分存储芯片产能 都已被合同锁定 。 客户不再满足于现有合同约定的供货量，纷纷要求增加供应。部分客户还在推动将合同期限 延长至 2031 年 。 三星电子上月 29 日公布第三季度业绩时曾透露，公司已与 10 家主要客户签订 LTA，另有 10 家客户仍在谈判中。三星计划到 2030 年，通过 LTA 锁定 60% 至 70% 的存储芯片产能 。 业内消息称，三星电子与客户也在考虑签订包含预付款、价格上下限条款的长期合同。三星此前在业绩发布会上透露，目前签订的 LTA 均设有价格下限条款。 长期供货协议不断增加的同时，存储芯片市场的供需缺口也在扩大。 业内数据显示，主要存储芯片制造商目前的 供货满足率只有 60% 至 70% ，预计 2027 年供应短缺还将进一步加剧。 其中，2027 年通用 DRAM 的晶圆产能实际上已全部售罄。DRAM 比特供给增幅预计每年最高也只有 20% 至 25%。 HBM 产能扩张也进一步挤压了通用 DRAM 的供应空间。据IT之家了解，由于生产 HBM 需要占用比普通 DRAM 更多的晶圆产能 ，HBM 在整体生产中的占比越高， 通用 DRAM 扩大供应的空间就越有限 。 NAND 闪存市场同样面临供应紧张，企业级产品的短缺尤为突出。一名业内人士指出，目前市场对 NAND 闪存的咨询量很大。与现货市场不同，合约市场的需求反而在增长。消费级 NAND 的供货满足率近期大幅提升至 70%，但企业级 SSD 的供货满足率仍超过 50%。",
-        "url": "https://www.ithome.com/1/030/475.htm",
+        "title": "比亚迪腾势 B5“致敬”大众途锐经典广告，两轮成功拉动 180 吨客机",
+        "summary": "IT之家 11 月 21 日消息，比亚迪腾势汽车在海外重现了大众 20 年前的一则经典广告：一辆柴油 SUV 拖着一架大型喷气式客机。不过，这一次腾势还准备了一项相当惊人的绝活。 20 年前，一辆蓝色大众途锐 V10 柴油版（下图）曾在英国邓斯福机场的跑道上拖动一架重达 155 吨的喷气式客机。 时间来到当下，一辆 腾势 B5 （即方程豹豹 5）也来到同一地点，准备重演当年的特技。该车采用双电机布局，31.8kWh 电池满电时可提供最高 90km 的纯电续航，还配有两把机械式差速锁。 大众当年的挑战中，途锐始终保留着四个车轮；比亚迪却决定 逐步拆下部分车轮 ，借此考验车辆的表现。 第一轮测试保留了全部四个车轮；第二轮则以三轮状态拖行，并增加约 2 吨配重。最后一轮拆除了右侧两个车轮， 配重进一步增加到 5 吨 。在这三次测试中，腾势 B5 拖着重达 180 吨的波音 747-400 行驶了超过 1.6 公里 。最值得一提的是，全程 只靠电力驱动 。 这场表演是为了向英国市场推广腾势 B5。该车采用专门打造的梯形车架底盘，电气化程度更高。其汽油发动机主要负责为高压电池发电，电池电芯则直接集成在底盘纵梁之间。 IT之家注：此次测试中的车辆加装了定制拖曳装置，还拆除了部分座椅以腾出空间安放配重，还安装了稳定器，以弥补拆除车轮带来的影响。",
+        "url": "https://www.ithome.com/1/030/509.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -501,31 +501,71 @@
       {
         "date": "2026-11-21",
         "tag": "IT之家",
-        "title": "我国“5G + 工业互联网”项目达 2.7 万个，已覆盖全部 41 个工业大类",
-        "summary": "IT之家 11 月 21 日消息，据央视新闻从工业和信息化部了解到，目前我国 5G 应用已融入全部 97 个国民经济大类， 工业互联网已覆盖全部 41 个工业大类 。 目前，我国已经建成分类分级、特色鲜明的 5G 工厂 1260 家，培育超过 360 家具有一定影响力的工业互联网平台， 重点平台工业设备联接数超 1 亿台（套） 。 中国信息通信研究院技术与标准研究所副所长汤立波表示， 全国“5G + 工业互联网”项目已超 2.7 万个 ，有力推动各类工业场景提质降本增效，通过规模化融合应用带动产业升级。 工业和信息化部从 2024 年开始实施“5G + 工业互联网”融合应用城市试点 ，试点城市将打造具有全国、区域引领效应的“5G + 工业互联网”产业集群和创新生态，推动“5G + 工业互联网”规模化应用。 首批十个试点城市（IT之家注：上海、沈阳、南京、苏州、宁波、青岛、武汉、广州、深圳、成都）入选 5G 工厂名录共计 235 个，占全国总量的 18.7%。目前已启动 2026 年“5G + 工业互联网”融合应用城市试点申报。 目前，工业和信息化部已经发布航空制造、农机装备、钢铁、电子信息等行业工业互联网融合应用指南，制定智能制造场景参考指引，推广 5600 余个典型场景。",
-        "url": "https://www.ithome.com/1/030/473.htm",
+        "title": "育碧确认：《刺客信条》中国背景手游“代号 JADE”仍在开发",
+        "summary": "IT之家 11 月 21 日消息，育碧确认，《刺客信条》系列中国背景手游《刺客信条：代号 JADE》仍在开发中，不过现阶段 仍将主机和 PC 作为业务重点 。 育碧 CFO 弗雷德里克 · 迪盖在上半年业绩电话会议上披露，移动游戏在中长期仍有发展机会，《刺客信条：代号 JADE》就是该系列面向移动平台的作品。“从长期财务回报考虑，鉴于我们希望更加重视资本配置和财务回报，我们更愿意 把资源投向更大的机会 。现阶段，我们旗下规模最大的系列仍以主机和 PC 为核心。我们的目标是推动主机和 PC 平台实现强劲增长，尤其是 PC 平台，因为它比以往任何时候都更具活力。” 育碧上一次确认该作仍在开发，是在今年 3 月。 育碧的业绩报告还显示，公司新运营模式已全面落实，管理架构也有进一步调整。创意工作室 3 和 5 合并后，由朱利安 · 巴雷斯统一领导，以加强不同平台在线服务之间的协同。 育碧认为，新架构已经开始显现成效。《刺客信条：黑旗-记忆重置》取得了商业成功，《彩虹六号：围攻》也重拾发展势头。在上半年按月活跃用户数计算，《彩虹六号：围攻》跻身 Xbox 和 PlayStation 平台游戏前十。 不过，育碧上半年仍录得 2.545 亿欧元 （IT之家注：现汇率约合 18.69 亿元人民币） 净亏损，净预订额下滑 16.5%，降至 6.447 亿欧元 （现汇率约合 47.34 亿元人民币） 。 近期还有报道称，育碧正在开发一款新的《彩虹六号：维加斯》游戏，距离该系列上一部作品问世已有 18 年。",
+        "url": "https://www.ithome.com/1/030/507.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-21",
-        "tag": "IT之家",
-        "title": "欧洲央行行长拉加德：欧盟应利用公共资金，率先承担大型芯片厂、数据中心等项目首轮损失",
-        "summary": "IT之家 11 月 21 日消息，据美国 CNBC 报道，当地时间 11 月 20 日，欧洲央行行长克里斯蒂娜 · 拉加德在法兰克福欧洲银行业大会发表卸任前最后一次演讲时呼吁， 欧盟应利用公共资金，在大型芯片制造厂和数据中心项目中率先承担首轮损失，以此吸引私人资本 。 她指出：“如果某项挑战需要欧洲层面的解决方案，我们就应该加强有能力提供这种方案的欧洲机构。在技术领域，芯片制造厂和数据中心项目需要 在整个欧洲范围内达到一定规模 。因此，欧洲应建立跨区域的公私合作伙伴关系，由公共资金，包括欧盟预算资金，先行承担项目的首轮损失，吸引私人资本参与。” 拉加德此前曾警告，欧洲现有的数据中心容量无法满足自身需求，欧盟计划在境内建设一个最多由七座超级工厂组成的网络，但这一计划仍然不够。 拉加德提出这一主张之际，人工智能热潮带动的基础设施及配套项目正面临越来越多的争议，项目本身也愈发复杂、成本高昂。从欧洲、亚洲到美国，都出现了这一趋势。 她援引的一项近期估算显示，如果到 2030 年将欧洲在全球 AI 算力中的占比从约 5% 提高到 15%，所需投资将达到约 1.3 万亿欧元 （IT之家注：现汇率约合 9.54 万亿元人民币） 。 拉加德在法兰克福向听众发表讲话时直言：“我们能够及早发现问题，却往往要等到问题变得无法忽视时才能采取行动。而到了那一步，几乎注定为时已晚。失去的产业很难重新夺回，一旦我们的依赖关系被人利用来对付我们，欧洲的主权便已暴露在风险之中。”",
-        "url": "https://www.ithome.com/1/030/472.htm",
-        "source": "IT之家",
+        "tag": "Solidot",
+        "title": "地球 28 光年外发现一个三星系统",
+        "summary": "天文学家在距离地球 28 光年处发现了一个三星系统，挑战了对恒星演化的现有观念。该系统被命名为 Welopōʻa，包括两颗白矮星和一颗红矮星。白矮星是类太阳恒星耗尽燃料后的高致密残骸，而红矮星则比太阳暗淡得多。天文学家是在红矮星周围寻找行星时意外发现这一三星结构的：这颗红矮星与另一颗白矮星近距离相互旋转，而另一颗更遥远的白矮星围着这两个天体旋转。地球 100 光年内从未发现了类似天体结构。红矮星与其中一个白矮星距离非常近，意味着白矮星之前的类太阳恒星在红巨星阶段必定会与红矮星发生相互作用。在类似的天体系统中，膨胀的恒星可能会吞噬伴星，甚至导致两颗恒星合并。然而出乎意料的是，红矮星不仅幸存，其轨道还非常稳定。天文学家表示此类系统本不应该存在，他们无法给出明确的演化解释。",
+        "url": "https://www.solidot.org/story?sid=85955",
+        "source": "Solidot",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-21",
         "tag": "IT之家",
-        "title": "vivo S60t 手机上架：第四代骁龙 7s 处理器、12GB RAM，3199 元起",
-        "summary": "IT之家 11 月 21 日消息，vivo 现已在京东上架 S60t 手机，该机可以看作是 S60 手机的换芯版，主要将 SoC 从第三代骁龙 8s 换成第四代骁龙 7s，匹配 12GB RAM，定价为 3599 元起，首发价 3199 元起（国补后 2448.86 元起）。 京东 vivo S60t 券后 3199 元起 领 400 元券 12GB RAM + 256GB 存储空间：3599 元，首发价 3199 元 12GB RAM + 512GB 存储空间：3999 元 该机厚度 7.92mm，重量轻至 199g，提供星星海、初夏绿、仲夏夜三种颜色可选。正面配备一块 6.59 英寸 1260p 144Hz 直屏，前置 50MP 摄像头；后置 50MP 大底主摄 +8MP 超广角 +50MP IMX882 3X 潜望长焦。 该机搭载第四代骁龙 7s 处理器，匹配 12GB RAM，配备 7200mAh 超薄蓝海电池，支持 90W 有线充电，还提供了 IP68&IP69、立体声双扬声器、红外遥控、X 轴线性马达等特性。 IT之家附产品参数：",
-        "url": "https://www.ithome.com/1/030/471.htm",
+        "title": "韩国总统李在明：速度在 AI 竞赛中至关重要",
+        "summary": "IT之家 11 月 21 日消息，据路透社报道，当地时间 21 日，韩国总统李在明前往韩国东南部城市蔚山，视察当地一座在建数据中心，并敦促韩国加快在全球 AI 竞赛中的步伐。“ 全世界都在竞相角逐，速度至关重要 。” 数据中心是芯片需求的重要来源。李在明希望，SK 建设的蔚山项目能够取得成功，进而吸引全球 AI 企业加大投资。 蔚山数据中心由 SK 集团与亚马逊云科技共同开发。韩国科学技术信息通信部去年公布的估算显示，项目到 2029 年的总投资额预计为 7 万亿韩元 （IT之家注：现汇率约合 351.26 亿元人民币） ，计划于 2027 年下半年投入运营。 SK 集团会长崔泰源 9 月介绍，在建数据中心首期容量 预计到 2029 年达到 103MW ，未来还计划在此基础上 扩容近 900MW 。随着项目推进，SK 也计划与全球科技公司建立更多合作。 李在明指出，AI 投资此前主要集中在首尔一带，蔚山项目则说明其他地区同样具备增长空间。得知现场约有 900 人参与施工后，他还提到，高端设施建设面临建筑工人短缺，各部委需要考虑如何培养建设数据中心和 AI 基础设施所需的工人。",
+        "url": "https://www.ithome.com/1/030/506.htm",
         "source": "IT之家",
         "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Solidot",
+        "title": "人类免疫系统衰老在 40 岁和 60 岁后会加速",
+        "summary": "生死之旅从来不是平坦的。人体的衰老会呈现突然的跳跃加速，科学家正试图弄清楚衰老加速在细胞层面是何时发生的。发表在《Nature Communications》期刊上的一项研究调查了人类免疫系统，发现免疫系统衰老有两次突然加速。新加坡研究人员分析了 1828 名不同族裔、年龄在 19-97 岁之间健康个体的单细胞转录组。研究人员共对比了 380 万个免疫细胞，发现了基因活性发生显著变化的两次尖峰。两次尖峰分别出现在 40 岁左右和 60 岁后。每次尖峰人体内都出现炎症加剧，免疫细胞在维护和管理 RNA 及蛋白质方面的能力会有所下降。两个免疫衰老尖峰出现的时间在男女之间存在细微差异。女性部分抗癌 T 细胞表现出持续的激活状态；在生命后期，B 细胞、自然杀伤细胞和辅助性T细胞呈现衰老特征。男性在生命早期其辅助性 T 细胞的衰老特征则表现出波动。",
+        "url": "https://www.solidot.org/story?sid=85954",
+        "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "IT之家",
+        "title": "亚马逊硬刚纽约拟议《配送保护法》：喊话消费者当心配送费涨价最高 5 美元",
+        "summary": "IT之家 11 月 21 日消息，当地时间 20 日，据《华尔街日报》报道，亚马逊对纽约市的一项劳工法案《配送保护法》（又称第 518 号提案）发起了反击。该法案将强制 企业直接雇佣送货人员 ，而不是外包给第三方承包商。 不仅如此，亚马逊通过弹出窗口警告客户：如果该法案最终成为法律，每笔订单的配送费用或将 涨价 5 美元 （IT之家注：现汇率约合 33.5 元人民币） 。 该法案将改变亚马逊配送司机的实际雇主身份。按照目前的配送模式，在身穿亚马逊马甲、驾驶亚马逊货车，甚至受到亚马逊 AI 摄像头的驾驶行为监控的司机背后，实际的雇主往往是 亚马逊旗下配送体系中的小型合作企业 ，或称配送服务合作伙伴（Delivery Service Partners）。 根据纽约市这项法案，亚马逊若想继续在纽约市五大行政区运营配送站，就必须将定期从这些站点配送包裹的司机 纳入自己的员工工资名册。 即使是兼职司机，只要在任意 30 天内累计从事配送工作超过 8 小时，也在适用范围内。此外，配送站内负责包裹分拣的员工同样受到这项规定约束。 对于已经从事配送工作的司机，法案也设置了就业保障条款。如果亚马逊为遵守法律而终止配送合同，导致合作企业裁掉司机，亚马逊就必须 优先向这些司机提供原来的岗位，以亚马逊员工身份重新聘用他们 ，之后才能招募其他人接手。新岗位的聘用条件，也不得低于司机原先的工作条件。 纽约市市长佐赫兰 · 马姆达尼支持这项法案。他指出，亚马逊通过分包模式，将配送业务交给合作企业，从而逃避了对一线配送人员承担的责任。亚马逊则反驳称，法案将 危及其在纽约市合作的 40 多家配送企业 ，以及这些企业 5000 多名员工的生计。 亚马逊更表态，不排除将配送站迁出纽约市。倘若如此，纽约市民可能 面临更高的费用 ，包裹配送时间也可能延长。 亚马逊还将这套说辞搬到了自己的应用程序和网站上，与黑色星期五促销优惠一同展示。页面上的“立即行动”按钮会引导购物者进入一段预先拟好的信息，要求所在选区的市议员投票反对该法案。 纽约市议会议长朱莉 · 梅宁也对亚马逊作出了回应。她说：“如果亚马逊认为，靠这场误导性宣传就能威胁纽约市民、恐吓市议会，那就大错特错了！”",
+        "url": "https://www.ithome.com/1/030/505.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Solidot",
+        "title": "夜空中的人造卫星轨迹",
+        "summary": "新西兰天文摄影师 Brendan Larsen 在今年 9 月的一个晚上，历时逾两个小时拍摄了 578 张夜空照片。随后通过后期拼接呈现出如今地球轨道上卫星的密集程度。他在 Photoshop 中叠加了这些照片，剔除了恒星，只保留卫星运行轨迹所产生的光迹。整个过程耗时约 45 小时，每张照片中大约包含 25 颗左右的卫星。最终呈现的照片包含了约 1400 颗不同卫星留下的 14000 条运行轨迹——这些卫星用途包括了气象监测、互联网通信和导航系统等，它们都拥挤着争夺着有限的空间。",
+        "url": "https://www.solidot.org/story?sid=85953",
+        "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "The Verge AI",
+        "title": "Anthropic 能否将安全放在第一位？",
+        "summary": "Today, I’m talking with Hayden Field, The Verge’s senior AI reporter, about the Anthropic IPO for the third and final episode in our series about AI in real life. The AI lab behind Claude went public on the Nasdaq last Thursday. The numbers are gigantic, but not really that important for this conversation, except to […]",
+        "url": "https://www.theverge.com/podcast/1038701/anthropic-ipo-ai-safety-openai-nvidia-structure",
+        "source": "The Verge AI",
+        "region": "en",
         "category": "科技"
       },
       {
@@ -580,31 +620,11 @@
       },
       {
         "date": "2026-11-21",
-        "tag": "Solidot",
-        "title": "GTA 6 首日销售额达到创纪录的 37.9 亿美元",
-        "summary": "GTA 6 开发商 Rockstar Games 母公司 Take-Two Interactive 披露，游戏的预购加上首日销售额达到创纪录的了 37.9 亿美元。这是娱乐产品历史上金额最高的首日收入，超过了《复仇者联盟 4：终局之战》的全球总票房 29 亿美元。Take-Two 未公布游戏具体的销售数量。GTA 6 的开发成本据估计可能超过 15 亿美元，为史上最昂贵的游戏。开发游戏的员工有 21% 约 1000 人在公司工作了超过 10 年时间，这在游戏公司中间是非常罕见的。",
-        "url": "https://www.solidot.org/story?sid=85951",
-        "source": "Solidot",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-21",
         "tag": "钛媒体",
         "title": "“奶茶第一股”的翻红账本",
         "summary": "翻红最难的一环，是让下一次被讨论的理由，从流量换成业绩。",
         "url": "https://www.tmtpost.com/8212602.html",
         "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-21",
-        "tag": "Solidot",
-        "title": "为勒索软件受害者提供解密服务的公司只是付钱给勒索软件组织",
-        "summary": "位于美国佛罗里达州的 RansomwareHelp.com 向勒索软件受害者提供解密服务，它通过其官网督促受害者不要支付赎金，声称它的先进解密工具能将数据、服务器和系统 100% 恢复到原始状态，受害者不需要向勒索软件组织屈服。RansomwareHelp.com 称其密码学专家利用独有工具和算法，能实现 100% 的数据恢复，成功率超过 99%。这家成立六年的公司声称有逾 28 年的行业经验，拥有一支由 80 名密码学、网络安全、取证分析和逆向工程专家组成的团队。它表示不会代表客户去促成、充当中间人，或向勒索者支付赎金。然而根据本周递交到罗德岛州 的诉讼，该公司联合创始人兼 CTO Juan Ricardo Palacio Escobar 在 FBI 的一起钓鱼行动中——即 FBI 特工同时冒充勒索软件的受害者和攻击者两个角色，然后联系这家公司——被发现只是付费给勒索组织获取解密密钥，同时向受害者收取高额费用，根本不存在所谓的利用技术手段解密。该公司向受害者收取的费用远高于私下支付给勒索者的金额。",
-        "url": "https://www.solidot.org/story?sid=85950",
-        "source": "Solidot",
         "region": "cn",
         "category": "科技"
       },
@@ -625,26 +645,6 @@
         "summary": "专为本地部署而生",
         "url": "https://www.qbitai.com/2026/11/511570.html",
         "source": "量子位",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-21",
-        "tag": "量子位",
-        "title": "姚顺雨和混元团队上Reddit答网友，Hy小模型已进路线图",
-        "summary": "还透露了不少训练背后的秘诀",
-        "url": "https://www.qbitai.com/2026/11/511757.html",
-        "source": "量子位",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-21",
-        "tag": "少数派",
-        "title": "这群在鸿蒙写应用的年轻人，只想做点「用得上」的",
-        "summary": "上周末，今年正式被列入「全国普通高校学科竞赛排行榜」的2026鸿蒙高校创新赛在南京大学迎来全国总决赛颁奖典礼。华为董事、终端BGCEO何刚出席现场致辞并为获奖选手颁奖。他在现场表示，HarmonyOS ... 查看全文",
-        "url": "https://sspai.com/post/119291",
-        "source": "少数派",
         "region": "cn",
         "category": "科技"
       }
