@@ -1,23 +1,13 @@
 {
-  "updated": "2026-11-21 15:59 UTC",
+  "updated": "2026-11-21 21:37 UTC",
   "categories": {
     "投资": [
       {
         "date": "2026-11-21",
-        "tag": "Seeking Alpha",
-        "title": "CNN：联邦调查局犯罪数据库被黑",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4675393-fbi-crime-database-hacked?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-21",
         "tag": "The Block",
-        "title": "攻击者因疑似密钥泄露从金库中盗取 486 万美元后，Chainflip 的 FLIP 下跌 34%",
-        "summary": "Chainflip's FLIP token dropped 34% in price in the wake of the apparently automated attack, per The Block's price data.",
-        "url": "https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804",
+        "title": "Kalshi 周一将面临纽约州命令的听证会，该命令表示将在全国范围内关闭其交易所",
+        "summary": "Kalshi, which is headquartered in New York, has said the order would shut it down nationwide, though NY's AG said that's not her goal.",
+        "url": "https://www.theblock.co/news/regulation/2026-11-21-kalshi-faces-monday-hearing-on-new-york-order-it-says-would-shut-down-its-exchange-nationwide-444813",
         "source": "The Block",
         "region": "en",
         "category": "投资"
@@ -25,9 +15,79 @@
       {
         "date": "2026-11-21",
         "tag": "Seeking Alpha",
-        "title": "SA 问：Nvidia 应该带回黄仁勋吗？",
+        "title": "本周主要优惠：PANW、FANG、ZS、LLY 等",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4675366-sa-asks-should-nvidia-bring-back-jensen-huang?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4675391-key-deals-this-week-panw-fang-zs-lly-and-more?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "MarketWatch",
+        "title": "“这真是太脏了”：我哥哥搬去和生病的母亲住在一起，并关闭了她的银行账户。我能做些什么？",
+        "summary": "“It is devastating when the people you should be able to trust become the very people you have to protect yourself from.”",
+        "url": "https://www.marketwatch.com/story/it-is-heartbreaking-exhausting-and-downright-dirty-my-brother-took-over-our-ailing-mothers-life-and-finances-what-can-i-do-b4d48817?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Seeking Alpha",
+        "title": "彭博社：英伟达在加州的调查范围扩大到潜在的犯罪行为",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4675398-nvidia-probed-over-criminal-violations-california?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "MarketWatch",
+        "title": "“我一直是一名全职妈妈”：我今年 50 岁，患有慢性病。我丈夫失业了。他应该搜查他的 401(k) 吗？",
+        "summary": "“Our financial and healthcare situation has become increasingly concerning.”",
+        "url": "https://www.marketwatch.com/story/ive-been-a-stay-at-home-mom-im-50-and-have-a-chronic-illness-my-husband-lost-his-job-should-he-raid-his-401-k-63e59123?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "MarketWatch",
+        "title": "“买家热血沸腾”：随着房屋销售创历史新低，买家正在发号施令",
+        "summary": "The few buyers left in the market braving record-high home prices and 7% mortgage rates are starting to call the shots, real-estate agents say.",
+        "url": "https://www.marketwatch.com/story/buyers-are-out-for-blood-as-housing-market-finally-hits-rock-bottom-fa5093a6?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "MarketWatch",
+        "title": "我丈夫 64 岁高龄退休，很高兴，他认为我应该继续工作。他公平吗？",
+        "summary": "“I’m exhausted. My alarm goes off at 6 a.m., and I have a 50-minute commute.”",
+        "url": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "The Block",
+        "title": "网络调查涉嫌 100 万美元桥接漏洞，Upbit、Bithumb 冻结转账",
+        "summary": "South Korean exchanges Upbit and Bithumb both suspended CYBER deposits and withdrawals, citing a suspected security incident.",
+        "url": "https://www.theblock.co/news/defi/2026-11-21-cyber-investigating-suspected-1-million-bridge-exploit-as-upbit-bithumb-freeze-transfers-444810",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Seeking Alpha",
+        "title": "特朗普将与民主党合作限制信用卡利率",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4675397-trump-work-with-dems-cap-credit-card-interest-rate?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -35,20 +95,40 @@
       {
         "date": "2026-11-21",
         "tag": "Seeking Alpha",
-        "title": "大银行、加密股票、新云等输家：本周财务数据总结",
+        "title": "亚马逊接近以 7.5 亿美元收购人工智能初创公司 Decart：FT",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4675265-big-banks-crypto-stocks-neoclouds-among-losers-weeks-financials-wrap?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4675396-amazon-nears-75b-deal-buy-ai-start-up-decart?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-21",
-        "tag": "Seeking Alpha",
-        "title": "特朗普威胁对在海外建设数据中心的美国公司征收“巨额税”",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4675392-trump-threatens-us-firms-building-overseas-data-centers?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
+        "tag": "Financial Times",
+        "title": "墨西哥抓获毒贩后锡那罗亚州爆发暴力事件",
+        "summary": "Fausto Isidro Meza-Flores, known as “El Chapo Isidro”, is on the FBI’s most-wanted list for trafficking drugs into the US",
+        "url": "https://www.ft.com/content/90a8d0bd-32c8-471a-8696-e95555e41b78?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Financial Times",
+        "title": "亚马逊完成 75 亿美元收购人工智能初创公司 Decart 的交易",
+        "summary": "Acquisition would help AWS compete with Nvidia in race for computing power",
+        "url": "https://www.ft.com/content/dc7749dc-0f40-44a6-80bc-7f747d383616?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Financial Times",
+        "title": "Alice Huang 与芯片黑社会的联系",
+        "summary": "Chinese executive in romantic relationship with former Nvidia CEO Jensen Huang had connections to the lucrative trade moving chips to China",
+        "url": "https://www.ft.com/content/f3ad8a81-3890-4a8a-8853-ff0a94b08ba9?syn-25a6b1a6=1",
+        "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
@@ -64,21 +144,11 @@
       },
       {
         "date": "2026-11-21",
-        "tag": "Financial Times",
-        "title": "随着特朗普关税担忧缓解，贸易商开始将美国铜转移到中国",
-        "summary": "Acute Chinese shortage and high local premium create lucrative arbitrage",
-        "url": "https://www.ft.com/content/b84dbcb1-f216-422e-89c7-f203e0ab2757?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-21",
-        "tag": "Financial Times",
-        "title": "历史的死手给德意志银行带来压力",
-        "summary": "Bankers might do well to remember from time to time that they are making decisions that will stick around",
-        "url": "https://www.ft.com/content/bfa66957-73d4-44f1-bea5-6b141c197920",
-        "source": "Financial Times",
+        "tag": "The Block",
+        "title": "攻击者因疑似密钥泄露从金库中盗取 486 万美元后，Chainflip 的 FLIP 下跌 34%",
+        "summary": "Chainflip's FLIP token dropped 34% in price in the wake of the apparently automated attack, per The Block's price data.",
+        "url": "https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804",
+        "source": "The Block",
         "region": "en",
         "category": "投资"
       },
@@ -88,76 +158,6 @@
         "title": "中国如何利用峰会扩大其全球影响力",
         "summary": "Chinese President Xi Jinping has helped coordinate yet another photo-op of global significance.",
         "url": "https://www.cnbc.com/2026/11/21/china-xi-trump-putin-global-diplomacy-shenzhen.html",
-        "source": "CNBC Markets",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-21",
-        "tag": "Financial Times",
-        "title": "新奇的制造",
-        "summary": "Polyamory, effective altruism, demand avoidance — a stagnant society is giving new names to old things",
-        "url": "https://www.ft.com/content/99711b1a-3e54-4349-9c81-769cf7c96b97?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-21",
-        "tag": "The Block",
-        "title": "摩根大通称比特币价格下跌给矿工带来压力，参议院通过“死亡赌注法案”等",
-        "summary": "In today's newsletter, JPMorgan says bitcoin's price drop puts more pressure on miners; Senate passes bill to ban prediction markets tied to death and war; and more.",
-        "url": "https://www.theblock.co/newsletters/the-daily/2026-11-20-jpmorgan-bitcoin-price-drop-miners-senate-passes-death-bets-act-more-crypto-news-444786",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "The Block",
-        "title": "ZEC 从历史高位回落，DCG 旗下 Zcash 矿商 Fortitude 顺利通过纳斯达克上市投票",
-        "summary": "Fortitude wins shareholder backing for its planned Nasdaq debut as ZEC trades 55% below its record high.",
-        "url": "https://www.theblock.co/news/business/2026-11-20-dcgs-zcash-miner-fortitude-clears-vote-nasdaq-listing-zec-retreats-all-time-high-444784",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "CNBC Markets",
-        "title": "沃什希望美联储官员少说话。相反，他们谈论得更多",
-        "summary": "Fed officials have been rushing to the microphones lately while the Fed chairman stays on the sidelines.",
-        "url": "https://www.cnbc.com/2026/11/20/warsh-fed-forward-guidance-rate-hikes.html",
-        "source": "CNBC Markets",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "CNBC Markets",
-        "title": "由于人工智能抛售，市场预测 2026 年股票前景黯淡",
-        "summary": "Odds that the S&P 500 will cross 8,000, which were once north of 70%, are extremely low on platform Kalshi.",
-        "url": "https://www.cnbc.com/2026/11/20/sp-500-8000-kalshi-odds-ai-selloff.html",
-        "source": "CNBC Markets",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "The Block",
-        "title": "众议员卡斯滕寻求通过司法部举报计划遏制预测市场内幕交易",
-        "summary": "Rep. Sean Casten, who could have a top spot in Congress next year, is clamping down on insider trading in prediction markets.",
-        "url": "https://www.theblock.co/news/regulation/2026-11-20-rep-casten-seeks-curb-prediction-market-insider-trading-doj-whistleblower-program-444779",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "CNBC Markets",
-        "title": "牛市又出现了新问题。 “聪明钱”正在抛售",
-        "summary": "Companies are shifting from share buybacks to stock issuance, adding new supply. Anthropic’s $81 billion IPO puts that demand to the test.",
-        "url": "https://www.cnbc.com/2026/11/20/equity-issuance-bull-market-problem.html",
         "source": "CNBC Markets",
         "region": "en",
         "category": "投资"
@@ -180,6 +180,26 @@
         "title": "形状一致的 Janus 水凝胶可防止吻合口漏",
         "summary": "",
         "url": "https://www.nature.com/articles/s41467-026-79644-w",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Nature 材料",
+        "title": "使用透射菊池衍射绘制温度图",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41467-026-77502-3",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Nature 材料",
+        "title": "对称和不对称苯并杂环基三苯胺空穴传输材料的理论设计和构效关系",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-80927-x",
         "source": "Nature 材料",
         "region": "en",
         "category": "科研"
@@ -247,6 +267,16 @@
       {
         "date": "2026-11-21",
         "tag": "Nature 材料",
+        "title": "使用江蓠富含复合多糖的硫酸化提取物（CPSE）及其广谱抗药绿色合成银纳米颗粒",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-79508-9",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Nature 材料",
         "title": "ASTM A588 耐候钢在长时间桥梁火灾后的机械和微观结构行为",
         "summary": "",
         "url": "https://www.nature.com/articles/s41598-026-80522-0",
@@ -275,36 +305,6 @@
         "category": "科研"
       },
       {
-        "date": "2026-11-20",
-        "tag": "Nature 材料",
-        "title": "用于高温二维晶体管的高κ钼酸铋单晶电介质",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41467-026-79576-5",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "Nature 材料",
-        "title": "纳米结构强化钛合金",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41563-026-02801-5",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "Nature 材料",
-        "title": "透过雾气的镜头",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s44286-026-00476-y",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
         "date": "2026-11-19",
         "tag": "ScienceDaily 材料",
         "title": "为什么氢火焰会发出橙色光，然后几乎看不见",
@@ -329,9 +329,9 @@
       {
         "date": "2026-11-21",
         "tag": "PANews",
-        "title": "Chainflip的FLIP代币暴跌34%，此前其金库被盗损失486万美元",
-        "summary": "PANews 11月21日消息，行情显示，Chainflip的FLIP代币在攻击事件发生后暴跌34%。此前，Chainflip以太坊金库被盗取约486万美元ETH和稳定币，协议已暂停。安全公司认为其签名密钥遭攻破，资金在10分钟内转入Tornado Cash。",
-        "url": "https://www.panewslab.com/zh/articles/01a1febe-4ef4-7135-b580-bfd626115d34",
+        "title": "Tether Treasury向Bitfinex转入1.25亿USDT",
+        "summary": "PANews 11月22日消息，Tether Treasury向中心化交易所Bitfinex转入1.25亿枚USDT，约合1.25亿美元。",
+        "url": "https://www.panewslab.com/zh/articles/01a1ffb7-f3c0-779d-bc0b-670d56a3fcb4",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -339,9 +339,9 @@
       {
         "date": "2026-11-21",
         "tag": "PANews",
-        "title": "过去24小时全网合约爆仓23.15亿美元，主爆多单",
-        "summary": "PANews 11月21日消息，CoinGlass数据显示，过去24小时加密货币市场全网合约爆仓23.15亿美元，其中多单爆仓18.56亿美元，空单爆仓4.59亿美元。BTC爆仓总金额11.69亿美元，ETH爆仓总金额5.31亿美元。最大单笔爆仓单发生在Binance-BTCUSDT，价值5170.80万美元。",
-        "url": "https://www.panewslab.com/zh/articles/01a1feba-8a0f-742e-ab9c-9968b97e7c8b",
+        "title": "44名总检察长反对CFTC预测市场规则制定",
+        "summary": "PANews 11月21日消息，据 The Block 报道，44名总检察长反对CFTC针对预测市场的规则制定。他们称，该联邦机构没有法律权力处理与赌博相关的消费者危害。该行动的共同牵头人、新泽西州总检察长Jennifer Davenport周五在声明中表示：这些行动试图推翻各州在本州境内监管赌博的长期权力。这将让预测市场无需遵守各州赌博法规，以及确保负责任博彩的保障措施。",
+        "url": "https://www.panewslab.com/zh/articles/01a1ffb0-f627-7089-8b45-248b9356f6b0",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -349,21 +349,71 @@
       {
         "date": "2026-11-21",
         "tag": "PANews",
-        "title": "分析师：比特币已持续下跌411天，若遵循历史明年一季度或开始上行",
-        "summary": "PANews 11月21日消息，加密分析师Killa发文称，其很久没见过如此糟糕的市场情绪，这基本解释了原因。比特币已持续下跌411天，而以往周期在400天左右通常开始出现高时间框架上的显著转变，真正的推动往往在450至500天左右出现，对应明年第一季度。从历史看，底部形成后一年内BTC通常较底部翻倍，因此无论今年在哪里见底，未来一年内都有可能较底部翻倍。 Killa称，他此前违背历史规律，认为因见顶更早、在减半前创下历史新高，底部会更早到来，但市场如今在第四季度创下更低低点，与此前周期类似。若这次遵循数据，明年应开始上行。",
-        "url": "https://www.panewslab.com/zh/articles/01a1feb1-b21d-7411-b5fc-a8e838b2d3ff",
+        "title": "Kraken转出1214枚BTC至未知钱包",
+        "summary": "PANews 11月21日消息，据链上转账提示，1214枚BTC（约7054.59万美元）从中心化交易所Kraken转入未知钱包。",
+        "url": "https://www.panewslab.com/zh/articles/01a1ff7b-774a-749f-8755-37ae4b749def",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
       },
       {
         "date": "2026-11-21",
+        "tag": "Decrypt",
+        "title": "GTA 6 泄密者将 PC 端口挂在价值 1500 万美元的加密货币泵后面",
+        "summary": "The anonymous leaker, Cyberleek, released a 209 GB Xbox build but is withholding the executable that could enable a PC port until its CYBERLEEK token hits $15 million.",
+        "url": "https://decrypt.co/383756/gta-6-leaker-dangles-pc-port-15-million-crypto-pump",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-21",
         "tag": "PANews",
-        "title": "Chainalysis：疑似中国用户通过加密货币支付绕过美国对AI模型的出口管制",
-        "summary": "PANews 11月21日消息，Chainalysis发文称，链上数据表明，疑似中国用户正通过加密货币支付绕过美国对前沿AI模型的出口管制。代理服务商向被禁用户出售受限模型的访问权限，且往往打折。用户进入后，可低成本利用先进模型改进自身模型。Chainalysis调查的代理服务中，40%接受加密货币，主要是稳定币。进一步研究显示，在美国新AI模型发布后的数日内，疑似与中国关联的钱包付款量会高于正常水平，且高于所有使用这些服务的钱包的整体水平，这一模式符合试图快速获取新模型能力的行为。",
-        "url": "https://www.panewslab.com/zh/articles/01a1fe9a-a449-71b4-ae59-3af1b2f54659",
+        "title": "Galaxy Digital股价周五跌8%，周跌幅超20%",
+        "summary": "PANews 11月21日消息，数字资产公司Galaxy Digital（GLXY）周五股价下跌8%。其本周跌幅已超过20%。同期加密货币和AI股票出现更广泛的抛售。首席执行官Mike Novogratz表示，他正在买入更多公司股票，认为市场大幅低估了公司价值。",
+        "url": "https://www.panewslab.com/zh/articles/01a1ff3c-1b40-71e4-8c8c-4d78742d80a6",
         "source": "PANews",
         "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "CoinDesk",
+        "title": "在 18 亿美元的加密货币清算浪潮之后，比特币反弹至 60,000 美元以上",
+        "summary": "The selloff wiped out $1.8 billion in leveraged crypto positions, mostly from bullish bets on rising prices.",
+        "url": "https://www.coindesk.com/markets/2026/11/21/bitcoin-bounces-9-from-two-year-low-to-retake-usd60-000-as-traders-eye-monday-s-stock-open",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Decrypt",
+        "title": "美国证券交易委员会 (SEC) 称，欺诈者利用虚假加密货币交易所窃取了 3700 万美元",
+        "summary": "The agency says eight Colorado-registered entities, likely run from overseas, posed as legitimate advisers and crypto platforms—even faking SEC certificates and filings—to defraud U.S. investors of more than $37 million.",
+        "url": "https://decrypt.co/383752/fraudsters-fake-crypto-exchanges-steal-37-million-sec",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "CoinDesk",
+        "title": "跨链协议 Chainflip 的 FLIP 因疑似金库流失 486 万美元而下跌 30%",
+        "summary": "The withdrawal carried a valid signature, which Onchain Lens said points to a possible compromise of the key validators use to approve vault payouts.",
+        "url": "https://www.coindesk.com/business/2026/11/21/cross-chain-protocol-chainflip-s-flip-tanks-30-after-suspected-usd4-86-million-vault-drain",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "Decrypt",
+        "title": "Signal 将操作系统级人工智能称为“存在的威胁”并阻止截图来对抗它",
+        "summary": "The encrypted-messaging app will restrict screenshots on iOS 27 and auto-enable screen security on Android when it detects an AI assistant reading a chat.",
+        "url": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots",
+        "source": "Decrypt",
+        "region": "en",
         "category": "web3"
       },
       {
@@ -428,16 +478,6 @@
       },
       {
         "date": "2026-11-21",
-        "tag": "CoinDesk",
-        "title": "随着多头押注的解除和 ETF 资产跌破 10 亿美元，XRP 下跌 10%",
-        "summary": "The token broke its previous November lows during Saturday's crypto selloff, with long positions accounting for most XRP liquidations and technical indicators showing further weakness.",
-        "url": "https://www.coindesk.com/markets/2026/11/21/xrp-falls-10-as-long-bets-unwind-and-etf-assets-slip-below-usd1-billion",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-21",
         "tag": "Cointelegraph",
         "title": "香港推动将加密货币托管人和顾问纳入许可规则",
         "summary": "Hong Kong’s securities regulator says the proposal would strengthen investor protections, with the bill set for its first reading in the Legislative Council on Dec. 2.",
@@ -445,53 +485,73 @@
         "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
-      },
-      {
-        "date": "2026-11-21",
-        "tag": "CoinDesk",
-        "title": "比特币两年来首次跌破 57,000 美元，而且这并不孤单",
-        "summary": "BTC's sell-off deepened on Saturday, with prices hitting two-year lows under $57,000.",
-        "url": "https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "Decrypt",
-        "title": "克劳德 (Claude) 声称人类在首次公开募股一天后取得了历史性的数学突破",
-        "summary": "Levent Alpöge claims Claude helped prove a 167-year-old math conjecture, but independent checks remain pending, and the release just after Anthropic’s IPO has prompted questions about its unusual publication timing.",
-        "url": "https://decrypt.co/383747/claude-historic-math-breakthrough-anthropic-ipo",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "Decrypt",
-        "title": "SEC 调查会计报告后 Nvidia 股价跌至 52 周低点",
-        "summary": "Nvidia shares fell about 13% to a 52-week low after reports that SEC enforcement staff are examining potential accounting issues, adding to pressure on the chipmaker after Jensen Huang’s resignation.",
-        "url": "https://decrypt.co/383744/nvidia-shares-sink-52-week-low-sec-probing-accounting",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-20",
-        "tag": "Decrypt",
-        "title": "SBF 的“利他主义者”情节扭曲：FTX 的 Anthropic 股票价值 430 亿美元",
-        "summary": "Anthropic’s IPO made FTX’s liquidated AI bet a $43 billion what-if, just as Netflix premiered its Sam Bankman-Fried drama.",
-        "url": "https://decrypt.co/383739/sbf-altruists-ftx-anthropic-shares-worth-43-billion",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
       }
     ],
     "科技": [
       {
         "date": "2026-11-21",
+        "tag": "TechCrunch AI",
+        "title": "两个 Nvidia 的故事",
+        "summary": "We got two very different pictures of Nvidia — the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.",
+        "url": "https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "The Verge AI",
+        "title": "联合国未能就“杀手机器人”监管规则达成一致",
+        "summary": "One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called \"killer robots.\" Eventually, representatives left the meetings agreeing to \"start discussing options\" after a largely fruitless week of negotiations. According to NPR: Before the negotiations got underway, the […]",
+        "url": "https://www.theverge.com/tech/1039554/un-regulations-killer-robots",
+        "source": "The Verge AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "TechCrunch AI",
+        "title": "以下是可以存在于您的短信中的顶级人工智能代理",
+        "summary": "We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.",
+        "url": "https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-21",
         "tag": "IT之家",
-        "title": "比亚迪腾势 B5“致敬”大众途锐经典广告，两轮成功拉动 180 吨客机",
+        "title": "今日小雪：雨凝为雪，地气冻结",
+        "summary": "IT之家 11 月 22 日消息，今天是 11 月 22 日，同时也是节气中的小雪，真正的寒冬即将到来。小雪为二十四节气中的第 20 个。具体的时间为 11 月 22 或 23 日，此时太阳到达黄经 240°。 小雪时节① 天气寒冷，降水状态由雨变雪，但“地寒未甚”，雪量不大，故称小雪 ；②北方供暖季，长期在暖气房会出现口干舌燥、咳嗽、头晕等，需预防“暖气病”；③小雪节气过后气温将更低，要注意防寒保暖，谨防感冒。小雪到，冬始俏。 进入该节气，中国广大地区西北风开始成为常客，气温下降，虽开始降雪，但雪量不大，故称小雪。据说，在北方，小雪时节要吃涮羊肉，在南方有吃糍粑的习俗。 小雪节气的降临就意味着西北风的到来，同时各地气温也逐渐降到 0℃ 以下。此时大地尚未彻底寒冷，下降的雪也不是很多，故名小雪。对于黄河以北的人们来说，冬天的第一场雪就将在小雪节气附近降临，小雪的到来也提醒着人们该御寒保暖。 何谓小雪 《月令七十二候集解》曰：“10 月中，雨下而为寒气所薄，故凝而为雪。小者未盛之辞。”小雪是反映天气现象的节令。古籍《群芳谱》中说：“小雪气寒而将雪矣，地寒未甚而雪未大也。” 我国古代将小雪分为三候：“一候虹藏不见；二候天气上升地气下降；三候闭塞而成冬。”由于天空中的阳气上升，地中的阴气下降，导致天地不通，阴阳不交，所以万物失去生机，天地闭塞而转入严寒的冬天。 小雪习俗 贮藏蔬菜小雪来临，东北的土地开始冻结，土壤冻结深度可以达到 10 厘米，于是在北方地区，果农开始为果树修枝，以草秸编箔包扎株杆，以防果树受冻。 农民们在收获前十天停止浇水做好防冻工作，另外尽量选择天晴的时候进行收获。天冷时多覆盖白菜叶和玉米杆防冻，待到可以食用的时候便已经成熟。 饮食习俗 在我国的南方部分地区还有农历十月吃糍粑的习俗。在古代，糍粑是南方地区传统的节日祭品，最早是农民用来祭牛神的供品。 在小雪到来的时候选择吃糍粑可以平衡阴阳，但进食过多高热量的补品，会导致胃、肺火盛。因此还应该再吃一些性冷的食物，如萝卜、松花蛋。保健养生 起居 在冬季，早睡晚起，不要熬夜。起居要做好御寒保暖，防止感冒的发生。白天注意开窗通风。每天晚上要在 10 点上床，最好用热水泡泡脚，并按摩足底的涌泉穴。 饮食 小雪节气，宜吃温性食物和益肾的食品。温性食物有核桃、葡萄、栗子、鸡、虾、生姜、胡椒等；益肾食品有腰果、山药、芡实、紫米粥、白果、核桃等。另外，要多吃黑色食品如黑木耳、黑芝麻、黑豆等。 就是说，要远“三白”：糖、盐、猪油；还要近“三黑”：第一个是木耳，第二个叫紫菜、还有一个是紫米，三个黑的对人比较好，这就是养生专家推荐的远“三白”、近“三黑”。 运动 小雪节气中，天气时常是阴冷晦暗，绿色植被和红色花卉减少，此时人们的心情也会受其影响，特别容易引发抑郁症，所以应调节自己的心态，保持乐观，经常参加一些户外活动以增强体质。 关于小雪的谚语 节到小雪天下雪。 小雪节到下大雪，大雪节到没了雪。 小雪封地，大雪封河。 小雪地不封，大雪还能耕。 小雪不把棉柴拔，地冻镰砍就剩茬。 小雪不起菜（白菜），就要受冻害。 小雪不砍菜，必定有一害。 趁地未封冻，赶快把树种。 大地未冻结，栽树不能歇。 夹雨夹雪，无休无歇。 小雪封地地不封，老汉继续把地耕。 以上部分资料来源于百科等互联网 本文参考IT之家 2017 年 11 月 22 日文章：《 今日小雪：天寒地燥，注意保暖 》，略有修改。",
+        "url": "https://www.ithome.com/1/030/511.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "TechCrunch AI",
+        "title": "向这家微剧初创公司出售人工智能版本的脸会是好莱坞的未来吗？",
+        "summary": "An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.",
+        "url": "https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "IT之家",
+        "title": "1967 款保时捷 912 借电动化喜获新生：输出 304 马力，续航 400 公里",
+        "summary": "IT之家 11 月 21 日消息，现如今在海外，让经典车通过电动化改造获得新生的项目不断涌现。外媒 insideevs 今天（21 日）介绍了一辆“复活”的 1967 款保时捷 912，该车由改装厂商 Inverted 经手，改装团队为它装上了电池组和电动机。 改装完成后，车辆外观与原厂 912 毫无二致，经典的复古造型得以完整保留，开起来却已经是一辆当代的电动汽车。 这套改装最巧妙的地方在于电池布局。由于车身本就轻巧，62kWh 的电池组因此足以让车辆拥有相当可观的续航。然而，电池重量如果全部集中在后轴上方，却会让车尾负担过重。 老款风冷保时捷本来就容易在收油时出现转向过度，再增加后部重量，自然不是好主意。Inverted 为此将电池组拆分成两部分：一部分放在原发动机舱的位置，另一部分则安装在车头的前备箱内。 经过这样的布局调整，电动版 912 的前后重量分配反而比原车更加合理。 IT之家从报道中获悉，车辆续航约为 400km，支持 75kW 直流快充。对于当下的电动汽车来说，这样的充电功率算不上突出，不过考虑到车辆的定位，已经完全够用。 动力方面，该车后置电动机可 输出 304 马力 ，远超原厂四缸发动机约 91 马力的水平，从静止加速至 97km/h 也仅需 4 秒，作为对比，原厂车型完成同样的加速需要约 13 秒。 这辆 912 的改造也远不止更换动力系统，内饰经过了彻底翻新，完成度相当出色。仪表盘依旧保留着保时捷经典的复古设计，内部显示功能已经针对电驱系统进行了调整。 例如，原本位于中央的转速表换成了动力输出百分比表，燃油表也改成了指针式电量表。整套内饰既保留了老保时捷的韵味，也融入了电动汽车的使用逻辑。",
+        "url": "https://www.ithome.com/1/030/510.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "IT之家",
+        "title": "比亚迪腾势 B5 海外“秀肌肉”，两轮成功拉动 180 吨客机",
         "summary": "IT之家 11 月 21 日消息，比亚迪腾势汽车在海外重现了大众 20 年前的一则经典广告：一辆柴油 SUV 拖着一架大型喷气式客机。不过，这一次腾势还准备了一项相当惊人的绝活。 20 年前，一辆蓝色大众途锐 V10 柴油版（下图）曾在英国邓斯福机场的跑道上拖动一架重达 155 吨的喷气式客机。 时间来到当下，一辆 腾势 B5 （即方程豹豹 5）也来到同一地点，准备重演当年的特技。该车采用双电机布局，31.8kWh 电池满电时可提供最高 90km 的纯电续航，还配有两把机械式差速锁。 大众当年的挑战中，途锐始终保留着四个车轮；比亚迪却决定 逐步拆下部分车轮 ，借此考验车辆的表现。 第一轮测试保留了全部四个车轮；第二轮则以三轮状态拖行，并增加约 2 吨配重。最后一轮拆除了右侧两个车轮， 配重进一步增加到 5 吨 。在这三次测试中，腾势 B5 拖着重达 180 吨的波音 747-400 行驶了超过 1.6 公里 。最值得一提的是，全程 只靠电力驱动 。 这场表演是为了向英国市场推广腾势 B5。该车采用专门打造的梯形车架底盘，电气化程度更高。其汽油发动机主要负责为高压电池发电，电池电芯则直接集成在底盘纵梁之间。 IT之家注：此次测试中的车辆加装了定制拖曳装置，还拆除了部分座椅以腾出空间安放配重，还安装了稳定器，以弥补拆除车轮带来的影响。",
         "url": "https://www.ithome.com/1/030/509.htm",
         "source": "IT之家",
@@ -520,31 +580,11 @@
       },
       {
         "date": "2026-11-21",
-        "tag": "IT之家",
-        "title": "韩国总统李在明：速度在 AI 竞赛中至关重要",
-        "summary": "IT之家 11 月 21 日消息，据路透社报道，当地时间 21 日，韩国总统李在明前往韩国东南部城市蔚山，视察当地一座在建数据中心，并敦促韩国加快在全球 AI 竞赛中的步伐。“ 全世界都在竞相角逐，速度至关重要 。” 数据中心是芯片需求的重要来源。李在明希望，SK 建设的蔚山项目能够取得成功，进而吸引全球 AI 企业加大投资。 蔚山数据中心由 SK 集团与亚马逊云科技共同开发。韩国科学技术信息通信部去年公布的估算显示，项目到 2029 年的总投资额预计为 7 万亿韩元 （IT之家注：现汇率约合 351.26 亿元人民币） ，计划于 2027 年下半年投入运营。 SK 集团会长崔泰源 9 月介绍，在建数据中心首期容量 预计到 2029 年达到 103MW ，未来还计划在此基础上 扩容近 900MW 。随着项目推进，SK 也计划与全球科技公司建立更多合作。 李在明指出，AI 投资此前主要集中在首尔一带，蔚山项目则说明其他地区同样具备增长空间。得知现场约有 900 人参与施工后，他还提到，高端设施建设面临建筑工人短缺，各部委需要考虑如何培养建设数据中心和 AI 基础设施所需的工人。",
-        "url": "https://www.ithome.com/1/030/506.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-21",
         "tag": "Solidot",
         "title": "人类免疫系统衰老在 40 岁和 60 岁后会加速",
         "summary": "生死之旅从来不是平坦的。人体的衰老会呈现突然的跳跃加速，科学家正试图弄清楚衰老加速在细胞层面是何时发生的。发表在《Nature Communications》期刊上的一项研究调查了人类免疫系统，发现免疫系统衰老有两次突然加速。新加坡研究人员分析了 1828 名不同族裔、年龄在 19-97 岁之间健康个体的单细胞转录组。研究人员共对比了 380 万个免疫细胞，发现了基因活性发生显著变化的两次尖峰。两次尖峰分别出现在 40 岁左右和 60 岁后。每次尖峰人体内都出现炎症加剧，免疫细胞在维护和管理 RNA 及蛋白质方面的能力会有所下降。两个免疫衰老尖峰出现的时间在男女之间存在细微差异。女性部分抗癌 T 细胞表现出持续的激活状态；在生命后期，B 细胞、自然杀伤细胞和辅助性T细胞呈现衰老特征。男性在生命早期其辅助性 T 细胞的衰老特征则表现出波动。",
         "url": "https://www.solidot.org/story?sid=85954",
         "source": "Solidot",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-21",
-        "tag": "IT之家",
-        "title": "亚马逊硬刚纽约拟议《配送保护法》：喊话消费者当心配送费涨价最高 5 美元",
-        "summary": "IT之家 11 月 21 日消息，当地时间 20 日，据《华尔街日报》报道，亚马逊对纽约市的一项劳工法案《配送保护法》（又称第 518 号提案）发起了反击。该法案将强制 企业直接雇佣送货人员 ，而不是外包给第三方承包商。 不仅如此，亚马逊通过弹出窗口警告客户：如果该法案最终成为法律，每笔订单的配送费用或将 涨价 5 美元 （IT之家注：现汇率约合 33.5 元人民币） 。 该法案将改变亚马逊配送司机的实际雇主身份。按照目前的配送模式，在身穿亚马逊马甲、驾驶亚马逊货车，甚至受到亚马逊 AI 摄像头的驾驶行为监控的司机背后，实际的雇主往往是 亚马逊旗下配送体系中的小型合作企业 ，或称配送服务合作伙伴（Delivery Service Partners）。 根据纽约市这项法案，亚马逊若想继续在纽约市五大行政区运营配送站，就必须将定期从这些站点配送包裹的司机 纳入自己的员工工资名册。 即使是兼职司机，只要在任意 30 天内累计从事配送工作超过 8 小时，也在适用范围内。此外，配送站内负责包裹分拣的员工同样受到这项规定约束。 对于已经从事配送工作的司机，法案也设置了就业保障条款。如果亚马逊为遵守法律而终止配送合同，导致合作企业裁掉司机，亚马逊就必须 优先向这些司机提供原来的岗位，以亚马逊员工身份重新聘用他们 ，之后才能招募其他人接手。新岗位的聘用条件，也不得低于司机原先的工作条件。 纽约市市长佐赫兰 · 马姆达尼支持这项法案。他指出，亚马逊通过分包模式，将配送业务交给合作企业，从而逃避了对一线配送人员承担的责任。亚马逊则反驳称，法案将 危及其在纽约市合作的 40 多家配送企业 ，以及这些企业 5000 多名员工的生计。 亚马逊更表态，不排除将配送站迁出纽约市。倘若如此，纽约市民可能 面临更高的费用 ，包裹配送时间也可能延长。 亚马逊还将这套说辞搬到了自己的应用程序和网站上，与黑色星期五促销优惠一同展示。页面上的“立即行动”按钮会引导购物者进入一段预先拟好的信息，要求所在选区的市议员投票反对该法案。 纽约市议会议长朱莉 · 梅宁也对亚马逊作出了回应。她说：“如果亚马逊认为，靠这场误导性宣传就能威胁纽约市民、恐吓市议会，那就大错特错了！”",
-        "url": "https://www.ithome.com/1/030/505.htm",
-        "source": "IT之家",
         "region": "cn",
         "category": "科技"
       },
@@ -605,46 +645,6 @@
         "summary": "（11 月 16 日-21 日）英伟达史上首次单季营收突破1000亿美元，净利润同比翻倍；阿里巴巴：2027财年第二季度营收2715.2亿元，同比增长10%，AI相关产品收入超179亿元，连续13个季度实现三位数增长；腾讯：WorkBuddy近七天年化收入超5亿美元，三季度收入是第二季度的5倍以上；豆包工作日活突破800万，企业客户ARR突破20亿元...",
         "url": "https://www.tmtpost.com/8213535.html",
         "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-21",
-        "tag": "Solidot",
-        "title": "人类数学家匆忙发布广义黎曼猜想的证明手稿",
-        "summary": "今年 9 月 OpenAI 宣布解决 Navier-Stokes 问题时引发了广泛争议，原因是当时有数学家正致力于解决该问题，而且已经取得了突破。现在 Anthropic 数学家发表几十万页的文档声称证明了黎曼猜想。数学家 Alessandro Maria Masullo 在广义黎曼猜想问题上投入了 12 年时间，他也取得了进展，其证明手稿正由另一名数学家 Brian Conrad 审阅，两人计划花一年时间完善手稿然后征求更多人意见后发表。但 Anthropic 的声明促使人类数学家不得不匆忙提前发布证明手稿。该证明手稿没有使用任何 AI 工具，完全由人类自己完成。",
-        "url": "https://www.solidot.org/story?sid=85952",
-        "source": "Solidot",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-21",
-        "tag": "钛媒体",
-        "title": "“奶茶第一股”的翻红账本",
-        "summary": "翻红最难的一环，是让下一次被讨论的理由，从流量换成业绩。",
-        "url": "https://www.tmtpost.com/8212602.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-21",
-        "tag": "量子位",
-        "title": "GPT-6.2 Astra再次暴击具身模型：16项任务成功率较GPT-6 Astra翻倍",
-        "summary": "还实现可变形物体操控全球首通",
-        "url": "https://www.qbitai.com/2026/11/511779.html",
-        "source": "量子位",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-21",
-        "tag": "量子位",
-        "title": "刚刚，DeepSeek V1作者创业项目曝光：开源Agent",
-        "summary": "专为本地部署而生",
-        "url": "https://www.qbitai.com/2026/11/511570.html",
-        "source": "量子位",
         "region": "cn",
         "category": "科技"
       }
