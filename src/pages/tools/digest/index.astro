@@ -9,8 +9,8 @@ const csp = [
   "img-src 'self' data:",
   "style-src 'self'",
   "font-src 'self'",
-  `script-src 'self' ${inlineScriptCsp}`,
-  "connect-src 'self'",
+  `script-src 'self' https://static.cloudflareinsights.com ${inlineScriptCsp}`,
+  "connect-src 'self' https://cloudflareinsights.com",
   "form-action 'self'",
 ].join('; ');
 ---
