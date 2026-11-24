@@ -43,6 +43,16 @@ import Base from '../layouts/Base.astro';
         return loading;
       }
 
+      function safeExcerpt(raw) {
+        return String(raw || '')
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/&lt;mark&gt;/gi, '<mark>')
+          .replace(/&lt;\/mark&gt;/gi, '</mark>');
+      }
+
       function renderResults(items, query) {
         list.replaceChildren();
         if (!query) {
@@ -62,7 +72,7 @@ import Base from '../layouts/Base.astro';
           var h3 = document.createElement('h3');
           h3.textContent = (item.meta && item.meta.title) || item.url;
           var p = document.createElement('p');
-          p.innerHTML = item.excerpt || '';
+          p.innerHTML = safeExcerpt(item.excerpt);
           a.append(h3, p);
           li.append(a);
           list.append(li);

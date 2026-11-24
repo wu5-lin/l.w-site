@@ -6,6 +6,7 @@
     "https://cdn.jsdelivr.net/npm/@techstark/opencv-js@4.11.0-release.1/dist/opencv.js",
     "https://unpkg.com/@techstark/opencv-js@4.11.0-release.1/dist/opencv.js"
   ];
+  var SRI = "sha384-oavEdO4ZHMHZLyB8LRX8Vmsn9BuESS2RmefVDvsZOcvAlEtuRiiUj4CZGMEL1fPU";
   var cdnIndex = 0;
   var loadTimer = 0;
 
@@ -68,6 +69,8 @@
     cdnIndex = index;
     var s = document.createElement("script");
     s.src = CDNS[index];
+    s.integrity = SRI;
+    s.crossOrigin = "anonymous";
     s.async = true;
     var done = false;
     function nextFallback() {

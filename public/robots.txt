@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /tools/ncre3/
 
 Sitemap: https://www.l-w.sryze.cc/sitemap-index.xml

@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import { getPosts, isoDate } from '../lib/posts';
+
+const posts = await getPosts();
+const byYear = new Map<number, typeof posts>();
+for (const post of posts) {
+  const y = post.data.date.getUTCFullYear();
+  const list = byYear.get(y) ?? [];
+  list.push(post);
+  byYear.set(y, list);
+}
+const years = [...byYear.keys()].sort((a, b) => b - a);
+
+function monthDay(d: Date) {
+  const m = String(d.getUTCMonth() + 1).padStart(2, '0');
+  const day = String(d.getUTCDate()).padStart(2, '0');
+  return `${m}.${day}`;
+}
+---
+
+<Base title="归档" description={`全部 ${posts.length} 篇文章与随笔的时间线归档。`} searchable={false}>
+  <section class="page archive-page">
+    <a class="back" href="/">← 首页</a>
+    <h1>归档</h1>
+    <p class="archive-sub">共 {posts.length} 篇记录</p>
+    {years.map((year) => (
+      <section class="archive-year" aria-labelledby={`y-${year}`}>
+        <h2 id={`y-${year}`}>{year}</h2>
+        <ol class="archive-list">
+          {(byYear.get(year) ?? []).map((post) => (
+            <li>
+              <a href={`/blog/${post.id}/`}>
+                <time datetime={isoDate(post.data.date)}>{monthDay(post.data.date)}</time>
+                <span class="archive-title">{post.data.title}</span>
+                <span class="pill">{post.data.tags[0]}</span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </section>
+    ))}
+  </section>
+</Base>

@@ -22,9 +22,6 @@ export default defineConfig({
         if (path === '/feed.xml' || path === '/feed.xml/') return false;
         return true;
       },
-      customPages: [
-        `${site}/tools/ncre3/`,
-      ],
     }),
   ],
   redirects: {

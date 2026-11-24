@@ -31,7 +31,7 @@ content:
     format: yaml-frontmatter
     subfolders: false
     filename:
-      template: "{primary}.md"
+      template: "{year}-{month}-{day}-{primary}.md"
       field: create
     view:
       primary: title

@@ -137,13 +137,13 @@ SOURCES = [
 # ---------------------------------------------------------------------------
 # 网络 / 解析工具
 # ---------------------------------------------------------------------------
-def fetch(url, timeout=15, headers=None):
+def fetch(url, timeout=15, headers=None, max_bytes=2 * 1024 * 1024):
     h = {"User-Agent": USER_AGENT}
     if headers:
         h.update(headers)
     req = urllib.request.Request(url, headers=h)
     with urllib.request.urlopen(req, timeout=timeout, context=SSL_CTX) as r:
-        return r.read().decode("utf-8", "ignore")
+        return r.read(max_bytes).decode("utf-8", "ignore")
 
 
 def text_of(el):

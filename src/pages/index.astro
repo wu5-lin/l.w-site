@@ -36,7 +36,7 @@ const posts = await getPosts();
             <a href="https://x.com/JayLynn_lw" rel="me noreferrer" target="_blank" aria-label="X">
               <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M9.33 6.77 14.7.5h-1.27L8.77 5.89 5.08.5H.5l5.64 8.21L.5 15.5h1.27l4.93-5.74 3.94 5.74H15.5L9.33 6.77Zm-1.75 2.03-.57-.82L2.3 1.47h1.95l3.66 5.24.57.82 4.76 6.81H11.3L7.58 8.8Z"/></svg>
             </a>
-            <a href="mailto:hello@l-w.sryze.cc" aria-label="邮箱 hello@l-w.sryze.cc">
+            <a href="#contact" id="mail-link" data-u="hello" data-d="l-w.sryze.cc" aria-label="发送邮件">
               <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
             </a>
           </div>
@@ -46,7 +46,10 @@ const posts = await getPosts();
   </section>
 
   <section class="posts" aria-labelledby="posts-heading">
-    <h2 id="posts-heading" class="posts-label">最近</h2>
+    <div class="posts-head-row">
+      <h2 id="posts-heading" class="posts-label">最近</h2>
+      <a class="posts-more" href="/archive/">归档 →</a>
+    </div>
     <PostList posts={posts} animate />
   </section>
 
@@ -67,4 +70,20 @@ const posts = await getPosts();
       </a>
     </div>
   </section>
+  <script is:inline>
+    (function () {
+      var el = document.getElementById('mail-link');
+      if (!el) return;
+      function decode() {
+        var addr = el.getAttribute('data-u') + '@' + el.getAttribute('data-d');
+        el.href = 'mailto:' + addr;
+        el.title = addr;
+      }
+      el.addEventListener('mouseenter', decode, { once: true });
+      el.addEventListener('focus', decode, { once: true });
+      el.addEventListener('click', function () {
+        if (el.getAttribute('href') === '#contact') decode();
+      });
+    })();
+  </script>
 </Base>
