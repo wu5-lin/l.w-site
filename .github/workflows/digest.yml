@@ -2,7 +2,7 @@ name: Refresh Digest (投资/科研/web3/科技)
 
 on:
   schedule:
-    - cron: "0 */2 * * *"     # 每 2 小时自动刷新一次
+    - cron: "23 */2 * * *"    # 每 2 小时错峰自动刷新（避开整点 00 分 GitHub 高峰拥堵）
   workflow_dispatch:        # 也支持在 GitHub 网页手动点一下立即运行
 
 permissions:

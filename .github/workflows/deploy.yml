@@ -41,8 +41,32 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.try1.outputs.page_url || steps.try2.outputs.page_url || steps.try3.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - name: Deploy to GitHub Pages (Attempt 1)
+        id: try1
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Backoff before Attempt 2
+        if: steps.try1.outcome == 'failure'
+        run: |
+          echo "GitHub Pages 接口瞬时异常（如 500），等待 15 秒后进行第 2 次尝试…"
+          sleep 15
+
+      - name: Deploy to GitHub Pages (Attempt 2)
+        id: try2
+        if: steps.try1.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      - name: Backoff before Attempt 3
+        if: steps.try1.outcome == 'failure' && steps.try2.outcome == 'failure'
+        run: |
+          echo "第 2 次尝试仍失败，等待 30 秒后进行第 3 次尝试…"
+          sleep 30
+
+      - name: Deploy to GitHub Pages (Attempt 3)
+        id: try3
+        if: steps.try1.outcome == 'failure' && steps.try2.outcome == 'failure'
         uses: actions/deploy-pages@v5
