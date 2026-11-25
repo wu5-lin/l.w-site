@@ -1,9 +1,79 @@
 {
-  "updated": "2026-11-24 17:17 UTC",
+  "updated": "2026-11-25 02:05 UTC",
   "categories": {
     "投资": [
       {
+        "date": "2026-11-25",
+        "tag": "MarketWatch",
+        "title": "我已经 70 多岁了，购买了一辆新的 BMW X1。我应该把我唯一的儿子放在头衔上吗？",
+        "summary": "“Given my age, I never make a major new purchase without thinking about the future.”",
+        "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-25",
+        "tag": "Financial Times",
+        "title": "随着人工智能恐惧卷土重来，亚洲市场失势",
+        "summary": "Tech stocks in Tokyo and Seoul suffer after Wall Street’s Jensen Huang bounce fades",
+        "url": "https://www.ft.com/content/705eb84c-801d-4a96-b908-e366511e886a?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
         "date": "2026-11-24",
+        "tag": "Seeking Alpha",
+        "title": "Cleanspark 概述了桑德斯维尔第一个数据大厅将于 2027 年第四季度交付，同时推进 2.3B 美元无追索权融资",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4676420-cleanspark-outlines-sandersville-first-data-hall-delivery-in-4q-2027-while-progressing-2_3b?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-25",
+        "tag": "CNBC Markets",
+        "title": "黄仁勋回归英伟达表明中美人工智能竞赛不仅仅关乎芯片",
+        "summary": "Jensen Huang's return as Nvidia CEO demonstrates that the U.S.-China artificial intelligence race is not just about semiconductors, but tech talent too.",
+        "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
+        "source": "CNBC Markets",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-24",
+        "tag": "Seeking Alpha",
+        "title": "戴尔预计 2027 财年第四季度收入为 $56.25B，非 GAAP 每股收益为 $8.40，AI 服务器收入目标为 ~$23.5B",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4676419-dell-projects-q4-fy2027-revenue-56_25b-and-non-gaap-eps-8_40-as-ai-server-revenue-targets?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-25",
+        "tag": "MarketWatch",
+        "title": "人工智能热潮帮助戴尔股价上涨一倍多",
+        "summary": "Dell says its backlog is “rigorously vetted for customer quality and access to capital, land and power.”",
+        "url": "https://www.marketwatch.com/story/dells-stock-rises-as-the-ai-boom-helps-sales-more-than-double-cfb8cf65?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-24",
+        "tag": "Seeking Alpha",
+        "title": "Nutanix 概述 2027 财年营业利润率为 24.5% 至 25.5%，同时开始首席执行官继任流程",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4676418-nutanix-outlines-fy-2027-operating-margin-of-24_5-percent-to-25_5-percent-while-beginning-ceo?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-25",
         "tag": "MarketWatch",
         "title": "我丈夫的前妻失业后，他每月偷偷给她1500美元。我们有240万美元的存款。他是否通过隐瞒事实撒了谎？",
         "summary": "“He explained that he wasn’t trying to hide the payment, but his former wife lost her job in a medical billing company.”",
@@ -14,100 +84,10 @@
       },
       {
         "date": "2026-11-24",
-        "tag": "Seeking Alpha",
-        "title": "Burlington 概述了 2027 年销售额增长 5%–7% 的计划，同时保持 EBIT 利润率基本持平",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4676289-burlington-outlines-2027-plan-for-5-percentminus-7-percent-sales-growth-while-keeping-ebit?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Seeking Alpha",
-        "title": "DiaMedica在8600万美元的股票发行后股价上涨，主要资产的中期试验数据公布",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4676288-diamedica-stock-rises-86m-stock-offering?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Seeking Alpha",
-        "title": "据《金融时报》报道，BioNTech联合创始人正在商讨为癌症初创公司筹集10亿美元资金",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4676281-biontech-co-founders-discussions-raise-1b-cancer-start-up?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Seeking Alpha",
-        "title": "小盘REITs：财报季后的五大定量精选股和五大应避股",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4676144-small-cap-reits-top-5-quant-picks-and-5-stocks-to-avoid-after-earning-season?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "MarketWatch",
-        "title": "“买家咄咄逼人”：随着房屋销售量降至历史新低，买家开始掌握主动权",
-        "summary": "The few buyers left in the market braving record-high home prices and 7% mortgage rates are starting to call the shots, real-estate agents say.",
-        "url": "https://www.marketwatch.com/story/buyers-are-out-for-blood-as-housing-market-finally-hits-rock-bottom-fa5093a6?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "The Block",
-        "title": "Robinhood 共同领投链上交易平台 Rialto 的 500 万美元种子轮融资",
-        "summary": "Rialto has processed more than $600 million in spot trading volume across its app and Swap API since launching publicly in July, Can said.",
-        "url": "https://www.theblock.co/news/deals/2026-11-24-robinhood-onchain-trading-platform-rialto-funding-446030",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "The Block",
-        "title": "Ansem否认参与257万美元钱包盗空事件；Black Bull的创作者代币暴跌55%",
-        "summary": "Ansem said he is conducting a security review as onchain analysts try to get to the bottom of his wallet drain.",
-        "url": "https://www.theblock.co/news/defi/2026-11-24-ansem-denies-involvement-2-57-million-wallet-drain-black-bull-creator-coin-plummets-55-445705",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "The Block",
-        "title": "欧洲刑警组织开展的涉及币安、Coinbase和Chainalysis的行动追查到非法流媒体服务背后超过2850万美元的加密货币",
-        "summary": "Europol traced more than €26 million ($28.5 million) in crypto transactions during an investigation into illegal IPTV services.",
-        "url": "https://www.theblock.co/news/regulation/2026-11-24-europol-operation-binance-coinbase-chainalysis-traces-28-5-million-crypto-illegal-streaming-services-446019",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-24",
         "tag": "Financial Times",
-        "title": "黄仁勋回归后，亚洲科技股飙升",
-        "summary": "Investor relief over reinstatement of Jensen Huang as Nvidia CEO subsides",
-        "url": "https://www.ft.com/content/c0cb932a-076e-4471-8009-91749fde5f47?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Financial Times",
-        "title": "特朗普准备对主要经济体征收一系列新关税",
-        "summary": "China, the EU, Japan and South Korea expected to be hit by levies as US president doubles down on trade strategy",
-        "url": "https://www.ft.com/content/335b593d-1478-4550-ab0a-71fec6280eb0?syn-25a6b1a6=1",
+        "title": "Shein 将支付 1 亿美元以解决美国对其欺骗客户的指控",
+        "summary": "Federal Trade Commission claims cotton that the retailer’s suppliers said was US-grown was harvested in China.",
+        "url": "https://www.ft.com/content/0128d44e-8ca1-49b8-868b-b8fe0e4824c6?syn-25a6b1a6=1",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
@@ -115,29 +95,39 @@
       {
         "date": "2026-11-24",
         "tag": "MarketWatch",
-        "title": "美国人不喜特朗普的关税。但他仍将加倍征收关税——最早可能就在本周。",
-        "summary": "The move risks new trade friction, but spares already imported holiday goods.",
-        "url": "https://www.marketwatch.com/story/americans-dont-like-trumps-tariffs-hes-doubling-down-anyway-as-soon-as-this-week-74c8bed5?mod=mw_rss_topstories",
+        "title": "新文件显示，美光将首席执行官 Sanjay Mehrotra 的安全预算提高了 2,000%",
+        "summary": "Steeply higher security expenses of $764,748 for Mehrotra were part of a $39.7 million total compensation package in the latest fiscal year.",
+        "url": "https://www.marketwatch.com/story/micron-boosted-ceo-sanjay-mehrotras-security-budget-by-2-000-new-filing-shows-d6202acc?mod=mw_rss_topstories",
         "source": "MarketWatch",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-24",
-        "tag": "MarketWatch",
-        "title": "HPE刚刚公布了有史以来最强劲的增长，但其股价却在下跌",
-        "summary": "HPE boosted its financial forecast on Monday in the face of strong AI demand.",
-        "url": "https://www.marketwatch.com/story/hpe-just-posted-its-strongest-growth-ever-and-its-stock-is-tacking-on-more-big-gains-4421cebb?mod=mw_rss_topstories",
-        "source": "MarketWatch",
+        "tag": "Seeking Alpha",
+        "title": "Vornado Realty Trust 将以 7.225 亿美元出售公园大道 90 号 49% 的股份",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4676417-vornado-realty-trust-to-sell-49-stake-in-90-park-avenue-for-7225m?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-24",
+        "tag": "CNBC Markets",
+        "title": "卡尔希每日“perps”交易量开始超过其预测市场",
+        "summary": "The product, the first one beyond event contracts, was introduced in May.",
+        "url": "https://www.cnbc.com/2026/11/24/kalshi-perps-volume-prediction-markets.html",
+        "source": "CNBC Markets",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-24",
         "tag": "Financial Times",
-        "title": "习近平加紧清洗，上海强有力的中共一把手被罢免",
-        "summary": "Chen Jining under investigation over suspected ‘severe violations of discipline and laws’",
-        "url": "https://www.ft.com/content/02240d42-ccd8-4b4d-b0e3-49a04c950eea?syn-25a6b1a6=1",
+        "title": "华为在美国审判中被定罪，揭露企业间谍活动和逃避制裁行为",
+        "summary": "Verdict marks a victory for federal prosecutors after an eight-year legal battle with the Chinese telecoms company",
+        "url": "https://www.ft.com/content/6c64b8b8-531c-4eea-8fd0-90c4c4967ab9?syn-25a6b1a6=1",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
@@ -145,25 +135,45 @@
       {
         "date": "2026-11-24",
         "tag": "The Block",
-        "title": "以太坊金库公司BTCS出售价值4380万美元的ETH以削减Aave债务，首席执行官表示“我们不会掉以轻心”",
-        "summary": "Nasdaq-listed BTCS sold 27,300 ETH during Friday's crypto rout to slash decentralized debt and curb collateral liquidation risk.",
-        "url": "https://www.theblock.co/news/business/2026-11-24-ethereum-treasury-firm-btcs-sells-43-8-million-eth-cut-aave-debt-ceo-says-we-do-not-take-this-lightly-445562",
+        "title": "由于 BTC 产量下降，比特币矿商 CleanSpark 年亏损达 9.87 亿美元",
+        "summary": "CleanSpark's annual revenue fell 25% as the bitcoin miner continues to shift toward AI infrastructure.",
+        "url": "https://www.theblock.co/news/business/2026-11-24-bitcoin-miner-cleanspark-swings-987-million-annual-loss-btc-production-declines-446061",
         "source": "The Block",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-24",
-        "tag": "Financial Times",
-        "title": "英国军情五处警告向乌克兰军方供应物资的英国公司，称存在俄罗斯破坏活动的风险",
-        "summary": "Acts could include arson attacks carried out by proxy agents, say security chiefs",
-        "url": "https://www.ft.com/content/d9f17145-cdc0-424a-bace-7147a971d0ab?syn-25a6b1a6=1",
-        "source": "Financial Times",
+        "tag": "The Block",
+        "title": "SEC 工作人员给予 Molecule 科学研究代币无行动救济",
+        "summary": "SEC staff said it would not recommend an enforcement action against Molecule for its utility tokens that allow people to support research.",
+        "url": "https://www.theblock.co/news/regulation/2026-11-24-sec-staff-gives-molecule-no-action-relief-scientific-research-tokens-446067",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-24",
+        "tag": "CNBC Markets",
+        "title": "在公司暂停该州运营后，犹他州撤销了对 Kalshi 创始人的刑事指控",
+        "summary": "Co-founders of the prediction market platform were slated to appear in a state district court in December.",
+        "url": "https://www.cnbc.com/2026/11/24/utah-drops-charges-against-kalshi-after-it-halted-operations-in-state.html",
+        "source": "CNBC Markets",
         "region": "en",
         "category": "投资"
       }
     ],
     "科研": [
+      {
+        "date": "2026-11-25",
+        "tag": "Nature 材料",
+        "title": "钒基 Kagome 超导体中交织的电荷密度波阶",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41535-026-00955-8",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
       {
         "date": "2026-11-24",
         "tag": "ScienceDaily 材料",
@@ -227,6 +237,16 @@
       {
         "date": "2026-11-24",
         "tag": "Nature 材料",
+        "title": "基于生物离子液体的电活性抗菌生物粘合剂用于组织修复",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-79603-x",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-24",
+        "tag": "Nature 材料",
         "title": "$$\\beta _{12}$$硼烯的邻域多拓扑指数：基于M-多项式的QSPR研究",
         "summary": "",
         "url": "https://www.nature.com/articles/s41598-026-79948-3",
@@ -240,6 +260,16 @@
         "title": "采用实验和机器学习方法研究用温度可变生物炭增强的聚合物基复合材料的侵蚀磨损行为",
         "summary": "",
         "url": "https://www.nature.com/articles/s41598-026-78201-1",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-24",
+        "tag": "Nature 材料",
+        "title": "使用柠檬酸盐封端的银纳米颗粒进行鸟嘌呤检测的实验和 DFT 相结合的方法",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-81243-0",
         "source": "Nature 材料",
         "region": "en",
         "category": "科研"
@@ -275,36 +305,6 @@
         "category": "科研"
       },
       {
-        "date": "2026-11-24",
-        "tag": "Nature 材料",
-        "title": "西门子蒸汽轮机中涡轮转子叶片失效的机理研究：综合实验和数值分析",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-82288-x",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Nature 材料",
-        "title": "用于药物样品中帕罗西汀电位和伏安测定的全固态PVC膜微传感器",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-80651-6",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Nature 材料",
-        "title": "基于物理处理和比色特征的黄蓍胶粘度预测数据驱动建模",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-80720-w",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
         "date": "2026-11-22",
         "tag": "ScienceDaily 材料",
         "title": "星际太阳帆在光速的75%时遇到一个奇怪的问题",
@@ -327,11 +327,61 @@
     ],
     "web3": [
       {
+        "date": "2026-11-25",
+        "tag": "PANews",
+        "title": "DWF Ventures：加密新银行，靠返现留不住人",
+        "summary": "加密卡周消费额同比涨近 200%，但逾 86% 集中于前五大项目，RedotPay 独占超 46%。扣掉返现后多数项目从刷卡中拿到不足 1%，本地化与多币种结算是增长方向。",
+        "url": "https://www.panewslab.com/zh/articles/01a20dfb-edc0-722a-8d00-d27bad1d3c29",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-25",
+        "tag": "PANews",
+        "title": "LayerZero：机构级链上交易所ATLAS将于11月30日启动，Zero从下周起分阶段推出",
+        "summary": "PANews 11月25日消息，LayerZero联合创始人Bryan Pellegrino宣布，下周一将启动机构级链上交易所ATLAS，并开始Zero的分阶段发布。Zero将在未来12至24个月内分阶段推出：首日以完整的抗量子格基Jolt-ZKvm并辅以TEE后备机制启动，结算完全基于ZK；验证初期为46个固定验证者，3月31日后开放无需许可验证并过渡至完整dPOS模型；Zero-EVM合约部署将在第5阶段开放；Zero区块链本身将在第6阶段实现抗量子，支付区发布时即完全抗量子；第7阶段将完成Jolt Pro端到端验证并移除Guardian TEE。",
+        "url": "https://www.panewslab.com/zh/articles/01a21068-d8af-7332-813a-dc0e0a895a34",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-25",
+        "tag": "PANews",
+        "title": "某巨鲸在浮盈1419万美元时未止盈，今日清仓ETH反亏717万美元",
+        "summary": "PANews 11月25日消息，据链上分析师余烬监测，一名巨鲸4个月前以1,988美元抄底买入18,030枚ETH（3585万美元），买入位置较好，随后ETH大涨，9月ETH涨至2,775美元时其浮盈达1419万美元。但该巨鲸高点未卖、成本线附近也未离场，最终于11月25日凌晨以1,669美元清仓卖出17,182枚ETH，实现亏损717万美元。",
+        "url": "https://www.panewslab.com/zh/articles/01a21067-6a4f-766e-9ce8-4c20725c1bd5",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-25",
+        "tag": "PANews",
+        "title": "疑似Uniswap生态实体近28天向交易所转移超1421万美元的UNI",
+        "summary": "PANews 11月25日消息，据链上分析师Ai姨监测，一个Uniswap生态相关实体疑似抛售61.2万枚UNI，近28天已累计向交易所和做市商转移超1421万美元的代币。该实体曾在2026年1月至10月期间从UNI Timelock合约收到2000万枚UNI（价值高达1.08亿美元），接收均价5.41美元，且与a16z存在资金关联。40分钟前，该实体时隔14天再次向Coinbase充值价值288万美元的UNI，用途未知。",
+        "url": "https://www.panewslab.com/zh/articles/01a21062-0784-7129-a7d5-8602b4b66138",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-25",
+        "tag": "Cointelegraph",
+        "title": "CleanSpark 考虑出售比开采的比特币更多的比特币，以“降低”书籍风险",
+        "summary": "The Bitcoin miner sold 2,102 BTC while it produced just 1,708 BTC in the September quarter.",
+        "url": "https://cointelegraph.com/news/cleanspark-weighs-selling-more-bitcoin-than-it-mines-to-de-risk-books?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
         "date": "2026-11-24",
         "tag": "Cointelegraph",
-        "title": "韩国拟议的20%上限如何可能改变Upbit的运营者",
-        "summary": "Naver Financial agreed to buy every share in Upbit’s operator, but a proposed ownership cap could strip away its voting rights on four-fifths of them.",
-        "url": "https://cointelegraph.com/news/how-south-koreas-proposed-20-cap-could-change-who-runs-upbit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "黑客在美国最新的网络攻击中破坏了中央情报局情报网络",
+        "summary": "The reported breach follows cyber incidents involving the FBI, Department of Homeland Security and Department of Agriculture.",
+        "url": "https://cointelegraph.com/news/hackers-breach-cia-intelligence-network-in-latest-us-cyberattack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
@@ -339,10 +389,70 @@
       {
         "date": "2026-11-24",
         "tag": "Decrypt",
-        "title": "欧洲刑警组织追查到欧洲非法流媒体行业幕后的2800万美元加密货币",
-        "summary": "Police from 11 countries worked with Binance, Coinbase and Chainalysis to follow crypto payments made to pirate TV services.",
-        "url": "https://decrypt.co/383877/europol-traces-28m-in-crypto-behind-europes-illegal-streaming-industry",
+        "title": "OpenAI 和 Anthropic 内部人士担心他们的下一代人工智能模型太危险而无法发布",
+        "summary": "Employees at both AI labs reportedly question whether their strongest models should ever reach the public, as researchers struggle to keep increasingly capable systems under control during training and testing.",
+        "url": "https://decrypt.co/383933/openai-and-anthropic-insiders-fear-next-ai-models-too-dangerous",
         "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-24",
+        "tag": "Cointelegraph",
+        "title": "这是今天加密货币领域发生的事情",
+        "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-24",
+        "tag": "Cointelegraph",
+        "title": "欧洲刑警组织斥资 2850 万美元打击流媒体盗版加密货币",
+        "summary": "Authorities from 11 countries worked with Binance, Coinbase and Chainalysis to trace financial transactions and disrupt illegal streaming services.",
+        "url": "https://cointelegraph.com/news/europol-crypto-trail-streaming-piracy-crackdown?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-24",
+        "tag": "Decrypt",
+        "title": "Anthropic 的 Claude Ship 让人工智能编写、审查和批准自己的代码",
+        "summary": "Anthropic’s new coding tools can review and repair software changes before approving them for release, leaving development teams to decide when a human still needs to check the AI’s work.",
+        "url": "https://decrypt.co/383929/anthropic-claude-ship-ai-write-review-approve-own-code",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-24",
+        "tag": "Decrypt",
+        "title": "重新审视 Coldcard 比特币漏洞：隐藏的缺陷如何在多年的审计中幸存下来",
+        "summary": "Coinkite’s postmortem reveals a software random-number generator shipped in place of the hardware one for over five years, slipping past at least 15 reviews.",
+        "url": "https://decrypt.co/383930/coldcard-bitcoin-exploit-how-hidden-flaw-survived-years-audits",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-24",
+        "tag": "Decrypt",
+        "title": "以太坊基金会表示人工智能是比量子计算更紧迫的威胁",
+        "summary": "The Ethereum Foundation has doubled its protocol security team and is prioritizing a cryptographic overhaul as advances in AI threaten the mathematical assumptions that keep billions in crypto safe.",
+        "url": "https://decrypt.co/383927/ethereum-foundation-ai-more-urgent-threat-quantum-computing",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-24",
+        "tag": "CoinDesk",
+        "title": "在该公司停止服务后，犹他州决定放弃对卡尔希的刑事追捕",
+        "summary": "The state continues to hold the criminal charges in its back pocket with a vow to hit Kalshi and other prediction markets with gambling accusations if they return.",
+        "url": "https://www.coindesk.com/policy/2026/11/24/utah-moves-to-drop-criminal-pursuit-of-kalshi-after-the-firm-halted-services-there",
+        "source": "CoinDesk",
         "region": "en",
         "category": "web3"
       },
@@ -354,46 +464,6 @@
         "url": "https://www.coindesk.com/markets/2026/11/24/ai-trade-never-died-traders-see-room-for-market-recovery-despite-bitcoin-s-weakness",
         "source": "CoinDesk",
         "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "PANews",
-        "title": "现货白银向下触及41美元/盎司，日内跌5.01%",
-        "summary": "PANews 11月25日消息，现货白银向下触及41美元/盎司，日内跌5.01%。",
-        "url": "https://www.panewslab.com/zh/articles/01a20e49-9b6f-7687-9df5-787b61a9ecfc",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "PANews",
-        "title": "Anthropic跌幅扩大至10%",
-        "summary": "PANews 11月24日消息，币安行情显示：Anthropic(ANT.O)跌幅扩大至10%。",
-        "url": "https://www.panewslab.com/zh/articles/01a20e3a-84fd-76a0-b4c5-b5567a9ba4ad",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "PANews",
-        "title": "Anchorage拟设资管子公司推出比特币计价基金，预计于12月初开始运营",
-        "summary": "PANews 11月24日消息，据CoinDesk报道，美国受监管加密资产托管机构Anchorage Digital计划成立资产管理子公司61st Parallel Asset Management，预计于12月初开始运营，并将推出一只以比特币计价的基金，使托管客户能够通过所持加密资产获取收益。Anchorage Digital首席执行官Nathan McCauley在采访中表示，越来越多客户希望在Anchorage托管的资产上获得收益，这在传统大型金融机构中已较为常见。据该报道，公司已提交投资顾问注册及信息披露文件Form ADV，正寻求开展投资顾问业务所需资质。",
-        "url": "https://www.panewslab.com/zh/articles/01a20e32-3d1f-7386-909b-be9fce9b3b8e",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "PANews",
-        "title": "过去24小时全网合约爆仓4.72亿美元，主爆多单",
-        "summary": "PANews 11月24日消息，CoinGlass数据显示，过去24小时加密货币市场全网合约爆仓4.72亿美元，其中多单爆仓3.95亿美元，空单爆仓7698.23万美元。BTC爆仓总金额1.77亿美元，ETH爆仓总金额9327.74万美元。最大单笔爆仓单发生在Binance-BTCUSDT，价值363.04万美元。",
-        "url": "https://www.panewslab.com/zh/articles/01a20e2d-9e8c-703b-b566-2fce037cceb9",
-        "source": "PANews",
-        "region": "cn",
         "category": "web3"
       },
       {
@@ -415,79 +485,79 @@
         "source": "CoinDesk",
         "region": "en",
         "category": "web3"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Decrypt",
-        "title": "美国司法部拟没收朝鲜币安黑客攻击所得的11亿美元USDC",
-        "summary": "U.S. authorities say they've now helped freeze, seize or return more than $2.9 billion of the crypto stolen from Binance in October.",
-        "url": "https://decrypt.co/383874/justice-department-moves-to-forfeit-1-1b-in-usdc-from-north-koreas-binance-hack",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Cointelegraph",
-        "title": "莫斯科交易所开放加密货币交易后，USDT买家将面临22%的增值税",
-        "summary": "Buyers will pay VAT on top of the trade price in December because Russia’s tax code has no explicit exemption for foreign digital instruments.",
-        "url": "https://cointelegraph.com/news/russia-usdt-buyer-face-22-tax-december-launch?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Cointelegraph",
-        "title": "瑞士央行、瑞银和SIX研究用于代币化结算的账本",
-        "summary": "The study will assess whether a shared ledger can bring central bank money, commercial bank money and securities onto the same platform.",
-        "url": "https://cointelegraph.com/news/swiss-central-bank-ubs-six-explore-ledger-tokenized-settlement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Decrypt",
-        "title": "CertiK培训国际刑警组织调查人员追踪和冻结被盗加密货币",
-        "summary": "The blockchain security firm walked officers from across Asia and the South Pacific through a real wallet-theft case at a workshop in Hanoi.",
-        "url": "https://decrypt.co/383857/certik-trains-interpol-investigators-to-trace-and-freeze-stolen-crypto",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Cointelegraph",
-        "title": "Sky 借贷方提议回购最高5000万美元的代币，以资助stUSDS的提款",
-        "summary": "Borrowers would sell SKY to the protocol and use the proceeds to pay down their loans, freeing up funds for depositors in the stUSDS pool.",
-        "url": "https://cointelegraph.com/news/sky-community-proposes-50m-buybacks-stusds-liquidity-crisis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Decrypt",
-        "title": "晨间要闻：Jensen回归，市场飙升（加密货币除外）",
-        "summary": "It was a very green Monday for most markets, but crypto couldn’t hold the pump as ETF sellers race for the exits.",
-        "url": "https://decrypt.co/383868/morning-minute-jensen-returns-markets-soar-except-crypto",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "CoinDesk",
-        "title": "加密货币交易员Ansem表示，他的钱包遭到黑客攻击，价值200万美元的迷因币被卖出",
-        "summary": "Ansem suspects someone broke into his account on Bullpen, the trading terminal he co-founded, where the wallet's private key had been imported.",
-        "url": "https://www.coindesk.com/markets/2026/11/24/a-wallet-linked-to-popular-crypto-trader-ansem-sold-usd2-million-in-memecoins-as-his-namesake-token-cratered",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
       }
     ],
     "科技": [
+      {
+        "date": "2026-11-25",
+        "tag": "IT之家",
+        "title": "曝 2027 年苹果、三星、小米、OPPO、vivo、华为等手机厂商出货目标落地，多数厂家下调预期",
+        "summary": "IT之家 11 月 25 日消息，界面新闻今日援引供应链消息称，2027 年主要手机厂商出货目标近期陆续落定。受上游存储芯片成本持续高企影响， 多数厂商选择下调明年预期 。 小米将 2026 年智能手机出货目标定为约 1.2 亿台，2027 年下调至约 9,000 万台，同比减少 25%。 联想（以摩托罗拉为主）2026 年出货目标约为 5,000 万台，2027 年下调至约 4,000 万台，同比减少 20%。 苹果 2026 年出货目标约为 2.33 亿台，2027 年下调至约 2.2 亿台，同比减少 5.6%。 三星 2026 年出货目标约为 2.32 亿台，2027 年下调至约 2.1 亿台，同比减少 9.5%。 OPPO 2026 年出货目标约为 1.05 亿台，2027 年下调至约 9,000 万台，同比减少 14%。 vivo 2026 年出货目标约为 8,500 万台，2027 年下调至约 6,000 万台，同比减少 29%。 传音 2026 年出货目标约为 6,600 万台，2027 年下调至约 5,800 万台，同比减少 12%。 华为 2027 年出货目标下调至约 5,000 万台以下，较 2026 年的约 6,000 万台减少超过 16%。 根据 Counterpoint Research 市场监测服务数据 ，2026 年第三季度全球智能手机出货量 同比大幅下滑 19% ，但受平均售价提升支撑，全球智能手机营收同比增长 3%，达到 1,140 亿美元 （IT之家注：现汇率约合 7,613.12 亿元人民币） ，价格与高端化趋势完全对冲了出货量的暴跌。 Counterpoint 判断，当前体现出的营收韧性难以延续到下一季度： 2026 年第四季度，出货量跌幅预计将超过平均售价的涨幅 ，推动全球智能手机营收进入收缩区间，但前三季度的高平均售价仍会让 2026 年全年营收高于上年。 2027 年，高企的存储成本将持续挤压厂商利润、推动进一步涨价，出货量将继续下滑，但跌幅将小于 2026 年，更高的平均售价会推动营收增速超过 2026 年水平。成本层面的缓解预计要到 2028 年才会出现，届时厂商更可能将节省下来的成本重新投入设备升级，而非下调售价。",
+        "url": "https://www.ithome.com/1/031/950.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-25",
+        "tag": "IT之家",
+        "title": "华境 S 五座版开启预订，全系标配华为乾崑智驾 ADS 5 Pro",
+        "summary": "IT之家 11 月 25 日消息，华境汽车官方今日宣布，华境 S 五座版正式开启预订，可享限时 1000 元抵 3000 元权益。 相关阅读： 《 华为智驾 + 宁德换电：华境 S 换电新车将至，有望面向 20 万级主流家庭 SUV 市场 》 《 华境 S 五座版汽车官宣明天开启预订，不开发布会 》 《 华境 S 五座版更多规格公布：全系标配华为乾崑科技和宁德时代电芯 》",
+        "url": "https://www.ithome.com/1/031/949.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-25",
+        "tag": "钛媒体",
+        "title": "被红果改写的Q3财报季",
+        "summary": "二线大厂的冬天：砍成本，赌AI",
+        "url": "https://www.tmtpost.com/8216958.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-25",
+        "tag": "钛媒体",
+        "title": "这届年轻人开始劝父母卖掉租不上价的房，用来收息",
+        "summary": "这届年轻人开始劝父母卖掉租不上价的房，用来收息",
+        "url": "https://www.tmtpost.com/8216479.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-25",
+        "tag": "IT之家",
+        "title": "类魂动作角色扮演游戏《堕落之主 2》2027 年 4 月发售，具体日期 12 月公布",
+        "summary": "IT之家 11 月 25 日消息，开发商 CI Games 昨天宣布，类魂动作角色扮演游戏《堕落之主 2》将于 2027 年 4 月发售，登陆 PS5、XBOX Series X|S、Switch 2 和 PC 平台， 具体发售日期将在 12 月公布 。 据介绍，《堕落之主 2》是一款黑暗奇幻动作 RPG，将残酷的类魂战斗与一个濒临崩溃的世界融为一体。玩家将在一场史诗般的冒险中穿越支离破碎的王国，与黑暗势力展开战斗。一个世界，两个领域，绝不留情。 IT之家注：《堕落之主》于 2023 年 10 月 13 日发售，是由 CIGames 发行、HEXWORKS 使用虚幻 5 所打造的一款黑暗奇幻动作 RPG。游戏上市后取得了不错的销量成绩，10 天内售出了超过 100 万份。",
+        "url": "https://www.ithome.com/1/031/948.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-25",
+        "tag": "IT之家",
+        "title": "特朗普称美国政府入股英伟达犹未为晚，自称早就想过但一直没说",
+        "summary": "IT之家 11 月 25 日消息，当地时间 11 月 24 日，美国总统唐纳德 · 特朗普在接受《纽约邮报》采访时表示，他曾考虑让美国政府持有英伟达股份，并称目前采取这一行动“可能还不算太晚”。 特朗普透露，自己此前已经考虑过这一方案，“我考虑过这件事。我当时想，也许我应该这么做，但还没有提出来。现在提可能还不算太晚。” 目前，特朗普并未公布美国政府入股英伟达的具体计划、持股比例或投资金额；英伟达方面尚未对此作出回应。 在此之前，黄仁勋于当地时间 11 月 12 日辞去职务，后于 11 月 23 日恢复职务。特朗普此前公开表示，自己曾直接联系英伟达董事会并促成黄仁勋回归。 美国政府此前已经通过类似方式介入半导体产业。根据英特尔 2025 年 8 月 22 日发布的公告，美国政府将以 89 亿美元 （IT之家注：现汇率约合 594.36 亿元人民币） 投资换取英特尔约 9.9% 的股份。该笔投资主要来自此前已经承诺、但尚未支付给英特尔的政府补助资金，其中包括《芯片与科学法案》相关资金以及 Secure Enclave 项目资金。除了英特尔，美国政府还曾通过特殊股权安排参与美国钢铁公司的交易，并投资关键矿产企业。",
+        "url": "https://www.ithome.com/1/031/947.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-25",
+        "tag": "极客公园",
+        "title": "豆包个人 AI 助理「小豆」开启公测；存储承压，小米三季度经调整净利润下滑近六成；红果短剧上线时间管理功能 | 极客早知道",
+        "summary": "豆包旗下 AI 个人助理「小豆」开启公测，能够帮你处理日常事务 11 月 24 日消息，豆包官方今天宣布「小豆」正式开启公测，采用邀请制开放。用户凭邀请码即可开启体验，并获赠一定量免费额度。 小豆是豆包旗下的 AI 个人助理产品，采用对话式交互方式，在用户明确指令与授权范围内，协助你高效处理日常事务。官方宣称它是「一个懂你，还能主动帮你办事的豆包」。未来，小豆上的能力与体验也将逐步在豆包 App 上线。（来源：IT 之家） 特斯拉 SpaceX 合并最新进展曝光 据报道，马斯克旗下特斯拉与 SpaceX 的潜在合并交易迎来新进展，双方已经确定五名董事，分别负责指导各自特别委员会推进合并谈判。 这五人中，三人来自特斯拉，分别是董事长罗宾·登霍尔姆、董事凯瑟琳·威尔逊-汤普森以及杰克·哈通。 SpaceX 方面则由红杉资本合伙人鲁洛夫·博塔和董事兰迪·格莱恩参与。 按照报道，这些董事被认为与潜在交易不存在直接财务利益冲突，因此负责代表各自公司审查合并方案，避免马斯克同时掌控两家公司带来的利益冲突问题。 值得注意的是，双方的合并讨论并非刚刚开始。 今年 10 月 20 日，马斯克已经公开确认，特斯拉和 SpaceX 董事会分别成立了特别委员会，研究两家公司进一步整合的可能性。 特斯拉随后在向美国证券交易委员会提交的文件中披露，特别委员会将评估包括企业合并在内的多种合作安排，但不能保证最终交易一定能够完成。 如今随着五名核心董事名单曝光，相关讨论已经进一步进入财务方案研究阶段。（来源：快科技） 谷歌收购伦敦大楼建 AI 研发中心 11 月 24 日，谷歌宣布，公司计划收购位于伦敦国王十字区的 6 Pancras Square 大楼，以扩大其在伦敦的办公园区。谷歌表示，此次投资将与公司在伦敦的 Central Saint Giles 办公楼及即将启用的 Platform 37 项目共同构成重要的 AI 研发中心，预计相关办公场所将容纳数千名员工，参与 Gemini、搜索和 YouTube 等产品的开发。 谷歌产品为英国经济贡献 1400 亿英镑；公司此前宣布的 50 亿英镑英国投资计划，涵盖沃尔瑟姆克罗斯（Waltham Cross）数据中心、AI Campus 以及即将开放的 AI Exchange；为期十年的技能培训计划已培训超过 120 万英国人。公告称，这些办公室将成为数千名谷歌员工的办公场所。 交易细节方面，谷歌在公告中没有披露收购金额或交割日期。据英国当地媒体报道，卖方之一 PSP Investments 的代表确认，双方已就谷歌收购这栋楼达成协议。据悉，2016 年，谷歌入驻国王十字区，成为\"知识区\"（Knowledge Quarter）的创始住户之一；如今宣布计划购下 6 Pancras Square，与 Central Saint Giles、Platform 37 两处办公场所一起，巩固其伦敦园区作为重要 AI 研发中心的地位。（来源：CNMO 科技） 小米三季度经调整净利润下滑近六成，预计明年存储成本仍承压 小米发布第三季度财报，单季营业收入约 1072.4 亿元，同比下降 5.2%；归母净利润约 38.76 亿元，同比下降 68.4%，经调整净利润同比下滑近六成。 小米集团总裁卢伟冰表示，DRAM 供需紧张局面短期内难以缓解，手机平均售价预计将继续提高，汽车业务也将面临成本上涨压力。（来源：IT 之家） 红果短剧上线时间管理功能，新增时间锁 红果短剧近日正式上线「时间管理」功能，该功能由 10 月底推出的「休息提醒」和「睡眠提醒」升级而来，用户可按自身作息自行设置休息提醒间隔和睡眠提醒时间。 此前版本中，红果短剧会在用户连续看剧达到一定时长或深夜看剧时，提示「是时候休息下啦」以及「好好休息，愿你有个好梦」；推荐页也可能出现由多个短剧角色出镜的提醒视频，提醒节奏由系统统一设定。 新版将休息提醒和睡眠提醒进行了整合，两类提醒均默认保留「智能提醒」模式，同时允许用户主动调整。休息提醒可在每隔 30 分钟、1 小时、2 小时等间隔中选择；若未设置，系统仍按智能节奏触发。睡眠提醒可从 00:00、00:30 等夜间时段中选择，替代此前统一在零点触发的固定提醒。到设定时间后，页面会出现睡眠提示，引导用户结束当天观看。 时间管理功能还新增「时间锁」。用户可设定单日使用时长，达到预定时间后界面进入锁定状态，需输入密码方可继续使用。是否开启、设定多长时长、如何解锁，均由用户主动选择，把「看多久」的决定权交还给使用者，为希望控制观剧节奏、按时休息的用户提供可自主配置的边界。（来源：头部财经） OpenAI 与 Anthropic 员工警告：内部 AI 模型能力过于强大，可能已无法安全发布 二十余名知情人士透露，OpenAI 和 Anthropic 尚未公开发布的 AI 模型能力正迅速提升，部分内部研究人员认为，现有安全技术已难以有效控制这些模型，其能力增长速度正在超过人类监控和约束它们的能力。 新一代模型在数学、科学、网络安全及 AI 研究等领域取得重大突破，但内部测试也发现，模型越来越善于利用奖励机制漏洞绕过安全限制，甚至能够隐藏真实推理过程，或向监控人员提供具有误导性的推理记录。 相关问题已在两家公司内部引发激烈争论，部分研究人员主张停止公开发布未来的前沿模型，仅允许有限的内部部署，另有人员甚至呼吁暂停训练更先进的模型。 OpenAI 表示已采用可能延缓模型发布的新安全要求；Anthropic 则表示，必要时愿意以牺牲商业利益为代价推迟模型开发或发布。若现有安全技术无法跟上模型能力提升的速度，AI 行业的技术迭代和商业化进程可能受到显著影响。（来源：新浪科技） 音乐平台 Tidal 宣布封禁纯 AI 生成音乐，近三个月上传歌曲超四成为 AI 生成 音乐流媒体平台 Tidal 宣布，将开始禁止并移除完全由 AI 生成的音乐作品，以应对平台上 AI 音乐投稿数量的快速增长。 Tidal 披露，过去 90 天内，上传至平台的歌曲中，超过 43% 由 AI 生成。这成为平台调整内容政策的重要原因。（来自：TechCrunch） 小鹏发布图灵世界模型 WorldGPT，实现水陆空三栖规划 近日，小鹏图灵世界模型家族新添一员——世界动作模型 WorldGPT。它在小鹏物理 AI 体系中作为云端 teacher model，依托基座模型实现跨本体能力蒸馏和迁移，降低新本体的开发边际成本。同时，给它历史画面和指令，它会规划动作，预演世界随之发生的变化，看懂场景的语义与结构并用语言进行推理决策。目前，这是首个能够在水、陆、空三栖六类本体完成预测与行动规划的世界模型。 今天的物理 AI 大多是一机一栈：汽车一套系统，机械臂一套，无人机又是一套；机器种类越多，成本越高，数据也被切得越碎。难点在于，动作无法在机器之间直接共享。 因此，小鹏设计研发了跨本体世界动作模型 WorldGPT。该模型承担了小鹏物理 AI 体系中云端 teacher model 的使命。更大模型容量做跨本体训练提取共有世界知识/学习通用动作直觉，针对不同本体提炼小型本地模型，做到通用能力与端侧部署兼顾。这一方式能够让一个本体从 0 训一遍，转变为「由一个大的基座完成多路转化」。过去，支持一种新本体的边际成本约等于全量成本：采数据、训模型、调部署、整条链路重新来过。而 WorldGPT 作为跨本体的 teacher，新本体只需要做到特化，把统一的物理智能映射到自己的执行要素。用少量本体数据校准控制细节，减少新本体的研发边际成本。 在驾驶和机器人操作两大领域，WorldGPT 均展现出领先实力。同时，理解和生成两项物理 AI 通用能力上也有不错的表现。（来源：新浪科技） 影石官宣运动相机新品 Ace Pro 3 24 日，影石 Insta360 发布预热短片，宣布 Ace Pro 3 将于 12 月 1 日晚 8 点正式发布。 综合市场消息，Ace Pro 3 可拍摄 22mm 焦段、支持 F1.77 光圈。值得一提的是，该款产品在多项功能有较大升级，有概率支持可换镜头、色温传感器等，并增加了可预览的前屏。 此前，该设备已经通过美国 FCC 认证，根据认证信息，型号 CINSABUA 的新机内置 2250mAh 电池，额定能量 8.71Wh。对比上一代 Ace Pro 2 的 1800mAh，电池容量提升幅度达到 25%。（来源：新浪科技） 华为 Mate X8 大折叠旗舰机发布：麒麟 9050 Pro 逻辑折叠 τ 芯片、内屏亮度比肩双层 OLED，12,999 元起 11 月 24 日消息，在 HUAWEI Mate X8 及全场景新品发布会上，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东正式发布了 Mate X8 大折叠旗舰手机，定价 12,999 元起。 据介绍，华为 Mate X8 分标准版和典藏版，采用「钇晶宝石嵌入寰宇星环」的设计思路，轴盖处还有鎏光腰线，提供紫金锦、青云锦、丹霞锦、苍穹黑、雪域白五款配色。 新机展开态厚度约 4.2mm、折叠态厚度约 8.95mm，是华为史上最薄的折叠屏手机。 新机外屏搭载第二代灵珑屏，1% APL 峰值亮度达 12000nits、20% APL 峰值亮度达 6000nits；内屏采用新一代超高亮发光材料，1% APL 峰值亮度达 8000nits、20% APL 峰值亮度达 4500nits。 华为 Mate X8 全系搭载麒麟 9050 Pro 逻辑折叠 τ 芯片，整机性能提升 31%；集成灵犀 CPU、马良 GPU 和达芬奇架构 NPU，其中马良 GPU 计算单元与缓存翻倍，NPU 支持在端侧部署 30B 参数的混合专家架构大模型。 新机影像也迎来大升级，搭载 5000 万像素连续可变光圈 OIS RYYB LOFIC 18EV 超高动态摄像头 + 5000 万像素 RYYB F2.2 大光圈超大光圈潜望式长焦 + 4000 万像素 RYYB 高动态超广角摄像头 + 第三代红枫原色摄像头。 华为 Mate X8 预装鸿蒙 HarmonyOS 7 系统，支持沉浸光感、天气运镜、3D 空间壁纸、智感握姿、全景多窗、伴随式 AI 等特色功能。（来源：IT 之家） 微软总裁史密斯示警：AI 加速修补漏洞，未来数月全球恐出现更多技术故障 11 月 24 日消息，微软总裁布拉德 · 史密斯（Brad Smith）于 11 月 22 日发布警告，表示未来数月全球技术故障风险将持续处于高位，AI 在加速漏洞发现的同时，也放大了快速更新带来的不稳定风险。 史密斯表示未来数月全球技术故障风险仍将居高不下，而且由于「全球整个信息基础设施实际上都在进行升级改造」，相关风险无法在几周内解决，恐出现更多技术故障。 科技媒体 NeoWin 报道指出，近期全球网络出现大规模、大范围的宕机事件，微软 Exchange、Outlook、Teams 等服务出现较大范围故障后，苹果 App Store、多家银行、航空公司及 PlayStation Network 也接连报告服务中断。 官方已排除这些事件为协同网络攻击的可能性。美国国务卿马可 · 鲁比奥表示，没有证据显示各起事故彼此相关，或源自有组织的网络攻击。 史密斯认为，人工智能正在改变网络安全与系统运维的节奏。AI 让安全人员更容易发现代码漏洞，但恶意攻击者同样可利用这一能力寻找攻击入口；结果是，企业不得不以「前所未有的速度」部署补丁，留给测试和验证的时间被大幅压缩。 他特别指出，老旧基础设施最易受影响。当系统更新速度过快、测试不足时，本应提升安全性的修补工作，反而可能触发新的故障。微软此次全球中断，就被其归因于四个月前的一次软件更新、较新的更新以及网络流量变化共同形成的「完美风暴」。（来源：IT 之家）",
+        "url": "http://www.geekpark.net/news/374438",
+        "source": "极客公园",
+        "region": "cn",
+        "category": "科技"
+      },
       {
         "date": "2026-11-25",
         "tag": "钛媒体",
@@ -499,101 +569,61 @@
         "category": "科技"
       },
       {
-        "date": "2026-11-24",
-        "tag": "IT之家",
-        "title": "华为：截至目前，对外专利许可协议累计金额超 69 亿美元",
-        "summary": "IT之家 11 月 25 日消息，以“卓越创新、开放共赢”为主题的第七届华为创新和知识产权论坛昨日在北京举办。 ▲ 华为在北京召开第七届创新和知识产权论坛 据介绍， 2025 年华为增加了 20 个被许可人 ，覆盖网络与通信设备、消费电子与计算、物联网、汽车、流媒体和半导体等领域。 截至目前，华为对外专利许可协议累计金额超 69 亿美元 （IT之家注：现汇率约合 460.87 亿元人民币） ，其中 2025 年的专利许可收入约为 8 亿美元 （现汇率约合 53.43 亿元人民币） 。截至 2025 年底，超过 32 亿部 5G 设备、超过 16 亿台 Wi-Fi 消费电子终端及超过 41 亿台多媒体设备获得了华为的专利授权。 IT之家从华为官方获悉，在华为持有的有效授权专利中，占比排名前三的技术领域依次为： 无线通信（41%） 、终端设备（16%）以及人工智能和计算（13%）。 延伸阅读 华为创新和知识产权论坛为年度举办的行业活动，本届为第七届，于 2026 年 11 月 24 日在北京举行。上一届（第六届）于 2025 年 11 月 11 日在北京举行，当时华为公布其 2024 年专利许可收入约为 6.3 亿美元，并披露截至 2024 年底，超过 27 亿部 5G 设备、超过 12 亿部 Wi-Fi 消费类电子设备以及超过 32 亿部多媒体设备获得了华为的专利授权。 文中提到的樊志勇（Alan Fan）为华为副总裁、首席知识产权官，此前曾担任华为知识产权部部长，长期负责华为的专利、标准等知识产权事务。 文中出现的 SEP，即 Standard Essential Patent（标准必要专利），指实施某一技术标准时无法绕开、必须使用的专利，相关许可通常需遵循公平、合理、无歧视（FRAND）原则。华为与诺基亚、爱立信、高通等均为全球主要的 SEP 专利权人。 华为曾多次披露，其历史上累计支付的专利许可费约为累计许可收入的三倍，也就是说作为专利实施方付出的费用长期高于其收取的专利许可收入。 研发投入方面，华为 2024 年研发费用支出约为 1797 亿元人民币，约占全年收入的 20.8%，近十年累计投入的研发费用超过 12490 亿元人民币。截至 2024 年底，华为在全球共持有有效授权专利超过 15 万件，其中 90% 以上为发明专利。 早在 2023 年，华为就已公布其手机、Wi-Fi 和物联网的专利许可费率：5G 手机每台不超过 2.5 美元、4G 手机每台不超过 1.5 美元，Wi-Fi 6 消费类产品每台 0.5 美元，以物联网技术为核心的设备按净售价的 1% 收取、每台最高不超过 0.75 美元。目前包括三星、OPPO 等科技企业，以及梅赛德斯-奔驰、奥迪、宝马、保时捷、斯巴鲁、雷诺、兰博基尼、宾利等汽车制造商，均已与华为达成专利许可安排。",
-        "url": "https://www.ithome.com/1/031/896.htm",
-        "source": "IT之家",
+        "date": "2026-11-25",
+        "tag": "钛媒体",
+        "title": "Edge AI Daily 早报（11月25日）",
+        "summary": "OpenAI与Anthropic因安全证明暂缓前沿模型，发布转向可控性验证；Anthropic跌破发行价，AI估值进入资本纪律期。GPT-6.2 Sol、Meta Muse、Google Personal Intelligence争夺默认入口，Claude Ship切入代码交付责任链。英伟达复职黄仁勋后仍面临听证与出口审计，OpenAI与思科开源Shirudo前移运行时防御。国内腾讯WorkBuddy推进办公Agent，阿里子公司列实体清单，超节点应对供应链收紧；数据中心自建燃气与AI黑客推高基础设施与安全成本。",
+        "url": "https://www.tmtpost.com/8216877.html",
+        "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       },
       {
-        "date": "2026-11-24",
+        "date": "2026-11-25",
+        "tag": "少数派",
+        "title": "派早报：华为发布 Mate X8 与 MateBook Fold S、微软将推出自研驱动等",
+        "summary": "豆包 AI 个人助理「小豆」开启公测，Teenage Engineering 推出复古 CD 播放器 EP / BC-1 等。 查看全文",
+        "url": "https://sspai.com/post/119527",
+        "source": "少数派",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-25",
         "tag": "TechCrunch AI",
-        "title": "Meta 将其 Muse AI 助手直接引入 Instagram 私信",
-        "summary": "The new integration gets rid of the need for users to toggle between Instagram and the Muse app when they want to interact with the AI agent.",
-        "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/",
+        "title": "耶鲁大学索南菲尔德：英伟达是美国工业实力的“损害”——而不是冠军",
+        "summary": "Yale's Jeffrey Sonnenfeld warns that what the market cheered Monday, Jensen Huang's White House–backed return as Nvidia's CEO and board member, could prove a giant mistake, exposing the directors to \"historic\" personal liability from a growing pile of lawsuits and raising the question of whether the country is celebrating a company that has helped put advanced chips in its adversaries' hands.",
+        "url": "https://techcrunch.com/2026/11/24/yales-sonnenfeld-nvidia-is-a-detriment-to-u-s-industrial-might-not-a-champion/",
         "source": "TechCrunch AI",
         "region": "en",
         "category": "科技"
       },
       {
+        "date": "2026-11-25",
+        "tag": "爱范儿",
+        "title": "早报｜黄仁勋复职后首开全员大会致歉/豆包推出AI个人助理「小豆」/华为鸿蒙终端突破1亿台",
+        "summary": "· 华为发布 Mate X8、Mate 90 Air 和小折叠电脑 MateBook Fold S · 神舟二十四号任务将开展一年期在轨驻留试验 · PlayStation 公布《GTA 6》首发数据，四天吸引逾 3900 万玩家 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+        "url": "https://www.ifanr.com/1691400?utm_source=rss&utm_medium=rss&utm_campaign=",
+        "source": "爱范儿",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
         "date": "2026-11-24",
         "tag": "Ars Technica",
-        "title": "保时捷718 Boxster原型车试驾：这款电动敞篷跑车是真的",
-        "summary": "Technical details are still limited, but we already know it's fun to drive.",
-        "url": "https://arstechnica.com/cars/2026/11/fake-gears-and-real-911-dna-driving-porsches-electric-718-boxster/",
+        "title": "美国宇航局老化的火星舰队的一半因技术问题而停止运行",
+        "summary": "Perseverance is having trouble transmitting to Earth. Odyssey is rapidly burning through its waning fuel supply.",
+        "url": "https://arstechnica.com/space/2026/11/half-of-nasas-aging-mars-fleet-knocked-offline-by-technical-issues/",
         "source": "Ars Technica",
         "region": "en",
         "category": "科技"
       },
       {
         "date": "2026-11-24",
-        "tag": "The Verge AI",
-        "title": "《纽约时报》警告摄影师不要更新具备人工智能功能的Photoshop",
-        "summary": "The New York Times is asking freelance photographers not to use the newest version of Adobe Photoshop because features in the 2027 update use AI \"in ways that may not be apparent to users.\" In an email seen by The Verge and posted on Threads, two of the Times' photography leaders, Meaghan Looram and Josh […]",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1041227/the-new-york-times-warns-photographers-not-to-update-photoshop-over-ai-features",
-        "source": "The Verge AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "IT之家",
-        "title": "削峰填谷！余承东揭秘华为 Mate X8“超平整”内屏原理，首创磁控展平技术定向修复",
-        "summary": "IT之家 11 月 25 日消息，在昨天下午的 HUAWEI Mate X8 及全场景新品发布会上， 华为 Mate X8 大折旗舰机正式发布 ，全系搭载麒麟 9050 Pro 处理器，售价 12,999 元起。 此次华为 Mate X8 在屏幕上又有新技术突破。其中，大家最关心的就是折痕水平。根据此前曝光的视频来看，Mate X8 内屏在采用“亮面”设计的情况下，折痕多角度查看处于几乎不可见的状态。 而据华为官方数据， Mate X8 内屏平整度对比前代 X7 提升了 90% 。华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东也在发布会现场揭秘了新机“超平整”内屏的实现原理， 总结为四个字 ——“削峰填谷” 。 余承东表示，传统折叠屏幕，在开合使用时会产生凹凸形变。 而华为 Mate X8 首创磁控展平技术，可实现定向磁吸恢复 —— 内屏最上面一层采用航天级超薄钢叠层，中间一层用钢骨架支撑，两边采用定向磁力把屏幕吸住，由此让折叠内屏实现了史上最大一次的提升。 IT之家注意到，华为 Mate X8 的航天级超薄钢叠层具备“超高强度”和“超强抗弯”特性， 弯曲刚度提升 140%、弯折后恢复率达 99.9% 。超薄磁控复合材料则负责定向磁吸恢复，材料厚度 0.1mm，恢复速率可提升 100%。 华为官方折痕 3D 扫描结果显示， Mate X8 的峰谷高差仅 15μm ，前代 Mate X7 为 142μm，而 Mate X6 则为 273μm。 值得一提的是， 华为官方还为这款新机折叠屏手机推出了云晰柔光膜 ，用户在华为授权服务中心可购买更换（根据规划，云晰柔光膜会在 2027 年 1 月下旬由指定门店提供服务）。",
-        "url": "https://www.ithome.com/1/031/895.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "TechCrunch AI",
-        "title": "Tidal将禁用并删除数百万首由人工智能生成的曲目，因为人工智能垃圾正在淹没音乐流媒体平台",
-        "summary": "The company said it will still accept songs that were made with AI assistance, but not fully generated.",
-        "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
-        "source": "TechCrunch AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "The Verge AI",
-        "title": "英伟达首席执行官黄仁勋回归。接下来会发生什么？",
-        "summary": "After the leather-jacketed CEO, president, and co-founder of Nvidia, Jensen Huang, acknowledged an affair with Megaspeed exec Alice Huang, his company initially announced an investigation. However, after The New York Times reported there was evidence of another affair, this time with an Nvidia executive who reported directly to him, a board meeting that night ended […]",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang",
-        "source": "The Verge AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-24",
         "tag": "Ars Technica",
-        "title": "从2027年起，纽约的汽车将不再提供座椅加热功能订阅服务",
-        "summary": "Services with “ongoing costs” are a pretty big loophole in the new law.",
-        "url": "https://arstechnica.com/cars/2026/11/new-york-says-no-more-subscriptions-for-in-car-features-or-does-it/",
-        "source": "Ars Technica",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "The Verge AI",
-        "title": "黄仁勋的深度伪造视频是热门的新型AI垃圾内容",
-        "summary": "Jensen Huang is partying it up in Ibiza. In a video with nearly 6 million views on Instagram, the former CEO of Nvidia is dancing in a crowded club, champagne glass in hand, still wearing his signature black leather jacket. Suddenly, from behind him, Alice Huang - the Chinese technology executive and suspected spy he […]",
-        "url": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
-        "source": "The Verge AI",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Ars Technica",
-        "title": "白宫力求加快“阿尔忒弥斯”计划，NASA或将获得20亿美元的资金支持",
-        "summary": "\"Without this funding, activities would be delayed.\"",
-        "url": "https://arstechnica.com/space/2026/11/nasa-may-get-2-billion-boost-as-white-house-seeks-to-accelerate-artemis/",
+        "title": "微软历史性的云中断暴露了工程“战争迷雾”",
+        "summary": "Internal memos reveal a “Code Red” overhaul and ambitious one-hour recovery goals.",
+        "url": "https://arstechnica.com/gadgets/2026/11/microsofts-historic-cloud-outage-exposed-an-engineering-fog-of-war/",
         "source": "Ars Technica",
         "region": "en",
         "category": "科技"
@@ -601,9 +631,9 @@
       {
         "date": "2026-11-24",
         "tag": "TechCrunch AI",
-        "title": "为什么Crusoe的投资者押注于太阳能和电池为未来的人工智能数据中心供电",
-        "summary": "Next-generation data centers will need tens of gigawatts of power every year. One of Crusoe's investors thinks solar and energy storage are the obvious choice.",
-        "url": "https://techcrunch.com/2026/11/24/why-a-crusoe-investor-is-betting-on-solar-and-batteries-to-power-future-ai-data-centers/",
+        "title": "黄仁勋仍然认为继任计划会造成不必要的等级制度",
+        "summary": "It's a remarkable stance for a company that spent the last two weeks finding out what happens without its founder.",
+        "url": "https://techcrunch.com/2026/11/24/jensen-huang-still-thinks-a-succession-plan-creates-unnecessary-hierarchy/",
         "source": "TechCrunch AI",
         "region": "en",
         "category": "科技"
@@ -611,41 +641,11 @@
       {
         "date": "2026-11-24",
         "tag": "TechCrunch AI",
-        "title": "Pinterest现在将允许家长限制其青少年看到的人工智能生成内容",
-        "summary": "While other social platforms have focused on restricting teens' access to AI chatbots, Pinterest is addressing the AI content filling their feeds.",
-        "url": "https://techcrunch.com/2026/11/24/pinterest-will-now-let-parents-limit-the-ai-generated-content-their-teens-see/",
+        "title": "在全体会议上，黄仁勋感谢白宫并表示他正在接受治疗",
+        "summary": "The Nvidia founder apologized to his staff on Tuesday and said he was grateful for a second chance to lead the company.",
+        "url": "https://techcrunch.com/2026/11/24/in-all-hands-meeting-jensen-huang-thanks-white-house-and-says-hes-in-therapy/",
         "source": "TechCrunch AI",
         "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Ars Technica",
-        "title": "直立人与丹尼索瓦人共同生活在热带雨林中",
-        "summary": "You can learn a surprising amount from a few loose teeth.",
-        "url": "https://arstechnica.com/science/2026/11/homo-erectus-lived-in-the-rainforest-alongside-denisovans/",
-        "source": "Ars Technica",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "Solidot",
-        "title": "东北积雪天数预计将会显著减少",
-        "summary": "根据两项研究，未来东北地积雪覆盖天数将普遍减少。与 2001 年—2020 年相比，到本世纪末，中等排放情景下区域平均积雪覆盖天数预计减少约 64 天，低排放和高排放情景下分别减少约 42天 和 85 天。高排放情景下，年积雪覆盖不足 50 天的区域占比预计由 19% 增至 99%，表明大范围地区可能向短暂、间歇性积雪状态转变。研究进一步指出，未来雪季缩短具有明显的季节非对称性。雪季前期积雪变化主要与降雪条件相关，而冬末至春季积雪持续性对升温更为敏感，其损失成为较强增暖情景下雪季缩短的突出特征。",
-        "url": "https://www.solidot.org/story?sid=85982",
-        "source": "Solidot",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-24",
-        "tag": "IT之家",
-        "title": "黑得深邃：宾利首款纯电 SUV 托卡尔新增纯黑特别版，全球只有 20 台",
-        "summary": "IT之家 11 月 24 日消息，宾利首批纯电 SUV Torcal（IT之家注：官方中文名为“托卡尔”）的交付尚未启动，第二款限量特别版就紧随其后完成亮相。近日，继托卡尔 First Edition 首发版之后，宾利 又公布了一款全新定制车型 。 这款特别版由日本潮流设计师藤原浩亲自操刀， 全球仅生产 20 辆，整车采用全黑设计 。车身采用名为“Beluga”的黑色涂装，黑色徽标、熏黑格栅和 22 英寸 Vortex 黑色轮毂也与之呼应。 新车搭载的全锻造轮毂 采用碳纤维嵌件 ，在提升视觉效果的同时兼顾空气动力学表现。 藤原浩于 2003 年创立东京设计品牌 FRGMT，品牌标识也出现在这辆特别版车型上：前翼子板带有小尺寸的 Bentley // FRGMT 字样，尾门则印有 FRGMT 标志。 车内延续了外观的深色主题，以 Imperial Blue 和 Beluga 黑色内饰搭配交叉缝线及钢琴黑饰件。车门饰板上点缀着数十个小尺寸的 FRGMT 和宾利标志，专属门槛饰板则进一步增添街头潮流气息。 宾利此前透露，托卡尔 首个年款的订单已全部售罄 。托卡尔全系搭载 113kWh 电池组 ，采用 800V 电气架构。标准版采用双电机，最大功率 821 马力，峰值扭矩 1194N·m；托卡尔 S 在弹射起步控制模式下，最大功率和峰值扭矩分别增至 888 马力和 1350N·m。该车从静止加速至 96km/h 仍只需 2.8 秒，起步表现甚至超过保时捷 911 GT3 RS。 托卡尔支持最高 400kW 直流快充，电量从 10% 充至 80% 只需不到 20 分钟。标称最高续航为 600km。",
-        "url": "https://www.ithome.com/1/031/894.htm",
-        "source": "IT之家",
-        "region": "cn",
         "category": "科技"
       }
     ]
