@@ -210,8 +210,11 @@
     <div>switchport trunk allowed vlan 10,20,30</div>
     <div>interface vlan 1　← 管理地址</div>
     <div>ip address 192.168.1.1 255.255.255.0</div>
-    <div>no shutdown</div>
-    <div>copy running-config startup-config</div>
+    <div>ip default-gateway 192.168.1.254</div>
+    <div>spanning-tree vlan 10 root primary</div>
+    <div>CatOS: set vlan 10 name xx / set vlan 10 3/1-12</div>
+    <div>CatOS: set trunk 5/1 on dot1q / clear trunk 5/1 15</div>
+    <div>no shutdown / copy running-config startup-config</div>
   </div>
   <h3>二、查看命令</h3>
   <div class="ps">
@@ -231,6 +234,9 @@
     <div>ip route 0.0.0.0 0.0.0.0 下一跳　← 默认路由</div>
     <div>router rip → network 172.16.0.0</div>
     <div>router ospf 1 → network 192.168.1.0 0.0.0.255 area 0</div>
+    <div>area 0 range 172.16.8.0 255.255.252.0　← 区域聚合正掩码</div>
+    <div>POS: bandwidth 2500000 / crc 32 / pos framing sdh / pos flag s1s0 2</div>
+    <div>DHCP: ip dhcp excluded-address 起 止 / ip dhcp pool 名 / lease 天 时</div>
   </div>
   <h3>四、ACL 与 NAT</h3>
   <div class="ps">
@@ -278,11 +284,11 @@
 
 <header data-page-node-id="svJ4vtuvdJwRJaMyJVAg23">
   <h1 data-page-node-id="6sbqTCk2DML8UVRKpBuPVm">三级网络技术 · 备考训练中心</h1>
-  <div class="sub" data-page-node-id="iNcHiWPy9GKVlQn8aYbBPT">选择题 106 + 真题 60 + 填空特训 55 + 应用题 12 + 背诵卡 80 · 题型结构：单选 40 分 / 综合填空 40 分 / 应用题 20 分</div>
+  <div class="sub" data-page-node-id="iNcHiWPy9GKVlQn8aYbBPT">选择题 106 + 真题 60 + 填空特训 115 + 应用题 36 + 背诵卡 80 · 题型结构：单选 40 分 / 综合填空 40 分 / 应用题 20 分</div>
   <div class="stats" data-page-node-id="3SG9pIUxK9lOvDazkTyVbH">
     <div class="stat" data-page-node-id="f9SkoFH5bI7ue5LsFOlMCZ"><b id="st-done" data-page-node-id="1bq7AOP87DHVkQrzkJ710t">0</b><span data-page-node-id="rgDHWl6YlgStgUHSZ4QEAT">刷题进度</span></div>
     <div class="stat" data-page-node-id="jOW61lKDZisbKFQewv3PDe"><b id="st-acc" data-page-node-id="cWasgzVjjiDVJ5FKrhZdHm">–</b><span data-page-node-id="8XxCEIl6sWIlbzHlMYw6um">刷题正确率</span></div>
-    <div class="stat" data-page-node-id="tkUAgxBN12Q1vJSsvtrgpA"><b id="st-blank" data-page-node-id="28QRXg2wmDDLkm5ECBhx1A">0/55</b><span data-page-node-id="XCDnKMQTXUD27p6ZYkwr8n">填空特训</span></div>
+    <div class="stat" data-page-node-id="tkUAgxBN12Q1vJSsvtrgpA"><b id="st-blank" data-page-node-id="28QRXg2wmDDLkm5ECBhx1A">0/115</b><span data-page-node-id="XCDnKMQTXUD27p6ZYkwr8n">填空特训</span></div>
     <div class="stat" data-page-node-id="5GKeCMBFlhB0V19CiBgtgv"><b id="st-wrong" data-page-node-id="apt6iPE3JTqIx8mslhQjXd">0</b><span data-page-node-id="DucWaLxO1qXNBSs2xh5ZPl">待消灭错题</span></div>
     <div class="stat" data-page-node-id="8qhkpwb1bFSZbwqNdXqYHw"><b id="st-real" data-page-node-id="gNdyuDbF5LDiEbkQn8Ggjj">0/60</b><span data-page-node-id="erzRS5Hs4BktTPlwI2elm0">真题进度</span></div>
     <div class="stat" data-page-node-id="h8qMpPr3zQeg7vg4JAR8pr"><b id="st-card" data-page-node-id="yB35fD8ViewlRYaXJ4CgxY">0/80</b><span data-page-node-id="624DcUICwTNyscsx4F8JnP">背卡已掌握</span></div>
@@ -338,20 +344,20 @@
 
   <h2 style="margin-top:22px" data-page-node-id="78eSdb0sxfJJuAHZwxHJ3A">填空特训（针对综合题 4 大题 40 分）</h2>
   <div class="modes" data-page-node-id="DbSmIHGys7YroA68p1LzPH">
-    <button class="mode-btn green" onclick="startBlankSeq()" data-page-node-id="P1X5qtqUoXIP9H3ai2kJMz">填空全部 55 题<small data-page-node-id="ulH90YOXHvT81KLNvQRrJd">IP 计算 + 配置命令 + 抓包分析</small></button>
-    <button class="mode-btn green" onclick="startBlankRandom(15)" data-page-node-id="zIxc6oSYYmU0xQgHpkUN0H">填空随机 15 题<small data-page-node-id="DOZRl027JBweMvYXDExUCQ">三类混合抽题</small></button>
+    <button class="mode-btn green" onclick="startBlankSeq()" data-page-node-id="P1X5qtqUoXIP9H3ai2kJMz">填空全部 115 题<small data-page-node-id="ulH90YOXHvT81KLNvQRrJd">IP 正逆计算 + IOS/CatOS/POS 配置 + 抓包/DHCP</small></button>
+    <button class="mode-btn green" onclick="startBlankRandom(20)" data-page-node-id="zIxc6oSYYmU0xQgHpkUN0H">填空随机 20 题<small data-page-node-id="DOZRl027JBweMvYXDExUCQ">六类真题混合抽练</small></button>
     <button class="mode-btn warn" onclick="startBlankWrong()" data-page-node-id="DF4J49frsCFY0if8FrSJp8">填空错题重做<small id="blank-wrong-count" data-page-node-id="tjLMPkTihqg6bBUJXBt2ig">消灭填空错题</small></button>
-    <button class="mode-btn" onclick="startBlankCh('抓包分析填空')" data-page-node-id="QFDdtv7jnkHtgiA7n1Wt5F">Sniffer 抓包专项<small data-page-node-id="UJZ2PGlS5kKaH2V0UtXxac">最难的题型，单独攻坚</small></button>
-    <button class="mode-btn" onclick="startBlankCh('DHCP报文分析填空')" data-page-node-id="DH0000000000000001">DHCP 报文专项<small data-page-node-id="DH0000000000000002">综合题第 3 题必考</small></button>
-    <button class="mode-btn" onclick="startBlankCh('IP逆向计算填空')" data-page-node-id="DH0000000000000003">逆向计算专项<small data-page-node-id="DH0000000000000004">给广播地址反推网络号</small></button>
+    <button class="mode-btn" onclick="startBlankCh('抓包分析填空')" data-page-node-id="QFDdtv7jnkHtgiA7n1Wt5F">Sniffer 抓包专项<small data-page-node-id="UJZ2PGlS5kKaH2V0UtXxac">tracert / HTTP / FTP / TCP 报文表</small></button>
+    <button class="mode-btn" onclick="startBlankCh('DHCP报文分析填空')" data-page-node-id="DH0000000000000001">DHCP 报文专项<small data-page-node-id="DH0000000000000002">DORA + Release + 首部字段解析</small></button>
+    <button class="mode-btn" onclick="startBlankCh('IP逆向计算填空')" data-page-node-id="DH0000000000000003">逆向计算专项<small data-page-node-id="DH0000000000000004">主机号+广播反推掩码与原 IP</small></button>
   </div>
   <div class="chapters" id="blank-chapters" style="margin-top:10px" data-page-node-id="usK7cc2XljGnJtzRgWHHG6"></div>
   <p class="hint" data-page-node-id="KkPi2t63ReVjOzi3EyrGWd">答错自动进错题本，重做答对后自动移除 · 键盘 1-4 作答选择、回车提交填空</p>
 
   <h2 style="margin-top:22px" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ1">应用题专项（针对应用题 20 分）</h2>
   <div class="modes" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ2">
-    <button class="mode-btn teal" onclick="startApplySeq()" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ3">应用题全部 12 题<small data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ4">路由聚合 + 子网划分 + 设备部署</small></button>
-    <button class="mode-btn teal" onclick="startApplyRandom(6)" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ5">应用题随机 6 题<small data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ6">场景化抽题</small></button>
+    <button class="mode-btn teal" onclick="startApplySeq()" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ3">应用题全部 36 题<small data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ4">路由聚合 + VLSM 连续划分 + PIX/AD/设备部署</small></button>
+    <button class="mode-btn teal" onclick="startApplyRandom(10)" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ5">应用题随机 10 题<small data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ6">按真题四连问场景抽练</small></button>
     <button class="mode-btn warn" onclick="startApplyWrong()" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ7">应用题错题重做<small id="apply-wrong-count" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ8">消灭应用题错题</small></button>
     <button class="mode-btn" onclick="showTab('exam')" data-page-node-id="AP1h2xxkQ0aZzZzZzZzZ9">进入全真模考<small data-page-node-id="AP1h2xxkQ0aZzZzZzZzA">120 分钟整套卷</small></button>
   </div>
@@ -395,13 +401,13 @@
 <section id="tab-exam" class="hide" data-page-node-id="EX1tab00000000000001">
   <h2 data-page-node-id="EX1tab00000000000002">全真模考（120 分钟 · 满分 100）</h2>
   <div class="rule-line" data-page-node-id="EX1tab00000000000003">
-    卷面构成：<b>单选 40 题（40 分）</b> + <b>综合填空 6 题（40 分：IP 计算 2 + 配置 2 + DHCP/抓包 2）</b> + <b>应用题 2 题（20 分）</b><br>
+    卷面 1:1 对齐真实机考权重：<b>单选 40 题（40 分，每题 1 分）</b> + <b>综合填空 20 空（40 分，每空 2 分：IP 正逆计算 5 + 路由/交换配置 5 + DHCP 5 + 抓包 5）</b> + <b>应用题 5 问（20 分，每问 4 分：聚合 2 + VLSM 2 + 部署 1）</b><br>
     计时 120 分钟，到点自动交卷；60 分合格、90 分优秀。交卷后给出分板块得分。
   </div>
   <div class="modes" style="margin-top:16px" data-page-node-id="EX1tab00000000000004">
-    <button class="mode-btn green" onclick="startExam()" data-page-node-id="EX1tab00000000000005">开始全真模考<small data-page-node-id="EX1tab00000000000006">120 分钟整套卷 · 随机抽题</small></button>
-    <button class="mode-btn teal" onclick="startExamShort()" data-page-node-id="EX1tab00000000000007">半卷速测（60 分钟）<small data-page-node-id="EX1tab00000000000008">20 选择 + 3 填空 + 1 应用</small></button>
-    <button class="mode-btn" onclick="startExamConfig()" data-page-node-id="EX1tab00000000000009">只模考综合题（40 分）<small data-page-node-id="EX1tab0000000000000A">4 填空 + 1 应用 · 30 分钟</small></button>
+    <button class="mode-btn green" onclick="startExam()" data-page-node-id="EX1tab00000000000005">开始全真模考<small data-page-node-id="EX1tab00000000000006">120 分钟 · 40 单选 + 20 填空 + 5 应用</small></button>
+    <button class="mode-btn teal" onclick="startExamShort()" data-page-node-id="EX1tab00000000000007">半卷速测（60 分钟）<small data-page-node-id="EX1tab00000000000008">20 选择 + 8 填空 + 3 应用</small></button>
+    <button class="mode-btn" onclick="startExamConfig()" data-page-node-id="EX1tab00000000000009">大题冲刺专测（60 分折百）<small data-page-node-id="EX1tab0000000000000A">12 填空 + 4 应用 · 45 分钟</small></button>
     <button class="mode-btn warn" onclick="showTab('bank')" data-page-node-id="EX1tab0000000000000B">先刷题再模考<small data-page-node-id="EX1tab0000000000000C">回刷题库</small></button>
   </div>
   <div class="exam-note" data-page-node-id="EX1tab0000000000000D">
@@ -624,23 +630,83 @@ var BLANK = [
 {id:"F36",type:"f",ch:"DHCP报文分析填空",q:"DHCP 协议中，客户机第一次获取 IP 地址时发送的第一个报文名称是？",ans:"Discover",alt:["DHCPDISCOVER","DHCP Discover","discover"],e:"DHCP 四步 DORA：Discover 发现 → Offer 提供 → Request 请求 → Ack 确认。第一步由客户机广播发出。"},
 {id:"F37",type:"f",ch:"DHCP报文分析填空",q:"DHCP 获取地址的四个报文按时间先后顺序是？（用英文逗号分隔四个报文名）",ans:"Discover,Offer,Request,Ack",alt:["Discover,Offer,Request,ACK","Discover, Offer, Request, Ack","DORA","discover,offer,request,ack"],e:"口诀 DORA。Offer 是服务器回应，Request 是客户机确认选择，服务器最后回 Ack 确认租约生效。"},
 {id:"F38",type:"f",ch:"DHCP报文分析填空",q:"客户机发送 Discover 报文时，其目的 IP 地址是什么？",ans:"255.255.255.255",alt:["受限广播地址","广播地址","255.255.255.255广播"],e:"此时客户机还没有 IP，只能用受限广播地址 255.255.255.255（MAC 目的也是 FF:FF:FF:FF:FF:FF）。Request 阶段若已分配到 IP 则可单播续租。"},
-{id:"F39",type:"f",ch:"DHCP报文分析填空",q:"DHCP 协议中，服务器端使用的传输层端口号是？（填数字）",ans:"67",alt:["67端口","UDP 67","67"],e:"服务器端 UDP 67，客户机端 UDP 68。看到目的端口 67 的 UDP 报文即服务器发出。"},
+{id:"F39",type:"f",ch:"DHCP报文分析填空",q:"DHCP 协议中，服务器端使用的传输层端口号是？（填数字）",ans:"67",alt:["67端口","UDP 67","67"],e:"服务器端使用 UDP 67，客户机端使用 UDP 68。源端口 68、目的端口 67 为客户机发往服务器；源端口 67、目的端口 68 为服务器发往客户机。"},
 {id:"F40",type:"f",ch:"DHCP报文分析填空",q:"DHCP 协议中，客户机（客户端）使用的传输层端口号是？（填数字）",ans:"68",alt:["68端口","UDP 68","68"],e:"客户端固定使用 UDP 68，与服务器 UDP 67 配对。"},
-{id:"F41",type:"f",ch:"DHCP报文分析填空",q:"下表是 Sniffer 捕获的 DHCP 交互报文序列，第 2 行报文由服务器发给客户机，其名称是？",tbl:{h:["序号","源","目的","UDP 端口","方向"],r:[["1","0.0.0.0:68","255.255.255.255:67","67→68","C→S"],["2","202.113.64.1:67","255.255.255.255:68","67→68","S→C"],["3","0.0.0.0:68","255.255.255.255:67","67→68","C→S"],["4","202.113.64.1:67","192.168.1.10:68","67→68","S→C"]],hi:[1]},ans:"Offer",alt:["offer","DHCPOffer"],e:"第 1 行 Discover（客户机广播找服务器）→ 第 2 行 Offer（服务器提供 IP）→ 第 3 行 Request（客户机请求使用）→ 第 4 行 Ack（服务器确认）。服务器回 Offer 时因尚不知客户机 IP，仍用广播。"},
+{id:"F41",type:"f",ch:"DHCP报文分析填空",q:"下表是 Sniffer 捕获的 DHCP 交互报文序列，第 2 行报文由服务器发给客户机，其名称是？",tbl:{h:["序号","源","目的","UDP 端口","方向"],r:[["1","0.0.0.0:68","255.255.255.255:67","68→67","C→S"],["2","202.113.64.1:67","255.255.255.255:68","67→68","S→C"],["3","0.0.0.0:68","255.255.255.255:67","68→67","C→S"],["4","202.113.64.1:67","192.168.1.10:68","67→68","S→C"]],hi:[1]},ans:"Offer",alt:["offer","DHCPOffer"],e:"第 1 行 Discover（客户机广播找服务器）→ 第 2 行 Offer（服务器提供 IP）→ 第 3 行 Request（客户机请求使用）→ 第 4 行 Ack（服务器确认）。服务器回 Offer 时因尚不知客户机 IP，仍用广播。"},
 {id:"F42",type:"f",ch:"DHCP报文分析填空",q:"DHCP 交互中，服务器最终确认分配、租约生效的报文名称是？",ans:"Ack",alt:["ACK","ack","DHCPAck"],e:"Ack 报文携带最终分配结果（IP、掩码、网关、DNS、租约时间），客户机收到后即可配置网卡。"},
 {id:"F43",type:"f",ch:"DHCP报文分析填空",q:"DHCP 属于 TCP/IP 参考模型中的哪一层协议？",ans:"应用层",alt:["应用层协议"],e:"DHCP 是应用层协议，虽然封装在 UDP 之上（67/68），但它是给主机自动配置网络参数的应用层服务，与 DNS 同层。"},
 {id:"F44",type:"f",ch:"DHCP报文分析填空",q:"客户机获得的 DHCP 租约时间过去一半时，会向原 DHCP 服务器发送什么报文续租？",ans:"Request",alt:["request","DHCPRequest","续租请求"],e:"租约 T1（50%）时单播 Request 给原服务器续租；若到 T2（87.5%）仍未成功，则广播 Request 寻找任意可用服务器。"},
 {id:"F45",type:"f",ch:"DHCP报文分析填空",q:"客户机通过 DHCP 获得配置后，需要自行在网卡上设置的项目不包括以下哪一项？",ans:"MAC地址",alt:["mac","MAC 地址","物理地址"],e:"MAC 地址是网卡出厂固化的物理地址；DHCP 下发的是 IP 地址、子网掩码、默认网关、DNS 服务器、租约时间等参数。"},
-{id:"F46",type:"f",ch:"DHCP报文分析填空",q:"某主机抓包发现目的端口为 UDP 67 的报文，该报文的发送方是？",ans:"DHCP服务器",alt:["服务器","server","dhcp服务器"],e:"目的端口 67 = 服务器侧；目的端口 68 = 客户机侧。判断方向时以此为准。"},
+{id:"F46",type:"f",ch:"DHCP报文分析填空",q:"某主机抓包发现目的端口为 UDP 67 的报文，该报文的发送方是？",ans:"DHCP客户机",alt:["客户机","客户端","DHCP客户端","client"],e:"DHCP 服务器监听 UDP 67，客户机监听 UDP 68。目的端口为 67 说明报文发往服务器，因此发送方是 DHCP 客户机（客户端）。"},
 {id:"F47",type:"f",ch:"DHCP报文分析填空",q:"若要使内网主机在 DHCP 分配过程中能收到广播，路由器或交换机的 DHCP 服务所在网段属于？",ans:"同一广播域",alt:["同一个广播域","同一网段","同一广播域内"],e:"Discover 使用受限广播地址，不能穿越路由器，所以客户机与 DHCP 服务器必须在同一广播域（同网段），否则需在网段内另配 DHCP 服务器或使用中继。"},
 {id:"F48",type:"f",ch:"IP逆向计算填空",q:"已知某主机所在子网的直接广播地址是 192.168.7.191，该子网前缀为 /26。求该子网的网络地址。",ans:"192.168.7.128",e:"反向推导：/26 块大小 64，广播地址 191 落在 128–191 区间，网络地址即该区间起始 192.168.7.128。可用主机范围 .129–.190。"},
 {id:"F49",type:"f",ch:"IP逆向计算填空",q:"已知某子网的最后一个可用主机地址是 10.1.15.254，掩码为 255.255.255.0。求该子网的网络地址。",ans:"10.1.15.0",e:"/24 块大小 256，最后可用地址 .254 落在 .0–.255，网络地址 = 10.1.15.0，广播地址 = 10.1.15.255。"},
 {id:"F50",type:"f",ch:"IP逆向计算填空",q:"已知某子网可用的主机地址数为 126，反推该子网的子网掩码。",ans:"255.255.255.128",alt:["/25","25"],e:"2⁷−2 = 126，主机位 7 位，前缀 25，掩码 255.255.255.128。"},
-{id:"F51",type:"f",ch:"IP逆向计算填空",q:"已知某网络地址为 172.16.8.0/22。求该地址块的直接广播地址。",ans:"172.16.15.255",e:"/22 = 第三字节块大小 8，8 是 8 的整数倍，地址块范围 172.16.8.0–172.16.15.255，广播地址为块内最大地址。可用主机 2¹⁰−2 = 1022。"},
+{id:"F51",type:"f",ch:"IP逆向计算填空",q:"已知某网络地址为 172.16.8.0/22。求该地址块的直接广播地址。",ans:"172.16.11.255",e:"/22 对应掩码 255.255.252.0，第三字节块大小 = 256−252 = 4。起始为 8，地址块范围为 172.16.8.0–172.16.11.255，直接广播地址为 172.16.11.255（可用主机 2¹⁰−2 = 1022）。"},
 {id:"F52",type:"f",ch:"IP逆向计算填空",q:"主机 192.168.10.200 的前缀为 /25。求该主机所在子网的可用主机地址范围（用短横线连接起止地址）。",ans:"192.168.10.129-192.168.10.254",alt:["192.168.10.129—192.168.10.254","192.168.10.129~192.168.10.254"],e:"/25 块大小 128，200 落在 128–255，网络地址 .128，广播 .255，可用 .129–.254。"},
-{id:"F53",type:"f",ch:"IP逆向计算填空",q:"某单位要把 C 类网段 192.168.5.0/24 平均分给 5 个部门（每个部门一个子网），反推应使用的子网掩码。",ans:"255.255.255.248",alt:["/29","29"],e:"需划分 ≥5 个子网：借 3 位得 8 个子网（2³=8），主机位剩 5 位，掩码 255.255.255.248。每子网可用 30 台。"},
+{id:"F53",type:"f",ch:"IP逆向计算填空",q:"某单位要把 C 类网段 192.168.5.0/24 平均分给 5 个部门（每个部门一个子网），反推应使用的子网掩码。",ans:"255.255.255.224",alt:["/27","27"],e:"需划分 ≥5 个子网：借 3 位得 8 个子网（2³=8），前缀 /27，主机位剩 5 位（每子网可用 30 台），子网掩码 255.255.255.224。"},
 {id:"F54",type:"f",ch:"IP逆向计算填空",q:"已知某子网网络地址为 192.168.3.64，前缀为 /26。求该子网的可用主机地址范围（用短横线连接起止地址）。",ans:"192.168.3.65-192.168.3.126",alt:["192.168.3.65—192.168.3.126","192.168.3.65~192.168.3.126"],e:"/26 块大小 64，64–127 为该子网，网络地址 .64，第一个可用 .65，最后可用 .126，广播 .127。"},
-{id:"F55",type:"f",ch:"IP逆向计算填空",q:"已知某网段掩码为 255.255.255.0，现需将其等分为 4 个子网且尽量多留给主机，反推新子网掩码。",ans:"255.255.255.192",alt:["/26","26"],e:"划分 4 个子网需借 2 位，前缀 24+2 = /26，掩码 255.255.255.192，每子网可用 62 台主机。"}
+{id:"F55",type:"f",ch:"IP逆向计算填空",q:"已知某网段掩码为 255.255.255.0，现需将其等分为 4 个子网且尽量多留给主机，反推新子网掩码。",ans:"255.255.255.192",alt:["/26","26"],e:"划分 4 个子网需借 2 位，前缀 24+2 = /26，掩码 255.255.255.192，每子网可用 62 台主机。"},
+{id:"F56",type:"f",ch:"IP子网计算填空",q:"【真题填表】根据下表给出的 IP 地址与子网掩码，该 IP 地址属于哪一类地址？（填 A / B / C）",tbl:{h:["项目","值"],r:[["IP 地址","111.143.19.7"],["子网掩码","255.240.0.0"],["地址类别","？（待填）"]],hi:[2]},ans:"A",alt:["A类","A类地址"],e:"首字节为 111，落在 1–126 区间内，属于 A 类地址（B 类 128–191，C 类 192–223）。地址类别只看首字节，与子网掩码无关。"},
+{id:"F57",type:"f",ch:"IP子网计算填空",q:"【真题填表】已知主机 IP 地址为 111.143.19.7，子网掩码为 255.240.0.0，求其所在子网的网络地址。",tbl:{h:["项目","值"],r:[["IP 地址","111.143.19.7"],["子网掩码","255.240.0.0"],["网络地址","？（待填）"]],hi:[2]},ans:"111.128.0.0",e:"第二字节 143 = 10001111，掩码 240 = 11110000，按位与得 10000000 = 128，后面主机字节清 0，网络地址为 111.128.0.0。"},
+{id:"F58",type:"f",ch:"IP子网计算填空",q:"【真题填表】已知主机 IP 地址为 111.143.19.7，子网掩码为 255.240.0.0，求其所在子网的直接广播地址。",ans:"111.143.255.255",e:"掩码 255.240.0.0 在第二字节块大小为 16，143 落在 128–143 子网块内，主机位全部置 1 得直接广播地址 111.143.255.255。"},
+{id:"F59",type:"f",ch:"IP子网计算填空",q:"【真题必考·求主机号】已知主机 IP 地址为 111.143.19.7，子网掩码为 255.240.0.0，求该地址的主机号。",tbl:{h:["项目","值"],r:[["IP 地址","111.143.19.7"],["子网掩码","255.240.0.0"],["主机号","？（待填）"]],hi:[2]},ans:"0.15.19.7",e:"主机号规则：网络位全部置 0，主机位原样保留。第二字节 143 = 10001111，高 4 位网络位清 0 剩 00001111 = 15，三四字节保留，故主机号为 0.15.19.7。"},
+{id:"F60",type:"f",ch:"IP子网计算填空",q:"【真题必考·求主机号】已知主机 IP 地址为 137.191.25.7，子网掩码为 255.255.240.0，求该地址的主机号。",ans:"0.0.9.7",e:"前两字节全为网络位清 0；第三字节 25 = 00011001，掩码 240 将高 4 位清 0，低 4 位保留为 1001 = 9；第四字节保留 7，故主机号为 0.0.9.7。"},
+{id:"F61",type:"f",ch:"IP子网计算填空",q:"【真题填表】已知主机 IP 地址为 126.150.28.57，子网掩码为 255.240.0.0，求其受限广播地址。",ans:"255.255.255.255",e:"受限广播地址永远是 32 位全 1，即 255.255.255.255，不需要任何计算，切勿与直接广播地址（126.159.255.255）混淆。"},
+{id:"F62",type:"f",ch:"IP子网计算填空",q:"已知主机 IP 地址为 111.181.21.9，子网掩码为 255.192.0.0，求其网络地址。",ans:"111.128.0.0",e:"2023 真题原型：掩码 192 = 11000000（块大小 64），181 落在 128–191 区间，网络地址为 111.128.0.0。"},
+{id:"F63",type:"f",ch:"IP子网计算填空",q:"已知主机 IP 地址为 111.181.21.9，子网掩码为 255.192.0.0，求该子网内最后一个可用 IP 地址。",ans:"111.191.255.254",e:"子网块 128–191，直接广播地址为 111.191.255.255，减 1 得最后一个可用 IP 为 111.191.255.254。"},
+{id:"F64",type:"f",ch:"IP逆向计算填空",q:"【真题逆向表①】下表只给出某主机的主机号和所在子网最后一个可用 IP 地址，请反推该子网的子网掩码。",tbl:{h:["已知/待求项","数值"],r:[["主机号","0.23.131.5"],["子网内最后一个可用 IP","125.159.255.254"],["子网掩码","？（待填）"]],hi:[2]},ans:"255.224.0.0",alt:["/11","11"],e:"最后可用 IP 加 1 得直接广播地址 125.159.255.255。第二字节广播为 159（10011111），第 5 位为 0 说明高 3 位必为网络位；主机号第二字节为 23（00010111），第 4 位为 1 说明低 5 位必为主机位。故第二字节掩码为 11100000 = 224，子网掩码 255.224.0.0。"},
+{id:"F65",type:"f",ch:"IP逆向计算填空",q:"【真题逆向表②】接上表条件：已知某主机的主机号为 0.23.131.5，所在子网最后一个可用 IP 为 125.159.255.254，反推该主机的原 IP 地址。",tbl:{h:["已知/待求项","数值"],r:[["主机号","0.23.131.5"],["子网内最后一个可用 IP","125.159.255.254"],["原 IP 地址","？（待填）"]],hi:[2]},ans:"125.151.131.5",e:"由上题知掩码 255.224.0.0，159 所在块（块大小 32）的网络地址为 125.128.0.0。原 IP = 网络地址 + 主机号 = 125.(128+23).131.5 = 125.151.131.5。"},
+{id:"F66",type:"f",ch:"IP逆向计算填空",q:"已知某子网内第一个可用 IP 地址为 135.144.0.1，直接广播地址为 135.159.255.255，反推该子网的子网掩码。",ans:"255.240.0.0",alt:["/12","12"],e:"第一个可用 IP 减 1 得网络地址 135.144.0.0；与广播 135.159.255.255 对比，第二字节跨度 159−144+1 = 16，掩码第二字节 = 256−16 = 240，即 255.240.0.0。"},
+{id:"F67",type:"f",ch:"IP逆向计算填空",q:"已知某主机的网络地址为 172.20.16.0，主机号为 0.0.5.39，求该主机的 IP 地址。",ans:"172.20.21.39",e:"IP 地址 = 网络地址 与 主机号 按位或（逐段相加）：172.20.(16+5).(0+39) = 172.20.21.39。"},
+{id:"F68",type:"f",ch:"IP逆向计算填空",q:"已知某子网的网络地址为 202.113.64.128，直接广播地址为 202.113.64.191，反推该子网的子网掩码。",ans:"255.255.255.192",alt:["/26","26"],e:"第四字节地址块大小 = 191 − 128 + 1 = 64，掩码末字节 = 256 − 64 = 192，即 255.255.255.192。"},
+{id:"F69",type:"f",ch:"IP逆向计算填空",q:"已知某子网的直接广播地址为 168.195.223.255，子网掩码为 255.255.224.0，反推该子网的第一个可用 IP 地址。",ans:"168.195.192.1",e:"第三字节掩码 224 块大小为 32，广播 223 所在块为 192–223，网络地址为 168.195.192.0，第一个可用 IP 加 1 得 168.195.192.1。"},
+{id:"F70",type:"f",ch:"IP逆向计算填空",q:"已知某主机的主机号为 0.0.0.73，所在子网最后一个可用 IP 为 192.168.9.126，反推该子网的子网掩码。",ans:"255.255.255.128",alt:["/25","25"],e:"最后可用 .126 加 1 得直接广播 .127（01111111，最高位为 0 必是网络位）；主机号 73（01001001，次高位为 1 必是主机位）。唯一确定主机位 7 位，掩码 255.255.255.128。"},
+{id:"F71",type:"f",ch:"IP逆向计算填空",q:"接上题：已知某主机的主机号为 0.0.0.73，所在子网最后一个可用 IP 为 192.168.9.126，反推该子网的网络地址。",ans:"192.168.9.0",e:"掩码 255.255.255.128，块大小 128，广播 .127 对应前半块 0–127，故网络地址为 192.168.9.0（原主机 IP 为 192.168.9.73）。"},
+{id:"F72",type:"f",ch:"路由器配置填空",q:"【POS 接口真题】某校园网路由器通过 2.5Gbps 的 POS 接口（interface pos3/1）连接 CERNET，在接口配置模式下设置该接口带宽的命令是？",ans:"bandwidth 2500000",e:"POS 接口 bandwidth 命令默认单位是 kbps！1Gbps = 1,000,000 kbps，因此 2.5Gbps 必须填 bandwidth 2500000（6 个或 5 个 0 最易写错：250 万）。"},
+{id:"F73",type:"f",ch:"路由器配置填空",q:"【POS 接口真题】在路由器 interface pos3/1 接口模式下，配置使用同步数字体系 SDH 帧格式的命令是？",ans:"pos framing sdh",e:"POS 接口帧格式配置：pos framing sdh（中国与欧洲标准）或 pos framing sonet（北美标准）。"},
+{id:"F74",type:"f",ch:"路由器配置填空",q:"【POS 接口真题】当路由器 POS 接口帧格式配置为 SDH 时，设置帧头开销字节 s1s0 标志位的完整命令是？",ans:"pos flag s1s0 2",e:"必背数字：pos flag s1s0 2 表示采用 SDH 帧；pos flag s1s0 0（即 00）表示采用 SONET 帧。与上一题永远成对出现！"},
+{id:"F75",type:"f",ch:"路由器配置填空",q:"【POS 接口真题】在路由器 interface pos3/1 接口模式下，配置采用 32 位循环冗余校验的命令是？",ans:"crc 32",e:"POS 接口可选 16 位或 32 位 CRC 校验，命令格式为 crc 32（或 crc 16）。"},
+{id:"F76",type:"f",ch:"路由器配置填空",q:"在路由器全局配置模式下，启动进程号为 65 的 OSPF 动态路由协议的命令是？",ans:"router ospf 65",e:"OSPF 启动需要带本地进程号（1–65535），格式：router ospf 进程号；而 RIP 直接 router rip 不带进程号。"},
+{id:"F77",type:"f",ch:"路由器配置填空",q:"已进入 router ospf 65 模式，将聚合后的地址块 202.113.64.0/22 宣告进骨干区域 0 的命令是？",ans:"network 202.113.64.0 0.0.3.255 area 0",e:"/22 子网掩码为 255.255.252.0，反掩码（通配符）为 0.0.3.255。OSPF 的 network 命令必须写反掩码 + area 0！"},
+{id:"F78",type:"f",ch:"路由器配置填空",q:"【真题易错】在 router ospf 65 模式下，对区域 0 内的路由进行区域间汇总，汇总网段为 172.16.8.0/22，应输入的命令是？",ans:"area 0 range 172.16.8.0 255.255.252.0",e:"超级易错对比：OSPF 中 network 用反掩码（0.0.3.255），而 area 0 range 区域汇总命令后面跟的是正子网掩码（255.255.252.0）！"},
+{id:"F79",type:"f",ch:"路由器配置填空",q:"路由器兼作 DHCP 服务器时，在全局配置模式下创建名为 pool1 的 DHCP 地址池的命令是？",ans:"ip dhcp pool pool1",e:"创建并进入 (dhcp-config)# 地址池配置子模式：ip dhcp pool 地址池名称。"},
+{id:"F80",type:"f",ch:"路由器配置填空",q:"在路由器全局配置模式下，排除 192.168.1.1 到 192.168.1.10 不参与 DHCP 自动分配的命令是？",ans:"ip dhcp excluded-address 192.168.1.1 192.168.1.10",e:"注意 excluded-address 在全局配置模式 (config)# 下执行，而不是在地址池子模式里！单地址只写一个 IP，连续地址段写 起止两个 IP。"},
+{id:"F81",type:"f",ch:"路由器配置填空",q:"在路由器 DHCP 地址池模式 (dhcp-config)# 下，为客户机指定默认网关为 192.168.1.1 的命令是？",ans:"default-router 192.168.1.1",e:"DHCP 池内三件套：network 网段 掩码、default-router 默认网关、dns-server DNS地址。"},
+{id:"F82",type:"f",ch:"路由器配置填空",q:"在路由器 DHCP 地址池模式 (dhcp-config)# 下，设置地址租约期限为 5 天 12 小时的命令是？",ans:"lease 5 12",alt:["lease 5 12 0"],e:"Cisco IOS 租约命令格式：lease 天 [小时] [分钟]，5 天 12 小时即 lease 5 12（永久租约为 lease infinite）。"},
+{id:"F83",type:"f",ch:"路由器配置填空",q:"全局模式下编写标准访问控制列表 10，拒绝源网段 192.168.2.0/24 的所有数据包，命令是？",ans:"access-list 10 deny 192.168.2.0 0.0.0.255",e:"标准 ACL（1–99）只检查源地址，格式：access-list 编号 permit|deny 源网络 反掩码。"},
+{id:"F84",type:"f",ch:"路由器配置填空",q:"全局模式下编写扩展 ACL 110，允许任意源地址访问服务器 202.113.10.8 的 Web（80）端口，命令是？",ans:"access-list 110 permit tcp any host 202.113.10.8 eq 80",alt:["access-list 110 permit tcp any host 202.113.10.8 eq www","access-list 110 permit tcp any 202.113.10.8 0.0.0.0 eq 80","access-list 110 permit tcp any 202.113.10.8 0.0.0.0 eq www"],e:"扩展 ACL（100–199）格式：access-list 号 permit|deny 协议 源 目的 eq 端口。单台主机可用 host IP（等价于 IP 0.0.0.0），Web 端口写 80 或 www 均可。"},
+{id:"F85",type:"f",ch:"路由器配置填空",q:"已进入路由器 interface g0/1 接口模式，把编号 110 的 ACL 应用到该接口的入方向，命令是？",ans:"ip access-group 110 in",e:"必背区分：定义列表用 access-list（全局模式），绑定到接口用 ip access-group 编号 in|out（接口模式）！写 ip access-list 110 in 必错。"},
+{id:"F86",type:"f",ch:"交换机配置填空",q:"在 Cisco IOS 二层交换机（如 Catalyst 2960/3548）全局配置模式下，配置默认网关为 192.168.1.254 的命令是？",ans:"ip default-gateway 192.168.1.254",e:"IOS 交换机配置管理默认网关用 ip default-gateway 网关IP（不带掩码）。"},
+{id:"F87",type:"f",ch:"交换机配置填空",q:"在 Catalyst 3548（IOS 系统）接口模式下，配置 Trunk 端口之前需先指定封装协议为 IEEE 802.1Q，命令是？",ans:"switchport trunk encapsulation dot1q",e:"支持 ISL 和 802.1Q 双协议的三层/高端 IOS 交换机必须先敲 switchport trunk encapsulation dot1q，再敲 switchport mode trunk。"},
+{id:"F88",type:"f",ch:"交换机配置填空",q:"IOS 交换机某 Trunk 口已允许 VLAN 10–50 通行，现要在保留原列表基础上单独移除 VLAN 20，接口模式下的命令是？",ans:"switchport trunk allowed vlan remove 20",e:"增删已配置的 VLAN 列表用 add / remove：switchport trunk allowed vlan remove 20；若除 20 外全部允许则用 except 20。"},
+{id:"F89",type:"f",ch:"交换机配置填空",q:"在 IOS 交换机全局模式下，将该交换机指定为 VLAN 10 生成树的主根网桥（Root Primary），命令是？",ans:"spanning-tree vlan 10 root primary",e:"主根网桥用 spanning-tree vlan 号 root primary（自动将优先级调至 24576 或更低）；备份根网桥用 root secondary（28672）。"},
+{id:"F90",type:"f",ch:"交换机配置填空",q:"在 IOS 交换机全局模式下，同时选中 fastEthernet 0/1 至 0/12 共 12 个连续端口进行批量配置，命令是？",ans:"interface range fastEthernet 0/1 - 12",alt:["interface range fastethernet 0/1-12","interface range f0/1 - 12","interface range f0/1-12"],e:"批量端口进入模式必须加关键字 range：interface range fastEthernet 0/1 - 12。"},
+{id:"F91",type:"f",ch:"交换机配置填空",q:"【CatOS 真题】在 Catalyst 6500（CatOS 系统，提示符 Console> (enable)）下，创建 VLAN 10 并命名为 lib 的一行命令是？",ans:"set vlan 10 name lib",e:"三级真题常把 IOS（3548）与 CatOS（6500）对比考！CatOS 没有 configure terminal，全部以 set / clear 开头：set vlan 编号 name 名称。"},
+{id:"F92",type:"f",ch:"交换机配置填空",q:"【CatOS 真题】在 Catalyst 6500（CatOS）下，将模块 3 的第 1 至 12 号端口划入 VLAN 10 的命令是？",ans:"set vlan 10 3/1-12",e:"CatOS 分配端口直接用同一条 set vlan 命令：set vlan 编号 模块号/起止端口（如 set vlan 10 3/1-12）。"},
+{id:"F93",type:"f",ch:"交换机配置填空",q:"【CatOS 真题】在 Catalyst 6500（CatOS）下，把端口 5/1 配置为 Trunk 模式并采用 802.1Q 封装的命令是？",ans:"set trunk 5/1 on dot1q",e:"CatOS 配 Trunk 一句搞定：set trunk 模块/端口 on dot1q（对比 IOS 的两句 switchport trunk...）。"},
+{id:"F94",type:"f",ch:"交换机配置填空",q:"【CatOS 真题】在 Catalyst 6500（CatOS）下，允许 VLAN 10 至 20 通过 Trunk 端口 5/1 的命令是？",ans:"set trunk 5/1 vlan 10-20",alt:["set trunk 5/1 10-20"],e:"CatOS 添加允许通过 Trunk 的 VLAN：set trunk 模块/端口 vlan 范围。"},
+{id:"F95",type:"f",ch:"交换机配置填空",q:"【CatOS 真题】在 Catalyst 6500（CatOS）下，从 Trunk 端口 5/1 的允许列表中删除（修剪）VLAN 15 的命令是？",ans:"clear trunk 5/1 15",e:"CatOS 删除允许的 VLAN 不用 remove，而是用 clear trunk 模块/端口 VLAN号！这是真题超高频易错空。"},
+{id:"F96",type:"f",ch:"交换机配置填空",q:"【CatOS 真题】在 Catalyst 6500（CatOS）下，配置管理接口 sc0 属于 VLAN 1，IP 为 172.16.1.2，掩码 255.255.255.0，命令是？",ans:"set interface sc0 1 172.16.1.2 255.255.255.0",e:"CatOS 管理接口叫 sc0（IOS 叫 interface vlan 1），命令：set interface sc0 VLAN号 IP地址 子网掩码。"},
+{id:"F97",type:"f",ch:"交换机配置填空",q:"【CatOS 真题】在 Catalyst 6500（CatOS）下，配置交换机缺省路由指向网关 172.16.1.1 的命令是？",ans:"set ip route default 172.16.1.1",alt:["set ip route 0.0.0.0 172.16.1.1"],e:"CatOS 配默认网关：set ip route default 网关IP（对比 IOS 的 ip default-gateway 网关IP）。"},
+{id:"F98",type:"f",ch:"抓包分析填空",q:"【真题抓包表①】下表是校园网主机 202.113.64.137 执行某条命令时 Sniffer 捕获的数据包摘要。请写出该主机在命令行执行的完整命令。",tbl:{h:["编号","源地址","目的地址","协议","摘要信息"],r:[["1","202.113.64.137","202.113.64.3","DNS","Query mail.tj.edu.cn"],["2","202.113.64.3","202.113.64.137","DNS","Resp mail.tj.edu.cn=202.113.16.10"],["3","202.113.64.137","202.113.16.10","ICMP","Echo (TTL=1)"],["4","202.113.64.129","202.113.64.137","ICMP","Time Exceeded"],["5","202.113.64.137","202.113.16.10","ICMP","Echo (TTL=2)"],["6","202.113.65.1","202.113.64.137","ICMP","Time Exceeded"]],hi:[0,2,3]},ans:"tracert mail.tj.edu.cn",e:"先有 DNS 解析域名 mail.tj.edu.cn，紧接着发送 TTL 从 1 递增的 ICMP Echo 并收到沿途路由器的 Time Exceeded（超时），说明执行的是 tracert mail.tj.edu.cn（只写 tracert 不完整，要把域名带上！）。"},
+{id:"F99",type:"f",ch:"抓包分析填空",q:"【真题抓包表②】根据下表捕获的数据包，本机（202.113.64.137）所配置的 DNS 服务器 IP 地址是？",tbl:{h:["编号","源地址","目的地址","协议","摘要信息"],r:[["1","202.113.64.137","202.113.64.3","DNS","Query mail.tj.edu.cn"],["2","202.113.64.3","202.113.64.137","DNS","Resp 202.113.16.10"],["3","202.113.64.137","202.113.16.10","ICMP","Echo (TTL=1)"]],hi:[0,1]},ans:"202.113.64.3",e:"第 1 行本机向 202.113.64.3 发起 DNS 查询请求，第 2 行由 202.113.64.3 返回解析结果，因此本机 DNS 服务器地址是 202.113.64.3。"},
+{id:"F100",type:"f",ch:"抓包分析填空",q:"【真题抓包表③】根据下表 tracert 抓包记录，从本机（202.113.64.137）发往目的主机的数据包经过的第一个路由器（默认网关）IP 地址是？",tbl:{h:["编号","源地址","目的地址","协议","摘要信息"],r:[["3","202.113.64.137","202.113.16.10","ICMP","Echo (TTL=1)"],["4","202.113.64.129","202.113.64.137","ICMP","Time Exceeded"],["5","202.113.64.137","202.113.16.10","ICMP","Echo (TTL=2)"],["6","202.113.65.1","202.113.64.137","ICMP","Time Exceeded"]],hi:[0,1]},ans:"202.113.64.129",e:"TTL=1 的探测包在第一跳路由器（本机默认网关）处减为 0 并返回 ICMP Time Exceeded，因此第 4 行的源地址 202.113.64.129 即第一跳路由器 IP；第 6 行 202.113.65.1 为第二跳路由器。"},
+{id:"F101",type:"f",ch:"抓包分析填空",q:"【真题压轴空】由抓包得知本机 IP 为 202.113.64.137，默认网关（第一跳路由器）IP 为 202.113.64.129。本机所在子网的网络号最长可能是多少位？（填数字）",ans:"28",alt:["28位","/28"],e:"本机与默认网关必在同一子网！前三字节相同（24 位）；第四字节 137 = 10001001，129 = 10000001，从左往右前 4 位（1000）相同，第 5 位出现差异，故网络位最长为 24 + 4 = 28 位。"},
+{id:"F102",type:"f",ch:"抓包分析填空",q:"【TCP 序号推算】下表是客户端访问 Web 服务器时的抓包片段。第 4 行客户端发送了 240 字节的 HTTP 请求数据，则第 5 行服务器返回的确认号 Ack 应为多少？（填数字）",tbl:{h:["序号","方向","协议","TCP 序号 / 长度 / 摘要"],r:[["1–3","双向","TCP","三次握手完成"],["4","C→S","HTTP","Seq=101, Len=240, GET /index.html HTTP/1.1"],["5","S→C","TCP","ACK, Seq=501, Ack=？（待填）"]],hi:[1,2]},ans:"341",e:"TCP 确认号 Ack = 期望收到的下一个字节序号 = 对方本次 Seq + 本次携带的数据字节数 Len = 101 + 240 = 341。"},
+{id:"F103",type:"f",ch:"抓包分析填空",q:"下表是主机连接 FTP 服务器时的抓包记录，控制连接建立在端口 21。若采用主动模式（PORT）传输文件，FTP 服务器端发起数据连接使用的默认源端口号是？（填数字）",tbl:{h:["编号","源地址:端口","目的地址:端口","协议","摘要"],r:[["1","192.168.1.8:1052","202.113.80.5:21","FTP","USER anonymous"],["2","202.113.80.5:21","192.168.1.8:1052","FTP","331 Password required"],["3","192.168.1.8:1052","202.113.80.5:21","FTP","PORT 192,168,1,8,4,29"]],hi:[2]},ans:"20",e:"FTP 双端口必背：21 端口用于控制连接（传命令），主动模式下服务器用 20 端口建立数据连接传文件。另外 PORT 参数后两数 4×256+29 = 1053 是客户端开放的数据端口。"},
+{id:"F104",type:"f",ch:"抓包分析填空",q:"Sniffer 捕获到一条普通域名解析请求报文（目的端口 53，DNS Query Type A），该报文在传输层使用的协议名称是？",ans:"UDP",alt:["udp协议"],e:"常规 DNS 查询与应答使用 UDP 53 端口（速度快、开销小）；仅在主辅域名服务器进行区域传送或响应超过 512 字节时才用 TCP 53。"},
+{id:"F105",type:"f",ch:"抓包分析填空",q:"Sniffer 捕获到某主机与 202.113.16.10 之间仅有 4 对往返的 ICMP Echo 与 Echo Reply 报文，发送方 TTL 始终为 64 未递增，说明该主机执行的命令是？",ans:"ping",alt:["ping 202.113.16.10"],e:"Windows 默认发 4 次固定 TTL 的 ICMP Echo 探测连通性，无 TTL 递增与超时报文，对应命令为 ping。"},
+{id:"F106",type:"f",ch:"抓包分析填空",q:"TCP 三次握手中，第 1 步客户端发送 SYN 报文的序号 Seq = 500；第 2 步服务器回复 SYN+ACK 报文时，其中的确认号 Ack 字段值应为多少？（填数字）",ans:"501",e:"SYN 标志位虽然不携带应用层数据，但逻辑上消耗 1 个序号，因此服务器返回的确认号 Ack = 500 + 1 = 501。"},
+{id:"F107",type:"f",ch:"抓包分析填空",q:"Sniffer 捕获的以太网帧中，类型（Type）字段值为 0x86DD，说明帧数据字段封装的网络层协议是？",ans:"IPv6",alt:["ipv6协议"],e:"三大以太网类型字段值：0x0800 = IPv4，0x0806 = ARP，0x86DD = IPv6。"},
+{id:"F108",type:"f",ch:"抓包分析填空",q:"Sniffer 解码某 IPv4 数据报首部时，协议（Protocol）字段十进制值为 89，说明它直接封装的路由协议是？",ans:"OSPF",alt:["ospf协议"],e:"IP 首部协议号必背：1 = ICMP，6 = TCP，17 = UDP，89 = OSPF（OSPF 直接封装在 IP 数据报内）。"},
+{id:"F109",type:"f",ch:"DHCP报文分析填空",q:"【真题 5 报文表①】下表是在某 Windows 客户机上连续执行两条命令后捕获的 5 条 DHCP 报文。触发第 1 条报文所执行的命令是？",tbl:{h:["编号","源 IP","目的 IP","报文摘要"],r:[["1","192.168.1.36","192.168.1.1","DHCP: Request, Type: DHCP release"],["2","0.0.0.0","255.255.255.255","DHCP: Request, Type: DHCP discover"],["3","192.168.1.1","255.255.255.255","DHCP: Reply, Type: DHCP offer"],["4","？（待填）","255.255.255.255","DHCP: Request, Type: DHCP request"],["5","192.168.1.1","255.255.255.255","DHCP: Reply, Type: DHCP ack"]],hi:[0]},ans:"ipconfig /release",alt:["ipconfig/release"],e:"第 1 条是客户机单播发给服务器的 DHCP release（释放地址）报文，对应命令 ipconfig /release；第 2–5 条重新申请对应 ipconfig /renew。"},
+{id:"F110",type:"f",ch:"DHCP报文分析填空",q:"【真题 5 报文表②】观察上题同一张 5 报文表，第 4 条 DHCP request 报文（释放后重新申请阶段，尚未收到 ACK）的「源 IP」一栏应填什么？",tbl:{h:["编号","源 IP","目的 IP","报文摘要"],r:[["2","0.0.0.0","255.255.255.255","DHCP discover"],["3","192.168.1.1","255.255.255.255","DHCP offer"],["4","？（待填）","255.255.255.255","DHCP request"],["5","192.168.1.1","255.255.255.255","DHCP ack"]],hi:[2]},ans:"0.0.0.0",e:"超级高频考点：在收到第 5 条 DHCP ack 最终确认前，客户机还不能正式启用新 IP，因此第 2 条 discover 和第 4 条 request 的源 IP 都是 0.0.0.0，目的 IP 都是 255.255.255.255！"},
+{id:"F111",type:"f",ch:"DHCP报文分析填空",q:"【真题报文解码】Sniffer 对某条 DHCP 报文首部解析显示「Boot record type = 2」，说明该报文是由哪一方发出的？（填 客户机 或 服务器）",tbl:{h:["DHCP 首部字段","解析值"],r:[["Boot record type","2 (Reply)"],["Hardware address type","1 (10M Ethernet)"],["Hardware address length","6 bytes"]],hi:[0]},ans:"服务器",alt:["DHCP服务器","server"],e:"Boot record type（op 字段）：值为 1（Boot Request）表示客户机发出的请求（Discover/Request/Release）；值为 2（Boot Reply）表示服务器发出的应答（Offer/ACK/NAK）。"},
+{id:"F112",type:"f",ch:"DHCP报文分析填空",q:"DHCP 报文首部解析中，若「Boot record type = 1」，说明该报文是由哪一方发出的？",ans:"客户机",alt:["DHCP客户机","客户端","DHCP客户端","client"],e:"值为 1 代表客户端发起的请求类报文；值为 2 代表服务器返回的响应类报文。"},
+{id:"F113",type:"f",ch:"DHCP报文分析填空",q:"在以太网环境下捕获的 DHCP 报文中，「Hardware address length」（硬件地址长度）字段的值固定是多少字节？（填数字）",ans:"6",alt:["6字节"],e:"以太网硬件地址即 48 位 MAC 地址，长度固定为 6 字节（Hardware address type 为 1 表示以太网）。"},
+{id:"F114",type:"f",ch:"DHCP报文分析填空",q:"客户机首次广播发送 DHCP Discover 报文时，DHCP 首部中的「Client self-assigned address」（客户机当前 IP 地址）字段值是什么？",ans:"0.0.0.0",e:"首次申请地址时客户机尚无 IP，Client IP（ciaddr）与 Server IP、Relay IP 字段均为 0.0.0.0；只有租约续租时 ciaddr 才填当前已有的 IP。"},
+{id:"F115",type:"f",ch:"DHCP报文分析填空",q:"客户机移动网段后请求继续使用原 IP，若 DHCP 服务器发现该地址不适用于当前子网，拒绝请求时发回的报文名称是？",ans:"Nak",alt:["NAK","DHCPNAK","DHCP Nak","nack"],e:"服务器同意分配回 Ack，拒绝请求回 Nak（Negative Acknowledgment），客户机收到 Nak 后必须重新从 Discover 开始申请。"}
 ];
 var REAL = [
 {id:"R2501",year:"2025",ch:"网络结构与设计基础",q:"宽带城域网中，负责连接用户终端、提供多种接入方式的是哪一层？",o:["核心交换层","汇聚层","接入层","骨干层"],a:2,e:"接入层直接面向用户，提供 LAN、xDSL、HFC、无线等多种接入手段。"},
@@ -716,7 +782,31 @@ var APPLY = [
 {id:"A09",type:"f",ch:"应用题·设备部署",q:"【流量监听】管理员需要监听（镜像）两台路由器之间的全部通信流量以做协议分析。在不影响链路正常转发的前提下，应接入的设备是？",ans:"TAP",alt:["分路器","tap分路器","网络分路器","TAP分路器"],e:"TAP（分路器）串接在链路中，把流量复制一份给分析设备，且不中断链路。三级网络应用题的经典考点。"},
 {id:"A10",type:"f",ch:"应用题·设备部署",q:"【分层设计】在校园网三层结构设计中，负责实施访问控制策略（ACL）、QoS 和路由聚合的设备应部署在哪一层？",ans:"汇聚层",alt:["汇聚层","分布层","convergence"],e:"核心层专注高速转发；汇聚层是策略层，做 ACL、QoS、路由聚合；接入层连接用户终端。三层职能必背。"},
 {id:"A11",type:"f",ch:"应用题·设备部署",q:"【VLAN 互通】某局域网划分了 VLAN 10、20、30，现在要求这三个 VLAN 之间能够互相通信，网络中使用什么设备实现？",ans:"路由器",alt:["三层交换机","三层交换机或路由器","layer3switch"],e:"VLAN 隔离广播域，不同 VLAN 间通信属于三层转发，需路由器（单臂路由）或三层交换机（SVI）实现。"},
-{id:"A12",type:"f",ch:"应用题·设备部署",q:"【安全部署】在校园网出口处，需要检查进出报文的首部信息并按规则放行或阻断，同时还要能对已发现的入侵行为主动切断连接。应部署的设备是？",ans:"IPS",alt:["入侵防御系统","ips入侵防御系统"],e:"按规则过滤是防火墙的职责；能主动阻断入侵的在线设备是 IPS（入侵防御系统）。只需监测告警的是 IDS。"}
+{id:"A12",type:"f",ch:"应用题·设备部署",q:"【安全部署】在校园网出口处，需要检查进出报文的首部信息并按规则放行或阻断，同时还要能对已发现的入侵行为主动切断连接。应部署的设备是？",ans:"IPS",alt:["入侵防御系统","ips入侵防御系统"],e:"按规则过滤是防火墙的职责；能主动阻断入侵的在线设备是 IPS（入侵防御系统）。只需监测告警的是 IDS。"},
+{id:"A13",type:"f",ch:"应用题·地址聚合",q:"【边界对齐陷阱】某下联区域有两个网段 172.18.129.0/24 与 172.18.130.0/24。若在出口路由器上必须将它们聚合成唯一一条 CIDR 路由，最小的超网地址块是？（填 地址/前缀 格式）",ans:"172.18.128.0/22",alt:["172.18.128.0 255.255.252.0"],e:"129 = 10000001，130 = 10000010，从左数前 6 位相同（100000），不能聚成 /23（128/129 一块、130/131 另一块），必须拉齐到块大小 4 的边界 172.18.128.0/22！"},
+{id:"A14",type:"f",ch:"应用题·地址聚合",q:"【排除预留地址·真题第1问】已知 172.2.14.33/34 预留给路由器互联。RG 的 S0 口下联两片主机地址段：172.2.14.129–190 与 172.2.14.193–254。将 S0 口这两片地址聚合为一条最大前缀路由（且不能包含 .33/.34），应填？（填 地址/前缀 格式）",ans:"172.2.14.128/25",alt:["172.2.14.128 255.255.255.128"],e:"129–190 属于 172.2.14.128/26，193–254 属于 172.2.14.192/26，两者恰好拼成后半段 172.2.14.128/25（范围 128–255），完全避开了前半段的预留地址 .33/.34。"},
+{id:"A15",type:"f",ch:"应用题·地址聚合",q:"【特定主机路由】在填写核心路由器 RG 路由表时，若需要针对单台关键服务器 202.113.12.9 配置一条「特定主机路由」，其子网掩码应填写为？",ans:"255.255.255.255",alt:["/32","32"],e:"特定主机路由精确匹配全部 32 位 IP 地址，前缀为 /32，点分十进制子网掩码固定为 255.255.255.255。"},
+{id:"A16",type:"f",ch:"应用题·地址聚合",q:"【默认路由表项】在应用题填写出口路由器路由表「目的网络/掩码长度」一栏时，通往外部 Internet 的默认路由应写为？",ans:"0.0.0.0/0",alt:["0.0.0.0 0.0.0.0"],e:"路由表表格中要求写「目的网络/掩码长度」格式时，默认路由固定写 0.0.0.0/0；命令行配静态路由时写 ip route 0.0.0.0 0.0.0.0 下一跳。"},
+{id:"A17",type:"f",ch:"应用题·地址聚合",q:"【直连串口聚合①·真题首行】已知预留 IP 地址 10.10.25.33 和 10.10.25.34 用于路由器 RG 的 S0 串口与对端点对点互联。在 RG 路由表中，该直连网段最精确的「目的网络/前缀长度」应填？",ans:"10.10.25.32/30",alt:["10.10.25.32 255.255.255.252"],e:"三级应用题第 1 小问路由表前两行高频题！33（00100001）与 34（00100010）前 6 位相同，落在块大小 4 的 32–35 点对点子网中，即 10.10.25.32/30。"},
+{id:"A18",type:"f",ch:"应用题·地址聚合",q:"【直连串口聚合②·真题次行】已知预留 IP 地址 10.10.25.65 和 10.10.25.66 用于路由器 RG 的 S1 串口与另一台路由器互联。该直连网段最精确的「目的网络/前缀长度」应填？",ans:"10.10.25.64/30",alt:["10.10.25.64 255.255.255.252"],e:"65（01000001）与 66（01000010）落在 64–67 的 /30 子网块内，网络地址 64、广播 67、两个可用 IP 恰好是 65 和 66，故填 10.10.25.64/30。"},
+{id:"A19",type:"f",ch:"应用题·地址聚合",q:"【可扩充子网数】上级路由器指向汇总路由器 RF 的聚合路由为 172.16.64.0/21。目前 RF 下已分配使用了 5 个 /24 子网（每台下级路由器独占 1 个 /24）。在不改变上级路由表项的前提下，最多还可再接入多少台下级路由器？（填数字）",ans:"3",e:"/21 包含 2^(24−21) = 8 个连续的 /24 子网（64.0–71.0），目前已用 5 个，剩余 8 − 5 = 3 个 /24 可分配。"},
+{id:"A20",type:"f",ch:"应用题·地址聚合",q:"【可再接路由器数·真题第2问】路由器 RF 的 E0 以太网口所在子网为 10.10.32.0/28，除 RF 自身 E0 口占用 1 个 IP 外，该网段已连接了 3 台下级路由器。在不改变路由表项的前提下，E0 网段最多还可再接入多少台路由器？（填数字）",ans:"10",e:"真题原味计算：/28 主机位 4 位，可用 IP 总数 = 2⁴ − 2 = 14 个；减去 RF 自身 1 个和已接的 3 台，最多还可再接 14 − 1 − 3 = 10 台！"},
+{id:"A21",type:"f",ch:"应用题·子网划分",q:"【VLSM 真题四连问①】将 10.10.67.128/25 按地址从小到大依次划分为 3 个子网：第 1 子网需容 52 台主机，第 2、3 子网各需容 23 台主机。求第 1 子网的点分十进制子网掩码。",ans:"255.255.255.192",alt:["/26"],e:"容纳 52 台主机需满足 2ⁿ−2 ≥ 52，最小 n=6（可用 62 台），前缀 32−6 = /26，对应子网掩码 255.255.255.192（占用 128–191）。"},
+{id:"A22",type:"f",ch:"应用题·子网划分",q:"【VLSM 真题四连问②】接上题（10.10.67.128/25 依次分给 52 台、23 台、23 台三个子网），求第 3 子网的点分十进制子网掩码。",ans:"255.255.255.224",alt:["/27"],e:"第 1 子网占走 128–191 后，剩余 192–255（共 64 个地址）对半分给两个 23 台主机的子网：2⁵−2 = 30 ≥ 23，前缀 /27，子网掩码 255.255.255.224。"},
+{id:"A23",type:"f",ch:"应用题·子网划分",q:"【VLSM 真题四连问③】接上题（10.10.67.128/25 依次分给 52 台、23 台、23 台三个子网），求第 3 子网的可用 IP 地址段（用短横线连接起止 IP）。",ans:"10.10.67.225-10.10.67.254",e:"按顺序分配：第 1 子网 128–191（/26），第 2 子网 192–223（/27），第 3 子网 224–255（/27）。去掉网络号 .224 和广播 .255，可用段为 10.10.67.225-10.10.67.254。"},
+{id:"A24",type:"f",ch:"应用题·子网划分",q:"【VLSM 紧凑划分①】将 10.10.67.128/26 按网络地址从小到大依次划分为 3 个子网，分别容纳 16 台、14 台、12 台主机。求第 1 子网的可用 IP 地址段（用短横线连接）。",ans:"10.10.67.129-10.10.67.158",e:"16 台需 2⁵−2 = 30（/27，块大小 32），故第 1 子网占 128–159，去掉首尾后可用 IP 段为 10.10.67.129-10.10.67.158。"},
+{id:"A25",type:"f",ch:"应用题·子网划分",q:"【VLSM 紧凑划分②】接上题（10.10.67.128/26 依次分给 16 台、14 台、12 台主机），求第 3 子网的可用 IP 地址段（用短横线连接）。",ans:"10.10.67.177-10.10.67.190",e:"第 1 子网占 128–159；第 2 子网 14 台恰好满足 2⁴−2 = 14（/28，块大小 16），占 160–175；第 3 子网 12 台也用 /28，占 176–191，可用段为 10.10.67.177-10.10.67.190！"},
+{id:"A26",type:"f",ch:"应用题·子网划分",q:"【VLSM 边界计算】将 172.16.33.128/25 按顺序划分为 3 个子网（分别容 40 台、25 台、25 台主机），求第 1 子网的最后一个可用 IP 地址。",ans:"172.16.33.190",e:"第 1 子网容 40 台需用 /26（块大小 64），范围 172.16.33.128–191，直接广播为 .191，最后一个可用 IP 为 172.16.33.190。"},
+{id:"A27",type:"f",ch:"应用题·子网划分",q:"【先小后大块对齐】地址块 192.168.10.0/24 中，192.168.10.0/27 与 192.168.10.32/27 已分给两个小部门。现需再划出一个能容纳 100 台主机的大子网，该大子网的网络地址必须是？",ans:"192.168.10.128",alt:["192.168.10.128/25"],e:"100 台主机需 /25（块大小 128），子网起始地址必须是块大小 128 的整数倍（只能是 .0 或 .128）。因前半块 .0–.63 已被占用，只能从 192.168.10.128 开始！"},
+{id:"A28",type:"f",ch:"应用题·子网划分",q:"把一个 B 类网络 172.16.0.0/16 采用子网掩码 255.255.252.0 进行等长子网划分，一共可以划分出多少个子网？（填数字）",ans:"64",e:"255.255.252.0 对应 /22，比默认 B 类掩码 /16 多借了 22 − 16 = 6 位子网位，可划分 2⁶ = 64 个子网。"},
+{id:"A29",type:"f",ch:"应用题·子网划分",q:"某单位将 202.113.10.0/24 划出了一个 /25 子网和一个 /26 子网后，剩余未分配的连续地址块作为单个子网使用时，最多可容纳多少台可用主机？（填数字）",ans:"62",e:"1 个 /24（256）减去 1 个 /25（128）和 1 个 /26（64），还剩 64 个地址（即 1 个 /26 子网），可用主机数 = 64 − 2 = 62 台。"},
+{id:"A30",type:"f",ch:"应用题·子网划分",q:"某高校新建实验楼需在同一个子网内容纳 500 台电脑，为最节约 IP 地址资源，应配置的点分十进制子网掩码是？",ans:"255.255.254.0",alt:["/23"],e:"2⁹ − 2 = 510 ≥ 500（/24 只有 254 不够），主机位取 9 位，前缀 32 − 9 = /23，第三字节 11111110 = 254，即 255.255.254.0。"},
+{id:"A31",type:"f",ch:"应用题·设备部署",q:"【真题原问·域管理】若企业网络采用 Windows Server 域用户管理功能来实现网络资源的集中访问控制，域用户信息存储在区域控制器的什么数据库中？",ans:"活动目录",alt:["Active Directory","AD","活动目录AD"],e:"三级应用题原题高频填空！Windows Server 域控制器（DC）把域用户账户、组策略和权限信息统一存放在「活动目录」（Active Directory，简称 AD）中。"},
+{id:"A32",type:"f",ch:"应用题·设备部署",q:"【真题原问·PIX内访外】出口防火墙 FW 为 Cisco PIX 525，若要允许部分内网主机通过动态地址转换访问外网，需要配合使用的两个配置命令关键字依次是？（用英文逗号分隔）",ans:"nat,global",alt:["global,nat","nat和global"],e:"三级应用题经典原问！PIX 防火墙配置内网访问外网：用 nat 指定要做转换的内网网段，用 global 指定转换后的外网全局地址池，两命令成对生效。"},
+{id:"A33",type:"f",ch:"应用题·设备部署",q:"【真题原问·PIX发布服务】出口防火墙为 Cisco PIX 525，若允许外网用户访问内网的 FTP 服务器，除用 static 做静态地址映射外，经典 PIX 配置中配合放行外部访问通道的命令关键字是？",ans:"conduit",alt:["static,conduit","access-list"],e:"经典三级教材与真题考法：PIX 对外发布内网服务器用 static（静态地址映射）+ conduit（或新版的 access-list）放行外到内的端口访问。"},
+{id:"A34",type:"f",ch:"应用题·设备部署",q:"【真题原问·接入Internet】某园区内部全部使用 10.10.x.x 私有 IP 地址，若要从总路由器的上联口串入专用设备接入 Internet，该设备必须具备的核心地址转换功能是？",ans:"NAT",alt:["网络地址转换","NAPT","PAT","地址转换"],e:"RFC 1918 私有地址（10/8、172.16/12、192.168/16）不能在公网直接路由，出口设备必须具备 NAT（网络地址转换）功能。"},
+{id:"A35",type:"f",ch:"应用题·设备部署",q:"【旁路安全监测】某单位在交换机镜像端口旁路部署了一台安全设备，对流向服务器群的数据包做特征检测并在发现异常时报警，但不主动串联切断流量。该设备的名称是？",ans:"IDS",alt:["入侵检测系统"],e:"看关键词区分：旁路监听、只报警不阻断 = IDS（入侵检测系统）；在线串接、发现恶意包立即报警并阻断攻击 = IPS（入侵防御系统）。"},
+{id:"A36",type:"f",ch:"应用题·设备部署",q:"【无线覆盖规划】在园区内部署多台无线 AP 实现无缝漫游时，各相邻 AP 应采用互不重叠信道（如 1、6、11），且必须配置相同的无线网络名称，该名称的英文缩写是？",ans:"SSID",alt:["ESSID","服务集标识符"],e:"同一漫游区域内多个 AP 组成扩展服务集（ESS），必须配置相同的 SSID（服务集标识符），并使用 1、6、11 非重叠信道避免同频干扰。"}
 ];
 var CARDS = [
 {id:"C01",ch:"数字速记",f:"FTP 使用的端口号",b:"TCP 21（控制连接）+ TCP 20（数据连接）"},
@@ -891,6 +981,7 @@ function normAns(s) {
     .replace(/[\s　]/g, "")
     .replace(/[（(][^）)]*[）)]/g, "")
     .replace(/[。．]/g, ".")
+    .replace(/(\d)[~～—–至](\d)/g, "$1-$2")
     .replace(/^(答案|答|是)[:：]?/, "")
     .replace(/^0x/, "")
     .replace(/(字节|比特|位|个|台|条|秒|次|号|端口|台主机|个主机|个字节)$/g, "")
@@ -1120,28 +1211,45 @@ function pickCh(arr, ch, n) {
   return shuffle(arr.filter(function (q) { return q.ch === ch; })).slice(0, n);
 }
 function startExam() {
-  /* 组卷对齐真实卷面：40 单选 + 综合题 4 道（IP计算 / 配置 / DHCP报文 / 抓包）+ 应用题 1 道 */
-  var list = shuffle(BANK.slice()).slice(0, 40)
-    .concat(pickCh(BLANK, "IP子网计算填空", 1))
-    .concat(pickCh(BLANK, "路由器配置填空", 1))
-    .concat(pickCh(BLANK, "DHCP报文分析填空", 1))
-    .concat(pickCh(BLANK, "抓包分析填空", 1))
-    .concat(shuffle(APPLY.slice()).slice(0, 1));
+  /* 1:1 对齐真实卷面权重：40 单选（含真题池）+ 综合填空 20 空（4 大题×5 空）+ 应用题 5 问 */
+  var selPool = BANK.concat(REAL);
+  var ipPool = BLANK.filter(function (q) { return q.ch === "IP子网计算填空" || q.ch === "IP逆向计算填空"; });
+  var cfgPool = BLANK.filter(function (q) { return q.ch === "路由器配置填空" || q.ch === "交换机配置填空"; });
+  var list = shuffle(selPool).slice(0, 40)
+    .concat(shuffle(ipPool).slice(0, 5))
+    .concat(shuffle(cfgPool).slice(0, 5))
+    .concat(pickCh(BLANK, "DHCP报文分析填空", 5))
+    .concat(pickCh(BLANK, "抓包分析填空", 5))
+    .concat(pickCh(APPLY, "应用题·地址聚合", 2))
+    .concat(pickCh(APPLY, "应用题·子网划分", 2))
+    .concat(pickCh(APPLY, "应用题·设备部署", 1));
   begin(list, "全真模考（满分 100）", "exam", 120);
 }
 function startExamShort() {
-  var list = shuffle(BANK.slice()).slice(0, 20)
-    .concat(pickCh(BLANK, "IP子网计算填空", 1))
-    .concat(pickCh(BLANK, "抓包分析填空", 1))
-    .concat(shuffle(APPLY.slice()).slice(0, 1));
+  var selPool = BANK.concat(REAL);
+  var ipPool = BLANK.filter(function (q) { return q.ch === "IP子网计算填空" || q.ch === "IP逆向计算填空"; });
+  var cfgPool = BLANK.filter(function (q) { return q.ch === "路由器配置填空" || q.ch === "交换机配置填空"; });
+  var list = shuffle(selPool).slice(0, 20)
+    .concat(shuffle(ipPool).slice(0, 2))
+    .concat(shuffle(cfgPool).slice(0, 2))
+    .concat(pickCh(BLANK, "DHCP报文分析填空", 2))
+    .concat(pickCh(BLANK, "抓包分析填空", 2))
+    .concat(pickCh(APPLY, "应用题·地址聚合", 1))
+    .concat(pickCh(APPLY, "应用题·子网划分", 1))
+    .concat(pickCh(APPLY, "应用题·设备部署", 1));
   begin(list, "半卷速测（60 分钟）", "exam", 60);
 }
 function startExamConfig() {
-  var list = pickCh(BLANK, "IP子网计算填空", 2)
-    .concat(pickCh(BLANK, "路由器配置填空", 1))
-    .concat(pickCh(BLANK, "抓包分析填空", 1))
-    .concat(shuffle(APPLY.slice()).slice(0, 1));
-  begin(list, "综合题专测（40 分）", "exam", 30);
+  var ipPool = BLANK.filter(function (q) { return q.ch === "IP子网计算填空" || q.ch === "IP逆向计算填空"; });
+  var cfgPool = BLANK.filter(function (q) { return q.ch === "路由器配置填空" || q.ch === "交换机配置填空"; });
+  var list = shuffle(ipPool).slice(0, 3)
+    .concat(shuffle(cfgPool).slice(0, 3))
+    .concat(pickCh(BLANK, "DHCP报文分析填空", 3))
+    .concat(pickCh(BLANK, "抓包分析填空", 3))
+    .concat(pickCh(APPLY, "应用题·地址聚合", 1))
+    .concat(pickCh(APPLY, "应用题·子网划分", 2))
+    .concat(pickCh(APPLY, "应用题·设备部署", 1));
+  begin(list, "大题冲刺专测（45 分钟）", "exam", 45);
 }
 function startTimer(minutes) {
   var remain = minutes * 60;
