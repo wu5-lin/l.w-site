@@ -1,23 +1,33 @@
 {
-  "updated": "2026-11-26 11:09 UTC",
+  "updated": "2026-11-26 21:45 UTC",
   "categories": {
     "投资": [
       {
         "date": "2026-11-26",
-        "tag": "Seeking Alpha",
-        "title": "Enbridge 正在与土著社区就 1.5B 加元的管道交易进行谈判 - 报告",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4676799-enbridge-in-talks-for-c15b-pipeline-deal-with-indigenous-communities--report?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
+        "tag": "MarketWatch",
+        "title": "我讨厌 Jensen Huang 回到 Nvidia，但我喜欢它为我的 401(k) 所做的一切。我是伪君子吗？",
+        "summary": "Doing nothing and maintaining an even temperament is often the work of gods.",
+        "url": "https://www.marketwatch.com/story/i-hate-that-jensen-huang-is-back-at-nvidia-but-i-love-what-its-done-for-my-401-k-am-i-a-hypocrite-f63c0303?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "Financial Times",
+        "title": "两名意大利人在科威特无人机袭击中丧生",
+        "summary": "Workers are the first reported deaths in the Gulf since the US and Iran restarted exchanging fire this month",
+        "url": "https://www.ft.com/content/e5f3128d-5f8b-416c-90d1-2549175cb091?syn-25a6b1a6=1",
+        "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-26",
         "tag": "Seeking Alpha",
-        "title": "报告称，因美国出口限制，英伟达收紧对东南亚的人工智能芯片出货量",
+        "title": "Sierra Madre 的目标是到明年第三季度每天开采 1,200 至 1,500 吨，同时推进东区 30,000 米钻探",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4676801-nvidia-tightens-ai-chip-shipments-to-southeast-asia-amid-us-export-curbs-report?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4676908-sierra-madre-targets-1200-to-1500-tonnes-per-day-by-q3-next-year-while-advancing-30000-meter?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -25,9 +35,9 @@
       {
         "date": "2026-11-26",
         "tag": "MarketWatch",
-        "title": "随着全球市场欢迎美国的韧性，期货预示着华尔街黑色星期五的上涨。",
-        "summary": "A rebound off lows for the S&P 500 on Wednesday calms bourses after AI wash out",
-        "url": "https://www.marketwatch.com/story/futures-point-to-black-friday-gains-for-wall-street-as-global-markets-welcome-u-s-resilience-ad6bcef2?mod=mw_rss_topstories",
+        "title": "一名 66 岁的护士仅存了 500 美元，即将退休。谁该受责备？",
+        "summary": "“Retirement is a financial status, not an age.”",
+        "url": "https://www.marketwatch.com/story/a-66-year-old-nurse-faces-retirement-with-just-500-saved-whos-to-blame-4249a0fd?mod=mw_rss_topstories",
         "source": "MarketWatch",
         "region": "en",
         "category": "投资"
@@ -35,19 +45,9 @@
       {
         "date": "2026-11-26",
         "tag": "Seeking Alpha",
-        "title": "据称蒂姆霍顿中国正在权衡股权出售选择",
+        "title": "标准普尔 500 指数行业轮动追踪：由于投资者采取防御措施，必需消费品行业领先",
         "summary": "",
-        "url": "https://seekingalpha.com/news/4676797-tim-hortons-china-said-to-weigh-stake-sale-options?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "Seeking Alpha",
-        "title": "金汇航运概述了 2027 年上半年的海岬型船和巴拿马型船每天 32,000 美元和 21,000 美元的覆盖范围，同时扩大 Ultramax 订单簿",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4676798-jinhui-shipping-outlines-1h-2027-coverage-at-32000-capesize-and-21000-panamax-per-day-while?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "url": "https://seekingalpha.com/news/4676907-sp-500-sector-rotation-tracker-consumer-staples-lead-as-investors-get-defensive?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
@@ -55,59 +55,99 @@
       {
         "date": "2026-11-26",
         "tag": "MarketWatch",
-        "title": "德意志银行表示，科技股的溃败应该很快就会触底，标准普尔 500 指数将随之上涨 25%",
-        "summary": "Deutsche Bank sees the benchmark index reaching 9,000 points by the end of 2027 as focus shifts from capital expenditure to monetization from artificial intelligence.",
-        "url": "https://www.marketwatch.com/story/the-tech-rout-should-bottom-soon-with-a-25-rally-for-the-s-p-500-to-follow-says-deutsche-bank-c9070bf6?mod=mw_rss_topstories",
+        "title": "我已经结婚 58 年了。这是“我们的”钱，而不是“他的”和“她的”。为什么这么多夫妇将财务分开？",
+        "summary": "“My wife stopped working outside the home in 1970.”",
+        "url": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
         "source": "MarketWatch",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-26",
-        "tag": "The Block",
-        "title": "瑞士从 2028 年起批准 57 个司法管辖区进行加密数据交换",
-        "summary": "The Swiss Federal Council cleared 57 potential partners for cryptoasset tax-information exchanges beginning in 2028.",
-        "url": "https://www.theblock.co/news/regulation/2026-11-26-switzerland-approves-57-jurisdictions-for-crypto-data-exchange-from-2028-446821",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "The Block",
-        "title": "随着熊市的持续，现货比特币 ETF 有望创下有记录以来最糟糕的一个月",
-        "summary": "Spot bitcoin ETFs have already hit record monthly net outflows of $5.39 billion in November, with several trading days remaining.",
-        "url": "https://www.theblock.co/news/markets/2026-11-26-spot-bitcoin-etfs-worst-month-november-446814",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "Financial Times",
-        "title": "人工智能风险引发美国交易波动后，全球股市持稳",
-        "summary": "Tech shares hit this month by fears over whether an AI boom can be sustained",
-        "url": "https://www.ft.com/content/6e217409-9fbb-456c-b405-2eb15bb69679?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "Financial Times",
-        "title": "中国反击特朗普关税威胁",
-        "summary": "Levies follow investigation into whether countries give their own companies unfair subsidies",
-        "url": "https://www.ft.com/content/31ae0162-f946-4e2c-b656-1930baea19d0?syn-25a6b1a6=1",
-        "source": "Financial Times",
+        "tag": "Seeking Alpha",
+        "title": "午间须知：奥驰亚集团关注帝国品牌、安桥管道交易等",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4676906-midday-need-to-know-altria-eyes-imperial-brands-enbridge-pipeline-deal-and-more?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
       },
       {
         "date": "2026-11-26",
         "tag": "CNBC Markets",
-        "title": "中国电动汽车公司表示，机器人将在短短 1-2 年内完成家务活",
-        "summary": "Xpeng Co-President Brian Gu shared his humanoid robot predictions with CNBC in an interview Thursday.",
-        "url": "https://www.cnbc.com/2026/11/26/china-ev-xpeng-humanoid-robots-household-chores.html",
+        "title": "半导体芯片是新的石油。这就是为什么",
+        "summary": "Semiconductor exports overtook oil and gas for the first time in 2026, as the AI boom fueled chip demand.",
+        "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
+        "source": "CNBC Markets",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "Seeking Alpha",
+        "title": "Innovator Premium Income 15 Buffer ETF - 1 月份宣布派息 0.10 美元",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4676905-innovator-premium-income-15-buffer-etf-january-declares-0_10-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "Financial Times",
+        "title": "巴勃罗·埃尔南德斯·德科斯赢得欧洲央行行长竞选",
+        "summary": "Spanish economist set to succeed Christine Lagarde after Dutch government ends support for rival candidate Klaas Knot",
+        "url": "https://www.ft.com/content/88a0691a-6ce8-4c97-abf4-7aee0351fd51?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "The Block",
+        "title": "代币化的人择持有者在三天内翻了一番",
+        "summary": "The Cash Leg Moves Onchain An onchain trade requires both the tokenized asset itself and an onchain payment that clears it. Most of this year’s progress has been focused on the asset. Last week bank money started to move onchain too. Last Tuesday, Fed Governor Christopher Waller said that central bank money needs to stay […]",
+        "url": "https://www.theblock.co/newsletters/tokenization-briefing/2026-11-26-tokenized-anthropic-holders-doubled-in-3-days-446013",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "Financial Times",
+        "title": "安德鲁·贝利 (Andrew Bailey) 表示，未发布的人工智能模型引发了加密问题",
+        "summary": "Breakthroughs in mathematics have stoked fears that data across financial systems is under threat",
+        "url": "https://www.ft.com/content/450920b9-82b8-4a66-960b-5740aa7f94ae?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "Financial Times",
+        "title": "以色列艾森科特采取措施取代内塔尼亚胡",
+        "summary": "Opposition leader’s deals with two parties advance plans to oust prime minister",
+        "url": "https://www.ft.com/content/a0731abb-c7bf-421b-9486-682114c705ff",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "The Block",
+        "title": "摩根大通表示，Strategy 的资产净值倍数创历史新低，标志着比特币“投降”",
+        "summary": "JPMorgan analysts said Strategy's valuation relative to its bitcoin holdings has hit a record low, signaling bitcoin \"capitulation.\"",
+        "url": "https://www.theblock.co/news/markets/2026-11-26-jpmorgan-bitcoin-capitulation-strategy-low-nav-multiple-447007",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "CNBC Markets",
+        "title": "买家要小心吗？英伟达的波动暴露了单股 ETF 的风险",
+        "summary": "ETF Action founding partner Mike Akins and GraniteShares CEO Will Rhind react to Nvidia's sharp losses and latest comeback.",
+        "url": "https://www.cnbc.com/2026/11/26/nvidias-volatile-swings-expose-risks-of-single-stock-etfs.html",
         "source": "CNBC Markets",
         "region": "en",
         "category": "投资"
@@ -115,50 +155,10 @@
       {
         "date": "2026-11-26",
         "tag": "MarketWatch",
-        "title": "感恩节股市开市吗？答案可能会让你感到惊讶。",
-        "summary": "The answer to the question of whether the stock market is open on Thanksgiving isn’t a simple yes or no, as the major exchanges are closed, but trading of equity futures is open for part of the day.",
-        "url": "https://www.marketwatch.com/story/is-the-stock-market-open-for-thanksgiving-the-answer-might-surprise-you-e68114d4?mod=mw_rss_topstories",
+        "title": "我已经 70 多岁了，购买了一辆新的 BMW X1。我应该把我唯一的儿子放在头衔上吗？",
+        "summary": "“Given my age, I never make a major new purchase without thinking about the future.”",
+        "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
         "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "The Block",
-        "title": "BIT 表示，欧洲唯一的现货比特币 ETF 在瑞士开始交易",
-        "summary": "BIT Asset Management's BBIT fund debuted on SIX Swiss Exchange with 350 BTC in assets and a 0.19% annual expense ratio.",
-        "url": "https://www.theblock.co/news/markets/2026-11-26-swiss-bitcoin-etf-bbit-begins-trading-europes-only-446724",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "The Block",
-        "title": "富达 (Fidelity) 向 Chainlink ETF 提交文件、马斯克的 X 在所谓的比特币内容农场案件中赢得裁决等等",
-        "summary": "In today's newsletter, Fidelity files for spot Chainlink ETF; Musk's X wins ruling in alleged bitcoin content-farm case; and more.",
-        "url": "https://www.theblock.co/newsletters/the-daily/2026-11-26-fidelity-chainlink-etf-musk-x-ruling-alleged-bitcoin-content-farm-case-more-crypto-news-446755",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "CNBC Markets",
-        "title": "市场可能对风险最错误定价的领域：人工智能繁荣、波动性、高收益债券",
-        "summary": "The AI boom could trigger a recession, but data centers remain an attractive investment opportunity, a hedge fund manager said.",
-        "url": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html",
-        "source": "CNBC Markets",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "Financial Times",
-        "title": "随着人工智能叙事的转变，软件股幸免于科技股暴跌",
-        "summary": "Semiconductor and software shares now neck-and-neck in 2026 as investors think again about the technology’s winners and losers",
-        "url": "https://www.ft.com/content/90b82a64-4f58-45d7-8a6a-4c2730545b65?syn-25a6b1a6=1",
-        "source": "Financial Times",
         "region": "en",
         "category": "投资"
       }
@@ -328,80 +328,10 @@
     "web3": [
       {
         "date": "2026-11-26",
-        "tag": "CoinDesk",
-        "title": "英伟达出货冻结和美国芯片限制令人工智能股承压",
-        "summary": "U.S. export controls have halted Nvidia server shipments to four Southeast Asian countries and put billions in data centre financing under review.",
-        "url": "https://www.coindesk.com/markets/2026/11/26/nvidia-shipment-freeze-and-u-s-chip-curbs-put-ai-stocks-under-pressure",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "PANews",
-        "title": "渣打银行旗下加密货币业务部门Zodia Custody本周发生安全事件，部分客户信息遭泄露",
-        "summary": "PANews 11月26日消息，据路透社报道，渣打银行旗下的加密货币业务部门 Zodia Custody（管理着 300 亿美元资产）本周遭遇了安全漏洞。此次安全漏洞导致客户姓名、电子邮件地址及其他信息遭到泄露。Zodia Custody 首席执行官 Richard Clark 表示，Zodia 于周一发现的安全漏洞导致一些客户和员工信息泄露。目前尚不清楚加密资产是否受到了影响。",
-        "url": "https://www.panewslab.com/zh/articles/01a2177c-e37e-7664-a66d-2f4dff930376",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "CoinDesk",
-        "title": "纽约总检察长赢得针对加密货币交易公司 NovaTech 创始人的 14 亿美元裁决",
-        "summary": "AWS Mining and NovaTech founders Cynthia and Eddie Petion were ordered to pay $1.37 billion after defrauding hundreds of thousands of people, including 11,000 New Yorkers.",
-        "url": "https://www.coindesk.com/policy/2026/11/26/new-york-attorney-general-wins-usd1-4-billion-ruling-against-founders-of-crypto-trading-firm-novatech",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "PANews",
-        "title": "Ethena：sUSDe解除质押冷却期从1天缩短至零，且铸造手续费为零",
-        "summary": "PANews 11月26日消息，Ethena 发文表示，经风险委员会批准，sUSDe 解除质押冷却期已由 1 天缩短至零，用户解除质押时无需再等待原有冷却期。此外，sUSDe 铸造手续费为零。",
-        "url": "https://www.panewslab.com/zh/articles/01a21763-a7ba-75f7-bb74-54fc65880fbe",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-26",
         "tag": "Cointelegraph",
-        "title": "Zcash 开发人员敦促用户迁移 2% 的 ZEC 供应，以加速 Sapling 矿池退役",
-        "summary": "Zcash developers urged users to move funds out of an older shielded transaction pool over concerns that AI advances could compromise its cryptography.",
-        "url": "https://cointelegraph.com/news/zcash-users-migrate-zec-supply-sapling-pool-retirement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "PANews",
-        "title": "币安钱包将于11月26日20:00进行系统升级，部分功能将暂停服务",
-        "summary": "PANews 11月26日消息，据官方公告，为了提升系统性能和服务稳定性，币安钱包将于 11 月 26 日 20:00（UTC+8）进行系统升级。升级期间，用户的资产安全不受影响，部分功能将暂停服务。预计相关功能将于 11 月 30 日 20:00（UTC+8）逐步恢复。相关功能恢复后，将通过官方社媒另行通知。 升级期间，以下在币安钱包内的功能将暂时不可用：Alpha 交易大赛奖励领取、Booster 奖励领取、以及 Referral 奖励领取。在币安钱包升级期间，用户可正常交易代币。用户在此期间正常产生的活动及返佣奖励将持续累计，可在功能恢复后正常领取。",
-        "url": "https://www.panewslab.com/zh/articles/01a21755-6880-770e-97d4-d45e28ac6948",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "PANews",
-        "title": "HTX DAO大使Molly亮相「港股100强」财富论坛：TRX是过去几年Web3表现最好的项目之一",
-        "summary": "PANews 11月26日消息，2026香港财富管理高峰论坛暨第十三届「港股100强」颁奖典礼今日在香港会议展览中心举行。HTX DAO大使Molly受邀出席，并参加「2027财富管理与资产配置」主题 Panel 讨论。 Molly针对Web3的财富管理模式发表了看法，她表示，TRX是过去几年Web3表现最好的项目之一。从TRON生态发展到孙宇晨（Justin Sun）相关生态布局，再到火币HTX在数字资产交易与服务领域的持续建设，Web3生态正在不断拓展应用场景与资产价值。她同时指出，RWA的发展不仅依赖技术与资产创新，更需要品牌建设、市场信任与生态影响力作为长期支撑。",
-        "url": "https://www.panewslab.com/zh/articles/01a21754-00f0-71d5-ba6a-a8d56abf4b75",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "Cointelegraph",
-        "title": "比特币 ETF 11 月资金流出量突破 5B 美元，摩根士丹利逆势上涨",
-        "summary": "The Morgan Stanley Bitcoin Trust drew $114.1 million in monthly net inflows through Wednesday, while US spot Bitcoin ETF outflows reached $5.39 billion.",
-        "url": "https://cointelegraph.com/markets/morgan-stanley-bitcoin-etf-trend-outflows-november?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "币安在 $6.3B 黑客攻击四周后完成提款恢复",
+        "summary": "The announcement concludes a phased withdrawal recovery that began on Nov. 1, when Binance restored Bitcoin withdrawals following the record crypto theft.",
+        "url": "https://cointelegraph.com/news/binance-completes-withdrawal-recovery-four-weeks-after-63b-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
@@ -409,80 +339,150 @@
       {
         "date": "2026-11-26",
         "tag": "Cointelegraph",
-        "title": "瑞士首只现货比特币ETF开盘上涨0.6%",
-        "summary": "The spot Bitcoin ETF will be backed by Bitcoin held in cold storage at a Swiss bank, unlike prior Bitcoin ETPs structured as debt securities.",
-        "url": "https://cointelegraph.com/markets/bit-debuts-switzerlands-first-spot-bitcoin-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "Coinbase 表示，英国在 DeFi 监管方面“犯了错误”",
+        "summary": "Coinbase and Stand With Crypto argue that the FCA’s proposed DeFi rules could leave UK users without regulated access to decentralized finance.",
+        "url": "https://cointelegraph.com/news/uk-wrong-defi-regulation-coinbase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
       },
       {
         "date": "2026-11-26",
-        "tag": "CoinDesk",
-        "title": "70 亿美元的比特币期权周五到期，最大的赌注看起来与 10 月份截然不同",
-        "summary": "Bitcoin options positioning has flipped bearish ahead of Friday’s $7 billion expiry, with traders piling into downside protection as volatility rises.",
-        "url": "https://www.coindesk.com/markets/2026/11/26/usd7-billion-of-bitcoin-options-expire-friday-and-the-biggest-bets-look-starkly-different-from-october",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "CoinDesk",
-        "title": "Zcash 开发者希望用户从旧的隐私系统中转移 3 亿美元",
-        "summary": "Zakura is pushing to stop new payments into Sapling sooner, citing the possibility that AI-assisted discoveries could weaken the math protecting it.",
-        "url": "https://www.coindesk.com/tech/2026/11/26/zcash-developers-want-users-to-move-usd300-million-out-of-an-older-privacy-system",
-        "source": "CoinDesk",
+        "tag": "Decrypt",
+        "title": "什么是自我保管？如何持有自己的加密密钥",
+        "summary": "Self-custody means holding your own crypto instead of trusting an exchange. Here's how it works, the wallets involved and the risks.",
+        "url": "https://decrypt.co/resources/what-is-self-custody-how-to-hold-your-own-crypto-keys",
+        "source": "Decrypt",
         "region": "en",
         "category": "web3"
       },
       {
         "date": "2026-11-26",
         "tag": "Cointelegraph",
-        "title": "这是今天加密货币领域发生的事情",
-        "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "title": "日本考虑加强对 DeFi、自我托管钱包的监管",
+        "summary": "Japan’s financial regulator is exploring measures to curb illicit finance risks, including potential restrictions on access to DeFi services.",
+        "url": "https://cointelegraph.com/news/japan-tighter-oversight-defi-self-custodial-wallets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
       },
       {
-        "date": "2026-11-25",
+        "date": "2026-11-26",
         "tag": "Decrypt",
-        "title": "中国谷歌刚刚免费发布其快速的新人工智能模型",
-        "summary": "Baidu has released the weights of its new high-speed reasoning model, giving developers a commercially usable alternative to proprietary AI services from OpenAI, Google, and Anthropic",
-        "url": "https://decrypt.co/384015/china-google-released-fast-new-ai-model-free-baidu-ernie",
+        "title": "研究显示，人工智能股票在抛售之前显示出互联网泡沫信号",
+        "summary": "A study of 170 years of financial journalism suggests AI stocks rivaled dot-com bubble levels, but estimates vary.",
+        "url": "https://decrypt.co/384066/before-the-sell-off-ai-stocks-showed-dot-com-level-bubble-signals-study",
         "source": "Decrypt",
         "region": "en",
         "category": "web3"
       },
       {
-        "date": "2026-11-25",
+        "date": "2026-11-26",
+        "tag": "PANews",
+        "title": "研究者演示Bitcoin Core钱包隐私漏洞",
+        "summary": "据X平台账号发布的推文，一名研究者演示了Bitcoin Core钱包的一项隐私漏洞。在受控模拟中，该漏洞能以100%的准确率将比特币地址与其关联节点关联起来。上述说法为研究者演示结果，尚未见独立验证。",
+        "url": "https://www.panewslab.com/zh/articles/01a21938-cd32-73d3-9cce-d5d4f50f6526",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "PANews",
+        "title": "Binance称10月安全事件所致提币暂停已全面解除",
+        "summary": "据EQN Binance Monitor监测，Binance公告称，提现恢复工作已完成，10月安全事件导致的提币暂停已全面解除。Binance表示，少数网络因维护或计划升级暂时暂停提币，仅影响极小比例常规流量，与本次恢复工作无关。Binance称用户资产仍全额备付、账目完整，用户可在储备证明页面自行验证至少1:1备付。Binance同时提醒警惕钓鱼，称不会索要密码、2FA验证码或助记词，也不会以“加速提币”“优先处理”或转入“Binance金库”为由联系用户。",
+        "url": "https://www.panewslab.com/zh/articles/01a2192a-4732-7612-981b-c1be078ab792",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "Cointelegraph",
+        "title": "西班牙采取行动授予金融监管机构冻结加密货币账户的权力",
+        "summary": "A new decree would allow Spain’s financial intelligence unit to suspend crypto accounts, with firms facing fines for noncompliance.",
+        "url": "https://cointelegraph.com/news/spain-moves-grant-financial-watchdog-power-freeze-crypto-accounts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-26",
         "tag": "Decrypt",
-        "title": "英伟达丑闻中心的女性爱丽丝·黄 (Alice Huang) 发生了什么？",
-        "summary": "U.S. intelligence found no evidence that Beijing directed Alice Huang to spy on Nvidia’s CEO, but the former Megaspeed executive still faces entry bans and scrutiny of business ties.",
-        "url": "https://decrypt.co/384001/what-happened-alice-huang-nvidia-spy-scandal",
+        "title": "感恩节复苏阴云密布，比特币维持在 6 万美元以上",
+        "summary": "Bitcoin and major altcoins rose slightly on Thanksgiving, but a bearish death cross suggests crypto remains weaker than stocks.",
+        "url": "https://decrypt.co/384079/bitcoin-holds-above-60k-as-death-cross-clouds-thanksgiving-recovery",
         "source": "Decrypt",
         "region": "en",
         "category": "web3"
       },
       {
-        "date": "2026-11-25",
+        "date": "2026-11-26",
+        "tag": "CoinDesk",
+        "title": "开发者发现，一笔小额支付就能暴露比特币钱包背后的IP地址",
+        "summary": "A Bitcoin Core contributor found that the wallet's habit of resending stuck payments lets anyone link an address to the computer watching it, for under 35 cents.",
+        "url": "https://www.coindesk.com/tech/2026/11/26/a-tiny-payment-can-expose-the-ip-address-behind-a-bitcoin-wallet-developer-finds",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "PANews",
+        "title": "Aave Pro在以太坊和Avalanche市场推出杠杆功能",
+        "summary": "Aave在X平台发文称，Aave Pro已为Aave V4的以太坊和Avalanche（AVAX）市场推出杠杆功能。用户现可在单笔交易中开立杠杆Aave头寸，增加对受支持资产的敞口。",
+        "url": "https://www.panewslab.com/zh/articles/01a218d0-343c-7516-bb26-d3266caa4f5d",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "CoinDesk",
+        "title": "比特币的休眠供应量增加，这是之前熊市触底阶段出现的行为",
+        "summary": "More bitcoin is sitting untouched onchain as the price holds around $60,000, some 50% below its peak,",
+        "url": "https://www.coindesk.com/markets/2026/11/26/bitcoin-s-dormant-supply-rises-a-behavior-seen-during-previous-bear-market-bottoming-phases",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-26",
         "tag": "Decrypt",
-        "title": "1Password 泄露事件并未影响您的金库。网络钓鱼电子邮件可能",
-        "summary": "An attacker compromised an employee’s GitHub account to reach 1Password’s backend and copy customer names and emails, but the company says vault contents, encryption keys and your Secret Key were never exposed.",
-        "url": "https://decrypt.co/384002/1password-breach-vaults-phishing-emails",
+        "title": "西班牙允许其金融情报部门在没有法院命令的情况下冻结加密账户",
+        "summary": "Sepblac can now suspend crypto, bank and payment accounts for up to five working days, with courts deciding on any extension.",
+        "url": "https://decrypt.co/384063/spain-lets-its-financial-intelligence-unit-freeze-crypto-accounts-without-a-court-order",
         "source": "Decrypt",
         "region": "en",
         "category": "web3"
       },
       {
-        "date": "2026-11-25",
-        "tag": "Decrypt",
-        "title": "另一家比特币矿业公司标记了重新分配奖励的“算力劫持”攻击",
-        "summary": "Braiins says an attacker exploited the unencrypted Stratum V1 protocol and internet route hijacking to impersonate mining pools, striking over 1,000 sites in a single second.",
-        "url": "https://decrypt.co/383999/another-bitcoin-mining-firm-hashrate-hijacking-attacks",
-        "source": "Decrypt",
+        "date": "2026-11-26",
+        "tag": "PANews",
+        "title": "Injective向SEC提交22页政策信函",
+        "summary": "据X平台账号2207129125发布的信息，Injective已提交一份22页的政策信函，敦促美国证券交易委员会（SEC）扩大其针对代币化股票和RWA的豁免框架。",
+        "url": "https://www.panewslab.com/zh/articles/01a218b7-4212-773f-9c0f-d5d7a48679de",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "CoinDesk",
+        "title": "顾问的加密货币：在信任加密货币交易所之前要问的四个问题",
+        "summary": "",
+        "url": "https://www.coindesk.com/coindesk-indices/2026/11/26/crypto-for-advisors-four-questions-to-ask-before-trusting-a-crypto-exchange",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "CoinDesk",
+        "title": "西班牙赋予反洗钱部门在没有法官的情况下冻结加密货币账户的权力",
+        "summary": "Under existing rules, Sepblac could only suspend accounts when requested by a foreign financial intelligence unit.",
+        "url": "https://www.coindesk.com/business/2026/11/26/spain-gives-anti-laundering-unit-power-to-freeze-crypto-accounts-without-a-judge",
+        "source": "CoinDesk",
         "region": "en",
         "category": "web3"
       }
@@ -490,10 +490,90 @@
     "科技": [
       {
         "date": "2026-11-26",
+        "tag": "TechCrunch AI",
+        "title": "英伟达暂停向东南亚供应芯片",
+        "summary": "Nvidia has told manufacturing partners to pause server shipments to Malaysia, Singapore, Thailand and Indonesia as the U.S. tightens its push to keep AI chips out of China.",
+        "url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "Ars Technica",
+        "title": "福特推出GT41，希望再次赢得勒芒",
+        "summary": "Ford enters the World Endurance Championship in 2027 with the new prototype.",
+        "url": "https://arstechnica.com/cars/2026/11/ford-unveils-the-gt41-as-it-hopes-to-win-le-mans-again/",
+        "source": "Ars Technica",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-26",
         "tag": "IT之家",
-        "title": "OpenAI 再度抛出重要数学成果：宣称证明矩阵乘法指数为 9/4",
-        "summary": "IT之家 11 月 26 日消息，OpenAI 本月 24 日再度抛出一项重要数学成果， 宣称其已证明矩阵乘法指数 ω 恰好为 9/4 。该企业已在今年 10 月证得 ω≤9/4，此次则证得 ω≥9/4，从而得到 ω=9/4。 矩阵乘法指数 ω 描述的是：当 n 足够大时，两个 n×n 矩阵相乘最优算法所需算术运算次数随 n 增长的渐进幂指数；更严格地说，ω 是所有可达复杂度指数的下确界。 矩阵乘法 应用广泛 ，在机器学习、图像处理等领域都可以找到其身影。ω 不仅刻画矩阵乘法理论算法在渐进意义下的最优指数，也 与其它一系列重要复杂度问题相关 。 若 OpenAI 的证明无误，则： 对任意 X＞9/4，存在一种矩阵乘法算法及常数 C X ＞0，使得对所有充分大的 n ，其算术运算次数不超过 C x · n x ； 对任意 Y＜9/4，不存在一种矩阵乘法算法及常数 C Y ＞0，使得对所有充分大的 n，其算术运算次数不超过 C Y · n Y 。 需要注意的是，ω 是一个渐进量，对应着矩阵规模趋于无穷大时的结果。实际应用中还受到常数因子、内存访问、并行计算、硬件结构等因素影响。 参考 https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026",
-        "url": "https://www.ithome.com/1/033/050.htm",
+        "title": "Epic 喜加一：《Bread and Fred》游戏免费领取",
+        "summary": "IT之家 11 月 27 日消息，Epic 本周送出的游戏是《Bread and Fred》，下周送出的游戏是《Strange Antiquities》。 领取链接 ： 《Bread and Fred》 IT之家附《Bread and Fred》游戏简介： Bread & Fred 是一款具有挑战性的合作平台游戏，两名玩家必须合作跳跃并爬上雪山之巅。扮演 Bread 和 Fred，进行令人恼火、有时甚至令人发狂的攀爬，每次跳跃都需要精确度。每一次着陆，你都会离山顶更近，离掌握平台跳跃更近一步，但从山上掉下来的距离会更远。 企鹅机制： - 摇摆到达远处的平台！ Bread 和 Fred 彼此依恋。这意味着你们不仅会一起坠落，而且还可以充分利用动量来摆动并推动彼此，超越任何一只企鹅所能跳跃的高度。确保其中一人锚定在地面上，否则你们都会摔倒！ - 尽可能地抓住墙壁！ 企鹅的小手不是很好，但你可以和你的伙伴一起挂在墙上几秒钟，摆动它们并克服下一个障碍。不过要小心。这些企鹅很胖，所以你坚持不了多久。快行动吧！ - 单人模式！ 找不到你的企鹅伙伴？把你的绳子绑在 Jeff 身上（一块石头！），然后用它代替！攀爬完全取决于你和你的技巧，但这也意味着当你跌倒时，你没有人可以责怪...... 传说，凭借这些技能，一些企鹅英雄成功登上了顶峰。你会成为他们中的一员吗？ 每次跌倒都会受伤，但要努力学习并笑过。仔细思考每次跳跃并掌握企鹅登顶的技能。 对于最疯狂的登山者来说，《Bread & Fred》提供了快速奔跑模式，这样你就可以竞争并被加冕为地球上最好的企鹅。 这座山在等着你。完成你的使命。互相配合，就能走上更远的山。尽量不要跌倒（跌倒太多）。祝你好运！！",
+        "url": "https://www.ithome.com/1/033/132.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "TechCrunch AI",
+        "title": "Grand Theft Auto VI 证明了为什么效率不是一种美德",
+        "summary": "On the same day that Anthropic entered the public market, a painstakingly human video game became one of most successful entertainment launches of all time.",
+        "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "Solidot",
+        "title": "今天的老年人相比上一代人记忆力衰退放缓",
+        "summary": "今天的老年人相比上一代人认知衰退更慢记忆更好。一项针对 1910-1964 年间出生的 21.9 万人的研究发现，出生年份每向后推移十年，60 岁时的记忆力得分便会提高 10%。全世界很多国家的人口正在老龄化，患有痴呆症的人数也在上升。但过去四十年美国人任何年龄患痴呆症的个人风险下降了三分之二。研究人员推测，记忆力的提升可能得益于童年时期更好的教育、医疗保健和营养状况；而认知功能衰退速度的放缓，则可能受到人生后期多种因素的影响，例如心血管疾病和代谢性疾病治疗水平的改善。",
+        "url": "https://www.solidot.org/story?sid=86006",
+        "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "Solidot",
+        "title": "英国人性生活频率大幅下降",
+        "summary": "根据发表在《柳叶刀》期刊上的一项研究，英国人性生活频率大幅下降，从 1990 年每月四次降至如今的每月两次；三分之一的 16–24 岁年轻人表示从未有过性行为，而 1990-2010 年间这一比例是五分之一；过去十年同性性行为的报告在增加；观看网络色情非常流行，一半年轻女性和近九成年轻男性表示过一年曾看过色情；无子女女性明确表示不打算生育的比例过去十年间翻了一番；等等。",
+        "url": "https://www.solidot.org/story?sid=86005",
+        "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "IT之家",
+        "title": "瑞士发生五起 AI 智能体网络攻击，电力供水通信系统遭入侵",
+        "summary": "IT之家 11 月 26 日消息，据路透社报道，瑞士联邦网络安全局（BACS）周四通报，过去几天瑞士发生五起网络攻击，攻击者使用 AI 智能体针对企业以及关键基础设施运营方发起入侵。 IT之家注意到，该局在公告中表示，五起攻击里有四起攻击得手，相关系统遭到入侵。遭到攻击的对象包含三家关键基础设施运营主体，据瑞士公共广播公司 SRF 介绍，它们分别是电力、供水以及通信服务供应商。 瑞士联邦网络安全局没有透露攻击的幕后主体信息。机构建议相关企业落实防护手段，其中包括定期开展网络安全检测。",
+        "url": "https://www.ithome.com/1/033/131.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "Solidot",
+        "title": "已故网络工程师 Dave Täht 获得 Jonathan B. Postel 服务奖",
+        "summary": "2025 年 4 月 1 日去世的网络工程师 Dave Täht 获得了互联网协会颁发的 Jonathan B. Postel 服务奖。今年初路由器发行版 OpenWrt 曾为纪念他而以他的名字命名 v25.12.0。互联网协会称：在 Täht 看来，视频通话中断、网页加载缓慢、进度条冻结——这些现象统称为缓冲区膨胀（bufferbloat）——都是阻碍互联网连接的障碍。所谓缓冲区膨胀是指数据在负责转发流量的硬件设备中滞留的时间。Täht 致力于寻找并推广解决网络拥塞的方案，旨在让人们真正享受到互联网的全部潜能。",
+        "url": "https://www.solidot.org/story?sid=86004",
+        "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "IT之家",
+        "title": "华为 HarmonyOS 五大技术品牌公开，含鸿蒙星河互联、星盾安全、方舟引擎、小艺、空间计算",
+        "summary": "IT之家 11 月 26 日消息，在 2026 HarmonyOS 创新技术沟通会上，华为 HarmonyOS 五大技术品牌正式公开，含鸿蒙星河互联、鸿蒙星盾安全、方舟引擎、鸿蒙智能 & 小艺、鸿蒙空间计算。 据IT之家了解，华为鸿蒙 HarmonyOS 终端设备数在 11 月 24 日官宣破亿。同时，鸿蒙操作系统可获取的应用和服务超 46 万，注册开发者超 1,200 万。 华为官方表示，这标志着鸿蒙生态跨越规模临界点，进入发展新阶段，同时也是中国自主操作系统规模化应用的重要进展。",
+        "url": "https://www.ithome.com/1/033/130.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -501,69 +581,29 @@
       {
         "date": "2026-11-26",
         "tag": "IT之家",
-        "title": "育碧《雷曼：传奇再叙》开启预购：Steam 国区 168 元起，游戏 12 月 3 日发售",
-        "summary": "IT之家 11 月 26 日消息，育碧现已发布《雷曼：传奇再叙》游戏剧情预告片，同步宣布游戏开启预购，本作将于 12 月 3 日发售，以 Steam 国区为例， 游戏标准版定价为 168 元，豪华版定价为 208 元 ，IT之家附游戏商品页（ https://store.steampowered.com/app/4084710/%E9%9B%B7%E6%9B%BC%E4%BC%A0%E5%A5%87%E5%86%8D%E5%8F%99/ ?l=schinese ）。 公开信息显示，本作是经典横版平台动作游戏《雷曼：传奇》的重制版，游戏在保留原作核心玩法与关卡设计的基础上，对画面表现和内容进行升级，支持 4K 超清画质，新增收藏品与限定奖励，以带来更适合现代平台的游玩体验。 IT之家附本作 PC 版配置要求如下： 项目 最低 推荐 2K 4K 特效设定 1080P，60FPS 1080P，60FPS 2K，60FPS 4K，60FPS CPU 英特尔酷睿 i3-8100 AMD 锐龙 3 3100 英特尔酷睿 i5-8400 AMD 锐龙 5 3600 英特尔酷睿 i5-8400 AMD 锐龙 5 3600 英特尔酷睿 i5-9400 AMD 锐龙 5 3600 GPU 英伟达 GTX 1660（6GB） AMD Radeon RX 5500 XT（4GB） 英特尔 Arc A580（8GB） 英伟达 RTX 3070（8GB） AMD Radeon RX 5700（8GB） 英特尔 Arc A750（8GB） 英伟达 RTX 3070（8GB） AMD Radeon RX 6750 XT（12GB） 英特尔 Arc B580（12GB） 英伟达 RTX 4080（16GB） AMD Radeon RX 7900 XTX（24GB） 内存 8GB（双通道） 16GB（双通道） 系统 Windows 10（64 位） Windows 11（64 位） 存储空间 33GB 游戏图赏：",
-        "url": "https://www.ithome.com/1/033/049.htm",
+        "title": "宁德时代预告 30#巧克力电池：首发 100kWh 版本，支持实现 3s 级零百加速",
+        "summary": "IT之家 11 月 26 日现场消息，在今晚的 2026 华为乾崑生态大会上，华为智能汽车解决方案 BU CEO 靳玉志正式官宣华为乾崑智驾 × 宁德时代巧克力换电达成合作，并发布了智能补能解决方案。 宁德时代市场联席总裁杨峻还在现场预告了 30#巧克力电池，其定位是“更全能的电池”。 长续航： 首发 100kWh 版本 ，支持实现 700+km 续航； 可升级：不同档位电量，按需配电； 快补能：99 秒极速换电，超充 10 分钟 400km 续航； 强动力：600kW 峰值放电功率， 支持实现 3s 零百加速 ； 长寿命：锁止机构一天一换可用 27 年，在网电池终身质保； 高安全：振动耐久测试达国标 1.5 倍， 巧克力电池管家 7×24 小时监测 。 据IT之家今日早些时候报道，奕境汽车董事长汪俊君今晚宣布，华为乾崑 × 奕境汽车 × 宁德时代将共建新一代智能换电生态，全球首款智能换电车型官宣落地奕境品牌。",
+        "url": "https://www.ithome.com/1/033/129.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-26",
-        "tag": "IT之家",
-        "title": "绿联推出 P8 液冷磁吸自带线充电宝：10000mAh、45W 有线、15W 无线，459 元",
-        "summary": "IT之家 11 月 26 日消息，绿联推出 P8 液冷磁吸自带线充电宝，将于 12 月 3 日 10:00 开售， 售价 459 元 。 据介绍，这款充电宝搭载冰瀑液冷温控矩阵，通过智能微泵液冷技术，可将充电宝 峰值温度再降 13℃，散热效率提升 38% 。 绿联 P8 支持有线和无线充电，自带 45W 快充 C 线，支持苹果 AVS 动态协议；支持 15W Max 磁吸快充，兼容 MagSafe；采用 ATL 钴酸锂电芯，能量密度 773Wh/L，获得新国标认证。 绿联 P8 搭载 TFT 智能数显屏，可实时显示充电数据，支持 PD、AVS、QC、AFC、SCP、FCP、PPS 等主流快充协议。 IT之家附产品参数： 京东 绿联 P8 冰感充电宝磁吸带线快充 10000 毫安 459 元 直达链接",
-        "url": "https://www.ithome.com/1/033/048.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "IT之家",
-        "title": "鸿蒙智行官宣尊界汽车将亮相广州车展，消息称 SUV 车型会在“小黑屋”展示",
-        "summary": "IT之家 11 月 26 日消息，鸿蒙智行官方今日宣布，尊界汽车将亮相广州车展， 包含尊界 S800 典藏大观、尊界 V800 和尊界 V680 。地点位于广州琶洲广交会展馆 18-2 馆 18204 鸿蒙智行展台。 据IT之家此前报道，博主 @电车总裁 在 11 月 23 日发文透露，鸿蒙智行尊界 SUV 将亮相广州车展， 不过该车预计是在“小黑屋”展示 ，仅部分受邀人士可提前参观。 今年 9 月，华为常务董事、产品投资评审委员会主任、终端 BG 董事长余承东现身合肥鸿蒙智行门店。 在接受门店工作人员提问时，余承东表示， 这台新车“快了”，明年年初可能就要陆续上市，大概在 2、3 月份 。他透露，尊界 SUV 非常非常高端。新车在外观、内饰、高级感、豪华配置、科技配置都是超乎想象的。",
-        "url": "https://www.ithome.com/1/033/047.htm",
-        "source": "IT之家",
+        "tag": "Solidot",
+        "title": "基因编辑猪肾在人体内正常工作一年",
+        "summary": "基因编辑猪肾在人体内正常工作一年。58 岁的美国新罕布什尔州居民 Molly Falco 迎来了接受猪肾移植一周年的重要时刻。去年 11 月 22 日，她在麻省总医院接受了基因编辑猪肾移植手术。过去一年里，猪肾持续承担清除体内毒素、产生尿液及调节体液平衡等功能，让长期饱受肾病困扰的她逐渐恢复正常生活。如今她重新开起了汽车，能够为家人做饭，甚至计划恢复滑雪。美国约 9 万人正在等待肾脏移植，而 2025 年实际完成的肾移植手术不足 2.6 万例。由于猪器官在大小和部分生理功能上与人体器官相近，猪成为异种器官移植的重要供体来源。 人体免疫系统会识别猪细胞表面的特定分子，并攻击移植器官。研究人员通过基因编辑，去除猪体内部分容易引起排斥的基因，同时引入有助于提高人体兼容性的人类基因，以减轻免疫系统对移植器官的攻击。Falco 接受的猪肾来自生物技术公司 eGenesis 培育的基因编辑猪，共经过 69 处基因编辑。其中 3 处用于去除容易引发免疫排斥的猪抗原，7 处用于引入提高人体兼容性的人类基因，另外 59 处用于使猪内源性逆转录病毒失活，降低潜在的跨物种感染风险。",
+        "url": "https://www.solidot.org/story?sid=86003",
+        "source": "Solidot",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-26",
         "tag": "钛媒体",
-        "title": "阿莫迪自明本志：我本无意让AI掌权",
-        "summary": "天地可鉴啊！",
-        "url": "https://www.tmtpost.com/8219202.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "钛媒体",
-        "title": "美国众议院发布《美国处方》，对中国创新药意味着什么",
-        "summary": "对中国创新药来说，与其花时间反驳一份国会报告，不如把它当成一份竞争指南，对手已经把考题写在上面了。",
-        "url": "https://www.tmtpost.com/8218787.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "钛媒体",
-        "title": "捅了秋游的窝，乐高乐园挤满了鸡娃的家长",
-        "summary": "最紧要是父母满意。",
-        "url": "https://www.tmtpost.com/8219201.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "钛媒体",
-        "title": "阿里加速转向国产算力的核心逻辑，被严重误读了",
-        "summary": "不仅仅是因为自主可控。",
-        "url": "https://www.tmtpost.com/8218607.html",
+        "title": "纯电销量过半，理想汽车的生意变了",
+        "summary": "纯电销量占比过半，理想汽车经营逐步修复，但盈利模式仍面临重构。",
+        "url": "https://www.tmtpost.com/8218517.html",
         "source": "钛媒体",
         "region": "cn",
         "category": "科技"
@@ -571,81 +611,41 @@
       {
         "date": "2026-11-26",
         "tag": "量子位",
-        "title": "90 秒自动换装补能，具微科技“潘多拉”支撑机器人无人化值守",
-        "summary": "全栈方案破解工业机器人连续作业难题",
-        "url": "https://www.qbitai.com/2026/11/512972.html",
+        "title": "381个AI直播冲刺证明P=NP！把GitHub干崩了",
+        "summary": "已跑了超过一万次会话，在Lean4里验证通过了2400多条引理",
+        "url": "https://www.qbitai.com/2026/11/513021.html",
         "source": "量子位",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-26",
-        "tag": "爱范儿",
-        "title": "2026 年，国产模型还能追上 Opus 5.5 吗",
-        "summary": "这个九月就发布的模型 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1695555?utm_source=rss&utm_medium=rss&utm_campaign",
-        "source": "爱范儿",
+        "tag": "量子位",
+        "title": "AI 3D界的“X光”来了！一图直出巴洛克雕塑，3D打印开箱即用",
+        "summary": "还得是科班尖子生",
+        "url": "https://www.qbitai.com/2026/11/512981.html",
+        "source": "量子位",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-26",
+        "tag": "钛媒体",
+        "title": "信邦智能拟斥28.56亿“蛇吞象”，英迪芯微第一大股东退出套现9.61亿",
+        "summary": "一场各取所需的双向奔赴。",
+        "url": "https://www.tmtpost.com/8219524.html",
+        "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-26",
         "tag": "The Verge AI",
-        "title": "42 个州的 AG 正试图阻止 Character.AI 出售用户的聊天内容",
-        "summary": "A coalition of 42 state attorneys general is trying to prevent Character.AI from selling off user data as it navigates Chapter 11 bankruptcy proceedings. In a deluge of nearly identical press releases, the various AGs accuse the company of planning to auction off \"the private chat histories of more than 21 million U.S. accounts - […]",
-        "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+        "title": "黄仁勋 Deepfakes 是新的热门 AI 技术",
+        "summary": "Jensen Huang is partying it up in Ibiza. In a video with nearly 6 million views on Instagram, the former CEO of Nvidia is dancing in a crowded club, champagne glass in hand, still wearing his signature black leather jacket. Suddenly, from behind him, Alice Huang - the Chinese technology executive and suspected spy he […]",
+        "url": "https://www.theverge.com/tech/1041222/jensen-huang-nvidia-scandal-deepfakes",
         "source": "The Verge AI",
         "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "Solidot",
-        "title": "艾滋病疫苗终于触手可及",
-        "summary": "本世纪初，南非 KwaZulu-Natal 省的一名年轻女性感染了 HIV。她本可能成为统计数字的一部分，但通过参与 HIV 研究她却给数百万人带来了希望。她被发现能对 HIV 病毒产生极其强烈的免疫反应。她需要在药物的帮助下才能控制病毒，但她体内的抗体被认为至今发现的最强效 HIV 抗体之一。在科学文献里她被称为 CAP256。科学家现在认为，通过模拟她感染 HIV 过程中的部分关键元素，能训练其他人的免疫系统产生同样强效的抗体去阻断多种不同的 HIV 毒株，最终研发出一种能彻底阻断 HIV 感染疫苗。CAP256 体内广谱中和抗体的存在给科学家研发疫苗带来了希望。",
-        "url": "https://www.solidot.org/story?sid=86000",
-        "source": "Solidot",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "少数派",
-        "title": "App+1｜Agora：开源、易用、好用，给 Android 用户的 LLM 聊天工具",
-        "summary": "如果你在通过 API 调用你喜欢的大模型，希望它们能像 Kimi 等商业 AI 客户端那样用着顺手，那 Agora 就是为你而来的。相信我，Agora 不会让你失望。 查看全文",
-        "url": "https://sspai.com/post/116773",
-        "source": "少数派",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "极客公园",
-        "title": "好消息，AI 可以替你打客服电话了；坏消息，电话那头也是 AI",
-        "summary": "麻烦交给 AI，生活还给用户。 网上冲浪这么多年，你一定有过这样的经历：想取消一项自动续费，却怎么都找不到入口；明明是商家多扣了钱，申请退款却要层层转接；为了几十块钱，和客服解释半个小时，最后听到一句「非常抱歉，暂时无法为您处理」。 钱不一定很多，但就是咽不下这口气。更憋屈的是，你明明有道理，却没时间跟它耗。企业有一整套客服系统，而你可能只有一个午休时间。 现在，这种不对称的关系，终于迎来改变了。 AI，尤其是 Personal AI 的出现，让消费者可以把这些生活琐事，交给 AI 来处理，无论是邮件往来，或者是 App 上的申诉，Agent 都能一键代劳。 但是，新的问题，也出现了。 好消息是，AI 终于可以替你打客服电话了。坏消息是，电话那头可能也是 AI。 一边是企业派出的 AI 客服，一边是消费者派出的 AI 助理。双方不知疲倦地讨论一笔十几美元的账单争议，真正的消费者早就去忙别的了，只剩两个 AI 还在礼貌地交涉。 听起来像个黑色幽默，但在 2026 年的硅谷，这已经是创业公司认真研究的商业问题。 10 月，企业客服 AI 公司 Decagon 推出了 Personal Agent Gateway，试图让消费者的 AI 助理直接与企业客服系统沟通。它甚至专门发表文章，讨论一种前所未有的客户： 「永远不会疲倦的客户」（The Customer Who Never Gets Tired）。 Personal Agent Gateway 框架｜图源：Decagon 一个真人被拒绝退款，可能再问两次就放弃了。但一个 AI 呢？它可以查找政策、整理证据、寻找其他解决办法，直到把事情办成，或者确定确实办不了。 最近，一款名为 Pine Computer 的产品在硅谷科技圈引起了关注。10 月，Pine AI 发布了一套专门为 AI 设计的云端计算环境，相关 X 帖子迅速传播。据团队介绍，帖子在发布当天获得了约 240 万次浏览。11 月，Pine 团队又发布了 Pine Phone。它让 AI 在操作网页、处理文件的过程中，也能直接拨打真实世界的电话。 极客公园与 Pine AI 联合创始人兼 CTO 孙雨润，在 NUS 在硅谷举办的新全球企业家论坛聊了聊。 Pine 成立于 2024 年 6 月，核心团队来自实时音视频公司声网 Agora，已完成 2500 万美元 A 轮融资。他们从一件看似不起眼的事切入：让 AI 替普通人打电话、谈账单、办退款、处理那些谁都不愿意碰的麻烦事。 外界很容易把它理解成一场 AI 对 AI 的客服攻防战。 但孙雨润并不这么认为。 「我们跟这些大公司并不是正面对抗。」 在他看来，省下几十美元的账单，只是让用户开始信任 AI 的第一步。真正的目标，是让 AI 在复杂、低效、充满各种规则的现实世界里，把事情办成。 01 「我打了五六个电话都不行， AI 一去就成了？」 2024 年，孙雨润和团队决定创业时，生成式 AI 已经开始明显改变程序员的工作方式。Cursor 逐渐流行，ChatGPT 能写代码、生成文档，但对大量不写代码的普通人来说，这场生产力革命似乎还停留在别人的电脑里。 孙雨润记得，2023 年，一张建筑工地的照片在 Reddit 上走红。比利时一家公司在尚未完工的大楼外墙上挂出巨幅广告：「Hey ChatGPT, finish this building…」（嘿，ChatGPT，来把这栋楼盖完吧。）底下还有一句：「你的技能无可替代。」 比利时建筑工地广告｜图源：Reddit 笑话背后是一种真实的割裂，制造 AI 的人每天都在享受 AI 带来的效率提升，但现实世界里，还有无数事情要靠人亲自打电话、填表格、找部门、反复沟通。 孙雨润自己也遇到过。汇丰的一张信用卡续卡寄出后，他始终没收到，想在网上重新申请却很困难，最后还是得给客服打电话。 AI 都能写网站了，怎么连找回一张信用卡都这么麻烦？ 他们于是决定，让 AI 从电脑里跳出来，真正替人办事。但很快团队发现，让 AI 开口说话并不是最难的。难的是，它能不能解决那些普通人自己都解决不了的问题。 孙雨润讲过一个案例。一名用户因公司搬迁，需要提前结束网络服务。运营商却坚持收取整个账期的费用，即使用户只使用了几天，也不愿按实际天数结算。 用户打了五六次电话，都没有解决。 Pine 接手后，先通过知识库、公开资料和历史案例寻找适用的计费规定，再带着依据联系运营商。按照孙雨润的回忆，对面的客服甚至不知道相关规定，只能请示领导，最终同意调整账单。 「很多用户会问我们，你们到底怎么做到的？我打了五六个电话他们都不同意，为什么你们一去就成了？」 这起案例涉及的具体法律依据仍待核实，但它至少揭示了一件很有意思的事： 过去，企业比消费者更了解自己的规则。现在，消费者可能第一次拥有了一个比客服更熟悉规则的助理。 Pine 为此积累了大量公司和政府机构的结构化信息。孙雨润说，这些知识可以细到某个地方政府部门负责哪类许可证、周几有人办公、提前需要准备什么材料。 「就像你在旧金山办活动，办过很多次之后，你就知道需要准备什么材料。网上随便搜一下，可能过时了，也可能根本不对。」 Pine 还尝试用符号推理，把部分现实世界的规定转化为可以检索、判断的结构化规则，减少大模型凭空编造依据的风险。 相比 AI 十秒钟写出几百行代码，知道一个县政府部门星期几有人接电话，实在不够性感。但对一名等着许可证开工的建筑承包商来说，后者可能更有价值。 当然，这些知识本身也需要持续更新，AI 同样可能引用过期的政策。但这种能力的积累，正在让 AI 从一个会回答问题的聊天机器人，逐渐变成真正有专业知识的办事员。 02 一个合格的 AI 助理， 不能每隔三分钟请示老板 有了知识，还不意味着 AI 真能独立工作。 孙雨润提到 B 站上一个很有意思的视频：一个卖瓜大哥旁边坐着年轻人，专门帮忙接电话。但电话里每问一句，年轻人就要回头请示大哥。 「你就想象自己是老板的助理，不能每个问题都去敲门问老板。」这几乎是当下不少 AI Agent 的真实写照。 看起来它替你干活，实际上每走两步，就弹出一个窗口询问是否允许。如果用户必须随时盯着，所谓自动化，不过是把客服电话里的等待音乐换成了不断弹出的手机通知。 但另一个极端同样危险。 AI 如果太有主见，为了完成任务，擅自替用户接受一笔额外费用，或者取消一项无法恢复的预订，怎么办？ Pine 因此不会设计一个默认批准所有操作的「Always Approve」按钮。 孙雨润说，他们更希望 AI 像一位真正受雇的助理，能自主处理日常事务，但遇到必须由本人决定的事情，就应该及时请示。 比如，AI 正在替你谈价格，谈到关键时刻，突然发来一句：「价格谈到两万五了，行不行？」 用户回答后，它再继续。 Pine 甚至可以通过电话加入 Google Meet，代表用户参与沟通。孙雨润把这种体验形容为谈判桌下递小纸条 ： 「现在谈到这儿了，他们的条件是这样，再往下压，他可能就不答应了，你看怎么办？」 这个比喻很形象。 我们过去想象的 AI 助理，常常是一个无所不知、随时待命的超级大脑。但真正好用的助理，可能不是话最多、最积极的那个，而是知道什么时候该闭嘴、什么时候该请示，以及什么时候必须让老板拍板的那个。 这种分寸甚至体现在非常小的细节里。 孙雨润举例，朋友约你 10 月 20 日吃饭，你只会回答「10 月 20 号可以」，而不会一本正经地说「2026 年 10 月 20 日」。 「没人会这么说话。」 尤其当 AI 要代表用户与真人沟通时，表达是否自然、是否懂得礼貌和边界，都可能影响任务能否成功。 Pine 因此会明确告诉对方自己是用户的助理。如果客服要求本人授权，就把用户拉进三方通话，让他亲口确认。 AI 要真正进入人类社会，除了足够聪明，还必须知道自己的位置。 03 企业用 AI 接电话， 消费者也开始用 AI 打电话 过去十几年，企业一直是客服自动化的主要受益者。 从电话语音菜单到在线聊天机器人，再到 Sierra、Decagon、Cresta 等公司推动的新一代 AI 客服，技术首先帮助企业降低成本、提高服务效率。 但消费者的时间始终有限。为了追回 15 美元，你愿意打半小时电话吗？如果还要重复解释三遍、转接两个部门，大多数人可能直接放弃。 很多争议最终不了了之，未必因为消费者没有道理，而是因为争取权益的成本太高。 现在，消费者也有了自己的自动化系统。 当 AI 可以持续检索政策、准备材料、提出申诉，那些依赖消费者耐心有限而维持的流程，就可能面临新的压力。 Decagon 最近提出了一个很有意思的问题： 如果一个个人 Agent 为了同一笔退款，第四次回来找客服，企业该怎么办 ？ 过去，客服系统默认人会疲倦、会不耐烦，最终可能选择放弃。现在，它面对的是一个不会轻易嫌麻烦的代理人。 但孙雨润并不认为，这意味着企业和消费者的 AI 必须打一场战争。 「我们完全没有去黑掉或滥用别人的系统。我们就像一个助理。」 按照他的说法，一些企业甚至主动联系 Pine，讨论能否建立更深入的合作。对企业而言，消费者通过 AI 整理好的问题、证据和授权信息，本身也可能提高客服效率。 毕竟，如果用户的 AI 已经整理好了账号信息、相关条款和问题经过，企业客服也没有必要再花五分钟问一遍「请问您今天遇到了什么问题」。 只不过，眼下的现实还没有这么先进。 孙雨润观察到，不少企业的 AI 客服仍然停留在初步问答和信息收集阶段。真正涉及降价、退款、处理争议时，往往还需要转给真人或更高权限的部门。 「相当于 AI 客服只是 Tier 1。」 AI 已经可以替企业接电话，却未必有权替企业作决定。 所以，双方 Agent 未来的核心问题，可能不是机器要不要模仿人类寒暄，而是如何验证身份、确认授权、明确责任。 而 Pine 的野心，也远不止帮消费者在电话里讨价还价。 04 普通人真的需要一个 AI 助理吗？ 当硅谷忙着让 AI Agent 接管越来越多任务时，一个更值得研究的问题开始浮现：谁最需要一个 AI 助理？ 答案可能不是最有钱的人，也不一定是最懂技术的人，而是那些每天有大量琐事要处理、却没有足够资源雇人帮忙的人。 Pine 最初选择了一个几乎不需要教育用户的切入口：帮人省钱。假设每个月的网费从 100 美元谈到 80 美元，价值就是实实在在的 20 美元。 Pine 公布过 93% 的谈判成功率。不过孙雨润解释，这并不是所有用户提出的要求都能有 93% 的概率成功，而是在梳理需求、判断是否符合政策、管理合理预期之后，统计符合条件的任务完成情况。 比如有人坚持每个月花 2000 美元，在旧金山租一套很大的房子。再厉害的 AI，也很难改变当地的租房市场。 所以 AI 不只是替用户谈判，也得先判断这件事值不值得谈、应该怎么谈。但孙雨润坦言，省账单只是一个吸引用户的手段。 「我们的愿景是帮用户把事办成。」 但当 AI 开始有能力处理越来越复杂的任务时，一个新的商业问题也出现了：谁会最频繁地使用它？ 对普通消费者而言，取消订阅、协商账单、申请退款，可能一个月也遇不上几次。需求真实，却未必足够高频。 Pine 后来发现，真正的高频用户，可能不是那些已经拥有私人助理的高收入人群，而是一批每天被琐事缠身的小企业主。 比如一个安装空调的师傅，正在客户家里施工，另一个潜在客户突然打电话询价。他没空接，等晚上回电话，对方可能已经找了别人。专门雇一个接线员太贵，不雇又可能丢掉生意。 对这样的人来说，AI 不只是节省半小时，而是可能帮他接住一笔订单。 「普通人的事没那么多。」孙雨润说，「但世界上有另一批人，事特别多。」 这是一类过去很容易被 AI 行业忽视的用户。他们未必需要更复杂的模型，也未必关心 Agent 的技术架构。他们需要的，是有人帮忙接电话、跟进客户、处理账单、申请许可，把那些不得不做、却又占据大量时间的事情接过去。 在美国，这样的人并不少见。家庭维修承包商、独立房东、小型建筑公司的经营者，往往既是老板，也是销售、客服和行政人员。对他们来说，很多工作并不难，却琐碎、重复，而且很难推迟。 这也解释了为什么一些 AI 助理产品开始关注小企业和专业工作者。类似 Town 这样的产品，也在探索如何让 AI 从一个回答问题的工具，变成能够接手实际工作流程的助理。 对这群用户来说，Personal AI 的价值，可能不在于它能回答多少问题，而在于有多少事情，终于不必再由自己亲自处理。 05 从电话到电脑： AI 助理还需要学会什么？ 如果 AI 真的要成为这些人的助理，只会打电话显然还不够。 以一名经营 Airbnb 的房东为例。把房子租出去，看起来只是发布房源、接待客人，但在美国不同城市和州，短租经营可能涉及营业登记、税务申报、物业管理、业主协会规定、水电等公共事业服务、保险，以及各种许可证。有些经营者还需要考虑是否成立 LLC。 这些事情往往分散在不同部门、网站和表格里。打电话可以问清楚规定，但真正要把事情办完，还需要提交文件、填写申请、上传证明、跟进审批进度。 对一个没有行政团队的小房东来说，这些任务可能耗掉好几个工作日。而对 AI 来说，新的挑战也出现了：它不仅要知道该找谁，还得有能力进入系统、填写表格、操作网页，直到任务完成。 电话可以解决沟通的问题，却不能解决所有执行的问题。 这也推动 Pine 从 Voice Agent 进一步走向 Computer Use，并在今年 10 月推出了 Pine Computer。 它不是一台新硬件，而是一套专门为 AI 设计的云端计算环境。Pine Computer 的设计和开发，主要由 Pine AI 联合创始人、首席架构师 Dylan Wang 主导。 Dylan 此前同样在声网 Agora 工作过。实时音视频行业的一段经历，让他对基础设施的重要性有着直接的认识：当年，重新设计底层网络，可以改变音视频通话的质量；那么今天，AI Agent 的效率问题，是否也需要从底层计算环境入手解决？ 在 Pine Computer 的技术文章中，Dylan 提出了一个判断：过去几年，行业一直在让模型变得更聪明，却很少重新思考模型所使用的计算机。模型的能力在快速进步，但它们仍然需要通过原本为人类设计的屏幕、鼠标、浏览器和操作系统完成任务。大量推理能力，就这样消耗在了理解界面和操作工具上。 与其继续训练模型适应人类的电脑，不如反过来，重新设计一台适合 AI 使用的电脑。不过，技术距离真正可靠仍然有一段路。 在 Pine 10 月公布的 SaaS-Bench v1.1 测试中，其系统取得了 78.3% 的检查点通过率，但完整任务完成率只有 27.4%。 两个数字放在一起，恰好说明了今天 Agent 的处境：它可以连续做对很多步骤，但最后一步出错，整件事仍然可能失败。 对一个真实用户来说，AI 已经完成了九成工作当然值得鼓励，但他最关心的还是：事情到底办成了没有？ 孙雨润认为，相比某个短期产品形态，Pine 真正需要长期积累的，是把事情做得又快、又便宜、又可靠的能力。 这也是他对当前 Agent 热潮保持谨慎的原因。 他相信 Agent-to-Agent 通信会逐渐普及，也能想象两个私人助理像秘书一样协调日程。但如果说未来很快就会出现一个由通用 Agent 自由交流、自发协作的社会，他认为这种想象仍然有些「过于浮夸」。 「这个世界的习惯非常强，跟人打交道这件事很难绕开。」 人类已经花了几十年尝试把服务搬到网上，但直到今天，一个许可证为什么没批下来、一笔账单为什么不能退，很多时候还是需要找到具体的人才能解释清楚。 这或许才是 Pine 选择电话和电脑的真正原因。 它没有等待一个全新的 Agent 世界出现，而是先让 AI 学会使用今天已有的工具，去应付那些真实存在的机构、规则和流程。 很长一段时间里，我们谈论 AI 的生产力革命，总是在问它能写多少代码、生成多少内容、完成多少工作。 但还有一种生产力，很少被认真计算。 那就是一个普通人为了维护自己的权益、处理自己的生活，需要付出的时间、知识和情绪成本。 过去，企业有专业团队、复杂系统和庞大的数据库，而消费者只有有限的耐心。有时候，你不是不想争取，只是觉得不值得。 现在，AI 正在让这种成本下降。 但这场变化的终点，或许不是让每个人都拥有一个更擅长吵架的 AI，而是让那些过去因为太麻烦而被放弃的事情，终于有人能替你认真办完。 孙雨润说，Pine 想做的，始终是让 AI 在现实世界里把事办成。 这个目标听起来远不如「一个全新的 Agent 社会」宏大，却可能更接近普通人真正需要的 AI。 或许有一天，我们不必再为了十几美元的账单争议，亲自拨打漫长的客服电话。 两台 AI 会在后台交换授权、查询政策、完成沟通，最后把结果发到手机上。 当然，也可能为了这十几美元，继续争论半个小时。 区别在于，这一次，被消耗的终于不再是你的耐心。 编者注： 极客公园关注「当全世界都在看硅谷的时候，硅谷在看什么」，如果你正在这里 build 新产品，新思路，新范式，欢迎联系极客公园硅谷团队聊一聊。 *头图来源：Pine AI 本文为极客公园原创文章，转载请联系极客君微信 geekparkGO",
-        "url": "http://www.geekpark.net/news/374536",
-        "source": "极客公园",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "Solidot",
-        "title": "图库平台充斥着生成式 AI 图像",
-        "summary": "根据发表在《The Quarterly Journal of Economics》期刊上的一项研究，今天的大型图库平台充斥着生成式 AI 图像。研究针对了一个在 2022 年 12 月允许创作者销售 GenAI 生成图像的大型图库。该图库要求 GenAI 图像必须标记，允许特定市场禁止 GenAI。研究人员分析了这一政策产生的影响。结果发现：图像产量增长了 136%，活跃创作者数量增加了 47%；但传统非 GenAI 图像的产量下降了 15%，非 GenAI 活跃创作者数量减少了 29%。总销售额增长了82%，但非 GenAI 作品的销售额下降了 28%，销售率下滑了 3 个百分点。",
-        "url": "https://www.solidot.org/story?sid=85999",
-        "source": "Solidot",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-26",
-        "tag": "极客公园",
-        "title": "成本低九成、开源权重：MAGI-2 带动视频模型进入大掀桌时代",
-        "summary": "2026 年的视频大模型圈子，有一个心照不宣的保留节目：无论哪家推出新模型，最终的成绩页上，永远会留一行和 Seedance 2.5 的对标数据。 这款上半年坐稳行业标杆的闭源模型，如今成了整条赛道公认的「基准线」—— 快手可灵 Kling 3.0 上线，要比镜头控制与生成时长；阿里 Wan 3.0 推出，主打同画质下的性价比；MiniMax 发 H3 系列，也要在 AA 榜单上标清和 Seedance 的 Elo 分差。 你方唱罢我登场，榜首的排位刷了一轮又一轮，但行业的底色没变：顶尖能力始终攥在闭源厂商手里，靠云端 API 和创作平台对外输出。即便是开放基础模型权重的 MiniMax H3，其完整生成系统中仍有部分能力未开放。 直到 11 月 25 日，作为开源视频模型代表的 Sand.ai 正式 掀桌，公司宣布： 旗下 480B 总参数的 MAGI-2 音视频统一模型，计划尽快开源全量权重，把 Seedance 2.5 级别的顶尖生成能力，直接交到全球开发者手里。 上传《星月夜》《睡莲》《大碗岛的星期天下午》等五幅名画，让 MAGI-2 生成的一段 30 秒的第一人称奇幻短片 更具冲击力的是价格：1080P 分辨率下，MAGI-2 官方 API 刊例价仅 0.5 元 / 秒，不到 Seedance 2.5 同规格的十分之一；若实现本地私有化部署，综合生成成本还能再降一步。 从更有性价比的 API 到权重开源， Sand.ai 这一次， 真的 要带动开源视频模型进入大掀桌时代了 吗？ 01 视频生成会成走文生图的老路吗？ 闭源厂商先摸到能力天花板，定义行业基准；随后一款足够强的开源模型落地，引爆社区生态，垂直场景快速反超……这几乎是 AIGC 每条赛道的固定剧情。 过去几年中， 文生图最先走完剧情。 2022 年 7 月， Midjourney V3 横空出世，把 AI 绘画的画质拉到了专业门槛；仅仅 1 个月后，Stable Diffusion 正式开源，两个月内全球用户总量就就超过了 1000 万。随后，Hugging Face、Civitai 等社区也涌现出大量基于 Stable Diffusion 的定制模型、LoRA 和配套工具，推动文生图能力向更多垂直场景扩展。 LLM 的故事 也紧随其后，走完了一半的剧情。 这一次的主角是 Meta 的 Llama 与中国的 DeepSeek。在它们出现之前，开源大模型在商业世界里一度被当成玩具。但 Llama 2 开源后，短短半年内，全球开发者就联手把 Llama 模型量化精度从 8bit 一路压到 4bit 甚至 2bit，效果损失依然可控。此后，DeepSeek R1 又完成接力，把 MoE 架构变成了此后几年基模的标配。不仅在效果上追平了第一梯队闭源模型 OpenAI o1，更把推理成本打到了前者的几分之一。 而视频生成赛道，正在把这个剧本以更快的速度重演一遍 。 2026 年下半年，Seedance 2.5 正式确立工业级标杆地位，凭借稳定的写实效果与镜头控制能力，拿下国内 AI 短剧市场的绝大多数份额。 那时候，在 Artificial Analysis（AA）榜单上，前五名长期被 Seedance、Veo、Kling 等闭源模型垄断，开源模型普遍落后 50 到 100 多个 Elo 分，只能停留在学术论文和轻量测试里。 仅仅数月之后，即将开源的 MAGI-2 就已经在 Artificial Analysis 的图生带音频视频（I2V）维度超越 Seedance 2.5，位居全球第一。 而且，不止是画质提升，MAGI-2 还是是真正的音视频统一模型：同个基座里原生支持画面与声音联合生成，人物对白与口型同步、动作拟音、环境声场与配乐一步到位；支持 6 种主流画幅与最长 30 秒的 1080p 25 fps 输出，能同时混合参考最多 20 份素材（最多 10 张图片、5 段视频、5 段音频），搭配高精度时间轴与切镜控制，也对已有视频的精准编辑。 相同提示词，无提示词情况下，在 liblib 的盲测模式下，头部闭源模型与 MAGI-2 生成的皮影风格四幕剧对比，MAGI-2 的人物一致性、画面协调性明显更胜一筹，画面中人物的运动轨迹、蝴蝶的飞行姿态更灵动，指令遵从上，整体也更符合皮影的画面风格。（上为 MAGI-2 生成） 问题来了，为什么在市场上已经有了足够成熟的闭源商业模式后，依然会有 SOTA 级玩家选择开源的打法，并借此实现逆袭？ 社区的力量不可小觑。 图像与基座模型如此，视频生成亦如此。 更重要的是视频赛道，还直接站在了图像与大模型积累的生态肩膀上。Diffusers 框架、LoRA 微调、量化蒸馏技术—— 这些在文生图与大模型领域验证过无数次的工具与方法论，在视频赛道依然成立。知识蒸馏、剪枝与推理引擎适配这些原本要靠厂家自行完成的优化，用户遇到瓶颈只能提交反馈，等厂商排期、等版本更新的问题，如今也可以借助社区的力量完成快速适配。 更何况 MAGI-2 本身就带着效率基因：480B 总参数的 MoE 架构，每次推理仅激活约 28B 参数。 当它进入社区改造池后，经过量化、蒸馏与工程优化后，中小团队本地部署，或许很快就不再是奢望。 02 被推倒的成本高墙 视频行业的格局重构，会比当年的文生图更猛烈。核心原因只有一个：成本。 文娱数据机构 DataEye 的统计数据显示：2026 年上半年，抖音新增了 22.19 万部 AI 短剧，破亿播放爆款率只有 0.48%；信息流广告素材的生命周期普遍只有 1 到 3 天。 批量赛马，用数量赌概率是这个行业的生存法则。 但在闭源高价时代，赛马的门票贵得让人生畏。 年初爆火的古装 AI 短剧《缘起陈塘之倾城》里，有一幕女主角半夜惊醒、猛地从床上坐起的戏，全程不过五秒，制作团队却死磕了整整一周。直接生成，起身的节奏和惊恐的表情永远有一处对不上；拆成半秒甚至零点二秒的片段拼接，画面衔接又总有断层。最后有人想出了笨办法：让模型生成一个惊恐的女人慢慢躺下，再把画面倒放。费了九牛二虎之力，最终剪进正片的，只有两三秒。 过去， 这种反复抽卡，以及对应的高成本一直 是行业常态。 要拿到工业级顶尖画质，闭源模型公开价约 4 元 / 秒，按行业普遍 3 到 5 次的重试率计算，一条可用镜头的单秒全链路成本高达 12 到 20 元。这意味着一分钟的成片，仅生成成本就要近千元，还不算人力与试错成本。 MAGI-2 把 API 价格压到 0.5 元 / 秒后，单条可用镜头的单秒成本直接降到 1.5 到 2.5 元。同样的预算，团队能测试的创意数量，瞬间放大了 8 到 10 倍。 这还只是公开 API 的价格。一旦权重开源、本地部署，去掉厂商溢价与渠道分成，成本会直接落到硬件折旧与电费的层面，再降一个数量级。 行业下游的竞争公平性，也随之被改变。 此前头部漫剧公司凭借庞大的消耗量，能拿到大厂的内部渠道价与优先算力配额—— 行业内部分渠道的 Seedance 2.5 720P 视频，甚至能低至 0.23 元 / 秒。大小团队从一开始，就不在同一条成本起跑线上。 权重公开之后，任何团队都能私有化部署、批量推理，成本回归纯粹的显卡与电费，配额限制与渠道差价同时消失。一个 5 人小团队只要配足显卡，产能就能追平几十人的公司，行业竞争的核心，终于能重新回到内容创意本身。 新的内容品类也会随之破土。当年 Stable Diffusion 开源后，AI 头像、AI 绘本、AI 表情包快速从设想变成生意；而视频领域，一旦摆脱闭源 API 的高价、延迟与数据隐私束缚，千人千面的实时信息流广告、可自定义结局的互动短剧、实时生成的游戏剧情动画、面向私域的定制化祝福视频…… 这些过去算不过来账的场景，都会迅速变成能跑通 ROI 的真实生意 。 这也是为什么说开源并不意味着自断财路的原因。 成本的断崖式下跌， 会让 内容生产的逻辑，以及下游的市场空间随之被打开。 更关键的是，开源降低的是「入场门槛」，但大规模批量生产工业化壁垒依然不低。 MAGI-2 作为千亿参数级的大规模视频模型，本地部署依然需要相当的算力储备与工程运维能力。中小团队用开源权重零成本跑通创意验证、把新业务规模做大后，一旦进入实时信息流、高并发互动剧等深水区场景，自建机房的并发瓶颈与运维成本便会迅速显现。 届时，把官方 API 的速度、稳定性与综合成本做到极致的 Sand.ai，自然会成为这些成长起来的客户最具性价比的商业承接方。 03 视频生成战争进入下半场 基础能力的平权，最终会传导到整个产业的竞争逻辑上。 最先承压的是纯闭源 API 的商业模式。当开源方案能提供同级别的效果，成本却低一个数量级，基础生成能力的溢价空间会被迅速打穿。只靠卖 API 赚算力差价的生意，会快速贬值。 而对于像 Sand.ai 这样的新锐基础模型公司而言，开源更是一场精准的非对称竞争。 面对资金、算力和分发渠道都极其雄厚的科技大厂，纯 API 售卖是高度同质化的算力生意，头部大厂凭借规模效应极易形成成本碾压，创业公司如果选择闭源路线，无异于在对手最擅长的渠道补贴与资源消耗战里硬碰硬。 相反，在顶尖性能窗口期主动开源 MAGI-2，反而能把行业竞争的核心从「算力成本比拼」，切换到「场景理解、工作流打磨、生态服务」的维度，主动避开大厂的优势战场，建立自己的差异化护城河。 与此同时， 在 SOTA 级开源的影响下，通用视频模型的创业窗口，也会快速向后来者关闭。 文生图领域，Stable Diffusion 成为通用基座后，技术路线短期迅速收敛。创业公司基本不再碰通用模型，全部转向垂直场景工具；大模型领域，Llama 2 与 DeepSeek 之后，全球范围内新的通用大模型创业项目大幅减少，主力转向行业微调与场景应用。 视频赛道也会重复同样的故事：MAGI-2 开源后，再从零搭建通用视频基座的性价比会变得极低：因为你很难比全球社区共同优化的 SOTA 模型做得更好，成本还更低。 于是，创业赛道会迅速收敛为 1 个通用开源基座 + N 个 SOTA 级商业化玩家的格局。 而一旦 MAGI-2 确立了通用基座的地位，全行业围绕它生长出的工具链与产品矩阵，都会成为 Sand.ai 向上游转化 API 算力服务、推进企业级商业合作以及推广自有应用生态。 开源模型关上了后来者入局模型的门，但也同时打开了视频模型 Agent 化的窗。 如今的 MAGI-2 已经涌现出叙事理解、自动分镜、镜头调度的规划能力—— 用户输入简短描述，它就能自动补全情节、安排景别，本质上已经具备了初级的任务推理能力。甚至在没有提示词增强的情况下，就能自主完成数独计算。 基于这样的底座，大量视频创作 Agent 大概率会在开源生态里诞生，让视频生成从工具真正走向创作助手。 顺带被推动的还有国产算力落地。 作为采用千亿参数级 MoE 架构的统一音视频生成模型，MAGI-2 的权重开放，将为视频生成领域提供一种新的高性能、低激活参数技术路线，也为国产算力生态提供新的模型适配与推理优化对象。当前，在国产算力适配方面，MAGI-2 已完成海光、摩尔线程等国产芯片的适配，进一步拓宽了模型的算力选择，也为开发者和企业基于国产算力开展模型部署与应用提供了更多可能。 最终，随着 SOTA 生成能力不再是稀缺资源， 谁更懂垂直场景的痛点，谁更能贴合创作者的工作流，谁能支持更多生态， 会成为新的竞争重点。 而 MAGI-2 的开源，只是新牌局的开始。 *头图来源： Sand.ai 本文为极客公园原创文章，转载请联系极客君微信 geekparkGO",
-        "url": "http://www.geekpark.net/news/374532",
-        "source": "极客公园",
-        "region": "cn",
         "category": "科技"
       }
     ]
