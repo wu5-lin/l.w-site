@@ -11,7 +11,7 @@
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "@yusufceng1z/ding": "^0.0.9",
-    "astro": "^7.4.10"
+    "astro": "^7.4.13"
   },
   "devDependencies": {
     "pagefind": "^1.6.0"
