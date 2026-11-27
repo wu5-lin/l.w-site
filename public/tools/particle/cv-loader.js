@@ -10,10 +10,18 @@
   var cdnIndex = 0;
   var loadTimer = 0;
 
+  function emitState(state) {
+    window.__cvState = state;
+    try {
+      window.dispatchEvent(new CustomEvent("lw:cv-state", { detail: { state: state } }));
+    } catch (e) {}
+  }
+
   function onReady() {
     window.__cvLoaded = true;
+    emitState("ready");
     var b = document.getElementById("cvBanner");
-    if (b) {
+    if (b && !window.__ding) {
       b.classList.add("ok");
       b.textContent = "OpenCV 引擎已就绪";
       setTimeout(function () { b.hidden = true; }, 1200);
@@ -21,8 +29,9 @@
   }
 
   function onError() {
+    emitState("error");
     var b = document.getElementById("cvBanner");
-    if (!b) return;
+    if (!b || window.__ding) return;
     b.className = "cv-banner err";
     b.textContent = "OpenCV 加载失败。请检查网络后刷新。";
     var retry = document.createElement("a");
@@ -79,8 +88,9 @@
       clearTimeout(loadTimer);
       s.remove();
       var b = document.getElementById("cvBanner");
-      if (b && index + 1 < CDNS.length) {
-        b.textContent = "主 CDN 较慢，正在切换备用源加载 OpenCV…";
+      if (index + 1 < CDNS.length) {
+        emitState("fallback");
+        if (b && !window.__ding) b.textContent = "主 CDN 较慢，正在切换备用源加载 OpenCV…";
       }
       loadScript(index + 1);
     }

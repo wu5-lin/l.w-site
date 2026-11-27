@@ -1422,6 +1422,9 @@ function exportCsv() {
   a.download = "particle_size_result.csv";
   a.click();
   URL.revokeObjectURL(url);
+  if (window.__ding) {
+    window.__ding.success("已导出 CSV 数据", { description: "particle_size_result.csv", duration: 2400 });
+  }
 }
 
 /* ---------- 论文插图模式: 批量测量所有子图 ---------- */
@@ -1503,6 +1506,9 @@ function exportBatchCsv() {
   a.download = "figure_panels_result.csv";
   a.click();
   URL.revokeObjectURL(url);
+  if (window.__ding) {
+    window.__ding.success("已导出 CSV 数据", { description: "particle_size_result.csv", duration: 2400 });
+  }
 }
 
 /* ---------- 导出 300 DPI 出版级直方图 PNG ---------- */

@@ -112,6 +112,7 @@ const jsonLd = JSON.stringify({
           function finish(ok) {
             btn.textContent = ok ? '已复制' : '复制失败';
             btn.classList.toggle('is-error', !ok);
+            try { window.dispatchEvent(new CustomEvent('lw:copied', { detail: { ok: ok } })); } catch (e) {}
             var live = document.getElementById('copy-live');
             if (live) {
               live.textContent = '';
@@ -235,5 +236,34 @@ const jsonLd = JSON.stringify({
         }
       }
     })();
+  </script>
+  <script>
+    import { mountToaster, toast } from '@yusufceng1z/ding';
+
+    let unmount = mountToaster({
+      position: 'bottom-center',
+      theme: (document.documentElement.dataset.theme as 'light' | 'dark' | undefined) || 'system',
+      labels: { region: '通知', dismiss: '关闭通知' },
+    });
+
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        setTimeout(() => {
+          unmount();
+          unmount = mountToaster({
+            position: 'bottom-center',
+            theme: (document.documentElement.dataset.theme as 'light' | 'dark' | undefined) || 'system',
+            labels: { region: '通知', dismiss: '关闭通知' },
+          });
+        }, 0);
+      });
+    }
+
+    window.addEventListener('lw:copied', (e: Event) => {
+      const ok = (e as CustomEvent).detail?.ok !== false;
+      if (ok) toast.success('代码已复制', { duration: 1800 });
+      else toast.error('复制失败，请手动选中复制', { duration: 2400 });
+    });
   </script>
 </Base>

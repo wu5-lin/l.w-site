@@ -319,4 +319,51 @@ const csp = [
   </div>
   <script is:inline src="/tools/particle/enhance-inputs.js"></script>
   <script is:inline src="/tools/particle/app.js"></script>
+  <script>
+    import { mountToaster, toast } from '@yusufceng1z/ding';
+
+    mountToaster({
+      position: 'top-center',
+      theme: 'dark',
+      labels: { region: '通知', dismiss: '关闭通知' },
+    });
+
+    (window as any).__ding = toast;
+
+    const banner = document.getElementById('cvBanner');
+    if (banner) banner.hidden = true;
+
+    const TOAST_ID = 'cv-engine';
+    function syncCvState(state: string) {
+      if (state === 'ready') {
+        toast.success('OpenCV 引擎已就绪', { id: TOAST_ID, duration: 2200 });
+      } else if (state === 'fallback') {
+        toast.loading('主 CDN 较慢，正在切换备用源…', { id: TOAST_ID });
+      } else if (state === 'error') {
+        toast.error('OpenCV 加载失败', {
+          id: TOAST_ID,
+          description: '请检查网络后刷新重试',
+          action: { label: '刷新重试', onClick: () => location.reload() },
+        });
+      } else {
+        toast.loading('正在加载 OpenCV 引擎…', {
+          id: TOAST_ID,
+          description: '仅在本页按需加载，原图不会上传',
+        });
+      }
+    }
+
+    if ((window as any).__cvLoaded) {
+      syncCvState('ready');
+    } else if ((window as any).__cvState) {
+      syncCvState((window as any).__cvState);
+    } else {
+      syncCvState('loading');
+    }
+
+    window.addEventListener('lw:cv-state', (e: Event) => {
+      const detail = (e as CustomEvent).detail;
+      if (detail && detail.state) syncCvState(detail.state);
+    });
+  </script>
 </Base>
