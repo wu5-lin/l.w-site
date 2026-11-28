@@ -1,7 +1,57 @@
 {
-  "updated": "2026-11-27 22:48 UTC",
+  "updated": "2026-11-28 04:52 UTC",
   "categories": {
     "投资": [
+      {
+        "date": "2026-11-28",
+        "tag": "The Block",
+        "title": "比特币复苏需要 USDT 供应增长：CryptoQuant、K33 权衡人工智能对比特币的威胁等",
+        "summary": "In today's newsletter, CryptoQuant says bitcoin price recovery needs USDT supply growth; K33 assesses AI's growing threat to Bitcoin security; and more.",
+        "url": "https://www.theblock.co/newsletters/the-daily/2026-11-27-bitcoin-recovery-usdt-supply-ai-threat-bitcoin-more-crypto-news-447571",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "MarketWatch",
+        "title": "我已经 70 多岁了，购买了一辆新的 BMW X1。我应该把我唯一的儿子放在头衔上吗？",
+        "summary": "“Given my age, I never make a major new purchase without thinking about the future.”",
+        "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-27",
+        "tag": "MarketWatch",
+        "title": "我讨厌 Jensen Huang 回到 Nvidia，但我喜欢它为我的 401(k) 所做的一切。我是伪君子吗？",
+        "summary": "Doing nothing and maintaining an even temperament is often the work of gods.",
+        "url": "https://www.marketwatch.com/story/i-hate-that-jensen-huang-is-back-at-nvidia-but-i-love-what-its-done-for-my-401-k-am-i-a-hypocrite-f63c0303?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-27",
+        "tag": "MarketWatch",
+        "title": "清理我父母的房子是一场合法的噩梦。我怎样才能缩小规模而不让我的孩子经历同样的磨难？",
+        "summary": "Some countercultural advice this Black Friday: stop buying stuff, plus other rules for downsizing.",
+        "url": "https://www.marketwatch.com/story/clearing-out-my-parents-house-was-a-legal-nightmare-how-can-i-downsize-without-putting-my-children-through-the-same-ordeal-6537d804?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-27",
+        "tag": "Financial Times",
+        "title": "OpenAI 反诉苹果窃取商业机密",
+        "summary": "The ChatGPT maker also accuses the tech giant of ‘coercing and threatening’ suppliers who work with both companies, as legal battle escalates",
+        "url": "https://www.ft.com/content/af599e07-d44c-4068-ab84-6ee3c85551d4?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
       {
         "date": "2026-11-27",
         "tag": "Financial Times",
@@ -64,31 +114,11 @@
       },
       {
         "date": "2026-11-27",
-        "tag": "MarketWatch",
-        "title": "明年推出：Medicare Advantage 计划对近 640,000 人没有药物承保，其余人的选择较少",
-        "summary": "Medicare Advantage is starting to lose its all-in-one benefit.",
-        "url": "https://www.marketwatch.com/story/coming-next-year-medicare-advantage-plans-without-drug-coverage-for-almost-640-000-people-and-fewer-choices-for-the-rest-25242d69?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
         "tag": "Seeking Alpha",
         "title": "苹果因窃取商业机密面临 OpenAI 反诉 - FT",
         "summary": "",
         "url": "https://seekingalpha.com/news/4677105-apple-faces-countersuit-from-openai-for-stealing-trade-secrets---ft?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "MarketWatch",
-        "title": "本周股市上涨背后的警告",
-        "summary": "Also in Weekend Reads: Important tips for Medicare enrollment, how to spot online shopping scams and marital advice from The Moneyist.",
-        "url": "https://www.marketwatch.com/story/the-warnings-behind-this-weeks-stock-market-rally-86e5319c?mod=mw_rss_topstories",
-        "source": "MarketWatch",
         "region": "en",
         "category": "投资"
       },
@@ -104,31 +134,11 @@
       },
       {
         "date": "2026-11-27",
-        "tag": "Financial Times",
-        "title": "OpenAI 反诉苹果窃取商业机密",
-        "summary": "The ChatGPT maker also accuses the tech giant of ‘coercing and threatening’ suppliers who work with both companies, as legal battle escalates",
-        "url": "https://www.ft.com/content/af599e07-d44c-4068-ab84-6ee3c85551d4?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
         "tag": "The Block",
         "title": "CryptoQuant表示比特币价格复苏需要USDT供应增长",
         "summary": "Bitcoin needs USDT supply to start growing again for a sustained price recovery, according to CryptoQuant.",
         "url": "https://www.theblock.co/news/markets/2026-11-27-cryptoquant-bitcoin-price-recovery-usdt-supply-growth-447560",
         "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "MarketWatch",
-        "title": "清理我父母的房子是一场合法的噩梦。我怎样才能缩小规模而不让我的孩子经历同样的磨难？",
-        "summary": "Some countercultural advice this Black Friday: stop buying stuff, plus other rules for downsizing.",
-        "url": "https://www.marketwatch.com/story/clearing-out-my-parents-house-was-a-legal-nightmare-how-can-i-downsize-without-putting-my-children-through-the-same-ordeal-6537d804?mod=mw_rss_topstories",
-        "source": "MarketWatch",
         "region": "en",
         "category": "投资"
       },
@@ -151,19 +161,19 @@
         "source": "The Block",
         "region": "en",
         "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "CNBC Markets",
-        "title": "莱斯曼：英伟达的鞭打测试了凯文·沃什（Kevin Warsh）解读市场信号的努力",
-        "summary": "The extreme market gyrations and the drama surrounding Nvidia this past week have highlighted the dilemma facing Federal Reserve Chairman Kevin Warsh.",
-        "url": "https://www.cnbc.com/2026/11/25/nvidia-kevin-warsh-fed-market-signals.html",
-        "source": "CNBC Markets",
-        "region": "en",
-        "category": "投资"
       }
     ],
     "科研": [
+      {
+        "date": "2026-11-28",
+        "tag": "Nature 材料",
+        "title": "下一代电池的工程电解质离子溶剂化结构",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41467-026-79910-x",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
       {
         "date": "2026-11-27",
         "tag": "ScienceDaily 材料",
@@ -295,16 +305,6 @@
         "category": "科研"
       },
       {
-        "date": "2026-11-27",
-        "tag": "Nature 材料",
-        "title": "因果发现引导的机器学习框架，用于使用 GGBS 和微硅粉优化可持续混凝土配合比设计",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-78548-5",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
         "date": "2026-11-25",
         "tag": "ScienceDaily 材料",
         "title": "天文学家可能发现了一个诞生于第一批恒星之前的黑洞",
@@ -326,6 +326,46 @@
       }
     ],
     "web3": [
+      {
+        "date": "2026-11-28",
+        "tag": "PANews",
+        "title": "Ourbit XP 竞技场即将开启：三重奖池最高 300 万 USDT，全球交易者共同迎接挑战！",
+        "summary": "本次 XP 竞技场设置三大核心玩法，涵盖 XP 奖池瓜分、幸运抽奖及团队交易竞赛。",
+        "url": "https://www.panewslab.com/zh/articles/01a22062-5b39-7442-af81-bc8b5c6a3850",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "PANews",
+        "title": "BTC突破60000美元，日内下跌 0.18%",
+        "summary": "PANews 11月28日消息，欧易OKX行情显示，BTC刚刚突破60000美元，现报60008.10美元/枚，日内下跌 0.18%。",
+        "url": "https://www.panewslab.com/zh/articles/01a2204e-7f00-7768-9ea0-40e86aa4a8e0",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "PANews",
+        "title": "币安联席CEO：币安正从加密交易平台转型为全天候运行的多资产交易平台",
+        "summary": "PANews 11月28日消息，币安联席首席执行官 Richard Teng 在 2026 币安区块链周活动上表示，2026 年金融业的核心趋势是加密与传统金融融合。稳定币正逐渐成为支付体系的一部分，代币化资产开始进入金融投资组合，机构也不再观望，而是积极参与区块链金融基础设施建设。下一代金融服务的用户未必会将自己视为加密用户，他们更关心能否便捷收款、保护储蓄、投资海外资产并参与全球市场。加密行业需要围绕这些实际需求提供完整的金融服务体验，而非仅关注底层技术。 亚洲不仅是加密货币的采用市场，也在推动金融创新。",
+        "url": "https://www.panewslab.com/zh/articles/01a2204b-6790-7329-aaf3-be52846b1269",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "PANews",
+        "title": "SafePal：此前8月份安全事件还涉及部分订单信息，目前受影响系统已不存在任何漏洞",
+        "summary": "PANews 11月28日消息，硬件钱包 SafePal 发文披露，此前于 8 月披露的安全事件还涉及部分先前未识别的订单信息，包括姓名、邮箱、国家、订单号、所购产品及支付 ID，不涉及收货地址、电话号码、钱包账号、付款地址、银行卡或银行账户信息。此外，经独立审计确认，在 8 月份完成修复后，受影响的系统中已不存在任何漏洞。SafePal 强调，用户助记词和私钥未受影响，官方绝不会索要这些信息，并提醒警惕以固件更新、设备更换等为名的钓鱼邮件或信件。",
+        "url": "https://www.panewslab.com/zh/articles/01a22038-ecb1-700b-94ac-7be2d30b8065",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
       {
         "date": "2026-11-27",
         "tag": "Cointelegraph",
@@ -398,52 +438,12 @@
       },
       {
         "date": "2026-11-27",
-        "tag": "PANews",
-        "title": "美股收盘光模块/高速互联、半导体与存储普涨，闪迪涨超15%",
-        "summary": "PANews 11月28日消息，据币安行情，美股收盘，三大指数集体收涨，道指涨约0.73%，标普500涨约0.95%，纳指涨约2.15%。 美股七巨头中：特斯拉（TSLA）涨5.06%；亚马逊（AMZN）涨4.02%；Meta（META）涨2.92%。 加密概念股中：Robinhood（HOOD）涨2.72%；Coinbase（COIN）涨2.31%；PayPal（PYPL）涨2.23%。 半导体与存储中：闪迪（SNDK）涨15.87%；西部数据（WDC）涨7.10%；美光（MU）涨6.81%。 光模块/高速互联中：Coherent（COHR）涨13.09%；应用光电（AAOI）涨9.",
-        "url": "https://www.panewslab.com/zh/articles/01a21e2a-f2e2-74e3-8318-ad13f020bc56",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-27",
         "tag": "Cointelegraph",
         "title": "中国将于 2027 年 3 月推出区块链身份法规",
         "summary": "China has issued new regulations governing blockchain-based digital identities, setting rules for cross-platform verification and data privacy.",
         "url": "https://cointelegraph.com/news/china-march-2027-rollout-blockchain-identity-regulations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
         "source": "Cointelegraph",
         "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "PANews",
-        "title": "1476枚BTC转入Coinbase Institutional",
-        "summary": "PANews 11月28日消息，据Whale Alert监测，1476枚BTC（价值8848.686万美元）从未知钱包转入Coinbase Institutional。",
-        "url": "https://www.panewslab.com/zh/articles/01a21e06-017b-75a0-bfd3-448939e48799",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "PANews",
-        "title": "Bitcoin Magazine：比特币与黄金相关性今年创历史新高",
-        "summary": "PANews 11月27日消息，据Bitcoin Magazine在X平台发文称，据Galaxy Research数据，比特币与黄金的相关性今年已创下历史新高。该帖文同时表示，“比特币作为数字黄金”的叙事依然活跃。",
-        "url": "https://www.panewslab.com/zh/articles/01a21dfc-905b-76cb-90b2-f822802b5458",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "PANews",
-        "title": "Balancer：合作池11月30日起仅可提款，v3 Vault将暂停",
-        "summary": "PANews 11月28日消息，Balancer在X平台发文称，剩余一周，Balancer合作池将于11月30日转为仅可提款，同时v3 Vault将暂停，此后提款仍可进行。",
-        "url": "https://www.panewslab.com/zh/articles/01a21df9-b329-7692-959c-9416b60c3263",
-        "source": "PANews",
-        "region": "cn",
         "category": "web3"
       },
       {
@@ -488,6 +488,116 @@
       }
     ],
     "科技": [
+      {
+        "date": "2026-11-28",
+        "tag": "IT之家",
+        "title": "马斯克：Grok Bot 的目标是让你可以构建整个公司",
+        "summary": "IT之家 11 月 28 日消息，今天（28 日）凌晨，埃隆 · 马斯克在 X 平台发文称：就像现实中的企业一样，使用 Grok Bot 时，打造具备专属职能的 Bot 非常重要。你可以设置一个管理 Bot 来监督、协调其余 Bot 的工作。和人类员工同理，如果让单个 Bot 承担过多繁杂任务，它就会顾此失彼。 随后，马斯克补充说：Grok Bot 的目标， 是让你能够构建完整的公司 。 Grok Bot 于 2026 年 8 月 11 日以测试版形式上线，定位为可执行任务的 AI 智能体，而非单纯的聊天机器人。其功能包括交互式购物卡片、订阅模板，以及可长期保存项目上下文的工作空间，试图覆盖个人效率和企业办公场景。 值得注意的是，Grok Bot 并未提供免费版本。据IT之家了解，马斯克此前公开表示，Grok Bot 的增长速度“比他见过的任何产品都要快”，并强调其没有免费层级；除试用用户外，使用者均需付费。",
+        "url": "https://www.ithome.com/1/033/827.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "少数派",
+        "title": "「黑五」值得买：不容错过的数码硬件优惠",
+        "summary": "除了软件服务，这个黑五还有这些硬件值得一看。 查看全文",
+        "url": "https://sspai.com/post/119651",
+        "source": "少数派",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "IT之家",
+        "title": "“iPod 之父”法德尔：OpenAI 曾邀乔纳森 · 艾维打造实体 AI 设备，因为苹果永远不会提供数据",
+        "summary": "IT之家 11 月 28 日消息，当地时间 26 日，据《财富》杂志报道，托尼 · 法德尔透露，萨姆 · 奥尔特曼曾邀请苹果前设计主管乔纳森 · 艾夫为 OpenAI 打造一款实体设备，原因是 OpenAI 无法从运行其 AI 服务的 iPhone 中取得所需数据 。 法德尔曾与艾夫在苹果共事，因被誉为“iPod 之父”以及参与创造 iPhone 而广为人知。他创办了 Build Collective，此前还创立过 Nest Labs。 法德尔认为，OpenAI 之所以执意开发独立硬件，是因为它需要 获取现实物理世界的信息 ，而苹果出于隐私保护考虑，不愿向其开放 iPhone 中的这些数据。 他们必须自己开发产品，因为无法从手机中获取情境信息。为此，他们只能重新配备 GPS、麦克风、扬声器、摄像头、温度检测等各种功能，能想到的都得有，因为苹果不允许他们从手机中提取这些信息。 说到底，就是为了绕开苹果出于隐私保护而设置的种种限制。AI 掌握的情境信息越丰富，给出的答案就越好，用户也能更快得到答案。 苹果的各种产品掌握着你家中的全部情境信息，但这些数据你根本拿不到。出于隐私保护的限制，苹果不会把数据交给你。 不过，奥尔特曼此前曾表示，苹果的隐私政策 并不是 OpenAI 开发新型硬件的出发点 。被问及此事时，OpenAI 发言人提供了一段 YouTube 视频。视频中，奥尔特曼是如此解释的： 我们之所以想开发新型消费硬件，是因为我认为，这项技术需要一种 全新的产品形态 。 笔记本电脑和 iPhone 都是非常了不起的发明，堪称人类科技史上最伟大的创造之一。但在我看来，AI 目前受制于 必须使用为人类而非 AI 设计的设备 。看着 AI 熟练地操作电脑确实令人惊叹，但换个角度想，电脑耗费大量资源渲染一个供人观看的用户界面，再让 AI 读取屏幕上的内容，而不是直接获取数据，多少有些荒唐。 IT之家从报道中获悉，OpenAI 未来还希望把 ChatGPT 背后的部分计算任务 从自家的云服务器转移到用户设备上 。对于许多简单任务，AI 根本不需要依赖服务器集群来处理用户指令，笔记本电脑或手机本身的算力就足够了。 不过，要说服苹果开放庞大的 iOS 和 macOS 设备生态，让这些设备运行 OpenAI 的任务，恐怕并不容易。 法德尔进一步解释了 OpenAI 可能采取的方案：“他们也希望把计算任务转移到终端侧，但苹果并没有向他们开放这些资源。因此，他们打算推出一款配套设备，本质上就是一部去掉屏幕、保留各种传感器的精简版智能手机。设备通过 Wi-Fi 或蓝牙连接，再经由你的手机把数据传回网络，交由云端运行的 AI 智能体处理，也可以交给手机应用中的 AI 智能体。” 至于这款设备究竟会做成什么样子，法德尔猜测：“你可能听说过，他们打算做 手机、吊坠、笔，甚至扬声器 ，因为他们真正想要的就是获取情境信息。” ▲ OpenAI 首款联名硬件 Codex Micro 键盘",
+        "url": "https://www.ithome.com/1/033/824.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "IT之家",
+        "title": "Galaxy S27 系列手机专享，三星 One UI 9.5 Beta 曝光 36 项 AI 新功能",
+        "summary": "IT之家 11 月 28 日消息，科技媒体 Android Authority 昨日（11 月 27 日）发布博文， 通过挖掘 One UI 9.5 首个 Beta 测试版代码，发现了关联“20271”的 36 项 Galaxy AI 功能，预估将成为 Galaxy S27 系列手机独占 AI 功能。 根据三星内部代码细节，三星 Galaxy S26 Ultra 的 Galaxy AI 内部版本号为“20263”，暂不满足运行上述 AI 功能的要求，但不排除在 Galaxy S27 系列发布后，将这些功能下放到 S26 系列的可能。 IT之家援引博文介绍，附上文中相关主要功能介绍如下： 图库与照片编辑 重新构图：用 AI 改变照片的拍摄角度，事后调整构图。 短视频：把静态照片转成短视频。 照片辅助提示建议：编辑时给出 AI 提示。 Restyle 风格包：新增照片风格。 生成贴纸按钮：直接生成贴纸。 相机与扫描 ProScan：支持页面展平和双页书籍扫描，适合拍书和文档。 专业模式监视器视图：给专业拍摄提供辅助画面。 拍摄建议：加入动态取景框。 Log 视频 LUT：新增“森林”和“水下”两款色彩预设。 选择、通话与安全 AI 选择：识别完整表格，可一键复制。 虚假来电检测：识别可疑来电。 第三方应用通话录音与诈骗检测：扩大适用范围。 谷歌诈骗检测：扩展到更多语言。 通话音频擦除：通话中去除不需要的声音。 输入与录音 键盘语音输入优化：提升语音转文字的效果。 录音机说话人分离：能区分重叠说话的人。 付费与版本限制 Gen Video 积分、三星浏览器“问任何问题”、Now Brief 的 Bixby 操作卡片：似乎与付费的 Galaxy AI Premium 层级相关。 Zoom enhancer、三星私有 AI 云 SPAC、Memory 应用：暂未发现版本限制。",
+        "url": "https://www.ithome.com/1/033/822.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "钛媒体",
+        "title": "AI服务器卖爆了，但卖服务器的不赚钱了：股价跌一半，市场在清算什么",
+        "summary": "一场还没有完全出现在报表里的利润挤压。",
+        "url": "https://www.tmtpost.com/8221273.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "IT之家",
+        "title": "影石 Ace Pro 3 被曝采用 1/1.1 英寸方形传感器、双 OLED 屏、2250mAh 电池，12 月 1 日发布",
+        "summary": "IT之家 11 月 28 日消息，影石 Insta360 的新一代旗舰运动相机 Ace Pro 3 已定档 12 月 1 日晚 8 点在中国发布，官方预热主题为“定局已破”。 在发布会前，官方预热视频重点展示了对焦控制、背景虚化、可变光圈以及镜头或光学组件更换等功能，暗示该系列产品可能在影像系统方面迎来较大调整。 爆料者 Igor Bogdanov 分享的宣传资料显示，影石 Ace Pro 3 可能配备徕卡 Summicron 主摄（等效焦距 22mm）+ 超广角镜头（等效焦距 14mm）。新机还可能采用 1/1.1 英寸方形传感器，尺寸较 Ace Pro 2 的 1/1.3 英寸传感器有所增加。 此前，运动相机普遍采用固定焦点和超广角镜头设计。以现款 Ace Pro 2 为例，其官方规格显示，最近对焦距离为 37 厘米，采用 1/1.3 英寸传感器和 F2.6 固定光圈。Ace Pro 3 如果引入可变光圈和对焦控制，将进一步扩展近距离拍摄及景深控制能力。 泄露资料还提及 F1.77 至 F4.0 可变光圈、最高 8K 30fps 视频录制、5000 万像素照片、2.5 英寸 OLED 翻转屏、2250mAh 电池、50GB 机身存储以及 20 米裸机防水等配置。 此外，新机据称支持杜比视界视频录制和 10-bit I-Log 色彩模式，续航时间最长可达 5 小时。 镜头系统方面，相关爆料还提到了等效焦距 50mm 的长焦镜头、变形宽银幕镜头以及 ND 减光滤镜等配件。不过，目前尚不清楚这些光学组件究竟采用真正的可更换镜头设计，还是通过安装在机身前方的光学附件实现功能扩展。 作为对比，大疆 Osmo Action 6 已经支持 F2.0 至 F4.0 可变光圈，而 GoPro Mission 1 Pro ILS 则支持安装微型三分之四系统镜头，但采用手动对焦。如果 Insta360 能够将自动对焦与可更换镜头系统结合，Ace Pro 3 的拍摄控制方式将进一步接近传统相机。 泄露材料显示，Ace Pro 3 搭载一颗 5000 万像素、1/1.1 英寸方形传感器，面积较 Ace Pro 2 的 1/1.3 英寸传感器增加约 30%。该传感器由影石与索尼联合定制，宣称动态范围达到 14.5 stops。镜头首次在 Ace Pro 系列中引入 F1.77 至 F4.0 可变光圈，此前 Ace Pro 2 的光圈固定为 F2.6。 资料显示，其主摄拥有 22mm 等效焦距、90° 视角，对焦距离 0.3 米；另有一枚 14mm 等效超广角镜头可外接，视角扩展至 156 度，对焦距离缩短至 0.12 米。此外还有一枚 50mm“黄金人像”长焦附加镜头，支持 2 倍无损变焦。视频规格方面，8K 上限仍为 30 帧，但 4K 提升至 120 帧杜比视界录制，并支持 10-bit I-Log 色彩。 影石 Ace Pro 3 有望将采用前后双 OLED 屏幕：主屏 2.5 英寸可翻转，前屏 1.46 英寸用于自拍预览。 电池容量增至 2250mAh 硅碳负极电池，官方材料称续航提升 66%，支持 24 分钟充至 80%、38 分钟充满。 内置存储 50GB，裸机防水从 Ace Pro 2 的 12 米提升至 20 米（IPX8），配合潜水壳可达 60 米。裸机重量 161 克，加装超广角镜头后为 185 克。 与 Ace Pro 2 相比，Ace Pro 3 的变化集中在光学系统和主动散热之外的多个维度：传感器面积增大、光圈从固定 F2.6 变为可变 F1.77—F4.0、新增可附加镜头、电池容量提升约 25%、防水深度增加 60% 以上，并补上了内置存储。 相关阅读： 《 影石 Ace Pro 3 新品发布会定档 12 月 1 日，有望带来可换镜头、对焦和可变光圈等升级 》",
+        "url": "https://www.ithome.com/1/033/821.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "钛媒体",
+        "title": "《复联5》要来救市了",
+        "summary": "《复仇者联盟》依然是最强IP。",
+        "url": "https://www.tmtpost.com/8221005.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "钛媒体",
+        "title": "“争议”总经理上任176天“闪辞”，水井坊6年已换8帅",
+        "summary": "“川酒六朵金花”之一的水井坊，总经理又双叒叕换了。",
+        "url": "https://www.tmtpost.com/8221007.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "钛媒体",
+        "title": "OpenAI 和 Anthropic 在招什么样的营销人才？",
+        "summary": "三家公司招聘要求背后，有五种共同能力。",
+        "url": "https://www.tmtpost.com/8221003.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "极客公园",
+        "title": "AI 硬件竞争白热化，OpenAI 反诉苹果窃密；iPhone 18 量产再度推迟；王兴回应美团与小微试点合作",
+        "summary": "OpenAI 转守为攻：反诉苹果窃密，喊话「不公平竞争」 当地时间周五（27 日），OpenAI 在美国加利福尼亚州圣何塞联邦法院对苹果提起反诉，指控苹果窃取其商业机密，并阻挠其与硬件供应商合作。 今年 7 月，苹果曾以窃取商业机密为由起诉 OpenAI。随着 OpenAI 反诉，这场官司从苹果一方起诉变成了双方互诉。 据报道，OpenAI 正准备推出一系列新的个人设备，并称这些设备有望「在苹果视为自家地盘的领域胜过苹果」。 据报道，OpenAI 在诉状中称，苹果这样做是为了「不择手段地进行不公平竞争」。OpenAI 还指控苹果利用自身的「规模和财力来阻碍竞争」，存在「各种违法、不公平和侵权行为」。 有分析指出，这场诉讼关系到未来 AI 设备由谁主导。这类设备可能不再依赖传统的应用程序或操作系统，一旦成功，可能分走消费者对苹果最畅销产品 iPhone 的关注。分析人士称，OpenAI 正在开发手机或其他自有设备。两家科技巨头均未立即回应媒体的置评请求。（来源：第一财经） iPhone 18 量产再度推迟，苹果新机上市前备货时间承压 苹果即将推出的 iPhone 18 和 iPhone 18e 两款机型再次遭遇生产延迟。来自微博的爆料者「定焦数码」称，这两款机型目前均尚未进入大规模量产阶段，量产启动时间已从此前预计的 10 月下旬推迟到 2027 年元旦前后。 今年 10 月，同一消息源曾表示，标准版 iPhone 18 的生产目标定在 11 月下旬，并称苹果正准备建立较大的库存。而最新说法提到的 1 月时间点，比此前报道的两个目标都更晚。 在配置方面，外界预计两款机型都将搭载 A20 芯片，运行内存则可能从 8GB 提升至 9GB，并采用苹果自研的 C2 调制解调器。此外，两款新机还传出将配备更大容量电池，iPhone 18e 则可能迎来前置摄像头升级。 彭博社记者马克·古尔曼此前指出，这两款设备预计将在明年 2 月或 3 月发布。如果这一时间表保持不变，那么 1 月才开始量产将让苹果积累库存的时间比往年更紧张。（来源：cnBeta） 马斯克 SpaceX 拓展卫星直连手机业务，有意收购美国 Anterix 900 MHz 频谱 据彭博社当地时间 11 月 27 日报道，美国无线频谱公司 Anterix 正考虑大规模出售其持有的 900 MHz 无线频谱资产，而马斯克旗下 SpaceX 已表达对这一频段的兴趣。 随着 SpaceX 拓展卫星直连终端（Direct-to-Device，D2D）业务，双方可能围绕低频段频谱展开进一步合作或交易。 Anterix 正考虑将剩余频谱许可出售给单一买家，而不再局限于此前以长期租赁方式向公用事业企业提供频谱。Anterix 企业发展负责人 Chris Guttman-McCabe 表示，公司正在与潜在交易方接触，希望通过频谱资产交易提升股东价值。他还表示，如果找到合适的买家，公司剩余频谱的价值可能达到目前的三倍。 目前，Anterix 持有的频谱资产约有 15% 已被部分公用事业企业使用，其余约 85% 尚未投入使用。公司此前主要向电力等公用事业企业出租 900 MHz 频谱，用于建设专用无线宽带网络，支持电网通信和关键基础设施运营。如今，公司正在扩大频谱资产的商业化方式，包括直接出售许可和长期租赁。(来源：IT 之家) 三星刷新闪存层数纪录，全球首款 500 层以上 NAND 诞生，容量提升 50% 11 月 27 日，三星电子宣布已成功开发出全球首款 500 层以上 NAND 闪存，该产品为三星第 11 代 NAND 闪存，相关技术成果计划于明年 2 月在美国旧金山举行的国际固态电路会议（ISSCC 2027）上公布，最快将于明年实现商用。 该产品相较当前量产的 400 层 NAND 闪存，单芯片容量、存储密度均提升 50%，单引脚 I/O 速率增幅达 21.4%，写入吞吐量达 290MB/s，单位容量生产成本理论上可降低约 33%。 三星已于今年初启动该款闪存试产，目前试产良率约 30%，同步推进包含 576 层在内的多个堆叠方案。当前 AI 数据中心建设带动大容量存储需求上涨，今年第二季度企业级 SSD 占全球 NAND 闪存出货容量的比例已达 48%。（来源：快科技） WhatsApp 或将推出旅行 eSIM 功能 WhatsApp 正在开发一项全新的旅行 eSIM 功能，未来用户或许可以直接在应用内发现、购买、安装并管理适用于旅行目的地的 eSIM 套餐。 这一功能是在 WhatsApp for Android 最新版本 2.26.47:10 中被发现的。据 Android Authority 报道，应用代码中出现了多处与该功能相关的引用，不过目前该功能尚未正式上线。 相关代码文本包括「旅行 eSIM 已安装」「你的套餐将在开启 eSIM 时开始计时」以及「该目的地暂不提供套餐」等提示。从这些信息来看，用户未来很可能可以在 WhatsApp 内搜索旅行目的地，并浏览当地支持的 eSIM 套餐，随后直接在应用内完成购买和安装。不过，代码中出现的「即将推出」提示也表明，该功能可能不会在所有地区同步上线。 此次发现还显示，WhatsApp 可能会与第三方 eSIM 服务商合作提供这项服务。(来源：cnBeta) 美团王兴：与微信小微合作按计划推进，预计明年 AI 资本开支将低于今年 据每日经济新闻，对于市场关注的美团与微信小微的试点合作进展，美团 CEO 王兴在财报发布后的业绩电话会上表示，双方合作正按计划推进，双方聚焦本地服务场景，优先打磨微信生态内完整服务链路。 王兴认为，微信 AI 能力叠加美团本地供给与履约能力，有望挖掘微信生态内新的本地服务需求。 在 AI 资本开支上，王兴表示，美团将坚持 ROI（投资回报率）导向、审慎投入。王兴透露，今年已提前锁定部分算力资源，预计明年 AI 相关资本开支将低于今年，投入节奏服从整体财务规划，兼顾业务收益与推理成本，持续优化投入效率。 他同时提到，AI 将持续在研发、客服、运营等环节提效，优化平台推荐与服务体验，中长期来看，AI 带来的降本增效有望逐步覆盖新增投入。（来源：IT 之家） 何小鹏谈机器人 IRON：等下个季度或下两个季度，要把全身的触觉打通 11 月 27 日消息，2026 广州车展正式开幕。车展期间，小鹏集团董事长、CEO 何小鹏与小鹏机器人 IRON 共同巡展。 在与新浪科技等媒体对话时，谈及机器人 IRON，他透露，目前已经打通了整体的视觉和听觉，「但这个季度还没打通触觉，等下个季度或者下两个季度，我们要把全身的触觉打通。」 另外，他还表示：「对于今天的这个产品，它肯定还处于 20-30 分的水平，但等到下两个季度，它可能就会达到 40-50 分。我期待等我们交付的时候，它能够达到 60 分的水平。不光要有用，而且还能用。」（来源：IT 之家） 梅赛德斯-奔驰：Momenta R7 世界模型 2027 年将陆续搭载于更多燃油车型 11 月 27 日消息，2026 广州车展今日开幕，梅赛德斯-奔驰公布辅助驾驶、AI 智能座舱更多消息。 据其介绍，梅赛德斯-奔驰是首批实现 Momenta R7 世界模型上车、首个实现「车位到车位」能力的豪华品牌。奔驰与 Momenta 共创的城区及高速领航辅助驾驶系统，融合世界模型与强化学习能力，场景能力提升 3 至 5 倍。 奔驰是 Momenta 合作车企中路测覆盖城市最多的品牌，数量远超行业标准，辅助驾驶体验安心可靠。针对燃油车型特性，奔驰对起步响应、水冷散热等进行特殊优化，确保「无论油电，都很智能」。 最新的辅助驾驶与智能座舱科技目前已搭载于部分奔驰车型，并均将应用于后续燃油车型和纯电车型上，以及持续 OTA，实现「油电同智、常用常新」。（来源：IT 之家） iPhone 20 Pro 或将采用 3D 打印钛金属边框 据最新传闻，苹果明年推出的 iPhone 20 Pro 系列将在机身边框上大量使用 3D 打印钛金属。来自中国的爆料者「定焦数码」在微博上称，苹果计划采用基于激光的钛粉末 3D 打印工艺来制造部分中框部件，这一工艺有望显著提升设备的耐用性。该爆料者对该消息的准确性似乎颇有信心，甚至建议关注者在明年新机发布时翻出这条微博进行对照。 苹果已经在 Apple Watch Ultra 4 以及钛金属版 Apple Watch Series 12 的表壳生产中应用了这项 3D 打印技术。 这项技术可能为苹果正在开发的二十周年全玻璃 iPhone 设计提供更大的设计灵活性。据传，该机型将采用曲面玻璃，并实现几乎不可见的屏幕边框。彭博社的马克·古尔曼曾形容，这一系列改动将是 Pro 产品线自 iPhone X 以来最大的一次革新。 目前尚不清楚苹果将如何解决钛金属带来的散热难题，因为当前 Pro 机型所使用的铝金属具有更出色的散热性能。 苹果预计将于 2027 年秋季发布 iPhone 20 Pro 系列。爆料者目前以「iPhone 20 Pro」称呼这些设备，但苹果最终的命名方案仍不得而知。（来源：cnBeta） 消息称徕卡 Q3 43 Monochrom 黑白相机 12 月 3 日发布，定价 7490 欧元 11 月 27 日消息，外媒 LeicaRumors 发文，透露徕卡 Q3 43 Monochrom 黑白相机将于 12 月 3 日发布。 该机可以看作是标准款徕卡 Q3 Monochrom 黑白相机换上 Q3 43 的 43mm f/2 镜头，为喜欢中焦段便携相机的用户提供一种新选择。机身继续采用 6000 万像素全画幅传感器，搭配 Maestro IV 处理器和 8GB DRAM 缓存。支持录制 30 帧 / 秒的 8K 视频或 60 帧 / 秒的 4K 视频。 价格方面，徕卡 Q3 标准版的官方售价为 6,490 欧元（现汇率约合 47,499 元人民币），徕卡 Q3 Monochrom 和 Q3 43 的售价均为 6,990 欧元（现汇率约合 51,158 元人民币），而徕卡 Q3 43 Monochrom 的预计售价为 7,490 欧元（现汇率约合 54,817 元人民币）。（来源：IT 之家） 民间优化速度逆天！PC 版《GTA6》居然能联机了 11 月 27 日消息，依托泄露游戏文件、采用 AI 辅助开发的《GTA6》非官方 PC 移植项目，其出自 CGBJ 项目的衍生分支现已实现双人联机功能。 相关实机演示显示，两名玩家使用的均为男主角杰森，可共同进入机场场景互动，运行帧率约为 25-30FPS，该演示内容已得到部分 GTA 社区成员核验。 该项目此前已先后完成 3D 模型、场景渲染、非官方模组菜单与启动器等相关开发，CGBJ 主体项目此前已被相关方叫停，目前仍有开发者转入私下交流继续推进不同版本开发，暂未公布更多玩家同时在线的测试结果。(来源：快科技)",
+        "url": "http://www.geekpark.net/news/374621",
+        "source": "极客公园",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "少数派",
+        "title": "本月玩什么｜GTA VI、塞尔达传说 时之笛、魔兽世界：无限",
+        "summary": "以上便是部分近期值得探讨的新游信息汇总，个人角度仅供参考。本期不设特定有奖互动话题，欢迎你在评论区分享11月新作游玩体验，可以是本文出现的，也可以是本文未提及、但你特别想推荐给派友的。我们下期再见！> ... 查看全文",
+        "url": "https://sspai.com/post/119686",
+        "source": "少数派",
+        "region": "cn",
+        "category": "科技"
+      },
       {
         "date": "2026-11-27",
         "tag": "Ars Technica",
@@ -535,116 +645,6 @@
         "summary": "根据苏美尔神话，世界之初即无耕种也无畜牧和纺织，原神们生活窘迫，为此他们创造了谷之女神 Ashnan 和羊之神 Lahar，将他们派去帮助人类。Ashnan 和 Lahar 合作为神祇们提供了面包、酒、奶和兽皮。但众神们又争执起了谁的贡献更大。智慧之神 Enki 裁定谷之女神 Ashnan 贡献更大，理由是无谷物就没有面包和酒。推而广之，也就不会有城市，更不会有苏美尔文明。古苏美尔人的认识至今仍然正确：人类的历史是小麦的历史。人类食用小麦的历史比城市、文字乃至车轮的出现都要久远。现存最古老的文字记录并非史诗或宗教典籍，而是关于谷物储存与税收的行政记录。虽然世界其它地区的主导粮作物不同，比如东亚是水稻，美洲是玉米，但是小麦支撑起了罗马帝国与工业革命。",
         "url": "https://www.solidot.org/story?sid=86013",
         "source": "Solidot",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "爱范儿",
-        "title": "9.69 万元，奇瑞 QQ3 变身一辆可以开咖啡馆的「QQ 啡车」丨广州车展",
-        "summary": "生活方式，可大可小。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1695964?utm_source=rss&utm_medium=rss&utm_campaign",
-        "source": "爱范儿",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "IT之家",
-        "title": "魏牌高山右舵版车型在香港市场上市，今年第四季度还将登陆澳洲",
-        "summary": "IT之家 11 月 27 日消息，在今天进行的 2026 广州车展中，魏牌宣布旗下魏牌高山右舵版（WEY G9）今日于香港市场正式上市。 据介绍，魏牌高山车型依托原生平台实现左舵与右舵版本同步开发，并根据不同地区的通行法规与用车习惯进行属地化适配。 此外魏牌还预热该车将于今年四季度登陆澳洲市场 。 规格方面，IT之家获悉该车尺寸为 5050mmx1985mmx1900mm，轴距 3085mm。车辆采用 1.5T 发动机 + 前后双电机插电混动，系统综合最大功率 442 马力、峰值扭矩 642 牛 · 米，匹配 44.28kWh 电池，NEDC 纯电续航 170km。",
-        "url": "https://www.ithome.com/1/033/771.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "IT之家",
-        "title": "我国自主聚变能源解决方案发布工程初步规划，拟分两个阶段实施",
-        "summary": "IT之家 11 月 27 日消息，据央视财经报道，11 月 27 日，中国工程院彭先觉院士团队在成都介绍 我国原创“Z 箍缩聚变裂变混合堆”供热示范堆工程初步规划 。 据介绍，Z 箍缩聚变裂变混合堆是我国科学家自主提出的一种将核聚变与核裂变相结合的技术方案。 根据规划， 工程拟分两个阶段实施 ，先开展聚变点火和核心工艺验证，再建设面向城市供热、工农业用热等需求的示范堆。 IT之家获悉，按照初步规划， 2026 年至 2030 年为核心技术攻关验证阶段 ，相关验证工作将依托由中国工程物理研究院流体物理所承建的“50MA 电磁驱动聚变大科学装置”开展。该装置已获国家发展改革委批复，计划于 2030 年在成都天府新区建成。 第二阶段的供热示范堆拟于 2031 年至 2035 年建设 ，设计聚变功率为 200 兆瓦、热功率超过 2000 兆瓦。除供热外，示范堆还可用于材料辐照、医用同位素生产等。该工程有望成为全球首个核聚变能源工程供热示范堆先导堆型，并为此后发电示范堆打下基础。",
-        "url": "https://www.ithome.com/1/033/770.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "IT之家",
-        "title": "华擎推出旗舰一体式液冷 Taichi AQUA 360 LCD：引入分体式设计",
-        "summary": "IT之家 11 月 27 日消息，华擎 (ASRock) 今日宣布推出旗舰级处理器液冷散热器 Taichi AQUA 360 LCD。该型号总体上来看属于一体式 (AIO) 类型，但又具备一些分体式的特质。 Taichi AQUA 360 LCD 采用双水泵结构 ，提供双倍流量和备份冗余；拥有 CIIR + EPDM 多层水冷管； 搭配 38mm 加厚高密度冷排 ；预装的吹排风扇采用 LCP 商业、双滚珠轴承。 其冷头既可 展现 ARGB 灯光映照下的透明水道 ，也可磁吸固定 3.4\" LCD 屏幕； 冷排预留标准 G1/4\" 进出水口 ，兼容分体液冷生态；设有水泵故障蜂鸣报警器；享受 6 年质保。",
-        "url": "https://www.ithome.com/1/033/769.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "IT之家",
-        "title": "广汽能源：目前自营充电站达 2563 座，目标明年底旗下补能网络覆盖 300 个城市",
-        "summary": "IT之家 11 月 27 日消息，广汽集团旗下广汽能源在今日举行的 2026 广州车展上介绍了补能体系建设进展。 广汽能源表示，截至 2026 年 11 月， 在补能网络建设上，广汽自营充电网络已覆盖 31 个省级行政区、240 个城市，自营充电站达 2563 座、自营充电桩突破 3.3 万根 。 广汽能源同时透露，公司目标到 2027 年底补能网络覆盖 300 个城市、2030 年构建十万充电终端的生态网。加速在县域、高速沿线及北方高寒地区布局，并推进兆瓦级 10C 超充桩升级。",
-        "url": "https://www.ithome.com/1/033/768.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "量子位",
-        "title": "人形机器人开发者集合！众擎开放大小脑，10亿产业级生态支持计划也来了",
-        "summary": "一支团队在真机上验证的成果，可以成为下一支团队继续开发的起点。",
-        "url": "https://www.qbitai.com/2026/11/513352.html",
-        "source": "量子位",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "钛媒体",
-        "title": "鱼你在一起7.0小碗菜模型加速规模化；波司登中期营收超91亿元；元气森林2026外星人与好自在双位数增长；锐步重启中国市场｜消研所周报",
-        "summary": "迪卡侬旗下专业高山攀登品牌「SIMOND」焕新亮相中国市场；始祖鸟2026雪季以「SPEAK IN TURNS」为题正式开启。",
-        "url": "https://www.tmtpost.com/8220740.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "爱范儿",
-        "title": "从「中国特供」变全球旗舰，搭载 Momenta 智驾的本田冠道来了｜广州车展",
-        "summary": "十年前为中国造大空间，十年后用中国场景定义全球车。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1695948?utm_source=rss&utm_medium=rss&utm_campaign",
-        "source": "爱范儿",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "爱范儿",
-        "title": "启源 Q06 迎来大升级！长安发布天枢领航 Ultra 2.0，明年 1 月推车位到车位｜广州车展",
-        "summary": "15 万级家用车车主，也在认真用高阶智驾了。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1695936?utm_source=rss&utm_medium=rss&utm_campaign",
-        "source": "爱范儿",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Ars Technica",
-        "title": "英特尔面临选择：给特朗普10%，否则后果自负",
-        "summary": "Intel faced pressure to surrender a 10% stake to unlock billions in promised grants.",
-        "url": "https://arstechnica.com/tech-policy/2026/11/intel-faced-a-choice-give-trump-10-or-face-the-consequences/",
-        "source": "Ars Technica",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "钛媒体",
-        "title": "线上线下打包出售5家子公司，已“套现”超10亿元的原实控人接盘",
-        "summary": "易主时的兜底条款落地。",
-        "url": "https://www.tmtpost.com/8220834.html",
-        "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       }
