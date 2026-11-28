@@ -1,7 +1,47 @@
 {
-  "updated": "2026-11-28 04:52 UTC",
+  "updated": "2026-11-28 08:08 UTC",
   "categories": {
     "投资": [
+      {
+        "date": "2026-11-28",
+        "tag": "Financial Times",
+        "title": "伊朗两次袭击同一船只以阻止霍尔木兹海峡的交通",
+        "summary": "At least six vessels have been victims of ‘double tapping’ in the past two months",
+        "url": "https://www.ft.com/content/f9c4da80-cc2c-4b0b-b083-b7acd0337790?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Financial Times",
+        "title": "美军在英国皇家空军基地击退无人机",
+        "summary": "New details emerge about incident at RAF Lakenheath in Suffolk earlier this month",
+        "url": "https://www.ft.com/content/57795d58-2b9e-45cb-81e3-6c63aee434a4?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Financial Times",
+        "title": "经历人工智能革命的数学家",
+        "summary": "Startling digitally assisted discoveries have raised questions about the future of human experts in the field",
+        "url": "https://www.ft.com/content/f27646d1-d8f2-4592-8d0e-bcce6c6da061?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Financial Times",
+        "title": "“只有在美国”和其他善意的谎言",
+        "summary": "Diverse societies need noble myths to keep them whole",
+        "url": "https://www.ft.com/content/322f3ecd-f513-45aa-9b2f-adf63e104638?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
       {
         "date": "2026-11-28",
         "tag": "The Block",
@@ -39,26 +79,6 @@
         "summary": "Some countercultural advice this Black Friday: stop buying stuff, plus other rules for downsizing.",
         "url": "https://www.marketwatch.com/story/clearing-out-my-parents-house-was-a-legal-nightmare-how-can-i-downsize-without-putting-my-children-through-the-same-ordeal-6537d804?mod=mw_rss_topstories",
         "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Financial Times",
-        "title": "OpenAI 反诉苹果窃取商业机密",
-        "summary": "The ChatGPT maker also accuses the tech giant of ‘coercing and threatening’ suppliers who work with both companies, as legal battle escalates",
-        "url": "https://www.ft.com/content/af599e07-d44c-4068-ab84-6ee3c85551d4?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Financial Times",
-        "title": "标准普尔将法国前景下调至负面",
-        "summary": "Rating agency says political instability will make it harder for the country to tackle its public deficit",
-        "url": "https://www.ft.com/content/4e16110a-9604-4455-8557-4edece5df01a?syn-25a6b1a6=1",
-        "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
@@ -104,31 +124,11 @@
       },
       {
         "date": "2026-11-27",
-        "tag": "Financial Times",
-        "title": "由于交易波动较大，美国科技股开盘将上涨",
-        "summary": "All-powerful AI trade has been eclipsed by wild moves in a market struggling to price future earnings",
-        "url": "https://www.ft.com/content/b80e6259-dca8-4da3-962d-402106a3cd81?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
         "tag": "Seeking Alpha",
         "title": "苹果因窃取商业机密面临 OpenAI 反诉 - FT",
         "summary": "",
         "url": "https://seekingalpha.com/news/4677105-apple-faces-countersuit-from-openai-for-stealing-trade-secrets---ft?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
         "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Financial Times",
-        "title": "特朗普干预英伟达让美股付出代价",
-        "summary": "Political meddling has already rubbed some of the gloss off the dollar and US Treasuries. Now it is hitting equities",
-        "url": "https://www.ft.com/content/3318a827-bf20-4826-947d-9327381c3c10?syn-25a6b1a6=1",
-        "source": "Financial Times",
         "region": "en",
         "category": "投资"
       },
@@ -175,92 +175,32 @@
         "category": "科研"
       },
       {
+        "date": "2026-11-28",
+        "tag": "Nature 材料",
+        "title": "基于逻辑分布的岩石水力耦合统计损伤本构模型",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-81349-5",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Nature 材料",
+        "title": "海藻粉/h-BN/Al2O3增强环氧杂化复合材料拉伸和介电性能优化",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-81592-w",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
         "date": "2026-11-27",
         "tag": "ScienceDaily 材料",
         "title": "科学家将世界上最难回收的塑料之一转化为高性能润滑油",
         "summary": "Virginia Tech scientists have discovered how to transform one of the world's hardest-to-recycle plastics into a valuable ingredient for high-performance engine oil. Their innovative process converts discarded PVC into a useful lubricant material in just three hours. The breakthrough could turn a major source of plastic pollution into a valuable industrial resource while making lubricant production more sustainable.",
         "url": "https://www.sciencedaily.com/releases/2026/11/261126033501.htm",
         "source": "ScienceDaily 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "arXiv cs.AI",
-        "title": "上下文扩展：AI 扩展的新领域",
-        "summary": "arXiv:2611.33160v1 Announce Type: new Abstract: Many failures of deployed AI arise not from weak inference but from a mismatch between the state a task depends on and the context available when the system acts. Relevant user state, repository revisions, tool traces, sensor readings, or environment changes may be unavailable, distorted, or poorly selected. We call the effort to reduce this bottleneck context scaling. We frame a model as $P_\\theta(d\\mid c)$ within a system governed by three budgets: training $B_\\theta$, decision-time $B_d$, and context-infrastructure $B_c$. Pretraining scaling invests in $\\theta$; decision-time scaling searches, refines, or verifies decisions under supplied context; context scaling improves the system's capacity to acquire, represent, deliver, evaluate, and persist deployment state for model use. The three programs interact, but only $B_c$ targets what the system can make available before a decision. This view makes the model-infrastructure pair the unit of analysis. We define effective-context value as a task- and intervention-dependent attribution, separate deployment state from model-visible context, and identify availability, fidelity, selection, and utilization failures. We then organize current mechanisms through a five-operation context lifecycle and propose controlled budget interventions and utility-cost curves for evaluation. The resulting agenda centers on grounded reporting, interaction-data and full-cost infrastructure, and safety and governance for persistent, adaptive systems.",
-        "url": "https://arxiv.org/abs/2611.33160",
-        "source": "arXiv cs.AI",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "arXiv cs.AI",
-        "title": "LLM 和 VLM 候选人选择的约束感知测试时间评分",
-        "summary": "arXiv:2611.33161v1 Announce Type: new Abstract: When an LLM or VLM produces several candidate answers, picking the best one usually relies on the model's own confidence, a learned judge model, or a domain check. Each has a known weakness: an answer can be fluent but insecure, mathematically plausible but physically infeasible, or rated highly by a judge while quietly breaking a task requirement. We propose a scoring framework that combines a small set of hard checks every answer must pass with a wider set of softer checks whose scores are blended into one number per candidate. This adaptive scoring framework consists of three components: a drafting model that produces the candidates, a configuring model that selects and weights the checks for each task, and scoring models that rate properties no grounded tool can compute. We apply our proposed method to four tasks: writing code that is both correct and secure (CWEval), generating robot manipulation plans (LIBERO with added safety variants), passing competitive-programming hidden tests (LiveCodeBench), and answering questions from retrieved documents (HotpotQA). An ablation study isolates the contribution of each component and finds that the largest gains come from combining hard checks with candidate comparison: on tasks where the first sampled answer is often broken or unsafe, this pairing lifts joint correctness-and-safety by up to +0.21 (retrieval-augmented QA) and code-generation safety by up to +0.28 (CWEval), with the size of the gain tracking how weak the first sample is, falling to near zero or slightly negative where it is already strong. The per-task layer that selects and weights the softer checks adds no measurable value over simpler alternatives. This builds a unified scoring framework, together with an ablation that identifies the grounded hard checks, not the soft-factor configuration, as the source of the gain.",
-        "url": "https://arxiv.org/abs/2611.33161",
-        "source": "arXiv cs.AI",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "arXiv cs.AI",
-        "title": "AutoformBench：高级数学的精益形式化基准",
-        "summary": "arXiv:2611.33165v1 Announce Type: new Abstract: AI systems are increasingly capable of producing machine-checked Lean proofs of advanced mathematical results. Real mathematical formalization, however, is not isolated theorem proving: it requires building the definitions and intermediate lemmas that connect a result to a formal library. Existing evaluations often provide isolated theorem statements in settings where much of this supporting theory is already available in Mathlib. We introduce AutoformBench, a benchmark of 341 Lean 4 formalization tasks drawn from 24 advanced mathematical sources. Lean-experienced mathematicians formalized and audited each target statement, leaving the corresponding Lean proof to the evaluated agent. Each problem is embedded in a broader mathematical development: agents receive the informal proof but must translate it into Lean while constructing the missing definitions, intermediate lemmas, and supporting infrastructure. We compare the performance of frontier models on these problems. We find a largely shared difficulty frontier: success depends less on mathematical domain than on models' ability to construct missing formal infrastructure. Data and code at https://github.com/facebookresearch/autoformbench",
-        "url": "https://arxiv.org/abs/2611.33165",
-        "source": "arXiv cs.AI",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "arXiv cs.AI",
-        "title": "用于 AI 配置调整的通用决策模型",
-        "summary": "arXiv:2611.33190v1 Announce Type: new Abstract: AI configuration tuning searches for settings that improve the performance of AI systems under a limited budget. Existing tuners use different sampling and search policies, making the choice of decision strategy central to both tuning quality and cost. We investigate whether general-purpose decision models can guide tuning, using Jev as a deployed representative that returns structured choices and numeric scores across diverse tasks. To assess where it helps, we compare its use as an optimizer, performance predictor, and region guider against conventional methods and a large language model (LLM) on eight AI tuning tasks. Conventional optimizers attain rank 1 in six of eight comparisons. Similarly, established predictors outperform Jev in seven. Through region guidance, however, it finds configurations with lower perplexity than those selected by the native tuner, offering a quality gain when additional decision time and API fees are acceptable. These findings yield actionable recommendations on selecting the decision role, retaining conventional predictors, and balancing tuning quality against cost.",
-        "url": "https://arxiv.org/abs/2611.33190",
-        "source": "arXiv cs.AI",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "arXiv cs.AI",
-        "title": "什么、谁和何时：通过简短推理进行心理健康安全的结构化伤害评估",
-        "summary": "arXiv:2611.33263v1 Announce Type: new Abstract: The growing use of large language models (LLMs) for mental health support raises important safety concerns. Existing guard models primarily identify categories of harmful content, often overlooking the context needed to determine an appropriate response. We introduce a clinically grounded taxonomy that characterizes harm along three dimensions: what the harm is, who is involved, and when it occurs. It further separates harm characterization from intervention decisions, thus enabling safety policies to be specified outside the model weights through explicit, clinician-curated instructions that can be updated and audited. We validate the taxonomy with expert clinicians and validate a panel of LLM judges to scale annotation. Relabeling public benchmarks in this taxonomy shows that they rarely contain harm directed at the user, which accounts for nearly half of the harm in real conversations. We then train MindGuard2, a 35B-A3B reasoning-based guard model using supervised fine-tuning on short reasoning traces followed by reinforcement learning with a reasoning-length penalty, to minimize inference overhead while preserving the benefits of reasoning. On two public benchmarks and real-world conversations, MindGuard2 achieves balanced accuracy comparable to the substantially larger GLM-5.3 at approximately 10x lower median latency, advancing the accuracy-latency Pareto frontier. Furthermore, it achieves low false-positive rates at high recall, helping balance the need to detect unsafe situations against the risk of unnecessary interventions that may disrupt support and undermine user trust. We release a safety guardrail model with SOTA performance trained on synthetic data, together with synthetic conversations and annotations of public benchmarks in our taxonomy.",
-        "url": "https://arxiv.org/abs/2611.33263",
-        "source": "arXiv cs.AI",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "arXiv cs.AI",
-        "title": "证明你所种植的东西：逻辑推理数据中的无捷径证明深度",
-        "summary": "arXiv:2611.33303v1 Announce Type: new Abstract: Procedurally generated logic problems are used to both evaluate and train reasoning in language models. Their difficulty is usually set by planting a proof, that is, by sampling a proof of the desired depth and stating its premises as the problem. However, a planted proof is only one possible proof. A problem can also have shorter proofs, or several unrelated ones, and its stated depth then overstates what solving it requires. We measure what a problem actually requires, relative to a stated set of inference rules. For each problem, we compute the steps every proof must make, the shortest proof, the number of minimal proofs and the indispensable premises, and export certificates that an independent checker verifies. Audits of eight datasets find depth that is forced (ProofWriter, Blocksworld), problems labelled depth 5 that require about two specific rule applications (FLDx2), and answers that need no particular step (ZebraLogic). We then construct problems whose every proof has a requested structure, using a catalog of shortcuts proved once per rule set. Every constructed problem is checked in full and comes with its own certificate. In training, the best data mixes depths and problem types. At equal size, such mixtures of certified problem types, including model-checking problems that forward generation does not produce, transfer better than FLDx2-style derivation data for Qwen3 models from 0.6B to 8B.",
-        "url": "https://arxiv.org/abs/2611.33303",
-        "source": "arXiv cs.AI",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "arXiv cs.AI",
-        "title": "雅可比空间中的柏拉图表示假说：语言和视觉模型在旋转上大致一致",
-        "summary": "arXiv:2611.33304v1 Announce Type: new Abstract: The Platonic Representation Hypothesis (PRH) posits that AI models converge toward a shared representation of the world, even when trained on different data modalities. Previous work has found evidence for the PRH in the activations of vision and language models. In this work, we ask whether vision and language models also converge in how they act on these representations: precisely, in how these internal representations affect the models' output. At a chosen layer of a transformer, the Jacobian lens gives every word in the vocabulary (or class in an image classifier) a vector in the hidden state: the vector that most increases the model's tendency to generate that word, at that position or later, or to predict that class. Collectively, these vectors make up what is referred to as the model's J-space. We find evidence of the PRH in J-space across vision and language models, and furthermore, we find that J-spaces mostly converge up to a rotation. That is, a single rotation, fitted on a subset of words, approximately maps one model's J-space onto another's, and so applies to words and classes it was not fitted on. A word's vector, rotated from a text-only language model's J-space into the visual patch tokens of a vision-language model, changes the object the vision-language model says is in the image (and only in the image region where it is added). Rotated into an image generator's text conditioning, a word's vector changes the object in the generated image. Rotated into an ImageNet classifier (trained without text), it raises that object's class score above almost all others, and vice versa. This suggests that models converge not only in how they represent the world, but also in how they act on it.",
-        "url": "https://arxiv.org/abs/2611.33304",
-        "source": "arXiv cs.AI",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "arXiv cs.AI",
-        "title": "语言模型中的品牌回忆和类别准确性：对 1,000 个 B2B SaaS 品牌的审核",
-        "summary": "arXiv:2611.33322v1 Announce Type: new Abstract: A language model can name a brand without classifying it correctly. This study measures these outcomes separately for 1,000 B2B SaaS brands across 333 product categories. On Gemma 4 12B, with no external retrieval, category prompts elicit 510 brands (51.0%). A separate five-candidate category probe ranks the reference label first for 787 brands, a distractor first for 194, and yields little separation for 19. Among the 981 separated rankings, the error rate is 19.8%. It falls to 3.5% for the 547 brands with a winner-to-runner-up log-probability margin above 0.6. These are within-cohort measurements, not calibrated confidence estimates. Exploratory regressions associate technical coverage with recall and an owned-properties composite with category accuracy, but the composites use different adjustment sets and do not establish causal effects. Across four Gemma generations, measured recall is 39.8%, 44.3%, 51.1% and 51.0%. A separate representation-based sentiment measure has little linear association with customer ratings (r=0.03, n=921). The findings support reporting recall and category accuracy separately. Failure to elicit a brand does not establish its absence from model parameters or training data.",
-        "url": "https://arxiv.org/abs/2611.33322",
-        "source": "arXiv cs.AI",
         "region": "en",
         "category": "科研"
       },
@@ -305,6 +245,66 @@
         "category": "科研"
       },
       {
+        "date": "2026-11-27",
+        "tag": "Nature 材料",
+        "title": "因果发现引导的机器学习框架，用于使用 GGBS 和微硅粉优化可持续混凝土配合比设计",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-78548-5",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-27",
+        "tag": "Nature 材料",
+        "title": "剩余轨道磁化控制交流磁体中的反常霍尔效应",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41535-026-00957-6",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-27",
+        "tag": "Nature 材料",
+        "title": "氧化锆与稻壳灰混合水泥砂浆的优化及性能评价",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-81691-8",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-27",
+        "tag": "Nature 材料",
+        "title": "用于预测 3D 打印混凝土的流变和机械性能的可解释机器学习",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-80925-z",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-27",
+        "tag": "Nature 材料",
+        "title": "用于生物成像及其他领域的透明超声换能器",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s44287-026-00354-y",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-27",
+        "tag": "Nature 材料",
+        "title": "适用于低温 48V/30Ah 锂离子电池模块的双阳离子溶剂化定制电解质解决方案",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41565-026-02339-2",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
         "date": "2026-11-25",
         "tag": "ScienceDaily 材料",
         "title": "天文学家可能发现了一个诞生于第一批恒星之前的黑洞",
@@ -329,9 +329,9 @@
       {
         "date": "2026-11-28",
         "tag": "PANews",
-        "title": "Ourbit XP 竞技场即将开启：三重奖池最高 300 万 USDT，全球交易者共同迎接挑战！",
-        "summary": "本次 XP 竞技场设置三大核心玩法，涵盖 XP 奖池瓜分、幸运抽奖及团队交易竞赛。",
-        "url": "https://www.panewslab.com/zh/articles/01a22062-5b39-7442-af81-bc8b5c6a3850",
+        "title": "方程式创始人抄底440万枚USD1，现已浮盈53.6万美元",
+        "summary": "PANews 11月28日消息，据 Ai 姨监测，方程式创始人 Vida 于 0.8735 美元抄底 440 万枚 USD1，目前 USD1 已反弹至 0.9957 美元，现已浮盈 53.6 万美元。",
+        "url": "https://www.panewslab.com/zh/articles/01a2212c-f0ad-72fe-b5a0-e16d0bf2e68a",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -339,9 +339,29 @@
       {
         "date": "2026-11-28",
         "tag": "PANews",
-        "title": "BTC突破60000美元，日内下跌 0.18%",
-        "summary": "PANews 11月28日消息，欧易OKX行情显示，BTC刚刚突破60000美元，现报60008.10美元/枚，日内下跌 0.18%。",
-        "url": "https://www.panewslab.com/zh/articles/01a2204e-7f00-7768-9ea0-40e86aa4a8e0",
+        "title": "Vitalik：EIP-8037相关投诉合理且正当，Glamsterdam升级不应仓促推进",
+        "summary": "PANews 11月28日消息，以太坊联合创始人 Vitalik Buterin 发文表示，针对 EIP-8037 导致部分合约失效的抱怨是合理且正当的。他强调，不希望以太坊变成“出于谨慎安全考虑，必须预留中心化升级后门”的环境。 Vitalik 认为，EIP-8037 及后续几项重大破坏性变更对以太坊实现长期健康稳定状态是必要的，但此类深度修改不应轻易推进。他支持形成一种社会规范：核心开发者至少有责任协助因硬分叉而受影响、且此前有正当理由认为相关特性稳固的应用进行升级。鉴于其破坏性，Vitalik 表示 Glamsterdam 升级不应仓促推进，同时希望各方在后续分叉讨论中继续保持参与。",
+        "url": "https://www.panewslab.com/zh/articles/01a2211f-fe50-72fe-995a-6930d0177e5d",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Cointelegraph",
+        "title": "币安获得原则批准，计划在不丹设立亚洲中心",
+        "summary": "The agreement is a milestone in Binance’s effort to expand its presence in Bhutan since launching a national crypto-powered tourism payment system in 2025.",
+        "url": "https://cointelegraph.com/news/binance-receives-in-principle-approval-plans-asia-hub-in-bhutan?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "PANews",
+        "title": "Jump Crypto正利用USD1脱锚进行套利，过去一小时已从交易所提取4326万枚USD1",
+        "summary": "PANews 11月28日消息，据 Lookonchain 监测，Jump Crypto 正利用 USD1 脱锚进行套利，其在交易所折价买入 USD1，并通过 BitGo 将其兑换为 1 美元。在过去一小时内，Jump Crypto 已从交易所提取了 4326 万枚 USD1。USD1 曾短暂脱锚，跌至 0.94 美元。",
+        "url": "https://www.panewslab.com/zh/articles/01a22113-f392-74f7-990e-3d49c270565f",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -349,19 +369,9 @@
       {
         "date": "2026-11-28",
         "tag": "PANews",
-        "title": "币安联席CEO：币安正从加密交易平台转型为全天候运行的多资产交易平台",
-        "summary": "PANews 11月28日消息，币安联席首席执行官 Richard Teng 在 2026 币安区块链周活动上表示，2026 年金融业的核心趋势是加密与传统金融融合。稳定币正逐渐成为支付体系的一部分，代币化资产开始进入金融投资组合，机构也不再观望，而是积极参与区块链金融基础设施建设。下一代金融服务的用户未必会将自己视为加密用户，他们更关心能否便捷收款、保护储蓄、投资海外资产并参与全球市场。加密行业需要围绕这些实际需求提供完整的金融服务体验，而非仅关注底层技术。 亚洲不仅是加密货币的采用市场，也在推动金融创新。",
-        "url": "https://www.panewslab.com/zh/articles/01a2204b-6790-7329-aaf3-be52846b1269",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "PANews",
-        "title": "SafePal：此前8月份安全事件还涉及部分订单信息，目前受影响系统已不存在任何漏洞",
-        "summary": "PANews 11月28日消息，硬件钱包 SafePal 发文披露，此前于 8 月披露的安全事件还涉及部分先前未识别的订单信息，包括姓名、邮箱、国家、订单号、所购产品及支付 ID，不涉及收货地址、电话号码、钱包账号、付款地址、银行卡或银行账户信息。此外，经独立审计确认，在 8 月份完成修复后，受影响的系统中已不存在任何漏洞。SafePal 强调，用户助记词和私钥未受影响，官方绝不会索要这些信息，并提醒警惕以固件更新、设备更换等为名的钓鱼邮件或信件。",
-        "url": "https://www.panewslab.com/zh/articles/01a22038-ecb1-700b-94ac-7be2d30b8065",
+        "title": "何一：币安已升级网络安全防御体系，收紧远程办公权限并推行沙盒隔离",
+        "summary": "PANews 11月28日消息，在 2026 币安区块链周活动上，针对近期频发的智能化网络攻击与 10 月底发生的安全事件，币安联合创始人何一在回复 PANews 记者提问时，披露了最新的安全防御升级与应对策略。何一指出，此前在内部激进推行 AI 工具时存在权限管理过松的问题，当前社会工程学攻击形式极其严峻，甚至出现冒名替身面试、入职首日异常 IP 渗透等极端案例。目前币安已采取多种防御举措。第一是全员实战模拟攻防，币安已聘请第三方专业团队常态化发起内部真实钓鱼与社工模拟演练，对违规员工实行严厉惩戒机制，两次中招即被开除。第二是全员强制设备沙盒隔离，通过技术刚性约束，所有外来文件下载均在沙盒内",
+        "url": "https://www.panewslab.com/zh/articles/01a22102-1f26-71ec-aee1-c286652ff42d",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -438,16 +448,6 @@
       },
       {
         "date": "2026-11-27",
-        "tag": "Cointelegraph",
-        "title": "中国将于 2027 年 3 月推出区块链身份法规",
-        "summary": "China has issued new regulations governing blockchain-based digital identities, setting rules for cross-platform verification and data privacy.",
-        "url": "https://cointelegraph.com/news/china-march-2027-rollout-blockchain-identity-regulations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-27",
         "tag": "CoinDesk",
         "title": "由于法律诉讼威胁到体育预测，卡尔什转向小企业",
         "summary": "The prediction market is pitching protection against tariffs, weather and other business risks as courts challenge its ability to offer sports wagers.",
@@ -491,10 +491,80 @@
       {
         "date": "2026-11-28",
         "tag": "IT之家",
-        "title": "马斯克：Grok Bot 的目标是让你可以构建整个公司",
-        "summary": "IT之家 11 月 28 日消息，今天（28 日）凌晨，埃隆 · 马斯克在 X 平台发文称：就像现实中的企业一样，使用 Grok Bot 时，打造具备专属职能的 Bot 非常重要。你可以设置一个管理 Bot 来监督、协调其余 Bot 的工作。和人类员工同理，如果让单个 Bot 承担过多繁杂任务，它就会顾此失彼。 随后，马斯克补充说：Grok Bot 的目标， 是让你能够构建完整的公司 。 Grok Bot 于 2026 年 8 月 11 日以测试版形式上线，定位为可执行任务的 AI 智能体，而非单纯的聊天机器人。其功能包括交互式购物卡片、订阅模板，以及可长期保存项目上下文的工作空间，试图覆盖个人效率和企业办公场景。 值得注意的是，Grok Bot 并未提供免费版本。据IT之家了解，马斯克此前公开表示，Grok Bot 的增长速度“比他见过的任何产品都要快”，并强调其没有免费层级；除试用用户外，使用者均需付费。",
-        "url": "https://www.ithome.com/1/033/827.htm",
+        "title": "吉利银河 M7 远航家 11 月 30 日加新上市，综合续航至高 1756km",
+        "summary": "IT之家 11 月 28 日消息，吉利银河今日宣布银河 M7 远航家将于 11 月 30 日加新上市，纯电续航至高 251km，综合续航至高 1756km。 IT之家注意到，吉利银河 M7 于 4 月 28 日正式上市，该车共推出 4 款配置车型，限时指导价下探至 10.98 万元起，价格如下： 车型 官方指导价（万元） 限时指导价（万元） 225km 远航版 11.98 10.98 225km 领航版 12.78 11.78 225km 探索 + 版 13.78 12.78 225km 星舰版 14.78 13.78 作为参考，银河 M7 定位于紧凑型插电式混合动力 SUV，其核心亮点在于采用了 2025 年发布的 GEA Evo 架构。新车长宽高分别为 4770 毫米、1905 毫米、1685 毫米， 轴距达到 2785 毫米 。 银河 M7 中控提供观山灰、观山灰翻毛皮版、栖霞橙、静湖白四种可选。15.4 英寸 2.5K 中控屏搭载 Flyme Auto 2 智能座舱系统，内置 7 纳米制程龙鹰一号芯片，支持卡片式交互界面、Hi Eva 语音车控，并依托星睿大模型实现全场景 AI 对话。 智能驾驶方面，银河 M7 搭载千里浩瀚 H3 方案，具备高速及高架 NOA 导航辅助驾驶能力，支持自动超车、上下匝道、拨杆变道等功能；全场景泊车辅助可识别超过 300 种车位类型，实现自动泊入与泊出。 银河 M7 动力系统由 1.5L 雷神 EM 超级电混发动机与前置单电机组成，发动机最大功率 82 千瓦，热效率达 47.26%；电机最大功率 175 千瓦，峰值扭矩 262 牛 · 米。电池采用神盾金砖磷酸铁锂电池，提供 29.8 千瓦时一种容量，对应 CLTC 纯电续航 225 公里，0 至 100 公里每小时加速时间为 7.7 秒。",
+        "url": "https://www.ithome.com/1/033/916.htm",
         "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "IT之家",
+        "title": "有记录以来最热的一周：地球 11 月 18~24 日史上首次连续 7 天“高烧”突破 2℃ 门槛",
+        "summary": "IT之家 11 月 28 日消息，根据欧盟哥白尼气候服务中心确认的初步数据，11 月 18 日至 24 日地球平均日气温连续 7 天高于工业化前水平 2 摄氏度以上， 这是有记录以来首次出现这种情况。 升温幅度在 11 月 23 日（周一）达到峰值，当天全球气温较该日期对应的 1850 至 1900 年估算基线高出 2.25 摄氏度，为该机构数据集中单日差值最大的一次。IT之家附上相关图片如下： 报道指出今年 11 月已经有 10 天达到或超过 2 摄氏度这一标准，在本次连续 7 天之前，本月还有 3 天越过了 2 摄氏度。而在 11 月之前，该机构有记录以来，全球日平均气温比工业化前水平高出 2 摄氏度以上的天数总共只有 6 天，其中 4 天出现在 2024 年 2 月，另外 2 天出现在 2023 年 11 月。 气候科学家强调，连续 7 天气温突破 2 摄氏度红线，并不等于全球已经越过 2015 年《巴黎协定》设定的红线。该协定衡量的是数十年的长期平均升温，而非短期的极端波动。根据《巴黎协定》，近 200 个缔约方承诺，将全球气温升幅控制在 2 摄氏度以内，并努力把升幅限制在 1.5 摄氏度以内。 图源：Pixabay",
+        "url": "https://www.ithome.com/1/033/915.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "IT之家",
+        "title": "雅砻江公司与华为获联合国“全球可持续工业 AI 解决方案奖”，方案落地于全球最大水光互补电站",
+        "summary": "IT之家 11 月 28 日消息，据华为数字能源分享，在联合国工业发展组织 60 周年纪念活动期间，雅砻江流域水电开发有限公司（简称“雅砻江公司”）与华为联合打造的“AI 赋能绿色能源方案”荣获“2026 年全球可持续工业 AI 解决方案奖”。 ▲ 雅砻江公司与华为联合荣获“2026 年全球可持续工业 AI 解决方案奖” 据介绍，该奖项由联合国工业发展组织（UNIDO）、联合国贸易和发展会议（UNCTAD）、联合国数字与新兴技术办公室（ODET）、国际电信联盟（ITU）、联合国发展协调办公室（UNDCO）以及世界机器人合作组织（WRCO）面向全球首次发起， 共收到来自 61 个国家 220 余份提案 。 雅砻江公司与华为联合打造的“AI 赋能绿色能源方案”从中脱颖而出。 该方案落地于世界级流域型清洁能源大基地标杆 —— 雅砻江柯拉光伏电站 。 参考IT之家此前报道，2023 年 6 月，雅砻江两河口水电站水光互补一期项目 —— 位于四川省甘孜藏族自治州雅江县柯拉乡的柯拉光伏电站并网发电，标志着全球首个百万千瓦级“水光互补”电站正式投产。 公开资料显示， 雅砻江柯拉光伏电站是全球最大、海拔最高的水光互补电站 。 该项目首次将全球“水光互补”项目规模提升至百万千瓦级 。电站通过 500kV 输电线路接入 50 公里外的两河口水电站，实现光伏发电和水电的“打捆”送出。电站投产后年平均发电量 20 亿度，每年可节约标准煤超 60 万吨、减少二氧化碳排放超 160 万吨。",
+        "url": "https://www.ithome.com/1/033/914.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "IT之家",
+        "title": "上汽荣威家越 07 大定锁单突破 3.5 万台，全系搭载豆包座舱助手",
+        "summary": "IT之家 11 月 28 日消息，上汽荣威今日宣布，家越 07 大定锁单突破 35,000 台，全系搭载豆包座舱助手。 据IT之家此前报道，家越 07 于 10 月 23 日上市，限时权益价 11.98 万元起；家越 07 纯电版于 11 月 27 日上市，限时权益价 13.28 万元起。 车型 指导价（万元） 限时权益价（万元） 220 智享版 12.78 11.98 220 激光雷达版 13.78 12.98 320 激光雷达版 14.58 13.78 320 激光雷达智尊版 15.28 14.48 651 智享版 14.08 13.28 651 激光雷达版 15.08 14.28 651 激光雷达智尊版 15.78 14.98 该车长宽高为 4900*1910*1745mm，轴距 2908mm；行业首搭豆包座舱助手，搭载最新 Momenta R7 世界模型。 增程版配备 32.6kWh 和 44.2kWh 两种容量的电池组，纯电续航分别为 220km 和 320km，最大综合续航 1480km。 纯电版标配 800V 碳化硅平台，80.6kWh 电池，续航 651km，电机峰值功率达 245kW，峰值扭矩达 430N·m ，零百加速 5.9 秒。 相关阅读： 《 限时权益价 11.98 万元起，上汽荣威家越 07 汽车上市 》 《 荣威家越 07 纯电版上市：行业首搭豆包座舱助手，13.28 万元起 》",
+        "url": "https://www.ithome.com/1/033/913.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "钛媒体",
+        "title": "Nvidia 停止向四个东南亚国家运送人工智能服务器",
+        "summary": "Nvidia has ordered partners to stop shipping servers with its chips to Malaysia, Singapore, Thailand and Indonesia after new U.S. export rules took effect. The move aims to block Chinese firms from reaching restricted processors through regional data centers. How long the freeze will last is unclear.",
+        "url": "https://www.tmtpost.com/8221371.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "量子位",
+        "title": "亏贼！卡帕西用Claude搓出“美国版《文明》”，网友直接玩成全球接力赛",
+        "summary": "这种大模型现做的即时交互工具，能不能来一波知识付费？",
+        "url": "https://www.qbitai.com/2026/11/513428.html",
+        "source": "量子位",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "钛媒体",
+        "title": "蔚来开始用AI改造自己，这笔经济账怎么算？",
+        "summary": "建成AI Native原生组织，将是下一阶段行业竞争、产业变革的核心关键。",
+        "url": "https://www.tmtpost.com/8221323.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "爱范儿",
+        "title": "德系最大 SUV 来了！奥迪 Q9 国内首秀，车长超 5 米 3，还有一台大 V6丨广州车展",
+        "summary": "奥迪也拥有了他们的「大 9 系」。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+        "url": "https://www.ifanr.com/1696001?utm_source=rss&utm_medium=rss&utm_campaign",
+        "source": "爱范儿",
         "region": "cn",
         "category": "科技"
       },
@@ -510,26 +580,6 @@
       },
       {
         "date": "2026-11-28",
-        "tag": "IT之家",
-        "title": "“iPod 之父”法德尔：OpenAI 曾邀乔纳森 · 艾维打造实体 AI 设备，因为苹果永远不会提供数据",
-        "summary": "IT之家 11 月 28 日消息，当地时间 26 日，据《财富》杂志报道，托尼 · 法德尔透露，萨姆 · 奥尔特曼曾邀请苹果前设计主管乔纳森 · 艾夫为 OpenAI 打造一款实体设备，原因是 OpenAI 无法从运行其 AI 服务的 iPhone 中取得所需数据 。 法德尔曾与艾夫在苹果共事，因被誉为“iPod 之父”以及参与创造 iPhone 而广为人知。他创办了 Build Collective，此前还创立过 Nest Labs。 法德尔认为，OpenAI 之所以执意开发独立硬件，是因为它需要 获取现实物理世界的信息 ，而苹果出于隐私保护考虑，不愿向其开放 iPhone 中的这些数据。 他们必须自己开发产品，因为无法从手机中获取情境信息。为此，他们只能重新配备 GPS、麦克风、扬声器、摄像头、温度检测等各种功能，能想到的都得有，因为苹果不允许他们从手机中提取这些信息。 说到底，就是为了绕开苹果出于隐私保护而设置的种种限制。AI 掌握的情境信息越丰富，给出的答案就越好，用户也能更快得到答案。 苹果的各种产品掌握着你家中的全部情境信息，但这些数据你根本拿不到。出于隐私保护的限制，苹果不会把数据交给你。 不过，奥尔特曼此前曾表示，苹果的隐私政策 并不是 OpenAI 开发新型硬件的出发点 。被问及此事时，OpenAI 发言人提供了一段 YouTube 视频。视频中，奥尔特曼是如此解释的： 我们之所以想开发新型消费硬件，是因为我认为，这项技术需要一种 全新的产品形态 。 笔记本电脑和 iPhone 都是非常了不起的发明，堪称人类科技史上最伟大的创造之一。但在我看来，AI 目前受制于 必须使用为人类而非 AI 设计的设备 。看着 AI 熟练地操作电脑确实令人惊叹，但换个角度想，电脑耗费大量资源渲染一个供人观看的用户界面，再让 AI 读取屏幕上的内容，而不是直接获取数据，多少有些荒唐。 IT之家从报道中获悉，OpenAI 未来还希望把 ChatGPT 背后的部分计算任务 从自家的云服务器转移到用户设备上 。对于许多简单任务，AI 根本不需要依赖服务器集群来处理用户指令，笔记本电脑或手机本身的算力就足够了。 不过，要说服苹果开放庞大的 iOS 和 macOS 设备生态，让这些设备运行 OpenAI 的任务，恐怕并不容易。 法德尔进一步解释了 OpenAI 可能采取的方案：“他们也希望把计算任务转移到终端侧，但苹果并没有向他们开放这些资源。因此，他们打算推出一款配套设备，本质上就是一部去掉屏幕、保留各种传感器的精简版智能手机。设备通过 Wi-Fi 或蓝牙连接，再经由你的手机把数据传回网络，交由云端运行的 AI 智能体处理，也可以交给手机应用中的 AI 智能体。” 至于这款设备究竟会做成什么样子，法德尔猜测：“你可能听说过，他们打算做 手机、吊坠、笔，甚至扬声器 ，因为他们真正想要的就是获取情境信息。” ▲ OpenAI 首款联名硬件 Codex Micro 键盘",
-        "url": "https://www.ithome.com/1/033/824.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "IT之家",
-        "title": "Galaxy S27 系列手机专享，三星 One UI 9.5 Beta 曝光 36 项 AI 新功能",
-        "summary": "IT之家 11 月 28 日消息，科技媒体 Android Authority 昨日（11 月 27 日）发布博文， 通过挖掘 One UI 9.5 首个 Beta 测试版代码，发现了关联“20271”的 36 项 Galaxy AI 功能，预估将成为 Galaxy S27 系列手机独占 AI 功能。 根据三星内部代码细节，三星 Galaxy S26 Ultra 的 Galaxy AI 内部版本号为“20263”，暂不满足运行上述 AI 功能的要求，但不排除在 Galaxy S27 系列发布后，将这些功能下放到 S26 系列的可能。 IT之家援引博文介绍，附上文中相关主要功能介绍如下： 图库与照片编辑 重新构图：用 AI 改变照片的拍摄角度，事后调整构图。 短视频：把静态照片转成短视频。 照片辅助提示建议：编辑时给出 AI 提示。 Restyle 风格包：新增照片风格。 生成贴纸按钮：直接生成贴纸。 相机与扫描 ProScan：支持页面展平和双页书籍扫描，适合拍书和文档。 专业模式监视器视图：给专业拍摄提供辅助画面。 拍摄建议：加入动态取景框。 Log 视频 LUT：新增“森林”和“水下”两款色彩预设。 选择、通话与安全 AI 选择：识别完整表格，可一键复制。 虚假来电检测：识别可疑来电。 第三方应用通话录音与诈骗检测：扩大适用范围。 谷歌诈骗检测：扩展到更多语言。 通话音频擦除：通话中去除不需要的声音。 输入与录音 键盘语音输入优化：提升语音转文字的效果。 录音机说话人分离：能区分重叠说话的人。 付费与版本限制 Gen Video 积分、三星浏览器“问任何问题”、Now Brief 的 Bixby 操作卡片：似乎与付费的 Galaxy AI Premium 层级相关。 Zoom enhancer、三星私有 AI 云 SPAC、Memory 应用：暂未发现版本限制。",
-        "url": "https://www.ithome.com/1/033/822.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
         "tag": "钛媒体",
         "title": "AI服务器卖爆了，但卖服务器的不赚钱了：股价跌一半，市场在清算什么",
         "summary": "一场还没有完全出现在报表里的利润挤压。",
@@ -540,40 +590,10 @@
       },
       {
         "date": "2026-11-28",
-        "tag": "IT之家",
-        "title": "影石 Ace Pro 3 被曝采用 1/1.1 英寸方形传感器、双 OLED 屏、2250mAh 电池，12 月 1 日发布",
-        "summary": "IT之家 11 月 28 日消息，影石 Insta360 的新一代旗舰运动相机 Ace Pro 3 已定档 12 月 1 日晚 8 点在中国发布，官方预热主题为“定局已破”。 在发布会前，官方预热视频重点展示了对焦控制、背景虚化、可变光圈以及镜头或光学组件更换等功能，暗示该系列产品可能在影像系统方面迎来较大调整。 爆料者 Igor Bogdanov 分享的宣传资料显示，影石 Ace Pro 3 可能配备徕卡 Summicron 主摄（等效焦距 22mm）+ 超广角镜头（等效焦距 14mm）。新机还可能采用 1/1.1 英寸方形传感器，尺寸较 Ace Pro 2 的 1/1.3 英寸传感器有所增加。 此前，运动相机普遍采用固定焦点和超广角镜头设计。以现款 Ace Pro 2 为例，其官方规格显示，最近对焦距离为 37 厘米，采用 1/1.3 英寸传感器和 F2.6 固定光圈。Ace Pro 3 如果引入可变光圈和对焦控制，将进一步扩展近距离拍摄及景深控制能力。 泄露资料还提及 F1.77 至 F4.0 可变光圈、最高 8K 30fps 视频录制、5000 万像素照片、2.5 英寸 OLED 翻转屏、2250mAh 电池、50GB 机身存储以及 20 米裸机防水等配置。 此外，新机据称支持杜比视界视频录制和 10-bit I-Log 色彩模式，续航时间最长可达 5 小时。 镜头系统方面，相关爆料还提到了等效焦距 50mm 的长焦镜头、变形宽银幕镜头以及 ND 减光滤镜等配件。不过，目前尚不清楚这些光学组件究竟采用真正的可更换镜头设计，还是通过安装在机身前方的光学附件实现功能扩展。 作为对比，大疆 Osmo Action 6 已经支持 F2.0 至 F4.0 可变光圈，而 GoPro Mission 1 Pro ILS 则支持安装微型三分之四系统镜头，但采用手动对焦。如果 Insta360 能够将自动对焦与可更换镜头系统结合，Ace Pro 3 的拍摄控制方式将进一步接近传统相机。 泄露材料显示，Ace Pro 3 搭载一颗 5000 万像素、1/1.1 英寸方形传感器，面积较 Ace Pro 2 的 1/1.3 英寸传感器增加约 30%。该传感器由影石与索尼联合定制，宣称动态范围达到 14.5 stops。镜头首次在 Ace Pro 系列中引入 F1.77 至 F4.0 可变光圈，此前 Ace Pro 2 的光圈固定为 F2.6。 资料显示，其主摄拥有 22mm 等效焦距、90° 视角，对焦距离 0.3 米；另有一枚 14mm 等效超广角镜头可外接，视角扩展至 156 度，对焦距离缩短至 0.12 米。此外还有一枚 50mm“黄金人像”长焦附加镜头，支持 2 倍无损变焦。视频规格方面，8K 上限仍为 30 帧，但 4K 提升至 120 帧杜比视界录制，并支持 10-bit I-Log 色彩。 影石 Ace Pro 3 有望将采用前后双 OLED 屏幕：主屏 2.5 英寸可翻转，前屏 1.46 英寸用于自拍预览。 电池容量增至 2250mAh 硅碳负极电池，官方材料称续航提升 66%，支持 24 分钟充至 80%、38 分钟充满。 内置存储 50GB，裸机防水从 Ace Pro 2 的 12 米提升至 20 米（IPX8），配合潜水壳可达 60 米。裸机重量 161 克，加装超广角镜头后为 185 克。 与 Ace Pro 2 相比，Ace Pro 3 的变化集中在光学系统和主动散热之外的多个维度：传感器面积增大、光圈从固定 F2.6 变为可变 F1.77—F4.0、新增可附加镜头、电池容量提升约 25%、防水深度增加 60% 以上，并补上了内置存储。 相关阅读： 《 影石 Ace Pro 3 新品发布会定档 12 月 1 日，有望带来可换镜头、对焦和可变光圈等升级 》",
-        "url": "https://www.ithome.com/1/033/821.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
         "tag": "钛媒体",
         "title": "《复联5》要来救市了",
         "summary": "《复仇者联盟》依然是最强IP。",
         "url": "https://www.tmtpost.com/8221005.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "钛媒体",
-        "title": "“争议”总经理上任176天“闪辞”，水井坊6年已换8帅",
-        "summary": "“川酒六朵金花”之一的水井坊，总经理又双叒叕换了。",
-        "url": "https://www.tmtpost.com/8221007.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "钛媒体",
-        "title": "OpenAI 和 Anthropic 在招什么样的营销人才？",
-        "summary": "三家公司招聘要求背后，有五种共同能力。",
-        "url": "https://www.tmtpost.com/8221003.html",
         "source": "钛媒体",
         "region": "cn",
         "category": "科技"
@@ -624,26 +644,6 @@
         "title": "Kimi 向科学家提供最高 2 万美元 API 免费额度",
         "summary": "Kimi 大模型开发商月之暗面宣布了 Kimi for Science 项目，欢迎自然科学、工程学及相关交叉学科领域的研究人员加入。月之暗面表示，“科学始终源于人类的好奇心、严谨的探索精神，以及对未知世界的不懈追求。一个有价值的科学假设，往往需要经过大量的文献调研、数据分析和反复验证。而一次意料之外的发现，也可能成为下一项重大突破的起点。然而受限于时间、算力与人力资源，许多值得深入探索的想法，始终未能获得应有的关注与投入。我们相信 AI 能加速科学研究，拓展探索与发现的边界，帮助研究者突破时间、资源与研究方法的局限，让更多大胆而富有想象力的科学构想从可能走向现实。”月之暗面将向入选的研究人员提供最高 20,000 美元的 Kimi API 额度（约 70 亿 token），具体金额将根据研究需求及评估结果确定。",
         "url": "https://www.solidot.org/story?sid=86015",
-        "source": "Solidot",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Solidot",
-        "title": "Take-Two 无法阻止用户利用 AI 将 GTA 6 移植到 PC 上",
-        "summary": "GTA 6 开发商 Rockstar 的母公司 Take-Two 与微软和索尼签署了独占协议，这款备受瞩目的大作目前只有主机版本，PC 版本发布时间未知。但在 AI 工具的帮助下 PC 玩家正以惊人的速度将 GTA 6 移植到 PC 上。Take-Two 已采取行动，试图遏制这一行为：他们通过 DMCA 通知从 GitHub 上删除了逾 3000 个相关库。但这并没有放缓 PC 版本的移植速度。移植者们已经能利用 AMD 中端显卡 9070XT 和 FSR 超分辨率技术在 Linux 上实现稳定运行 30+ FPS。",
-        "url": "https://www.solidot.org/story?sid=86014",
-        "source": "Solidot",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Solidot",
-        "title": "文明的历史是小麦的历史",
-        "summary": "根据苏美尔神话，世界之初即无耕种也无畜牧和纺织，原神们生活窘迫，为此他们创造了谷之女神 Ashnan 和羊之神 Lahar，将他们派去帮助人类。Ashnan 和 Lahar 合作为神祇们提供了面包、酒、奶和兽皮。但众神们又争执起了谁的贡献更大。智慧之神 Enki 裁定谷之女神 Ashnan 贡献更大，理由是无谷物就没有面包和酒。推而广之，也就不会有城市，更不会有苏美尔文明。古苏美尔人的认识至今仍然正确：人类的历史是小麦的历史。人类食用小麦的历史比城市、文字乃至车轮的出现都要久远。现存最古老的文字记录并非史诗或宗教典籍，而是关于谷物储存与税收的行政记录。虽然世界其它地区的主导粮作物不同，比如东亚是水稻，美洲是玉米，但是小麦支撑起了罗马帝国与工业革命。",
-        "url": "https://www.solidot.org/story?sid=86013",
         "source": "Solidot",
         "region": "cn",
         "category": "科技"
