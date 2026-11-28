@@ -1,7 +1,107 @@
 {
-  "updated": "2026-11-28 08:08 UTC",
+  "updated": "2026-11-28 17:02 UTC",
   "categories": {
     "投资": [
+      {
+        "date": "2026-11-28",
+        "tag": "Seeking Alpha",
+        "title": "内幕交易：Palantir、沃尔玛、家得宝等知名企业",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4677103-insider-trades-palantir-walmart-home-depot-among-notable-names?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "MarketWatch",
+        "title": "如果 Nvidia 首席执行官黄仁勋决定你的 401(k) 余额，我们就生活在危险的时代",
+        "summary": "Why did a futurist with Huang’s prescient vision build a company where all roads lead to him?",
+        "url": "https://www.marketwatch.com/story/we-are-living-in-perilous-times-if-nvidias-jensen-huang-dictates-your-401-k-balance-e0942d1e?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Seeking Alpha",
+        "title": "黑色星期五在线销售额达到 $13.1B，超出预期：Adobe Analytics",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4677120-black-friday-online-sales-hit-131b-topping-estimates?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "MarketWatch",
+        "title": "我已经结婚 58 年了。这是“我们的”钱，而不是“他的”和“她的”。为什么这么多夫妇将财务分开？",
+        "summary": "“My wife stopped working outside the home in 1970.”",
+        "url": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "The Block",
+        "title": "CZ 表示 Netflix 的《利他主义者》“基本上是诽谤”，他正在与律师交谈",
+        "summary": "Zhao said the show may be trying to shift public perception ahead of a possible pardon push for convicted FTX founder Sam Bankman-Fried.",
+        "url": "https://www.theblock.co/news/business/2026-11-28-cz-says-netflixs-the-altruists-is-basically-defamation-says-he-is-talking-to-lawyers-447599",
+        "source": "The Block",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Seeking Alpha",
+        "title": "本周值得注意的科技头条新闻：Nvidia、戴尔和 CrowdStrike 成为焦点",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4677081-notable-tech-headlines-for-the-week-nvidia-dell-and-crowdstrike-in-focus?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Seeking Alpha",
+        "title": "本周著名分析师电话会议：英伟达、美光和德州仪器位列首选",
+        "summary": "",
+        "url": "https://seekingalpha.com/news/4677014-notable-analyst-calls-this-week-nvidia-micron-and-texas-instruments-among-top-picks?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
+        "source": "Seeking Alpha",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "MarketWatch",
+        "title": "我已经 70 多岁了，购买了一辆新的 BMW X1。我应该把我唯一的儿子放在头衔上吗？",
+        "summary": "“Given my age, I never make a major new purchase without thinking about the future.”",
+        "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "MarketWatch",
+        "title": "向慈善机构捐款最节税的方式是什么？",
+        "summary": "How to make your donations beneficial for both you and the recipient",
+        "url": "https://www.marketwatch.com/story/whats-the-most-tax-efficient-way-to-donate-to-charity-3f5864bb?mod=mw_rss_topstories",
+        "source": "MarketWatch",
+        "region": "en",
+        "category": "投资"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Financial Times",
+        "title": "来自戛纳的局外人撼动了法国总统竞选",
+        "summary": "Rightwing mayor David Lisnard has surged in polls with punchy attacks on the bloated state and promises of radical spending cuts",
+        "url": "https://www.ft.com/content/7f3900c2-bce6-495e-a6c4-e1133a3c46e9?syn-25a6b1a6=1",
+        "source": "Financial Times",
+        "region": "en",
+        "category": "投资"
+      },
       {
         "date": "2026-11-28",
         "tag": "Financial Times",
@@ -25,19 +125,9 @@
       {
         "date": "2026-11-28",
         "tag": "Financial Times",
-        "title": "经历人工智能革命的数学家",
-        "summary": "Startling digitally assisted discoveries have raised questions about the future of human experts in the field",
-        "url": "https://www.ft.com/content/f27646d1-d8f2-4592-8d0e-bcce6c6da061?syn-25a6b1a6=1",
-        "source": "Financial Times",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "Financial Times",
-        "title": "“只有在美国”和其他善意的谎言",
-        "summary": "Diverse societies need noble myths to keep them whole",
-        "url": "https://www.ft.com/content/322f3ecd-f513-45aa-9b2f-adf63e104638?syn-25a6b1a6=1",
+        "title": "英国脱欧后的渔业横财被荷兰大亨一扫而光",
+        "summary": "Smaller operators initially won a quarter of quotas, but their share dwindled to less than 1 per cent in 2025",
+        "url": "https://www.ft.com/content/13566b4a-e996-4029-829b-94fb89a76841?syn-25a6b1a6=1",
         "source": "Financial Times",
         "region": "en",
         "category": "投资"
@@ -49,86 +139,6 @@
         "summary": "In today's newsletter, CryptoQuant says bitcoin price recovery needs USDT supply growth; K33 assesses AI's growing threat to Bitcoin security; and more.",
         "url": "https://www.theblock.co/newsletters/the-daily/2026-11-27-bitcoin-recovery-usdt-supply-ai-threat-bitcoin-more-crypto-news-447571",
         "source": "The Block",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "MarketWatch",
-        "title": "我已经 70 多岁了，购买了一辆新的 BMW X1。我应该把我唯一的儿子放在头衔上吗？",
-        "summary": "“Given my age, I never make a major new purchase without thinking about the future.”",
-        "url": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "MarketWatch",
-        "title": "我讨厌 Jensen Huang 回到 Nvidia，但我喜欢它为我的 401(k) 所做的一切。我是伪君子吗？",
-        "summary": "Doing nothing and maintaining an even temperament is often the work of gods.",
-        "url": "https://www.marketwatch.com/story/i-hate-that-jensen-huang-is-back-at-nvidia-but-i-love-what-its-done-for-my-401-k-am-i-a-hypocrite-f63c0303?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "MarketWatch",
-        "title": "清理我父母的房子是一场合法的噩梦。我怎样才能缩小规模而不让我的孩子经历同样的磨难？",
-        "summary": "Some countercultural advice this Black Friday: stop buying stuff, plus other rules for downsizing.",
-        "url": "https://www.marketwatch.com/story/clearing-out-my-parents-house-was-a-legal-nightmare-how-can-i-downsize-without-putting-my-children-through-the-same-ordeal-6537d804?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Seeking Alpha",
-        "title": "纽约梅隆银行战略市政宣布派息 0.03 美元",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4677111-bny-mellon-strategic-municipals-declares-0_03-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Seeking Alpha",
-        "title": "纽约梅隆银行战略市政债券基金宣布股息 0.03 美元",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4677110-bny-mellon-strategic-municipal-bond-fund-declares-0_03-dividend?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "MarketWatch",
-        "title": "这些股票在黄仁勋重返英伟达的疯狂一周中涨幅最大",
-        "summary": "Nvidia’s stock soared this week, but was still down nearly 28% for November and 21% for 2026.",
-        "url": "https://www.marketwatch.com/story/these-stocks-soared-the-most-during-a-wild-week-highlighted-by-huangs-return-to-nvidia-578b3f9a?mod=mw_rss_topstories",
-        "source": "MarketWatch",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Seeking Alpha",
-        "title": "SA 问：目前位置最好的芯片股是什么？",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4677107-sa-asks-whats-the-best-positioned-chip-stock-right-now?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
-        "region": "en",
-        "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Seeking Alpha",
-        "title": "苹果因窃取商业机密面临 OpenAI 反诉 - FT",
-        "summary": "",
-        "url": "https://seekingalpha.com/news/4677105-apple-faces-countersuit-from-openai-for-stealing-trade-secrets---ft?utm_source=feed_news_all&utm_medium=referral&feed_item_type=news",
-        "source": "Seeking Alpha",
         "region": "en",
         "category": "投资"
       },
@@ -151,19 +161,29 @@
         "source": "The Block",
         "region": "en",
         "category": "投资"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "The Block",
-        "title": "人工智能数学突破重燃比特币安全担忧，但实际威胁仍未得到证实：K33",
-        "summary": "K33 said recent mathematical advances had not demonstrated a compromise of Bitcoin's cryptography, while urging closer attention to AI.",
-        "url": "https://www.theblock.co/news/ecosystems/2026-11-27-ai-math-breakthroughs-revive-bitcoin-security-fears-but-practical-threat-remains-unproven-k33-447549",
-        "source": "The Block",
-        "region": "en",
-        "category": "投资"
       }
     ],
     "科研": [
+      {
+        "date": "2026-11-28",
+        "tag": "ScienceDaily 材料",
+        "title": "科学家创造出令人惊叹的不褪色涂料，无需任何单一颜料",
+        "summary": "Researchers have developed a pigment-free coating that delivers the rich, glossy appearance of automotive paint without the problem of fading. Inspired by nature, the technology uses microscopic silicon spheres to produce durable colors that remain consistent from different viewing angles. The coating is so lightweight that the color layer for an entire passenger airliner could theoretically weigh less than a carton of milk.",
+        "url": "https://www.sciencedaily.com/releases/2026/11/261127203630.htm",
+        "source": "ScienceDaily 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Nature 材料",
+        "title": "EGMOF：使用混合扩散变压器架构高效生成金属有机框架",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41467-026-79640-0",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
       {
         "date": "2026-11-28",
         "tag": "Nature 材料",
@@ -187,9 +207,89 @@
       {
         "date": "2026-11-28",
         "tag": "Nature 材料",
+        "title": "钽盖铌超导谐振器：通过表面钝化实现高内部品质因数和时间稳定性",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-81905-z",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Nature 材料",
+        "title": "具有径向渐变孔径的十二边形金纳米孔超表面，用于局部薄膜折射率传感",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-82443-4",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Nature 材料",
         "title": "海藻粉/h-BN/Al2O3增强环氧杂化复合材料拉伸和介电性能优化",
         "summary": "",
         "url": "https://www.nature.com/articles/s41598-026-81592-w",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Nature 材料",
+        "title": "多尺度下基于熵权改进MOPSO的纤维混凝土配合比多目标综合优化",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-78636-6",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Nature 材料",
+        "title": "宫颈癌药物 QSPR 建模的光谱能量描述符：基于度数和距离的拓扑指数的比较研究",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-75201-z",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Nature 材料",
+        "title": "以粉碎的 CD/DVD 电子垃圾为部分细骨料的可持续混凝土的机械性能、耐久性能和微观结构特征",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-81306-2",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Nature 材料",
+        "title": "三种商用皱纹纸的比较研究：树脂浸渍复合材料结构特性与介电性能之间的关系",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-65264-3",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Nature 材料",
+        "title": "包含建筑和拆除废物的 3D 打印可持续石灰复合材料的结构可行性",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41598-026-77807-9",
+        "source": "Nature 材料",
+        "region": "en",
+        "category": "科研"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Nature 材料",
+        "title": "LeMat-G​​enBench：晶体生成模型的统一评估框架",
+        "summary": "",
+        "url": "https://www.nature.com/articles/s41524-026-02342-0",
         "source": "Nature 材料",
         "region": "en",
         "category": "科研"
@@ -215,96 +315,6 @@
         "category": "科研"
       },
       {
-        "date": "2026-11-27",
-        "tag": "Nature 材料",
-        "title": "抛射运动下反向偏置接近传感器的磁响应：检测极限和死区效应",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-81034-7",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Nature 材料",
-        "title": "TEMPO和叔丁基对苯二酚分散沥青质机理的实验和分子动力学研究",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-82623-2",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Nature 材料",
-        "title": "碱激活砂浆的动态强度取决于固化时间和加载速率",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-81417-w",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Nature 材料",
-        "title": "因果发现引导的机器学习框架，用于使用 GGBS 和微硅粉优化可持续混凝土配合比设计",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-78548-5",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Nature 材料",
-        "title": "剩余轨道磁化控制交流磁体中的反常霍尔效应",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41535-026-00957-6",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Nature 材料",
-        "title": "氧化锆与稻壳灰混合水泥砂浆的优化及性能评价",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-81691-8",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Nature 材料",
-        "title": "用于预测 3D 打印混凝土的流变和机械性能的可解释机器学习",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41598-026-80925-z",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Nature 材料",
-        "title": "用于生物成像及其他领域的透明超声换能器",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s44287-026-00354-y",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Nature 材料",
-        "title": "适用于低温 48V/30Ah 锂离子电池模块的双阳离子溶剂化定制电解质解决方案",
-        "summary": "",
-        "url": "https://www.nature.com/articles/s41565-026-02339-2",
-        "source": "Nature 材料",
-        "region": "en",
-        "category": "科研"
-      },
-      {
         "date": "2026-11-25",
         "tag": "ScienceDaily 材料",
         "title": "天文学家可能发现了一个诞生于第一批恒星之前的黑洞",
@@ -313,25 +323,25 @@
         "source": "ScienceDaily 材料",
         "region": "en",
         "category": "科研"
-      },
-      {
-        "date": "2026-11-25",
-        "tag": "ScienceDaily 材料",
-        "title": "物理学家捕获反物质的突破可以解释宇宙存在的原因",
-        "summary": "Positrons are the antimatter counterpart of an electron. Physicists trapped a positron and cooled it to temperatures near absolute zero. Positron is suspended in a wall-free trap, safely separated from ordinary matter. Team will conduct most precise comparison yet between matter and antimatter. Any difference between the electron and positron could expose cracks in the Standard Model of particle physics.",
-        "url": "https://www.sciencedaily.com/releases/2026/11/261124055849.htm",
-        "source": "ScienceDaily 材料",
-        "region": "en",
-        "category": "科研"
       }
     ],
     "web3": [
       {
         "date": "2026-11-28",
+        "tag": "CoinDesk",
+        "title": "Bitdeer 股价下跌 87%，Tether 增持 1000 万美元",
+        "summary": "The purchase increased Tether's total holding by nearly 10% to 41.45 million shares, while its Class A voting stake dropped to 17.9% due to share dilution.",
+        "url": "https://www.coindesk.com/business/2026/11/28/tether-adds-usd10-million-in-bitdeer-stock-after-holding-through-an-87-drop",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
         "tag": "PANews",
-        "title": "方程式创始人抄底440万枚USD1，现已浮盈53.6万美元",
-        "summary": "PANews 11月28日消息，据 Ai 姨监测，方程式创始人 Vida 于 0.8735 美元抄底 440 万枚 USD1，目前 USD1 已反弹至 0.9957 美元，现已浮盈 53.6 万美元。",
-        "url": "https://www.panewslab.com/zh/articles/01a2212c-f0ad-72fe-b5a0-e16d0bf2e68a",
+        "title": "马斯克单日财富增加397亿美元，达到8590亿美元",
+        "summary": "PANews 11月28日消息，据智通财经报道，受特斯拉和SpaceX股价周五上涨影响，马斯克的净资产单日增长397亿美元，达到8590亿美元，稳居榜单首位。美股周五缩短交易日中，特斯拉收盘报400美元，涨幅5.22%。纳斯达克大盘反弹，SpaceX收盘报133.59美元，涨幅4.83%。马斯克持有的SpaceX股份估值6367亿美元，特斯拉股份估值1653亿美元。马斯克财富单日增幅4.8%，这是自11月23日以来他最大的单日账面财富涨幅。在周五行情之前，他就已经位居该榜单榜首。过去一年，他的估算财富增加4120亿美元，涨幅92.1%。",
+        "url": "https://www.panewslab.com/zh/articles/01a222dd-f6de-75ce-aff0-dde16ca41bee",
         "source": "PANews",
         "region": "cn",
         "category": "web3"
@@ -339,11 +349,101 @@
       {
         "date": "2026-11-28",
         "tag": "PANews",
-        "title": "Vitalik：EIP-8037相关投诉合理且正当，Glamsterdam升级不应仓促推进",
-        "summary": "PANews 11月28日消息，以太坊联合创始人 Vitalik Buterin 发文表示，针对 EIP-8037 导致部分合约失效的抱怨是合理且正当的。他强调，不希望以太坊变成“出于谨慎安全考虑，必须预留中心化升级后门”的环境。 Vitalik 认为，EIP-8037 及后续几项重大破坏性变更对以太坊实现长期健康稳定状态是必要的，但此类深度修改不应轻易推进。他支持形成一种社会规范：核心开发者至少有责任协助因硬分叉而受影响、且此前有正当理由认为相关特性稳固的应用进行升级。鉴于其破坏性，Vitalik 表示 Glamsterdam 升级不应仓促推进，同时希望各方在后续分叉讨论中继续保持参与。",
-        "url": "https://www.panewslab.com/zh/articles/01a2211f-fe50-72fe-995a-6930d0177e5d",
+        "title": "过去24小时全网合约爆仓1.81亿美元，主爆多单",
+        "summary": "PANews 11月28日消息，CoinGlass数据显示，过去24小时加密货币市场全网合约爆仓1.81亿美元，其中多单爆仓1.20亿美元，空单爆仓6176.80万美元。BTC爆仓总金额5967.32万美元，ETH爆仓总金额3748.10万美元。最大单笔爆仓单发生在Binance-BTCUSDT，价值1179.98万美元。",
+        "url": "https://www.panewslab.com/zh/articles/01a222c7-0e8a-70c7-8d40-59bfa02e9c92",
         "source": "PANews",
         "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "PANews",
+        "title": "以太坊在稳定币总供应量中的占比已降至46%，创历史新低",
+        "summary": "PANews 11月28日消息，据Blockworks数据，以太坊在稳定币总供应量中的占比已降至46%，创下历史新低。",
+        "url": "https://www.panewslab.com/zh/articles/01a222c0-b08a-721b-99d1-36ca78c2a318",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "PANews",
+        "title": "Lummis：美民主党在量子安全相关要求被纳入《CLARITY法案》后仍投反对票",
+        "summary": "PANews 11月28日消息，据Solid Intel报道，美国共和党参议员Cynthia Lummis表示，在民主党提出的量子安全相关要求被纳入《CLARITY法案》后，民主党人仍投票反对了该法案。",
+        "url": "https://www.panewslab.com/zh/articles/01a222b1-d792-76d2-834f-b1c82ee2b15b",
+        "source": "PANews",
+        "region": "cn",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Decrypt",
+        "title": "俄罗斯正在将鸽子变成机器人无人机——你现在可以雇用它们",
+        "summary": "A Russian neurotechnology company is taking commercial orders for brain-implanted pigeons that it says can follow remote commands and fly for more than 10 hours.",
+        "url": "https://decrypt.co/384126/russia-pigeons-icyborg-drones-you-can-now-hire-them",
+        "source": "Decrypt",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "CoinDesk",
+        "title": "Bybit 价值 14 亿美元的黑客事后调查已准备就绪。你不会看到它。",
+        "summary": "Bybit’s public account still rests on preliminary 2025 forensic reports. Chief Technology Officer Rockman Zhang said more detail could help attackers like those who hit Binance.",
+        "url": "https://www.coindesk.com/business/2026/11/28/bybit-s-usd1-4-billion-hack-postmortem-is-ready-you-won-t-get-to-see-it",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Cointelegraph",
+        "title": "这是今天加密货币领域发生的事情",
+        "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
+        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Cointelegraph",
+        "title": "孙宇晨呼吁特朗普家族相关的 WLFI 代币下架",
+        "summary": "Sun also urged exchanges to issue warnings, restrict deposits and require disclosure of where funds had gone.",
+        "url": "https://cointelegraph.com/news/justin-sun-calls-for-trump-family-linked-wlfi-token-to-be-delisted?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "CoinDesk",
+        "title": "比特币未能兑现：熊市让数字资产资深人士质疑比特币的价值",
+        "summary": "There's rock bottom, and then there's something many layers below that, and that's where bitcoin sentiment is right now.",
+        "url": "https://www.coindesk.com/markets/2026/11/28/bitcoin-not-delivering-the-bear-market-has-digital-asset-veteran-questioning-btc-s-value",
+        "source": "CoinDesk",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Cointelegraph",
+        "title": "东盟+3同意探索加密支付合作倡议",
+        "summary": "A working group will examine enhancing connectivity between domestic digital payment networks and bringing their regulations into more alignment.",
+        "url": "https://cointelegraph.com/news/asean3-agrees-on-initiative-to-explore-crypto-payments-cooperation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+        "source": "Cointelegraph",
+        "region": "en",
+        "category": "web3"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "CoinDesk",
+        "title": "与特朗普相关的加密代币 WLFI 暴跌 50% 创历史新低",
+        "summary": "As prices tanked, blockchain trackers flagged a large outflow of ether from a wallet linked to World Liberty Financial.",
+        "url": "https://www.coindesk.com/markets/2026/11/28/trump-linked-crypto-token-wlfi-plunges-over-50",
+        "source": "CoinDesk",
+        "region": "en",
         "category": "web3"
       },
       {
@@ -357,52 +457,12 @@
         "category": "web3"
       },
       {
-        "date": "2026-11-28",
-        "tag": "PANews",
-        "title": "Jump Crypto正利用USD1脱锚进行套利，过去一小时已从交易所提取4326万枚USD1",
-        "summary": "PANews 11月28日消息，据 Lookonchain 监测，Jump Crypto 正利用 USD1 脱锚进行套利，其在交易所折价买入 USD1，并通过 BitGo 将其兑换为 1 美元。在过去一小时内，Jump Crypto 已从交易所提取了 4326 万枚 USD1。USD1 曾短暂脱锚，跌至 0.94 美元。",
-        "url": "https://www.panewslab.com/zh/articles/01a22113-f392-74f7-990e-3d49c270565f",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "PANews",
-        "title": "何一：币安已升级网络安全防御体系，收紧远程办公权限并推行沙盒隔离",
-        "summary": "PANews 11月28日消息，在 2026 币安区块链周活动上，针对近期频发的智能化网络攻击与 10 月底发生的安全事件，币安联合创始人何一在回复 PANews 记者提问时，披露了最新的安全防御升级与应对策略。何一指出，此前在内部激进推行 AI 工具时存在权限管理过松的问题，当前社会工程学攻击形式极其严峻，甚至出现冒名替身面试、入职首日异常 IP 渗透等极端案例。目前币安已采取多种防御举措。第一是全员实战模拟攻防，币安已聘请第三方专业团队常态化发起内部真实钓鱼与社工模拟演练，对违规员工实行严厉惩戒机制，两次中招即被开除。第二是全员强制设备沙盒隔离，通过技术刚性约束，所有外来文件下载均在沙盒内",
-        "url": "https://www.panewslab.com/zh/articles/01a22102-1f26-71ec-aee1-c286652ff42d",
-        "source": "PANews",
-        "region": "cn",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Cointelegraph",
-        "title": "这是今天加密货币领域发生的事情",
-        "summary": "Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation.",
-        "url": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
         "date": "2026-11-27",
         "tag": "Decrypt",
         "title": "OpenAI 凭借自己的商业秘密盗窃索赔扭转了苹果的局面",
         "summary": "The ChatGPT maker’s counterclaims flip the script on a dispute Apple started in July, alleging the iPhone maker took its trade secrets and pressured shared hardware suppliers to freeze it out of the AI-device race.",
         "url": "https://decrypt.co/384222/openai-countersuit-apple-trade-secret-theft-claims",
         "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Cointelegraph",
-        "title": "富兰克林邓普顿在加密指数 ETF 中为 HYPE 腾出空间",
-        "summary": "The addition comes as US spot investment products tracking Hyperliquid’s native token reach $266.5 million in assets under management.",
-        "url": "https://cointelegraph.com/news/franklin-templeton-hype-crypto-index-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
         "region": "en",
         "category": "web3"
       },
@@ -425,75 +485,25 @@
         "source": "Decrypt",
         "region": "en",
         "category": "web3"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Cointelegraph",
-        "title": "尽管利润缓冲缩小，比特币鲸鱼仍涌入比特币",
-        "summary": "CryptoQuant data shows Bitcoin whales are breaking with historical fourth-quarter selling patterns despite a market downturn.",
-        "url": "https://cointelegraph.com/markets/bitcoin-whales-pile-btc-despite-shrinking-profit-cushion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-        "source": "Cointelegraph",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Decrypt",
-        "title": "70 亿美元的比特币期权刚刚到期：这意味着什么",
-        "summary": "Bitcoin’s largest options expiry this month comes as traders increasingly seek protection against further losses, with some hedging against a potential drop to $40,000 before the end of the year.",
-        "url": "https://decrypt.co/384154/7-billion-bitcoin-options-just-expired-what-it-means",
-        "source": "Decrypt",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "CoinDesk",
-        "title": "由于法律诉讼威胁到体育预测，卡尔什转向小企业",
-        "summary": "The prediction market is pitching protection against tariffs, weather and other business risks as courts challenge its ability to offer sports wagers.",
-        "url": "https://www.coindesk.com/business/2026/11/27/kalshi-turns-to-small-businesses-as-legal-battles-threaten-forecasts-on-sports",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "CoinDesk",
-        "title": "比特币“死亡十字”即将到来。这是前13之后发生的事情。",
-        "summary": "Your day-ahead look for Nov. 27, 2026",
-        "url": "https://www.coindesk.com/daybook-us/2026/11/27/bitcoin-death-cross-is-coming-here-s-what-happened-after-previous-13",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "CoinDesk",
-        "title": "比特币有望结束七周连跌，同时落后于股市反弹",
-        "summary": "Bitcoin (BTC) has risen 1.8% since midnight UTC to around $61,600 and is on course to end seven straight weekly losses.",
-        "url": "https://www.coindesk.com/markets/2026/11/27/bitcoin-on-course-to-end-seven-week-losing-streak-while-trailing-stock-rebound",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "CoinDesk",
-        "title": "实时更新：人工智能股领涨盘前涨幅，比特币反弹至 61,000 美元以上",
-        "summary": "Stocks are broadly higher, but bitcoin has slipped back near $60,000, reversing a turkey day advance.",
-        "url": "https://www.coindesk.com/tech/2026/11/27/live-news-bitcoin-rebounds-above-usd61-000-as-ai-stocks-lead-premarket-gains",
-        "source": "CoinDesk",
-        "region": "en",
-        "category": "web3"
       }
     ],
     "科技": [
       {
         "date": "2026-11-28",
+        "tag": "Solidot",
+        "title": "图书作者指控英伟达做种盗版电子书",
+        "summary": "图书作者指控英伟达在从影子图书馆如 Anna's Archive 和 LibGen 下载盗版电子书后，通过 BitTorrent 协议进行了做种，做种意味着英伟达与第三方共享并传播了盗版电子书。图书作者在诉状中表示，英伟达采取了部分限制做种的措施，但没有完全禁止做种。图书作者还指出，英伟达通过一个包含 2.5 亿页内容的 PDF Extraction Project 项目与包括 Adobe 在内的商业合作伙伴共享盗版书籍。这些内容部分来自影子图书馆。英伟达此举是为了从 PDF 文件中提取 token 去构建差异化模型，它还将 PDF 提取功能整合进 NeMo 管线让客户能利用其 PDF 内容。作为交换，Adobe 承诺在其部分产品中使用英伟达的大模型。诉状指控英伟达不仅自行分发了盗版书籍，还协助他人实施侵权行为，它既直接侵权还协助侵权。",
+        "url": "https://www.solidot.org/story?sid=86020",
+        "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
         "tag": "IT之家",
-        "title": "吉利银河 M7 远航家 11 月 30 日加新上市，综合续航至高 1756km",
-        "summary": "IT之家 11 月 28 日消息，吉利银河今日宣布银河 M7 远航家将于 11 月 30 日加新上市，纯电续航至高 251km，综合续航至高 1756km。 IT之家注意到，吉利银河 M7 于 4 月 28 日正式上市，该车共推出 4 款配置车型，限时指导价下探至 10.98 万元起，价格如下： 车型 官方指导价（万元） 限时指导价（万元） 225km 远航版 11.98 10.98 225km 领航版 12.78 11.78 225km 探索 + 版 13.78 12.78 225km 星舰版 14.78 13.78 作为参考，银河 M7 定位于紧凑型插电式混合动力 SUV，其核心亮点在于采用了 2025 年发布的 GEA Evo 架构。新车长宽高分别为 4770 毫米、1905 毫米、1685 毫米， 轴距达到 2785 毫米 。 银河 M7 中控提供观山灰、观山灰翻毛皮版、栖霞橙、静湖白四种可选。15.4 英寸 2.5K 中控屏搭载 Flyme Auto 2 智能座舱系统，内置 7 纳米制程龙鹰一号芯片，支持卡片式交互界面、Hi Eva 语音车控，并依托星睿大模型实现全场景 AI 对话。 智能驾驶方面，银河 M7 搭载千里浩瀚 H3 方案，具备高速及高架 NOA 导航辅助驾驶能力，支持自动超车、上下匝道、拨杆变道等功能；全场景泊车辅助可识别超过 300 种车位类型，实现自动泊入与泊出。 银河 M7 动力系统由 1.5L 雷神 EM 超级电混发动机与前置单电机组成，发动机最大功率 82 千瓦，热效率达 47.26%；电机最大功率 175 千瓦，峰值扭矩 262 牛 · 米。电池采用神盾金砖磷酸铁锂电池，提供 29.8 千瓦时一种容量，对应 CLTC 纯电续航 225 公里，0 至 100 公里每小时加速时间为 7.7 秒。",
-        "url": "https://www.ithome.com/1/033/916.htm",
+        "title": "华为星芒刘赫回应 OSTA O1 Pro 首销 3 天激活量约 4700 台：呵呵，不予置评",
+        "summary": "IT之家 11 月 28 日消息，首款为 AI 而生的鸿蒙手机 —— 华为星芒 OSTA O1 Pro 已于 11 月 20 日下午正式发布 ，叠加国补后 4999 元起。华为星芒品牌总经理刘赫也已开通微博，持续解答网友疑惑。 ▲ IT之家开箱：华为全新子品牌星芒 OSTA O1 Pro 手机实拍 针对近日关于星芒 OSTA O1 Pro 开售 3 天首销激活销量约 4700 台的爆料，刘赫回应：“ 呵呵，不予置评。 ” 参考IT之家此前报道，OSTA O1 Pro 提供星芒紫、星云白、星空黑三款配色；配备一块 6.39 英寸 16:9.5 比例 1.5K LTPS 直屏；后置 200Mp 1/1.28\" RYYB 主摄 + 50Mp 3.7X RYYB 潜望长焦 + 红枫镜头。 新机还搭载麒麟 9030S 旗舰 τ 芯片，提供至高 16GB+1TB 规格可选，手机内置 7000mAh 电池，支持 66W 有线充电 + 无线充电；首发搭载 HarmonyOS 7 AI 先锋版，支持全新 AI 交互、系统主动智能和长期陪伴成长。 延伸阅读 华为全新子品牌 OSTA 星芒于 2026 年 11 月 20 日在鸿蒙智行享界 V8 及星芒品牌发布会上正式发布，品牌总经理刘赫也在该发布会上首次登台亮相。据官方介绍，OSTA 取自 Original（原创）、Smart（智能）、Technology（科技）、Accessible（触手可及）四个关键词的首字母。 星芒以“Come As You Are，自有光芒”为品牌口号，定位面向 AI 浪潮下愿意尝鲜、敢于表达、追求同频对话的先锋人群，聚焦中高端市场，并不走低价走量的路线。华为常务董事、终端 BG 董事长余承东表示，星芒将主打原创、智能、科技和触手可及等特性。 在华为终端版图中，OSTA 星芒与“HUAWEI”品牌构成并列的双品牌架构的另一极，两者差异化定位、互补发展，共享麒麟芯片、鸿蒙操作系统、昆仑玻璃、红枫影像等技术底座与品质标准。外界曾将星芒解读为“第二个荣耀”，但有分析认为，星芒接到的并非冲出货量的任务，现阶段更侧重建立品牌认知、培育用户并验证新的 AI 技术与产品体验。 关于首销激活量约 4700 台的说法，来自数码博主 @数码闲聊站，其统计周期为 W47，即 2026 年 11 月 16 日至 11 月 22 日。 OSTA O1 Pro 提供 12GB+256GB、12GB+512GB、16GB+512GB 和 16GB+1TB 四个版本，首发价分别为 5499 元、6499 元、7299 元和 8799 元。该机与华为 Pura X View 均采用麒麟 9030S 芯片和 6.39 英寸阔直屏，不过 O1 Pro 未配备超广角镜头，起售价较后者低 500 元，并提供后者没有的 16GB 运行内存版本。 针对价格质疑，刘赫此前曾在微博评论区回应称，他宁愿先把产品做好一点，“便宜未必是创新的方向”，并表示星芒选择创新优先；他还提到 O1 Pro 的 16GB 版本开售当天已在全平台售罄，部分线下门店供货偏少。",
+        "url": "https://www.ithome.com/1/034/026.htm",
         "source": "IT之家",
         "region": "cn",
         "category": "科技"
@@ -501,139 +511,19 @@
       {
         "date": "2026-11-28",
         "tag": "IT之家",
-        "title": "有记录以来最热的一周：地球 11 月 18~24 日史上首次连续 7 天“高烧”突破 2℃ 门槛",
-        "summary": "IT之家 11 月 28 日消息，根据欧盟哥白尼气候服务中心确认的初步数据，11 月 18 日至 24 日地球平均日气温连续 7 天高于工业化前水平 2 摄氏度以上， 这是有记录以来首次出现这种情况。 升温幅度在 11 月 23 日（周一）达到峰值，当天全球气温较该日期对应的 1850 至 1900 年估算基线高出 2.25 摄氏度，为该机构数据集中单日差值最大的一次。IT之家附上相关图片如下： 报道指出今年 11 月已经有 10 天达到或超过 2 摄氏度这一标准，在本次连续 7 天之前，本月还有 3 天越过了 2 摄氏度。而在 11 月之前，该机构有记录以来，全球日平均气温比工业化前水平高出 2 摄氏度以上的天数总共只有 6 天，其中 4 天出现在 2024 年 2 月，另外 2 天出现在 2023 年 11 月。 气候科学家强调，连续 7 天气温突破 2 摄氏度红线，并不等于全球已经越过 2015 年《巴黎协定》设定的红线。该协定衡量的是数十年的长期平均升温，而非短期的极端波动。根据《巴黎协定》，近 200 个缔约方承诺，将全球气温升幅控制在 2 摄氏度以内，并努力把升幅限制在 1.5 摄氏度以内。 图源：Pixabay",
-        "url": "https://www.ithome.com/1/033/915.htm",
+        "title": "消息称宝马 ALPINA 中文名为“阿尔宾纳”，首款车型 2027 年可体验",
+        "summary": "IT之家 11 月 28 日消息，据博主 @汽车志 今日分享消息，BMW ALPINA 官方中文名为宝马阿尔宾纳，未来将由宝马集团工厂直接生产。 据其透露，宝马阿尔宾纳 2027 年起将能够体验到首款车型，具体上市时间及产品规划近期公布。品牌定位方面，该系列区别于 BMW M 追求赛道极限与操控，ALPINA 更注重高速巡航、长途舒适性与豪华体验。 此外，宝马 ALPINA 标志性车身配色、20 辐轮毂、椭圆形双出排气、经典车身装饰线条都将得到传承。 IT之家注意到，宝马中国于今年 1 月宣布，BMW ALPINA 将作为宝马集团旗下专属独立品牌全新登场。宝马中国 5 月正式发布 Vision BMW ALPINA（宝马阿尔宾纳设计概念车）外观图，这也是该车的全球首秀。 在此之前，宝马于 2022 年 3 月确认购入 ALPINA 品牌，但未有公开交易细节；而 2025 年起，ALPINA 所有关于宝马汽车改装的计划将会终止，其他现有的服务将会继续维持。宝马在获得 ALPINA 品牌使用权后，计划在未来高端车型上沿用这一传奇标识。",
+        "url": "https://www.ithome.com/1/034/025.htm",
         "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "IT之家",
-        "title": "雅砻江公司与华为获联合国“全球可持续工业 AI 解决方案奖”，方案落地于全球最大水光互补电站",
-        "summary": "IT之家 11 月 28 日消息，据华为数字能源分享，在联合国工业发展组织 60 周年纪念活动期间，雅砻江流域水电开发有限公司（简称“雅砻江公司”）与华为联合打造的“AI 赋能绿色能源方案”荣获“2026 年全球可持续工业 AI 解决方案奖”。 ▲ 雅砻江公司与华为联合荣获“2026 年全球可持续工业 AI 解决方案奖” 据介绍，该奖项由联合国工业发展组织（UNIDO）、联合国贸易和发展会议（UNCTAD）、联合国数字与新兴技术办公室（ODET）、国际电信联盟（ITU）、联合国发展协调办公室（UNDCO）以及世界机器人合作组织（WRCO）面向全球首次发起， 共收到来自 61 个国家 220 余份提案 。 雅砻江公司与华为联合打造的“AI 赋能绿色能源方案”从中脱颖而出。 该方案落地于世界级流域型清洁能源大基地标杆 —— 雅砻江柯拉光伏电站 。 参考IT之家此前报道，2023 年 6 月，雅砻江两河口水电站水光互补一期项目 —— 位于四川省甘孜藏族自治州雅江县柯拉乡的柯拉光伏电站并网发电，标志着全球首个百万千瓦级“水光互补”电站正式投产。 公开资料显示， 雅砻江柯拉光伏电站是全球最大、海拔最高的水光互补电站 。 该项目首次将全球“水光互补”项目规模提升至百万千瓦级 。电站通过 500kV 输电线路接入 50 公里外的两河口水电站，实现光伏发电和水电的“打捆”送出。电站投产后年平均发电量 20 亿度，每年可节约标准煤超 60 万吨、减少二氧化碳排放超 160 万吨。",
-        "url": "https://www.ithome.com/1/033/914.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "IT之家",
-        "title": "上汽荣威家越 07 大定锁单突破 3.5 万台，全系搭载豆包座舱助手",
-        "summary": "IT之家 11 月 28 日消息，上汽荣威今日宣布，家越 07 大定锁单突破 35,000 台，全系搭载豆包座舱助手。 据IT之家此前报道，家越 07 于 10 月 23 日上市，限时权益价 11.98 万元起；家越 07 纯电版于 11 月 27 日上市，限时权益价 13.28 万元起。 车型 指导价（万元） 限时权益价（万元） 220 智享版 12.78 11.98 220 激光雷达版 13.78 12.98 320 激光雷达版 14.58 13.78 320 激光雷达智尊版 15.28 14.48 651 智享版 14.08 13.28 651 激光雷达版 15.08 14.28 651 激光雷达智尊版 15.78 14.98 该车长宽高为 4900*1910*1745mm，轴距 2908mm；行业首搭豆包座舱助手，搭载最新 Momenta R7 世界模型。 增程版配备 32.6kWh 和 44.2kWh 两种容量的电池组，纯电续航分别为 220km 和 320km，最大综合续航 1480km。 纯电版标配 800V 碳化硅平台，80.6kWh 电池，续航 651km，电机峰值功率达 245kW，峰值扭矩达 430N·m ，零百加速 5.9 秒。 相关阅读： 《 限时权益价 11.98 万元起，上汽荣威家越 07 汽车上市 》 《 荣威家越 07 纯电版上市：行业首搭豆包座舱助手，13.28 万元起 》",
-        "url": "https://www.ithome.com/1/033/913.htm",
-        "source": "IT之家",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "钛媒体",
-        "title": "Nvidia 停止向四个东南亚国家运送人工智能服务器",
-        "summary": "Nvidia has ordered partners to stop shipping servers with its chips to Malaysia, Singapore, Thailand and Indonesia after new U.S. export rules took effect. The move aims to block Chinese firms from reaching restricted processors through regional data centers. How long the freeze will last is unclear.",
-        "url": "https://www.tmtpost.com/8221371.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "量子位",
-        "title": "亏贼！卡帕西用Claude搓出“美国版《文明》”，网友直接玩成全球接力赛",
-        "summary": "这种大模型现做的即时交互工具，能不能来一波知识付费？",
-        "url": "https://www.qbitai.com/2026/11/513428.html",
-        "source": "量子位",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "钛媒体",
-        "title": "蔚来开始用AI改造自己，这笔经济账怎么算？",
-        "summary": "建成AI Native原生组织，将是下一阶段行业竞争、产业变革的核心关键。",
-        "url": "https://www.tmtpost.com/8221323.html",
-        "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       },
       {
         "date": "2026-11-28",
         "tag": "爱范儿",
-        "title": "德系最大 SUV 来了！奥迪 Q9 国内首秀，车长超 5 米 3，还有一台大 V6丨广州车展",
-        "summary": "奥迪也拥有了他们的「大 9 系」。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1696001?utm_source=rss&utm_medium=rss&utm_campaign",
-        "source": "爱范儿",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "少数派",
-        "title": "「黑五」值得买：不容错过的数码硬件优惠",
-        "summary": "除了软件服务，这个黑五还有这些硬件值得一看。 查看全文",
-        "url": "https://sspai.com/post/119651",
-        "source": "少数派",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "钛媒体",
-        "title": "AI服务器卖爆了，但卖服务器的不赚钱了：股价跌一半，市场在清算什么",
-        "summary": "一场还没有完全出现在报表里的利润挤压。",
-        "url": "https://www.tmtpost.com/8221273.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "钛媒体",
-        "title": "《复联5》要来救市了",
-        "summary": "《复仇者联盟》依然是最强IP。",
-        "url": "https://www.tmtpost.com/8221005.html",
-        "source": "钛媒体",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "极客公园",
-        "title": "AI 硬件竞争白热化，OpenAI 反诉苹果窃密；iPhone 18 量产再度推迟；王兴回应美团与小微试点合作",
-        "summary": "OpenAI 转守为攻：反诉苹果窃密，喊话「不公平竞争」 当地时间周五（27 日），OpenAI 在美国加利福尼亚州圣何塞联邦法院对苹果提起反诉，指控苹果窃取其商业机密，并阻挠其与硬件供应商合作。 今年 7 月，苹果曾以窃取商业机密为由起诉 OpenAI。随着 OpenAI 反诉，这场官司从苹果一方起诉变成了双方互诉。 据报道，OpenAI 正准备推出一系列新的个人设备，并称这些设备有望「在苹果视为自家地盘的领域胜过苹果」。 据报道，OpenAI 在诉状中称，苹果这样做是为了「不择手段地进行不公平竞争」。OpenAI 还指控苹果利用自身的「规模和财力来阻碍竞争」，存在「各种违法、不公平和侵权行为」。 有分析指出，这场诉讼关系到未来 AI 设备由谁主导。这类设备可能不再依赖传统的应用程序或操作系统，一旦成功，可能分走消费者对苹果最畅销产品 iPhone 的关注。分析人士称，OpenAI 正在开发手机或其他自有设备。两家科技巨头均未立即回应媒体的置评请求。（来源：第一财经） iPhone 18 量产再度推迟，苹果新机上市前备货时间承压 苹果即将推出的 iPhone 18 和 iPhone 18e 两款机型再次遭遇生产延迟。来自微博的爆料者「定焦数码」称，这两款机型目前均尚未进入大规模量产阶段，量产启动时间已从此前预计的 10 月下旬推迟到 2027 年元旦前后。 今年 10 月，同一消息源曾表示，标准版 iPhone 18 的生产目标定在 11 月下旬，并称苹果正准备建立较大的库存。而最新说法提到的 1 月时间点，比此前报道的两个目标都更晚。 在配置方面，外界预计两款机型都将搭载 A20 芯片，运行内存则可能从 8GB 提升至 9GB，并采用苹果自研的 C2 调制解调器。此外，两款新机还传出将配备更大容量电池，iPhone 18e 则可能迎来前置摄像头升级。 彭博社记者马克·古尔曼此前指出，这两款设备预计将在明年 2 月或 3 月发布。如果这一时间表保持不变，那么 1 月才开始量产将让苹果积累库存的时间比往年更紧张。（来源：cnBeta） 马斯克 SpaceX 拓展卫星直连手机业务，有意收购美国 Anterix 900 MHz 频谱 据彭博社当地时间 11 月 27 日报道，美国无线频谱公司 Anterix 正考虑大规模出售其持有的 900 MHz 无线频谱资产，而马斯克旗下 SpaceX 已表达对这一频段的兴趣。 随着 SpaceX 拓展卫星直连终端（Direct-to-Device，D2D）业务，双方可能围绕低频段频谱展开进一步合作或交易。 Anterix 正考虑将剩余频谱许可出售给单一买家，而不再局限于此前以长期租赁方式向公用事业企业提供频谱。Anterix 企业发展负责人 Chris Guttman-McCabe 表示，公司正在与潜在交易方接触，希望通过频谱资产交易提升股东价值。他还表示，如果找到合适的买家，公司剩余频谱的价值可能达到目前的三倍。 目前，Anterix 持有的频谱资产约有 15% 已被部分公用事业企业使用，其余约 85% 尚未投入使用。公司此前主要向电力等公用事业企业出租 900 MHz 频谱，用于建设专用无线宽带网络，支持电网通信和关键基础设施运营。如今，公司正在扩大频谱资产的商业化方式，包括直接出售许可和长期租赁。(来源：IT 之家) 三星刷新闪存层数纪录，全球首款 500 层以上 NAND 诞生，容量提升 50% 11 月 27 日，三星电子宣布已成功开发出全球首款 500 层以上 NAND 闪存，该产品为三星第 11 代 NAND 闪存，相关技术成果计划于明年 2 月在美国旧金山举行的国际固态电路会议（ISSCC 2027）上公布，最快将于明年实现商用。 该产品相较当前量产的 400 层 NAND 闪存，单芯片容量、存储密度均提升 50%，单引脚 I/O 速率增幅达 21.4%，写入吞吐量达 290MB/s，单位容量生产成本理论上可降低约 33%。 三星已于今年初启动该款闪存试产，目前试产良率约 30%，同步推进包含 576 层在内的多个堆叠方案。当前 AI 数据中心建设带动大容量存储需求上涨，今年第二季度企业级 SSD 占全球 NAND 闪存出货容量的比例已达 48%。（来源：快科技） WhatsApp 或将推出旅行 eSIM 功能 WhatsApp 正在开发一项全新的旅行 eSIM 功能，未来用户或许可以直接在应用内发现、购买、安装并管理适用于旅行目的地的 eSIM 套餐。 这一功能是在 WhatsApp for Android 最新版本 2.26.47:10 中被发现的。据 Android Authority 报道，应用代码中出现了多处与该功能相关的引用，不过目前该功能尚未正式上线。 相关代码文本包括「旅行 eSIM 已安装」「你的套餐将在开启 eSIM 时开始计时」以及「该目的地暂不提供套餐」等提示。从这些信息来看，用户未来很可能可以在 WhatsApp 内搜索旅行目的地，并浏览当地支持的 eSIM 套餐，随后直接在应用内完成购买和安装。不过，代码中出现的「即将推出」提示也表明，该功能可能不会在所有地区同步上线。 此次发现还显示，WhatsApp 可能会与第三方 eSIM 服务商合作提供这项服务。(来源：cnBeta) 美团王兴：与微信小微合作按计划推进，预计明年 AI 资本开支将低于今年 据每日经济新闻，对于市场关注的美团与微信小微的试点合作进展，美团 CEO 王兴在财报发布后的业绩电话会上表示，双方合作正按计划推进，双方聚焦本地服务场景，优先打磨微信生态内完整服务链路。 王兴认为，微信 AI 能力叠加美团本地供给与履约能力，有望挖掘微信生态内新的本地服务需求。 在 AI 资本开支上，王兴表示，美团将坚持 ROI（投资回报率）导向、审慎投入。王兴透露，今年已提前锁定部分算力资源，预计明年 AI 相关资本开支将低于今年，投入节奏服从整体财务规划，兼顾业务收益与推理成本，持续优化投入效率。 他同时提到，AI 将持续在研发、客服、运营等环节提效，优化平台推荐与服务体验，中长期来看，AI 带来的降本增效有望逐步覆盖新增投入。（来源：IT 之家） 何小鹏谈机器人 IRON：等下个季度或下两个季度，要把全身的触觉打通 11 月 27 日消息，2026 广州车展正式开幕。车展期间，小鹏集团董事长、CEO 何小鹏与小鹏机器人 IRON 共同巡展。 在与新浪科技等媒体对话时，谈及机器人 IRON，他透露，目前已经打通了整体的视觉和听觉，「但这个季度还没打通触觉，等下个季度或者下两个季度，我们要把全身的触觉打通。」 另外，他还表示：「对于今天的这个产品，它肯定还处于 20-30 分的水平，但等到下两个季度，它可能就会达到 40-50 分。我期待等我们交付的时候，它能够达到 60 分的水平。不光要有用，而且还能用。」（来源：IT 之家） 梅赛德斯-奔驰：Momenta R7 世界模型 2027 年将陆续搭载于更多燃油车型 11 月 27 日消息，2026 广州车展今日开幕，梅赛德斯-奔驰公布辅助驾驶、AI 智能座舱更多消息。 据其介绍，梅赛德斯-奔驰是首批实现 Momenta R7 世界模型上车、首个实现「车位到车位」能力的豪华品牌。奔驰与 Momenta 共创的城区及高速领航辅助驾驶系统，融合世界模型与强化学习能力，场景能力提升 3 至 5 倍。 奔驰是 Momenta 合作车企中路测覆盖城市最多的品牌，数量远超行业标准，辅助驾驶体验安心可靠。针对燃油车型特性，奔驰对起步响应、水冷散热等进行特殊优化，确保「无论油电，都很智能」。 最新的辅助驾驶与智能座舱科技目前已搭载于部分奔驰车型，并均将应用于后续燃油车型和纯电车型上，以及持续 OTA，实现「油电同智、常用常新」。（来源：IT 之家） iPhone 20 Pro 或将采用 3D 打印钛金属边框 据最新传闻，苹果明年推出的 iPhone 20 Pro 系列将在机身边框上大量使用 3D 打印钛金属。来自中国的爆料者「定焦数码」在微博上称，苹果计划采用基于激光的钛粉末 3D 打印工艺来制造部分中框部件，这一工艺有望显著提升设备的耐用性。该爆料者对该消息的准确性似乎颇有信心，甚至建议关注者在明年新机发布时翻出这条微博进行对照。 苹果已经在 Apple Watch Ultra 4 以及钛金属版 Apple Watch Series 12 的表壳生产中应用了这项 3D 打印技术。 这项技术可能为苹果正在开发的二十周年全玻璃 iPhone 设计提供更大的设计灵活性。据传，该机型将采用曲面玻璃，并实现几乎不可见的屏幕边框。彭博社的马克·古尔曼曾形容，这一系列改动将是 Pro 产品线自 iPhone X 以来最大的一次革新。 目前尚不清楚苹果将如何解决钛金属带来的散热难题，因为当前 Pro 机型所使用的铝金属具有更出色的散热性能。 苹果预计将于 2027 年秋季发布 iPhone 20 Pro 系列。爆料者目前以「iPhone 20 Pro」称呼这些设备，但苹果最终的命名方案仍不得而知。（来源：cnBeta） 消息称徕卡 Q3 43 Monochrom 黑白相机 12 月 3 日发布，定价 7490 欧元 11 月 27 日消息，外媒 LeicaRumors 发文，透露徕卡 Q3 43 Monochrom 黑白相机将于 12 月 3 日发布。 该机可以看作是标准款徕卡 Q3 Monochrom 黑白相机换上 Q3 43 的 43mm f/2 镜头，为喜欢中焦段便携相机的用户提供一种新选择。机身继续采用 6000 万像素全画幅传感器，搭配 Maestro IV 处理器和 8GB DRAM 缓存。支持录制 30 帧 / 秒的 8K 视频或 60 帧 / 秒的 4K 视频。 价格方面，徕卡 Q3 标准版的官方售价为 6,490 欧元（现汇率约合 47,499 元人民币），徕卡 Q3 Monochrom 和 Q3 43 的售价均为 6,990 欧元（现汇率约合 51,158 元人民币），而徕卡 Q3 43 Monochrom 的预计售价为 7,490 欧元（现汇率约合 54,817 元人民币）。（来源：IT 之家） 民间优化速度逆天！PC 版《GTA6》居然能联机了 11 月 27 日消息，依托泄露游戏文件、采用 AI 辅助开发的《GTA6》非官方 PC 移植项目，其出自 CGBJ 项目的衍生分支现已实现双人联机功能。 相关实机演示显示，两名玩家使用的均为男主角杰森，可共同进入机场场景互动，运行帧率约为 25-30FPS，该演示内容已得到部分 GTA 社区成员核验。 该项目此前已先后完成 3D 模型、场景渲染、非官方模组菜单与启动器等相关开发，CGBJ 主体项目此前已被相关方叫停，目前仍有开发者转入私下交流继续推进不同版本开发，暂未公布更多玩家同时在线的测试结果。(来源：快科技)",
-        "url": "http://www.geekpark.net/news/374621",
-        "source": "极客公园",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-28",
-        "tag": "少数派",
-        "title": "本月玩什么｜GTA VI、塞尔达传说 时之笛、魔兽世界：无限",
-        "summary": "以上便是部分近期值得探讨的新游信息汇总，个人角度仅供参考。本期不设特定有奖互动话题，欢迎你在评论区分享11月新作游玩体验，可以是本文出现的，也可以是本文未提及、但你特别想推荐给派友的。我们下期再见！> ... 查看全文",
-        "url": "https://sspai.com/post/119686",
-        "source": "少数派",
-        "region": "cn",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "Ars Technica",
-        "title": "Ars 能找到的最佳黑色星期五优惠",
-        "summary": "Perhaps some commerce, to help all the Turkey Day leftovers go down easier?",
-        "url": "https://arstechnica.com/shopping/2026/11/the-best-black-friday-deals-ars-could-find/",
-        "source": "Ars Technica",
-        "region": "en",
-        "category": "科技"
-      },
-      {
-        "date": "2026-11-27",
-        "tag": "爱范儿",
-        "title": "24.99 万元起！宝马新世代 i3 正式上市，纯电续航高达 1028km丨广州车展",
-        "summary": "新世代的宝马，依旧是「驾驶者之车」。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
-        "url": "https://www.ifanr.com/1695987?utm_source=rss&utm_medium=rss&utm_campaign",
+        "title": "24.98 万元起，2027 款坦克 400 上市，硬派越野车也开始卷 AI 了丨广州车展",
+        "summary": "猛将也懂兵法，可当帅才。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+        "url": "https://www.ifanr.com/1696077?utm_source=rss&utm_medium=rss&utm_campaign",
         "source": "爱范儿",
         "region": "cn",
         "category": "科技"
@@ -641,10 +531,120 @@
       {
         "date": "2026-11-28",
         "tag": "Solidot",
-        "title": "Kimi 向科学家提供最高 2 万美元 API 免费额度",
-        "summary": "Kimi 大模型开发商月之暗面宣布了 Kimi for Science 项目，欢迎自然科学、工程学及相关交叉学科领域的研究人员加入。月之暗面表示，“科学始终源于人类的好奇心、严谨的探索精神，以及对未知世界的不懈追求。一个有价值的科学假设，往往需要经过大量的文献调研、数据分析和反复验证。而一次意料之外的发现，也可能成为下一项重大突破的起点。然而受限于时间、算力与人力资源，许多值得深入探索的想法，始终未能获得应有的关注与投入。我们相信 AI 能加速科学研究，拓展探索与发现的边界，帮助研究者突破时间、资源与研究方法的局限，让更多大胆而富有想象力的科学构想从可能走向现实。”月之暗面将向入选的研究人员提供最高 20,000 美元的 Kimi API 额度（约 70 亿 token），具体金额将根据研究需求及评估结果确定。",
-        "url": "https://www.solidot.org/story?sid=86015",
+        "title": "前沿 AI 实验室可能找到了 RSA 的弱点",
+        "summary": "多位计算机科学家称，前沿 AI 实验室如 OpenAI 和 Anthropic 可能发现了能破坏互联网通信安全的算法。德州奥斯丁的计算机科学家 Scott Aaronson 称他从多个可信来源确认 AI 实验室拥有一个或多个颠覆性的重大发现。AI 实验室的目标与 RSA 等公钥加密系统相关。研究人员称，他们听说前沿 AI 实验室发现了能在多项式时间内破解公钥加密的算法。公钥加密是互联网应用安全的基础，它所依赖的数学问题对传统计算机而言几乎不可能在合理的时间内解决。如果一种算法能在多项式时间内解决这些问题，情况将会彻底改变，互联网所依赖的安全基础可能随之动摇。最坏的情况将是 P = NP 被证明。",
+        "url": "https://www.solidot.org/story?sid=86019",
         "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "IT之家",
+        "title": "长安汽车预计全年海外销量突破 100 万辆，计划到 2030 年海外销量突破 200 万",
+        "summary": "IT之家 11 月 28 日消息，据新浪汽车，在 2026 广州车展，长安汽车品牌部总经理赵春艳透露 2026 年长安出海规模将突破 100 万辆。 出海业务上，长安已完成年初出海目标，1‑10 月长安海外销量 83 万辆，同比增长 58.7%， 预计全年海外销量突破 100 万 。采用多品牌分层出海，阿维塔主攻高端、深蓝面向科技年轻群体，长安启源与 V 标燃油车覆盖主流市场。 此外， 长安计划到 2030 年，长安海外销量突破 200 万辆 ，海外销量占比 50%。 据IT之家此前报道， 长安汽车 10 月汽车销量 23.38 万辆 ；其中 海外销量 102,400 辆 ，同比增长 77.3%，环比增长 8.8%。",
+        "url": "https://www.ithome.com/1/034/023.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "IT之家",
+        "title": "美国航空公司两架客机发生擦碰事故，其中一架客机的翼梢小翼撞断",
+        "summary": "IT之家 11 月 28 日消息，据央视新闻今日报道，美国航空公司两架客机 27 日在罗纳德 · 里根华盛顿国家机场发生机翼擦碰事故， 其中一架客机的翼梢小翼撞断 ，所幸没有人员伤亡。 报道提到，这两架客机机型均为波音 737，航班号分别是 638 和 2152，一架目的地为达拉斯，另一架计划飞往芝加哥。 事故发生在客机滑行前往跑道期间。空管无线电通话录音显示，638 航班于 27 日 17 时许准备起飞时，机长报告说该机位置略微越过了等待线， 机翼与紧随其后的一架客机发生擦碰 。 其中一架飞机上的一名乘客回忆说：“撞击感非常强烈。”这名乘客说：“起初飞机晃动时，好几个人发出了惊呼。随后大家纷纷向窗外张望，想看看发生了什么，机舱里议论纷纷。” 两架涉事客机均返回登机口，停飞并接受检查。机上乘客改签当天晚些时候的其他航班。美国联邦航空局表示将对此事展开调查。 IT之家注：罗纳德 · 里根华盛顿国家机场距离白宫不远，是美国最繁忙的机场之一。 2025 年 1 月 29 日晚，该机场附近发生重大空难，一架载有 64 人的客机降落过程中与一架载有 3 名军人的军用直升机相撞。两机均坠毁，无人生还。调查结论认为，空难原因包括机场塔台管制人员工作负担过重，未能充分发布安全预警。 2025 年 4 月，美国航空公司一架客机在该机场与同公司另一架飞机擦撞，两机机翼受损，无人员伤亡。",
+        "url": "https://www.ithome.com/1/034/022.htm",
+        "source": "IT之家",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "爱范儿",
+        "title": "在混动和纯电渐成主流的今天，长城为什么还在做 HEV？丨广州车展",
+        "summary": "纯电很猛，但纯电不是全部，更不是长城的全部。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+        "url": "https://www.ifanr.com/1696066?utm_source=rss&utm_medium=rss&utm_campaign",
+        "source": "爱范儿",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "量子位",
+        "title": "200亿美元…史上最贵AI自媒体",
+        "summary": "这可能是有史以来，ROI（投资回报率）最高的个人博客。",
+        "url": "https://www.qbitai.com/2026/11/513577.html",
+        "source": "量子位",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "量子位",
+        "title": "谷歌Tibo亲授Gemini 4 Neon内部打开方式！第一步：删光旧规则",
+        "summary": "这两天转投Gemini的有福了！",
+        "url": "https://www.qbitai.com/2026/11/513555.html",
+        "source": "量子位",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "爱范儿",
+        "title": "对话蔚来李斌：传统汽车工业是打鼓，智能电动汽车工业是交响乐丨广州车展",
+        "summary": "李斌认为，纯电的未来是光明的，纯电的蔚来也是光明的。 #欢迎关注爱范儿官方微信公众号：爱范儿（微信号：ifanr），更多精彩内容第一时间为您奉上。",
+        "url": "https://www.ifanr.com/1696049?utm_source=rss&utm_medium=rss&utm_campaign",
+        "source": "爱范儿",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "量子位",
+        "title": "刚刚，8192张昇腾训出285B大模型！权重开源，32页训练手册全公开",
+        "summary": "国产芯片训千亿大模型，终于有人把施工图纸摊开了",
+        "url": "https://www.qbitai.com/2026/11/513535.html",
+        "source": "量子位",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "TechCrunch AI",
+        "title": "Sakana AI 首席执行官表示，其本土模型不仅仅关乎日本国家安全",
+        "summary": "Sakana AI aims to strengthen Japan’s industrial competitiveness with homegrown AI models.",
+        "url": "https://techcrunch.com/2026/11/28/sakana-ais-ceo-says-its-homegrown-models-are-about-more-than-japans-national-security/",
+        "source": "TechCrunch AI",
+        "region": "en",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "Solidot",
+        "title": "能在PC上启动的 Lisp machine 仅 7KB 还带个打方块",
+        "summary": "Nala Ginrut 写道： 周末闲来无事，我让claude把我的AnimulaVM移植到PC上，Animula是目前唯一产品级能运行在10KB内存MCU里的lisp machine。 结果claude花了20分钟用汇编写了个微缩版本，可以在PC上直接启动并且进入打方块游戏，游戏是用Scheme写的，用我的Laco编译器编译的。理论上如果bios支持legacy CSM的话，是可以直接把这7KB镜像烧入软盘或者U盘直接启动的，否则只能在qemu上启动。 我认为这是AI试图挑战old-school hacker的一次例证，如果再这么搞下去，感觉人类快要完蛋了。 总之各位少年，在人类完蛋之前不打算来一局打方块吗？",
+        "url": "https://www.solidot.org/story?sid=86018",
+        "source": "Solidot",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "钛媒体",
+        "title": "美团每年砸百亿做AI，王兴不想只做外卖生意",
+        "summary": "外卖竞争降温后，美团的利润开始修复，AI投入也到了需要进一步检验成效的时候。",
+        "url": "https://www.tmtpost.com/8220970.html",
+        "source": "钛媒体",
+        "region": "cn",
+        "category": "科技"
+      },
+      {
+        "date": "2026-11-28",
+        "tag": "钛媒体",
+        "title": "美团Q3扭亏：利润回来了，但“边界”问题没有",
+        "summary": "美团Q3扭亏，利润修复下仍存长期增长待解问题。",
+        "url": "https://www.tmtpost.com/8220533.html",
+        "source": "钛媒体",
         "region": "cn",
         "category": "科技"
       }
